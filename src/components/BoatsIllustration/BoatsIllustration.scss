@@ -1,0 +1,22 @@
+.BoatsIllustration {
+  .boat {
+    line {
+      stroke: grey;
+    }
+    polygon,
+    path {
+      fill: lightgrey;
+    }
+
+    .sail {
+      opacity: 0.9;
+    }
+
+    .hull {
+      fill: darkgrey;
+    }
+  }
+  .bird {
+    fill: grey;
+  }
+}

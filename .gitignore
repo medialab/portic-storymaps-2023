@@ -1,0 +1,14 @@
+# dependencies
+/node_modules
+/yarn.lock
+# misc
+.DS_Store
+
+__pycache__
+/data/
+/public/data
+/public/thumbnails
+/public/assets/drafts/*.jpg
+/src/content/
+# production
+/build

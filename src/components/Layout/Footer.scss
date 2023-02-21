@@ -1,0 +1,60 @@
+@import '../../styles/variables.scss';
+
+/**
+ * Footer 
+ */
+.Footer {
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: linear-gradient(to bottom, $color-background 10%, $color-background-blue 90%);
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  .footer-contents {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: $medium-gutter * 2;
+    max-width: calc(100vw - #{$medium-gutter * 8});
+    margin-top: $medium-gutter * 2;
+    margin-bottom: $medium-gutter * 2;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    font-family: $font-family-1;
+    font-weight: 500;
+  }
+  h2 {
+    margin-bottom: 0;
+    font-weight: medium;
+    font-size: 1rem;
+  }
+  .column:last-of-type {
+    margin-top: 2.2rem;
+  }
+  p {
+    margin-bottom: $small-gutter;
+  }
+
+  @include phone {
+    .footer-contents {
+      padding: $medium-gutter;
+      display: flex;
+      flex-flow: column nowrap;
+    }
+    .column {
+      margin: 0;
+      &:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+
+  @media print {
+    display: none;
+  }
+}

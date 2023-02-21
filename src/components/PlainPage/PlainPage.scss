@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.PlainPage {
+  a {
+    color: $color-accent-background;
+    &:hover {
+      color: $color-accent;
+    }
+    &:visited {
+      color: $color-accent;
+    }
+  }
+}

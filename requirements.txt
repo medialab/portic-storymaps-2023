@@ -1,0 +1,7 @@
+html_sanitizer
+beautifulsoup4
+validators
+citeproc-py
+pyzotero
+visvalingamwyatt
+python-slugify

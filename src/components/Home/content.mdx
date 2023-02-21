@@ -1,0 +1,28 @@
+import GeographicMapChart from '../../components/GeographicMapChart';
+
+import test from './ports-region-1789.svg';
+
+# Bienvenue sur à bord du PORTIC-storymaps 2021 !
+
+Nous mettons le cap vers une étude de cas du commerce multi-échelle dans la région La Rochelle :)
+
+
+# Commerce multi-échelle dans la région de La Rochelle
+
+
+## Ci-dessous une carte des ports de la région étudiée 
+
+<GeographicMapChart 
+  backgroundFilename="cartoweb_france_1789_geojson.geojson" 
+  dataFilename="navigo-out-of-ships-from-region.csv"
+  markerColor="pointcall_admiralty"
+  markerSize="tonnage"
+  label="pointcall"
+  showLabels
+  centerOnRegion
+  // width={width} // ce serait à adapter mais je n'ai pas accès aux props du conteneur je crois
+  // height={height}
+/>
+
+
+## Petite introduction et problématisation pas piquées des hannetons à venir ... 

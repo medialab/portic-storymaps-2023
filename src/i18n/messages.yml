@@ -1,0 +1,266 @@
+site:
+  title:
+    fr: 'Commerce, contrebande et ports francs : le cas de Dunkerque au XVIIIe siècle'
+    en: Trade around the port of Dunkerque in the 18th century
+  titleHTML:
+    fr: 'Commerce, contrebande et ports francs&nbsp;: le cas de Dunkerque au&nbsp;<span>XVIII</span><sup>e</sup>&nbsp;siècle'
+    en: Trade around the port of Dunkerque in the 18th century
+  subtitle:
+    fr: Une étude de cas du programme de recherche interdisciplinaire PORTIC
+    en: A case study of the PORTIC interdisciplinary research program
+menu:
+  home:
+    fr: accueil
+    en: home
+  atlas:
+    fr: Atlas des visualisations
+    en: visualizations atlas
+about:
+  title:
+    fr: À propos
+    en: About
+atlas:
+  title:
+    fr: Atlas des visualisations
+    en: Visualizations atlas
+vizFocus:
+  description:
+    fr: De quoi s'agit t'il ?
+    en: What is about?
+  howItsMade:
+    fr: Comment les données et la visualisation ont-elles été produites ?
+    en: How were the data and visualization produced?
+  howToRead:
+    fr: Comment lire la visualisation ?
+    en: How to read the visualization?
+  copyLink:
+    fr: copier le lien de cette visualisation
+    en: copy this visualization link
+  linkCopied:
+    fr: lien copié dans le presse-papier !
+    en: link copied in the clipboard!
+vizContainer:
+  switchToViz:
+    fr: voir la visualisation associée
+    en: see associated visualization
+  switchToText:
+    fr: voir le texte associé
+    en: see associated text
+  goToFullScreen:
+    fr: En savoir plus sur cette visualization
+    en: Learn more about this visualization
+  backToMainViz:
+    fr: Revenir à la visualisation principale
+    en: Back to main visualization
+EvolutionBudgetDunkerque:
+  tooltip:
+    fr: ${reference} d'une valeur de ${value} livres tournois en ${year}
+    en:
+  x:
+    fr: Année comptable
+    en: 
+  y:
+    fr: Valeur en livres tournois
+    en: 
+EvolutionTypeConges:
+  tooltip:
+    fr: ${value} congés pour l'année ${year} pour les congés de type ${type}
+    en:
+  x:
+    fr: Année
+    en: Year
+  y:
+    fr: Nombre de congés
+    en: 
+PecheTypeValue:
+  tooltip:
+    fr: Valeur de ${value} livres tournois en ${year}
+    en:
+  x:
+    fr: Année
+    en: Year
+  y:
+    fr: Valeur en livres tournois
+    en: Value in livres tournois
+  color:
+    fr: Localisation des activités de pêche
+    en: Fishing activities localization
+TonnageMoyenMois:
+  tooltip:
+    fr: En  ${month} ${period}, le tonnage moyen au départ de Dunkerque était de ${value} tonneaux
+    en: 
+  x:
+    fr: Tonnage moyen
+    en: Mean tonnage
+  y:
+    fr: Mois
+    en: Months
+  brush_prompt:
+    fr: "Sélectionner une ou plusieurs années à prendre en compte en dessinant un rectangle ci-dessous :"
+    en: "Select one or several years to take into account by brushing a rectangle:"
+PecheMap:
+  tooltip:
+    fr: Pêche en ${type} d'une valeur de ${value} en ${year}
+    en: 
+  x:
+    fr: Valeur
+    en: Value
+  y:
+    fr: Année
+    en: Year
+HistoireDunkerque:
+  legend_square_port_free:
+    fr: Port franc
+    en: 
+  legend_square_kingdom_france:
+    fr: Royaume de France
+    en: 
+  legend_point_port_interests:
+    fr: Défend les intérêts du Port Franc
+    en: 
+  legend_point_guard:
+    fr: Poste de garde
+    en: 
+  legend_point_kingdom_dependency:
+    fr: Dépend du Royaume de France
+    en: 
+  btn_previous_step:
+      fr: Étape précédente
+      en: Previous step
+  btn_next_step:
+    fr: Étape suivante
+    en: Next step
+  assise_title:
+    fr: Évolution de la part de l'assise dans les recettes de Dunkerque
+    en:
+TonnagesF12:
+  destination:
+    fr: destination
+    en: destination
+  hyp_with_lest:
+    fr: supposer que la source F12 compte les navires partis avec du lest
+    en: suppose source counts ships which left with ballast
+  hyp_without_lest:
+    fr: supposer que la source F12 ne compte pas les navires partis avec du lest (soustraire le lest)
+    en: suppose source does not count ships which left with ballast (substract ballast)
+  with_lest_title:
+    fr: tonnage cumulé (hypothèse selon laquelle la source contient le lest)
+    en: cumulated tonnage (we suppose the source does contains ballast)
+  without_lest_title:
+    fr: tonnage cumulé (hypothèse selon laquelle la source ne contient pas le lest)
+    en: cumulated tonnage (we suppose the source does not contains ballast)
+CarteDestinations:
+  map_position:
+    fr: Position de la carte
+    en: Map position
+  click_cta:
+    fr: Cliquer sur un cercle pour voir le détail des pavillons
+    en: Click on a circle to see flags details
+  legend_title:
+    fr: Légende
+    en: Legend
+  edit_legend:
+    fr: éditer
+    en: edit
+  unedit_legend:
+    fr: ne plus éditer
+    en: do not edit
+  legend_flags_title:
+    fr: "Tonnage cumulé pour les navires de pavillon :"
+    en: "Cumulated tonnage for ships with flag from:"
+  legend_dominant_title:
+    fr: "Pavillon dominant des départs de Dunkerque vers la destination :"
+    en: "Dominant flag for departures from Dunkirk to the destination:"
+  legend_saturation:
+    fr: "La saturation de la couleur représente le taux de représentativité du pavillon dominant."
+    en: "Color saturation represents the representativity of the dominant flag."
+  legend_options_title:
+    fr: Options
+    en: Options
+  legend_group_strangers:
+    fr: Grouper les étrangers
+    en: Group strangers
+  legend_show_offscreen_ports:
+    fr: Montrer les ports hors champ
+    en: Show offscreen ports
+  legend_show_details_in_map:
+    fr: Montrer les détails sur la carte
+    en: Show details in map
+  legend_only_long_cours:
+    fr: Trajets long-cours uniquement
+    en: Only long-cours paths
+  legend_show_tonnages:
+    fr: Montrer les tonnages de ${min} à ${max} tx
+    en: Show tonnages from ${min} to ${max} tx
+  show:
+    fr: montrer
+    en: show
+  hide:
+    fr: cacher
+    en: hide
+  tonnage_for_destination_and_flag:
+    fr: Les navires au départ de Dunkerque de pavillon ${flag} et à destination de ${destination} représentaient ${tonnage} tonneaux cumulés
+    en:
+Pilotage:
+  title_comparaison:
+    fr: Comparaison entre les données du pilotage <br/>et le registre des congés
+    en: 
+  title_estimation:
+    fr: Évolution (projetée puis observée) du nombre de sorties de Dunkerque de 1730 à 1791
+    en: 
+  title_evaluation:
+    fr: Évaluation du nombre de sorties
+    en: 
+  legend_pilotage:
+    fr: Navires usant du pilotage pour quitter le port de Dunkerque
+    en: 
+  legend_total:
+    fr: Navires quittant le port de Dunkerque selon le registre des congés
+    en: 
+  footer_projection:
+    fr: Projection à partir des rapports entre pilotage et sorties sur ${year_start}/${year_end}
+    en: 
+  footer_register:
+    fr: Données issues des registres
+    en: 
+  description_demonstration:
+    fr: >-
+      À partir de la moyenne des rapports entre nombre de sorties avec un pilotage et nombre de sorties totales pour 1765-1791, on peut estimer le nombre de navires quittant Dunkerque pour 1730-1765 (où l'on ne dispose que du nombre de sorties avec un pilotage).
+      La comparaison avec les données des congés permet de constater une marge d'erreur entre <i>+${value_max}%</i> et <i>${value_min}%</i>.
+    en: 
+  description_pilotage:
+    fr: Entre 1765 et 1791, en moyenne ${mean}% des navires sortants font usage du pilotage chaque année
+    en: 
+  tooltip_total:
+    fr: En ${year}, ${value} navires sont sortis du port de Dunkerque
+    en:
+  tooltip_pilotage:
+    fr: En ${year}, ${value} navires sont sortis du port de Dunkerque avec un pilotage
+    en:
+  tooltip_estimation:
+    fr: En ${year}, on estime qu'entre ${value_min} et ${value_max} navires sont sortis du port de Dunkerque
+    en:
+  tooltip_projection_positive:
+    fr: En ${year}, le rapport entre pilotage et sorties était ${value}% supérieur au rapport moyen de 1765 à 1791
+    en:
+  tooltip_projection_negative:
+    fr: En ${year}, le rapport entre pilotage et sorties était ${value}% inférieur au rapport moyen de 1765 à 1791
+    en:
+  note_schema_mean:
+    fr: Moyenne du rapport entre nombre de pilotages et nombre de sorties
+    en: 
+  note_schema_sup:
+    fr: Les données relevées sont supérieures à la moyenne
+    en: 
+  note_schema_inf:
+    fr: Les données relevées sont inférieures à la moyenne
+    en: 
+  note_demonstration_pilotage:
+    fr: Navires sortis avec un pilotage
+    en: 
+  note_demonstration_margin:
+    fr: Marge d'erreur
+    en: 
+  note_demonstration_projection:
+    fr: Projection du nombre total de sorties
+    en: 

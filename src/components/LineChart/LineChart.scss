@@ -1,0 +1,51 @@
+
+@import '../../styles/variables.scss';
+
+ .LineChart {
+  .chart {
+    user-select: none;
+  }
+  &.is-brushable {
+    .chart {
+      cursor: crosshair;
+    }
+  }
+  .data-dot-container {
+    cursor: default;
+    .data-dot-big {
+      opacity: 0;
+      transition: 0.5s ease all;
+    }
+    &:hover {
+      .data-dot-big {
+        opacity: 1;
+      }
+    }
+  }
+
+  .annotations-container {
+    .annotation {
+      p {
+        margin: 0;
+        font-size: .6rem;
+      }
+    }
+  }
+
+  .zoom-info-container {
+    font-family: $font-family-1;
+    font-size: 1rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: .7rem;
+    text-align: center;
+    font-style: italic;
+    button {
+      background: none;
+      text-decoration: underline;
+      font-size: 1em;
+    font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+
+
+.AlluvialImportExport {
+  .modality-group {
+    .modality-rect {
+      cursor: pointer;
+      stroke: white;
+    }
+    .modality-label {
+      cursor: pointer;
+
+      text-anchor: middle;
+      font-size: 10px;
+    }
+  }
+
+  .number-label {
+    font-style: italic;
+    font-size: 10px;
+    &.left {
+      text-anchor: end;
+    }
+    &.right {
+      text-anchor: start;
+    }
+  }
+}
