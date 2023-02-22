@@ -206,11 +206,17 @@ export default function ScrollyPage({
     setVisualizations({
       type: 'SET',
       payload: {}
-    })
+    });
   }, [chapter, lang]);
 
   useEffect(function focusVizOnScroll() {
     if (Object.keys(visualizations).length === 0 || !pageRef.current || isFullScreen) {
+      if (Object.keys(visualizations).length === 0 && currentVizId) {
+        setCurrentVizId();
+        setDisplayedVizId();
+        setDisplayedVizProps();
+        setActiveCallerId();
+      }
       return;
     }
 
@@ -252,16 +258,15 @@ export default function ScrollyPage({
         break;
       }
     }
-  }, [visualizations, scrollY, pageRef]);
+  }, [visualizations, scrollY, pageRef, chapter]);
 
   useEffect(function getDataForChapter() {
     setLoadingState('process');
     const payload = new Map();
-
     let filesCsvToLoad = new Set(
       Object.values(visualizationsMetas)
         .filter(({ n_chapitre }) => n_chapitre === chapter)
-        .map(({ outputs }) => outputs)
+        .map(({ outputs }) => outputs || [])
         .flat()
     );
     filesCsvToLoad = Array.from(filesCsvToLoad);

@@ -4,7 +4,7 @@ const colorsPalettes = {
   'ui': {
     'colorText': '#403d3d',
     'colorAccent': '#34495e',
-    'colorAccentBackground': '#440e0e', // '#336d7c',
+    'colorAccentBackground': '#0b2941',// '#440e0e', // '#336d7c',
     'colorBackgroundBlue': '#e2dcd6',// '#d3e5e5',
     'colorBackground': '#ebebeb',
   },

@@ -397,6 +397,9 @@ for lang in GDOC_URL.keys():
                 if caller['id'] not in part_viz_id_list:
                     # <Caller> id is not find from viz id list
                     caller['class'] = 'is-invalid'
+                # attribute n_chapitre to data if none
+                elif "n_chapitre" not in viz_id_list[caller['id']]:
+                  viz_id_list[caller['id']]["n_chapitre"] = part_nb
             part = str(part_soup)
             # Quoting
             matches = re.finditer(r"\[@.*?\]", part, re.MULTILINE)

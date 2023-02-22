@@ -80,7 +80,7 @@
   > section {
     width: 40%;
     box-sizing: border-box;
-    padding: 3em $medium-gutter $medium_gutter $medium_gutter * 4;
+    padding: 4em $medium-gutter $medium_gutter $medium_gutter * 4;
     // margin-bottom: $medium-gutter * 15;
 
     a {
@@ -121,6 +121,7 @@
     > h3 {
       margin: 0;
       position: relative;
+      padding-top: $medium-gutter;
       // top: -1em;
     }
     display: flex;

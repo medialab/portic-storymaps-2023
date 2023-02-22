@@ -26,7 +26,8 @@ function HomeSummary({ lang = 'fr', summary }) {
       <ul className="chapters-links-container">
         {
           summary
-            .filter(item => item.routeGroup === 'chapter')
+            .filter(item => item.navGroup === 'primary')
+            // .filter(item => item.routeGroup === 'chapter')
             .filter(item => item.routes[lang])
             .map((item, itemIndex) => {
               const title = item.titles[lang];

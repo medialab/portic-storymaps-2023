@@ -43,6 +43,9 @@ export default function VisualizationController({
     if (data === undefined) {
       return <>Les données de cette visualisation n'ont pu être chargées.</>;
     }
+    if (!vizId) {
+      return null;
+    }
 
     switch (vizId) {
       default:
