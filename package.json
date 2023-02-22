@@ -6,7 +6,6 @@
     "load": "sh install.sh",
     "build": "webpack --config webpack.config.prod.js",
     "thumbnails": "node makeThumbnails.js",
-    "worldmap": "node datascripts/generateSVGMapBackground.js",
     "dev": "webpack serve --config webpack.config.dev.js"
   },
   "dependencies": {

@@ -95,9 +95,9 @@ This data allows to generate the text content of the application, as well as the
 |-------------------------|-----------------------|-----------------------|--------------------|-------------------------------|
 | navigo database         | data.portic.fr/api/   | /data/*.csv           |                    | /retrieve_data.sh             |
 | toflit database         | GitHub                | /data/*.csv           |                    | /retrieve_data.sh             |
-| spreadsheets            | Google Drive (GSheet) | /public/data/**/*.csv | HTTP GET           | /datascript/_fetch_content.py |
-| index of visualisations | Google Drive          | /src/content/viz.json    | ES6 import         | /datascript/_fetch_content.py |
-| bibliography            | Zotero                | /src/data/bib.json    |                    | /datascript/_fetch_content.py |
+| spreadsheets            | Google Drive (GSheet) | /public/data/**/*.csv | HTTP GET           | /datascript/fetch_content.py |
+| index of visualisations | Google Drive          | /src/content/viz.json    | ES6 import         | /datascript/fetch_content.py |
+| bibliography            | Zotero                | /src/content/bib.json    |                    | /datascript/_fetch_content.py |
 | texts                   | Google Drive (GDoc)   | /src/content/**/*.mdx | /src/summary.js    | /datascript/_fetch_content.py |
 
 ## Data local storage and visualizations management
