@@ -24,7 +24,7 @@ Prerequisites:
 Then in a shell terminal, copy the following commands and hit enter:
 
 ```bash
-git clone https://github.com/medialab/portic-storymaps-2023
+git clone git@github.com:medialab/portic-storymaps-2023
 cd portic-storymaps-2023
 yarn
 sh install.sh
