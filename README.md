@@ -12,7 +12,7 @@ This project rests on the shoulders of two existing digital history projects : [
 Prerequisites:
 
 * install [Node.js](https://nodejs.org/)
-* install [Python](https://www.python.org/)
+* install [Python 3](https://www.python.org/)
 * install [Pypi](https://pypi.org/)
 * install [Yarn](https://yarnpkg.com/)
 * install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
