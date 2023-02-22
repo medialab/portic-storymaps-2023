@@ -1,10 +1,7 @@
 #!/bin/bash
-mkdir public
-mkdir public/data
-mkdir public/data/test
+mkdir -p public/data/test
 touch public/data/test/.gitkeep
-mkdir data
-mkdir doc
+mkdir -p data doc
 
 set -e
 echo "installing python dependencies"
