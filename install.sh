@@ -1,5 +1,7 @@
 mkdir public
 mkdir public/data
+mkdir public/data/test
+touch public/data/test/.gitkeep
 mkdir data
 mkdir doc
 
