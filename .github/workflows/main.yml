@@ -24,7 +24,9 @@ jobs:
       - name: Build 🔧
         # continue-on-error: true
         run: |
+          find ./ -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
           yarn run build
+          find ./ -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
