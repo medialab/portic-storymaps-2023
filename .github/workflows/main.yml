@@ -18,10 +18,9 @@ jobs:
       - name: Install dependencies and prepare data ⚙
         run: |
           yarn
+          mkdir public/data
           sh install.sh
           yarn run thumbnails
-          mkdir data/test
-          touch data/test/.gitkeep
         # continue-on-error: true
       - name: Build 🔧
         # continue-on-error: true
