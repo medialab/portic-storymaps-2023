@@ -20,9 +20,11 @@ Prerequisites:
 Then in a shell terminal, copy the following commands and hit enter:
 
 ```bash
+git clone https://github.com/medialab/portic-storymaps-2023
+cd portic-storymaps-2023
 yarn
 sh install.sh
-yarn run thumbnails
+# yarn run thumbnails
 ```
 
 # Development
@@ -50,6 +52,53 @@ yarn thumbnails
 
 *Warning: thumbnails building can be capricious on some machines. Backup existing screenshots from `public/thumbnails` before re-running this script.*
 
+
+## Bibliothèque python pour le datasprint
+
+Nous avons préparé une bibliothèque python censée faciliter la récupération et la manipulation des données des bases.
+
+Cette bibliothèque propose une abstraction permettant de manipuler les données avec une API unifiée, ainsi qu'une série d'utilitaires. Elle a vocation à être potentiellement enrichie pendant le datasprint.
+
+
+### Installer la bibliothèque
+
+La bibliothèque python est installée localement par le script `install.sh` (ou via `pip install -e lib`) puis est accessible sous le nom de `dunkerquesprint`.
+Ne pas oublier de la réinstaller après un git pull si besoin.
+
+### Utiliser la bibliothèque
+
+Voir :
+
+- [la doc en ligne](https://medialab.github.io/portic-datasprint-2022/).
+- [la doc en jupyter notebook exécutable](https://github.com/medialab/portic-datasprint-2021/blob/main/documentation_lib.ipynb)
+
+
+Les méthodes de base à retenir pour travailler avec les données du datasprint sont :
+
+- pour récupérer les pointcalls associés aux pointcalls du datasprint :
+
+```python
+from marseillesprint import Portic
+portic_client = Portic()
+# récupérer les pointcalls de l'année 1789
+pointcalls = portic_client.get_pointcalls(year=1789)
+```
+
+- pour récupérer les flux Toflit18 associés au datasprint :
+
+```python
+from marseillesprint import Toflit
+toflit_client = Toflit()
+# Récupérer les flux qui concernent la direction des fermes de Marseille en 1789
+flows = toflit_client.get_flows(year=1789, customs_region='Marseille')
+```
+
+
+Les données de base sont disponibles à :
+
+* pour toflit18 : sur le répertoire [`medialab/toflit18_data/base courante.zip`](https://github.com/medialab/toflit18_data/blob/master/base/bdd%20courante.csv.zip) et via le [datascape](http://toflit18.medialab.sciences-po.fr/#/home)
+* pour PORTIC : à [http://data.portic.fr/api/](http://data.portic.fr/api/) (documentation originale [ici](https://gitlab.huma-num.fr/portic/porticapi))
+
 # Contributing
 
 The project is open to contribution through pull requests.
@@ -69,9 +118,6 @@ The project is open to contribution through pull requests.
 ## How to translate the app
 
 [How to translate the app](./src/i18n/README.md)
-## How to update the data
-
-[How to update the data](./datascripts/README.md)
 
 # App architecture
 
