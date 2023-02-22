@@ -5,3 +5,11 @@ citeproc-py
 pyzotero
 visvalingamwyatt
 python-slugify
+ebbe
+vega
+pandas
+ipyleaflet
+ipysigma
+networkx
+keplergl
+seaborn
