@@ -14,13 +14,17 @@ Prerequisites:
 * install [Node.js](https://nodejs.org/)
 * install [Python 3](https://www.python.org/)
 * install [Pypi](https://pypi.org/)
+* install [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
 * install [Yarn](https://yarnpkg.com/)
+
+```npm install -g yarn```
+
 * install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
 Then in a shell terminal, copy the following commands and hit enter:
 
 ```bash
-git clone https://github.com/medialab/portic-storymaps-2023
+git clone git@github.com:medialab/portic-storymaps-2023
 cd portic-storymaps-2023
 yarn
 sh install.sh
