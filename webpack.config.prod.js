@@ -33,14 +33,24 @@ module.exports = {
                 use: ["style-loader", "css-loader"],
             },
             {
-                test: /\.js$/,
-                exclude: /node_modules/,
+                test: /\.m?js$/,
+                // exclude: /node_modules/,
+                resolve: {
+                  fullySpecified: false,
+                },
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: [['@babel/preset-react', {"runtime": "automatic"}]]
+                        presets: [
+                          [
+                            '@babel/preset-react', 
+                            {
+                              "runtime": "automatic"
+                            }
+                          ]
+                        ]
                     }
-                }
+                },
             },
             {
                 test: /\.scss$/,

@@ -6,7 +6,7 @@ import { max } from 'd3-array';
 import { uniq } from 'lodash';
 import { cartesian2Polar, fixSvgDimension, generatePalette, polarToCartesian } from '../../utils/misc';
 
-import { useSpring, animated } from 'react-spring'
+import { useSpring, animated } from '@react-spring/web'
 
 /*
 Principe : path entre deux point géographiques, dont le stroke peut varier, et on peut avoir la direction avec une fleche 

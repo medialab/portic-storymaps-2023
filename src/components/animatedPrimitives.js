@@ -1,4 +1,4 @@
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated } from '@react-spring/web';
 
 export const Line = ({style, className, onClick, ...inputProps}) => {
   const props = useSpring(inputProps);

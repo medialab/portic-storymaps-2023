@@ -5,7 +5,7 @@ import { scaleLinear } from 'd3-scale';
 import { extent } from 'd3-array';
 
 import { generatePalette } from '../../utils/misc';
-import { useSpring, animated, Transition } from 'react-spring'
+import { useSpring, animated, Transition } from '@react-spring/web'
 import { useEffect, useState } from 'react';
 import ReactTooltip from 'react-tooltip';
 

@@ -1,6 +1,6 @@
 import { scaleLinear } from 'd3-scale';
 import React, { useEffect, useMemo } from 'react';
-import { useSpring, animated } from 'react-spring'
+import { useSpring, animated } from '@react-spring/web'
 import Tooltip from 'react-tooltip';
 
 import AxisObject from './AxisObject';

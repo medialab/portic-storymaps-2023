@@ -1,6 +1,6 @@
 import { sum } from 'lodash';
 import React from 'react';
-import { useSpring, animated } from 'react-spring'
+import { useSpring, animated } from '@react-spring/web'
 
 import { fixSvgDimension, polarToCartesian, formatNumber } from '../../utils/misc';
 

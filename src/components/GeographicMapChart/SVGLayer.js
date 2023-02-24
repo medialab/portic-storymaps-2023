@@ -3,7 +3,7 @@ import { geoPath } from "d3-geo";
 import { generatePalette } from '../../utils/misc';
 import { uniq } from 'lodash';
 import cx from 'classnames';
-import { useSpring, animated } from 'react-spring'
+import { useSpring, animated } from '@react-spring/web'
 import ReactTooltip from "react-tooltip";
 
 

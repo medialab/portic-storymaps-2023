@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo, useReducer } from "react";
-import { useSpring, animated } from "react-spring";
+import { useSpring, animated } from '@react-spring/web';
 import {v4 as genId} from 'uuid';
 import {scaleLinear, scaleLog} from 'd3-scale';
 import {useInterval} from '../../utils/hooks';
