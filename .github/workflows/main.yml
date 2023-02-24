@@ -5,6 +5,8 @@ on:
       - prod
   schedule:
     - cron: "0 0 * * *"
+    # every hour at 30m
+    # - cron: "30 * * * *"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
