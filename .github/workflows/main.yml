@@ -25,7 +25,7 @@ jobs:
           yarn install --frozen-lockfile
           yarn
           sh install.sh
-          yarn run thumbnails
+        # yarn run thumbnails
         # continue-on-error: true
       - name: Build 🔧
         # continue-on-error: true
