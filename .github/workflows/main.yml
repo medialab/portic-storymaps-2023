@@ -21,6 +21,7 @@ jobs:
           node-version: 16
       - name: Install dependencies and prepare data ⚙
         run: |
+          mkdir public/thumbnails
           yarn policies set-version
           yarn install --frozen-lockfile
           yarn
