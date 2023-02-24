@@ -9,7 +9,6 @@ yarn
 set -e
 echo "installing python dependencies"
 pip install -U pip
-pip install -e datalib
 pip install -r requirements.txt
 
 echo "ensuring notebook config is ok"
