@@ -11,13 +11,11 @@ This project rests on the shoulders of two existing digital history projects : [
 
 Prerequisites:
 
-* install [Node.js](https://nodejs.org/)
-* install [Python 3](https://www.python.org/)
+* install [Node.js v16](https://nodejs.org/)
+* install [Python 3.7](https://www.python.org/)
 * install [Pypi](https://pypi.org/)
 * install [NVM](https://github.com/nvm-sh/nvm#installing-and-updating)
-* install [Yarn](https://yarnpkg.com/)
-
-```npm install -g yarn```
+* install [Yarn](https://yarnpkg.com/) : ```npm install -g yarn```
 
 * install [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 
@@ -26,7 +24,6 @@ Then in a shell terminal, copy the following commands and hit enter:
 ```bash
 git clone git@github.com:medialab/portic-storymaps-2023
 cd portic-storymaps-2023
-yarn
 sh install.sh
 # yarn run thumbnails
 ```

@@ -3,11 +3,15 @@ mkdir -p public/data/test
 touch public/data/test/.gitkeep
 mkdir -p data doc
 
+echo "installing node/yarn dependencies"
+yarn
+
 set -e
 echo "installing python dependencies"
 pip install -U pip
 pip install -e datalib
 pip install -r requirements.txt
+
 echo "ensuring notebook config is ok"
 pip install --upgrade notebook jupyter jupyterlab # need jupyter_client >= 4.2 for sys-prefix below
 # jupyter nbextension install --sys-prefix --py vega  # not needed in notebook >= 5.3
