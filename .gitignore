@@ -60,6 +60,7 @@ venv.bak/
 # dependencies
 /node_modules
 /yarn.lock
+/yarn-error.log
 # misc
 .DS_Store
 

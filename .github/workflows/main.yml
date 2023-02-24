@@ -16,15 +16,19 @@ jobs:
         with:
           ref: prod
           persist-credentials: false
-
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - name: Install dependencies and prepare data ⚙
         run: |
+          yarn policies set-version
+          yarn install --frozen-lockfile
           yarn
           sh install.sh
           yarn run thumbnails
         # continue-on-error: true
       - name: Build 🔧
-        continue-on-error: true
+        # continue-on-error: true
         run: |
           yarn run build
       - name: Deploy 🚀
