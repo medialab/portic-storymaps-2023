@@ -7,7 +7,7 @@ Through a series of three "storymaps" combining text and visualization, this pub
 
 This project rests on the shoulders of two existing digital history projects : [Toflit18](http://toflit18.medialab.sciences-po.fr/#/home) and [Navigo](http://navigocorpus.org/).
 
-# Installation
+## Installation
 
 Prerequisites:
 
@@ -25,10 +25,9 @@ Then in a shell terminal, copy the following commands and hit enter:
 git clone git@github.com:medialab/portic-storymaps-2023
 cd portic-storymaps-2023
 sh install.sh
-# yarn run thumbnails
 ```
 
-# Development
+## Development
 
 Use following command.
 
@@ -37,7 +36,7 @@ Use following command.
 yarn dev
 ```
 
-# Maintenance
+## Maintenance
 
 In order to collect freshest contents and data source, update the data with the following command :
 
@@ -54,75 +53,29 @@ yarn thumbnails
 *Warning: thumbnails building can be capricious on some machines. Backup existing screenshots from `public/thumbnails` before re-running this script.*
 
 
-## Bibliothèque python pour le datasprint
-
-Nous avons préparé une bibliothèque python censée faciliter la récupération et la manipulation des données des bases.
-
-Cette bibliothèque propose une abstraction permettant de manipuler les données avec une API unifiée, ainsi qu'une série d'utilitaires. Elle a vocation à être potentiellement enrichie pendant le datasprint.
-
-
-### Installer la bibliothèque
-
-La bibliothèque python est installée localement par le script `install.sh` (ou via `pip install -e lib`) puis est accessible sous le nom de `dunkerquesprint`.
-Ne pas oublier de la réinstaller après un git pull si besoin.
-
-### Utiliser la bibliothèque
-
-Voir :
-
-- [la doc en ligne](https://medialab.github.io/portic-datasprint-2022/).
-- [la doc en jupyter notebook exécutable](https://github.com/medialab/portic-datasprint-2021/blob/main/documentation_lib.ipynb)
-
-
-Les méthodes de base à retenir pour travailler avec les données du datasprint sont :
-
-- pour récupérer les pointcalls associés aux pointcalls du datasprint :
-
-```python
-from marseillesprint import Portic
-portic_client = Portic()
-# récupérer les pointcalls de l'année 1789
-pointcalls = portic_client.get_pointcalls(year=1789)
-```
-
-- pour récupérer les flux Toflit18 associés au datasprint :
-
-```python
-from marseillesprint import Toflit
-toflit_client = Toflit()
-# Récupérer les flux qui concernent la direction des fermes de Marseille en 1789
-flows = toflit_client.get_flows(year=1789, customs_region='Marseille')
-```
-
-
-Les données de base sont disponibles à :
-
-* pour toflit18 : sur le répertoire [`medialab/toflit18_data/base courante.zip`](https://github.com/medialab/toflit18_data/blob/master/base/bdd%20courante.csv.zip) et via le [datascape](http://toflit18.medialab.sciences-po.fr/#/home)
-* pour PORTIC : à [http://data.portic.fr/api/](http://data.portic.fr/api/) (documentation originale [ici](https://gitlab.huma-num.fr/portic/porticapi))
-
-# Contributing
+## Contributing
 
 The project is open to contribution through pull requests.
 
-## Suggested guidelines for commiting to the repository
+### Suggested guidelines for commiting to the repository
 
 - the `main` branch is the principal branch for the website version under development. Suggested workflow for contributing to the code is : for project members, to develop new features in a separated branch, then to merge it in `main` branch when it is ready ; for external person, to clone it then to submit a pull request with your modifications.
 - it is suggested to use imperative tense verbs and explicit features/bugs mentions in commit messages (see [this guide](https://gist.github.com/luismts/495d982e8c5b1a0ced4a57cf3d93cf60) for optimal commit messages)
 - it is suggested to reference related issue in commit messages in order to keep track of commits related to an issue in particular.
 
-## Guidelines concerning code development and modification
+### Guidelines concerning code development and modification
 
 - reusable components should go into `src/components` folder. Each component should have its own folder with an `index.js` file, plus as many files as you want (js subcomponent files, scss files, component-specific assets, ...)
 - components aimed at being directly used for specific visualizations should go in the `src/visualizations` folder. They should use reusable components from `src/components` as much as possible.
 - style is managed through scss files. It is suggested to use existing variables in `src/variables.scss` as much as possible, and to add a `.scss` file specific to each new component with its non-reusable styling rules (if any).
 
-## How to translate the app
+### How to translate the app
 
 [How to translate the app](./src/i18n/README.md)
 
-# App architecture
+## App architecture
 
-## Front-end : webpack & react architecture
+### Front-end : webpack & react architecture
 
 The application is bundled with [Webpack](https://webpack.js.org/). The root file is `/index.js`. It is in this file that must be imported all the JavaScript scripts that compose the application.
 
@@ -130,7 +83,7 @@ The [React](https://reactjs.org/) library (v.17+) is configured in the project, 
 
 The [React router](https://reactrouter.com/) (v6+) development tool allows you to redirect the user to activate certain display scripts based on the page address and the parameters entered. The page address is used as a source of truth, for the active language and the texts, visualizations to be displayed.
 
-## Data retrieval and computation
+### Data retrieval and computation
 
 The data is downloaded and processed with Python and NodeJs scripts in the `/datascript/` directory.
 
@@ -147,7 +100,7 @@ This data allows to generate the text content of the application, as well as the
 | bibliography            | Zotero                | /src/content/bib.json    |                    | /datascript/_fetch_content.py |
 | texts                   | Google Drive (GDoc)   | /src/content/**/*.mdx | /src/summary.js    | /datascript/_fetch_content.py |
 
-## Data local storage and visualizations management
+### Data local storage and visualizations management
 
 The visualizations index `/src/content/viz.json` contains the names of the `.csv` data files which are loaded in the front-end for each visualization. 
 
@@ -162,6 +115,6 @@ Lorem ipsum dolor est.
 <Caller id=”histoire-Marseille” />
 ```
 
-# Deployment
+## Deployment
 
 Deployment is automated to happen every day and each time a commit is pushed to the `prod` branch. The published website is then pushed on the `gh-pages` branch, which serves the site at https://medialab.github.io/portic-storymaps-2023/.
