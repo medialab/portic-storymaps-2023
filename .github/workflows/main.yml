@@ -4,9 +4,10 @@ on:
     branches:
       - prod
   schedule:
-    - cron: "0 0 * * *"
+    # every day at midnight
+    # - cron: "0 0 * * *"
     # every hour at 30m
-    # - cron: "30 * * * *"
+    - cron: "30 * * * *"
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
