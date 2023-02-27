@@ -1,31 +1,31 @@
 {
-  "Afrique": [13.454, -15.414],
+  "Afrique": [-15.414, 13.454],
 
-  "Allemagne": [52.703, 13.799],
+  "Allemagne": [13.799, 52.703],
 
-  "Amériques": [16.762, -66.379],
+  "Amériques": [-66.379, 16.762],
 
-  "Angleterre": [52.829, -1.835],
+  "Angleterre": [-1.835, 52.829],
 
-  "Asie": [-7.8, 76.64],
+  "Asie": [76.64, -7.8],
 
-  "Espagne": [40.33, -5.867],
+  "Espagne": [-5.867, 40.33],
 
-  "Flandre et autres états de l'Empereur": [50.8242, 4.2764],
+  "Flandre et autres états de l'Empereur": [4.2764, 50.8242],
 
-  "France": [46.725, -0.483],
+  "France": [-0.483, 46.725],
 
-  "Hollande": [52.2984, 4.9878],
+  "Hollande": [4.9878, 52.2984],
 
-  "Italie": [41.87, 13.337],
+  "Italie": [13.337, 41.87],
 
-  "Levant et Barbarie": [35.147, 28.597],
+  "Levant et Barbarie": [28.597, 35.147],
 
-  "Monde": [40.271, 5.427],
+  "Monde": [5.427, 40.271],
 
-  "Nord": [56.475, 18.479],
+  "Nord": [18.479, 56.475],
 
-  "Portugal": [39.6797, 8.2397],
+  "Portugal": [8.2397, 39.6797],
 
-  "États-Unis d'Amérique": [37.545, -98.569]
+  "États-Unis d'Amérique": [-98.569, 37.545]
 }
