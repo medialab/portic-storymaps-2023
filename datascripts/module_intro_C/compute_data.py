@@ -44,9 +44,16 @@ def regress(region):
     y = np.array(y_arr)
     model = LinearRegression()
     model.fit(x, y)
-    print("R²:", model.score(x, y))
+    score = model.score(x, y)
+    print("R²:", score)
     slope = model.coef_
     print("slope:", slope)
-    return slope
+    return (score, slope)
 
-[regress(r) for r in directions_fermes]
+with open("regressions.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["direction_ferme", "score_regression", "slope"])
+    for f in directions_fermes:
+        (score, slope) = regress(f)
+        writer.writerow([f, score, slope])
+
