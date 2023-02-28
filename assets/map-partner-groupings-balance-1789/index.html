@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <script src='./vendors/maplibre-gl.js'></script>
+<link href='./vendors/maplibre-gl.css' rel='stylesheet' />
+</head>
+<body>
+<div id='map' style='width: 100%; height: 100%;'></div>
+<script>
+var map = new maplibregl.Map({
+    container: 'map',
+   
+        style: {
+            version:8,
+            glyphs: "https://geoserveis.icgc.cat/contextmaps/glyphs/{fontstack}/{range}.pbf",
+            sources:{
+                "borders": {
+                    'type': 'geojson',
+                    'data': 'https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1783.geojson'
+                }
+            },
+            layers:[
+                { id: 'background', type: 'background', paint: {'background-color': "#80ccf4",}}]},
+            center: [0,0],
+            zoom: 1// starting zoom
+        });
+map.on('load', function () {
+        map.addSource('partner_grouping', {
+            'type': 'geojson',
+            'data': "./marseille_partner_groupings_import_export_geoloc.json"
+        });
+        map.addLayer({
+            id: 'borders',
+            type: 'fill',
+            source: 'borders',
+            paint: {
+                'fill-outline-color': "#AAA",
+                'fill-color': "#EEE"
+            }
+        })
+        map.addLayer({
+            'id': 'circles',
+            'type': 'circle',
+            'source': 'partner_grouping',
+            'paint': {
+                'circle-color': ['interpolate-lab',  ['linear'], ['/', ['-', ['coalesce', ['get', 'exports'],0],['coalesce', ['get', 'imports'],0]], ['+', ['coalesce', ['get', 'imports'], 0], ['coalesce', ['get', 'exports'],0] ] ], -1, [
+                  "to-color",
+                  "#d4322c"
+                ],
+                0,
+                [
+                  "to-color",
+                  "#c1b65b"
+                ],
+                1,
+                [
+                  "to-color",
+                  "#22964f"
+                ]],
+                'circle-opacity': 0.8,
+                'circle-radius': ['interpolate',  ['linear'], ['sqrt', ['+', ['coalesce', ['get', 'imports'], 0], ['coalesce', ['get', 'exports'],0] ]],  10, 5,  100, 8,  1000, 10,  1500, 12,  3000, 20,  10000, 50]
+            }
+        });
+        map.addLayer({
+            id: 'text',
+            type: 'symbol',
+            source: 'partner_grouping',
+            layout: {
+            'text-field': '{name}',
+            'text-font': ['Cardo-Bold'],
+            'text-size': 12
+            }
+            });
+       
+      
+    });
+</script>
+</body>
+</htlm>
