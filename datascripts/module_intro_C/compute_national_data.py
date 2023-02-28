@@ -4,6 +4,8 @@ import math
 import numpy as np
 from sklearn.linear_model import LinearRegression
 
+import regress 
+
 
 reader = casanova.reader("../../data/toflit18_all_flows.csv")
 
@@ -40,33 +42,12 @@ with open("evolution_directions_fermes.csv", "w") as f:
         for ferme in directions_fermes:
             writer.writerow([year, ferme, croissances[ferme][year], croissances_imports[ferme][year], croissances_exports[ferme][year]])
 
-def regress(region, growth, label):
-    print()
-    print("Regression computation for", region, label)
-    x_arr = []
-    y_arr = []
-    for key in sorted(growth[region].keys()):
-        x_arr.append(int(key))
-        y_arr.append(math.log(growth[region][key]))
-    print(x_arr, y_arr)
-    x = np.array(x_arr).reshape((-1, 1))
-    y = np.array(y_arr)
-    model = LinearRegression()
-    model.fit(x, y)
-    score = model.score(x, y)
-    print("R²:", score)
-    slope = model.coef_[0]
-    print("slope:", slope)
-    y0 = model.intercept_
-    print("intercept:", y0)
-    return (score, slope, y0)
-
 with open("regressions.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerow(["direction_ferme", "score_regression_total", "intercept_total", "slope_total", "score_regression_imports", "intercept_imports", "slope_imports", "score_regression_exports", "intercept_exports", "slope_exports"])
     for f in directions_fermes:
-        (score_t, slope_t, y0_t) = regress(f, croissances, "total")
-        (score_i, slope_i, y0_i) = regress(f, croissances_imports, "imports")
-        (score_e, slope_e, y0_e) = regress(f, croissances_exports, "exports")
+        (score_t, slope_t, y0_t) = regress.regress(f, croissances, "total")
+        (score_i, slope_i, y0_i) = regress.regress(f, croissances_imports, "imports")
+        (score_e, slope_e, y0_e) = regress.regress(f, croissances_exports, "exports")
         writer.writerow([f, score_t, y0_t, slope_t, score_i, y0_i, slope_i, score_e, y0_e, slope_e])
 
