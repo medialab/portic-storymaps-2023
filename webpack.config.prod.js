@@ -19,7 +19,8 @@ module.exports = {
             patterns: [
                 { from: "./public/data", to: "./data" },
                 { from: "./public/assets", to: "./assets" },
-                { from: "./public/thumbnails", to: "./thumbnails" }
+                { from: "./public/thumbnails", to: "./thumbnails" },
+                { from: "./datascripts/module_intro_A/map", to: "./assets/map-partner-groupings-balance-1789" }
             ],
         }),
         new webpack.DefinePlugin({
