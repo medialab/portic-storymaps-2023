@@ -34,22 +34,14 @@ partners = {
 
 exclude_partners = ["France"]
 
+
+# TODO: exclude low years???
+
+
 for row in reader:
     if row[dirferme_col] == "Marseille" and row[source_col] == "1" and row[product_col] in classif and row[partner_col] not in exclude_partners:
         partners[classif[row[product_col]]][row[exchange_col].lower()][row[partner_col]][row[year_col]] += float(row[value_col] or 0)
 
-for product in partners:
-    for typ in partners[product]:
-        with open("partners_%s_%s.json" % (typ, product), "w") as f:
-            json.dump(partners[product][typ], f)
-            pprint(partners)
-        with open("partners_%s_%s.csv" % (typ, product), "w") as f:
-            writer = csv.writer(f)
-            writer.writerow(["year", "partner", typ])
-            for partner in partners[product][typ]:
-                for year in partners[product][typ][partner]:
-                    writer.writerow([year, partner, partners[product][typ][partner][year]])
-            pprint(partners[product][typ])
 
 with open("partners.csv", "w") as f:
     writer = csv.writer(f)
@@ -58,4 +50,4 @@ with open("partners.csv", "w") as f:
         for typ in partners[product]:
                 for partner in partners[product][typ]:
                     for year in partners[product][typ][partner]:
-                        writer.writerow([year, partner, partners[product][typ][partner][year], typ + " " + product])
+                        writer.writerow([year, partner, partners[product][typ][partner][year], product + " " + typ])
