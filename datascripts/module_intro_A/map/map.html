@@ -9,39 +9,35 @@
 <script>
 var map = new maplibregl.Map({
     container: 'map',
-        style: "https://geoserveis.icgc.cat/contextmaps/positron.json",
-//         {
-// 'version': 8,
-// 'sources': {
-// 'raster-tiles': {
-// 'type': 'raster',
-// 'tiles': [
-// 'https://stamen-tiles.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg'
-// ],
-// 'tileSize': 256,
-// 'attribution':
-// 'Map tiles by <a target="_top" rel="noopener" href="http://stamen.com">Stamen Design</a>, under <a target="_top" rel="noopener" href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a target="_top" rel="noopener" href="http://openstreetmap.org">OpenStreetMap</a>, under <a target="_top" rel="noopener" href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>'
-// }
-// },
-// 'layers': [
-// {
-// 'id': 'simple-tiles',
-// 'type': 'raster',
-// 'source': 'raster-tiles',
-// 'minzoom': 0,
-// 'maxzoom': 22
-// }
-//]
-//},
-        center: [0,0],
-        zoom: 1// starting zoom
-});
+   
+        style: {
+            version:8,
+            glyphs: "https://geoserveis.icgc.cat/contextmaps/glyphs/{fontstack}/{range}.pbf",
+            sources:{
+                "borders": {
+                    'type': 'geojson',
+                    'data': 'https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1783.geojson'
+                }
+            },
+            layers:[
+                { id: 'background', type: 'background', paint: {'background-color': "#80ccf4",}}]},
+            center: [0,0],
+            zoom: 1// starting zoom
+        });
 map.on('load', function () {
         map.addSource('partner_grouping', {
             'type': 'geojson',
             'data': "./marseille_partner_groupings_import_export_geoloc.json"
         });
-
+        map.addLayer({
+            id: 'borders',
+            type: 'fill',
+            source: 'borders',
+            paint: {
+                'fill-outline-color': "#AAA",
+                'fill-color': "#EEE"
+            }
+        })
         map.addLayer({
             'id': 'circles',
             'type': 'circle',
@@ -66,16 +62,16 @@ map.on('load', function () {
             }
         });
         map.addLayer({
-id: 'text',
-type: 'symbol',
-source: 'partner_grouping',
-layout: {
-'text-field': '{name}',
-'text-font': ['Cardo-Bold'],
-'text-size': 12
-}
-});
-
+            id: 'text',
+            type: 'symbol',
+            source: 'partner_grouping',
+            layout: {
+            'text-field': '{name}',
+            'text-font': ['Cardo-Bold'],
+            'text-size': 12
+            }
+            });
+       
       
     });
 </script>
