@@ -26,9 +26,10 @@ for row in reader:
 
 with open("evolution_directions_fermes.csv", "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["year"] + directions_fermes)
+    writer.writerow(["year", "direction_ferme", "value"])
     for year in years:
-        writer.writerow([year] + [croissances[key][year] for key in directions_fermes])
+        for ferme in directions_fermes:
+            writer.writerow([year, ferme, croissances[ferme][year]])
 
 def regress(region):
     print()
