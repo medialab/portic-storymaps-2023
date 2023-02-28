@@ -54,14 +54,16 @@ def regress(region, growth, label):
     print("R²:", score)
     slope = model.coef_
     print("slope:", slope)
-    return (score, slope)
+    y0 = model.intercept_
+    print("slope:", y0)
+    return (score, slope, y0)
 
 with open("regressions.csv", "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["direction_ferme", "score_regression_total", "slope_total", "score_regression_imports", "slope_imports", "score_regression_exports", "slope_exports"])
+    writer.writerow(["direction_ferme", "score_regression_total", "intercept_total", "slope_total", "score_regression_imports", "intercept_imports", "slope_imports", "score_regression_exports", "intercept_exports", "slope_exports"])
     for f in directions_fermes:
-        (score_t, slope_t) = regress(f, croissances, "total")
-        (score_i, slope_i) = regress(f, croissances_imports, "imports")
-        (score_e, slope_e) = regress(f, croissances_exports, "exports")
-        writer.writerow([f, score_t, slope_t, score_i, slope_i, score_e, slope_e])
+        (score_t, slope_t, y0_t) = regress(f, croissances, "total")
+        (score_i, slope_i, y0_i) = regress(f, croissances_imports, "imports")
+        (score_e, slope_e, y0_e) = regress(f, croissances_exports, "exports")
+        writer.writerow([f, score_t, y0_t, slope_t, score_i, y0_i, slope_i, score_e, y0_e, slope_e])
 
