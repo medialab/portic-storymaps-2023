@@ -11,19 +11,22 @@ years = ["1750", "1753", "1756", "1766", "1768", "1770", "1771", "1773", "1774",
 
 directions_fermes = ["Marseille", "Rouen", "Bordeaux", "Flandre", "Nantes", "Châlons", "Bayonne", "La Rochelle", "Lyon", "Montpellier", "Amiens", "Charleville", "Rennes", "Narbonne", "Saint-Quentin", "Langres", "Bourgogne", "Caen"]
 
+exclude_sources = ["Local", "National toutes directions partenaires manquants"]
+
 
 year_col = reader.headers["year"]
 dirferme_col = reader.headers["customs_region"]
 source_col = reader.headers["best_guess_national_region"]
 exchange_col = reader.headers["export_import"]
 value_col = reader.headers["value"]
+sourcetype_col = reader.headers["source_type"]
 
 croissances = defaultdict(Counter)
 croissances_imports = defaultdict(Counter)
 croissances_exports = defaultdict(Counter)
 
 for row in reader:
-    if row[year_col] in years and row[dirferme_col] in directions_fermes and row[source_col] == "1":
+    if row[year_col] in years and row[dirferme_col] in directions_fermes and row[source_col] == "1" and row[sourcetype_col] not in exclude_sources:
         croissances[row[dirferme_col]][row[year_col]] += float(row[value_col] or 0)
         if row[exchange_col] == "Imports":
             croissances_imports[row[dirferme_col]][row[year_col]] += float(row[value_col] or 0)
