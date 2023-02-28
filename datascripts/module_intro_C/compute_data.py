@@ -52,10 +52,10 @@ def regress(region, growth, label):
     model.fit(x, y)
     score = model.score(x, y)
     print("R²:", score)
-    slope = model.coef_
+    slope = model.coef_[0]
     print("slope:", slope)
     y0 = model.intercept_
-    print("slope:", y0)
+    print("intercept:", y0)
     return (score, slope, y0)
 
 with open("regressions.csv", "w") as f:
