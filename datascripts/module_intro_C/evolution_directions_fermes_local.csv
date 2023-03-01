@@ -1,0 +1,1149 @@
+year,direction_ferme,value,kind
+1740,Marseille,109641515.25605261,total
+1740,Marseille,49485692.83599193,imports
+1740,Marseille,60155822.42006069,exports
+1740,Marseille,92192853.92166692,total_no_colonial
+1740,Marseille,42770046.7452086,imports_no_colonial
+1740,Marseille,49422807.176458314,exports_no_colonial
+1740,Bordeaux,34215493.87234497,total
+1740,Bordeaux,15215823.9939525,imports
+1740,Bordeaux,18999669.878392473,exports
+1740,Bordeaux,21168690.995450623,total_no_colonial
+1740,Bordeaux,7509973.244910998,imports_no_colonial
+1740,Bordeaux,13658717.750539627,exports_no_colonial
+1740,Nantes,40152182.6768143,total
+1740,Nantes,15781864.300198868,imports
+1740,Nantes,24370318.37661544,exports
+1740,Nantes,22862459.878206708,total_no_colonial
+1740,Nantes,6368852.277259383,imports_no_colonial
+1740,Nantes,16493607.600947326,exports_no_colonial
+1740,La Rochelle,19592794.140117444,total
+1740,La Rochelle,9775962.24040329,imports
+1740,La Rochelle,9816831.899714151,exports
+1740,La Rochelle,16689691.98688759,total_no_colonial
+1740,La Rochelle,7754903.31077304,imports_no_colonial
+1740,La Rochelle,8934788.67611455,exports_no_colonial
+1741,Marseille,115366928.14755529,total
+1741,Marseille,51981444.31035002,imports
+1741,Marseille,63385483.837205276,exports
+1741,Marseille,96362034.68260647,total_no_colonial
+1741,Marseille,43933405.025973506,imports_no_colonial
+1741,Marseille,52428629.65663297,exports_no_colonial
+1741,Bordeaux,16893245.116355717,imports
+1741,Bordeaux,9129363.116353719,imports_no_colonial
+1741,Nantes,57237294.94207373,total
+1741,Nantes,35906236.66444655,imports
+1741,Nantes,21331058.27762719,exports
+1741,Nantes,41832532.556854516,total_no_colonial
+1741,Nantes,26872116.049812768,imports_no_colonial
+1741,Nantes,14960416.507041749,exports_no_colonial
+1741,La Rochelle,16755715.98272359,total
+1741,La Rochelle,7074108.810876449,imports
+1741,La Rochelle,9681607.171847142,exports
+1741,La Rochelle,14140793.81729184,total_no_colonial
+1741,La Rochelle,5488566.314542199,imports_no_colonial
+1741,La Rochelle,8652227.502749642,exports_no_colonial
+1742,Marseille,52176220.79880458,imports
+1742,Marseille,44357692.08332365,imports_no_colonial
+1742,Bordeaux,52762324.43943313,total
+1742,Bordeaux,19306091.253180537,imports
+1742,Bordeaux,33456233.186252587,exports
+1742,Bordeaux,34951524.60524518,total_no_colonial
+1742,Bordeaux,10343686.270788386,imports_no_colonial
+1742,Bordeaux,24607838.334456794,exports_no_colonial
+1742,Nantes,58012489.230124384,total
+1742,Nantes,36260581.93065922,imports
+1742,Nantes,21751907.29946517,exports
+1742,Nantes,38714571.65784699,total_no_colonial
+1742,Nantes,25612612.794653185,imports_no_colonial
+1742,Nantes,13101958.863193799,exports_no_colonial
+1743,Marseille,128194438.10974611,total
+1743,Marseille,64238856.881133206,imports
+1743,Marseille,63955581.22861291,exports
+1743,Marseille,111400675.93140121,total_no_colonial
+1743,Marseille,56034306.568348326,imports_no_colonial
+1743,Marseille,55366369.36305288,exports_no_colonial
+1743,Bordeaux,61082613.590605564,total
+1743,Bordeaux,22053274.816009477,imports
+1743,Bordeaux,39029338.77459609,exports
+1743,Bordeaux,39163301.752728835,total_no_colonial
+1743,Bordeaux,11291055.367959525,imports_no_colonial
+1743,Bordeaux,27872246.384769306,exports_no_colonial
+1743,Nantes,40443761.38795564,total
+1743,Nantes,22062462.899250045,imports
+1743,Nantes,18381298.488705598,exports
+1743,Nantes,24729044.711199727,total_no_colonial
+1743,Nantes,12284609.430581493,imports_no_colonial
+1743,Nantes,12444435.280618234,exports_no_colonial
+1744,Marseille,60782878.49634711,total
+1744,Marseille,32198747.948294297,imports
+1744,Marseille,28584130.54805281,exports
+1744,Marseille,52177668.18760845,total_no_colonial
+1744,Marseille,28740089.852575596,imports_no_colonial
+1744,Marseille,23437578.33503285,exports_no_colonial
+1744,Bordeaux,46519817.77354968,total
+1744,Bordeaux,18768215.945350405,imports
+1744,Bordeaux,27751601.82819928,exports
+1744,Bordeaux,25768339.19805635,total_no_colonial
+1744,Bordeaux,7749348.642382153,imports_no_colonial
+1744,Bordeaux,18018990.5556742,exports_no_colonial
+1744,Nantes,30708149.493465453,total
+1744,Nantes,14908209.789692322,imports
+1744,Nantes,15799939.70377313,exports
+1744,Nantes,17217072.771855608,total_no_colonial
+1744,Nantes,7875552.63778672,imports_no_colonial
+1744,Nantes,9341520.13406889,exports_no_colonial
+1744,La Rochelle,11166413.175277064,total
+1744,La Rochelle,5592241.20323792,imports
+1744,La Rochelle,5574171.972039144,exports
+1744,La Rochelle,9668706.345578816,total_no_colonial
+1744,La Rochelle,4404401.676200421,imports_no_colonial
+1744,La Rochelle,5264304.669378394,exports_no_colonial
+1745,Marseille,78061061.12713285,total
+1745,Marseille,35635165.03908121,imports
+1745,Marseille,42425896.08805164,exports
+1745,Marseille,70453930.43532729,total_no_colonial
+1745,Marseille,30833885.413602903,imports_no_colonial
+1745,Marseille,39620045.021724395,exports_no_colonial
+1745,Bordeaux,37745629.06151001,total
+1745,Bordeaux,17239608.62123866,imports
+1745,Bordeaux,20506020.440271348,exports
+1745,Bordeaux,21657644.99917772,total_no_colonial
+1745,Bordeaux,7023151.476213921,imports_no_colonial
+1745,Bordeaux,14634493.5229638,exports_no_colonial
+1745,Nantes,24058836.94309482,total
+1745,Nantes,8151658.005209526,imports
+1745,Nantes,15907178.937885296,exports
+1745,Nantes,10849648.965097541,total_no_colonial
+1745,Nantes,3581259.4177213027,imports_no_colonial
+1745,Nantes,7268389.547376239,exports_no_colonial
+1746,Marseille,73432842.2245298,total
+1746,Marseille,32880300.461018704,imports
+1746,Marseille,40552541.76351109,exports
+1746,Marseille,67484302.60745627,total_no_colonial
+1746,Marseille,29651222.161240414,imports_no_colonial
+1746,Marseille,37833080.44621586,exports_no_colonial
+1746,Bordeaux,35852053.14820024,total
+1746,Bordeaux,11962451.279120866,imports
+1746,Bordeaux,23889601.869079374,exports
+1746,Bordeaux,23487910.349078428,total_no_colonial
+1746,Bordeaux,6600125.512250955,imports_no_colonial
+1746,Bordeaux,16887784.83682747,exports_no_colonial
+1746,Nantes,29253335.959653705,total
+1746,Nantes,8183454.363562834,imports
+1746,Nantes,21069881.59609087,exports
+1746,Nantes,20173608.97870717,total_no_colonial
+1746,Nantes,4332129.955432768,imports_no_colonial
+1746,Nantes,15841479.0232744,exports_no_colonial
+1746,Bayonne,19382859.430333726,exports
+1746,Bayonne,12685509.671766309,exports_no_colonial
+1746,La Rochelle,21321328.080479153,total
+1746,La Rochelle,9353645.776156569,imports
+1746,La Rochelle,11967682.304322582,exports
+1746,La Rochelle,13829966.502062157,total_no_colonial
+1746,La Rochelle,4265938.24099594,imports_no_colonial
+1746,La Rochelle,9564028.261066217,exports_no_colonial
+1747,Marseille,74418213.11469391,total
+1747,Marseille,35600040.11585111,imports
+1747,Marseille,38818172.998842806,exports
+1747,Marseille,69839685.9997605,total_no_colonial
+1747,Marseille,34037964.11593708,imports_no_colonial
+1747,Marseille,35801721.88382342,exports_no_colonial
+1747,Bordeaux,41561901.25071488,total
+1747,Bordeaux,20593033.58523307,imports
+1747,Bordeaux,20968867.665481817,exports
+1747,Bordeaux,17008904.476898536,total_no_colonial
+1747,Bordeaux,7251971.785057778,imports_no_colonial
+1747,Bordeaux,9756932.691840757,exports_no_colonial
+1747,Bayonne,12752367.735913675,exports
+1747,Bayonne,9514095.241400063,exports_no_colonial
+1747,La Rochelle,47706829.27353594,total
+1747,La Rochelle,11180400.85292304,imports
+1747,La Rochelle,36526428.4206129,exports
+1747,La Rochelle,38153804.2132972,total_no_colonial
+1747,La Rochelle,5061472.217591039,imports_no_colonial
+1747,La Rochelle,33092331.995706163,exports_no_colonial
+1748,Marseille,40122103.95795721,imports
+1748,Marseille,36626721.924818955,imports_no_colonial
+1748,Bordeaux,32208934.610555325,total
+1748,Bordeaux,12264367.507695038,imports
+1748,Bordeaux,19944567.102860287,exports
+1748,Bordeaux,19988647.22155146,total_no_colonial
+1748,Bordeaux,8336408.944307788,imports_no_colonial
+1748,Bordeaux,11652238.277243672,exports_no_colonial
+1748,Bayonne,15283047.050639473,exports
+1748,Bayonne,11998852.330056598,exports_no_colonial
+1748,La Rochelle,23030805.99066665,total
+1748,La Rochelle,8188965.940917931,imports
+1748,La Rochelle,14841840.04974872,exports
+1748,La Rochelle,17366464.300394785,total_no_colonial
+1748,La Rochelle,4638988.30455933,imports_no_colonial
+1748,La Rochelle,12727475.995835455,exports_no_colonial
+1749,Marseille,160025524.75081217,total
+1749,Marseille,88233454.24000002,imports
+1749,Marseille,71792070.51081216,exports
+1749,Marseille,137854870.17080778,total_no_colonial
+1749,Marseille,77816510.64,imports_no_colonial
+1749,Marseille,60038359.53080777,exports_no_colonial
+1749,Bordeaux,67491695.93469042,total
+1749,Bordeaux,29675317.522572573,imports
+1749,Bordeaux,37816378.41211784,exports
+1749,Bordeaux,39217018.244778186,total_no_colonial
+1749,Bordeaux,14754875.312067341,imports_no_colonial
+1749,Bordeaux,24462142.93271085,exports_no_colonial
+1749,Nantes,44409819.76721923,total
+1749,Nantes,23862874.46869859,imports
+1749,Nantes,20546945.29852064,exports
+1749,Nantes,33804773.50883924,total_no_colonial
+1749,Nantes,22541751.22611316,imports_no_colonial
+1749,Nantes,11263022.282726085,exports_no_colonial
+1749,Bayonne,16263866.812155545,total
+1749,Bayonne,6552822.230642415,imports
+1749,Bayonne,9711044.58151313,exports
+1749,Bayonne,13953927.831096992,total_no_colonial
+1749,Bayonne,5515262.530547614,imports_no_colonial
+1749,Bayonne,8438665.300549379,exports_no_colonial
+1749,La Rochelle,23321457.508742854,total
+1749,La Rochelle,10665813.021295529,imports
+1749,La Rochelle,12655644.487447327,exports
+1749,La Rochelle,17928852.572391655,total_no_colonial
+1749,La Rochelle,7697792.48644573,imports_no_colonial
+1749,La Rochelle,10231060.085945927,exports_no_colonial
+1750,Marseille,151081185.75407392,total
+1750,Marseille,75982636.59665269,imports
+1750,Marseille,75098549.15742122,exports
+1750,Marseille,132061740.59148782,total_no_colonial
+1750,Marseille,66170875.756852664,imports_no_colonial
+1750,Marseille,65890864.83463517,exports_no_colonial
+1750,Rouen,58474351.935568735,total
+1750,Rouen,34308264.03838983,imports
+1750,Rouen,24166087.897178903,exports
+1750,Rouen,47099490.45446172,total_no_colonial
+1750,Rouen,27801124.507392816,imports_no_colonial
+1750,Rouen,19298365.947068904,exports_no_colonial
+1750,Bordeaux,58859614.518199995,total
+1750,Bordeaux,25152870.00595,imports
+1750,Bordeaux,33706744.51225,exports
+1750,Bordeaux,32360989.41389,total_no_colonial
+1750,Bordeaux,10678968.204940002,imports_no_colonial
+1750,Bordeaux,21682021.208949998,exports_no_colonial
+1750,Nantes,35756157.6544666,total
+1750,Nantes,19368854.402506195,imports
+1750,Nantes,16387303.251960404,exports
+1750,Nantes,16502110.326686596,total_no_colonial
+1750,Nantes,7673076.002616197,imports_no_colonial
+1750,Nantes,8829034.3240704,exports_no_colonial
+1750,Bayonne,16629982.379220197,total
+1750,Bayonne,7599680.990409998,imports
+1750,Bayonne,9030301.388810199,exports
+1750,Bayonne,14152472.993200198,total_no_colonial
+1750,Bayonne,6811627.090399999,imports_no_colonial
+1750,Bayonne,7340845.9028002,exports_no_colonial
+1750,La Rochelle,21139169.508223407,total
+1750,La Rochelle,11434237.193970403,imports
+1750,La Rochelle,9704932.314253004,exports
+1750,La Rochelle,16262212.0072824,total_no_colonial
+1750,La Rochelle,7578549.693970401,imports_no_colonial
+1750,La Rochelle,8683662.313312,exports_no_colonial
+1751,Marseille,138986808.4911104,total
+1751,Marseille,67624214.96659152,imports
+1751,Marseille,71362593.52451889,exports
+1751,Marseille,120241210.20059922,total_no_colonial
+1751,Marseille,61522770.47357665,imports_no_colonial
+1751,Marseille,58718439.72702257,exports_no_colonial
+1751,Bordeaux,60095279.15993086,total
+1751,Bordeaux,26737232.39556796,imports
+1751,Bordeaux,33358046.7643629,exports
+1751,Bordeaux,36672930.18995942,total_no_colonial
+1751,Bordeaux,16425674.82652786,imports_no_colonial
+1751,Bordeaux,20247255.363431558,exports_no_colonial
+1751,Nantes,15755534.798751967,exports
+1751,Nantes,8942077.851577858,exports_no_colonial
+1751,Bayonne,20085182.79129176,total
+1751,Bayonne,8806950.52970627,imports
+1751,Bayonne,11278232.26158549,exports
+1751,Bayonne,16501515.797100969,total_no_colonial
+1751,Bayonne,7516698.528490768,imports_no_colonial
+1751,Bayonne,8984817.2686102,exports_no_colonial
+1751,La Rochelle,20647303.85387986,total
+1751,La Rochelle,8930031.69923278,imports
+1751,La Rochelle,11717272.154647084,exports
+1751,La Rochelle,15569207.777239926,total_no_colonial
+1751,La Rochelle,6264287.17146678,imports_no_colonial
+1751,La Rochelle,9304920.605773145,exports_no_colonial
+1752,Marseille,152649217.7040942,total
+1752,Marseille,72536829.71123928,imports
+1752,Marseille,80112387.99285492,exports
+1752,Marseille,128178268.88924642,total_no_colonial
+1752,Marseille,62664310.407607,imports_no_colonial
+1752,Marseille,65513958.48163942,exports_no_colonial
+1752,Bordeaux,92987045.605435,total
+1752,Bordeaux,26313651.377653956,imports
+1752,Bordeaux,66673394.22778104,exports
+1752,Bordeaux,57185673.23863688,total_no_colonial
+1752,Bordeaux,16084385.291098023,imports_no_colonial
+1752,Bordeaux,41101287.94753886,exports_no_colonial
+1752,Nantes,19488858.359375678,exports
+1752,Nantes,11292195.219725497,exports_no_colonial
+1752,Bayonne,16041652.941921158,total
+1752,Bayonne,6549367.101444947,imports
+1752,Bayonne,9492285.840476211,exports
+1752,Bayonne,13639866.063100826,total_no_colonial
+1752,Bayonne,5735159.200996616,imports_no_colonial
+1752,Bayonne,7904706.86210421,exports_no_colonial
+1752,La Rochelle,19547146.653775062,total
+1752,La Rochelle,9562134.84912517,imports
+1752,La Rochelle,9985011.804649893,exports
+1752,La Rochelle,15876864.524760611,total_no_colonial
+1752,La Rochelle,7352134.248290169,imports_no_colonial
+1752,La Rochelle,8524730.276470441,exports_no_colonial
+1753,Marseille,67731312.8675276,imports
+1753,Marseille,58563002.97366647,imports_no_colonial
+1753,Bordeaux,128147799.04138356,total
+1753,Bordeaux,31241378.94684226,imports
+1753,Bordeaux,96906420.09454131,exports
+1753,Bordeaux,77803153.54717268,total_no_colonial
+1753,Bordeaux,11037228.183258358,imports_no_colonial
+1753,Bordeaux,66765925.36391432,exports_no_colonial
+1753,Nantes,21939713.34752571,exports
+1753,Nantes,13170095.837917892,exports_no_colonial
+1753,Bayonne,15127865.798115622,total
+1753,Bayonne,5891327.052754796,imports
+1753,Bayonne,9236538.745360825,exports
+1753,Bayonne,12185144.764885966,total_no_colonial
+1753,Bayonne,4254871.700846754,imports_no_colonial
+1753,Bayonne,7930273.064039211,exports_no_colonial
+1753,La Rochelle,17274754.971163396,total
+1753,La Rochelle,8358230.425187,imports
+1753,La Rochelle,8916524.545976397,exports
+1753,La Rochelle,13689581.505469998,total_no_colonial
+1753,La Rochelle,6117667.016289091,imports_no_colonial
+1753,La Rochelle,7571914.489180908,exports_no_colonial
+1754,Marseille,74212763.01663025,imports
+1754,Marseille,60963457.2636041,imports_no_colonial
+1754,Bordeaux,121966756.17763133,total
+1754,Bordeaux,31255901.0252594,imports
+1754,Bordeaux,90710855.15237193,exports
+1754,Bordeaux,66310170.35933566,total_no_colonial
+1754,Bordeaux,11602374.678187165,imports_no_colonial
+1754,Bordeaux,54707795.6811485,exports_no_colonial
+1754,Nantes,23458883.695358895,exports
+1754,Nantes,13366967.626790376,exports_no_colonial
+1754,Bayonne,17289380.204127267,total
+1754,Bayonne,7119275.740170822,imports
+1754,Bayonne,10170104.463956444,exports
+1754,Bayonne,14359334.10815467,total_no_colonial
+1754,Bayonne,5607412.158552832,imports_no_colonial
+1754,Bayonne,8751921.949601838,exports_no_colonial
+1754,La Rochelle,20361898.042909946,total
+1754,La Rochelle,10592659.154740712,imports
+1754,La Rochelle,9769238.888169235,exports
+1754,La Rochelle,17077246.642831936,total_no_colonial
+1754,La Rochelle,8679417.712880714,imports_no_colonial
+1754,La Rochelle,8397828.929951223,exports_no_colonial
+1755,Marseille,142798869.80244273,total
+1755,Marseille,79420447.92118071,imports
+1755,Marseille,63378421.881262034,exports
+1755,Marseille,120718025.2021401,total_no_colonial
+1755,Marseille,67530864.66140786,imports_no_colonial
+1755,Marseille,53187160.540732235,exports_no_colonial
+1755,Rouen,48031151.68087739,total
+1755,Rouen,24352828.677996635,imports
+1755,Rouen,23678323.002880752,exports
+1755,Rouen,31761797.162419,total_no_colonial
+1755,Rouen,16248958.761210268,imports_no_colonial
+1755,Rouen,15512838.401208732,exports_no_colonial
+1755,Bordeaux,70406283.96697909,total
+1755,Bordeaux,28538401.98042751,imports
+1755,Bordeaux,41867881.98655157,exports
+1755,Bordeaux,34930179.671590865,total_no_colonial
+1755,Bordeaux,9987974.531700868,imports_no_colonial
+1755,Bordeaux,24942205.13989,exports_no_colonial
+1755,Nantes,30841541.54817666,total
+1755,Nantes,15820236.834144201,imports
+1755,Nantes,15021304.714032458,exports
+1755,Nantes,14876759.088964075,total_no_colonial
+1755,Nantes,5296486.928409721,imports_no_colonial
+1755,Nantes,9580272.160554353,exports_no_colonial
+1755,Bayonne,18386550.5705723,total
+1755,Bayonne,7318646.034677398,imports
+1755,Bayonne,11067904.535894904,exports
+1755,Bayonne,15999202.915834371,total_no_colonial
+1755,Bayonne,5949910.367980328,imports_no_colonial
+1755,Bayonne,10049292.547854042,exports_no_colonial
+1756,Marseille,113083436.7717866,total
+1756,Marseille,50817634.884949565,imports
+1756,Marseille,62265801.88683704,exports
+1756,Marseille,99900998.25487915,total_no_colonial
+1756,Marseille,45795601.118200876,imports_no_colonial
+1756,Marseille,54105397.13667827,exports_no_colonial
+1756,Bordeaux,48940497.324008055,total
+1756,Bordeaux,16705121.158854103,imports
+1756,Bordeaux,32235376.16515395,exports
+1756,Bordeaux,24717653.891584866,total_no_colonial
+1756,Bordeaux,6322150.323772414,imports_no_colonial
+1756,Bordeaux,18395503.56781245,exports_no_colonial
+1756,Nantes,16707043.02312034,total
+1756,Nantes,7039868.723841467,imports
+1756,Nantes,9667174.299278872,exports
+1756,Nantes,9998220.870939206,total_no_colonial
+1756,Nantes,3549154.285261427,imports_no_colonial
+1756,Nantes,6449066.585677779,exports_no_colonial
+1756,Bayonne,16806833.632699765,total
+1756,Bayonne,5470397.1434133705,imports
+1756,Bayonne,11336436.489286397,exports
+1756,Bayonne,14036341.890176062,total_no_colonial
+1756,Bayonne,3924407.6782068713,imports_no_colonial
+1756,Bayonne,10111934.21196919,exports_no_colonial
+1756,La Rochelle,14507895.704639208,total
+1756,La Rochelle,7069464.788738561,imports
+1756,La Rochelle,7438430.915900648,exports
+1756,La Rochelle,9895355.123279609,total_no_colonial
+1756,La Rochelle,3900938.2652850896,imports_no_colonial
+1756,La Rochelle,5994416.857994519,exports_no_colonial
+1757,Marseille,53358505.38187696,imports
+1757,Marseille,49250171.02619471,imports_no_colonial
+1757,Bordeaux,39823112.57058905,total
+1757,Bordeaux,11011190.5447474,imports
+1757,Bordeaux,28811922.02584165,exports
+1757,Bordeaux,29760802.33692637,total_no_colonial
+1757,Bordeaux,6699487.901823809,imports_no_colonial
+1757,Bordeaux,23061314.435102563,exports_no_colonial
+1757,Nantes,4984994.270048742,exports
+1757,Nantes,4489054.24027548,exports_no_colonial
+1757,Bayonne,18611987.65773474,total
+1757,Bayonne,5846503.622570667,imports
+1757,Bayonne,12765484.035164073,exports
+1757,Bayonne,16603588.978483865,total_no_colonial
+1757,Bayonne,5012054.379928229,imports_no_colonial
+1757,Bayonne,11591534.598555636,exports_no_colonial
+1757,La Rochelle,15827263.197905347,total
+1757,La Rochelle,7261098.010339802,imports
+1757,La Rochelle,8566165.187565545,exports
+1757,La Rochelle,13720239.882770658,total_no_colonial
+1757,La Rochelle,6629970.019595803,imports_no_colonial
+1757,La Rochelle,7090269.863174854,exports_no_colonial
+1758,Marseille,36837276.13591482,imports
+1758,Marseille,33598548.635578014,imports_no_colonial
+1758,Bordeaux,31759352.620401185,total
+1758,Bordeaux,4681610.656391415,imports
+1758,Bordeaux,27077741.96400977,exports
+1758,Bordeaux,30521420.05424381,total_no_colonial
+1758,Bordeaux,4269072.852204252,imports_no_colonial
+1758,Bordeaux,26252347.20203956,exports_no_colonial
+1758,Nantes,6539151.7942396235,total
+1758,Nantes,3041718.790162194,imports
+1758,Nantes,3497433.0040774294,exports
+1758,Nantes,5707331.839890473,total_no_colonial
+1758,Nantes,2551087.235807074,imports_no_colonial
+1758,Nantes,3156244.6040833993,exports_no_colonial
+1758,Bayonne,15894623.246832106,total
+1758,Bayonne,4042965.1683435,imports
+1758,Bayonne,11851658.078488607,exports
+1758,Bayonne,14635349.214256875,total_no_colonial
+1758,Bayonne,3554561.6695203,imports_no_colonial
+1758,Bayonne,11080787.544736575,exports_no_colonial
+1758,La Rochelle,7892832.619919436,total
+1758,La Rochelle,2489366.1284004296,imports
+1758,La Rochelle,5403466.491519006,exports
+1758,La Rochelle,7586784.620068386,total_no_colonial
+1758,La Rochelle,2354563.6284004296,imports_no_colonial
+1758,La Rochelle,5232220.991667957,exports_no_colonial
+1759,Marseille,71379103.67011715,total
+1759,Marseille,38241410.691821605,imports
+1759,Marseille,33137692.97829555,exports
+1759,Marseille,66455656.26762006,total_no_colonial
+1759,Marseille,34296920.28453625,imports_no_colonial
+1759,Marseille,32158735.983083803,exports_no_colonial
+1759,Bordeaux,31879684.77956994,total
+1759,Bordeaux,8256959.730143646,imports
+1759,Bordeaux,23622725.049426295,exports
+1759,Bordeaux,30487823.266116474,total_no_colonial
+1759,Bordeaux,7178133.522430795,imports_no_colonial
+1759,Bordeaux,23309689.743685678,exports_no_colonial
+1759,Nantes,7052664.139287565,total
+1759,Nantes,3829024.131588031,imports
+1759,Nantes,3223640.0076995343,exports
+1759,Nantes,5643029.476544005,total_no_colonial
+1759,Nantes,2573879.8584496207,imports_no_colonial
+1759,Nantes,3069149.618094384,exports_no_colonial
+1759,Bayonne,28213363.30341639,total
+1759,Bayonne,5841264.294555447,imports
+1759,Bayonne,22372099.008860942,exports
+1759,Bayonne,26752035.17090975,total_no_colonial
+1759,Bayonne,4933805.896260648,imports_no_colonial
+1759,Bayonne,21818229.274649102,exports_no_colonial
+1759,La Rochelle,5914391.078003212,total
+1759,La Rochelle,2537916.1779194237,imports
+1759,La Rochelle,3376474.900083788,exports
+1759,La Rochelle,5694046.725195842,total_no_colonial
+1759,La Rochelle,2362073.0751120537,imports_no_colonial
+1759,La Rochelle,3331973.650083788,exports_no_colonial
+1760,Marseille,30709015.25629021,exports
+1760,Marseille,29649339.857185278,exports_no_colonial
+1760,Bordeaux,31965375.94073119,total
+1760,Bordeaux,8626459.70177719,imports
+1760,Bordeaux,23338916.238954,exports
+1760,Bordeaux,29107079.0354503,total_no_colonial
+1760,Bordeaux,6461837.951410677,imports_no_colonial
+1760,Bordeaux,22645241.08403962,exports_no_colonial
+1760,Nantes,6693610.976483328,total
+1760,Nantes,2325837.7275272883,imports
+1760,Nantes,4367773.2489560405,exports
+1760,Nantes,6433357.474504799,total_no_colonial
+1760,Nantes,2172818.8743801382,imports_no_colonial
+1760,Nantes,4260538.600124661,exports_no_colonial
+1760,Bayonne,20134008.34647001,total
+1760,Bayonne,5435098.078555205,imports
+1760,Bayonne,14698910.267914804,exports
+1760,Bayonne,18944021.15999452,total_no_colonial
+1760,Bayonne,4820746.325038716,imports_no_colonial
+1760,Bayonne,14123274.834955806,exports_no_colonial
+1760,La Rochelle,6173162.77964594,total
+1760,La Rochelle,2857492.65888236,imports
+1760,La Rochelle,3315670.12076358,exports
+1760,La Rochelle,4803365.6951494,total_no_colonial
+1760,La Rochelle,1732702.4252254302,imports_no_colonial
+1760,La Rochelle,3070663.26992397,exports_no_colonial
+1761,Marseille,79304676.76851721,total
+1761,Marseille,47979838.72922086,imports
+1761,Marseille,31324838.039296355,exports
+1761,Marseille,73677209.60001858,total_no_colonial
+1761,Marseille,44138932.7647085,imports_no_colonial
+1761,Marseille,29538276.835310083,exports_no_colonial
+1761,Bordeaux,32110333.543749347,total
+1761,Bordeaux,11761993.868604999,imports
+1761,Bordeaux,20348339.67514435,exports
+1761,Bordeaux,28476337.69468049,total_no_colonial
+1761,Bordeaux,9022853.974535158,imports_no_colonial
+1761,Bordeaux,19453483.720145334,exports_no_colonial
+1761,Nantes,12148698.207461763,total
+1761,Nantes,2497940.9186654636,imports
+1761,Nantes,9650757.2887963,exports
+1761,Nantes,11460645.018835468,total_no_colonial
+1761,Nantes,2039817.1191128553,imports_no_colonial
+1761,Nantes,9420827.899722613,exports_no_colonial
+1761,Bayonne,23598481.575110856,total
+1761,Bayonne,6892727.48136392,imports
+1761,Bayonne,16705754.093746938,exports
+1761,Bayonne,22004797.632015135,total_no_colonial
+1761,Bayonne,6168488.479503409,imports_no_colonial
+1761,Bayonne,15836309.152511727,exports_no_colonial
+1761,La Rochelle,6125383.682661703,total
+1761,La Rochelle,1736264.4450184542,imports
+1761,La Rochelle,4389119.237643248,exports
+1761,La Rochelle,5986341.283390173,total_no_colonial
+1761,La Rochelle,1640371.1957462041,imports_no_colonial
+1761,La Rochelle,4345970.087643969,exports_no_colonial
+1762,Marseille,91016133.9788189,total
+1762,Marseille,58356347.295732476,imports
+1762,Marseille,32659786.68308642,exports
+1762,Marseille,83512926.84020147,total_no_colonial
+1762,Marseille,52798052.655100636,imports_no_colonial
+1762,Marseille,30714874.18510083,exports_no_colonial
+1762,Bordeaux,33747414.055872545,total
+1762,Bordeaux,8980650.366498953,imports
+1762,Bordeaux,24766763.68937359,exports
+1762,Bordeaux,28325568.2249012,total_no_colonial
+1762,Bordeaux,5192312.342161528,imports_no_colonial
+1762,Bordeaux,23133255.88273967,exports_no_colonial
+1762,Nantes,5938902.339939631,total
+1762,Nantes,1557436.64375888,imports
+1762,Nantes,4381465.696180751,exports
+1762,Nantes,5173412.64467358,total_no_colonial
+1762,Nantes,931854.7982334504,imports_no_colonial
+1762,Nantes,4241557.84644013,exports_no_colonial
+1762,Bayonne,25897658.81175834,total
+1762,Bayonne,10309375.272833945,imports
+1762,Bayonne,15588283.538924394,exports
+1762,Bayonne,23933280.85693584,total_no_colonial
+1762,Bayonne,9150501.706736624,imports_no_colonial
+1762,Bayonne,14782779.150199216,exports_no_colonial
+1762,La Rochelle,4152304.1112779393,total
+1762,La Rochelle,1657889.8236691197,imports
+1762,La Rochelle,2494414.2876088195,exports
+1762,La Rochelle,3351031.7523052897,total_no_colonial
+1762,La Rochelle,869285.51485133,imports_no_colonial
+1762,La Rochelle,2481746.23745396,exports_no_colonial
+1763,Marseille,169785284.90606418,total
+1763,Marseille,89767126.8384973,imports
+1763,Marseille,80018158.06756689,exports
+1763,Marseille,142388924.57498908,total_no_colonial
+1763,Marseille,69700948.87807575,imports_no_colonial
+1763,Marseille,72687975.69691333,exports_no_colonial
+1763,Rouen,45496805.8926687,total
+1763,Rouen,23824953.36938641,imports
+1763,Rouen,21671852.523282293,exports
+1763,Rouen,39888433.2691375,total_no_colonial
+1763,Rouen,20300729.95827831,imports_no_colonial
+1763,Rouen,19587703.310859192,exports_no_colonial
+1763,Bordeaux,42108656.50012191,total
+1763,Bordeaux,15484627.192607678,imports
+1763,Bordeaux,26624029.30751423,exports
+1763,Bordeaux,29538789.618085355,total_no_colonial
+1763,Bordeaux,9599851.23902209,imports_no_colonial
+1763,Bordeaux,19938938.379063264,exports_no_colonial
+1763,Nantes,26764634.611834906,total
+1763,Nantes,12612316.607264312,imports
+1763,Nantes,14152318.004570594,exports
+1763,Nantes,19515145.026653104,total_no_colonial
+1763,Nantes,8042691.182263212,imports_no_colonial
+1763,Nantes,11472453.844389893,exports_no_colonial
+1763,Bayonne,21338824.637405492,total
+1763,Bayonne,6681517.054268036,imports
+1763,Bayonne,14657307.583137456,exports
+1763,Bayonne,19294620.88845586,total_no_colonial
+1763,Bayonne,5519893.104585826,imports_no_colonial
+1763,Bayonne,13774727.783870034,exports_no_colonial
+1764,Marseille,170896325.58873504,total
+1764,Marseille,85098107.90470757,imports
+1764,Marseille,85798217.6840275,exports
+1764,Marseille,142139358.7521294,total_no_colonial
+1764,Marseille,70510017.87171552,imports_no_colonial
+1764,Marseille,71629340.88041389,exports_no_colonial
+1764,Rouen,50161964.588806435,total
+1764,Rouen,26470996.890193116,imports
+1764,Rouen,23690967.698613316,exports
+1764,Rouen,34558337.86020608,total_no_colonial
+1764,Rouen,18982903.0009202,imports_no_colonial
+1764,Rouen,15575434.859285884,exports_no_colonial
+1764,Bordeaux,68010327.70630482,exports
+1764,Bordeaux,33894679.10345651,exports_no_colonial
+1764,Nantes,42213765.42899639,total
+1764,Nantes,18930458.92857633,imports
+1764,Nantes,23283306.50042006,exports
+1764,Nantes,21095358.110057916,total_no_colonial
+1764,Nantes,7202041.48135166,imports_no_colonial
+1764,Nantes,13893316.628706258,exports_no_colonial
+1764,Bayonne,20355339.127839807,total
+1764,Bayonne,7915937.524806063,imports
+1764,Bayonne,12439401.603033744,exports
+1764,Bayonne,17378046.251813967,total_no_colonial
+1764,Bayonne,6643853.751051952,imports_no_colonial
+1764,Bayonne,10734192.500762014,exports_no_colonial
+1764,La Rochelle,8847346.48137101,imports
+1764,La Rochelle,4220042.2111123195,imports_no_colonial
+1765,Marseille,160257892.32954246,total
+1765,Marseille,79928781.17570402,imports
+1765,Marseille,80329111.15383846,exports
+1765,Marseille,131240655.19075802,total_no_colonial
+1765,Marseille,65394596.743587896,imports_no_colonial
+1765,Marseille,65846058.44717012,exports_no_colonial
+1765,Bordeaux,73105566.7796037,total
+1765,Bordeaux,12208544.567678874,imports
+1765,Bordeaux,60897022.211924836,exports
+1765,Bordeaux,46128394.73256859,total_no_colonial
+1765,Bordeaux,9094070.143309936,imports_no_colonial
+1765,Bordeaux,37034324.589258656,exports_no_colonial
+1765,Nantes,39633276.01560694,total
+1765,Nantes,16108269.93565357,imports
+1765,Nantes,23525006.07995337,exports
+1765,Nantes,23363762.806199078,total_no_colonial
+1765,Nantes,6479597.705893092,imports_no_colonial
+1765,Nantes,16884165.100305986,exports_no_colonial
+1765,Bayonne,25243299.21927449,total
+1765,Bayonne,8586017.940574985,imports
+1765,Bayonne,16657281.278699506,exports
+1765,Bayonne,22569059.33706682,total_no_colonial
+1765,Bayonne,7078135.752759695,imports_no_colonial
+1765,Bayonne,15490923.584307127,exports_no_colonial
+1765,La Rochelle,11571510.03004371,total
+1765,La Rochelle,4171057.278243181,imports
+1765,La Rochelle,7400452.75180053,exports
+1765,La Rochelle,8161223.778470071,total_no_colonial
+1765,La Rochelle,2208715.262079641,imports_no_colonial
+1765,La Rochelle,5952508.51639043,exports_no_colonial
+1766,Marseille,149053946.65444914,total
+1766,Marseille,80910757.86589214,imports
+1766,Marseille,68143188.788557,exports
+1766,Marseille,124848376.0315132,total_no_colonial
+1766,Marseille,66919275.50400648,imports_no_colonial
+1766,Marseille,57929100.52750672,exports_no_colonial
+1766,Rouen,50794330.35516087,total
+1766,Rouen,25353315.665176697,imports
+1766,Rouen,25441014.689984173,exports
+1766,Rouen,32461012.994699825,total_no_colonial
+1766,Rouen,15854264.768555736,imports_no_colonial
+1766,Rouen,16606748.226144088,exports_no_colonial
+1766,Bordeaux,73181925.17871957,total
+1766,Bordeaux,25701500.307875685,imports
+1766,Bordeaux,47480424.87084388,exports
+1766,Bordeaux,47958470.483713806,total_no_colonial
+1766,Bordeaux,13881372.391643638,imports_no_colonial
+1766,Bordeaux,34077098.09207017,exports_no_colonial
+1766,Nantes,100683009.86086693,total
+1766,Nantes,17623090.132152636,imports
+1766,Nantes,83059919.7287143,exports
+1766,Nantes,83084941.07071419,total_no_colonial
+1766,Nantes,8006979.924876008,imports_no_colonial
+1766,Nantes,75077961.14583819,exports_no_colonial
+1766,Bayonne,17116868.576660886,total
+1766,Bayonne,6562373.214066982,imports
+1766,Bayonne,10554495.362593904,exports
+1766,Bayonne,14749631.745971393,total_no_colonial
+1766,Bayonne,5217394.446202063,imports_no_colonial
+1766,Bayonne,9532237.29976933,exports_no_colonial
+1766,La Rochelle,12916548.066509645,total
+1766,La Rochelle,4934124.974354845,imports
+1766,La Rochelle,7982423.092154801,exports
+1766,La Rochelle,8919377.001444036,total_no_colonial
+1766,La Rochelle,3064539.3321407954,imports_no_colonial
+1766,La Rochelle,5854837.669303241,exports_no_colonial
+1767,Marseille,155819227.45312315,total
+1767,Marseille,86346788.65913217,imports
+1767,Marseille,69472438.79399098,exports
+1767,Marseille,128966281.18182853,total_no_colonial
+1767,Marseille,73431204.5040921,imports_no_colonial
+1767,Marseille,55535076.677736424,exports_no_colonial
+1767,Rouen,72615731.36479175,total
+1767,Rouen,46901043.470863774,imports
+1767,Rouen,25714687.893927973,exports
+1767,Rouen,54385603.323712915,total_no_colonial
+1767,Rouen,37322380.098282464,imports_no_colonial
+1767,Rouen,17063223.22543045,exports_no_colonial
+1767,Bordeaux,83484634.5525411,total
+1767,Bordeaux,28239948.84003925,imports
+1767,Bordeaux,55244685.71250185,exports
+1767,Bordeaux,41453650.0629854,total_no_colonial
+1767,Bordeaux,7100075.402736494,imports_no_colonial
+1767,Bordeaux,34353574.660248905,exports_no_colonial
+1767,Nantes,34526296.0226709,total
+1767,Nantes,15138961.52786769,imports
+1767,Nantes,19387334.494803213,exports
+1767,Nantes,17197466.436339036,total_no_colonial
+1767,Nantes,5241694.204087175,imports_no_colonial
+1767,Nantes,11955772.232251858,exports_no_colonial
+1767,Bayonne,17957913.890987836,total
+1767,Bayonne,6924296.990026709,imports
+1767,Bayonne,11033616.900961125,exports
+1767,Bayonne,15797545.245239848,total_no_colonial
+1767,Bayonne,5768971.23279611,imports_no_colonial
+1767,Bayonne,10028574.012443738,exports_no_colonial
+1767,La Rochelle,12283463.360102393,total
+1767,La Rochelle,6113870.114851836,imports
+1767,La Rochelle,6169593.245250556,exports
+1767,La Rochelle,8123421.203556097,total_no_colonial
+1767,La Rochelle,3621021.481952576,imports_no_colonial
+1767,La Rochelle,4502399.721603521,exports_no_colonial
+1768,Marseille,164926838.7412307,total
+1768,Marseille,93173015.27424042,imports
+1768,Marseille,71753823.46699028,exports
+1768,Marseille,140109314.25881693,total_no_colonial
+1768,Marseille,80911944.16220726,imports_no_colonial
+1768,Marseille,59197370.096609674,exports_no_colonial
+1768,Rouen,56837509.56298819,total
+1768,Rouen,34296141.229324356,imports
+1768,Rouen,22541368.333663836,exports
+1768,Rouen,37242187.90085967,total_no_colonial
+1768,Rouen,23562545.846565913,imports_no_colonial
+1768,Rouen,13679642.054293754,exports_no_colonial
+1768,Bordeaux,66384779.23459549,total
+1768,Bordeaux,18740052.71038781,imports
+1768,Bordeaux,47644726.52420768,exports
+1768,Bordeaux,35251726.49073143,total_no_colonial
+1768,Bordeaux,7466132.997967317,imports_no_colonial
+1768,Bordeaux,27785593.49276412,exports_no_colonial
+1768,Nantes,20807669.969185553,exports
+1768,Nantes,12601053.588831801,exports_no_colonial
+1768,Bayonne,11292988.057834482,total
+1768,Bayonne,3063423.6555563197,imports
+1768,Bayonne,8229564.402278162,exports
+1768,Bayonne,9726944.87556688,total_no_colonial
+1768,Bayonne,2253261.4542606203,imports_no_colonial
+1768,Bayonne,7473683.421306259,exports_no_colonial
+1768,La Rochelle,14133178.045252874,total
+1768,La Rochelle,7401081.66164242,imports
+1768,La Rochelle,6732096.383610455,exports
+1768,La Rochelle,8756271.034269072,total_no_colonial
+1768,La Rochelle,4497735.00851315,imports_no_colonial
+1768,La Rochelle,4258536.025755923,exports_no_colonial
+1769,Marseille,151407884.4146128,total
+1769,Marseille,82762431.8833999,imports
+1769,Marseille,68645452.5312129,exports
+1769,Marseille,124658608.35367642,total_no_colonial
+1769,Marseille,68691452.99475726,imports_no_colonial
+1769,Marseille,55967155.35891916,exports_no_colonial
+1769,Rouen,80927211.65017723,total
+1769,Rouen,56522477.47787039,imports
+1769,Rouen,24404734.17230684,exports
+1769,Rouen,59443779.360499546,total_no_colonial
+1769,Rouen,44485037.933381,imports_no_colonial
+1769,Rouen,14958741.427118551,exports_no_colonial
+1769,Bordeaux,115393224.72488971,total
+1769,Bordeaux,59462168.851319335,imports
+1769,Bordeaux,55931055.873570375,exports
+1769,Bordeaux,48318279.142484,total_no_colonial
+1769,Bordeaux,17319323.935682368,imports_no_colonial
+1769,Bordeaux,30998955.206801634,exports_no_colonial
+1769,Nantes,52252637.261229716,total
+1769,Nantes,25702283.24397733,imports
+1769,Nantes,26550354.017252386,exports
+1769,Nantes,29386168.490916498,total_no_colonial
+1769,Nantes,11900824.27066165,imports_no_colonial
+1769,Nantes,17485344.220254846,exports_no_colonial
+1769,Bayonne,16898319.79707307,total
+1769,Bayonne,7607360.136374629,imports
+1769,Bayonne,9290959.660698442,exports
+1769,Bayonne,15509793.641637886,total_no_colonial
+1769,Bayonne,6698594.885198349,imports_no_colonial
+1769,Bayonne,8811198.756439537,exports_no_colonial
+1769,La Rochelle,10713790.469201192,total
+1769,La Rochelle,4993416.530806231,imports
+1769,La Rochelle,5720373.938394961,exports
+1769,La Rochelle,7920831.90714321,total_no_colonial
+1769,La Rochelle,3374441.1247435994,imports_no_colonial
+1769,La Rochelle,4546390.782399611,exports_no_colonial
+1770,Marseille,151567891.1033504,total
+1770,Marseille,88861607.23503114,imports
+1770,Marseille,62706283.86831925,exports
+1770,Marseille,124001305.58759302,total_no_colonial
+1770,Marseille,73671184.88459273,imports_no_colonial
+1770,Marseille,50330120.70300029,exports_no_colonial
+1770,Rouen,49023498.41898596,total
+1770,Rouen,32609788.676224675,imports
+1770,Rouen,16413709.742761288,exports
+1770,Rouen,30513479.967916988,total_no_colonial
+1770,Rouen,20786020.31468678,imports_no_colonial
+1770,Rouen,9727459.653230209,exports_no_colonial
+1770,Bordeaux,213694561.32338905,total
+1770,Bordeaux,120965561.67024802,imports
+1770,Bordeaux,92728999.65314104,exports
+1770,Bordeaux,92374263.95316303,total_no_colonial
+1770,Bordeaux,46825406.99482773,imports_no_colonial
+1770,Bordeaux,45548856.9583353,exports_no_colonial
+1770,Nantes,49078708.3759675,total
+1770,Nantes,31402321.577535108,imports
+1770,Nantes,17676386.798432395,exports
+1770,Nantes,25811000.358326323,total_no_colonial
+1770,Nantes,16681840.624508172,imports_no_colonial
+1770,Nantes,9129159.733818153,exports_no_colonial
+1770,Bayonne,14311781.78460992,total
+1770,Bayonne,5648601.76058723,imports
+1770,Bayonne,8663180.02402269,exports
+1770,Bayonne,12634141.669589087,total_no_colonial
+1770,Bayonne,4564002.05259678,imports_no_colonial
+1770,Bayonne,8070139.616992308,exports_no_colonial
+1770,La Rochelle,10849680.535732154,total
+1770,La Rochelle,4675885.09933538,imports
+1770,La Rochelle,6173795.436396774,exports
+1770,La Rochelle,7075367.338507866,total_no_colonial
+1770,La Rochelle,2830310.11217157,imports_no_colonial
+1770,La Rochelle,4245057.226336296,exports_no_colonial
+1771,Marseille,97527353.57682055,imports
+1771,Marseille,83992829.23529848,imports_no_colonial
+1771,Rouen,73327506.14141776,total
+1771,Rouen,47961553.222477585,imports
+1771,Rouen,25365952.91894017,exports
+1771,Rouen,51453789.00759831,total_no_colonial
+1771,Rouen,35994140.73476239,imports_no_colonial
+1771,Rouen,15459648.272835914,exports_no_colonial
+1771,Bordeaux,93415459.66051455,imports
+1771,Bordeaux,53203407.53370418,imports_no_colonial
+1771,Nantes,46403343.88607542,total
+1771,Nantes,24093575.25181427,imports
+1771,Nantes,22309768.634261154,exports
+1771,Nantes,20780052.006272167,total_no_colonial
+1771,Nantes,8921777.875814755,imports_no_colonial
+1771,Nantes,11858274.13045741,exports_no_colonial
+1771,Bayonne,15032020.643571433,total
+1771,Bayonne,5366804.854854901,imports
+1771,Bayonne,9665215.78871653,exports
+1771,Bayonne,13682754.93062103,total_no_colonial
+1771,Bayonne,4686539.7488310095,imports_no_colonial
+1771,Bayonne,8996215.18179002,exports_no_colonial
+1771,La Rochelle,10840840.44986194,total
+1771,La Rochelle,5076204.03314896,imports
+1771,La Rochelle,5764636.416712981,exports
+1771,La Rochelle,7820871.77738863,total_no_colonial
+1771,La Rochelle,3614279.8251026403,imports_no_colonial
+1771,La Rochelle,4206591.95228599,exports_no_colonial
+1772,Marseille,175456907.62145907,total
+1772,Marseille,92094448.76964861,imports
+1772,Marseille,83362458.85181047,exports
+1772,Marseille,143339379.73074254,total_no_colonial
+1772,Marseille,73461647.39080803,imports_no_colonial
+1772,Marseille,69877732.33993451,exports_no_colonial
+1772,Rouen,50188548.491578735,total
+1772,Rouen,30417758.14715292,imports
+1772,Rouen,19770790.344425816,exports
+1772,Rouen,27239233.79541032,total_no_colonial
+1772,Rouen,16497983.816645572,imports_no_colonial
+1772,Rouen,10741249.97876475,exports_no_colonial
+1772,Bordeaux,151582962.59931034,total
+1772,Bordeaux,71456679.29986116,imports
+1772,Bordeaux,80126283.29944919,exports
+1772,Bordeaux,67076361.160788044,total_no_colonial
+1772,Bordeaux,30532458.267706465,imports_no_colonial
+1772,Bordeaux,36543902.89308158,exports_no_colonial
+1772,Nantes,56438762.86667327,total
+1772,Nantes,26390577.55367836,imports
+1772,Nantes,30048185.31299491,exports
+1772,Nantes,26277473.019711316,total_no_colonial
+1772,Nantes,9126672.648473248,imports_no_colonial
+1772,Nantes,17150800.371238068,exports_no_colonial
+1772,Bayonne,14351581.186162991,total
+1772,Bayonne,6318478.428589949,imports
+1772,Bayonne,8033102.757573042,exports
+1772,Bayonne,12683450.411331143,total_no_colonial
+1772,Bayonne,5294044.7371346,imports_no_colonial
+1772,Bayonne,7389405.674196543,exports_no_colonial
+1772,La Rochelle,16166496.63837478,total
+1772,La Rochelle,6812748.5150308255,imports
+1772,La Rochelle,9353748.123343954,exports
+1772,La Rochelle,12455924.571555257,total_no_colonial
+1772,La Rochelle,4407392.690569205,imports_no_colonial
+1772,La Rochelle,8048531.880986053,exports_no_colonial
+1773,Marseille,191943367.39045423,total
+1773,Marseille,108209078.53882226,imports
+1773,Marseille,83734288.85163195,exports
+1773,Marseille,154538138.9824246,total_no_colonial
+1773,Marseille,89319211.58882771,imports_no_colonial
+1773,Marseille,65218927.39359687,exports_no_colonial
+1773,Rouen,69964917.04095003,total
+1773,Rouen,44410546.42205017,imports
+1773,Rouen,25554370.61889986,exports
+1773,Rouen,39331512.477778554,total_no_colonial
+1773,Rouen,26628464.283342242,imports_no_colonial
+1773,Rouen,12703048.194436308,exports_no_colonial
+1773,Bordeaux,144954494.45848155,total
+1773,Bordeaux,75613889.3156951,imports
+1773,Bordeaux,69340605.14278643,exports
+1773,Bordeaux,66530868.97102955,total_no_colonial
+1773,Bordeaux,36732577.483376175,imports_no_colonial
+1773,Bordeaux,29798291.487653375,exports_no_colonial
+1773,Bayonne,13977718.417804584,total
+1773,Bayonne,5139273.952221456,imports
+1773,Bayonne,8838444.465583127,exports
+1773,Bayonne,12241626.234269615,total_no_colonial
+1773,Bayonne,4323016.038751706,imports_no_colonial
+1773,Bayonne,7918610.195517911,exports_no_colonial
+1773,La Rochelle,27086761.95964256,total
+1773,La Rochelle,10656918.011046315,imports
+1773,La Rochelle,16429843.948596243,exports
+1773,La Rochelle,22992573.483803757,total_no_colonial
+1773,La Rochelle,7923580.668951896,imports_no_colonial
+1773,La Rochelle,15068992.81485186,exports_no_colonial
+1774,Marseille,154534027.9831894,total
+1774,Marseille,81034010.6166285,imports
+1774,Marseille,73500017.3665609,exports
+1774,Marseille,124081140.41220024,total_no_colonial
+1774,Marseille,63014959.7999412,imports_no_colonial
+1774,Marseille,61066180.612259045,exports_no_colonial
+1774,Rouen,79898324.58004877,total
+1774,Rouen,54178534.07285963,imports
+1774,Rouen,25719790.507189132,exports
+1774,Rouen,60262159.94954714,total_no_colonial
+1774,Rouen,43916294.36045147,imports_no_colonial
+1774,Rouen,16345865.589095673,exports_no_colonial
+1774,Bordeaux,124391553.8938669,total
+1774,Bordeaux,60394667.57609494,imports
+1774,Bordeaux,63996886.31777196,exports
+1774,Bordeaux,47560379.24970479,total_no_colonial
+1774,Bordeaux,22579105.591838352,imports_no_colonial
+1774,Bordeaux,24981273.65786644,exports_no_colonial
+1774,Nantes,50732127.234810024,total
+1774,Nantes,28423559.14010851,imports
+1774,Nantes,22308568.094701517,exports
+1774,Nantes,17957623.083509676,total_no_colonial
+1774,Nantes,8220381.153757415,imports_no_colonial
+1774,Nantes,9737241.929752262,exports_no_colonial
+1774,Bayonne,13806653.202568356,total
+1774,Bayonne,5343625.9829942705,imports
+1774,Bayonne,8463027.219574085,exports
+1774,Bayonne,12716619.025744345,total_no_colonial
+1774,Bayonne,4765611.408721372,imports_no_colonial
+1774,Bayonne,7951007.6170229735,exports_no_colonial
+1774,La Rochelle,21859271.800731614,total
+1774,La Rochelle,10279879.885690115,imports
+1774,La Rochelle,11579391.915041497,exports
+1774,La Rochelle,18616683.3785916,total_no_colonial
+1774,La Rochelle,8172829.335032317,imports_no_colonial
+1774,La Rochelle,10443854.043559285,exports_no_colonial
+1775,Marseille,152787784.539378,total
+1775,Marseille,80127942.99381651,imports
+1775,Marseille,72659841.54556146,exports
+1775,Marseille,121943636.64649874,total_no_colonial
+1775,Marseille,65460153.10098726,imports_no_colonial
+1775,Marseille,56483483.545511484,exports_no_colonial
+1775,Rouen,65971194.48840465,total
+1775,Rouen,33387256.816037744,imports
+1775,Rouen,32583937.6723669,exports
+1775,Rouen,38917118.56775449,total_no_colonial
+1775,Rouen,23083616.707529612,imports_no_colonial
+1775,Rouen,15833501.860224877,exports_no_colonial
+1775,Bordeaux,122460882.93295462,total
+1775,Bordeaux,47402819.63788839,imports
+1775,Bordeaux,75058063.29506624,exports
+1775,Bordeaux,39606589.29155147,total_no_colonial
+1775,Bordeaux,13987543.970443632,imports_no_colonial
+1775,Bordeaux,25619045.32110784,exports_no_colonial
+1775,Nantes,9274319.78045202,imports
+1775,Nantes,5523338.952474541,imports_no_colonial
+1775,Bayonne,5270909.792168358,imports
+1775,Bayonne,4471157.12116435,imports_no_colonial
+1775,La Rochelle,21914111.126649827,total
+1775,La Rochelle,10256685.78201927,imports
+1775,La Rochelle,11657425.344630556,exports
+1775,La Rochelle,18095687.265619174,total_no_colonial
+1775,La Rochelle,7562050.016051711,imports_no_colonial
+1775,La Rochelle,10533637.249567464,exports_no_colonial
+1776,Marseille,168894978.15374836,total
+1776,Marseille,104908999.16201356,imports
+1776,Marseille,63985978.99173481,exports
+1776,Marseille,136550528.42887792,total_no_colonial
+1776,Marseille,86733626.53943223,imports_no_colonial
+1776,Marseille,49816901.889445685,exports_no_colonial
+1776,Rouen,87589893.64933136,total
+1776,Rouen,58601908.63290791,imports
+1776,Rouen,28987985.01642344,exports
+1776,Rouen,66420096.28092575,total_no_colonial
+1776,Rouen,44884108.043494776,imports_no_colonial
+1776,Rouen,21535988.237430975,exports_no_colonial
+1776,Bordeaux,143614739.71571714,total
+1776,Bordeaux,65286989.572110236,imports
+1776,Bordeaux,78327750.14360689,exports
+1776,Bordeaux,45203182.21892609,total_no_colonial
+1776,Bordeaux,15691429.014617555,imports_no_colonial
+1776,Bordeaux,29511753.204308536,exports_no_colonial
+1776,Nantes,52611798.7043335,total
+1776,Nantes,29713395.145949706,imports
+1776,Nantes,22898403.558383793,exports
+1776,Nantes,23620859.807183765,total_no_colonial
+1776,Nantes,11110055.769272508,imports_no_colonial
+1776,Nantes,12510804.037911259,exports_no_colonial
+1776,Bayonne,15775298.451347623,total
+1776,Bayonne,6762369.2478743885,imports
+1776,Bayonne,9012929.203473235,exports
+1776,Bayonne,14343279.24695497,total_no_colonial
+1776,Bayonne,5843292.286714618,imports_no_colonial
+1776,Bayonne,8499986.960240353,exports_no_colonial
+1776,La Rochelle,25260613.44092749,total
+1776,La Rochelle,9773015.388894258,imports
+1776,La Rochelle,15487598.052033234,exports
+1776,La Rochelle,21133608.122192893,total_no_colonial
+1776,La Rochelle,7120486.377575998,imports_no_colonial
+1776,La Rochelle,14013121.744616896,exports_no_colonial
+1777,Marseille,151112290.19980615,total
+1777,Marseille,89843072.74581158,imports
+1777,Marseille,61269217.45399458,exports
+1777,Marseille,123496709.83509737,total_no_colonial
+1777,Marseille,75605403.43685709,imports_no_colonial
+1777,Marseille,47891306.398240276,exports_no_colonial
+1777,Bordeaux,217388523.5054081,total
+1777,Bordeaux,120227951.69289368,imports
+1777,Bordeaux,97160571.81251444,exports
+1777,Bordeaux,59057810.17789017,total_no_colonial
+1777,Bordeaux,21552870.305040076,imports_no_colonial
+1777,Bordeaux,37504939.87285009,exports_no_colonial
+1777,Bayonne,6885074.526691326,imports
+1777,Bayonne,6314869.7217075545,imports_no_colonial
+1778,Marseille,112736817.52331236,total
+1778,Marseille,64536603.70214123,imports
+1778,Marseille,48200213.821171135,exports
+1778,Marseille,85929853.85705909,total_no_colonial
+1778,Marseille,50264762.644664966,imports_no_colonial
+1778,Marseille,35665091.212394126,exports_no_colonial
+1778,Bordeaux,200484755.88645342,total
+1778,Bordeaux,132324431.2604504,imports
+1778,Bordeaux,68160324.62600303,exports
+1778,Bordeaux,44156878.57935423,total_no_colonial
+1778,Bordeaux,17200016.706055395,imports_no_colonial
+1778,Bordeaux,26956861.87329883,exports_no_colonial
+1778,Nantes,70481106.37826885,total
+1778,Nantes,28386346.565855905,imports
+1778,Nantes,42094759.81241295,exports
+1778,Nantes,42578390.168815106,total_no_colonial
+1778,Nantes,11089341.658675758,imports_no_colonial
+1778,Nantes,31489048.51013935,exports_no_colonial
+1778,Bayonne,14547533.153390469,total
+1778,Bayonne,5328097.792025309,imports
+1778,Bayonne,9219435.36136516,exports
+1778,Bayonne,13431676.293333624,total_no_colonial
+1778,Bayonne,4488681.835764159,imports_no_colonial
+1778,Bayonne,8942994.457569463,exports_no_colonial
+1778,La Rochelle,16436976.728661306,total
+1778,La Rochelle,8974251.512137672,imports
+1778,La Rochelle,7462725.216523634,exports
+1778,La Rochelle,9318384.633708397,total_no_colonial
+1778,La Rochelle,4030261.589664162,imports_no_colonial
+1778,La Rochelle,5288123.044044235,exports_no_colonial
+1779,Marseille,90291903.57251516,total
+1779,Marseille,55490251.31357412,imports
+1779,Marseille,34801652.25894105,exports
+1779,Marseille,79140647.77318889,total_no_colonial
+1779,Marseille,52189930.038640864,imports_no_colonial
+1779,Marseille,26950717.734548032,exports_no_colonial
+1779,Nantes,22056667.15688417,total
+1779,Nantes,10201460.893932555,imports
+1779,Nantes,11855206.262951616,exports
+1779,Nantes,15897082.733057199,total_no_colonial
+1779,Nantes,5834082.586980555,imports_no_colonial
+1779,Nantes,10063000.146076644,exports_no_colonial
+1779,Bayonne,24440115.70968818,total
+1779,Bayonne,11005466.09027656,imports
+1779,Bayonne,13434649.619411621,exports
+1779,Bayonne,23649179.7612923,total_no_colonial
+1779,Bayonne,10447293.337411059,imports_no_colonial
+1779,Bayonne,13201886.423881244,exports_no_colonial
+1779,La Rochelle,8152645.954763791,total
+1779,La Rochelle,4113823.0753538106,imports
+1779,La Rochelle,4038822.8794099805,exports
+1779,La Rochelle,5463128.081237061,total_no_colonial
+1779,La Rochelle,2622218.27422905,imports_no_colonial
+1779,La Rochelle,2840909.8070080103,exports_no_colonial
+1780,Marseille,95011300.43057716,total
+1780,Marseille,65428244.06186197,imports
+1780,Marseille,29583056.368715186,exports
+1780,Marseille,84088793.57815945,total_no_colonial
+1780,Marseille,59098273.96229381,imports_no_colonial
+1780,Marseille,24990519.615865637,exports_no_colonial
+1780,Bordeaux,32531869.528393723,imports
+1780,Bordeaux,18009549.7860847,imports_no_colonial
+1780,Bayonne,21189102.21787706,total
+1780,Bayonne,8029685.778411877,imports
+1780,Bayonne,13159416.439465184,exports
+1780,Bayonne,19624503.716763504,total_no_colonial
+1780,Bayonne,6874541.969512859,imports_no_colonial
+1780,Bayonne,12749961.747250644,exports_no_colonial
+1780,La Rochelle,7694879.291011558,total
+1780,La Rochelle,3697571.203999307,imports
+1780,La Rochelle,3997308.087012251,exports
+1780,La Rochelle,4534275.061012156,total_no_colonial
+1780,La Rochelle,2086377.8581137871,imports_no_colonial
+1780,La Rochelle,2447897.2028983696,exports_no_colonial
+1789,Marseille,213669273.7414955,total
+1789,Marseille,131546378.56101577,imports
+1789,Marseille,82122895.1804797,exports
+1789,Marseille,158724007.9136053,total_no_colonial
+1789,Marseille,99920806.93623611,imports_no_colonial
+1789,Marseille,58803200.97736919,exports_no_colonial
+1789,Rouen,150323252.0,total
+1789,Rouen,108058409.0,imports
+1789,Rouen,42264843.0,exports
+1789,Rouen,97033228.0,total_no_colonial
+1789,Rouen,75253362.0,imports_no_colonial
+1789,Rouen,21779866.0,exports_no_colonial
+1789,Bordeaux,250634332.2362001,total
+1789,Bordeaux,119052135.35924602,imports
+1789,Bordeaux,131582196.8769541,exports
+1789,Bordeaux,109222850.736045,total_no_colonial
+1789,Bordeaux,44592478.35924597,imports_no_colonial
+1789,Bordeaux,64630372.37679904,exports_no_colonial
+1789,Nantes,99155476.17309555,total
+1789,Nantes,55708633.02290355,imports
+1789,Nantes,43446843.15019201,exports
+1789,Nantes,36653963.92305924,total_no_colonial
+1789,Nantes,16568169.07286724,imports_no_colonial
+1789,Nantes,20085794.850192,exports_no_colonial
+1789,Bayonne,27236435.207829148,total
+1789,Bayonne,10583312.229999999,imports
+1789,Bayonne,16653122.977829149,exports
+1789,Bayonne,24135246.207829148,total_no_colonial
+1789,Bayonne,8485059.23,imports_no_colonial
+1789,Bayonne,15650186.977829149,exports_no_colonial
+1789,La Rochelle,23933450.373430233,total
+1789,La Rochelle,10599154.435469542,imports
+1789,La Rochelle,13334295.937960692,exports
+1789,La Rochelle,13188711.37343025,total_no_colonial
+1789,La Rochelle,4679014.435469553,imports_no_colonial
+1789,La Rochelle,8509696.937960697,exports_no_colonial

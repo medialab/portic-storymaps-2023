@@ -1,0 +1,121 @@
+port,serie,partner_variance
+Marseille,Soie imports,0.014490171054558415
+Marseille,Huile d'olive à manger imports,0.013243266732688526
+Marseille,Blé et autres grains comestibles imports,0.0215209977551944
+Marseille,Sucre imports,0.018065721887215284
+Marseille,Coton non transformé imports,0.0004667947170721953
+Marseille,Étoffes de laine imports,0.013450668046391051
+Marseille,Fils divers imports,0.002134459502962562
+Marseille,Café imports,0.03474578455003586
+Marseille,Laines non transformées diverses imports,0.020513052846196544
+Marseille,Poissons et fruits de mer imports,0.04532759354537521
+Marseille,Étoffes de laine exports,0.0028487772441188686
+Marseille,Sucre exports,0.018702027963073343
+Marseille,Étoffes de soie exports,0.011919594452474452
+Marseille,Café exports,0.02885342555135742
+Marseille,Toiles diverses exports,0.011518348848702587
+Marseille,Indigo exports,0.011967257016388398
+Marseille,Blé et autres grains comestibles exports,0.021612463903328532
+Marseille,Dorure exports,0.02115644216926574
+Marseille,Vins divers exports,0.0050527634557476315
+Marseille,Mercerie exports,0.011254023292117525
+Bordeaux,Sucre imports,0.008056367999236374
+Bordeaux,Café imports,0.043939412458524514
+Bordeaux,Indigo imports,0.006177089815026849
+Bordeaux,Blé et autres grains comestibles imports,0.053584769778673665
+Bordeaux,"Ouvrages de bois, liège et jonc imports",0.014462407552856788
+Bordeaux,Ouvrages métalliques imports,0.01708237064551665
+Bordeaux,Tabac imports,0.02355941580919931
+Bordeaux,Beurre imports,0.028089287457727565
+Bordeaux,Chairs et œufs imports,0.03170514799850493
+Bordeaux,Fromage imports,0.0038595316536167907
+Bordeaux,Vins divers exports,0.007342387168629716
+Bordeaux,Sucre exports,0.023155339820404946
+Bordeaux,Café exports,0.030625449634675367
+Bordeaux,Indigo exports,0.02261481164024505
+Bordeaux,Vins de Bordeaux exports,0.047122323404617264
+Bordeaux,Eaux-de-vie et liqueurs exports,0.008690245482994685
+Bordeaux,"Farine, gruau, biscuits et pâtes exports",0.0025546830424845184
+Bordeaux,Fruits secs et noix exports,0.018079040369308578
+Bordeaux,Chairs et œufs exports,0.0005785015555862514
+Bordeaux,"Armes, munitions, poudre et pierres à fusil exports",0.027281395871715658
+Nantes,Sucre imports,0.028382792921396557
+Nantes,Indigo imports,0.008990511249552602
+Nantes,Café imports,0.0025611075525604128
+Nantes,Ouvrages métalliques imports,0.016452831019374836
+Nantes,Blé et autres grains comestibles imports,0.06331627599911091
+Nantes,Coton non transformé imports,0.028835669241603756
+Nantes,"Ouvrages de bois, liège et jonc imports",0.009339534655037498
+Nantes,Monnaies et métaux précieux imports,0.11662777190285104
+Nantes,Laines non transformées diverses imports,0.031703665134488475
+Nantes,Toiles de coton imports,0.02513472794164817
+Nantes,Sucre exports,0.013253822699912328
+Nantes,Toiles de chanvre et de lin exports,0.013198776376022946
+Nantes,Café exports,0.015778988354041536
+Nantes,Vins divers exports,0.008314604641958049
+Nantes,Toiles de coton exports,0.026965836986481473
+Nantes,Cordage et filets exports,0.015103266272130838
+Nantes,Indigo exports,0.018204317076126998
+Nantes,"Cuirs, peaux et pelleterie exports",0.007864542504516061
+Nantes,Eaux-de-vie et liqueurs exports,0.013625568831353019
+Nantes,Thé exports,0.02115969447100011
+Rouen,Laines non transformées diverses imports,0.026165103621899406
+Rouen,Café imports,0.03923444719306291
+Rouen,Sucre imports,0.00017634843836190933
+Rouen,Coton non transformé imports,0.014527158713939257
+Rouen,Huile d'olive à manger imports,0.018270617093701765
+Rouen,Indigo imports,0.02756365544644699
+Rouen,Blé et autres grains comestibles imports,0.04528529518340242
+Rouen,Quincaillerie imports,0.03734121643230863
+Rouen,Ouvrages métalliques imports,0.028622109904203448
+Rouen,Chairs et œufs imports,0.00042424372676511785
+Rouen,Sucre exports,0.012456345357943781
+Rouen,Café exports,0.01355463927301018
+Rouen,Toiles diverses exports,0.009916822458047887
+Rouen,Toiles de chanvre et de lin exports,0.00880146054533666
+Rouen,Étoffes de laine exports,0.0046879185012664235
+Rouen,Étoffes diverses exports,0.008669200675032167
+Rouen,Chairs et œufs exports,0.01237940822124117
+Rouen,Étoffes de soie exports,0.01210967168687207
+Rouen,Toiles de coton exports,0.023960270235324387
+Rouen,Thé exports,0.07341017345502734
+La Rochelle,Sucre imports,0.0054013102923242086
+La Rochelle,Indigo imports,0.010240261510911718
+La Rochelle,"Cuirs, peaux et pelleterie imports",0.030368212254833684
+La Rochelle,Café imports,0.028672343346576756
+La Rochelle,"Ouvrages de bois, liège et jonc imports",0.0068576677728794605
+La Rochelle,Beurre imports,0.03206743531572084
+La Rochelle,Ouvrages métalliques imports,0.01907937369791959
+La Rochelle,Poissons et fruits de mer imports,0.039277972615334666
+La Rochelle,Fromage imports,0.0024690865899455227
+La Rochelle,Chanvre imports,0.08789812518639245
+La Rochelle,Eaux-de-vie et liqueurs exports,0.012254147609707472
+La Rochelle,Indigo exports,0.01733348168513734
+La Rochelle,Sucre exports,0.023643612417866833
+La Rochelle,Toiles de chanvre et de lin exports,0.011925420836840993
+La Rochelle,Mercerie exports,0.010539471789264315
+La Rochelle,Sel exports,0.011478338688907748
+La Rochelle,Café exports,0.039124172832887424
+La Rochelle,Toiles de coton exports,0.08302199998934
+La Rochelle,"Cuirs, peaux et pelleterie exports",0.028158139173774605
+La Rochelle,"Farine, gruau, biscuits et pâtes exports",0.01903514399514322
+Bayonne,Laines non transformées diverses imports,2.7574851704526998e-06
+Bayonne,Cacao et chocolat imports,0.024559574727575455
+Bayonne,Mercerie imports,0.028359132884263526
+Bayonne,Toiles diverses imports,0.03331447062771068
+Bayonne,Sucre imports,0.04658214082850184
+Bayonne,Ouvrages métalliques imports,0.007453427925525231
+Bayonne,"Cuirs, peaux et pelleterie imports",0.015487261590782871
+Bayonne,Cire imports,0.02989638142647221
+Bayonne,Blé et autres grains comestibles imports,0.05961164774544203
+Bayonne,Indigo imports,0.0822216430868421
+Bayonne,Toiles de chanvre et de lin exports,0.0005048381788114221
+Bayonne,Vins divers exports,0.011587467378104068
+Bayonne,Mercerie exports,1.6663409088600854e-05
+Bayonne,Étoffes de laine exports,1.9051886477328004e-05
+Bayonne,Dorure exports,2.189895728382079e-05
+Bayonne,Sucre exports,0.017175747721764112
+Bayonne,Étoffes de soie exports,0.00039425640506996135
+Bayonne,Cacao et chocolat exports,0.00016569311954721703
+Bayonne,Laines non transformées diverses exports,0.008984875519957814
+Bayonne,Eaux-de-vie et liqueurs exports,0.008524449407495988
