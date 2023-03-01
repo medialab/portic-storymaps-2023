@@ -1,0 +1,912 @@
+year,partner,value,serie
+1725,Italie,6234.5,blé imports
+1726,Italie,8.0,blé imports
+1728,Italie,160.0,blé imports
+1730,Italie,450.0,blé imports
+1731,Italie,2475.0,blé imports
+1732,Italie,2244.0,blé imports
+1739,Italie,169728.0,blé imports
+1740,Italie,622385.75,blé imports
+1741,Italie,1246490.0,blé imports
+1742,Italie,452092.9,blé imports
+1743,Italie,206975.0,blé imports
+1744,Italie,24996.0,blé imports
+1745,Italie,137309.9999999,blé imports
+1746,Italie,483640.0002,blé imports
+1747,Italie,1030224.0,blé imports
+1748,Italie,291528.750084875,blé imports
+1749,Italie,2368059.0,blé imports
+1751,Italie,1606365.00005,blé imports
+1752,Italie,2315088.0,blé imports
+1753,Italie,81491.39998819999,blé imports
+1754,Italie,413375.9999825,blé imports
+1755,Italie,567817.9999673,blé imports
+1756,Italie,388214.0000521,blé imports
+1757,Italie,1553799.999998,blé imports
+1758,Italie,2394374.00002,blé imports
+1759,Italie,3331757.2499912246,blé imports
+1761,Italie,450093.20000734995,blé imports
+1762,Italie,797136.0000012,blé imports
+1763,Italie,613672.0,blé imports
+1764,Italie,550644.0000014,blé imports
+1765,Italie,1613931.0000135,blé imports
+1766,Italie,1219125.000003,blé imports
+1767,Italie,375675.00006389996,blé imports
+1768,Italie,3084461.000079,blé imports
+1769,Italie,2716343.00008,blé imports
+1770,Italie,6574628.500032489,blé imports
+1771,Italie,16138726.0000668,blé imports
+1772,Italie,3686231.250111425,blé imports
+1773,Italie,1535107.00002124,blé imports
+1774,Italie,1832389.5001255502,blé imports
+1775,Italie,1639894.0100608,blé imports
+1776,Italie,4969175.764652611,blé imports
+1777,Italie,5962510.387623299,blé imports
+1778,Italie,4482056.900004281,blé imports
+1779,Italie,572257.50007865,blé imports
+1780,Italie,622274.5003730899,blé imports
+1787,Italie,3235494.839974088,blé imports
+1789,Italie,9612525.32024,blé imports
+1750,Italie,926870.0,blé imports
+1725,Levant et Barbarie,41032.0,blé imports
+1726,Levant et Barbarie,191451.0,blé imports
+1727,Levant et Barbarie,231425.0000029,blé imports
+1728,Levant et Barbarie,399750.0,blé imports
+1729,Levant et Barbarie,215676.0,blé imports
+1730,Levant et Barbarie,14265.0,blé imports
+1731,Levant et Barbarie,139350.0,blé imports
+1732,Levant et Barbarie,7560.0,blé imports
+1733,Levant et Barbarie,61612.50000905,blé imports
+1735,Levant et Barbarie,180.0,blé imports
+1736,Levant et Barbarie,6608.750052175,blé imports
+1737,Levant et Barbarie,135231.709962298,blé imports
+1738,Levant et Barbarie,38608.50003409,blé imports
+1739,Levant et Barbarie,537922.0,blé imports
+1740,Levant et Barbarie,752450.25,blé imports
+1741,Levant et Barbarie,1634160.0,blé imports
+1742,Levant et Barbarie,1041564.499982325,blé imports
+1743,Levant et Barbarie,1490598.5,blé imports
+1744,Levant et Barbarie,1410460.0,blé imports
+1745,Levant et Barbarie,32567.9999688,blé imports
+1746,Levant et Barbarie,898002.9999944,blé imports
+1747,Levant et Barbarie,720072.0,blé imports
+1748,Levant et Barbarie,692328.0,blé imports
+1749,Levant et Barbarie,2032830.0,blé imports
+1751,Levant et Barbarie,2319619.0,blé imports
+1752,Levant et Barbarie,4268449.99999975,blé imports
+1753,Levant et Barbarie,5880952.0,blé imports
+1754,Levant et Barbarie,4597369.0,blé imports
+1755,Levant et Barbarie,1010850.50000021,blé imports
+1756,Levant et Barbarie,147600.0,blé imports
+1757,Levant et Barbarie,757416.0,blé imports
+1758,Levant et Barbarie,295950.0,blé imports
+1759,Levant et Barbarie,107310.0,blé imports
+1761,Levant et Barbarie,426914.700000974,blé imports
+1762,Levant et Barbarie,603348.0,blé imports
+1763,Levant et Barbarie,416880.0,blé imports
+1764,Levant et Barbarie,387768.0,blé imports
+1765,Levant et Barbarie,3609846.0,blé imports
+1766,Levant et Barbarie,1684587.0000096,blé imports
+1767,Levant et Barbarie,2957940.0,blé imports
+1768,Levant et Barbarie,5011830.0,blé imports
+1769,Levant et Barbarie,2143858.50032704,blé imports
+1770,Levant et Barbarie,1400289.0,blé imports
+1771,Levant et Barbarie,2445695.9999998,blé imports
+1772,Levant et Barbarie,2841983.0,blé imports
+1773,Levant et Barbarie,3958684.0,blé imports
+1774,Levant et Barbarie,3903117.9005003297,blé imports
+1775,Levant et Barbarie,3954282.50186233,blé imports
+1776,Levant et Barbarie,4864985.0033738995,blé imports
+1777,Levant et Barbarie,1179064.0006343,blé imports
+1778,Levant et Barbarie,972200.0,blé imports
+1779,Levant et Barbarie,7114000.0,blé imports
+1787,Levant et Barbarie,2538818.08,blé imports
+1789,Levant et Barbarie,2045924.04,blé imports
+1750,Levant et Barbarie,1348852.0,blé imports
+1728,Espagne,400.0,blé imports
+1739,Espagne,8946.0,blé imports
+1740,Espagne,2226.25,blé imports
+1741,Espagne,2100.0,blé imports
+1742,Espagne,593538.0,blé imports
+1743,Espagne,745049.99999895,blé imports
+1744,Espagne,306600.0,blé imports
+1745,Espagne,2064.0,blé imports
+1746,Espagne,288100.000115,blé imports
+1747,Espagne,1111441.49998595,blé imports
+1748,Espagne,589287.0,blé imports
+1749,Espagne,45735.0,blé imports
+1751,Espagne,44412.0,blé imports
+1752,Espagne,72418.500127,blé imports
+1753,Espagne,103160.0,blé imports
+1754,Espagne,17820.0,blé imports
+1755,Espagne,568040.9999994,blé imports
+1756,Espagne,1794557.50008035,blé imports
+1757,Espagne,414166.00000372,blé imports
+1758,Espagne,58690.0,blé imports
+1759,Espagne,118536.00003276,blé imports
+1761,Espagne,7181.0000016,blé imports
+1762,Espagne,156.00000312,blé imports
+1763,Espagne,2088.0,blé imports
+1764,Espagne,103116.0000415,blé imports
+1765,Espagne,52515.0,blé imports
+1766,Espagne,328800.0,blé imports
+1767,Espagne,147728.0,blé imports
+1768,Espagne,22350.0,blé imports
+1769,Espagne,10950.0,blé imports
+1770,Espagne,207455.0,blé imports
+1771,Espagne,38272.0,blé imports
+1772,Espagne,48870.50005909,blé imports
+1773,Espagne,229346.0,blé imports
+1774,Espagne,973430.5,blé imports
+1775,Espagne,220655.50303645,blé imports
+1776,Espagne,36550.000016,blé imports
+1777,Espagne,70125.00003,blé imports
+1778,Espagne,119700.000503,blé imports
+1779,Espagne,60180.0,blé imports
+1780,Espagne,36950.0001254,blé imports
+1787,Espagne,98846.64,blé imports
+1789,Espagne,306557.4412,blé imports
+1750,Espagne,144077.801,blé imports
+1740,Hollande,20700.0,blé imports
+1742,Hollande,8388.0,blé imports
+1743,Hollande,586164.0,blé imports
+1744,Hollande,528524.0,blé imports
+1745,Hollande,213784.0,blé imports
+1746,Hollande,93010.0,blé imports
+1747,Hollande,1036110.0,blé imports
+1748,Hollande,395640.0,blé imports
+1749,Hollande,2113424.0,blé imports
+1751,Hollande,1414600.0,blé imports
+1752,Hollande,321924.0,blé imports
+1753,Hollande,66000.0,blé imports
+1754,Hollande,130600.0,blé imports
+1755,Hollande,213546.0,blé imports
+1756,Hollande,506980.0,blé imports
+1757,Hollande,9280.0,blé imports
+1758,Hollande,52624.0,blé imports
+1759,Hollande,401570.0,blé imports
+1761,Hollande,474530.0,blé imports
+1762,Hollande,16320.0,blé imports
+1763,Hollande,63300.0,blé imports
+1764,Hollande,454480.0,blé imports
+1765,Hollande,184230.0,blé imports
+1766,Hollande,687240.0,blé imports
+1767,Hollande,1307992.0,blé imports
+1768,Hollande,287160.0,blé imports
+1769,Hollande,4000.0,blé imports
+1770,Hollande,222090.0,blé imports
+1771,Hollande,48000.0,blé imports
+1772,Hollande,113688.0,blé imports
+1773,Hollande,183552.0,blé imports
+1774,Hollande,579030.0,blé imports
+1775,Hollande,61139.0,blé imports
+1777,Hollande,3000.0,blé imports
+1778,Hollande,845265.056151,blé imports
+1779,Hollande,905580.0,blé imports
+1780,Hollande,203630.0,blé imports
+1787,Hollande,37950.0,blé imports
+1789,Hollande,361980.0,blé imports
+1750,Hollande,1834125.0,blé imports
+1743,Nord,51732.0,blé imports
+1744,Nord,28800.0,blé imports
+1748,Nord,32250.0,blé imports
+1749,Nord,238625.0,blé imports
+1751,Nord,243525.0,blé imports
+1752,Nord,240168.0,blé imports
+1753,Nord,49560.0,blé imports
+1755,Nord,4928.0,blé imports
+1759,Nord,70200.0,blé imports
+1761,Nord,92884.0,blé imports
+1763,Nord,2250.0,blé imports
+1765,Nord,54360.0,blé imports
+1766,Nord,204330.0,blé imports
+1767,Nord,182909.5,blé imports
+1768,Nord,227250.0,blé imports
+1769,Nord,33000.0,blé imports
+1770,Nord,6000.0,blé imports
+1772,Nord,243234.0,blé imports
+1773,Nord,682560.0,blé imports
+1774,Nord,1334536.0,blé imports
+1775,Nord,75150.0,blé imports
+1776,Nord,6210.0,blé imports
+1777,Nord,57550.000971,blé imports
+1778,Nord,372660.0,blé imports
+1779,Nord,892730.0,blé imports
+1780,Nord,385320.0,blé imports
+1787,Nord,1200.0,blé imports
+1789,Nord,42756.0,blé imports
+1750,Nord,283525.0,blé imports
+1743,Portugal,6930.0,blé imports
+1756,Portugal,30000.0,blé imports
+1744,Angleterre,22284.0,blé imports
+1748,Angleterre,1287840.0,blé imports
+1749,Angleterre,9270994.0,blé imports
+1751,Angleterre,3582225.0,blé imports
+1752,Angleterre,2022672.0,blé imports
+1753,Angleterre,620220.0,blé imports
+1754,Angleterre,130100.0,blé imports
+1755,Angleterre,407968.0,blé imports
+1763,Angleterre,28320.0,blé imports
+1764,Angleterre,170625.0,blé imports
+1765,Angleterre,76500.0,blé imports
+1766,Angleterre,506380.0,blé imports
+1767,Angleterre,378696.0,blé imports
+1768,Angleterre,34800.0,blé imports
+1769,Angleterre,5400.0,blé imports
+1770,Angleterre,124250.0,blé imports
+1771,Angleterre,195300.0,blé imports
+1772,Angleterre,59160.0,blé imports
+1773,Angleterre,25884.0,blé imports
+1774,Angleterre,483690.0000048,blé imports
+1775,Angleterre,44645.5018167,blé imports
+1776,Angleterre,66630.0,blé imports
+1777,Angleterre,41580.0,blé imports
+1778,Angleterre,36000.0,blé imports
+1787,Angleterre,156000.0,blé imports
+1750,Angleterre,5747425.0,blé imports
+1777,Amériques,1230.0,blé imports
+1787,Flandre et autres états de l'Empereur,192300.0,blé imports
+1787,États-Unis d'Amérique,586680.0,blé imports
+1789,États-Unis d'Amérique,335676.0,blé imports
+1725,Espagne,171.08,blé exports
+1739,Espagne,299928.0,blé exports
+1740,Espagne,153893.0,blé exports
+1741,Espagne,9769.0,blé exports
+1743,Espagne,5100.0,blé exports
+1744,Espagne,5022.0,blé exports
+1745,Espagne,93005.9999688,blé exports
+1746,Espagne,1525.0,blé exports
+1747,Espagne,15573.959996868,blé exports
+1749,Espagne,910537.75,blé exports
+1751,Espagne,1072330.0,blé exports
+1752,Espagne,738700.0,blé exports
+1755,Espagne,257573.0000005,blé exports
+1756,Espagne,92076.0,blé exports
+1759,Espagne,9450.0,blé exports
+1760,Espagne,79633.300009026,blé exports
+1761,Espagne,160634.0,blé exports
+1762,Espagne,508608.0,blé exports
+1763,Espagne,1173294.79999923,blé exports
+1764,Espagne,1573182.600000852,blé exports
+1765,Espagne,3648070.0,blé exports
+1766,Espagne,1410060.0,blé exports
+1768,Espagne,1629823.0,blé exports
+1769,Espagne,1146363.0,blé exports
+1770,Espagne,457737.0,blé exports
+1772,Espagne,1026368.0,blé exports
+1773,Espagne,534339.0,blé exports
+1774,Espagne,315650.005325,blé exports
+1775,Espagne,706718.4010034001,blé exports
+1776,Espagne,1659327.50213715,blé exports
+1777,Espagne,1304845.7,blé exports
+1778,Espagne,475410.0,blé exports
+1779,Espagne,400.0,blé exports
+1780,Espagne,696120.0,blé exports
+1789,Espagne,1233663.87,blé exports
+1750,Espagne,1326632.0,blé exports
+1725,Italie,5600.0,blé exports
+1726,Italie,16.0,blé exports
+1728,Italie,50.0,blé exports
+1729,Italie,1801.19999998,blé exports
+1730,Italie,146.5,blé exports
+1739,Italie,154679.0,blé exports
+1740,Italie,228431.75,blé exports
+1741,Italie,504023.875,blé exports
+1743,Italie,1345688.25,blé exports
+1744,Italie,687458.5,blé exports
+1745,Italie,914477.875,blé exports
+1746,Italie,804035.75,blé exports
+1747,Italie,120960.625,blé exports
+1749,Italie,721066.7499975399,blé exports
+1751,Italie,936792.2499998,blé exports
+1752,Italie,619174.01,blé exports
+1755,Italie,1383456.000001,blé exports
+1756,Italie,613218.0000006,blé exports
+1759,Italie,22782.999999975,blé exports
+1760,Italie,37994.750002400004,blé exports
+1761,Italie,288706.0,blé exports
+1762,Italie,86029.050000501,blé exports
+1763,Italie,301282.0000052,blé exports
+1764,Italie,4708664.500033099,blé exports
+1765,Italie,668383.950012765,blé exports
+1766,Italie,2146165.50000711,blé exports
+1767,Italie,2956299.90010815,blé exports
+1768,Italie,1117443.3000637859,blé exports
+1769,Italie,316587.50000415,blé exports
+1770,Italie,86151.00000192,blé exports
+1772,Italie,325891.0,blé exports
+1773,Italie,1091818.0,blé exports
+1774,Italie,1122049.9557718693,blé exports
+1775,Italie,387049.00062604004,blé exports
+1776,Italie,176947.40026296003,blé exports
+1777,Italie,88515.00025050002,blé exports
+1778,Italie,193267.50001385,blé exports
+1779,Italie,532232.50002525,blé exports
+1780,Italie,455770.0,blé exports
+1789,Italie,95653.0,blé exports
+1750,Italie,841132.6999999,blé exports
+1740,Portugal,50002.0,blé exports
+1741,Portugal,30200.0,blé exports
+1745,Portugal,4860.0,blé exports
+1751,Portugal,28350.0,blé exports
+1752,Portugal,31300.0,blé exports
+1760,Portugal,29900.0,blé exports
+1761,Portugal,9900.0,blé exports
+1762,Portugal,43200.0,blé exports
+1767,Portugal,20490.0,blé exports
+1768,Portugal,34400.0,blé exports
+1770,Portugal,7500.0,blé exports
+1772,Portugal,430641.0,blé exports
+1776,Portugal,53362.50025725,blé exports
+1779,Portugal,37635.0,blé exports
+1780,Portugal,460182.0,blé exports
+1741,Levant et Barbarie,25750.0,blé exports
+1743,Levant et Barbarie,900.0,blé exports
+1755,Levant et Barbarie,4532.0,blé exports
+1756,Levant et Barbarie,9480.0,blé exports
+1760,Levant et Barbarie,60.0,blé exports
+1761,Levant et Barbarie,880.0,blé exports
+1763,Levant et Barbarie,1345.8,blé exports
+1764,Levant et Barbarie,543630.0,blé exports
+1766,Levant et Barbarie,10440.0,blé exports
+1767,Levant et Barbarie,9762.0000054,blé exports
+1769,Levant et Barbarie,72960.0,blé exports
+1772,Levant et Barbarie,106884.0,blé exports
+1773,Levant et Barbarie,807660.0,blé exports
+1774,Levant et Barbarie,181250.5014167,blé exports
+1775,Levant et Barbarie,58825.50046667,blé exports
+1777,Levant et Barbarie,111840.0,blé exports
+1778,Levant et Barbarie,41600.0,blé exports
+1789,Levant et Barbarie,16162.5,blé exports
+1743,Angleterre,66.0000007,blé exports
+1744,Angleterre,13.200000084,blé exports
+1763,Angleterre,18900.0,blé exports
+1764,Angleterre,30000.0,blé exports
+1765,Angleterre,63269.0,blé exports
+1766,Angleterre,59370.0,blé exports
+1767,Angleterre,72690.0,blé exports
+1768,Angleterre,172500.0,blé exports
+1769,Angleterre,6240.0,blé exports
+1770,Angleterre,20850.0,blé exports
+1775,Angleterre,3480.0,blé exports
+1776,Angleterre,38700.0,blé exports
+1777,Angleterre,91775.0,blé exports
+1744,Nord,1400.0,blé exports
+1755,Nord,550.0,blé exports
+1764,Nord,1366.0000181999999,blé exports
+1772,Nord,648.0,blé exports
+1745,Hollande,8.9999997,blé exports
+1763,Hollande,18700.0,blé exports
+1764,Hollande,5.50000011,blé exports
+1773,Hollande,79200.0,blé exports
+1778,Hollande,500.00001,blé exports
+1767,????,31635.400000608,blé exports
+1789,Amériques,3058.0,blé exports
+1789,Afrique,4008.0,blé exports
+1725,Espagne,13058.49949775,huile imports
+1726,Espagne,354.0,huile imports
+1727,Espagne,255.0,huile imports
+1728,Espagne,6085.713,huile imports
+1731,Espagne,390.0,huile imports
+1733,Espagne,28685.0,huile imports
+1739,Espagne,2052.0,huile imports
+1741,Espagne,308644.30003481,huile imports
+1742,Espagne,3506777.70002059,huile imports
+1743,Espagne,3519640.0,huile imports
+1744,Espagne,1280920.0,huile imports
+1745,Espagne,1072809.999974,huile imports
+1746,Espagne,333144.0,huile imports
+1747,Espagne,1175378.0,huile imports
+1748,Espagne,235908.0,huile imports
+1749,Espagne,77240.0,huile imports
+1751,Espagne,299660.0,huile imports
+1752,Espagne,542640.0,huile imports
+1753,Espagne,1434960.0,huile imports
+1754,Espagne,742320.0,huile imports
+1755,Espagne,840680.0,huile imports
+1756,Espagne,476920.0,huile imports
+1757,Espagne,210240.0,huile imports
+1758,Espagne,63480.0,huile imports
+1759,Espagne,21960.0,huile imports
+1761,Espagne,105280.0,huile imports
+1762,Espagne,621560.0,huile imports
+1763,Espagne,639640.0,huile imports
+1764,Espagne,357400.0,huile imports
+1765,Espagne,97920.0,huile imports
+1766,Espagne,331040.0,huile imports
+1767,Espagne,517160.0,huile imports
+1768,Espagne,61320.0,huile imports
+1769,Espagne,5920.0,huile imports
+1770,Espagne,25440.0,huile imports
+1771,Espagne,3200.0,huile imports
+1772,Espagne,180760.0,huile imports
+1773,Espagne,515960.0,huile imports
+1774,Espagne,179360.0,huile imports
+1775,Espagne,43220.000006,huile imports
+1776,Espagne,154520.000004,huile imports
+1777,Espagne,71840.0,huile imports
+1778,Espagne,83016.0,huile imports
+1779,Espagne,141000.00005,huile imports
+1780,Espagne,723560.0,huile imports
+1787,Espagne,1115994.0202908,huile imports
+1789,Espagne,1158912.0,huile imports
+1750,Espagne,266280.0,huile imports
+1725,Italie,41616.3984003,huile imports
+1726,Italie,118783.75,huile imports
+1727,Italie,14372.0000009,huile imports
+1728,Italie,140782.5,huile imports
+1729,Italie,75920.0,huile imports
+1730,Italie,36660.0,huile imports
+1731,Italie,396915.0,huile imports
+1732,Italie,149827.0,huile imports
+1733,Italie,46475.0,huile imports
+1735,Italie,22327.50001975,huile imports
+1736,Italie,20162.0,huile imports
+1737,Italie,164970.0,huile imports
+1738,Italie,3891.0001297000003,huile imports
+1739,Italie,1531850.70022599,huile imports
+1740,Italie,2151765.10010817,huile imports
+1741,Italie,3770425.9527116395,huile imports
+1742,Italie,2010126.95094099,huile imports
+1743,Italie,2895272.5007069,huile imports
+1744,Italie,1183453.40019578,huile imports
+1745,Italie,3052580.10100707,huile imports
+1746,Italie,1075416.60010282,huile imports
+1747,Italie,2454679.7003740803,huile imports
+1748,Italie,2461103.0002355,huile imports
+1749,Italie,3610174.7,huile imports
+1751,Italie,3676093.000453,huile imports
+1752,Italie,2963352.60025742,huile imports
+1753,Italie,4494020.700191691,huile imports
+1754,Italie,2778497.70105919,huile imports
+1755,Italie,3957113.90058913,huile imports
+1756,Italie,2267898.00016385,huile imports
+1757,Italie,3657029.0001983996,huile imports
+1758,Italie,5421800.000012,huile imports
+1759,Italie,5009218.00040395,huile imports
+1761,Italie,5648815.30057551,huile imports
+1762,Italie,2667889.30039181,huile imports
+1763,Italie,3969058.000261,huile imports
+1764,Italie,2808376.10041707,huile imports
+1765,Italie,4288541.000649501,huile imports
+1766,Italie,3377081.40080235,huile imports
+1767,Italie,5537961.00170425,huile imports
+1768,Italie,5629758.0019806,huile imports
+1769,Italie,2948341.4004870597,huile imports
+1770,Italie,5272100.001012149,huile imports
+1771,Italie,2681700.80096066,huile imports
+1772,Italie,1356575.0007865,huile imports
+1773,Italie,4191332.80204676,huile imports
+1774,Italie,4240090.0004811995,huile imports
+1775,Italie,4629575.000465499,huile imports
+1776,Italie,11309294.500200551,huile imports
+1777,Italie,4071254.34987959,huile imports
+1778,Italie,1872455.60137089,huile imports
+1779,Italie,1900599.999364,huile imports
+1780,Italie,8022310.501814,huile imports
+1787,Italie,5481371.3786484,huile imports
+1789,Italie,13330622.7998,huile imports
+1750,Italie,2631695.2999,huile imports
+1725,Levant et Barbarie,22660.0,huile imports
+1726,Levant et Barbarie,21493.75,huile imports
+1728,Levant et Barbarie,9878.7003,huile imports
+1729,Levant et Barbarie,16800.0,huile imports
+1731,Levant et Barbarie,3165.0,huile imports
+1732,Levant et Barbarie,1890.0,huile imports
+1733,Levant et Barbarie,15210.0,huile imports
+1735,Levant et Barbarie,1225.0,huile imports
+1739,Levant et Barbarie,1386540.0,huile imports
+1740,Levant et Barbarie,2497560.0,huile imports
+1741,Levant et Barbarie,1725596.40004738,huile imports
+1742,Levant et Barbarie,1145905.20010339,huile imports
+1743,Levant et Barbarie,2476841.45010864,huile imports
+1744,Levant et Barbarie,3194593.90008563,huile imports
+1745,Levant et Barbarie,717369.74998875,huile imports
+1746,Levant et Barbarie,2087568.0000372,huile imports
+1747,Levant et Barbarie,790564.000103,huile imports
+1748,Levant et Barbarie,1186092.60017042,huile imports
+1749,Levant et Barbarie,2231527.8,huile imports
+1751,Levant et Barbarie,2131742.0003594,huile imports
+1752,Levant et Barbarie,848830.000093,huile imports
+1753,Levant et Barbarie,5185260.000086,huile imports
+1754,Levant et Barbarie,2229257.50003525,huile imports
+1755,Levant et Barbarie,2525387.50001025,huile imports
+1756,Levant et Barbarie,632548.50004895,huile imports
+1757,Levant et Barbarie,1897720.80000536,huile imports
+1758,Levant et Barbarie,102720.0,huile imports
+1759,Levant et Barbarie,109600.0,huile imports
+1761,Levant et Barbarie,480280.0,huile imports
+1762,Levant et Barbarie,888260.000002,huile imports
+1763,Levant et Barbarie,1018798.60006662,huile imports
+1764,Levant et Barbarie,705880.0,huile imports
+1765,Levant et Barbarie,337840.0,huile imports
+1766,Levant et Barbarie,563040.0,huile imports
+1767,Levant et Barbarie,1277200.0,huile imports
+1768,Levant et Barbarie,2595842.0001574,huile imports
+1769,Levant et Barbarie,3739000.0,huile imports
+1770,Levant et Barbarie,1850640.0,huile imports
+1771,Levant et Barbarie,4136740.0000325004,huile imports
+1772,Levant et Barbarie,1596540.50002335,huile imports
+1773,Levant et Barbarie,4855349.0003463,huile imports
+1774,Levant et Barbarie,40780.000289999996,huile imports
+1775,Levant et Barbarie,1746440.0,huile imports
+1776,Levant et Barbarie,1342080.0,huile imports
+1777,Levant et Barbarie,3738400.0,huile imports
+1778,Levant et Barbarie,16819.5,huile imports
+1779,Levant et Barbarie,771954.80084087,huile imports
+1780,Levant et Barbarie,1630558.0,huile imports
+1787,Levant et Barbarie,2952575.833598,huile imports
+1789,Levant et Barbarie,4519688.000004,huile imports
+1750,Levant et Barbarie,2259996.10062387,huile imports
+1727,Amériques,60.0,huile imports
+1764,Amériques,72.0,huile imports
+1766,Amériques,26.0,huile imports
+1772,Amériques,17.5,huile imports
+1777,Amériques,260.0,huile imports
+1778,Amériques,562.0,huile imports
+1740,Portugal,40.0,huile imports
+1772,Portugal,5880.0,huile imports
+1773,Portugal,25200.0,huile imports
+1777,Portugal,16000.0,huile imports
+1787,Portugal,10032.0001824,huile imports
+1742,Hollande,83697.0,huile imports
+1743,Hollande,2245.0,huile imports
+1744,Hollande,7750.0,huile imports
+1747,Hollande,900.0,huile imports
+1748,Hollande,1350.000045,huile imports
+1749,Hollande,1500.0,huile imports
+1753,Hollande,1400.00002,huile imports
+1755,Hollande,2376.0000792,huile imports
+1757,Hollande,26924.70009749,huile imports
+1759,Hollande,360.000012,huile imports
+1761,Hollande,396.0000132,huile imports
+1762,Hollande,504.0000168,huile imports
+1763,Hollande,10044.0000148,huile imports
+1764,Hollande,1710.000057,huile imports
+1765,Hollande,900.0000299999999,huile imports
+1766,Hollande,300.0,huile imports
+1767,Hollande,1500.0,huile imports
+1769,Hollande,8259.999764,huile imports
+1770,Hollande,4619.999868,huile imports
+1771,Hollande,7888.9997746,huile imports
+1772,Hollande,4143.9998816,huile imports
+1773,Hollande,4325.9998764,huile imports
+1774,Hollande,8359.999944,huile imports
+1775,Hollande,20520.0,huile imports
+1776,Hollande,6253.999882,huile imports
+1777,Hollande,688400.0,huile imports
+1778,Hollande,11920.000298,huile imports
+1780,Hollande,840.0000210000001,huile imports
+1787,Hollande,11666.0,huile imports
+1789,Hollande,21169.6,huile imports
+1742,Angleterre,3.0000001,huile imports
+1770,Angleterre,6000.0,huile imports
+1769,Nord,36000.0,huile imports
+1789,États-Unis d'Amérique,20006.55,huile imports
+1725,Hollande,70090.79730420001,huile exports
+1726,Hollande,104856.25,huile exports
+1727,Hollande,146366.15,huile exports
+1728,Hollande,110480.0,huile exports
+1729,Hollande,106040.0,huile exports
+1730,Hollande,216160.0,huile exports
+1731,Hollande,29850.0,huile exports
+1732,Hollande,71640.0,huile exports
+1733,Hollande,75600.0,huile exports
+1735,Hollande,84840.0,huile exports
+1736,Hollande,246210.0,huile exports
+1737,Hollande,277583.40925278,huile exports
+1738,Hollande,166869.0055623,huile exports
+1739,Hollande,342284.5110205,huile exports
+1740,Hollande,46337.10015907,huile exports
+1741,Hollande,26635.0000245,huile exports
+1743,Hollande,81706.50001155,huile exports
+1744,Hollande,77500.0,huile exports
+1745,Hollande,631093.25,huile exports
+1746,Hollande,242892.0,huile exports
+1747,Hollande,216776.0001849,huile exports
+1749,Hollande,14514.80036287,huile exports
+1751,Hollande,92726.40231816,huile exports
+1752,Hollande,36544.400913610014,huile exports
+1755,Hollande,108667.20271668,huile exports
+1756,Hollande,194011.60485029,huile exports
+1759,Hollande,25301.30062422,huile exports
+1760,Hollande,28798.400723609997,huile exports
+1761,Hollande,131804.40329511,huile exports
+1762,Hollande,37930.00094825,huile exports
+1763,Hollande,69559.80168597,huile exports
+1764,Hollande,11025.700202330001,huile exports
+1765,Hollande,44511.60111279,huile exports
+1766,Hollande,32268.0008067,huile exports
+1767,Hollande,25660.80064152,huile exports
+1768,Hollande,23673.500593149998,huile exports
+1769,Hollande,14690.400370759999,huile exports
+1770,Hollande,13162.00032905,huile exports
+1773,Hollande,241390.00603624998,huile exports
+1774,Hollande,330078.0082441,huile exports
+1775,Hollande,62976.0015744,huile exports
+1776,Hollande,37212.0009303,huile exports
+1777,Hollande,67416.80168542,huile exports
+1778,Hollande,811954.0,huile exports
+1779,Hollande,155675.2513806,huile exports
+1780,Hollande,89034.0,huile exports
+1789,Hollande,10375.0,huile exports
+1750,Hollande,66687.20001,huile exports
+1725,Italie,2560.9999015,huile exports
+1726,Italie,100.0,huile exports
+1727,Italie,3380.0,huile exports
+1728,Italie,11337.5,huile exports
+1729,Italie,9923.0000081,huile exports
+1730,Italie,6421.25,huile exports
+1731,Italie,4560.0,huile exports
+1732,Italie,16596.0,huile exports
+1733,Italie,760.0,huile exports
+1735,Italie,622.50002075,huile exports
+1736,Italie,725.0,huile exports
+1738,Italie,330.000011,huile exports
+1739,Italie,6662.0001090999995,huile exports
+1740,Italie,14427.0003229,huile exports
+1741,Italie,12577.650211754999,huile exports
+1743,Italie,211139.55009131,huile exports
+1744,Italie,30128.200091079998,huile exports
+1745,Italie,14352.40000448,huile exports
+1746,Italie,15268.60031002,huile exports
+1747,Italie,11019.80009847,huile exports
+1749,Italie,34551.10086908,huile exports
+1751,Italie,113353.30283577,huile exports
+1752,Italie,30578.200765169997,huile exports
+1755,Italie,28191.500701840003,huile exports
+1756,Italie,13815.60034808,huile exports
+1759,Italie,47224.60119684,huile exports
+1760,Italie,16092.2503869,huile exports
+1761,Italie,10219.70026042,huile exports
+1762,Italie,43919.001126200004,huile exports
+1763,Italie,95718.40239921,huile exports
+1764,Italie,33758.10085097,huile exports
+1765,Italie,20770.00051925,huile exports
+1766,Italie,21165.900517010003,huile exports
+1767,Italie,35948.600888839996,huile exports
+1768,Italie,26174.800626019998,huile exports
+1769,Italie,42164.0010541,huile exports
+1770,Italie,22888.60057334,huile exports
+1772,Italie,523368.5130857,huile exports
+1773,Italie,82916.80207291999,huile exports
+1774,Italie,208932.80522332003,huile exports
+1775,Italie,163100.80407751998,huile exports
+1776,Italie,153090.00382724998,huile exports
+1777,Italie,47296.40118241,huile exports
+1778,Italie,506012.0000016,huile exports
+1779,Italie,19906.600536900005,huile exports
+1780,Italie,106874.5,huile exports
+1789,Italie,803766.36,huile exports
+1750,Italie,12180.2002,huile exports
+1727,Amériques,19030.0,huile exports
+1728,Amériques,37767.4989255,huile exports
+1729,Amériques,33968.0,huile exports
+1730,Amériques,55420.0,huile exports
+1731,Amériques,26477.999997,huile exports
+1732,Amériques,37692.0,huile exports
+1733,Amériques,45600.0,huile exports
+1735,Amériques,79875.0026625,huile exports
+1736,Amériques,99544.50331814999,huile exports
+1737,Amériques,51376.80171255999,huile exports
+1738,Amériques,93630.003121,huile exports
+1739,Amériques,61742.40205808,huile exports
+1740,Amériques,54881.40182938,huile exports
+1741,Amériques,73140.002438,huile exports
+1743,Amériques,125200.00313,huile exports
+1744,Amériques,81401.60203504,huile exports
+1745,Amériques,87200.00218000001,huile exports
+1746,Amériques,76280.001907,huile exports
+1747,Amériques,43366.80108417,huile exports
+1749,Amériques,127280.003182,huile exports
+1751,Amériques,193440.004836,huile exports
+1752,Amériques,151360.003784,huile exports
+1755,Amériques,124800.00312,huile exports
+1756,Amériques,87240.002181,huile exports
+1759,Amériques,28880.000722,huile exports
+1760,Amériques,41546.80103867,huile exports
+1761,Amériques,58360.001459,huile exports
+1762,Amériques,55320.001383,huile exports
+1763,Amériques,139520.003488,huile exports
+1764,Amériques,174640.004366,huile exports
+1765,Amériques,147360.003684,huile exports
+1766,Amériques,146950.0,huile exports
+1767,Amériques,240000.006,huile exports
+1768,Amériques,18000.00045,huile exports
+1769,Amériques,126680.003167,huile exports
+1770,Amériques,67080.00167700001,huile exports
+1772,Amériques,229560.005739,huile exports
+1773,Amériques,192760.004819,huile exports
+1774,Amériques,259840.006496,huile exports
+1775,Amériques,263760.006594,huile exports
+1776,Amériques,199360.004984,huile exports
+1777,Amériques,462480.011562,huile exports
+1778,Amériques,332850.0,huile exports
+1779,Amériques,213880.005347,huile exports
+1780,Amériques,354450.0,huile exports
+1789,Amériques,857308.0,huile exports
+1750,Amériques,123760.0,huile exports
+1728,Espagne,100.0,huile exports
+1736,Espagne,280.0,huile exports
+1739,Espagne,16901.50002925,huile exports
+1740,Espagne,23891.60000622,huile exports
+1741,Espagne,34372.50000025,huile exports
+1743,Espagne,6701.5,huile exports
+1744,Espagne,3018.15000438,huile exports
+1745,Espagne,50564.09995194,huile exports
+1746,Espagne,1333.200002,huile exports
+1747,Espagne,1994.50003405,huile exports
+1749,Espagne,24897.800628369998,huile exports
+1751,Espagne,51912.50130516,huile exports
+1752,Espagne,39414.80099337,huile exports
+1755,Espagne,7644.80020527,huile exports
+1756,Espagne,5793.600150190001,huile exports
+1759,Espagne,22673.700550780002,huile exports
+1760,Espagne,45546.40115291,huile exports
+1761,Espagne,59328.30148807,huile exports
+1762,Espagne,13298.30033801,huile exports
+1763,Espagne,7747.300195580001,huile exports
+1764,Espagne,11141.20027878,huile exports
+1765,Espagne,16543.80041422,huile exports
+1766,Espagne,16094.0004031,huile exports
+1768,Espagne,67872.0017018,huile exports
+1769,Espagne,129008.70323038999,huile exports
+1770,Espagne,8806.40022348,huile exports
+1772,Espagne,738300.41842468,huile exports
+1773,Espagne,52610.201287630014,huile exports
+1774,Espagne,6242.000157799999,huile exports
+1775,Espagne,6845.90015896,huile exports
+1776,Espagne,10152.0002538,huile exports
+1777,Espagne,8204.000205100001,huile exports
+1778,Espagne,16031.0,huile exports
+1779,Espagne,5214.0001116,huile exports
+1780,Espagne,8577.75,huile exports
+1789,Espagne,40338.0,huile exports
+1750,Espagne,12285.2,huile exports
+1733,Suisse,1560.0,huile exports
+1735,Suisse,517.5000172499999,huile exports
+1736,Suisse,23964.0007988,huile exports
+1737,Suisse,2394.0000798,huile exports
+1738,Suisse,3130.50010435,huile exports
+1739,Suisse,1944.0000648,huile exports
+1740,Suisse,9873.0003291,huile exports
+1741,Suisse,22023.90073413,huile exports
+1743,Suisse,9007.20022518,huile exports
+1744,Suisse,9682.00024205,huile exports
+1745,Suisse,11883.20029708,huile exports
+1746,Suisse,5004.60016682,huile exports
+1747,Suisse,20392.0005098,huile exports
+1749,Suisse,23388.0005847,huile exports
+1751,Suisse,19540.40048851,huile exports
+1752,Suisse,9620.80024052,huile exports
+1755,Suisse,4660.80011652,huile exports
+1756,Suisse,23664.0005916,huile exports
+1759,Suisse,23250.2505776,huile exports
+1760,Suisse,435.0000145,huile exports
+1761,Suisse,490.50001635,huile exports
+1762,Suisse,168.0000042,huile exports
+1763,Suisse,448.0000112,huile exports
+1765,Suisse,954.00002385,huile exports
+1766,Suisse,298.00000745,huile exports
+1775,Suisse,276.0000069,huile exports
+1777,Suisse,480.000012,huile exports
+1750,Suisse,13277.2,huile exports
+1739,Nord,886.50002955,huile exports
+1740,Nord,13040.5,huile exports
+1741,Nord,18840.0,huile exports
+1743,Nord,24600.0,huile exports
+1744,Nord,24750.0,huile exports
+1745,Nord,14184.0,huile exports
+1746,Nord,13176.0,huile exports
+1747,Nord,25460.0,huile exports
+1749,Nord,20101.20067004,huile exports
+1752,Nord,26694.80066737,huile exports
+1755,Nord,117903.20294758,huile exports
+1756,Nord,780202.4195050601,huile exports
+1759,Nord,53808.0013452,huile exports
+1760,Nord,35609.60089024,huile exports
+1761,Nord,75412.00188530001,huile exports
+1762,Nord,35092.0008773,huile exports
+1763,Nord,41133.60102834,huile exports
+1764,Nord,36229.60090574,huile exports
+1765,Nord,69246.80173117001,huile exports
+1766,Nord,30325.50075935,huile exports
+1767,Nord,79309.20198273,huile exports
+1768,Nord,69206.00173014999,huile exports
+1769,Nord,50712.00126780001,huile exports
+1770,Nord,56896.001422400004,huile exports
+1772,Nord,384106.00960265,huile exports
+1773,Nord,62324.001558100004,huile exports
+1774,Nord,500122.01250305,huile exports
+1775,Nord,54408.40136021,huile exports
+1776,Nord,45908.0011477,huile exports
+1777,Nord,21487.60053719,huile exports
+1778,Nord,347011.0,huile exports
+1779,Nord,44912.20078353,huile exports
+1780,Nord,167874.0,huile exports
+1789,Nord,199698.0,huile exports
+1750,Nord,27110.0,huile exports
+1740,Angleterre,9010.0,huile exports
+1741,Angleterre,40740.0,huile exports
+1743,Angleterre,63948.0000001,huile exports
+1749,Angleterre,22560.000564,huile exports
+1751,Angleterre,1080.000031,huile exports
+1755,Angleterre,1040.000026,huile exports
+1760,Angleterre,200.000005,huile exports
+1761,Angleterre,160.000004,huile exports
+1763,Angleterre,10885.000272750001,huile exports
+1764,Angleterre,23751.20059378,huile exports
+1765,Angleterre,523.6000130900001,huile exports
+1766,Angleterre,5377.750136475001,huile exports
+1767,Angleterre,1282.80003282,huile exports
+1768,Angleterre,15850.40039626,huile exports
+1769,Angleterre,32406.00081015,huile exports
+1770,Angleterre,12880.000322,huile exports
+1772,Angleterre,874.80002187,huile exports
+1773,Angleterre,474.500007,huile exports
+1774,Angleterre,4432.000110800001,huile exports
+1775,Angleterre,4380.0001095,huile exports
+1776,Angleterre,12026.40030066,huile exports
+1778,Angleterre,2360.000059,huile exports
+1789,Angleterre,8466.0,huile exports
+1750,Angleterre,240.0,huile exports
+1740,Portugal,5400.0,huile exports
+1741,Portugal,540.0,huile exports
+1743,Portugal,7480.0,huile exports
+1749,Portugal,480.000012,huile exports
+1751,Portugal,370.00000925,huile exports
+1756,Portugal,2091.20005228,huile exports
+1760,Portugal,200.000005,huile exports
+1761,Portugal,1028.0000264,huile exports
+1763,Portugal,328.20001094,huile exports
+1764,Portugal,2065.00002875,huile exports
+1766,Portugal,264.0000066,huile exports
+1767,Portugal,570.00001425,huile exports
+1773,Portugal,451.50001505,huile exports
+1780,Portugal,737.25,huile exports
+1750,Portugal,48.0,huile exports
+1740,Levant et Barbarie,2877.0000064,huile exports
+1741,Levant et Barbarie,2760.0000019999998,huile exports
+1743,Levant et Barbarie,11760.0,huile exports
+1744,Levant et Barbarie,22917.80000107,huile exports
+1745,Levant et Barbarie,648.0,huile exports
+1746,Levant et Barbarie,1764.0,huile exports
+1747,Levant et Barbarie,2640.0000122300003,huile exports
+1749,Levant et Barbarie,960.80002402,huile exports
+1751,Levant et Barbarie,3286.80008217,huile exports
+1752,Levant et Barbarie,430.80001077,huile exports
+1755,Levant et Barbarie,1721.60004304,huile exports
+1756,Levant et Barbarie,3678.10009129,huile exports
+1759,Levant et Barbarie,2317.0000509,huile exports
+1760,Levant et Barbarie,1459.60003649,huile exports
+1761,Levant et Barbarie,5372.0001343,huile exports
+1762,Levant et Barbarie,2440.000073,huile exports
+1763,Levant et Barbarie,5865.30019551,huile exports
+1764,Levant et Barbarie,6310.40015776,huile exports
+1765,Levant et Barbarie,167437.0004778,huile exports
+1766,Levant et Barbarie,74246.00185490001,huile exports
+1767,Levant et Barbarie,8650.40019126,huile exports
+1768,Levant et Barbarie,5212.80013032,huile exports
+1769,Levant et Barbarie,4931.00011965,huile exports
+1770,Levant et Barbarie,6252.000156300001,huile exports
+1772,Levant et Barbarie,15188.0003797,huile exports
+1773,Levant et Barbarie,29219.10073437,huile exports
+1774,Levant et Barbarie,208166.0051959,huile exports
+1775,Levant et Barbarie,15556.0003889,huile exports
+1776,Levant et Barbarie,4862.000121550001,huile exports
+1777,Levant et Barbarie,1584.0000396,huile exports
+1778,Levant et Barbarie,4525.0,huile exports
+1779,Levant et Barbarie,8498.400212460001,huile exports
+1780,Levant et Barbarie,6832.5,huile exports
+1789,Levant et Barbarie,14442.0,huile exports
+1750,Levant et Barbarie,11611.60000279,huile exports
+1767,????,11018.0002507,huile exports
+1773,Asie,1320.000033,huile exports
+1775,Asie,440.000011,huile exports
+1776,Asie,38720.000968,huile exports
+1777,Asie,1080.000027,huile exports
+1778,Asie,6400.0,huile exports
+1780,Asie,2775.0,huile exports
+1780,Flandre et autres états de l'Empereur,1762.5,huile exports
+1789,Flandre et autres états de l'Empereur,26228.0,huile exports
+1789,États-Unis d'Amérique,3735.0,huile exports
