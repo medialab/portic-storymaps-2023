@@ -55,8 +55,9 @@ def build_data(port, preliminary_analysis=False, verbose=False):
                 if row[product_col] in classif:
                     partners[classif[row[product_col]] + " " + row[exchange_col].lower()][row[partner_col]][row[year_col]] += val
             else:
-                if row[product_col] in best_products[row[exchange_col]]:
-                    partners[row[product_col] + " " + row[exchange_col].lower()][row[partner_col]][row[year_col]] += val
+                serie = row[product_col] + " " + row[exchange_col].lower()
+                if serie in partners:
+                    partners[serie][row[partner_col]][row[year_col]] += val
 
 
     with open("%s-partners.csv" % ("preliminary-analysis" if preliminary_analysis else port), "w") as f:
@@ -66,6 +67,8 @@ def build_data(port, preliminary_analysis=False, verbose=False):
             for partner in partners[serie]:
                 for year in partners[serie][partner]:
                     writer.writerow([year, partner, partners[serie][partner][year], serie])
+
+    return partners.keys()
 
 
 if __name__ == "__main__":
