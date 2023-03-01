@@ -21,6 +21,7 @@ source_col = reader.headers["best_guess_region_prodxpart"]
 exchange_col = reader.headers["export_import"]
 value_col = reader.headers["value"]
 product_col = reader.headers["product_sitc_simplEN"]
+partner_col = reader.headers["partner_grouping"]
 
 croissances = defaultdict(Counter)
 croissances_no_colonial = defaultdict(Counter)
@@ -33,15 +34,18 @@ years = set();
 
 all_data= []
 for row in reader:
-    if row[year_col] != "1787" and row[year_col] >= "1740" and row[dirferme_col] in directions_fermes and row[source_col] == "1" and row[value_col] != '' and row[value_col] is not None :
+    if row[year_col] != "1787" and row[year_col] >= "1740" and \
+       row[dirferme_col] in directions_fermes and row[source_col] == "1" and \
+       row[value_col] != '' and row[value_col] is not None and \
+       row[partner_col] != 'France':
         all_data.append(row)
 
 for ((year, dir_ferme), _rows) in groupby(all_data, key= lambda r: (r[year_col],r[dirferme_col])):
     rows = list(_rows)
     imports = [float(row[value_col]) for row in rows if row[exchange_col] == "Imports"]
-    imports_value_no_colonial = sum([float(row[value_col]) for row in rows if row[exchange_col] == "Imports" and row[product_col] == "Plantation foodstuffs"])
+    imports_value_no_colonial = sum([float(row[value_col]) for row in rows if row[exchange_col] == "Imports" and row[product_col] != "Plantation foodstuffs"])
     exports = [float(row[value_col]) for row in rows if row[exchange_col] == "Exports"]
-    exports_value_no_colonial = sum([float(row[value_col]) for row in rows if row[exchange_col] == "Exports" and row[product_col] == "Plantation foodstuffs"])
+    exports_value_no_colonial = sum([float(row[value_col]) for row in rows if row[exchange_col] == "Exports" and row[product_col] != "Plantation foodstuffs"])
     imports_value = sum(imports) if len(imports) > 0 else None
     exports_value = sum(exports) if len(exports) > 0 else None
     total = imports_value + exports_value if imports_value and exports_value else None
