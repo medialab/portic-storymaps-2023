@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2023-03-01">
+    <creator>NetworkX 2.6.3</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="2" title="from" type="string" />
+      <attribute id="3" title="to" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="type" type="string" />
+      <attribute id="1" title="weight" type="long" />
+    </attributes>
+    <nodes>
+      <node id="directions des Fermes hors Marseille" label="directions des Fermes hors Marseille">
+        <attvalues>
+          <attvalue for="0" value="France hors Marseille" />
+          <attvalue for="1" value="41960634" />
+        </attvalues>
+      </node>
+      <node id="Direction des Fermes de Marseille (pas de bureau spécifié)" label="Direction des Fermes de Marseille (pas de bureau spécifié)">
+        <attvalues>
+          <attvalue for="0" value="France hors Marseille" />
+          <attvalue for="1" value="41960634" />
+        </attvalues>
+      </node>
+      <node id="bureau des fermes Arles" label="bureau des fermes Arles">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="304728" />
+        </attvalues>
+      </node>
+      <node id="ports francs de France" label="ports francs de France">
+        <attvalues>
+          <attvalue for="0" value="France hors Marseille" />
+          <attvalue for="1" value="36427034" />
+        </attvalues>
+      </node>
+      <node id="bureau des fermes Marseille" label="bureau des fermes Marseille">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="39863931" />
+        </attvalues>
+      </node>
+      <node id="Monde" label="Monde">
+        <attvalues>
+          <attvalue for="0" value="Monde" />
+          <attvalue for="1" value="82122524" />
+        </attvalues>
+      </node>
+      <node id="bureau des fermes Lambesc" label="bureau des fermes Lambesc">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="389487" />
+        </attvalues>
+      </node>
+      <node id="bureau des fermes Penne" label="bureau des fermes Penne">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="2818456" />
+        </attvalues>
+      </node>
+      <node id="bureau des fermes Marseille - Poids et Casse" label="bureau des fermes Marseille - Poids et Casse">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="25001447" />
+        </attvalues>
+      </node>
+      <node id="bureau des fermes Septemes" label="bureau des fermes Septemes">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="6645030" />
+        </attvalues>
+      </node>
+      <node id="bureau des fermes Marseille - Domaine d'Occident" label="bureau des fermes Marseille - Domaine d'Occident">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="42779241" />
+        </attvalues>
+      </node>
+      <node id="bureau des fermes Marseille, Poids et Casse" label="bureau des fermes Marseille, Poids et Casse">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="747238" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="directions des Fermes hors Marseille" target="Direction des Fermes de Marseille (pas de bureau spécifié)" weight="41960634">
+        <attvalues>
+          <attvalue for="2" value="directions des Fermes hors Marseille" />
+          <attvalue for="3" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="bureau des fermes Arles" target="ports francs de France" weight="294410">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Arles" />
+          <attvalue for="3" value="ports francs de France" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="bureau des fermes Arles" target="Monde" weight="10318">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Arles" />
+          <attvalue for="3" value="Monde" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="bureau des fermes Marseille" target="Monde" weight="39863931">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille" />
+          <attvalue for="3" value="Monde" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="bureau des fermes Lambesc" target="ports francs de France" weight="389487">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Lambesc" />
+          <attvalue for="3" value="ports francs de France" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="bureau des fermes Penne" target="ports francs de France" weight="2781599">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Penne" />
+          <attvalue for="3" value="ports francs de France" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="bureau des fermes Penne" target="Monde" weight="36857">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Penne" />
+          <attvalue for="3" value="Monde" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="bureau des fermes Marseille - Poids et Casse" target="ports francs de France" weight="25001447">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille - Poids et Casse" />
+          <attvalue for="3" value="ports francs de France" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="bureau des fermes Septemes" target="ports francs de France" weight="6610091">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Septemes" />
+          <attvalue for="3" value="ports francs de France" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="bureau des fermes Septemes" target="Monde" weight="34939">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Septemes" />
+          <attvalue for="3" value="Monde" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="bureau des fermes Marseille - Domaine d'Occident" target="Monde" weight="41429241">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille - Domaine d'Occident" />
+          <attvalue for="3" value="Monde" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="bureau des fermes Marseille - Domaine d'Occident" target="ports francs de France" weight="1350000">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille - Domaine d'Occident" />
+          <attvalue for="3" value="ports francs de France" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="bureau des fermes Marseille, Poids et Casse" target="Monde" weight="747238">
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille, Poids et Casse" />
+          <attvalue for="3" value="Monde" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
