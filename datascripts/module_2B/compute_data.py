@@ -5,7 +5,7 @@ from collections import defaultdict, Counter
 
 exclude_partners = ["France"]
 
-def build_data(port, preliminary_analysis=False, verbose=False):
+def build_data(port, nb_top_products=10, preliminary_analysis=False, verbose=False):
     reader = casanova.reader("../../data/toflit18_all_flows.csv")
 
     dirferme_col = reader.headers["customs_region"]
@@ -39,7 +39,7 @@ def build_data(port, preliminary_analysis=False, verbose=False):
         best_products = defaultdict(list)
         partners = {}
         for typ in ["imports", "exports"]:
-            best_products[typ] = sorted(main_products[typ].keys(), key=lambda x: -main_products[typ][x])[:10]
+            best_products[typ] = sorted(main_products[typ].keys(), key=lambda x: -main_products[typ][x])[:nb_top_products]
             if verbose:
                 print("Biggest products for", port, typ)
                 print(best_products[typ])
