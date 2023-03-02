@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2023-03-02">
+    <creator>NetworkX 2.6.3</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="2" title="from" type="string" />
+      <attribute id="3" title="to" type="string" />
+      <attribute id="4" title="flow_type" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="type" type="string" />
+      <attribute id="1" title="weight" type="long" />
+    </attributes>
+    <nodes>
+      <node id="Marseille comme partenaire" label="Marseille comme partenaire">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="106874254" />
+        </attvalues>
+      </node>
+      <node id="France comme rapporteur" label="France comme rapporteur">
+        <attvalues>
+          <attvalue for="0" value="France hors Marseille" />
+          <attvalue for="1" value="40645322" />
+        </attvalues>
+      </node>
+      <node id="Marseille comme rapporteur" label="Marseille comme rapporteur">
+        <attvalues>
+          <attvalue for="0" value="Marseille" />
+          <attvalue for="1" value="68562733" />
+        </attvalues>
+      </node>
+      <node id="France comme partenaire" label="France comme partenaire">
+        <attvalues>
+          <attvalue for="0" value="France hors Marseille" />
+          <attvalue for="1" value="2333801" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" label="33,761,722 lt." source="Marseille comme partenaire" target="France comme rapporteur" weight="33761722">
+        <attvalues>
+          <attvalue for="2" value="Marseille comme partenaire" />
+          <attvalue for="3" value="France comme rapporteur" />
+          <attvalue for="4" value="France hors Marseille" />
+        </attvalues>
+      </edge>
+      <edge id="1" label="31,151,898 lt." source="Marseille comme partenaire" target="Marseille comme rapporteur" weight="31151898">
+        <attvalues>
+          <attvalue for="2" value="Marseille comme partenaire" />
+          <attvalue for="3" value="Marseille comme rapporteur" />
+          <attvalue for="4" value="Marseille" />
+        </attvalues>
+      </edge>
+      <edge id="2" label="6,883,600 lt." source="France comme rapporteur" target="Marseille comme partenaire" weight="6883600">
+        <attvalues>
+          <attvalue for="2" value="France comme rapporteur" />
+          <attvalue for="3" value="Marseille comme partenaire" />
+          <attvalue for="4" value="France hors Marseille" />
+        </attvalues>
+      </edge>
+      <edge id="3" label="35,077,034 lt." source="Marseille comme rapporteur" target="Marseille comme partenaire" weight="35077034">
+        <attvalues>
+          <attvalue for="2" value="Marseille comme rapporteur" />
+          <attvalue for="3" value="Marseille comme partenaire" />
+          <attvalue for="4" value="Marseille" />
+        </attvalues>
+      </edge>
+      <edge id="4" label="1,350,000 lt." source="Marseille comme rapporteur" target="France comme partenaire" weight="1350000">
+        <attvalues>
+          <attvalue for="2" value="Marseille comme rapporteur" />
+          <attvalue for="3" value="France comme partenaire" />
+          <attvalue for="4" value="Marseille" />
+        </attvalues>
+      </edge>
+      <edge id="5" label="983,801 lt." source="France comme partenaire" target="Marseille comme rapporteur" weight="983801">
+        <attvalues>
+          <attvalue for="2" value="France comme partenaire" />
+          <attvalue for="3" value="Marseille comme rapporteur" />
+          <attvalue for="4" value="Marseille" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

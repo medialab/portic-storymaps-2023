@@ -20,16 +20,16 @@
           <attvalue for="1" value="40645322" />
         </attvalues>
       </node>
-      <node id="Direction des Fermes de Marseille (pas de bureau spécifié)" label="Direction des Fermes de Marseille (pas de bureau spécifié)">
+      <node id="Marseille comme partenaire" label="Marseille comme partenaire">
         <attvalues>
           <attvalue for="0" value="Marseille" />
-          <attvalue for="1" value="141951288" />
+          <attvalue for="1" value="106874254" />
         </attvalues>
       </node>
       <node id="bureau des fermes Arles" label="bureau des fermes Arles">
         <attvalues>
           <attvalue for="0" value="Marseille" />
-          <attvalue for="1" value="12747528" />
+          <attvalue for="1" value="6799632" />
         </attvalues>
       </node>
       <node id="bureau des fermes Marseille" label="bureau des fermes Marseille">
@@ -47,25 +47,25 @@
       <node id="bureau des fermes Lambesc" label="bureau des fermes Lambesc">
         <attvalues>
           <attvalue for="0" value="Marseille" />
-          <attvalue for="1" value="778974" />
+          <attvalue for="1" value="389487" />
         </attvalues>
       </node>
       <node id="bureau des fermes La Penne" label="bureau des fermes La Penne">
         <attvalues>
           <attvalue for="0" value="Marseille" />
-          <attvalue for="1" value="12173267" />
+          <attvalue for="1" value="6109908" />
         </attvalues>
       </node>
       <node id="bureau des fermes Marseille - Poids et Casse" label="bureau des fermes Marseille - Poids et Casse">
         <attvalues>
           <attvalue for="0" value="Marseille" />
-          <attvalue for="1" value="50750132" />
+          <attvalue for="1" value="25748685" />
         </attvalues>
       </node>
       <node id="bureau des fermes Septemes" label="bureau des fermes Septemes">
         <attvalues>
           <attvalue for="0" value="Marseille" />
-          <attvalue for="1" value="57688425" />
+          <attvalue for="1" value="28861682" />
         </attvalues>
       </node>
       <node id="bureau des fermes Marseille - Domaine d'Occident" label="bureau des fermes Marseille - Domaine d'Occident">
@@ -74,10 +74,10 @@
           <attvalue for="1" value="42779241" />
         </attvalues>
       </node>
-      <node id="ports francs de France" label="ports francs de France">
+      <node id="France comme partenaire (ports francs...)" label="France comme partenaire (ports francs...)">
         <attvalues>
           <attvalue for="0" value="France hors Marseille" />
-          <attvalue for="1" value="33485699" />
+          <attvalue for="1" value="2333801" />
         </attvalues>
       </node>
       <node id="bureau des fermes La Ciotat" label="bureau des fermes La Ciotat">
@@ -88,179 +88,158 @@
       </node>
     </nodes>
     <edges>
-      <edge id="0" label="6883600 lt." source="directions des Fermes hors Marseille" target="Direction des Fermes de Marseille (pas de bureau spécifié)" weight="6883600">
+      <edge id="0" label="6,883,600 lt." source="directions des Fermes hors Marseille" target="Marseille comme partenaire" weight="6883600">
         <attvalues>
           <attvalue for="2" value="directions des Fermes hors Marseille" />
-          <attvalue for="3" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="3" value="Marseille comme partenaire" />
+          <attvalue for="4" value="France hors Marseille" />
         </attvalues>
       </edge>
-      <edge id="1" label="33761722 lt." source="Direction des Fermes de Marseille (pas de bureau spécifié)" target="directions des Fermes hors Marseille" weight="33761722">
+      <edge id="1" label="33,761,722 lt." source="Marseille comme partenaire" target="directions des Fermes hors Marseille" weight="33761722">
         <attvalues>
-          <attvalue for="2" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
+          <attvalue for="2" value="Marseille comme partenaire" />
           <attvalue for="3" value="directions des Fermes hors Marseille" />
-          <attvalue for="4" value="Imports" />
+          <attvalue for="4" value="France hors Marseille" />
         </attvalues>
       </edge>
-      <edge id="2" label="3281760 lt." source="Direction des Fermes de Marseille (pas de bureau spécifié)" target="bureau des fermes La Penne" weight="3281760">
+      <edge id="2" label="3,281,760 lt." source="Marseille comme partenaire" target="bureau des fermes La Penne" weight="3281760">
         <attvalues>
-          <attvalue for="2" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
+          <attvalue for="2" value="Marseille comme partenaire" />
           <attvalue for="3" value="bureau des fermes La Penne" />
-          <attvalue for="4" value="Imports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="3" label="22216652 lt." source="Direction des Fermes de Marseille (pas de bureau spécifié)" target="bureau des fermes Septemes" weight="22216652">
+      <edge id="3" label="22,216,652 lt." source="Marseille comme partenaire" target="bureau des fermes Septemes" weight="22216652">
         <attvalues>
-          <attvalue for="2" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
+          <attvalue for="2" value="Marseille comme partenaire" />
           <attvalue for="3" value="bureau des fermes Septemes" />
-          <attvalue for="4" value="Imports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="4" label="5653486 lt." source="Direction des Fermes de Marseille (pas de bureau spécifié)" target="bureau des fermes Arles" weight="5653486">
+      <edge id="4" label="5,653,486 lt." source="Marseille comme partenaire" target="bureau des fermes Arles" weight="5653486">
         <attvalues>
-          <attvalue for="2" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
+          <attvalue for="2" value="Marseille comme partenaire" />
           <attvalue for="3" value="bureau des fermes Arles" />
-          <attvalue for="4" value="Imports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="5" label="588820 lt." source="bureau des fermes Arles" target="Direction des Fermes de Marseille (pas de bureau spécifié)" weight="588820">
+      <edge id="5" label="294,410 lt." source="bureau des fermes Arles" target="Marseille comme partenaire" weight="294410">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Arles" />
-          <attvalue for="3" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="3" value="Marseille comme partenaire" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="6" label="10318 lt." source="bureau des fermes Arles" target="Monde" weight="10318">
+      <edge id="6" label="10,318 lt." source="bureau des fermes Arles" target="Monde" weight="10318">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Arles" />
           <attvalue for="3" value="Monde" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="7" label="39863931 lt." source="bureau des fermes Marseille" target="Monde" weight="39863931">
+      <edge id="7" label="39,863,931 lt." source="bureau des fermes Marseille" target="Monde" weight="39863931">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Marseille" />
           <attvalue for="3" value="Monde" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="8" label="130590615 lt." source="Monde" target="bureau des fermes Marseille" weight="130590615">
+      <edge id="8" label="130,590,615 lt." source="Monde" target="bureau des fermes Marseille" weight="130590615">
         <attvalues>
           <attvalue for="2" value="Monde" />
           <attvalue for="3" value="bureau des fermes Marseille" />
-          <attvalue for="4" value="Imports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="9" label="104379 lt." source="Monde" target="bureau des fermes La Ciotat" weight="104379">
+      <edge id="9" label="104,379 lt." source="Monde" target="bureau des fermes La Ciotat" weight="104379">
         <attvalues>
           <attvalue for="2" value="Monde" />
           <attvalue for="3" value="bureau des fermes La Ciotat" />
-          <attvalue for="4" value="Imports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="10" label="9692 lt." source="Monde" target="bureau des fermes La Penne" weight="9692">
+      <edge id="10" label="9,692 lt." source="Monde" target="bureau des fermes La Penne" weight="9692">
         <attvalues>
           <attvalue for="2" value="Monde" />
           <attvalue for="3" value="bureau des fermes La Penne" />
-          <attvalue for="4" value="Imports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="11" label="841418 lt." source="Monde" target="bureau des fermes Arles" weight="841418">
+      <edge id="11" label="841,418 lt." source="Monde" target="bureau des fermes Arles" weight="841418">
         <attvalues>
           <attvalue for="2" value="Monde" />
           <attvalue for="3" value="bureau des fermes Arles" />
-          <attvalue for="4" value="Imports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="12" label="778974 lt." source="bureau des fermes Lambesc" target="Direction des Fermes de Marseille (pas de bureau spécifié)" weight="778974">
+      <edge id="12" label="389,487 lt." source="bureau des fermes Lambesc" target="Marseille comme partenaire" weight="389487">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Lambesc" />
-          <attvalue for="3" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="3" value="Marseille comme partenaire" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="13" label="5563198 lt." source="bureau des fermes La Penne" target="Direction des Fermes de Marseille (pas de bureau spécifié)" weight="5563198">
+      <edge id="13" label="2,781,599 lt." source="bureau des fermes La Penne" target="Marseille comme partenaire" weight="2781599">
         <attvalues>
           <attvalue for="2" value="bureau des fermes La Penne" />
-          <attvalue for="3" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="3" value="Marseille comme partenaire" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="14" label="36857 lt." source="bureau des fermes La Penne" target="Monde" weight="36857">
+      <edge id="14" label="36,857 lt." source="bureau des fermes La Penne" target="Monde" weight="36857">
         <attvalues>
           <attvalue for="2" value="bureau des fermes La Penne" />
           <attvalue for="3" value="Monde" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="15" label="50002894 lt." source="bureau des fermes Marseille - Poids et Casse" target="Direction des Fermes de Marseille (pas de bureau spécifié)" weight="50002894">
+      <edge id="15" label="25,001,447 lt." source="bureau des fermes Marseille - Poids et Casse" target="Marseille comme partenaire" weight="25001447">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Marseille - Poids et Casse" />
-          <attvalue for="3" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="3" value="Marseille comme partenaire" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="16" label="747238 lt." source="bureau des fermes Marseille - Poids et Casse" target="Monde" weight="747238">
+      <edge id="16" label="747,238 lt." source="bureau des fermes Marseille - Poids et Casse" target="Monde" weight="747238">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Marseille - Poids et Casse" />
           <attvalue for="3" value="Monde" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="17" label="13220182 lt." source="bureau des fermes Septemes" target="Direction des Fermes de Marseille (pas de bureau spécifié)" weight="13220182">
+      <edge id="17" label="6,610,091 lt." source="bureau des fermes Septemes" target="Marseille comme partenaire" weight="6610091">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Septemes" />
-          <attvalue for="3" value="Direction des Fermes de Marseille (pas de bureau spécifié)" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="3" value="Marseille comme partenaire" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="18" label="34939 lt." source="bureau des fermes Septemes" target="Monde" weight="34939">
+      <edge id="18" label="34,939 lt." source="bureau des fermes Septemes" target="Monde" weight="34939">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Septemes" />
           <attvalue for="3" value="Monde" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="19" label="41429241 lt." source="bureau des fermes Marseille - Domaine d'Occident" target="Monde" weight="41429241">
+      <edge id="19" label="41,429,241 lt." source="bureau des fermes Marseille - Domaine d'Occident" target="Monde" weight="41429241">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Marseille - Domaine d'Occident" />
           <attvalue for="3" value="Monde" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="20" label="1350000 lt." source="bureau des fermes Marseille - Domaine d'Occident" target="ports francs de France" weight="1350000">
+      <edge id="20" label="1,350,000 lt." source="bureau des fermes Marseille - Domaine d'Occident" target="France comme partenaire (ports francs...)" weight="1350000">
         <attvalues>
           <attvalue for="2" value="bureau des fermes Marseille - Domaine d'Occident" />
-          <attvalue for="3" value="ports francs de France" />
-          <attvalue for="4" value="Exports" />
+          <attvalue for="3" value="France comme partenaire (ports francs...)" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
-      <edge id="21" label="983801 lt." source="ports francs de France" target="bureau des fermes Marseille" weight="983801">
+      <edge id="21" label="983,801 lt." source="France comme partenaire (ports francs...)" target="bureau des fermes Marseille" weight="983801">
         <attvalues>
-          <attvalue for="2" value="ports francs de France" />
+          <attvalue for="2" value="France comme partenaire (ports francs...)" />
           <attvalue for="3" value="bureau des fermes Marseille" />
-          <attvalue for="4" value="Imports" />
-        </attvalues>
-      </edge>
-      <edge id="22" label="3281760 lt." source="ports francs de France" target="bureau des fermes La Penne" weight="3281760">
-        <attvalues>
-          <attvalue for="2" value="ports francs de France" />
-          <attvalue for="3" value="bureau des fermes La Penne" />
-          <attvalue for="4" value="Imports" />
-        </attvalues>
-      </edge>
-      <edge id="23" label="22216652 lt." source="ports francs de France" target="bureau des fermes Septemes" weight="22216652">
-        <attvalues>
-          <attvalue for="2" value="ports francs de France" />
-          <attvalue for="3" value="bureau des fermes Septemes" />
-          <attvalue for="4" value="Imports" />
-        </attvalues>
-      </edge>
-      <edge id="24" label="5653486 lt." source="ports francs de France" target="bureau des fermes Arles" weight="5653486">
-        <attvalues>
-          <attvalue for="2" value="ports francs de France" />
-          <attvalue for="3" value="bureau des fermes Arles" />
-          <attvalue for="4" value="Imports" />
+          <attvalue for="4" value="Marseille" />
         </attvalues>
       </edge>
     </edges>
