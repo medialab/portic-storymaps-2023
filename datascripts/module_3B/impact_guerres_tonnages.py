@@ -3,6 +3,7 @@ import requests
 import casanova
 from collections import Counter
 
+
 # Read and filter pointcalls
 reader = casanova.reader("../../data/navigo_all_pointcalls.csv")
 
@@ -29,7 +30,7 @@ for row in csv.DictReader(download.content.decode("utf-8").splitlines()):
     tonnages_estimate[row["ship_class"]] = int(row["tonnage_estime_en_tx"].replace("No data", "0") or 0)
 
 
-# On sommes le tonnage total estimé pour chaque année
+# On somme le tonnage total estimé pour chaque année
 tonnages_year = Counter()
 for row in reader:
     year = row[date_col][:4]
@@ -45,5 +46,5 @@ pprint(tonnages_year)
 with open("tonnages_totaux.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerow(["annee", "tonnage"])
-    for year in sorted(tonnages_year.keys()):
+    for year in filter_years:
         writer.writerow([year, tonnages_year[year]])
