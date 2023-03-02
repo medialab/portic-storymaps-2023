@@ -1,0 +1,29 @@
+
+use "/Users/guillaumedaudin/Documents/Recherche/Commerce International Français XVIIIe.xls/Balance du commerce/Retranscriptions_Commerce_France/Données Stata/bdd courante.dta", clear
+
+format value %15.0fc
+
+keep if best_guess_national_region==1
+drop if year ==1749 | year == 1751 | year >=1782 & year <=1788
+*drop if source_type=="Local"
+*drop if source_type=="National toutes directions partenaires manquants"
+
+
+tab year
+tab source_type
+
+
+drop if customs_region=="Paris"
+
+
+
+
+collapse (sum) value, by(year best_guess_national_region)
+
+
+gsort year - value
+
+list
+collapse (sum) value, by(year)
+
+list
