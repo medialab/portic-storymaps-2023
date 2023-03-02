@@ -46,6 +46,8 @@ def build_data(port, nb_top_products=10, preliminary_analysis=False, verbose=Fal
             for prod in best_products[typ]:
                 partners[prod + " " + typ] = defaultdict(Counter)
 
+        # TODO : évaluer la part des top produits sur chaque port
+
 
     reader2 = casanova.reader("../../data/toflit18_all_flows.csv")
     for row in reader2:
