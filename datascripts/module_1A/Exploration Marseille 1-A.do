@@ -29,6 +29,18 @@ reshape long B, i(A) j(corr) string
 export delimited using "/Users/guillaumedaudin/Documents/Recherche/2018 PORTIC Silvia/Datasprint Marseille/1-A--Ports.csv", replace
 
 
+import excel "/Users/guillaumedaudin/Répertoires Git/Dialogue_62_072021/Bases_de_donnees_finales/Indices_villes/Correlation_indices/Correlation_matrix_ville1700_1760.xlsx", sheet("Imports") firstrow clear
+
+rename Nantes-Rennes B=
+reshape long B, i(A) j(corr) string
+export delimited using "/Users/guillaumedaudin/Documents/Recherche/2018 PORTIC Silvia/Datasprint Marseille/1-A--Ports1700-1760.csv", replace
+
+import excel "/Users/guillaumedaudin/Répertoires Git/Dialogue_62_072021/Bases_de_donnees_finales/Indices_villes/Correlation_indices/Correlation_matrix_ville1750_1900.xlsx", sheet("Imports") firstrow clear
+
+rename Nantes-Rennes B=
+reshape long B, i(A) j(corr) string
+export delimited using "/Users/guillaumedaudin/Documents/Recherche/2018 PORTIC Silvia/Datasprint Marseille/1-A--Ports1750-1800.csv", replace
+
 
 
 

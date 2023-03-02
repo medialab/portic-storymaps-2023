@@ -1,0 +1,37 @@
+A,corr,B
+Bayonne,Bayonne,1
+Bayonne,Bordeaux,.392488167211744
+Bayonne,LaRochelle,.55063452664881
+Bayonne,Marseille,-.0655443226404276
+Bayonne,Nantes,.549502247347733
+Bayonne,Rennes,.0668730984730335
+Bordeaux,Bayonne,.392488167211744
+Bordeaux,Bordeaux,1
+Bordeaux,LaRochelle,.78361925100665
+Bordeaux,Marseille,.551897196626651
+Bordeaux,Nantes,.659662165314355
+Bordeaux,Rennes,-.12359513834032
+La Rochelle,Bayonne,.55063452664881
+La Rochelle,Bordeaux,.78361925100665
+La Rochelle,LaRochelle,1
+La Rochelle,Marseille,.447316253062892
+La Rochelle,Nantes,.770933069422289
+La Rochelle,Rennes,-.22625033920859
+Marseille,Bayonne,-.0655443226404276
+Marseille,Bordeaux,.551897196626651
+Marseille,LaRochelle,.447316253062892
+Marseille,Marseille,1
+Marseille,Nantes,.493367024071237
+Marseille,Rennes,-.298608174491895
+Nantes,Bayonne,.549502247347733
+Nantes,Bordeaux,.659662165314355
+Nantes,LaRochelle,.770933069422289
+Nantes,Marseille,.493367024071237
+Nantes,Nantes,1
+Nantes,Rennes,.217973605171083
+Rennes,Bayonne,.0668730984730335
+Rennes,Bordeaux,-.12359513834032
+Rennes,LaRochelle,-.22625033920859
+Rennes,Marseille,-.298608174491895
+Rennes,Nantes,.217973605171083
+Rennes,Rennes,1
