@@ -1,7 +1,7 @@
 import csv
 import requests
 import casanova
-from collections import Counter
+from collections import defaultdict, Counter
 
 
 # Read and filter pointcalls
@@ -22,6 +22,10 @@ filter_rank = "1.0"
 shipclass_col = reader.headers["ship_class_standardized"]
 
 
+flag_col = reader.headers["ship_flag_standardized_fr"]
+sourcedoc_col = reader.headers["source_doc_id"]
+
+
 # On récupère l'estimation du tonnage par type de bateau
 TONNAGE_SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTYdeIwpzaVpY_KS91cXiHxb309iYBS4JN_1_hW-_oyeysuwcIpC2VJ5fWeZJl4tA/pub?output=csv"
 download = requests.get(TONNAGE_SPREADSHEET_URL)
@@ -32,13 +36,19 @@ for row in csv.DictReader(download.content.decode("utf-8").splitlines()):
 
 # On somme le tonnage total estimé pour chaque année
 tonnages_year = Counter()
+tonnages_year_pavillon = defaultdict(Counter)
+pavillons = set()
 for row in reader:
     year = row[date_col][:4]
     if row[source_col] == filter_source and \
        year in filter_years and \
        row[rank_col] == filter_rank:
         # WARNING: Galère missing in tonnages
-        tonnages_year[year] += tonnages_estimate.get(row[shipclass_col], 0)
+        tonnage = tonnages_estimate.get(row[shipclass_col], 0)
+        tonnages_year[year] += tonnage
+        pavillon = row[flag_col] or "inconnu"
+        pavillons.add(pavillon)
+        tonnages_year_pavillon[year][pavillon] += tonnage
 
 
 from pprint import pprint
@@ -48,3 +58,27 @@ with open("tonnages_totaux.csv", "w") as f:
     writer.writerow(["annee", "tonnage"])
     for year in filter_years:
         writer.writerow([year, tonnages_year[year]])
+
+with open("tonnages_pavillons.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["annee", "tonnage", "pavillon"])
+    for year in filter_years:
+        for pavillon in pavillons:
+            writer.writerow([year, tonnages_year_pavillon[year][pavillon], pavillon])
+
+pavillons_agreg = ["français", "génois", "hollandais", "britannique", "napolitain", "espagnol", "danois", "suédois", "autres"]
+for year in filter_years:
+    for pavillon in pavillons:
+        if pavillon not in pavillons_agreg:
+            tonnages_year_pavillon[year]["autres"] += tonnages_year_pavillon[year][pavillon]
+with open("tonnages_pavillons_agregate.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["annee"] + pavillons_agreg)
+    for year in filter_years:
+        writer.writerow([year] + [tonnages_year_pavillon[year][pavillon] for pavillon in pavillons_agreg])
+
+
+
+# War & Peace https://docs.google.com/spreadsheets/d/e/2PACX-1vRxr78qK0zubFIDR7w38JqWOkqD-P6uqZi-pXChSLwYxesUGJwZnxCx-0sYIKKxwr3SJvb5P5HVGW1o/pub?output=csv
+
+
