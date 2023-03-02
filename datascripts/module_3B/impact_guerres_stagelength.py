@@ -56,3 +56,15 @@ with open("mileage_total_moyen.csv", "w") as f:
             mileage_year_tot_FR[year],
             mileage_year_tot_FR[year]/len(ships_year_FR[year]),
         ])
+with open("mileage_total_for_raw.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["annee", "mileage", "serie"])
+    for year in filter_years:
+        writer.writerow([year, mileage_year_tot[year], "mileage_total"])
+        writer.writerow([year, mileage_year_tot_FR[year], "mileage_total_FR"])
+with open("mileage_moyen_for_raw.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["annee", "mileage", "serie"])
+    for year in filter_years:
+        writer.writerow([year, mileage_year_tot[year]/len(ships_year[year]), "mileage_moyen"])
+        writer.writerow([year, mileage_year_tot_FR[year]/len(ships_year_FR[year]), "mileage_moyen_FR"])
