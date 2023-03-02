@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2023-03-02">
+    <creator>NetworkX 2.6.3</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="Bayonne" label="Bayonne" />
+      <node id="Bordeaux" label="Bordeaux" />
+      <node id="La Rochelle" label="La Rochelle" />
+      <node id="Marseille" label="Marseille" />
+      <node id="Nantes" label="Nantes" />
+      <node id="Rennes" label="Rennes" />
+    </nodes>
+    <edges>
+      <edge id="0" source="Bayonne" target="Bordeaux" weight="1.9390232958247218" />
+      <edge id="1" source="Bayonne" target="La Rochelle" weight="2.4044674352353788" />
+      <edge id="2" source="Bayonne" target="Marseille" weight="0.8732074129495372" />
+      <edge id="3" source="Bayonne" target="Nantes" weight="2.400957214535675" />
+      <edge id="4" source="Bayonne" target="Rennes" weight="1.138218208245451" />
+      <edge id="5" source="Bordeaux" target="La Rochelle" weight="3.181297632561523" />
+      <edge id="6" source="Bordeaux" target="Marseille" weight="2.4083849088976583" />
+      <edge id="7" source="Bordeaux" target="Nantes" weight="2.7544785029759336" />
+      <edge id="8" source="Bordeaux" target="Rennes" weight="0.7680854815407229" />
+      <edge id="9" source="La Rochelle" target="Marseille" weight="2.0947243363800094" />
+      <edge id="10" source="La Rochelle" target="Nantes" weight="3.1362039363734504" />
+      <edge id="11" source="La Rochelle" target="Rennes" weight="0.5986885375748221" />
+      <edge id="12" source="Marseille" target="Nantes" weight="2.230145068583383" />
+      <edge id="13" source="Marseille" target="Rennes" weight="0.49195049288959214" />
+      <edge id="14" source="Nantes" target="Rennes" weight="1.483459702893445" />
+    </edges>
+  </graph>
+</gexf>
