@@ -1,0 +1,50 @@
+import csv
+import requests
+import casanova
+from collections import Counter
+
+
+# Read and filter pointcalls
+reader = casanova.reader("../../data/navigo_all_pointcalls.csv")
+
+# On ne conserve que la Santé, pas le petit cabotage
+source_col = reader.headers["source_suite"]
+filter_source = "la Santé registre de patentes de Marseille"
+
+# On veut toutes les années des guerres
+date_col = reader.headers["date_fixed"]
+filter_years = ["1749", "1759", "1769", "1779", "1787", "1789", "1799"]
+
+# Pour sommer le tonnage des différents bateaux, on ne garde qu'un pointcall par trajet complet en gardant le seul pointcall de la première étape
+rank_col = reader.headers["pointcall_rank_dedieu"]
+filter_rank = "1.0"
+
+shipclass_col = reader.headers["ship_class_standardized"]
+
+
+# On récupère l'estimation du tonnage par type de bateau
+TONNAGE_SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTYdeIwpzaVpY_KS91cXiHxb309iYBS4JN_1_hW-_oyeysuwcIpC2VJ5fWeZJl4tA/pub?output=csv"
+download = requests.get(TONNAGE_SPREADSHEET_URL)
+tonnages_estimate = {"": 0}
+for row in csv.DictReader(download.content.decode("utf-8").splitlines()):
+    tonnages_estimate[row["ship_class"]] = int(row["tonnage_estime_en_tx"].replace("No data", "0") or 0)
+
+
+# On somme le tonnage total estimé pour chaque année
+tonnages_year = Counter()
+for row in reader:
+    year = row[date_col][:4]
+    if row[source_col] == filter_source and \
+       year in filter_years and \
+       row[rank_col] == filter_rank:
+        # WARNING: Galère missing in tonnages
+        tonnages_year[year] += tonnages_estimate.get(row[shipclass_col], 0)
+
+
+from pprint import pprint
+pprint(tonnages_year)
+with open("tonnages_totaux.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["annee", "tonnage"])
+    for year in filter_years:
+        writer.writerow([year, tonnages_year[year]])
