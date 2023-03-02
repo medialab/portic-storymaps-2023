@@ -37,6 +37,7 @@ for row in csv.DictReader(download.content.decode("utf-8").splitlines()):
 # On somme le tonnage total estimé pour chaque année
 tonnages_year = Counter()
 tonnages_year_pavillon = defaultdict(Counter)
+ships_year_pavillon = {year: defaultdict(set) for year in filter_years}
 pavillons = set()
 for row in reader:
     year = row[date_col][:4]
@@ -49,6 +50,7 @@ for row in reader:
         pavillon = row[flag_col] or "inconnu"
         pavillons.add(pavillon)
         tonnages_year_pavillon[year][pavillon] += tonnage
+        ships_year_pavillon[year][pavillon].add(row[sourcedoc_col])
 
 
 from pprint import pprint
@@ -58,24 +60,35 @@ with open("tonnages_totaux.csv", "w") as f:
     writer.writerow(["annee", "tonnage"])
     for year in filter_years:
         writer.writerow([year, tonnages_year[year]])
-
 with open("tonnages_pavillons.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerow(["annee", "tonnage", "pavillon"])
     for year in filter_years:
         for pavillon in pavillons:
             writer.writerow([year, tonnages_year_pavillon[year][pavillon], pavillon])
+with open("ships_pavillons.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["annee", "nb_ships", "pavillon"])
+    for year in filter_years:
+        for pavillon in pavillons:
+            writer.writerow([year, len(ships_year_pavillon[year][pavillon]), pavillon])
 
-pavillons_agreg = ["français", "génois", "hollandais", "britannique", "napolitain", "espagnol", "danois", "suédois", "autres"]
+pavillons_agreg = ["français", "génois", "hollandais", "britannique", "napolitain", "espagnol", "danois", "suédois", "savoyard", "autres"]
 for year in filter_years:
     for pavillon in pavillons:
         if pavillon not in pavillons_agreg:
             tonnages_year_pavillon[year]["autres"] += tonnages_year_pavillon[year][pavillon]
+            ships_year_pavillon[year]["autres"] |= ships_year_pavillon[year][pavillon]
 with open("tonnages_pavillons_agregate.csv", "w") as f:
     writer = csv.writer(f)
     writer.writerow(["annee"] + pavillons_agreg)
     for year in filter_years:
         writer.writerow([year] + [tonnages_year_pavillon[year][pavillon] for pavillon in pavillons_agreg])
+with open("ships_pavillons_agregate.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["annee"] + pavillons_agreg)
+    for year in filter_years:
+        writer.writerow([year] + [len(ships_year_pavillon[year][pavillon]) for pavillon in pavillons_agreg])
 
 
 
