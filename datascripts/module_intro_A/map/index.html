@@ -27,7 +27,8 @@ var map = new maplibregl.Map({
 map.on('load', function () {
         map.addSource('partner_grouping', {
             'type': 'geojson',
-            'data': "./marseille_partner_groupings_import_export_geoloc.json"
+            'data': "./marseille_partner_groupings_import_export_geoloc.json",
+            'filter': ['!=', ['get', 'name'], 'France']
         });
         map.addLayer({
             id: 'borders',
