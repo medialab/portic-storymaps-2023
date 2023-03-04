@@ -286,7 +286,8 @@ for lang in GDOC_URL.keys():
 
             # Track Google links to clean them
             link['href'] = re.search(
-                r"(?<=q=)(.*?)(?=&)", link['href']).group(1)
+                r"(?<=q=)(.*?)(?=&)", link['href']).group(1) if re.search(
+                r"(?<=q=)(.*?)(?=&)", link['href']) is not None else link["href"]
 
             parse = urlsplit(link['href'])
             if parse.netloc == 'caller':
