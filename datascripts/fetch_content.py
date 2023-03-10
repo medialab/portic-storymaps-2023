@@ -344,6 +344,8 @@ for lang in GDOC_URL.keys():
             # remove all parts that contain $ in their title
             if "$" in title_text:
               continue
+            # update i for proper index if a $ part has displaced stuff
+            i = len(summary)
             # use convention to choose if a part should go to secondary group
             navgroup = "primary" if not "|" in title_text else "secondary"
             title_text = title_text.replace('|', '')
