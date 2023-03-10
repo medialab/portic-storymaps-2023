@@ -154,14 +154,15 @@ bib_engine = CitationStylesBibliography(bib_style, bib_source, formatter.html)
 Import page content from GDoc
 """
 
-print('Get online HTML content from GDoc')
 first_pass = True
 summary = []
 
 site_metadata = {}
 for lang in GDOC_URL.keys():
+    print('Get online HTML content from GDoc in lang ' + lang)
     
     url = GDOC_URL[lang]
+    print(url)
     parts_soup = []
 
     with requests.Session() as s:
@@ -169,6 +170,7 @@ for lang in GDOC_URL.keys():
         decoded_content = download.content.decode('utf-8')
         soup = BeautifulSoup(decoded_content, 'html.parser')
         title = soup.title.get_text()
+        print('title : ', title)
 
         # parse and extract images
         for image_index, image in enumerate(soup.find_all('img')):
@@ -338,20 +340,15 @@ for lang in GDOC_URL.keys():
                 caller.parent.extract() # Delete <p>
             """
 
-        # loop through each part
-        for i, title in enumerate(soup.find_all('h1')):
+        # loop through each part which are not commented
+        for i, title in enumerate([el for el in soup.find_all('h1') if "$" not in el.get_text()]):
             title_text = title.get_text()
-            # remove all parts that contain $ in their title
-            if "$" in title_text:
-              continue
-            # update i for proper index if a $ part has displaced stuff
-            i = len(summary)
             # use convention to choose if a part should go to secondary group
             navgroup = "primary" if not "|" in title_text else "secondary"
             title_text = title_text.replace('|', '')
             title_text = title_text.strip()
             slug = slugify(title_text)
-            # @todo refine this,  it tackles case where english has more parts than french
+            # @todo refine this, it tackles case where english has more parts than french
             if not first_pass and i + 1 > len(summary):
               continue
             # create a object to be used to build summary.js
