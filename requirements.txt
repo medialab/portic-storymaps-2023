@@ -13,3 +13,4 @@ ipysigma
 networkx
 keplergl
 seaborn
+altair
