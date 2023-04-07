@@ -26,6 +26,7 @@ flag_col = reader.headers["ship_flag_standardized_fr"]
 sourcedoc_col = reader.headers["source_doc_id"]
 amiraute_col = reader.headers["birthplace_uhgs_id"]
 amiraute_bis_col = reader.headers["citizenship_uhgs_id"]
+state_col = reader.headers["state_fr"]
 
 
 # On récupère l'estimation du tonnage par type de bateau
@@ -45,6 +46,7 @@ for row in csv.DictReader(download.content.decode("utf-8").splitlines()):
     if not row["Pavillon"]:
         continue
     for y in war_years:
+        # on attribue le statut guerre de la décennie à venir (pour être capable de suivre ce que sont devenus les navires des nations en guerre une fois la guerre déclarée)
         warstatus[row["Pavillon"]][str(int(y) - 10)] = row[y]
         warstatus[row["Pavillon"]][y] = row[y]
 regional_france = [
@@ -66,6 +68,7 @@ tonnages_year = Counter()
 tonnages_year_pavillon = defaultdict(Counter)
 ships_year_pavillon = {year: defaultdict(set) for year in filter_years}
 warstatuses_tonnage_year = defaultdict(Counter)
+warstatuses_tonnage_year_levant_only = defaultdict(Counter)
 warstatuses_ships_year = defaultdict(lambda: defaultdict(set))
 pavillons = set()
 for row in reader:
@@ -73,12 +76,12 @@ for row in reader:
     if row[source_col] == filter_source and \
        year in filter_years and \
        row[rank_col] == filter_rank:
+        # print(row[state_col])
         # WARNING: Galère missing in tonnages
         tonnage = tonnages_estimate.get(row[shipclass_col], 0)
         tonnages_year[year] += tonnage
 
         pavillon = row[flag_col] or "inconnu"
-        pavillons.add(pavillon)
         tonnages_year_pavillon[year][pavillon] += tonnage
 
         ships_year_pavillon[year][pavillon].add(row[sourcedoc_col])
@@ -96,7 +99,10 @@ for row in reader:
         else:
             wstatus = warstatus[pavillon][year]
         warstatuses_tonnage_year[year][wstatus] += tonnage
+        
         warstatuses_ships_year[year][wstatus].add(row[sourcedoc_col])
+        if row[state_col] == "Empire ottoman":
+            warstatuses_tonnage_year_levant_only[year][wstatus] += tonnage
 
 
 from pprint import pprint
@@ -148,6 +154,18 @@ with open("tonnages_warstatus.csv", "w") as f:
         for st in warstatuses:
             tot_year += warstatuses_tonnage_year[year][st]
         row = [year] + [warstatuses_tonnage_year[year][st]/tot_year for st in warstatuses]
+        writer.writerow(row)
+        
+with open("tonnages_warstatus_levant_only.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerow(["annee"] + warstatuses)
+    for year in filter_years:
+        if year == "1787":
+            continue
+        tot_year = 0
+        for st in warstatuses:
+            tot_year += warstatuses_tonnage_year_levant_only[year][st]
+        row = [year] + [warstatuses_tonnage_year_levant_only[year][st]/tot_year for st in warstatuses]
         writer.writerow(row)
 
 with open("ships_warstatus.csv", "w") as f:
