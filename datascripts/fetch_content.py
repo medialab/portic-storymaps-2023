@@ -58,7 +58,7 @@ copy non-variable mdx files
 shutil.copy("../resources/content/footer_fr.mdx", "../src/content/fr/footer.mdx")
 shutil.copy("../resources/content/footer_en.mdx", "../src/content/en/footer.mdx")
 
-"""
+
 cols_to_markdown_file = {
     'original_data': 'What is the original data ?',
     'line_correspond_to': 'What does a line correspond to ?',
@@ -67,7 +67,7 @@ cols_to_markdown_file = {
     'warnings': 'Notes/warnings'
 }
 doc_dir_path = '../doc/'
-"""
+
 
 
 def set_humain_quote_id(item_metas):
@@ -103,13 +103,31 @@ with requests.Session() as s:
             continue
         del row['statut']
         row['n_chapitre'] = int(row['n_chapitre'])
-        # row['inputs'] = [] if row['inputs'] == '' else row['inputs'].split(',')
-        # row['outputs'] = [] if row['outputs'] == '' else row['outputs'].split(',')
+        row['inputs'] = [] if row['inputs'] == '' else row['inputs'].split(',')
+        row['outputs'] = [] if row['outputs'] == '' else row['outputs'].split(',')
+        for col in cols_to_markdown_file.keys():
+            del row[col]
+        viz_id_list[ row['id'] ] = row
+        print('--', row['id'])
+
+        for i, input_str in enumerate(row['inputs']):
+            if validators.url(input_str) == True:
+                try:
+                    corresponding_output = row['outputs'][i]
+                except IndexError:
+                    print('\033[91m','ERROR', '\033[0m', 'no output index for input online csv', input_str)
+                inputs_csv_online[corresponding_output] = {
+                    'input_str': input_str,
+                    'id': row['id']
+                }
+
+    json_object = json.dumps(viz_id_list, indent=4, ensure_ascii=False)
+    with open('../src/content/viz.json', "w") as f:
+        f.write(json_object)
 
 
 """
 Import CSV from the web, from viz_id_list
-"""
 """
 print('Get online CSV list')
 for output in inputs_csv_online.keys():
@@ -131,7 +149,7 @@ for output in inputs_csv_online.keys():
         f = open(doc_dir_path + '/' + id + '/' + output.replace("/", "_"), "w")
         f.write(decoded_content)
         f.close()
-"""
+
 
 """
 Import CSL JSON from Zotero
