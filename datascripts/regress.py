@@ -10,7 +10,7 @@ def regress(region, growth, label):
     y_arr = []
     for key in sorted(growth[region].keys()):
         value = growth[region][key]
-        if value != 0:
+        if value != 0 and value!='' and value is not None:
             x_arr.append(int(key))
             y_arr.append(math.log(value))
     #print(x_arr, y_arr)

@@ -28,22 +28,15 @@ value_col = reader.headers["value"]
 product_col = reader.headers["product_sitc_simplEN"]
 partner_col = reader.headers["partner_grouping"]
 
-# totaux
-croissances = defaultdict(Counter)
-croissances_no_colonial_product = defaultdict(Counter)
-croissances_no_colonial_trade = defaultdict(Counter)
-# imports
-croissances_imports = defaultdict(Counter)
-croissances_imports_no_colonial_product = defaultdict(Counter)
-croissances_imports_no_colonial_trade = defaultdict(Counter)
-# exports
-croissances_exports = defaultdict(Counter)
-croissances_exports_no_colonial_product = defaultdict(Counter)
-croissances_exports_no_colonial_trade = defaultdict(Counter)
-
 # partenaires coloniaux
 colonial_grouping_partners = set(["Outre-mers", "Afrique", "Amériques", "Asie"])
-min_year = "1716"
+min_year = "1740"
+
+kinds = ["total", "imports", "exports", "total_no_colonial_product", "total_no_colonial_trade", "imports_no_colonial_product", "exports_no_colonial_product", "imports_no_colonial_trade", "exports_no_colonial_trade"]
+
+# main data
+croissances = {kind:defaultdict(Counter) for kind in kinds}
+
 
 years = set();
 
@@ -57,7 +50,7 @@ for row in reader:
     # ommission du partenaire France car commerce connu qu'en 1789 
     if row[year_col] != "1787" and \
        row[dirferme_col] in directions_fermes and row[source_col] == "1" and \
-       (row[dirferme_col] != "Marseille" or row[year_col] >= "1740") and \
+       (row[year_col] >= "1740") and \
        row[value_col] != '' and row[value_col] is not None and \
        row[partner_col] != 'France':
         all_data.append(row)
@@ -85,21 +78,21 @@ for ((year, dir_ferme), _rows) in groupby(all_data, key= lambda r: (r[year_col],
     
     # aggrégation des données par ferme par année
     if total is not None:
-        croissances[dir_ferme][year] += total
-        croissances_no_colonial_product[dir_ferme][year] += total_no_colonial_product
-        croissances_no_colonial_trade[dir_ferme][year] += total_no_colonial_trade
+        croissances["total"][dir_ferme][year] += total
+        croissances["total_no_colonial_product"][dir_ferme][year] += total_no_colonial_product
+        croissances["total_no_colonial_trade"][dir_ferme][year] += total_no_colonial_trade
     if imports_value is not None:
-        croissances_imports[dir_ferme][year] += imports_value
-        croissances_imports_no_colonial_product[dir_ferme][year] += imports_value_no_colonial_product
-        croissances_imports_no_colonial_trade[dir_ferme][year] += imports_value_no_colonial_trade
+        croissances['imports'][dir_ferme][year] += imports_value
+        croissances['imports_no_colonial_product'][dir_ferme][year] += imports_value_no_colonial_product
+        croissances['imports_no_colonial_trade'][dir_ferme][year] += imports_value_no_colonial_trade
     if exports_value is not None:
-        croissances_exports[dir_ferme][year] += exports_value
-        croissances_exports_no_colonial_product[dir_ferme][year] += exports_value_no_colonial_product
-        croissances_exports_no_colonial_trade[dir_ferme][year] += exports_value_no_colonial_trade
+        croissances['exports'][dir_ferme][year] += exports_value
+        croissances['exports_no_colonial_product'][dir_ferme][year] += exports_value_no_colonial_product
+        croissances['exports_no_colonial_trade'][dir_ferme][year] += exports_value_no_colonial_trade
 
 def war_reg(f, data, label, memory):
     # régression sur les périodes de guerre
-    reg_data = defaultdict(str)
+    reg_data = defaultdict(float)
     for war_index in range(len(wars)):
         # all precedent wars years 
         wars_years =  [year for i in range(0, war_index) for year in wars[i]]
@@ -119,12 +112,14 @@ def war_reg(f, data, label, memory):
 
 average_loss_memory = defaultdict(dict)
 average_loss_no_memory = defaultdict(dict)
+tradeDynamics = []
 with open("../public/data/evolution_directions_fermes_local.csv", "w") as f:
-    writer = csv.writer(f)
-    writer.writerow(["year", "direction_ferme", "value", "kind", "peace_reg_memory", "peace_reg"])
+    fieldnames = ["year", "direction_ferme", "value", "kind", "peace_reg_memory", "peace_reg"]
+    writer = csv.DictWriter(f, fieldnames)
+    writer.writeheader()
     
     for ferme in directions_fermes:
-        for data,label in [(croissances, 'total'), (croissances_imports, 'imports'), (croissances_exports, "exports"), (croissances_no_colonial_product, "total_no_colonial_product"), (croissances_no_colonial_trade, "total_no_colonial_trade"), (croissances_imports_no_colonial_product, "imports_no_colonial_product"), (croissances_exports_no_colonial_product, "exports_no_colonial_product"), (croissances_imports_no_colonial_trade, 'imports_no_colonial_trade' ), (croissances_exports_no_colonial_trade, 'exports_no_colonial_trade')]:
+        for label,data in croissances.items():
             # war regressions
             # with memory
             memory_war_regs = war_reg(ferme, data, label, True)
@@ -138,33 +133,62 @@ with open("../public/data/evolution_directions_fermes_local.csv", "w") as f:
             loss_rates = [(data[ferme][year] - prediction)/prediction for year, prediction in no_memory_war_regs.items() if data[ferme][year] != 0]
             if len(loss_rates)>0:
                 average_loss_no_memory[ferme][label] = sum(loss_rates)/len(loss_rates)
-                
-            writer.writerows([[year, ferme, data[ferme][str(year)] if data[ferme][str(year)] != 0 else '', label, memory_war_regs[str(year)],no_memory_war_regs[str(year)]] for year in range(int(min_year), 1790)])
+            tradeDynamics = tradeDynamics + [dict(zip(
+                fieldnames,
+                [year, ferme, data[ferme][str(year)] if data[ferme][str(year)] != 0 else '', label, memory_war_regs[str(year)],no_memory_war_regs[str(year)]])) for year in range(int(min_year), 1790)]
+            
+            writer.writerows(tradeDynamics)
 
 
 
+reg_data = defaultdict(dict)
 with open("../public/data/regressions_local.csv", "w") as f:
-    writer = csv.writer(f)
-    writer.writerow(["direction_ferme", "kind", "score", "intercept", "slope", "avg_loss_mem", "avg_loss_no_mem"])
+    fieldnames = ["direction_ferme", "kind", "score", "intercept", "slope", "avg_loss_mem", "avg_loss_no_mem"]
+    writer = csv.DictWriter(f, fieldnames)
+    writer.writeheader()
     for f in directions_fermes:
-        (score, slope, y0) = regress.regress(f, croissances, "total")
-        writer.writerow([f, "total", score, y0, slope, average_loss_memory[f]["total"],average_loss_no_memory[f]["total"]])
-        (score, slope, y0) = regress.regress(f, croissances_imports, "imports")
-        writer.writerow([f, "imports", score, y0, slope, average_loss_memory[f]["imports"],average_loss_no_memory[f]["imports"]])
-        (score, slope, y0) = regress.regress(f, croissances_exports, "exports")
-        writer.writerow([f, "exports", score, y0, slope, average_loss_memory[f]["exports"],average_loss_no_memory[f]["exports"]])
-        (score, slope, y0) = regress.regress(f, croissances_no_colonial_product, "total_no_colonial_product")
-        writer.writerow([f, "total_no_colonial_product", score, y0, slope, average_loss_memory[f]["total_no_colonial_product"],average_loss_no_memory[f]["total_no_colonial_product"]])
-        (score, slope, y0) = regress.regress(f, croissances_no_colonial_trade, "total_no_colonial_trade")
-        writer.writerow([f, "total_no_colonial_trade", score, y0, slope, average_loss_memory[f]["total_no_colonial_trade"],average_loss_no_memory[f]["total_no_colonial_trade"]])
-        (score, slope, y0) = regress.regress(f, croissances_imports_no_colonial_product, "imports_no_colonial_product")
-        writer.writerow([f, "imports_no_colonial_product", score, y0, slope, average_loss_memory[f]["imports_no_colonial_product"],average_loss_no_memory[f]["imports_no_colonial_product"]])
-        (score, slope, y0) = regress.regress(f, croissances_exports_no_colonial_product, "exports_no_colonial_product")
-        writer.writerow([f, "exports_no_colonial_product", score, y0, slope, average_loss_memory[f]["exports_no_colonial_product"],average_loss_no_memory[f]["exports_no_colonial_product"]])
-        (score, slope, y0) = regress.regress(f, croissances_imports_no_colonial_trade, "imports_no_colonial_trade")
-        writer.writerow([f, "imports_no_colonial_trade", score, y0, slope, average_loss_memory[f]["imports_no_colonial_trade"],average_loss_no_memory[f]["imports_no_colonial_trade"]])
-        (score, slope, y0) = regress.regress(f, croissances_exports_no_colonial_trade, "exports_no_colonial_trade")
-        writer.writerow([f, "exports_no_colonial_trade", score, y0, slope, average_loss_memory[f]["exports_no_colonial_trade"],average_loss_no_memory[f]["exports_no_colonial_trade"]])
+        for kind in kinds:
+
+            (score, slope, y0) = regress.regress(f, croissances[kind], kind)
+            dataLine = dict(zip(
+                fieldnames,
+                [f, kind, score, y0, slope, average_loss_memory[f][kind],average_loss_no_memory[f][kind]]
+            ))
+            writer.writerow(dataLine)
+            reg_data[f][kind] = dataLine
 
 
 
+directions_order = ["Marseille", "Bordeaux", "Rouen", "Nantes",  "La Rochelle", "Bayonne"]
+
+
+with open("../public/data/tradeDynamics.csv", "w") as f:
+    output = csv.DictWriter(f, ['year', "value", "kind", "slope", "peace_reg_memory", "peace_reg", "direction_ferme", "column_order", "avg_loss_mem", "avg_loss_no_mem"])
+    output.writeheader()
+    for d in tradeDynamics:
+        slope = float(reg_data[d['direction_ferme']][d['kind']]['slope'])
+        output.writerow({
+            "year": d['year'],
+            "value": float(d['value']) if d['value']!='' else None, 
+            "kind" : d['kind'],
+            "slope" : f"{d['direction_ferme']} {'+' if slope>0 else ''}{slope*100:0.1f}%/an",
+            "peace_reg_memory": float(d['peace_reg_memory']) if d['peace_reg_memory'] !='' else None,
+            "peace_reg": float(d['peace_reg']) if d['peace_reg'] !='' else None,
+            "direction_ferme": d['direction_ferme'],
+            "column_order": directions_order.index(d['direction_ferme']),
+            "avg_loss_mem": f"Perte memoire{float(reg_data[d['direction_ferme']][d['kind']]['avg_loss_mem'])*100:0.1f}%",
+            "avg_loss_no_mem": f"Perte {float(reg_data[d['direction_ferme']][d['kind']]['avg_loss_no_mem'])*100:0.1f}%"
+            })
+        output.writerow({
+            "year": d['year'],
+            "value": math.exp(slope*float(d['year'])+float(reg_data[d['direction_ferme']][d['kind']]['intercept'])) , 
+            "kind" : d['kind']+"_regression",
+            "slope" : f"{d['direction_ferme']} {'+' if slope>0 else ''}{slope*100:0.1f}%/an",
+            "peace_reg_memory": float(d['peace_reg_memory']) if d['peace_reg_memory'] !='' else None,
+            "peace_reg": float(d['peace_reg']) if d['peace_reg'] !='' else None,
+            "direction_ferme": d['direction_ferme'],
+            "column_order": directions_order.index(d['direction_ferme']),
+            "avg_loss_mem": f"Perte memoire{float(reg_data[d['direction_ferme']][d['kind']]['avg_loss_mem'])*100:0.1f}%",
+            "avg_loss_no_mem": f"Perte {float(reg_data[d['direction_ferme']][d['kind']]['avg_loss_no_mem'])*100:0.1f}%"
+            })
+        
