@@ -7,6 +7,11 @@
       stroke: #0b2941!important;
       fill: rgba(255,255,255,0.5)!important;
     }
+    .label {
+      stroke: white;
+      stroke-width: 0.2;
+      fill: red;
+    }
   }
   &.is-atlas-mode {
     .geopart {

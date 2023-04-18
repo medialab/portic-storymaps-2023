@@ -24,7 +24,7 @@ const PartnersObjects = ({
   }, [data, mode]);
 
   const toflitAreaScale = useMemo(() => {
-    const maxRadius = width * height * 0.00007;
+    const maxRadius = height * 0.03;
     const maxArea = Math.PI * maxRadius * maxRadius;
     return scaleLinear()
       .domain(extent(visibleData.map(d => +d.toflit_value)))
@@ -37,7 +37,7 @@ const PartnersObjects = ({
   const navigoWidthScale = useMemo(() => {
     return scaleLinear()
       .domain(extent(visibleData.map(d => +d.navigo_nb_ships)))
-      .range([1, maxTriangleWidth])
+      .range([5, maxTriangleWidth])
   }, [visibleData, width, height]);
   const navigoHeightScale = useMemo(() => {
     return scaleLinear()
@@ -105,12 +105,16 @@ const PartnersObjects = ({
           radius + arrowsMargin / 10
           :
           max([maxTriangleWidth, maxTriangleHeight]) / 2 + arrowsMargin / 10;
+        const tooltipText = mode.includes('toflit') ?
+        `commerce total de ${formatNumber(parseInt(toflit_value))} lt. pour le partenaire ${partner} en 1789.`
+        :
+        `${formatNumber(parseInt(navigo_nb_ships))} navires sont partis des ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
         return (
           <g
             className="PartnersObject"
             transform={`translate(${x}, ${y})`}
             key={index}
-            data-tip={`${partner} : ${formatNumber(parseInt(toflit_value))} lt.`}
+            data-tip={tooltipText}
             data-for="geo-tooltip"
           >
             {
@@ -152,7 +156,8 @@ const PartnersObjects = ({
               x={labelPosition === 'right' ? labelMargin : -labelMargin}
               textAnchor={labelPosition === 'right' ? 'start' : 'end'}
               y={5}
-              fill="red"
+              className="label"
+              // fill="red"
             >
               {partner}
             </text>
