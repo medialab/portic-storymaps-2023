@@ -5,6 +5,7 @@
   "scripts": {
     "load": "sh install.sh",
     "build": "webpack --config webpack.config.prod.js",
+    "datascripts": "./datascripts.sh",
     "thumbnails": "node makeThumbnails.js",
     "dev": "webpack serve --config webpack.config.dev.js"
   },
