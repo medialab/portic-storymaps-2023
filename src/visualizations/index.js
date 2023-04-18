@@ -2,6 +2,12 @@ import React, { useMemo } from 'react';
 
 import visualizationsMetas from '../content/viz';
 
+import Intro from './Intro/Intro';
+
+const visualizations = {
+  'intro': Intro
+}
+
 /**
  * This script is the bridge between visualization code, visualizations list, and visualization callers in contents.
  * It returns a visualization component depending on the provided id
@@ -47,15 +53,22 @@ export default function VisualizationController({
       return null;
     }
 
-    switch (vizId) {
-      default:
-        return (
-          <img
-            src={`${process.env.BASE_PATH}/assets/drafts/${vizId}.jpg`}
-            {...{ width, height }}
-            style={{ objectFit: 'contain' }}
-          />
-        )
+    if (vizId in visualizations) {
+      return visualizations[vizId]({
+        data,
+        width,
+        height,
+        atlasMode,
+        callerProps
+      })
+    } else {
+      return (
+        <img
+          src={`${process.env.BASE_PATH}/assets/drafts/${vizId}.jpg`}
+          {...{ width, height }}
+          style={{ objectFit: 'contain' }}
+        />
+      )
     }
   }, [vizId, callerProps, dimensions, lang, data])
 

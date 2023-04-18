@@ -255,6 +255,20 @@ const GeographicMapChart = ({
           // translationY: height * 0.28
         }
         break;
+        case 'Europe and North Africa centered on Marseille':
+          projectionConfig = {
+            ...projectionConfig,
+            scale: 800,
+            // centerX: 15,
+            // centerY: 40,
+            centerX: 5,
+            centerY: 43,
+            translationX: width * .5,
+            translationY: height * .5,
+            // translationX: width * 0.4,
+            // translationY: height * 0.28
+          }
+          break;
       case 'France':
       default: // as France config 
         // console.log('projection config in dry version', projectionConfig);
