@@ -72,6 +72,36 @@ geolocalizations = {
   "Maroc": [-8.1521827,31.6703932]
 }
 
+directions_geolocs = {
+  "Amiens": [2.2022809, 49.8987918],
+  "Auch": [0.484152,43.6626547],
+  "Bayonne": [-1.5022883,43.4844312],
+  "Besançon": [5.9298594,47.2602913],
+  "Bordeaux": [-0.6684127,44.8638098],
+  "Caen": [-0.4134422,49.1846898],
+  "Charleville": [4.6480131, 49.2],
+  # "Charleville": [4.6480131, 49.7802714],
+  "Châlons": [4.338868,48.9656081],
+  # "Directions de terre": [],
+  "Flandre": [2.260707, 51.016986],
+  # "France": [],
+  "Grenoble": [5.6743405, 45.1842864],
+  "La Rochelle": [-1.2176732,46.1621033],
+  "Langres": [5.2951516,47.8597242],
+  "Lorient": [-3.4214692,47.7494125],
+  "Lyon": [4.7527295,45.7580409],
+  "Marseille": [5.2158406,43.280477],
+  "Montpellier": [3.8329698,43.6100709],
+  "Nantes": [-1.642735,47.2383198],
+  "Narbonne": [2.8688814,43.1494672],
+  "Rouen": [1.0499721,49.4412841],
+  "Saint-Malo": [-2.0890353,48.6463833],
+  "Saint-Quentin": [3.2377845,49.847577],
+  "Soisson": [3.302947,49.3765829],
+  "Toulon": [5.8922396,43.1364193],
+  "Valenciennes": [3.4729976,50.3620936]
+}
+
 pointcalls = []
 accepted_sources = [
     # 'G5',
@@ -115,14 +145,23 @@ tonnages_estimate = {"": 0}
 for row in csv.DictReader(download.content.decode("utf-8").splitlines()):
     tonnages_estimate[row["ship_class"]] = int(row["tonnage_estime_en_tx"].replace("No data", "0") or 0)
 
+# On récupère le décompte des sources saisies pour avoir les données des compte-rendus
+COMPTE_RENDUS_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRNAeIEFhB_RTm2xBgeuXl5oMtNIrGhWT6uCB2S9wEUblwDidRBwv9dp8D0S-YIPUyoASaG2p-NgfWD/pub?output=csv'
+download = requests.get(COMPTE_RENDUS_URL)
+compte_rendus_conges = {}
+for row in csv.DictReader(download.content.decode("utf-8").splitlines()):
+    if row["annee"] == "1787":
+       compte_rendus_conges[row["toponyme_standard_fr"]] = row["nb_conges_cr"]
+ports_names_compte_rendus_conges = set(compte_rendus_conges.keys())
 
-# toflit18 data
-imports = Counter()
-exports = Counter()
+# toflit18 data : count international trade (by partner) and local (directions de fermes)
+international_trade = Counter()
+local_trade = Counter()
 with open('../data/toflit18_all_flows.csv', 'r') as f:
     flows = csv.DictReader(f)
     for flow in flows:
         partner = flow["partner_grouping"]
+        reporter = flow["customs_region"]
         if flow["year"] == "1789" \
           and flow["customs_region"] == "Marseille" \
           and flow["best_guess_region_prodxpart"] == "1" \
@@ -132,17 +171,24 @@ with open('../data/toflit18_all_flows.csv', 'r') as f:
                partner = flow["partner_wars"]
             if partner in ["Monde", "????", "[vide]"]:
                partner = "Inconnu"
-            if flow["export_import"] == "Imports":
-              imports[partner] += float(flow["value"] or 0)
-            elif flow["export_import"] == "Exports":
-              exports[partner] += float(flow["value"] or 0)
+            international_trade[partner] += float(flow["value"] or 0)
+        if flow["year"] == "1789" \
+          and flow["best_guess_region_prodxpart"] == "1" \
+          and partner != "France" \
+          and reporter not in ["France", "Directions de terre"] \
+        :
+            local_trade[reporter] += float(flow["value"] or 0)
 
 # navigo data
-departures = {}
+international_departures = {}
+local_departures = {}
+directions_for_compte_rendu = {}
+ports_without_ferme = set()
 with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         departure_year = row['outdate_fixed'].split('-')[0]
+        # international 1789 Marseille
         if row["source_suite"] in accepted_sources \
           and departure_year == "1789"\
           and int(float(row["pointcall_rank_dedieu"])) == 1 \
@@ -165,59 +211,130 @@ with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
              if ship_class in tonnages_estimate:
                 tonnage = tonnages_estimate[ship_class]
           tonnage = int(tonnage or 0)
-          if partner not in departures:
-             departures[partner] = {
+          if partner not in international_departures:
+             international_departures[partner] = {
                 "partner": partner,
                 "tonnage": 0,
                 "nb_ships": 0
              }
-          departures[partner]["tonnage"] += tonnage
-          departures[partner]["nb_ships"] += 1
+          international_departures[partner]["tonnage"] += tonnage
+          international_departures[partner]["nb_ships"] += 1
+        # local all 1787
+        if departure_year == "1787"\
+          and row["state_fr"] == "France" \
+          and row["pointcall_action"] == "Out" \
+        :
+          locality = row["toponyme_fr"]
+          # locality = row["ferme_direction"]
+          # if locality == "Lille":
+          #    locality = "Flandre"
+          # if locality == "":
+          #    ports_without_ferme.add(row["toponyme_fr"])
+          #    continue
+          tonnage = row["tonnage"]
+          tonnage = int(float(tonnage or 0))
+          if locality not in local_departures:
+             local_departures[locality] = {
+                "partner": partner,
+                "tonnage": 0,
+                "nb_ships": 0,
+                "nb_ships_cr": 0,
+                "latitude": row["latitude"],
+                "longitude": row["longitude"]
+             }
+          local_departures[locality]["tonnage"] += tonnage
+          local_departures[locality]["nb_ships"] += 1
+          if row["toponyme_fr"] in ports_names_compte_rendus_conges:
+            directions_for_compte_rendu[row["toponyme_fr"]] = locality
+for p in international_departures.keys():
+   international_departures[p]["mean_tonnage"] = international_departures[p]["tonnage"] / international_departures[p]["nb_ships"]
+for p in local_departures.keys():
+   local_departures[p]["mean_tonnage"] = local_departures[p]["tonnage"] / local_departures[p]["nb_ships"]
 
-for p in departures.keys():
-   departures[p]["mean_tonnage"] = departures[p]["tonnage"] / departures[p]["nb_ships"]
+# fixing number of congés with compte rendus data
+for port, cr_conges in compte_rendus_conges.items():
+  if port in local_departures:
+     local_departures[port]["nb_ships_cr"] = int(cr_conges or 0)
+  #  if port in directions_for_compte_rendu:
+  #     direction = directions_for_compte_rendu[port]
+  #     if "nb_ships_cr" not in local_departures[direction]:
+  #       local_departures[direction]["nb_ships_cr"] = 0
+  #     local_departures[direction]["nb_ships_cr"] += int(cr_conges or 0)
 
-print(departures["Levant et Barbarie"])
+# print('ports without ferme : ', ports_without_ferme)
 
-partners_names = set([k for k in imports.keys()] + [k for k in exports.keys()] + [k for k in departures.keys()])
-# for p in partners_names:
-#    print(p)
+localities_names = set([k for k in local_trade.keys()] + [k for k in local_departures.keys()])
+partners_names = set([k for k in international_trade.keys()] + [k for k in international_departures.keys()])
+
 partners = {}
 for p in partners_names:
-  value = 0
+  value = international_trade[p]
   latitude = 0
   longitude = 0
-  if p in exports:
-    value += exports[p]
-  if p in imports:
-    value += imports[p]
 
   if p in geolocalizations:
     latitude = geolocalizations[p][0]
     longitude = geolocalizations[p][1]
+  elif p in local_departures:
+     latitude = local_departures[p]["longitude"]
+     longitude = local_departures[p]["latitude"]
   else:
      print("no geolocalization found for " + p)
   mean_tonnage = 0
   nb_ships = 0
-  if p in departures:
-     nb_ships = departures[p]["nb_ships"]
-     mean_tonnage = departures[p]["mean_tonnage"]
+  if p in international_departures:
+     nb_ships = international_departures[p]["nb_ships"]
+     mean_tonnage = international_departures[p]["mean_tonnage"]
   partners[p] = {
      "partner": p,
      "latitude": latitude,
      "longitude": longitude,
      "toflit_value": value,
      "navigo_mean_tonnage": mean_tonnage,
-     "navigo_nb_ships": nb_ships
+     "navigo_nb_ships": nb_ships,
+     "scope": "world"
   }
 
+localities = {}
+for p in localities_names:
+  value = local_trade[p] if p in local_trade else 0
+  latitude = 0
+  longitude = 0
+  if p in directions_geolocs:
+    latitude = directions_geolocs[p][0]
+    longitude = directions_geolocs[p][1]
+  elif p in local_departures:
+     latitude = local_departures[p]["longitude"]
+     longitude = local_departures[p]["latitude"]
+  else:
+     print("no geolocalization found for " + p)
+  mean_tonnage = 0
+  nb_ships = 0
+  nb_ships_cr = 0
+  if p in local_departures:
+     nb_ships = local_departures[p]["nb_ships"]
+     nb_ships_cr = local_departures[p]["nb_ships_cr"]
+     mean_tonnage = local_departures[p]["mean_tonnage"]
+  partners[p] = {
+     "partner": p,
+     "latitude": latitude,
+     "longitude": longitude,
+     "toflit_value": value,
+     "navigo_mean_tonnage": mean_tonnage,
+     "navigo_nb_ships": nb_ships_cr,
+     "scope": "france",   
+     "navigo_nb_ships_pointcalls": nb_ships
+  }
+   
 partners = [p for p in partners.values()]
+localities = [p for p in localities.values()]
 
 print('writing intro_data_world.csv')
 with open('../public/data/intro_data_world.csv', 'w') as f:
-    writer = csv.DictWriter(f, fieldnames=["partner", "latitude", "longitude", "toflit_value", "navigo_mean_tonnage", "navigo_nb_ships"])
+    writer = csv.DictWriter(f, fieldnames=["partner", "latitude", "longitude", "toflit_value", "navigo_mean_tonnage", "navigo_nb_ships", "scope", "navigo_nb_ships_pointcalls"])
     writer.writeheader()
     writer.writerows(partners)
+    writer.writerows(localities)
     
 
 # input_path = "./resources/intro_map.geojson"
