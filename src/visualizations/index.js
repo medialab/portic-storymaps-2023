@@ -54,13 +54,26 @@ export default function VisualizationController({
     }
 
     if (vizId in visualizations) {
-      return visualizations[vizId]({
-        data,
-        width,
-        height,
-        atlasMode,
-        callerProps
-      })
+      const VizComponent = visualizations[vizId]
+      return (
+        <VizComponent
+          {...{
+            data,
+            width,
+            height,
+            atlasMode,
+            callerProps
+          }
+          }
+        />
+      )
+      // return visualizations[vizId]({
+      //   data,
+      //   width,
+      //   height,
+      //   atlasMode,
+      //   callerProps
+      // })
     } else {
       return (
         <img

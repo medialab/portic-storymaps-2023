@@ -1,56 +1,53 @@
 import { extent, max } from "d3-array";
 import { scaleLinear } from "d3-scale";
-import { useMemo } from "react";
 import { formatNumber } from "../../utils/misc";
 
 const PartnersObjects = ({
-  data,
+  // data,
   projection,
   width,
   height,
-  mode = 'navigo_world',
+
+  // mode = 'navigo_france',
   // mode = 'toflit18_world',
-  // projectionTemplate
+  dataScope = 'world',
+  dataType = 'toflit18',
+  // topPortsNumber = 10,
+  data,
+  // projectionTemplate,
+  arrowSide,
+  navigoWidthScale,
+  navigoHeightScale,
+  arrowsMargin,
+  toflitAreaScale,
 }) => {
-  const arrowSide = 5;
+  // const arrowSide = 5;
 
-  const visibleData = useMemo(() => {
-    if (mode === 'toflit18_world') {
-      return data.filter(datum => +datum.toflit_value > 0)
-    } else if (mode === 'navigo_world') {
-      return data.filter(datum => +datum.navigo_nb_ships > 0)
-    }
-    return data;
-  }, [data, mode]);
+  // const toflitAreaScale = useMemo(() => {
+  //   const maxRadius = height * 0.03;
+  //   const maxArea = Math.PI * maxRadius * maxRadius;
+  //   return scaleLinear()
+  //     .domain(extent(data.map(d => +d.toflit_value)))
+  //     .range([1, maxArea])
+  // }, [data, width, height]);
 
-  const toflitAreaScale = useMemo(() => {
-    const maxRadius = height * 0.03;
-    const maxArea = Math.PI * maxRadius * maxRadius;
-    return scaleLinear()
-      .domain(extent(visibleData.map(d => +d.toflit_value)))
-      .range([1, maxArea])
-  }, [visibleData, width, height]);
+  // const navigoWidthScale = useMemo(() => {
+  //   return scaleLinear()
+  //     .domain(extent(data.map(d => +d.navigo_nb_ships)))
+  //     .range([5, maxTriangleWidth])
+  // }, [data, width, height]);
+  // const navigoHeightScale = useMemo(() => {
+  //   return scaleLinear()
+  //     .domain(extent(data.map(d => +d.navigo_mean_tonnage)))
+  //     .range([5, maxTriangleHeight])
+  // }, [data, width, height]);
 
-  const maxTriangleWidth = width * 0.05;
-  const maxTriangleHeight = height * 0.05;
-
-  const navigoWidthScale = useMemo(() => {
-    return scaleLinear()
-      .domain(extent(visibleData.map(d => +d.navigo_nb_ships)))
-      .range([5, maxTriangleWidth])
-  }, [visibleData, width, height]);
-  const navigoHeightScale = useMemo(() => {
-    return scaleLinear()
-      .domain(extent(visibleData.map(d => +d.navigo_mean_tonnage)))
-      .range([5, maxTriangleHeight])
-  }, [visibleData, width, height]);
-
-  const arrowsMargin = width * height * 0.00005;
+  // const arrowsMargin = width * height * 0.00005;
 
 
   return (
     <>{
-      visibleData.map((datum, index) => {
+      data.map((datum, index) => {
         const {
           partner,
           toflit_value,
@@ -95,20 +92,42 @@ const PartnersObjects = ({
           arrowAngle = -45;
         }
 
-        if (['Venise'].includes(partner)) {
+        if (dataType === 'navigo' && dataScope === 'france' && !['Rouen', 'Cap-Français'].includes(partner)) {
+          labelPosition = 'left';
+        }
+        else if ([
+          'Venise', 
+          'Toulon',
+      ].includes(partner)) {
           labelPosition = 'right';
-        } else if (['Flandre et autres états de l\'Empereur', 'Milanais, Toscane et Lucques'].includes(partner)) {
+        } else if ([
+          'Flandre et autres états de l\'Empereur', 
+          'Milanais, Toscane et Lucques',
+          'Narbonne',
+          'Montpellier',
+          'Amiens',
+        ].includes(partner)) {
           labelPosition = 'left';
         }
 
-        const labelMargin = mode.includes('toflit') ?
+        const labelMargin = dataType === 'toflit18' ?
           radius + arrowsMargin / 10
           :
-          max([maxTriangleWidth, maxTriangleHeight]) / 2 + arrowsMargin / 10;
-        const tooltipText = mode.includes('toflit') ?
-        `commerce total de ${formatNumber(parseInt(toflit_value))} lt. pour le partenaire ${partner} en 1789.`
-        :
-        `${formatNumber(parseInt(navigo_nb_ships))} navires sont partis des ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
+          max([triangleWidth, triangleHeight]) / 2 + arrowsMargin / 5;
+        let tooltipText = '';
+        if (dataType === 'toflit18') {
+          if (dataScope === 'world') {
+            tooltipText = `La direction des fermes de Marseille a effectué un commerce total de ${formatNumber(parseInt(toflit_value))} lt. avec le partenaire ${partner} en 1789.`
+          } else {
+            tooltipText = `La direction des fermes de ${partner} a effectué un commerce total de ${formatNumber(parseInt(toflit_value))} lt. en 1789.`
+          }
+        } else {
+          if (dataScope === 'world') {
+            tooltipText = `En 1789, ${formatNumber(parseInt(navigo_nb_ships))} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
+          } else {
+            tooltipText = `En 1787, ${formatNumber(parseInt(navigo_nb_ships))} voyages ont été effectués depuis le port de ${partner} en 1787, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
+          }
+        }
         return (
           <g
             className="PartnersObject"
@@ -138,11 +157,11 @@ const PartnersObjects = ({
               className="invariant-circle"
               cx={0}
               cy={0}
-              r={mode.includes('toflit') ? radius : max([maxTriangleHeight, maxTriangleWidth]) / 2}
-              fill={mode.includes('toflit') ? "red" : "rgba(0,0,0,0.07)"}
+              r={dataType === 'toflit18' ? radius : max([triangleWidth, triangleHeight]) / 2 + 5}
+              fill={dataType === 'toflit18' ? "red" : "rgba(0,0,0,0.07)"}
             />
             {
-              mode.includes('navigo') &&
+              dataType === 'navigo' &&
               <g
                 transform={`translate(0,${triangleHeight / 5})`}
               >

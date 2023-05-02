@@ -1,37 +1,144 @@
-
-
-
 .Intro {
   &:not(.is-atlas-mode) {
     .geopart {
-      stroke: #0b2941!important;
-      fill: rgba(255,255,255,0.5)!important;
+      stroke: rgba(255, 255, 255, 0.2)!important; // #0b2941 !important;
+      fill: rgba(255, 255, 255, 0.1)!important;
+      // fill: transparent!important;
+      // fill: rgba(255, 255, 255, 0.5) !important;
     }
     .label {
-      stroke: white;
-      stroke-width: 0.2;
+      // stroke: white;
+      // stroke-width: 0.3;
       fill: red;
+      font-weight: 500;
     }
   }
   &.is-atlas-mode {
     .geopart {
-      stroke: white!important;
-      fill: lightgrey!important;
+      stroke: white !important;
+      fill: lightgrey !important;
     }
   }
   .CustomObjectsLayer {
     .PartnersObject {
       .invariant-circle {
-        transition: .5s ease all;
+        transition: 0.5s ease all;
       }
     }
     &:hover {
       .PartnersObject {
-        opacity: .5;
+        opacity: 0.5;
         &:hover {
           opacity: 1;
         }
       }
+    }
+  }
+}
+
+.intro-ui-container {
+  position: absolute;
+  margin: 0;
+  padding: .5rem 1rem;
+  background: rgba(255,255,255,0.2);
+  box-sizing: border-box;
+  transition: .5s ease all;
+
+  &.top {
+    top: 5rem;
+    bottom: unset;
+  }
+  &.middle {
+    top: 50%;
+    bottom: unset;
+  }
+  &.bottom {
+    // bottom: 2rem;
+    top: 75%;
+  }
+  &.deep-bottom {
+    // bottom: 2rem;
+    top: 80%;
+  }
+  &.right {
+    right: 1rem;
+    left: unset;
+  }
+  &.left {
+    left: 1rem;
+    right: unset;
+  }
+  h3{
+    margin: 0;
+    padding: 0;
+    margin-left: 0!important;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+  h4 {
+    margin: 0;
+    margin-right: 0.5rem;
+    min-width: 4rem;
+  }
+  > li {
+    display: flex;
+    align-items: center;
+    &:not(:last-of-type) {
+      margin-bottom: 0.5rem;
+    }
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .Legend {
+    pointer-events: none;
+  }
+
+  .legend-form {
+    stroke: white;
+    fill: transparent;
+    stroke-dasharray: 2px 1px;
+  }
+  .legend-arrow {
+    stroke: white;
+    stroke-dasharray: 2px 1px;
+  }
+  .legend-indicator {
+    font-size: 0.5rem;
+    fill: white;
+  }
+  #legend-arrow-start path,
+  #legend-arrow-end path,
+  #legend-stop-mark path {
+    fill: transparent;
+    stroke: white;
+  }
+
+  .background-line {
+    stroke: rgba(255,255,255,0.5);
+    stroke-dasharray: 1px 4px;
+  }
+
+  &.is-atlas-mode {
+    background: white;
+    .background-line {
+      stroke: rgba(100,100,100,0.5);
+    }
+    #legend-arrow-start path,
+    #legend-arrow-end path,
+    #legend-stop-mark path {
+      stroke: black;
+    }
+    .legend-indicator {
+      fill: black;
+    }
+    .legend-form {
+      stroke: black;
+    }
+    .legend-arrow {
+      stroke: black;
     }
   }
 }

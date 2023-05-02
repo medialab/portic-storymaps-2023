@@ -19,9 +19,10 @@ const SliderRange = ({
   min, 
   max, 
   value, 
-  onChange 
+  onChange,
+  style: inputStyle = {}
 }) => {
-  const style = { width: 300, margin: 50 };
+  const style = { width: 300, margin: 50, ...inputStyle };
 
   return (
     <div style={style}>
