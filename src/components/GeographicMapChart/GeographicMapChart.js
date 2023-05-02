@@ -102,7 +102,7 @@ const GeographicMapChart = ({
       rotationDegree: 0,
       centerX: 2.4486203,
       centerY: 46.8576176,
-      scale: height * 5
+      scale: height * 3.6
     };
   }, [height]) // repsonsive : se fait en fonction de la height de l'écran
 
