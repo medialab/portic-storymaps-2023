@@ -1,48 +1,32 @@
-import { useMemo } from "react";
-import LineChart from "../../components/LineChart/LineChart";
+import TradeDynamicsChart from "../../components/TradeDynamicsChart";
+
+/**
+ * TradeDynamics component - returns a set of <figures> containing a svg linechart/barchart
+ *
+ * @param {Object} props
+ * @param {Object} props.rows keys: Marseille, Rouen, Bordeaux, Nantes, Bayonne, La Rochelle values: an integer for relative height in viz space
+ * @param {string} props.kind possible values: total, imports, exports, total_no_colonial_product, total_no_colonial_trade, imports_no_colonial_product, exports_no_colonial_product, imports_no_colonial_trade, exports_no_colonial_trade
+ * @param {string} props.regression possible values: reg, peace_reg_memory, peace_reg_no_memory
+ * @param {width} props.number
+ * @param {height} props.number
+ * @param {atlasMode} props.boolean
+ *
+ **/
 
 const TradeDynamics = ({ data, width, height, atlasMode, callerProps }) => {
-  console.log(callerProps);
-  const { directions_ferme, kind } = callerProps || {};
-
-  const selectedData = useMemo(
-    () =>
-      data
-        .get("tradeDynamics.csv")
-        .filter(
-          (d) =>
-            (directions_ferme || []).includes(d["direction_ferme"]) &&
-            d["kind"].replace("_regression", "") === kind
-        ),
-    [data, directions_ferme, kind]
-  );
-  console.log(selectedData);
-
+  const rows = callerProps?.rows || { France: 1, Marseille: 2, Bordeaux: 2 };
+  const kind = callerProps?.kind || "exports";
+  const regression = callerProps?.regression || "reg";
   return (
-    <>
-      {directions_ferme &&
-        directions_ferme.map((direction_ferme) => {
-          const directionData = selectedData.filter(
-            (d) => d.direction_ferme === direction_ferme
-          );
-
-          return (
-            <LineChart
-              key={direction_ferme}
-              {...{
-                title: directionData[0].slope,
-                data: directionData,
-                width,
-                height: height / directions_ferme.length,
-                atlasMode,
-                color: { field: "kind" },
-                x: { field: "year", type: "quantitative" },
-                y: { field: "value", type: "quantitative" },
-              }}
-            />
-          );
-        })}
-    </>
+    <TradeDynamicsChart
+      rows={rows}
+      kind={kind}
+      regression={regression}
+      datasets={data}
+      width={width}
+      height={height}
+      atlasMode={atlasMode}
+    />
   );
 };
 

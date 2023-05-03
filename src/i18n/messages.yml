@@ -1,9 +1,9 @@
 site:
   title:
-    fr: 'Commerce, contrebande et ports francs : le cas de Dunkerque au XVIIIe siècle'
+    fr: "Commerce, contrebande et ports francs : le cas de Dunkerque au XVIIIe siècle"
     en: Trade around the port of Dunkerque in the 18th century
   titleHTML:
-    fr: 'Commerce, contrebande et ports francs&nbsp;: le cas de Dunkerque au&nbsp;<span>XVIII</span><sup>e</sup>&nbsp;siècle'
+    fr: "Commerce, contrebande et ports francs&nbsp;: le cas de Dunkerque au&nbsp;<span>XVIII</span><sup>e</sup>&nbsp;siècle"
     en: Trade around the port of Dunkerque in the 18th century
   subtitle:
     fr: Une étude de cas du programme de recherche interdisciplinaire PORTIC
@@ -52,3 +52,31 @@ vizContainer:
   backToMainViz:
     fr: Revenir à la visualisation principale
     en: Back to main visualization
+viz-1-A:
+  franceOverviewTitle:
+    fr: France ${kind}, ${start}-${end} +${slope}%/an
+    en: France ${kind}, ${start}-${end} +${slope}%/year
+  tradeEvolutionTitle:
+    fr: ${cityName} ${kind}, ${start}-${end} +${slope}%/an
+    en: ${cityName} ${kind}, ${start}-${end} +${slope}%/year
+  partInPct:
+    fr: part des ${kind} fr
+    en: share of french ${kind}
+  absoluteValue:
+    fr: valeur absolue ${kind}
+    end: ${kind} absolute value
+  barTooltip:
+    fr: En <strong>${year}</strong> ${pct}% des biens exportés depuis la France le sont à partir de <strong>${city}</strong>.
+    en: In <strong>${year}</strong> ${pct}% of exported goods from France were exported from <strong>${city}</strong>.
+  productTooltip:
+    fr: En <strong>${year}</strong> les produits de la classe \"${product}\" représentent <strong>${pct}%</strong> de la valeur des biens exportés par la direction des fermes de La Rochelle.
+    en: In <strong>${year}</strong> products classed as \"${product}\" represent ${pct}% of goods exported by La Rochelles direction des fermes.
+  sevenYearsWar:
+    fr: guerre de sept ans
+    en: seven years war
+  austriaWar:
+    fr: guerre franco-britannique au sein de la guerre de succession d’Autriche
+    en: Franco-British conflict within the War of Jenkins's Ear
+  usIndependance:
+    fr: guerre d’indépendance Américaine
+    en: American War of Independence
