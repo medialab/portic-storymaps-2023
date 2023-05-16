@@ -54,17 +54,20 @@ vizContainer:
     en: Back to main visualization
 viz-1-A:
   franceOverviewTitle:
-    fr: France ${kind}, ${start}-${end} +${slope}%/an
-    en: France ${kind}, ${start}-${end} +${slope}%/year
+    fr: France ${kind}, ${start}-${end}
+    en: France ${kind}, ${start}-${end}
   tradeEvolutionTitle:
-    fr: ${cityName} ${kind}, ${start}-${end} +${slope}%/an
-    en: ${cityName} ${kind}, ${start}-${end} +${slope}%/year
+    fr: ${cityName} ${kind}, ${start}-${end}
+    en: ${cityName} ${kind}, ${start}-${end}
   partInPct:
     fr: part des ${kind} fr
     en: share of french ${kind}
   absoluteValue:
     fr: valeur absolue ${kind}
     end: ${kind} absolute value
+  regressionTitle:
+    fr: "Dynamisme : +${slope}%/an"
+    en: "Dynamics: +${slope}%/year"
   barTooltip:
     fr: En <strong>${year}</strong> ${pct}% des biens exportés depuis la France le sont à partir de <strong>${city}</strong>.
     en: In <strong>${year}</strong> ${pct}% of exported goods from France were exported from <strong>${city}</strong>.

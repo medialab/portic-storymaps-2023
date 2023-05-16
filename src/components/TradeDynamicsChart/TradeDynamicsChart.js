@@ -50,7 +50,6 @@ const TradeDynamicsChart = (props) => {
         start,
         end,
         kind,
-        slope,
       }),
     // top90PctTitle: (cityName, start, end) =>
     //   translate("viz-1-A", "top90PctTitle", lang, {
@@ -59,7 +58,10 @@ const TradeDynamicsChart = (props) => {
     //     end: end,
     //   }),
     partInPct: (kind) => translate("viz-1-A", "partInPct", lang, { kind }),
-    absoluteValue: () => translate("viz-1-A", "absoluteValue", lang, { kind }),
+    absoluteValue: (kind) =>
+      translate("viz-1-A", "absoluteValue", lang, { kind }),
+    regressionTitle: (slope) =>
+      translate("viz-1-A", "regressionTitle", lang, { slope }),
     // herfindalLegendTitle: () =>
     //   translate("viz-1-A", "herfindalLegendTitle", lang),
     // herfindal0: () => translate("viz-1-A", "herfindal0", lang),
@@ -136,14 +138,12 @@ const TradeDynamicsChart = (props) => {
             absoluteField="value"
             regressionField="reg"
             slopeField="slope"
-            title={messages.franceOverviewTitle(
-              startYear,
-              endYear,
-              kind,
-              frenchData.filter((d) => d.kind === kind)[0]["slope"]
-            )}
+            title={messages.franceOverviewTitle(startYear, endYear, kind)}
             axisLeftTitle={""}
             axisRightTitle={messages.absoluteValue(kind)}
+            regressionTitle={messages.regressionTitle(
+              frenchData.filter((d) => d.kind === kind)[0]["slope"]
+            )}
             margins={margins}
             annotations={annotations}
             // fillGaps
@@ -168,15 +168,12 @@ const TradeDynamicsChart = (props) => {
             regressionField={`${kind}_${regression}`}
             slopeField={`${kind}_slope`}
             //herfindhalField="product_revolutionempire_exports_herfindahl"
-            title={messages.tradeEvolutionTitle(
-              row,
-              startYear,
-              endYear,
-              kind,
-              data.filter((d) => d.direction_ferme === row)[0][`${kind}_slope`]
-            )}
+            title={messages.tradeEvolutionTitle(row, startYear, endYear, kind)}
             axisLeftTitle={messages.partInPct(kind)}
             axisRightTitle={messages.absoluteValue(kind)}
+            regressionTitle={messages.regressionTitle(
+              data.filter((d) => d.direction_ferme === row)[0][`${kind}_slope`]
+            )}
             margins={margins}
             barTooltipFn={messages.barTooltip}
             cityName={row}

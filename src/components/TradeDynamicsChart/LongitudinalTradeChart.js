@@ -74,6 +74,7 @@ const LongitudinalTradeChart = ({
   height: wholeHeight,
   axisLeftTitle,
   axisRightTitle,
+  regressionTitle,
 
   startYear,
   endYear,
@@ -190,6 +191,16 @@ const LongitudinalTradeChart = ({
               </div>
             </div>
           ) : null}
+          {regressionField && (
+            <div
+              style={{
+                background: colorsPalettes.generic.dark,
+              }}
+              className="axis-header axis-header-center"
+            >
+              {regressionTitle || `Régression linéaire (log)`}
+            </div>
+          )}
           <div
             style={{
               background:
