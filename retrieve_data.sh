@@ -20,6 +20,4 @@ echo "Download data : fetching latest navigo sources data"
 # curl -o data/navigo_all_flows_1787.csv "data.portic.fr/api/rawflows/?date=1787&format=csv"
 curl -o data/navigo_sources_by_source_and_year_and_place.csv "data.portic.fr/api/sources/?format=csv"
 
-cd datascripts
-for f in *.py; do echo "execute python script $f"; python3 "$f"; done
-# for f in *.js; do echo "execute node script $f"; node "$f"; done
+./datascripts.sh
