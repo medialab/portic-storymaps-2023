@@ -318,42 +318,57 @@ const PointsLayer = ({ layer, projection, width, height }) => {
           </g>
           : null
       }
-      <Transition
+      {/* PAUL - 2023-05-22: I removed the transition as it was buggy and was trigerring lots of renders */}
+      {/* <Transition
         // items={visibleMarkers.map((d, i) => ({...d, labelPosition: i%2 === 0 ? 'left' : 'right', index: i}))}
         items={visibleMarkers}
         from={{ opacity: 0 }}
         enter={{ opacity: 1 }}
         leave={{ opacity: 0 }}
       >
-        {({ opacity }, datum, index) => (
+        {({ opacity }, datum) => (
+          <PointGroup
+            key={datum.index}
+            {...{
+              projection,
+              datum,
+              layer,
+              opacity:
+                hoveredIndex !== null
+                  ? hoveredIndex === datum.index
+                    ? 1
+                    : 0.1
+                  : opacity,
+              index: datum.index,
+              onGroupMouseEnter,
+              onGroupMouseLeave,
+              displayLabel: !layer.stackLabels,
+            }}
+          />
+        )}
+      </Transition> */}
+      {visibleMarkers.map((datum, index) => {
+        return (
           <PointGroup
             key={datum.label}
             {...{
               projection,
               datum,
               layer,
-              opacity: hoveredIndex !== null ? hoveredIndex === datum.index ? 1 : .1 : opacity,
+              opacity:
+                hoveredIndex !== null
+                  ? hoveredIndex === datum.index
+                    ? 1
+                    : 0.1
+                  : 1,
               index: datum.index,
               onGroupMouseEnter,
               onGroupMouseLeave,
-              displayLabel: !layer.stackLabels
+              displayLabel: !layer.stackLabels,
             }}
           />
-        )
-
-        }
-      </Transition>
-      {/* {
-        visibleMarkers
-          .map((datum, index) => {
-            return (
-              <PointGroup
-                key={datum.label}
-                {...{ projection, datum, layer }}
-              />
-            )
-          })
-      } */}
+        );
+      })}
     </g>
   );
 }
