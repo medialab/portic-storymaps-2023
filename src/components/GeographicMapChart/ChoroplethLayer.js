@@ -163,7 +163,7 @@ const ChoroplethLayer = ({
             return (
               <animated.g style={style}>
                 <GeoPart
-                  key={d.properties.id || d.properties.name || i}
+                  key={d.properties.id || d.properties.gid || d.properties.name || i}
                   {...{
                     projection,
                     project,
