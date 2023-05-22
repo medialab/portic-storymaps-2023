@@ -8,11 +8,12 @@ import forceAtlas2 from "graphology-layout-forceatlas2";
 
 import {
   point,
-  points,
   pointsWithinPolygon,
   featureCollection,
-  polygon,
+  simplify,
+  bbox,
 } from "@turf/turf";
+import { scaleLinear } from "d3-scale";
 
 // load locations
 const locationsData = readFileSync("./module_1A/1-A--coordonnées.csv", {
@@ -65,7 +66,8 @@ const wheatCorrelations = csvParse(correlationData);
 
 wheatCorrelations.forEach((row) => {
   const weight = Math.pow(+row.corr + 1, 2);
-  if (weight >= 3.5) graph.mergeEdge(row.A_market, row.B_market, { weight });
+  if (row.A_market !== row.B_market && weight >= 3.5)
+    graph.mergeEdge(row.A_market, row.B_market, { weight });
 });
 graph.forEachNode((n) => {
   const weightedDegree = graph.reduceEdges(
@@ -75,17 +77,63 @@ graph.forEachNode((n) => {
   );
   graph.mergeNodeAttributes(n, {
     ...villes[n],
-    x: villes[n].longitude * 10,
-    y: villes[n].latitude * 10,
+    x: villes[n].longitude,
+    y: villes[n].latitude,
+    //TODO: transform market to proper labels
+    label: villes[n].market,
     weightedDegree,
     size: weightedDegree,
   });
 });
 // To directly assign communities as a node attribute
-louvain.assign(graph);
+louvain.assign(graph, { resolution: 1.5 });
 
 // spatialize
 const settings = forceAtlas2.inferSettings(graph);
 forceAtlas2.assign(graph, { iterations: 1000, settings });
-// output
-writeFileSync("wheat_correlations.gexf", gexf.write(graph));
+
+const xyRange = graph.reduceNodes(
+  (acc, _, atts) => ({ x: [...acc.x, atts.x], y: [...acc.y, atts.y] }),
+  { x: [], y: [] }
+);
+xyRange.x = [lodash.min(xyRange.x), lodash.max(xyRange.x)];
+xyRange.y = [lodash.min(xyRange.y), lodash.max(xyRange.y)];
+/***
+ * Output
+ ***/
+
+// prepare scaling network positions to the geographic bbox for animation
+const bassinsBbox = bbox(bassins);
+const latitudeScale = scaleLinear()
+  .domain(xyRange.y)
+  .range([bassinsBbox[1], bassinsBbox[3]]);
+const longitudeScale = scaleLinear()
+  .domain(xyRange.x)
+  .range([bassinsBbox[0], bassinsBbox[2]]);
+
+// Points
+writeFileSync(
+  "../public/data/wheat_correlations_cities.csv",
+  csvFormat(
+    graph.mapNodes((key, atts) => ({
+      id: key,
+      //normalize x/y as long/lat
+      networkLatitude: latitudeScale(atts.y),
+      networkLongitude: longitudeScale(atts.x),
+      ...atts,
+    }))
+  )
+);
+// Liens
+writeFileSync(
+  "../public/data/wheat_correlations_links.csv",
+  csvFormat(graph.mapEdges((key, atts) => ({ id: key, ...atts })))
+);
+
+// Bassins versants
+writeFileSync(
+  "../public/data/map_backgrounds/bassins_versants.json",
+  JSON.stringify(simplify(bassins, { tolerance: 0.001, highQuality: true }))
+);
+// Network as GEXF top opne in Retina ?
+writeFileSync("../public/data/wheat_correlations.gexf", gexf.write(graph));

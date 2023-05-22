@@ -4,10 +4,12 @@ import visualizationsMetas from "../content/viz";
 
 import Intro from "./Intro/Intro";
 import TradeDynamics from "./1_A";
+import WheatCorrelation from "./1_B";
 
 const visualizations = {
   intro: Intro,
   "1.A": TradeDynamics,
+  "1.B": WheatCorrelation,
 };
 
 /**
