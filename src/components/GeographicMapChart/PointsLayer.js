@@ -284,8 +284,14 @@ const PointsLayer = ({ layer, projection, width, height }) => {
       }))
   }
   visibleMarkers = visibleMarkers.map((d, index) => ({ ...d, index }));
+
+  const animationStyle = useSpring({
+    from: { opacity: layer.hide ? 1 : 0 },
+    to: { opacity: layer.hide ? 0 : 1 },
+  });
+
   return (
-    <g className="PointsLayer">
+    <animated.g className="PointsLayer" style={animationStyle}>
       {
         layer.stackLabels ?
           <g className="stacked-labels-container">
@@ -317,59 +323,30 @@ const PointsLayer = ({ layer, projection, width, height }) => {
             </Transition>
           </g>
           : null
-      }
-      {/* PAUL - 2023-05-22: I removed the transition as it was buggy and was trigerring lots of renders */}
-      {/* <Transition
-        // items={visibleMarkers.map((d, i) => ({...d, labelPosition: i%2 === 0 ? 'left' : 'right', index: i}))}
-        items={visibleMarkers}
-        from={{ opacity: 0 }}
-        enter={{ opacity: 1 }}
-        leave={{ opacity: 0 }}
-      >
-        {({ opacity }, datum) => (
-          <PointGroup
-            key={datum.index}
-            {...{
-              projection,
-              datum,
-              layer,
-              opacity:
-                hoveredIndex !== null
-                  ? hoveredIndex === datum.index
-                    ? 1
-                    : 0.1
-                  : opacity,
-              index: datum.index,
-              onGroupMouseEnter,
-              onGroupMouseLeave,
-              displayLabel: !layer.stackLabels,
-            }}
-          />
-        )}
-      </Transition> */}
+      }    
       {visibleMarkers.map((datum, index) => {
         return (
-          <PointGroup
-            key={datum.label}
-            {...{
-              projection,
-              datum,
-              layer,
-              opacity:
-                hoveredIndex !== null
-                  ? hoveredIndex === datum.index
-                    ? 1
-                    : 0.1
-                  : 1,
-              index: datum.index,
-              onGroupMouseEnter,
-              onGroupMouseLeave,
-              displayLabel: !layer.stackLabels,
-            }}
-          />
-        );
-      })}
-    </g>
+            <PointGroup
+              key={datum.label}
+              {...{
+                projection,
+                datum,
+                layer,
+                opacity:
+                  hoveredIndex !== null
+                    ? hoveredIndex === datum.index
+                      ? 1
+                      : 0.1
+                    : 1,
+                index: datum.index,
+                onGroupMouseEnter,
+                onGroupMouseLeave,
+                displayLabel: !layer.stackLabels,
+              }}
+            />
+            );
+          })}
+    </animated.g>
   );
 }
 
