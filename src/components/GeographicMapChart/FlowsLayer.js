@@ -2,7 +2,7 @@
 import { useMemo, useState, useEffect } from 'react';
 import { scaleLinear } from 'd3-scale';
 import cx from 'classnames';
-import { max } from 'd3-array';
+import { max, min } from 'd3-array';
 import { uniq } from 'lodash';
 import { cartesian2Polar, fixSvgDimension, generatePalette, polarToCartesian } from '../../utils/misc';
 
@@ -61,7 +61,7 @@ const FlowGroup = ({
   actualYDep,
   actualXDest,
   actualYDest,
-  arrowLength,
+  arrowSize,
   onMouseEnter,
   onMouseLeave,
   // datum,
@@ -96,15 +96,15 @@ const FlowGroup = ({
 
   return (
     <g onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} className={cx("flow-group", { hovered })}>
-      <defs>
+      {arrowSize && <defs>
         <marker
           id={`triangle-${id}`}
-          viewBox={`0 0 ${arrowLength} ${arrowLength}`}
-          refY={arrowLength / 2}
+          viewBox={`0 0 ${arrowSize} ${arrowSize}`}
+          refY={arrowSize / 2}
           orient="auto">
-          <path d={`M 0 0 L ${arrowLength} ${arrowLength / 2} L 0 ${arrowLength} Z`} fill={color} />
+          <path d={`M 0 0 L ${arrowSize} ${arrowSize / 2} L 0 ${arrowSize} Z`} fill={color} />
         </marker>
-      </defs>
+      </defs>}
       {/* hover placeholder */}
       <animated.path
         d={d}
@@ -113,10 +113,10 @@ const FlowGroup = ({
         stroke={color}
         opacity={0}
       />
-      <animated.path
+     <animated.path
         d={d}
         strokeWidth={strokeWidth}
-        markerEnd={`url(#triangle-${id})`}
+        markerEnd={arrowSize && `url(#triangle-${id})`}
         fill="none"
         stroke={color}
       />
@@ -148,14 +148,13 @@ const FlowsLayer = ({
     if (layer.data) {
 
       // size building
+      const sizeDomain =  layer.data.map((flow) => {
+        return +flow[layer.size.field];
+      })
       const strokeWidthScale = scaleLinear().domain([
-        0,
-        max(
-          layer.data.map((flow) => {
-            return +flow[layer.size.field];
-          })
-        )
-      ]).range([1, width * height / 20000]);
+        min(sizeDomain),
+        max(sizeDomain)
+      ]).range(layer.sizeRange || [1, width * height / 20000]);
 
       const arrowSizeScale = strokeWidthScale.copy().range([0, width * height / 100000]);
 
@@ -163,24 +162,29 @@ const FlowsLayer = ({
         ...flow,
         // color: palette[datum.color],
         strokeWidth: strokeWidthScale(+flow[layer.size.field]),
-        arrowSize: arrowSizeScale(layer.data.strokeWidth)
+        arrowSize: !layer.hideArrows ? arrowSizeScale(+flow[layer.size.field]): 0
       }))
       let palette;
-      if (layer.color !== undefined) {
-        // colors palette building
-        const colorValues = uniq(grouped.map(g => g[layer.color.field]));
-        if (layer.color.palette) { // if palette given in parameters we use it, otherwise one palette is generated
-          palette = layer.color.palette;
-        } else {
-          const colors = generatePalette('map', colorValues.length);
-          palette = colorValues.reduce((res, key, index) => ({
-            ...res,
-            [key]: colors[index]
-          }), {});
+      if (layer.color !== undefined && (layer.color.uniq || layer.color.field)) {
+        
+        
+        if (layer.color.field){
+          // colors palette building
+          const colorValues = uniq(grouped.map(g => g[layer.color.field]));
+          if (layer.color.palette) { // if palette given in parameters we use it, otherwise one palette is generated
+            palette = layer.color.palette;
+          } else {
+            const colors = generatePalette('map', colorValues.length);
+            palette = colorValues.reduce((res, key, index) => ({
+              ...res,
+              [key]: colors[index]
+            }), {});
+          }
         }
+        
         grouped = grouped.map(datum => ({
           ...datum,
-          color: layer.color !== undefined ? palette[datum[layer.color.field]] : 'grey',
+          color: layer.color.uniq ? layer.color.uniq : palette[datum[layer.color.field]],
         }))
       }
       // console.log("grouped : ", grouped)
@@ -266,7 +270,7 @@ const FlowsLayer = ({
     return []
   }, [projection, width, layer, height])/* eslint react-hooks/exhaustive-deps : 0 */
 
-  const labels = useMemo(() => {
+  const labels = layer.labels ? useMemo(() => {
     let newLabels = markerData.reduce((res, flow) => {
       const {
         id,
@@ -396,7 +400,7 @@ const FlowsLayer = ({
       return 1;
     })
     return newLabels;
-  }, [markerData])
+  }, [markerData]) : [];
   
 
   const [hoverIds, setHoverIds] = useState(undefined);

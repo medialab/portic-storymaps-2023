@@ -40,10 +40,24 @@ const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
         className: `1-B ${atlasMode ? "is-atlas-mode" : ""}`,
         layers: [
           //TODO: remove choro when network
-          {
+          layout === "geography" && {
             type: "choropleth",
             data: data.get("map_backgrounds/bassins_versants.json"),
           },
+          ...(layout === "network"
+            ? [
+                {
+                  type: "flows",
+                  data: data.get("wheat_correlations_links.csv"),
+                  size: { field: "weight" },
+                  sizeRange: [0.1, (width * height) / 400000],
+                  hideArrows: true,
+                  color: {
+                    uniq: "#777",
+                  },
+                },
+              ]
+            : []),
           {
             type: "points",
             data: dataPoints,
@@ -54,6 +68,7 @@ const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
             labelSizeRange: [0, (width * height) / 30000],
             tooltip: (datum) => `${datum.label}: ${datum.size}`,
           },
+
           //TODO: edge layer
         ],
       }}

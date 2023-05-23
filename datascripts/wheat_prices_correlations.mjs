@@ -127,7 +127,16 @@ writeFileSync(
 // Liens
 writeFileSync(
   "../public/data/wheat_correlations_links.csv",
-  csvFormat(graph.mapEdges((key, atts) => ({ id: key, ...atts })))
+  csvFormat(
+    graph.mapEdges((key, atts, source, target) => ({
+      id: key,
+      ...atts,
+      latitude_dep: latitudeScale(graph.getNodeAttribute(source, "y")),
+      longitude_dep: longitudeScale(graph.getNodeAttribute(source, "x")),
+      latitude_dest: latitudeScale(graph.getNodeAttribute(target, "y")),
+      longitude_dest: longitudeScale(graph.getNodeAttribute(target, "x")),
+    }))
+  )
 );
 
 // Bassins versants
