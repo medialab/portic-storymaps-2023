@@ -12,6 +12,16 @@
 
 import GeographicMapChart from "../../components/GeographicMapChart";
 import { useMemo } from "react";
+import FlowsLayer from "../../components/GeographicMapChart/FlowsLayer";
+
+/**
+ * TODO
+ * - legend (handle colors in index)
+ * - atlasmode
+ * - sync hover point - FlowsLayer
+ * - fleuves geojson ?
+ *
+ **/
 
 const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
   const layout = callerProps?.layout || "geography";
@@ -52,7 +62,7 @@ const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
             sizeRange: [0.1, (width * height) / 400000],
             hideArrows: true,
             color: {
-              uniq: "#AAA",
+              uniq: "#777",
             },
             hide: layout !== "network",
           },
@@ -63,9 +73,9 @@ const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
             label: { field: "market" },
             size: { field: "size" },
             color: { field: colorBy },
-            radiusRange: [1, (width * height) / 50000],
-            labelSizeRange: [0, (width * height) / 30000],
-            tooltip: (datum) => `${datum.label}: ${datum.size}`,
+            radiusRange: [(width * height) / 80000, (width * height) / 80000],
+            labelSizeRange: [0, 0],
+            tooltip: (datum) => `${datum.label} (${datum.bassin})`,
           },
 
           //TODO: edge layer

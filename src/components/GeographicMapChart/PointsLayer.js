@@ -194,6 +194,7 @@ const PointsLayer = ({ layer, projection, width, height }) => {
         const mark = datum.latitude + ',' + datum.longitude;
         if (!coordsMap[mark]) {
           coordsMap[mark] = {
+            ...datum,
             label: layer.label ? datum[layer.label.field] : undefined,
             labelPosition: layer.label ? layer.label.position : undefined,
             latitude: +datum.latitude,
