@@ -29,20 +29,18 @@ const visualizations = {
 export default function VisualizationController({
   vizId,
   datasets,
-  ref,
   dimensions,
   lang,
-  callerProps = undefined,
+  callerProps,
   atlasMode,
 }) {
   const { width, height } = dimensions;
-
+  
   return (
     <div
       style={{ height }}
       onClick={(e) => e.stopPropagation()}
       className="VisualizationController viz-render"
-      ref={ref}
     >
       {datasets === undefined && (
         <>Les données de cette visualisation n'ont pu être chargées.</>

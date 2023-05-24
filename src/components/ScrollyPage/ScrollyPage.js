@@ -350,12 +350,12 @@ export default function ScrollyPage({
             />
           }
         </aside>
-        <VisualizationFocus
+        {isFullScreen && <VisualizationFocus
           vizId={displayedVizId}
           datasets={datasets}
           onClickClose={() => setIsFullScreen(false)}
-          isVisible={isFullScreen}
-        />
+          callerProps={displayedVizProps}
+        />}
 
 
       </div>

@@ -17,15 +17,14 @@ import ReactTooltip from "react-tooltip";
  * @param {number} height
  * @returns {React.ReactElement} - React component
  */
-const GeoPart = ({
+const AnimatedGeoPart = ({
   d: initialD,
   projection,
   project,
   palette,
   layer,
   width,
-  height,
-  animated: isAnimated,
+  height
 }) => {
   // // @todo do this cleanly (removing out of bound objects to improve performance)
   // const boundsAbs = geoPath().bounds(initialD);
@@ -62,23 +61,7 @@ const GeoPart = ({
   // if (outOfBounds) {
   //   return null;
   // }
-  if (!isAnimated) {
-    return (
-      <path
-        title={initialD.properties.shortname}
-        d={currentD}
-        className="geopart"
-        data-tip={layer.tooltip ? layer.tooltip(initialD) : undefined}
-        data-for="geo-tooltip"
-        style={{
-          fill:
-            layer.color !== undefined && palette !== undefined
-              ? palette[initialD.properties[layer.color.field]]
-              : "transparent",
-        }}
-      />
-    );
-  }
+
   return (
     <animated.path
       title={initialD.properties.shortname}
@@ -133,6 +116,8 @@ const ChoroplethLayer = ({
       );
     }
   }
+  // Paul: calculating partsData is costly for large geometries. 
+  // Should be done at generation time if some geometries are known to never be needed.
   const partsData = useMemo(
     () =>
       layer.data.features
@@ -174,23 +159,41 @@ const ChoroplethLayer = ({
         })}
       >
         <animated.g style={animationStyle}>
-          {partsData.map((d, i) => (
-            <GeoPart
-              key={
-                d.properties.id || d.properties.gid || d.properties.name || i
-              }
-              {...{
-                projection,
-                project,
-                palette,
-                layer,
-                d,
-                width,
-                height,
-                animated: layer.animated,
-              }}
-            />
-          ))}
+          {partsData.map((d, i) => {
+            if(layer.animated) 
+              return <AnimatedGeoPart
+                key={
+                  d.properties.id || d.properties.gid || d.properties.name || i
+                }
+                {...{
+                  projection,
+                  project,
+                  palette,
+                  layer,
+                  d,
+                  width,
+                  height
+                }}
+              />
+            else 
+              return <path
+                key={
+                  d.properties.id || d.properties.gid || d.properties.name || i
+                }
+                title={d.properties.shortname}
+                d={project(d)}
+                className="geopart"
+                data-tip={layer.tooltip ? layer.tooltip(d) : undefined}
+                data-for="geo-tooltip"
+                style={{
+                  fill:
+                    layer.color !== undefined && palette !== undefined
+                      ? palette[d.properties[layer.color.field]]
+                      : "transparent",
+                }}
+              />
+            }
+          )}
         </animated.g>
       </g>
     </>

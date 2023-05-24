@@ -101,17 +101,17 @@ const FlowGroup = ({
         </defs>
       )}
       {/* hover placeholder */}
-      <animated.path
+      <path
         d={path}
         strokeWidth={fixSvgDimension(inputStrokeWidth) * 3}
         fill="none"
         stroke={color}
         opacity={0}
       />
-      <animated.path
+      <path
         d={path}
         strokeWidth={fixSvgDimension(inputStrokeWidth)}
-        markerEnd={arrowSize && `url(#triangle-${id})`}
+        markerEnd={arrowSize ? `url(#triangle-${id})` : undefined}
         fill="none"
         stroke={color}
       />

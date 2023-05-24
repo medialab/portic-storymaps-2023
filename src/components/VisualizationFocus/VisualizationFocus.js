@@ -25,6 +25,7 @@ export default function VisualizationFocus({
     datasets,
     onClickClose,
     isVisible,
+    callerProps
     // ...props
 }) {
     const { lang } = useParams();
@@ -108,7 +109,7 @@ export default function VisualizationFocus({
     }
 
     return (
-        <div className={cx('VisualizationFocus', {'is-visible': isVisible})}>
+        <div className='VisualizationFocus'>
             <input
                 style={{ opacity: 0, zIndex: -10, 'pointerEvents': 'none' }}
                 type="text"
@@ -184,6 +185,7 @@ export default function VisualizationFocus({
                                                 dimensions,
                                                 lang,
                                                 datasets,
+                                                callerProps,
                                                 atlasMode: true
                                             }
                                             }
