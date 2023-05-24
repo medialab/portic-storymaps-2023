@@ -30,6 +30,10 @@ const bassins = JSON.parse(
     encoding: "utf8",
   })
 );
+// remove Corse
+bassins.features = bassins.features.filter(
+  (b) => b.properties.LbBH !== "Corse"
+);
 const villePoints = featureCollection(
   locations.map((l) =>
     point([+l.longitude, +l.latitude], lodash.pick(l, "market"))
