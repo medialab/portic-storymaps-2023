@@ -1,0 +1,25 @@
+.wheat-correlations-legend {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+
+  .color-group {
+    display: flex;
+    flex-direction: column;
+
+    .item:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-bottom: 0.2rem;
+  }
+  .item.edge {
+    margin-top: 1rem;
+  }
+}
