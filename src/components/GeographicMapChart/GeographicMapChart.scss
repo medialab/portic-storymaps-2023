@@ -10,7 +10,8 @@
 
   .FlowsLayer {
     .label {
-      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+      text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+        1px 1px 0 #fff;
       opacity: 0;
       transition: 0.5s ease all;
       &.is-visible {
@@ -26,7 +27,7 @@
         transition: 0.5s ease all;
       }
     }
-    &:hover {
+    &:hover:not(.hover-disabled) {
       .flow-group {
         opacity: 0.1;
         &.hovered {
@@ -60,8 +61,8 @@
 
   .SVGLayer {
     path {
-      stroke: black; 
-      stroke-width: .1; 
+      stroke: black;
+      stroke-width: 0.1;
       fill: none;
     }
   }

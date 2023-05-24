@@ -256,11 +256,11 @@ const PointsLayer = ({ layer, projection, width, height }) => {
       return -1;
     })
 
-  const onGroupMouseEnter = index => {
+  const onGroupMouseEnter = layer.disableHover ? ()=>{} : index => {
     if (hoveredIndex !== index)
       setHoveredIndex(index);
   }
-  const onGroupMouseLeave = () => {
+  const onGroupMouseLeave =  layer.disableHover ? ()=>{} : () => {
     setTimeout(() => {
       if (hoveredIndex !== null)
         setHoveredIndex(null);

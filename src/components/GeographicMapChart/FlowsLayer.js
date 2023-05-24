@@ -286,7 +286,7 @@ const FlowsLayer = ({
             yDest,
             strokeWidth,
             datum,
-            layer,
+
             width,
             color,
             height,
@@ -462,7 +462,7 @@ const FlowsLayer = ({
 
   return (
     <animated.g
-      className="FlowsLayer"
+      className={cx("FlowsLayer", { "hover-disabled": layer.disableHover })}
       style={{
         visibility: layer.hide ? "hidden" : "visible",
         ...animationStyle,
@@ -478,7 +478,6 @@ const FlowsLayer = ({
           yDest,
           strokeWidth,
           datum,
-          layer,
           width,
           color,
           height,
@@ -499,13 +498,17 @@ const FlowsLayer = ({
           destLabelY,
         } = data;
 
-        const onMouseEnter = () => {
-          setHoverIds([id]);
-        };
-        const onMouseLeave = () => {
-          setHoverIds(undefined);
-        };
-        const hovered = hoverIds && hoverIds.includes(id);
+        const onMouseEnter = layer.disableHover
+          ? () => {}
+          : () => {
+              setHoverIds([id]);
+            };
+        const onMouseLeave = layer.disableHover
+          ? () => {}
+          : () => {
+              setHoverIds(undefined);
+            };
+        const hovered = hoverIds !== undefined && hoverIds.includes(id);
         return (
           <FlowGroup
             key={index}
@@ -559,12 +562,16 @@ const FlowsLayer = ({
         const isVisible = hoverIds
           ? hoverIds.find((hoveredId) => flows.includes(hoveredId))
           : true;
-        const onMouseEnter = () => {
-          setHoverIds(flows);
-        };
-        const onMouseLeave = () => {
-          setHoverIds(undefined);
-        };
+        const onMouseEnter = layer.disableHover
+          ? () => {}
+          : () => {
+              setHoverIds(flows);
+            };
+        const onMouseLeave = layer.disableHover
+          ? () => {}
+          : () => {
+              setHoverIds(undefined);
+            };
         return (
           <g id={id} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
             {/* <rect
