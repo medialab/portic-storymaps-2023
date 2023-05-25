@@ -20,8 +20,8 @@ export default function Atlas({
   const { vizId, lang } = useParams();
   const navigate = useNavigate();
 
-  const [datasets, setDatasets] = useState(new Map());
-  const [vizMetas, setVizMetas] = useState(undefined);
+  const [datasets, setDatasets] = useState(null);
+
   /** @type {['process'|'failed'|'successed'|'none', Function]} */
   const [loadingState, setLoadingState] = useState('none');
 
@@ -57,7 +57,7 @@ export default function Atlas({
           payload.set(outputs[i], dataset);
         }
         setDatasets(payload);
-        setVizMetas(metas);
+        
         setLoadingState('successed');
       })
       .catch((error) => {
@@ -68,8 +68,6 @@ export default function Atlas({
 
   // scroll top when arriving on the view
   useEffect(() => window.scrollTo({ top: 0 }), []);
-
-  // console.log('visualizationsMetas', visualizationsMetas)
 
   return (
     <div className='Atlas secondary-page'>
@@ -109,7 +107,7 @@ export default function Atlas({
         </ul>
       </div>
       {
-        vizId ?
+        (vizId && datasets !== null) ?
           <VisualizationFocus
             vizId={vizId}
             datasets={datasets}
