@@ -23,3 +23,22 @@
     margin-top: 1rem;
   }
 }
+
+.wheat-correlations-atlas-controllers {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  display: flex;
+  flex-direction: column;
+  div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    label {
+      margin-right: 0.5rem;
+    }
+  }
+  div:last-child {
+    margin-bottom: 0;
+  }
+}

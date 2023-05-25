@@ -11,7 +11,7 @@
  **/
 
 import GeographicMapChart from "../../components/GeographicMapChart";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { WheatCorrelationsLegend } from "./legend";
 import "./wheat-correlations.scss";
 import { keyBy, mapValues, pick } from "lodash";
@@ -30,9 +30,19 @@ import chroma from "chroma-js";
 export const adjustColorForBassinChoropleth = (color) =>
   chroma(color).alpha(0.2);
 
+const DEFAULTS = {
+  layout: "network",
+  colorBy: "community",
+};
+
 const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
-  const layout = callerProps?.layout || "geography";
-  const colorBy = callerProps?.colorBy || "bassin";
+  const [layout, setLayout] = useState(DEFAULTS.layout);
+  const [colorBy, setColorBy] = useState(DEFAULTS.colorBy);
+
+  useEffect(() => {
+    setLayout(callerProps?.layout || DEFAULTS.layout);
+    setColorBy(callerProps?.colorBy || DEFAULTS.colorBy);
+  }, [callerProps]);
 
   const originalData = data.get("wheat_correlations_cities.csv");
 
@@ -105,6 +115,32 @@ const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
         palettes={pick(colorsPalettes, ["bassin", "community"])}
         layout={layout}
       />
+      {atlasMode && (
+        <div className="wheat-correlations-atlas-controllers">
+          <div>
+            <label htmlFor="layout-select">Layout</label>
+            <select
+              id="layout-select"
+              onChange={(e) => setLayout(e.target.value)}
+              value={layout}
+            >
+              <option value="geography">Géographie</option>
+              <option value="network">Réseau</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="colorBy-select">Couleurs</label>
+            <select
+              id="colorBy-select"
+              onChange={(e) => setColorBy(e.target.value)}
+              value={colorBy}
+            >
+              <option value="bassin">Bassins versants</option>
+              <option value="community">Corrélation</option>
+            </select>
+          </div>
+        </div>
+      )}
     </>
   );
 };
