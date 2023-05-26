@@ -111,6 +111,9 @@ viz-1-B:
   colorByCommunity:
     fr: Groupes de prix
     en: Price groups
+  communityLabel:
+    fr: corrélés avec ${community}
+    en: correlated with ${community}
   correlation:
     fr: Lien de corrélation
     en: Correlation link

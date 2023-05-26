@@ -195,6 +195,7 @@ const PointsLayer = ({ layer, projection, width, height }) => {
         if (!coordsMap[mark]) {
           coordsMap[mark] = {
             ...datum,
+            id:mark,
             label: layer.label ? datum[layer.label.field] : undefined,
             labelPosition: layer.label ? layer.label.position : undefined,
             latitude: +datum.latitude,
@@ -328,7 +329,7 @@ const PointsLayer = ({ layer, projection, width, height }) => {
       {visibleMarkers.map((datum, index) => {
         return (
             <PointGroup
-              key={datum.label}
+              key={datum.id}
               {...{
                 projection,
                 datum,

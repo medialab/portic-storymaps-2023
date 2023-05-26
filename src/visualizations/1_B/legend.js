@@ -26,7 +26,11 @@ export const WheatCorrelationsLegend = ({
                 }}
               />
 
-              <span>{variable}</span>
+              <span>
+                {translate("viz-1-B", "communityLabel", lang, {
+                  community: variable,
+                })}
+              </span>
             </div>
           ))}
         </div>

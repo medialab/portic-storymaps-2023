@@ -157,14 +157,14 @@ const colorsPalettes = {
     "Artois-Picardie": "#af777e",
     "Rhin-Meuse": "#E3938C",
   },
-  community: [
-    "#cd4e94",
-    "#6ad2a1",
-    "#9c4fd4",
-    "#73d14d",
-    "#d04c3c",
-    "#857ac1",
-  ].reduce((acc, v, i) => ({ ["" + i]: v, ...acc }), {}),
+  community: {
+    Rouen: "#cd4e94",
+    Nantes: "#6ad2a1",
+    Orléans: "#9c4fd4",
+    Issoire: "#73d14d",
+    Marseille: "#d04c3c",
+    Bordeaux: "#857ac1",
+  },
 };
 
 export default colorsPalettes;

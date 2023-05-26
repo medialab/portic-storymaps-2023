@@ -15,6 +15,15 @@ import {
 } from "@turf/turf";
 import { scaleLinear } from "d3-scale";
 
+const communityLabels = [
+  "Bordeaux",
+  "Marseille",
+  "Nantes",
+  "Orléans",
+  "Rouen",
+  "Issoire",
+];
+
 // load locations
 const locationsData = readFileSync("./module_1A/1-A--coordonnées.csv", {
   encoding: "utf8",
@@ -84,13 +93,28 @@ graph.forEachNode((n) => {
     x: villes[n].longitude,
     y: villes[n].latitude,
     //TODO: transform market to proper labels
-    label: villes[n].market,
+    label: communityLabels.includes(villes[n].market)
+      ? villes[n].market
+      : undefined,
     weightedDegree,
     size: weightedDegree,
   });
 });
 // To directly assign communities as a node attribute
-louvain.assign(graph, { resolution: 1.5 });
+const communitiesByNode = louvain(graph, { resolution: 1.5 });
+const nodesByCommunity = lodash.mapValues(
+  lodash.groupBy(
+    lodash.toPairs(communitiesByNode),
+    ([_, community]) => community
+  ),
+  (e) => e.map(([node]) => node)
+);
+
+communityLabels.forEach((label) => {
+  nodesByCommunity[communitiesByNode[label]].forEach((node) => {
+    graph.setNodeAttribute(node, "community", label);
+  });
+});
 
 // spatialize
 const settings = forceAtlas2.inferSettings(graph);

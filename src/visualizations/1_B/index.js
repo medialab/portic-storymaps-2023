@@ -110,13 +110,13 @@ const WheatCorrelation = ({
             {
               type: "points",
               data: dataPoints,
-              label: { field: "market" },
+              label: { field: "label" },
               size: { field: "size" },
               color: { field: colorBy, palette: colorsPalettes[colorBy] },
               radiusRange: [7, 7],
-              labelSizeRange: [0, 0],
+              labelSizeRange: [14, 14],
               disableHover: true,
-              tooltip: (datum) => `${datum.label} (${datum.bassin})`,
+              tooltip: (datum) => `${datum.market} (${datum.bassin})`,
             },
           ],
         }}
