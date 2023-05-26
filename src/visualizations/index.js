@@ -35,7 +35,7 @@ export default function VisualizationController({
   atlasMode,
 }) {
   const { width, height } = dimensions;
-  
+
   return (
     <div
       style={{ height }}
@@ -53,6 +53,7 @@ export default function VisualizationController({
           height,
           atlasMode,
           callerProps,
+          lang,
         })
       ) : (
         <img
