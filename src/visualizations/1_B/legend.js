@@ -1,17 +1,19 @@
 import { toPairs } from "lodash";
 import { adjustColorForBassinChoropleth } from ".";
+import translate from "../../utils/translate";
 
 export const WheatCorrelationsLegend = ({
   colorBy, // bassin community
   palettes,
   layout, // geography network
+  lang,
 }) => {
   return (
     <div className="wheat-correlations-legend">
       {/* COMMUNITY COLORS */}
       {colorBy === "community" && (
         <div className="color-group">
-          <h4>Villes par corrélation</h4>
+          <h4>{translate("viz-1-B", "colorByCommunity", lang)}</h4>
           {toPairs(palettes.community).map(([variable, color]) => (
             <div className="item" key={variable}>
               <div
@@ -34,8 +36,8 @@ export const WheatCorrelationsLegend = ({
         <div className="color-group">
           <h4>
             {colorBy === "bassin"
-              ? "Villes par bassins versants"
-              : "Bassins versants"}
+              ? translate("viz-1-B", "colorByBassinLabel", lang)
+              : translate("viz-1-B", "basin", lang)}
           </h4>
           {toPairs(palettes.bassin).map(([variable, color]) => (
             <div className="item" key={variable}>
@@ -90,7 +92,7 @@ export const WheatCorrelationsLegend = ({
               marginRight: "0.5rem",
             }}
           />{" "}
-          <span>corrélation</span>
+          <span>{translate("viz-1-B", "correlation", lang)}</span>
         </div>
       )}
     </div>

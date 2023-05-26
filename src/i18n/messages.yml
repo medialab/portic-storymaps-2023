@@ -83,3 +83,34 @@ viz-1-A:
   usIndependance:
     fr: guerre d’indépendance Américaine
     en: American War of Independence
+viz-1-B:
+  layout:
+    fr: Positions des villes
+    en: Cities' layout
+  colorBy:
+    fr: Couleur des villes
+    en: Cities's color
+  geography:
+    fr: Géographie
+    en: Geography
+  network:
+    fr: Réseau de corrélations
+    en: Correlations network
+  geographyTitle:
+    fr: Carte des bassins versants
+    en: Watershed basins map
+  networkTitle:
+    fr: Réseau des corrélations (correlation + 1)² >= 3.5
+    en: Correlation network (correlation + 1)² >= 3.5
+  colorByBassinLabel:
+    fr: Villes par bassins versants
+    en: Cities by watershed bassins
+  basin:
+    fr: Bassins versants
+    en: Watershed basins
+  colorByCommunity:
+    fr: Groupes de prix
+    en: Price groups
+  correlation:
+    fr: Lien de corrélation
+    en: Correlation link

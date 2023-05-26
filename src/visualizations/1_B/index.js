@@ -17,6 +17,7 @@ import "./wheat-correlations.scss";
 import { keyBy, mapValues, pick } from "lodash";
 import colorsPalettes from "../../utils/colorPalettes";
 import chroma from "chroma-js";
+import translate from "../../utils/translate";
 
 /**
  * TODO
@@ -35,7 +36,14 @@ const DEFAULTS = {
   colorBy: "community",
 };
 
-const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
+const WheatCorrelation = ({
+  data,
+  width,
+  height,
+  atlasMode,
+  callerProps,
+  lang,
+}) => {
   const [layout, setLayout] = useState(DEFAULTS.layout);
   const [colorBy, setColorBy] = useState(DEFAULTS.colorBy);
 
@@ -63,7 +71,10 @@ const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
     <>
       <GeographicMapChart
         {...{
-          title: "corrélations prix du blé",
+          title:
+            layout === "network"
+              ? translate("viz-1-B", "networkTitle", lang)
+              : translate("viz-1-B", "geographyTitle", lang),
           width,
           height,
           projectionTemplate: "France",
@@ -114,29 +125,42 @@ const WheatCorrelation = ({ data, width, height, atlasMode, callerProps }) => {
         colorBy={colorBy}
         palettes={pick(colorsPalettes, ["bassin", "community"])}
         layout={layout}
+        lang={lang}
       />
       {atlasMode && (
         <div className="wheat-correlations-atlas-controllers">
           <div>
-            <label htmlFor="layout-select">Layout</label>
+            <label htmlFor="layout-select">
+              {translate("viz-1-B", "layout", lang)}
+            </label>
             <select
               id="layout-select"
               onChange={(e) => setLayout(e.target.value)}
               value={layout}
             >
-              <option value="geography">Géographie</option>
-              <option value="network">Réseau</option>
+              <option value="geography">
+                {translate("viz-1-B", "geography", lang)}
+              </option>
+              <option value="network">
+                {translate("viz-1-B", "network", lang)}
+              </option>
             </select>
           </div>
           <div>
-            <label htmlFor="colorBy-select">Couleurs</label>
+            <label htmlFor="colorBy-select">
+              {translate("viz-1-B", "colorBy", lang)}
+            </label>
             <select
               id="colorBy-select"
               onChange={(e) => setColorBy(e.target.value)}
               value={colorBy}
             >
-              <option value="bassin">Bassins versants</option>
-              <option value="community">Corrélation</option>
+              <option value="bassin">
+                {translate("viz-1-B", "basin", lang)}
+              </option>
+              <option value="community">
+                {translate("viz-1-B", "colorByCommunity", lang)}
+              </option>
             </select>
           </div>
         </div>
