@@ -34,7 +34,7 @@ const TradeDynamicsChart = (props) => {
     datasets = {},
     atlasMode,
   } = props;
-  const height = atlasMode ? 1200 : fixSvgDimension(containerHeight);
+  const height = fixSvgDimension(containerHeight);
   const width = fixSvgDimension(inputWidth);
   const messages = {
     franceOverviewTitle: (start, end, kind, slope) =>
@@ -218,7 +218,7 @@ const TradeDynamicsChart = (props) => {
     }
   };
   return (
-    <div className="TradeDynamicsChart">
+    <div className={cx("TradeDynamicsChart", { "atlas-mode": atlasMode })}>
       {Object.entries(rows).map(([rowId, rowFlex], rowIndex) => {
         return (
           <div className={cx("row", { "is-visible": rows[rowId] })}>
