@@ -114,6 +114,7 @@
       &.full-screen {
         height: calc(100vh - (2 * $medium-gutter));
         background: white;
+        overflow: hidden;
         > div {
           margin: $medium-gutter;
           height: calc(100% - (2 * $medium-gutter));

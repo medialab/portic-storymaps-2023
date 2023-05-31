@@ -83,6 +83,36 @@ viz-1-A:
   usIndependance:
     fr: guerre d’indépendance Américaine
     en: American War of Independence
+  value:
+    fr: Valeur
+    en: Trade Value
+  total:
+    fr: Total
+    en: Total
+  imports:
+    fr: Imports
+    en: Imports
+  exports:
+    fr: Exports
+    en: Exports
+  total_no_colonial_product:
+    fr: Total hors produits coloniaux
+    en: Total colonial products excl.
+  total_no_colonial_trade:
+    fr: Total hors commerce colonial
+    en: Total colonial trade excl.
+  imports_no_colonial_product:
+    fr: Imports hors produits coloniaux
+    en: Imports colonial products excl.
+  exports_no_colonial_product:
+    fr: Exports hors produits coloniaux
+    en: Exports colonial products excl.
+  imports_no_colonial_trade:
+    fr: Imports hors commerce colonial
+    en: Imports colonial trade excl.
+  exports_no_colonial_trade:
+    fr: Exports hors commerce colonial
+    en: Exports colonial trade excl.
 viz-1-B:
   layout:
     fr: Positions des villes
