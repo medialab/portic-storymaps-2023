@@ -50,9 +50,9 @@ export default function Atlas({
         fetchDataFile(fileToLoad).catch(error => null)
       )
     )
-      .then((datasets) => {
-        for (let i = 0; i < datasets.length; i++) {
-          const dataset = datasets[i];
+      .then((loadedDatasets) => {
+        for (let i = 0; i < loadedDatasets.length; i++) {
+          const dataset = loadedDatasets[i];
           if (dataset === null) { continue; }
           payload.set(outputs[i], dataset);
         }
@@ -107,7 +107,7 @@ export default function Atlas({
         </ul>
       </div>
       {
-        (vizId && datasets !== null) ?
+        (vizId && loadingState === "successed") ?
           <VisualizationFocus
             vizId={vizId}
             datasets={datasets}
