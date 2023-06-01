@@ -1,10 +1,7 @@
-
-
 from csv import DictReader
 from csv import DictWriter
 from collections import Counter
 import requests
-import csv
 
 ports_to_compare = {'Dunkerque', 'Bordeaux', 'Marseille', 'Le Havre', 'Lorient', 'Nantes', 'Marennes', 'Saint Malo', 'Rouen', 'La Rochelle'}
 
