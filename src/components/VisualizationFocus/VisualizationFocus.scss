@@ -1,20 +1,20 @@
-@import '../../styles/variables.scss';
+@import "../../styles/variables.scss";
 
 .VisualizationFocus {
   z-index: -1;
   pointer-events: none;
   opacity: 0;
-  transition: opacity .2s ease;
+  transition: opacity 0.2s ease;
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
- 
+
   z-index: 4;
   pointer-events: all;
   opacity: 1;
-  
+
   .lightbox-background {
     position: fixed;
     left: 0;
@@ -111,12 +111,22 @@
       // padding-bottom: $medium-gutter * 5;
       padding: 0;
       cursor: pointer;
+      &.full-screen {
+        height: calc(100vh - (2 * $medium-gutter));
+        background: white;
+        overflow: hidden;
+        > div {
+          margin: $medium-gutter;
+          height: calc(100% - (2 * $medium-gutter));
+          width: calc(100% - (2 * $medium-gutter));
+        }
+      }
       .VisualizationController {
         cursor: default;
         // padding: $small-gutter;
-        padding-bottom: 0;//$medium-gutter;
-        padding-top: 0;//$medium-gutter;
-        padding-right: $medium-gutter;
+        padding-bottom: 0; //$medium-gutter;
+        padding-top: 0; //$medium-gutter;
+        //padding-right: $medium-gutter;
         box-sizing: border-box;
         position: relative;
         width: unset;

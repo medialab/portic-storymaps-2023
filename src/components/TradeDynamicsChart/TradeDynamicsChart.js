@@ -5,6 +5,8 @@ import LongitudinalTradeChart from "./LongitudinalTradeChart";
 import "./TradeDynamicsChart.scss";
 import { fixSvgDimension } from "../../utils/misc";
 import translate from "../../utils/translate";
+import { useEffect, useState } from "react";
+import { omit } from "lodash";
 
 /**
  * Configurable wrapper for main viz #1
@@ -28,14 +30,24 @@ const TradeDynamicsChart = (props) => {
     startYear = 1740,
     endYear = 1790,
     productTradePartThreshold = 0.9,
-    rows,
-    kind,
+    rows: originalRows,
+    kind: originalKind,
     regression,
     datasets = {},
     atlasMode,
   } = props;
-  const height = atlasMode ? 1200 : fixSvgDimension(containerHeight);
+
+  const [rows, setRows] = useState(originalRows);
+  const [kind, setKind] = useState(originalKind);
+
+  useEffect(() => setRows(originalRows), [originalRows, setRows]);
+  useEffect(() => setKind(originalKind), [originalKind, setKind]);
+
+  let height = fixSvgDimension(containerHeight);
+  const selectorsHeight = height * 0.1;
+  if (atlasMode) height = height - selectorsHeight;
   const width = fixSvgDimension(inputWidth);
+
   const messages = {
     franceOverviewTitle: (start, end, kind, slope) =>
       translate("viz-1-A", "franceOverviewTitle", lang, {
@@ -164,12 +176,16 @@ const TradeDynamicsChart = (props) => {
             height={fixSvgDimension((height / totalRows) * rowFlex)}
             data={data.filter((d) => d.direction_ferme === row)}
             absoluteField={`${kind}_value`}
-            shareField={`${kind}_relative`}
+            shareField={
+              kind.includes("colonial") ? undefined : `${kind}_relative`
+            }
             regressionField={`${kind}_${regression}`}
             slopeField={`${kind}_slope`}
             //herfindhalField="product_revolutionempire_exports_herfindahl"
             title={messages.tradeEvolutionTitle(row, startYear, endYear, kind)}
-            axisLeftTitle={messages.partInPct(kind)}
+            axisLeftTitle={
+              kind.includes("colonial") ? undefined : messages.partInPct(kind)
+            }
             axisRightTitle={messages.absoluteValue(kind)}
             regressionTitle={messages.regressionTitle(
               data.filter((d) => d.direction_ferme === row)[0][`${kind}_slope`]
@@ -218,7 +234,7 @@ const TradeDynamicsChart = (props) => {
     }
   };
   return (
-    <div className="TradeDynamicsChart">
+    <div className={cx("TradeDynamicsChart", { "atlas-mode": atlasMode })}>
       {Object.entries(rows).map(([rowId, rowFlex], rowIndex) => {
         return (
           <div className={cx("row", { "is-visible": rows[rowId] })}>
@@ -226,6 +242,70 @@ const TradeDynamicsChart = (props) => {
           </div>
         );
       })}
+
+      {atlasMode && (
+        <div className="selectors" style={{ height: `${selectorsHeight}px` }}>
+          <div>
+            <label htmlFor="variable">
+              {translate("viz-1-A", "value", lang)}
+            </label>
+            <select
+              id="variable"
+              onChange={(e) => {
+                if (e.target.value.includes("colonial"))
+                  setRows(omit(rows, "France"));
+                setKind(e.target.value);
+              }}
+              value={kind}
+            >
+              {[
+                "total",
+                "imports",
+                "exports",
+                "total_no_colonial_product",
+                "total_no_colonial_trade",
+                "imports_no_colonial_product",
+                "exports_no_colonial_product",
+                "imports_no_colonial_trade",
+                "exports_no_colonial_trade",
+              ].map((o) => (
+                <option key={o} value={o}>
+                  {translate("viz-1-A", o, lang)}
+                </option>
+              ))}
+            </select>
+          </div>
+          {[
+            "France",
+            "Marseille",
+            "Bordeaux",
+            "Rouen",
+            "Nantes",
+            "La Rochelle",
+            "Bayonne",
+          ].map((r) => (
+            <div key={r}>
+              <label htmlFor={`checkbox-${r}`}>{r}</label>
+              <input
+                id={`checkbox-${r}`}
+                type="checkbox"
+                value={"France" in rows}
+                checked={r in rows}
+                disabled={r === "France" && kind.includes("colonial")}
+                onChange={(e) => {
+                  if (e.target.checked)
+                    setRows({
+                      ...(r === "France" ? [] : rows),
+                      [r]: r === "France" ? 1 : 2,
+                      ...(r === "France" ? rows : []),
+                    });
+                  else setRows(omit(rows, r));
+                }}
+              />
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };

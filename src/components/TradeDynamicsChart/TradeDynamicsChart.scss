@@ -4,7 +4,7 @@
   position: relative;
   // @todo externalize scss variables
   font-family: $font-family-1;
-  max-height: 100%;
+  height: 100%;
 
   .row {
     max-height: 0;
@@ -222,6 +222,30 @@
           }
         }
       }
+    }
+  }
+
+  .selectors {
+    position: absolute;
+    bottom: calc(-1 * $medium-gutter);
+    width: 100%;
+    left: 0;
+    display: flex;
+    background-color: white;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      background-color: #eee;
+      label {
+        margin: 0.5rem;
+      }
+    }
+    div::last-child {
+      margin-right: 0;
     }
   }
 }

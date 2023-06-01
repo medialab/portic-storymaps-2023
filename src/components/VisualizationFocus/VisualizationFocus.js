@@ -164,14 +164,14 @@ export default function VisualizationFocus({
                             }
                         </div>
                     </div>
-                    <div className="visualization-wrapper">
+                    <div className="visualization-wrapper full-screen">
                         <Measure
                             bounds
                             onResize={contentRect => {
-                                const { width } = contentRect.bounds;
+                                const { width, height } = contentRect.bounds;
                                 setDimensions({
                                     width,
-                                    height: 600
+                                    height
                                 })
                             }}
                         >
