@@ -1,6 +1,68 @@
 import csv
+import requests
 
-output = "../public/data/evolution-exports-levant.csv"
+navigo_output = "../public/data/navigation_depuis_levant.csv"
+
+
+# 1. get online csv data
+def get_online_csv(url):
+  results = []
+  with requests.Session() as s:
+      download = s.get(url)
+      decoded_content = download.content.decode('utf-8')
+      reader = csv.DictReader(decoded_content.splitlines(), delimiter=',')
+      for row in reader:
+        results.append(dict(row))
+  return results
+
+TONNAGE_SPREADSHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTYdeIwpzaVpY_KS91cXiHxb309iYBS4JN_1_hW-_oyeysuwcIpC2VJ5fWeZJl4tA/pub?output=csv'
+
+tonnage_data = get_online_csv(TONNAGE_SPREADSHEET_URL)
+
+# 2. build a shipclass->tx dict
+tonnage_estimates = {}
+for l in tonnage_data:
+    estimation = l['tonnage_estime_en_tx'] or 0
+    if l['tonnage_estime_en_tx'] == 'No data':
+        estimation = 0
+    else :
+        estimation = int(estimation)
+    
+    ship_class = l['ship_class']
+    
+    tonnage_estimates[ship_class] = estimation
+
+
+ports = {}
+with open('../data/navigo_all_flows.csv', newline='', encoding='utf8') as csvfile:
+  reader = csv.DictReader(csvfile)
+  for flow in reader:
+    if flow["destination_state_1789_fr"] == "Empire ottoman" \
+      and (flow["source_suite"] == "Registre du petit cabotage (1786-1787)" \
+             or flow["source_suite"] == "la Santé registre de patentes de Marseille") \
+      :
+      port = flow["departure_fr"]
+      tonnage = flow["tonnage"]
+      ship_class = flow["ship_class_standardized"]
+      if ship_class in tonnage_estimates:
+        tonnage = tonnage_estimates[ship_class]
+      if port not in ports:
+        ports[port] = {
+          "port": port,
+          "latitude": flow["departure_latitude"],
+          "longitude": flow["departure_longitude"],
+          "tonnage": 0,
+          "count": 0
+        }
+      ports[port]["tonnage"] += tonnage
+      ports[port]["count"] += 1
+data = list(ports.values())
+with open(navigo_outputs, 'w') as f2:
+  w = csv.DictWriter(f2, fieldnames=data[0].keys())
+  w.writeheader()
+  w.writerows(data)
+
+toflit_output = "../public/data/evolution-exports-levant.csv"
 
 grouping_to_groups = {
   "Italie": "Italie & Espagne",
@@ -45,7 +107,7 @@ for year in years.keys():
       data.append({"year": year, "group": group, "value": value})
   data.append({"year": year, "group": "total", "value": years[year]["total"]})
 
-with open(output, 'w') as f2:
+with open(toflit_output, 'w') as f2:
   w = csv.DictWriter(f2, fieldnames=data[0].keys())
   w.writeheader()
   w.writerows(data)
