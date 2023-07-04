@@ -102,7 +102,7 @@ with requests.Session() as s:
         if row['statut'] == 'désactivé':
             continue
         del row['statut']
-        row['n_chapitre'] = int(row['n_chapitre'])
+        row['n_chapitre'] = int(row['n_chapitre'] or 0)
         row['inputs'] = [] if row['inputs'] == '' else row['inputs'].split(',')
         row['outputs'] = [] if row['outputs'] == '' else row['outputs'].split(',')
         for col in cols_to_markdown_file.keys():

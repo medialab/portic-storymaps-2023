@@ -8,8 +8,20 @@ import WheatCorrelation from "./1_B";
 
 const visualizations = {
   intro: Intro,
-  "1.A": TradeDynamics,
-  "1.B": WheatCorrelation,
+  "dynamique-du-commerce": TradeDynamics,
+  "correlation-prix": WheatCorrelation,
+  // "exportations-sud-est": ,
+  // "marseille-port-structurant": ,
+  // "part-des-etrangers-dans-navigation": ,
+  // "part-des-francais-dans-provenance": ,
+  // "diversite-produits-exportes": ,
+  // "effets-guerre-sur-commerce-levant": ,
+  // "levant-navigation": ,
+  // "levant-navigation-guerre": ,
+  // "guerre-et-navigation": ,
+  // "styles-navigation": ,
+  // "fonctionnement-port-franc": ,
+  // "impact-guerre-sur-commerce-et-navigation": ,
 };
 
 /**
