@@ -74,7 +74,7 @@ with open("entrees_navigo_marseille.csv", "r") as f, open("../module_3B/mileage_
         
         
     with open("war_navigo.csv", "w") as of:
-        writer = csv.DictWriter(of, ["year", "source","entrées", "reg_mem", "reg_no_mem", "avg_loss_label", "avg_loss", "avg_loss_no_mem_label"])
+        writer = csv.DictWriter(of, ["year", "source","entrées", "reg_mem", "reg_no_mem", "avg_loss_label", "avg_loss", "avg_loss_no_mem",  "avg_loss_no_mem_label"])
 
         writer.writeheader()
         for year in years:
@@ -87,7 +87,9 @@ with open("entrees_navigo_marseille.csv", "r") as f, open("../module_3B/mileage_
                 "reg_no_mem": reg_no_memory[year],
                 "avg_loss_label": f"Perte memoire{average_loss_carriere_mem*100:0.1f}%",
                 "avg_loss_no_mem_label": f"Perte {average_loss_carriere_no_mem*100:0.1f}%",
-                "avg_loss":average_loss_carriere_mem})
+                "avg_loss":average_loss_carriere_mem,
+                "avg_loss_no_mem": average_loss_carriere_no_mem
+            })
                 
             for variable in ["entrées", "mileage_total", "tonnage"]:
                 writer.writerow({
@@ -97,5 +99,6 @@ with open("entrees_navigo_marseille.csv", "r") as f, open("../module_3B/mileage_
                     "reg_mem": reg_navigo[variable][year],
                     "reg_no_mem": "",
                     "avg_loss_label": f"Perte memoire{average_loss_navigo[variable]*100:0.1f}%",
-                    "avg_loss":average_loss_navigo[variable]
+                    "avg_loss":average_loss_navigo[variable],
+                    "avg_loss_no_mem": ""
                 })
