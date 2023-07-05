@@ -147,3 +147,10 @@ viz-1-B:
   correlation:
     fr: Lien de corrélation
     en: Correlation link
+exportations-sud-est:
+  title-top:
+    fr: Province d'origine des produits exportés par la France
+    en: Province of origin from products exported by France
+  title-bottom: 
+    fr: Province d'origine des produits exportés par Marseille
+    en: Province of origin of products exported by Marseille

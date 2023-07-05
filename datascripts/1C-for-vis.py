@@ -96,7 +96,6 @@ for id in departures.keys():
 
 with open(navigo_output_path, 'w') as f2:
   data = [val for val in departures.values()]
-  print(data)
   w = csv.DictWriter(f2, fieldnames=data[0])
   w.writeheader()
   w.writerows(data)
@@ -106,19 +105,43 @@ with open(navigo_output_path, 'w') as f2:
 #========================================================================
 #========================================================================
 #========================================================================
-
 with open('../data/toflit18_all_flows.csv', 'r') as f1:
     r = csv.DictReader(f1)
     local = Counter({})
     national = Counter({})
     for row in r:
       origin = row['origin_province'] or 'inconnue'
+      if origin == "Inconnu":
+         origin = "inconnue"
+      if origin in [
+          "Suisse",
+          "Italie",
+          "Flandre et autres états de l'Empereur",
+          "États-Unis de l'Amérique",
+          "Asie",
+          "Flandre",
+          "Levant et Barbarie",
+          "Hollande",
+          "Angleterre",
+          "Portugal",
+          "Monde",
+          "Espagne",
+          "Allemagne"
+      ]:
+         origin = "étranger"
+      if origin in [
+         "Amérique",
+        "Outre-Mers"
+      ]:
+         origin = "colonies"
       value = float(row['value'] or 0)
       if  row['year'] == "1789" and \
+          row['partner_grouping'] != 'France' and \
+          origin != "étranger" and \
           row['export_import'] == 'Exports':
+            #  row['partner_simplification'] == "Marseille" and \
           if row['best_guess_region_prodxpart'] == '1' and \
-             row['partner_simplification'] == "Marseille" and \
-             row['customs_region'] != 'Marseille' \
+             row['customs_region'] == 'Marseille' \
             :
             local.update({origin: value})
           if row['best_guess_region_prodxpart'] == '1' \

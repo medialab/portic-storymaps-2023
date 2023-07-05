@@ -18,10 +18,14 @@ const colorsPalettes = {
     "Sables d'Olonne": "#668EDB",
   },
   provinces: {
-    Poitou: "#668EDB",
-    Aunis: "#41BEA3",
-    Saintonge: "#A7E6F9",
-    Angoumois: "#514EEE",
+    // Poitou: "#668EDB",
+    // Aunis: "#41BEA3",
+    // Saintonge: "#A7E6F9",
+    // Angoumois: "#514EEE",
+    Provence: "#668EDB",
+    Lyonnais: "#41BEA3",
+    Languedoc: "#A7E6F9",
+    // Angoumois: "#514EEE",
   },
   product: {
     sel: "#E0CB0E",

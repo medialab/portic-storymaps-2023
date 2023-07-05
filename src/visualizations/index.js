@@ -5,12 +5,13 @@ import visualizationsMetas from "../content/viz";
 import Intro from "./Intro/Intro";
 import TradeDynamics from "./1_A";
 import WheatCorrelation from "./1_B";
+import ExportationsSudEst from './ExportationsSudEst';
 
 const visualizations = {
   intro: Intro,
   "dynamique-du-commerce": TradeDynamics,
   "correlation-prix": WheatCorrelation,
-  // "exportations-sud-est": ,
+  "exportations-sud-est": ExportationsSudEst,
   // "marseille-port-structurant": ,
   // "part-des-etrangers-dans-navigation": ,
   // "part-des-francais-dans-provenance": ,
