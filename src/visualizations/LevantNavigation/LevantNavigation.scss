@@ -1,0 +1,9 @@
+
+.LevantNavigation {
+  .geopart:not(.dashed) {
+    fill: rgba(200, 200, 200, 1)!important; // #0b2941 !important;
+    stroke: rgba(255, 255, 255, 0.9)!important;
+    // fill: transparent!important;
+    // fill: rgba(255, 255, 255, 0.5) !important;
+  }
+}

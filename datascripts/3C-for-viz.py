@@ -37,7 +37,7 @@ ports = {}
 with open('../data/navigo_all_flows.csv', newline='', encoding='utf8') as csvfile:
   reader = csv.DictReader(csvfile)
   for flow in reader:
-    if flow["destination_state_1789_fr"] == "Empire ottoman" \
+    if flow["departure_state_1789_fr"] == "Empire ottoman" \
       and (flow["source_suite"] == "Registre du petit cabotage (1786-1787)" \
              or flow["source_suite"] == "la Santé registre de patentes de Marseille") \
       :
@@ -54,10 +54,10 @@ with open('../data/navigo_all_flows.csv', newline='', encoding='utf8') as csvfil
           "tonnage": 0,
           "count": 0
         }
-      ports[port]["tonnage"] += tonnage
+      ports[port]["tonnage"] += int(tonnage or 0)
       ports[port]["count"] += 1
 data = list(ports.values())
-with open(navigo_outputs, 'w') as f2:
+with open(navigo_output, 'w') as f2:
   w = csv.DictWriter(f2, fieldnames=data[0].keys())
   w.writeheader()
   w.writerows(data)

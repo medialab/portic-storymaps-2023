@@ -283,6 +283,20 @@ const GeographicMapChart = ({
               // translationY: height * 0.28
             }
             break;
+            case 'Levant':
+              projectionConfig = {
+                ...projectionConfig,
+                scale: 1000,
+                // centerX: 15,
+                // centerY: 40,
+                centerX: 15,
+                centerY: 40,
+                translationX: width * .5,
+                translationY: height * .5,
+                // translationX: width * 0.4,
+                // translationY: height * 0.28
+              }
+              break;
       case 'France':
       default: // as France config 
         // console.log('projection config in dry version', projectionConfig);

@@ -1,5 +1,6 @@
 import { useMemo } from 'react';
 import { geoPath } from "d3-geo";
+import ReactTooltip from 'react-tooltip';
 
 import GeographicMapChart from '../../components/GeographicMapChart';
 import { scaleLinear } from 'd3-scale';
@@ -10,8 +11,6 @@ const { provinces: provincesPalette } = colorsPalettes;
 
 import './MarseillePortStructurant.scss';
 import { min, max } from 'd3-array';
-import { cartesian2Polar, polarToCartesian } from '../../utils/misc';
-import ReactTooltip from 'react-tooltip';
 
 const labelsCoordinates = {
   "Saint-Laurent-de-la-Salanque": [42.75, 3.3],
@@ -241,10 +240,12 @@ const MapObjects = ({
           cx={marseilleX}
           cy={marseilleY}
           r={2}
+          stroke="white"
         />
         <g transform={`translate(${centerX}, ${centerY})rotate(45)`}>
           <rect
             fill={MARSEILLE_COLOR}
+            stroke="white"
             x={-10}
             y={-10}
             width={20}

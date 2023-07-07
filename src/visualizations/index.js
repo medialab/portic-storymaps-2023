@@ -7,6 +7,7 @@ import TradeDynamics from "./1_A";
 import WheatCorrelation from "./1_B";
 import ExportationsSudEst from './ExportationsSudEst';
 import MarseillePortStructurant from './MarseillePortStructurant';
+import LevantNavigation from './LevantNavigation';
 
 const visualizations = {
   intro: Intro,
@@ -14,11 +15,11 @@ const visualizations = {
   "correlation-prix": WheatCorrelation,
   "exportations-sud-est": ExportationsSudEst,
   "marseille-port-structurant": MarseillePortStructurant,
+  'levant-navigation': LevantNavigation,
   // "part-des-etrangers-dans-navigation": ,
   // "part-des-francais-dans-provenance": ,
   // "diversite-produits-exportes": ,
   // "effets-guerre-sur-commerce-levant": ,
-  // "levant-navigation": ,
   // "levant-navigation-guerre": ,
   // "guerre-et-navigation": ,
   // "styles-navigation": ,
