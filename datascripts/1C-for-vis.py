@@ -93,6 +93,10 @@ for id in departures.keys():
     count_total = g5_map[id]["count"]
     departures[id]["count_total"] = count_total
     departures[id]["ratio_to_marseille"] = int(departures[id]["count_to_marseille"]) / int(count_total)
+    if departures[id]["port"] == "La Seyne":
+       departures[id]["port"] = "La Seyne"
+    if departures[id]["port"] == "Saint-Nazaire / Sanary-sur-Mer":
+       departures[id]["port"] = "Sanary-sur-Mer"
 
 with open(navigo_output_path, 'w') as f2:
   data = [val for val in departures.values()]

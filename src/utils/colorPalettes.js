@@ -21,11 +21,13 @@ const colorsPalettes = {
     // Poitou: "#668EDB",
     // Aunis: "#41BEA3",
     // Saintonge: "#A7E6F9",
-    // Angoumois: "#514EEE",
+    Roussillon: "#E0CB0E",
     Provence: "#668EDB",
     Lyonnais: "#41BEA3",
     Languedoc: "#A7E6F9",
-    // Angoumois: "#514EEE",
+    
+    Corse: "#514EEE",
+    'Isles de Corse': "#514EEE",
   },
   product: {
     sel: "#E0CB0E",

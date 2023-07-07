@@ -6,13 +6,14 @@ import Intro from "./Intro/Intro";
 import TradeDynamics from "./1_A";
 import WheatCorrelation from "./1_B";
 import ExportationsSudEst from './ExportationsSudEst';
+import MarseillePortStructurant from './MarseillePortStructurant';
 
 const visualizations = {
   intro: Intro,
   "dynamique-du-commerce": TradeDynamics,
   "correlation-prix": WheatCorrelation,
   "exportations-sud-est": ExportationsSudEst,
-  // "marseille-port-structurant": ,
+  "marseille-port-structurant": MarseillePortStructurant,
   // "part-des-etrangers-dans-navigation": ,
   // "part-des-francais-dans-provenance": ,
   // "diversite-produits-exportes": ,

@@ -103,8 +103,8 @@ with requests.Session() as s:
             continue
         del row['statut']
         row['n_chapitre'] = int(row['n_chapitre'] or 0)
-        row['inputs'] = [] if row['inputs'] == '' else row['inputs'].split(',')
-        row['outputs'] = [] if row['outputs'] == '' else row['outputs'].split(',')
+        row['inputs'] = [] if row['inputs'] == '' else [i.strip() for i in row['inputs'].split(',')]
+        row['outputs'] = [] if row['outputs'] == '' else [o.strip() for o in row['outputs'].split(',')]
         for col in cols_to_markdown_file.keys():
             del row[col]
         viz_id_list[ row['id'] ] = row

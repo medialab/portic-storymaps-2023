@@ -61,7 +61,6 @@ const AnimatedGeoPart = ({
   // if (outOfBounds) {
   //   return null;
   // }
-
   return (
     <animated.path
       title={initialD.properties.shortname}
