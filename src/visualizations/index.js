@@ -8,6 +8,7 @@ import WheatCorrelation from "./1_B";
 import ExportationsSudEst from './ExportationsSudEst';
 import MarseillePortStructurant from './MarseillePortStructurant';
 import LevantNavigation from './LevantNavigation';
+import StylesNavigation from "./StylesNavigation/StylesNavigation";
 
 const visualizations = {
   intro: Intro,
@@ -22,7 +23,7 @@ const visualizations = {
   // "effets-guerre-sur-commerce-levant": ,
   // "levant-navigation-guerre": ,
   // "guerre-et-navigation": ,
-  // "styles-navigation": ,
+  "styles-navigation": StylesNavigation,
   // "fonctionnement-port-franc": ,
   // "impact-guerre-sur-commerce-et-navigation": ,
 };

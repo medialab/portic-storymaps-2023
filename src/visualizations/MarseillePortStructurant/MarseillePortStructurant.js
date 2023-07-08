@@ -2,9 +2,12 @@ import { useMemo } from 'react';
 import { geoPath } from "d3-geo";
 import ReactTooltip from 'react-tooltip';
 
-import GeographicMapChart from '../../components/GeographicMapChart';
 import { scaleLinear } from 'd3-scale';
 import { useSpring, animated } from '@react-spring/web';
+
+import GeographicMapChart from '../../components/GeographicMapChart';
+
+
 import colorsPalettes from '../../utils/colorPalettes';
 
 const { provinces: provincesPalette } = colorsPalettes;

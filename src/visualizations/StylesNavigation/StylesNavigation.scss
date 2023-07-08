@@ -1,0 +1,58 @@
+
+
+
+.StylesNavigation {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  &.is-layout-horizontal {
+    flex-direction: row;
+  }
+
+  .column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: stretch;
+    flex: 1;
+    .viz-container {
+      background: 'red';
+    }
+  }
+
+  .geopart:not(.dashed) {
+    fill: rgba(200, 200, 200, 1)!important; // #0b2941 !important;
+    stroke: rgba(255, 255, 255, 0.9)!important;
+  }
+
+  .geopart.dashed {
+    opacity: 1;
+    transition: .5s ease all;
+    &.is-shadowed {
+      opacity: 0.2;
+    }
+  }
+
+  circle,
+  rect,
+  text,
+  g {
+    transition: .5s ease opacity;
+  }
+
+  .StyleViz {
+    h4{
+      margin: .5rem;
+      // font-size: 16px;
+    }
+
+    .axis-title {
+      font-style: italic;
+      fill: grey;
+      font-family: "IBM Plex Sans", sans-serif;
+    }
+
+    &.is-shadowed {
+      opacity: .8;
+    }
+  }
+}
