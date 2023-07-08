@@ -8,7 +8,8 @@ import WheatCorrelation from "./1_B";
 import ExportationsSudEst from './ExportationsSudEst';
 import MarseillePortStructurant from './MarseillePortStructurant';
 import LevantNavigation from './LevantNavigation';
-import StylesNavigation from "./StylesNavigation/StylesNavigation";
+import DiversiteProduits from './DiversiteProduits';
+import StylesNavigation from './StylesNavigation';
 
 const visualizations = {
   intro: Intro,
@@ -19,7 +20,7 @@ const visualizations = {
   'levant-navigation': LevantNavigation,
   // "part-des-etrangers-dans-navigation": ,
   // "part-des-francais-dans-provenance": ,
-  // "diversite-produits-exportes": ,
+  "diversite-produits-exportes": DiversiteProduits,
   // "effets-guerre-sur-commerce-levant": ,
   // "levant-navigation-guerre": ,
   // "guerre-et-navigation": ,

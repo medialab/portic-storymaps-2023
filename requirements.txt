@@ -16,3 +16,4 @@ seaborn
 altair
 casanova
 duckdb
+rich
