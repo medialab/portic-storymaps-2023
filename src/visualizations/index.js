@@ -12,6 +12,7 @@ import DiversiteProduits from './DiversiteProduits';
 import StylesNavigation from './StylesNavigation';
 import PartDesEtrangersDansNavigation from './PartDesEtrangersDansNavigation';
 import PartDesFrancaisDansProvenance from './PartDesFrancaisDansProvenance';
+import EffetsGuerreSurLevant from './EffetsGuerreSurLevant';
 
 const visualizations = {
   intro: Intro,
@@ -23,7 +24,7 @@ const visualizations = {
   "part-des-etrangers-dans-navigation": PartDesEtrangersDansNavigation,
   "part-des-francais-dans-provenance": PartDesFrancaisDansProvenance,
   "diversite-produits-exportes": DiversiteProduits,
-  // "effets-guerre-sur-commerce-levant": ,
+  "effets-guerre-sur-commerce-levant": EffetsGuerreSurLevant,
   // "levant-navigation-guerre": ,
   // "guerre-et-navigation": ,
   "styles-navigation": StylesNavigation,

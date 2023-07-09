@@ -156,7 +156,12 @@ const LineChart = ({
     yScale = scaleOrdinal().domain(yDomain).range(range(margins.top, height - margins.bottom, (height - margins.bottom) / yDomain.length - 1));
     yAxisValues = yDomain;
   } else {
-    yDomain = [min(data.map(d => +d[y.field])), max(data.map(d => +d[y.field]))];
+    if (initialYDomain) {
+      yDomain = initialYDomain;
+    }
+    else {
+      yDomain = [min(data.map(d => +d[y.field])), max(data.map(d => +d[y.field]))];
+    }
     yScale = scaleLinear().domain(yDomain).range([height - margins.bottom, margins.top]).nice();
     yAxisValues = axisPropsFromTickScale(yScale, 10).values;
   }
@@ -493,7 +498,7 @@ const LineChart = ({
             </AnimatedGroup>
             <AnimatedGroup className="lines-container">
               {
-                groups.map(([groupName, items], groupIndex) => {
+                groups.reverse().map(([groupName, items], groupIndex) => {
                   const color = colorPalette && groupName ? colorPalette[groupName] : generic.dark;
                   return (
                     <AnimatedGroup key={groupName}>
