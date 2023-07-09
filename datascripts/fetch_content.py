@@ -194,6 +194,7 @@ for lang in GDOC_URL.keys():
         print('title : ', title)
 
         # parse and extract images
+        """
         for image_index, image in enumerate(soup.find_all('img')):
           next_block = image.find_all_next()[0]
           next_block_text = next_block.get_text()
@@ -235,6 +236,7 @@ for lang in GDOC_URL.keys():
             "warnings": "",
             "cacher_atlas": ""
           }
+        """
 
         # Ignore and delete useless content
         soup = soup.find(id='contents')
