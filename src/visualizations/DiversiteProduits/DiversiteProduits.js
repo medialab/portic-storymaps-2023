@@ -36,7 +36,7 @@ export default function DiversiteProduits({
   const yearWidth = (width - labelsWidth - 10) / years.length;
   const rectHeight = rowHeight / 2;
   const legendRectWidth = height / 4;
-  const hue = 10;
+  const hueScale = scalePow().domain([0, 1]).range([10, 20]); // 10;
   const saturationScale = scalePow().domain([0, 1]).range([100, 0]);
   const luminanceScale = scalePow().domain([0, 1]).range([25, 75]);
   return (
@@ -101,8 +101,8 @@ export default function DiversiteProduits({
           </text>
           
           <linearGradient id="legend-gradient">
-            <stop offset="0%" opacity={'.6'} stopColor={`hsl(${hue}, 0%, 75%)`} />
-            <stop offset="100%" stopColor={`hsl(${hue}, 100%, 25%)`} />
+            <stop offset="0%" opacity={'.6'} stopColor={`hsl(${hueScale.range()[1]}, ${saturationScale.range()[1]}%, ${luminanceScale.range()[1]}%)`} />
+            <stop offset="100%" stopColor={`hsl(${hueScale.range()[0]},  ${saturationScale.range()[0]}%, ${luminanceScale.range()[0]}%)`} />
           </linearGradient>
         </g>
         {
@@ -133,6 +133,7 @@ export default function DiversiteProduits({
                         const val = yearsMap[year] || 0;
                         const saturationPct =  saturationScale(+val); // (1 - +val) * 100;
                         const luminancePct = luminanceScale(+val); // 25 + (+val / 2) * 100;
+                        const hueVal = hueScale(+val);
                         const x = labelsWidth + (+year - MIN_YEAR) * yearWidth;
                         return (
                           <rect
@@ -143,7 +144,7 @@ export default function DiversiteProduits({
                             y={rowHeight / 2 - rectHeight / 2}
                             stroke="none"
                             opacity={highlightedYear && highlightedYear !== year ? .6 : 1}
-                            fill={val === 0 ? 'transparent' : `hsl(${hue} ${saturationPct}% ${luminancePct}%)`}
+                            fill={val === 0 ? 'transparent' : `hsl(${hueVal} ${saturationPct}% ${luminancePct}%)`}
                             data-for="concentration-tooltip"
                             data-tip={val === 0 ? undefined : `En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${parseInt(+val * 100)}%.`}
                             onMouseEnter={() => val === 0 ? undefined : setHighlightedYear(year)}
