@@ -34,16 +34,16 @@ with open('module_intro_C/war_navigo.csv', 'r') as f1:
     data.append({
       "year": year["year"],
       "data_type": "navigation",
-      "value": float(d['value']) if d['value']!='' else None, 
-      # "kind" : ,
+      "value": float(year['entrées']) if year['entrées']!='' else None, 
+      "kind" : year["source"],
       # "slope" : ,
       # "reg_point": ,
       "peace_reg_memory": year["reg_mem"],
       "peace_reg": year["reg_no_mem"],
       # "direction_ferme": d['direction_ferme'],
       # "column_order": directions_order.index(d['direction_ferme']),
-      "avg_loss_mem": year["avg_loss"],
-      "avg_loss_no_mem": year["avg_loss_no_mem"],
+      "avg_loss_mem": str(round(float(year["avg_loss"]) * 100, 1)) + '%',
+      "avg_loss_no_mem": str(round(float(year["avg_loss_no_mem"] or 0) * 100, 1)) + '%',
     })
 
 

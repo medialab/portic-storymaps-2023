@@ -15,6 +15,7 @@ import PartDesFrancaisDansProvenance from './PartDesFrancaisDansProvenance';
 import EffetsGuerreSurLevant from './EffetsGuerreSurLevant';
 import GuerreEtNavigation from './GuerreEtNavigation';
 import GuerreEtLevant from './GuerreEtLevant';
+import GuerreEtCroissance from './GuerreEtCroissance';
 
 const visualizations = {
   intro: Intro,
@@ -31,7 +32,7 @@ const visualizations = {
   "levant-navigation-guerre": GuerreEtLevant,
   "styles-navigation": StylesNavigation,
   // "fonctionnement-port-franc": ,
-  // "impact-guerre-sur-commerce-et-navigation": ,
+  "impact-guerre-sur-commerce-et-navigation": GuerreEtCroissance,
 };
 
 /**

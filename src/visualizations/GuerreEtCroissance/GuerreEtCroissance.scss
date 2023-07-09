@@ -1,0 +1,86 @@
+.GuerreEtCroissance {
+
+  .top-label-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    height: 100%;
+  }
+  .top-label {
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  circle {
+    transition: .2s ease all;
+  }
+
+  .navigation-ui-container {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: .6rem;
+
+    p {
+      margin: 0;
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: .1rem;
+        input {
+          margin: 0;
+          margin-right: .25rem;
+          font-size: .5rem;
+          height: .5rem;
+        }
+      }
+    }
+  }
+
+  .row-title-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    height: 100%;
+    .row-title {
+      margin: 0;
+      text-align: right;
+    }
+  }
+
+  .legend {
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    flex-flow: row nowrap;
+    h4{
+      margin: 0;
+      font-size: .8rem;
+      margin-right: 1rem;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        font-size: .6rem;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: start;
+        span:first-of-type {
+          margin-right: .5rem;
+          min-width: 2rem;
+          max-width: 2rem;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
