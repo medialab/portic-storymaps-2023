@@ -3,8 +3,8 @@ import React, { useMemo } from "react";
 import visualizationsMetas from "../content/viz";
 
 import Intro from "./Intro/Intro";
-import TradeDynamics from "./1_A";
-import WheatCorrelation from "./1_B";
+import TradeDynamics from "./DynamiqueDuCommerce";
+import CorrelationPrix from "./CorrelationPrix";
 import ExportationsSudEst from './ExportationsSudEst';
 import MarseillePortStructurant from './MarseillePortStructurant';
 import LevantNavigation from './LevantNavigation';
@@ -21,7 +21,7 @@ import GuerreEtCroissance from './GuerreEtCroissance';
 const visualizations = {
   intro: Intro,
   "dynamique-du-commerce": TradeDynamics,
-  "correlation-prix": WheatCorrelation,
+  "correlation-prix": CorrelationPrix,
   "exportations-sud-est": ExportationsSudEst,
   "marseille-port-structurant": MarseillePortStructurant,
   'levant-navigation': LevantNavigation,
