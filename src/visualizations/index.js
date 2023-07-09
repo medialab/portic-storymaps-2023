@@ -13,6 +13,8 @@ import StylesNavigation from './StylesNavigation';
 import PartDesEtrangersDansNavigation from './PartDesEtrangersDansNavigation';
 import PartDesFrancaisDansProvenance from './PartDesFrancaisDansProvenance';
 import EffetsGuerreSurLevant from './EffetsGuerreSurLevant';
+import GuerreEtNavigation from './GuerreEtNavigation';
+import GuerreEtLevant from './GuerreEtLevant';
 
 const visualizations = {
   intro: Intro,
@@ -25,8 +27,8 @@ const visualizations = {
   "part-des-francais-dans-provenance": PartDesFrancaisDansProvenance,
   "diversite-produits-exportes": DiversiteProduits,
   "effets-guerre-sur-commerce-levant": EffetsGuerreSurLevant,
-  // "levant-navigation-guerre": ,
-  // "guerre-et-navigation": ,
+  "guerre-et-navigation": GuerreEtNavigation,
+  "levant-navigation-guerre": GuerreEtLevant,
   "styles-navigation": StylesNavigation,
   // "fonctionnement-port-franc": ,
   // "impact-guerre-sur-commerce-et-navigation": ,

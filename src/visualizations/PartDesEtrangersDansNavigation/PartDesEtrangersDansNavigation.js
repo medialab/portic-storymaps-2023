@@ -187,7 +187,7 @@ export default function PartDesEtrangersDansNavigation({
                         height={secondBarHeight}
                         fill={port === 'Marseille' ? "red" : 'grey'}
                       />
-                      <g transform={`translate(${5}, ${topBarHeight + 10})rotate(45)`}>
+                      <g transform={`translate(${topBarWidth/2 - 10}, ${topBarHeight + 10})rotate(45)`}>
                         <text
                           x={0}
                           y={0}
