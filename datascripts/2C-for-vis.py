@@ -48,7 +48,7 @@ def get_online_csv(url):
   with requests.Session() as s:
       download = s.get(url)
       decoded_content = download.content.decode('utf-8')
-      reader = csv.DictReader(decoded_content.splitlines(), delimiter=',')
+      reader = DictReader(decoded_content.splitlines(), delimiter=',')
       for row in reader:
         results.append(dict(row))
   return results
@@ -86,22 +86,45 @@ for p in ports_to_compare:
   }
 
 flags = set()
-with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
+# with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
+#     reader = DictReader(csvfile)
+#     for row in reader:
+#         indate_year = row['indate_fixed'].split('-')[0]
+#         p = row['pointcall']
+#         tonnage = float(row['tonnage'] or 0)
+#         flag = row['flag'] or 'unknown'
+#         ship_class = row['ship_class_standardized']
+#         if indate_year == '1787' and p in ports_to_compare:
+#           if flag == 'French':
+#             ports_87_strangers[p]['french'] += tonnage
+#           else:
+#             ports_87_strangers[p]['stranger'] += tonnage
+#         if indate_year == '1789' and p == 'Marseille' and flag != 'French':
+#           if ship_class in tonnage_estimates:
+#             tonnage = tonnage_estimates[ship_class]
+#           if flag not in nationalities_89_marseille:
+#             nationalities_89_marseille[flag] = 0
+#           nationalities_89_marseille[flag] += tonnage
+with open('../data/navigo_all_flows.csv', newline='') as csvfile:
     reader = DictReader(csvfile)
     for row in reader:
-        indate_year = row['indate_fixed'].split('-')[0]
-        p = row['pointcall']
+        year = row["indate_fixed"][:4]
+        p = row["destination"] if year == "1789" else row["departure"] # row["destination"] if row["destination"] == "Marseille" else row['departure']
         tonnage = float(row['tonnage'] or 0)
         flag = row['flag'] or 'unknown'
+        
         ship_class = row['ship_class_standardized']
-        if indate_year == '1787' and p in ports_to_compare:
+        if ship_class in tonnage_estimates:
+            tonnage = tonnage_estimates[ship_class]
+
+        # for ports comparison
+        if year == '1787' and p in ports_to_compare:
           if flag == 'French':
             ports_87_strangers[p]['french'] += tonnage
           else:
             ports_87_strangers[p]['stranger'] += tonnage
-        if indate_year == '1789' and p == 'Marseille' and flag != 'French':
-          if ship_class in tonnage_estimates:
-            tonnage = tonnage_estimates[ship_class]
+        # for Marseille detail
+        if year == '1789' and p == 'Marseille' and flag != 'French':
           if flag not in nationalities_89_marseille:
             nationalities_89_marseille[flag] = 0
           nationalities_89_marseille[flag] += tonnage

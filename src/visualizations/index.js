@@ -10,6 +10,7 @@ import MarseillePortStructurant from './MarseillePortStructurant';
 import LevantNavigation from './LevantNavigation';
 import DiversiteProduits from './DiversiteProduits';
 import StylesNavigation from './StylesNavigation';
+import PartDesEtrangersDansNavigation from './PartDesEtrangersDansNavigation';
 
 const visualizations = {
   intro: Intro,
@@ -18,7 +19,7 @@ const visualizations = {
   "exportations-sud-est": ExportationsSudEst,
   "marseille-port-structurant": MarseillePortStructurant,
   'levant-navigation': LevantNavigation,
-  // "part-des-etrangers-dans-navigation": ,
+  "part-des-etrangers-dans-navigation": PartDesEtrangersDansNavigation,
   // "part-des-francais-dans-provenance": ,
   "diversite-produits-exportes": DiversiteProduits,
   // "effets-guerre-sur-commerce-levant": ,

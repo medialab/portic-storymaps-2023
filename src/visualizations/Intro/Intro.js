@@ -38,7 +38,7 @@ const Intro = ({
   let title = '';
   if (dataType === 'navigo') {
     if (dataScope === 'world') {
-      title = 'Destination des navires en destination de Marseille en 1789';
+      title = 'Pays de départ des navires à destination de Marseille en 1789';
     } else {
       title = 'Sorties des 10 plus grands ports de France en 1787';
     }
