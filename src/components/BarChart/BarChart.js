@@ -43,6 +43,7 @@ import './BarChart.scss';
  * @param {number} props.margins.bottom
  * 
  * @param {function} props.tooltip
+ * @param {boolean} props.hideLegend
  * 
  * @returns {React.ReactElement} - React component
  */

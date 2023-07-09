@@ -78,7 +78,8 @@ const HorizontalBarChart = ({
   y,
   tooltip,
   margins: inputMargins = {},
-  annotations = []
+  annotations = [],
+  hideLegend,
 }) => {
   const [headersHeight, setHeadersHeight] = useState(0);
   // const [legendWidth, setLegendWidth] = useState(0);
@@ -452,7 +453,7 @@ const HorizontalBarChart = ({
                         {
                           items
                             .sort((a, b) => {
-                              if (!yAutoSort) {
+                              if (!yAutoSort && !sortYField) {
                                 return 0;
                               }
                               const multiplier = sortYAscending ? 1 : -1;
@@ -498,7 +499,7 @@ const HorizontalBarChart = ({
             </g>
           </svg>
           {
-            color ?
+            color && !hideLegend ?
               <div
                 className="ColorLegend"
                 ref={legendRef}

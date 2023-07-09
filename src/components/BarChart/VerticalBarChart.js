@@ -59,6 +59,7 @@ const { generic } = colorsPalettes;
  * @param {number} props.margins.bottom
  * 
  * @param {function} props.tooltip
+ * @param {boolean} props.hideLegend
  * 
  * @returns {React.ReactElement}
  */
@@ -73,6 +74,7 @@ const VerticalBarChart = ({
   x,
   tooltip,
   margins: inputMargins = {},
+  hideLegend,
 }) => {
   const [headersHeight, setHeadersHeight] = useState(0);
   const [legendWidth, setLegendWidth] = useState(0);
@@ -315,7 +317,7 @@ const VerticalBarChart = ({
             </g>
           </svg>
           {
-            color ?
+            color && !hideLegend ?
               <div
                 className="ColorLegend"
                 ref={legendRef}

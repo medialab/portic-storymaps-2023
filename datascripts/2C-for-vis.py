@@ -156,6 +156,37 @@ with open("../public/data/share_of_strangers_1787_french_ports.csv", "w") as f:
 
 
 # part des français dans les provenances de voyages arrivés à Marseille
+french_share_map = {
+    "France": "France",
+    "République de Gênes": "Péninsule italienne",
+    "Royaume de Naples": "Péninsule italienne",
+    "multi-Etat": "autre",
+    "Espagne": "Espagne",
+    "Royaume de Piémont-Sardaigne": "Péninsule italienne",
+    "Empire ottoman": "Empire ottoman",
+    "zone maritime": "autre",
+    "Etats pontificaux": "Péninsule italienne",
+    "Toscane": "Péninsule italienne",
+    "Duché de Massa et Carrare": "Péninsule italienne",
+    "Monaco": "France",
+    "Principauté de Piombino": "Péninsule italienne",
+    "République de Lucques": "Péninsule italienne",
+    "République de Raguse": "Péninsule italienne",
+    "Malte": "autre",
+    "Autriche": "autre",
+    "République de Venise": "Péninsule italienne",
+    "Grande-Bretagne": "Grande-Bretagne",
+    "Maroc": "autre",
+    "Principauté de Lampédouse": "Péninsule italienne",
+    "Provinces-Unies": "Provinces-Unies",
+    "Portugal": "autre",
+    "Hambourg": "autre",
+    "Pologne": "autre",
+    "Danemark": "autre",
+    "Empire russe": "autre",
+    "": "autre"
+}
+
 french_shares = {}
 departure_states = set()
 for year in years_to_compare:
@@ -173,19 +204,21 @@ with open('../data/navigo_all_flows.csv', newline='') as csvfile:
           if ship_class in tonnage_estimates:
             tonnage = tonnage_estimates[ship_class]
         if indate_year in years_to_compare and row["destination"] == "Marseille":
+          departure_state = french_share_map[departure_state]
+          # print("go for", indate_year)
           departure_states.add(departure_state)
-          if departure_state not in french_shares[year]:
-            french_shares[year][departure_state] = {
+          if departure_state not in french_shares[indate_year]:
+            french_shares[indate_year][departure_state] = {
               "tonnage_french": 0,
               "tonnage_not_french": 0
             }
-          french_shares[year][departure_state][flag_field] += tonnage
+          french_shares[indate_year][departure_state][flag_field] += tonnage
 
 french_shares_arr = []
 for year in years_to_compare:
   for state in french_shares[year].keys():
-    tonnage_french = french_shares[year][departure_state]["tonnage_french"]
-    tonnage_not_french = french_shares[year][departure_state]["tonnage_not_french"]
+    tonnage_french = french_shares[year][state]["tonnage_french"]
+    tonnage_not_french = french_shares[year][state]["tonnage_not_french"]
     french_shares_arr.append({
       "year": year,
       "state": state,
