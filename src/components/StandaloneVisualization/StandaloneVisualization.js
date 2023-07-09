@@ -5,7 +5,7 @@ import Loader from '../Loader';
 import VisualizationController from '../../visualizations/index';
 
 import visualizationsMetas from '../../content/viz.json';
-import { fetchDataCsv } from '../../utils/fetch';
+import { fetchDataFile } from '../../utils/fetch';
 import './StandaloneVisualization.scss'
 
 export default function StandaloneVisualization({
@@ -15,7 +15,6 @@ export default function StandaloneVisualization({
 
     const [datasets, setDatasets] = useState(undefined);
     const [loadingState, setLoadingState] = useState('none');
-
     useEffect(() => {
         if (!!vizId === false || visualizationsMetas[vizId] === undefined) {
             setLoadingState('none');
@@ -27,9 +26,9 @@ export default function StandaloneVisualization({
         const payload = new Map();
 
         Promise.all(
-            outputs.map(fileToLoad =>
-                fetchDataCsv(fileToLoad).catch(error => null)
-            )
+          outputs.map(fileToLoad =>
+            fetchDataFile(fileToLoad).catch(error => null)
+          )
         )
         .then((datasets) => {
             for (let i = 0; i < datasets.length; i++) {
@@ -45,7 +44,7 @@ export default function StandaloneVisualization({
             console.log(error);
         })
 
-    }, [vizId])
+    }, [vizId]);
 
     return (
         <div className="StandaloneVisualization">

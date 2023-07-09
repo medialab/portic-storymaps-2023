@@ -152,7 +152,7 @@ export default function WarTransferChart({
                       xmlns="http://www.w3.org/1999/xhtml"
                       className="label"
                     >
-                      <strong>{peaceData.year}</strong> (année de paix)
+                      <strong>{peaceData.year}</strong> <br/>(année de paix)
                     </div>
                   </foreignObject>
                   <g className="links-group" transform={`translate(${sideWidth}, ${0})`}>
@@ -278,7 +278,7 @@ export default function WarTransferChart({
                       xmlns="http://www.w3.org/1999/xhtml"
                       className="label"
                     >
-                      <strong>{warData.year}</strong> (année de guerre)
+                      <strong>{warData.year}</strong> <br/>(année de guerre)
                     </div>
                   </foreignObject>
                 </g>

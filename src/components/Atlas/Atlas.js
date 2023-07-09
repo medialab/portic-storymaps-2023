@@ -96,7 +96,7 @@ export default function Atlas({
                       className='thumbnail'
                       // @todo reset for real visualizations
                       // src={`${process.env.BASE_PATH}/thumbnails/${lang}/${id}.png`}
-                      src={`${process.env.BASE_PATH}/assets/drafts/${id}.jpg`}
+                      src={`${process.env.BASE_PATH}/thumbnails/${lang}/${id}.png`}
                     />
                     <figcaption className='visualization-title'>{title}</figcaption>
                   </figure>

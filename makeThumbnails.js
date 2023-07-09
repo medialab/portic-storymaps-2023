@@ -90,7 +90,7 @@ const basePath = path.join(__dirname, 'public');
         await page.close();
     }
     await homePage.screenshot({
-        path: path.join(basePath, 'thumbnails', `dunkerque-rs.png`),
+        path: path.join(basePath, 'thumbnails', `marseille-rs.png`),
         fullPage: false
     });
 
