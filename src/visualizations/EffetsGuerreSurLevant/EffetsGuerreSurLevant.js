@@ -143,7 +143,7 @@ export default function EffetsGuerreSurLevant({
           },
           y: {
             field: 'value',
-            title: 'valeur des exports',
+            title: 'valeur des imports',
             // tickSpan: 100000000,
             // domain: [0, 200000000],
             tickFormat: d => formatNumber(d) + ' lt.'
@@ -184,7 +184,7 @@ export default function EffetsGuerreSurLevant({
           },
           y: {
             field: 'value',
-            title: 'part des exports',
+            title: 'part des imports',
             tickFormat: d => d + '%',
             sort: {
               field: 'orderReversed',
