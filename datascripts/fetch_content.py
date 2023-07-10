@@ -20,8 +20,10 @@ from citeproc.source.json import CiteProcJSON
 # from citeproc_styles import get_style_filepath
 
 GDOC_URL = {
+    # doc rédaction finale
+    'fr': 'https://docs.google.com/document/d/e/2PACX-1vSzrObR2CoJKQaFUzUaCnD-27KMJLCA3l2bxixNwHNV5igRAuAKAbRfyRPKjbpMDPCRPQFcb7ftpS54/pub',
     # doc de la proposition
-    'fr': 'https://docs.google.com/document/d/e/2PACX-1vQChaHvKx7RdLuTQNdqDxFgcW5WuF1dZ8mA8dOmu8XGSKu84r4PPy_Tvk2hXZ7V2ch_UVSdrUf-bYP-/pub',
+    # 'fr': 'https://docs.google.com/document/d/e/2PACX-1vQChaHvKx7RdLuTQNdqDxFgcW5WuF1dZ8mA8dOmu8XGSKu84r4PPy_Tvk2hXZ7V2ch_UVSdrUf-bYP-/pub',
     # vrai doc de rédaction :
     # 'fr': 'https://docs.google.com/document/d/e/2PACX-1vTAF_yDmEuLh4vQrELpiWWk9HBgvWNM8X-BkHetsVc4eZIBTDIyad7ZW-L8T8mHBlb-I1d3AD2-_eQn/pub',
     'en': 'https://docs.google.com/document/d/e/2PACX-1vQaH-NuArhsmEMCjVNO_-Nh5lKDSEgiRedTheQja-HXTfAoa65R5m2PCgWnYMBgzkrg-ySfACu6YnHo/pub'
