@@ -14,6 +14,10 @@ import GeographicMapChart from '../../components/GeographicMapChart';
 import StyleViz from './StyleViz';
 import { formatNumber } from '../../utils/misc';
 
+import colorsPalettes from '../../utils/colorPalettes';
+
+const {stylesOfNavigation: colors} = colorsPalettes;
+
 
 const WIDTH_BREAKPOINT = 800;
 
@@ -62,14 +66,6 @@ const mapShortNameToCategory = {
   'Régence de Tunis': 'empire ottoman',
 
 }
-
-const colors = {
-  'Ponant': '#668EDB',
-  'empire ottoman': '#019d2f',
-  'méditerranée occidentale': 'orange',
-  'Marseille': 'red'
-}
-
 
 const Provinces = ({
   data: inputData, 

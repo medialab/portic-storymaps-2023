@@ -171,6 +171,37 @@ const colorsPalettes = {
     Marseille: "#d04c3c",
     Bordeaux: "#857ac1",
   },
+  provenanceCountries: {
+    France: '#EE7993',
+    'Empire ottoman': '#019d2f',
+
+    'Péninsule italienne': '#E27A0B',
+    Espagne: '#E25C0B',
+    'Provinces-Unies': '#c8c8f0',
+    'Grande-Bretagne': '#c9072a',
+    autre: '#c4c4c4',
+  },
+  partnersGrouped: {
+    'Levant & Barbarie': '#019d2f',
+    'Italie & Espagne': '#E27A0B',
+    'Nord, Hollande & Flandres': '#c8c8f0',
+    'Angleterre & Amériques': '#c9072a',
+    'total': '#c4c4c4',
+  },
+  Marseille: 'red',
+  warStatus: {
+    "France du Levant": "#E5881A",
+    "France du Ponant": "#A7E6F9",
+    "en guerre allié de la France": "#668EDB",
+    'en guerre ennemi de la France': '#c9072a',
+    'neutre': '#c4c4c4',
+  },
+  stylesOfNavigation: {
+    'Ponant': '#A7E6F9',
+    'empire ottoman': '#019d2f',
+    'méditerranée occidentale': '#E5881A',
+    'Marseille': 'red'
+  }
 };
 
 export default colorsPalettes;

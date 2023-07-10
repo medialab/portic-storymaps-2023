@@ -1,12 +1,8 @@
 import WarTransferChart from '../../components/WarTransferChart';
 
-const palette = {
-  'neutre': 'grey',
-  'France du Levant': 'blue',
-  'France du Ponant': 'green',
-  'en guerre allié de la France': 'rgb(0, 196, 175)',
-  'en guerre ennemi de la France': 'red',
-}
+import colorsPalettes from '../../utils/colorPalettes';
+
+const {warStatus: palette} = colorsPalettes;
 
 export default function GuerreEtNavigation ({
   width,

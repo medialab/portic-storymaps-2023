@@ -5,6 +5,9 @@ import './PartDesFrancaisDansProvenance.scss';
 import BarChart from '../../components/BarChart';
 import { formatNumber } from '../../utils/misc';
 
+import colorsPalettes from '../../utils/colorPalettes';
+const {provenanceCountries} = colorsPalettes;
+
 
 export default function PartDesFrancaisDansProvenance({
   data: inputData,
@@ -17,6 +20,7 @@ export default function PartDesFrancaisDansProvenance({
       ...d,
       tonnage_french: +d.tonnage_french,
       share_of_french: +d.share_of_french * 100,
+      order: -Object.keys(provenanceCountries).indexOf(d.state),
       year: +d.year
     }))
     .sort((a, b) => {
@@ -38,7 +42,8 @@ export default function PartDesFrancaisDansProvenance({
           layout: "groups",
           color: {
             field: 'state',
-            title: 'Provenance du voyage'
+            title: 'Provenance du voyage',
+            palette: provenanceCountries
           },
           x: {
             field: 'year'
@@ -49,8 +54,8 @@ export default function PartDesFrancaisDansProvenance({
             domain: [0, 100],
             title: 'Part des français',
             sort: {
-              type: 'string',
-              field: 'state'
+              type: 'number',
+              field: 'order'
             }
           },
           tooltip: d => `En ${d.year}, ${d.share_of_french.toFixed(2)}% des voyages partis de ports de ${d.state} et arrivés à Marseille étaient assurés par des navires français (${formatNumber(d.tonnage_french)} tx. cumulés)`
@@ -66,7 +71,8 @@ export default function PartDesFrancaisDansProvenance({
           title: 'Tonnage des français dans les provenances de voyages arrivés à Marseille',
           layout: "groups",
           color: {
-            field: 'state'
+            field: 'state',
+            palette: provenanceCountries
           },
           x: {
             field: 'year'
@@ -77,8 +83,8 @@ export default function PartDesFrancaisDansProvenance({
             // domain: [0, 100],
             title: 'Tonnage cum.',
             sort: {
-              type: 'string',
-              field: 'state'
+              type: 'number',
+              field: 'order'
             }
           },
           hideLegend: true,

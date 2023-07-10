@@ -4,13 +4,10 @@ import './EffetsGuerreSurLevant.scss';
 import { formatNumber } from "../../utils/misc";
 import BarChart from "../../components/BarChart";
 
-const palette = {
-  'Levant & Barbarie': '#019d2f',
-  'Italie & Espagne': 'rgba(240, 200, 200, 1)',
-  'Nord, Hollande & Flandres': 'rgba(200, 240, 200, 1)',
-  'Angleterre & Amériques': 'rgba(200, 200, 240, 1)',
-  'total': 'lightgrey',
-}
+import colorsPalettes from "../../utils/colorPalettes";
+
+const {partnersGrouped: palette} = colorsPalettes;
+
 const orderMap = Object.keys(palette).reduce((res, key, i) => ({
   ...res,
   [key]: i,
@@ -147,7 +144,7 @@ export default function EffetsGuerreSurLevant({
           y: {
             field: 'value',
             title: 'valeur des exports',
-            // tickSpan: 50000000,
+            // tickSpan: 100000000,
             // domain: [0, 200000000],
             tickFormat: d => formatNumber(d) + ' lt.'
           },
