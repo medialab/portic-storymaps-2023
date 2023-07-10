@@ -45,7 +45,7 @@ export default function StandaloneVisualization({
         })
 
     }, [vizId]);
-
+    // console.log(datasets)
     return (
         <div className="StandaloneVisualization">
             {
@@ -54,7 +54,8 @@ export default function StandaloneVisualization({
                         { ...{
                             vizId,
                             lang,
-                            datasets
+                            datasets,
+                            atlasMode: true,
                         } }
                         dimensions={{
                             width: 1200,

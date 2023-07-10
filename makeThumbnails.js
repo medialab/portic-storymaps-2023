@@ -66,6 +66,7 @@ const basePath = path.join(__dirname, 'public');
                 await page.close();
                 continue;
             }
+            // await page.waitForTimeout(3000);
 
             await page.screenshot({
                 path: pathToSave,
