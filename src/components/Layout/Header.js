@@ -110,7 +110,7 @@ export default function Header({
                             .map(({ routes, titles }, index) => {
                                 const pagePath = routes[lang];
                                 const title = titles[lang];
-                                let displayedTitle = title;
+                                let displayedTitle = title.replace(/^(\d\. ?)/g, '').replace(' ?', '\u00A0?');
                                 if (displayedTitle.length > MAX_DISPLAYED_TITLE_LENGTH) {
                                   displayedTitle = displayedTitle.substr(0, MAX_DISPLAYED_TITLE_LENGTH) + '...';
                                 }
