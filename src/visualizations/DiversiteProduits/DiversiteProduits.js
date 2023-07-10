@@ -1,4 +1,4 @@
-import { mean } from "d3-array";
+import { extent, mean } from "d3-array";
 import { scalePow } from "d3-scale";
 import { groupBy, range, uniq } from "lodash";
 import { useEffect, useState } from "react";
@@ -39,9 +39,10 @@ export default function DiversiteProduits({
   const yearWidth = (width - labelsWidth - 10) / years.length;
   const rectHeight = rowHeight / 2;
   const legendRectWidth = height / 4;
-  const hueScale = scalePow().domain([0, 1]).range([10, 20]); // 10;
-  const saturationScale = scalePow().domain([0, 1]).range([100, 0]);
-  const luminanceScale = scalePow().domain([0, 1]).range([25, 75]);
+  const dataExtent = extent(data.map(d => +d.indice))
+  const hueScale = scalePow().domain(dataExtent).range([10, 20]); // 10;
+  const saturationScale = scalePow().domain(dataExtent).range([100, 0]);
+  const luminanceScale = scalePow().domain(dataExtent).range([25, 75]);
   return (
     <>
       <svg className={`DiversiteProduits ${atlasMode ? 'is-atlas-mode' : ''}`}

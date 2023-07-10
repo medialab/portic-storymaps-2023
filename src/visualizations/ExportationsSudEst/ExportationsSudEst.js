@@ -268,18 +268,23 @@ export default function ExportationsSudEst({
                   }
                   }
                 />
-                <Rect
+                {
+                  marseilleBarWidth > 0 ?
+                  <Rect
                   {
                   ...{
                     x,
                     y: y + barHeight + 1,
                     fill: color, // 'rgba(255,0,0,0.5)',
                     stroke: 'white',
-                    width: marseilleBarWidth,
+                    width: marseilleBarWidth > 2 ? marseilleBarWidth : 2,
                     height: barHeight / 2
                   }
                   }
                 />
+                  : null
+                }
+                
                 {
                   barWidth > 5 ?
                     <G

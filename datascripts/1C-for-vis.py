@@ -148,8 +148,8 @@ with open('../data/toflit18_all_flows.csv', 'r') as f1:
           if row['customs_region'] == 'Marseille' \
             :
             local.update({origin: value})
-          else:
-            national.update({origin: value})
+          # else:
+          national.update({origin: value})
     data = [{"origin": origin, "value": value, "scope": "Marseille"} for origin, value in local.items()] + [{"origin": origin, "value": value, "scope": "France"} for origin, value in national.items()]
     with open(toflit_output_path, 'w') as f2:
       w = csv.DictWriter(f2, fieldnames=['origin', 'value', 'scope'])
