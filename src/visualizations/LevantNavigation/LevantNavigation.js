@@ -93,7 +93,7 @@ export default function LevantNavigation({
   // const mapBgData = useMemo(() => inputData.get('map_backgrounds/intro_map.geojson'), [inputData]);
   const mapBgData = inputData.get('map_backgrounds/intro_map.geojson');
   // const data = useMemo(() => {
-  const data = inputData.get('navigation_depuis_levant.csv')
+  const data = (inputData.get('navigation_depuis_levant.csv') || [])
       .map(d => ({
         ...d,
         ...['latitude', 'longitude', 'tonnage', 'count']

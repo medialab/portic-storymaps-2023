@@ -182,7 +182,7 @@ export default function StylesNavigation({
   useEffect(() => setHighlightedCategory(categorie ? categorie : undefined), [categorie])
   
   // const data = useMemo(() => 
-  const data = inputData.get('styles_navigation_long_cours.csv')
+  const data = (inputData.get('styles_navigation_long_cours.csv') || [])
   .map(d => ({
     ...d,
     ...['nb_steps','tonnage','count']
@@ -198,7 +198,7 @@ export default function StylesNavigation({
     }, {})
   // }, [data])
   // const portsData = useMemo(() => 
-  const portsData = inputData.get('styles_navigation_long_cours_ports.csv')
+  const portsData = (inputData.get('styles_navigation_long_cours_ports.csv') || [])
   // , [inputData])
   // const mapBgData = useMemo(() => {
     const geojson = inputData.get('map_backgrounds/intro_map.geojson');

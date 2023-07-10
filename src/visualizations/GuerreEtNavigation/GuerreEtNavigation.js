@@ -11,7 +11,7 @@ export default function GuerreEtNavigation ({
   atlasMode,
 }) {
   // const data = useMemo(() => {
-    const cleanData = inputData.get('navigation_guerre.csv')
+    const cleanData = (inputData.get('navigation_guerre.csv') || [])
   .map(d => Object.entries(d).reduce((res, [key, val]) => ({...res, [key]: +val}), {}));
   const groups = cleanData.reduce((res, year, index) => {
     const operational = Object.entries(year)

@@ -275,7 +275,7 @@ export default function MarseillePortStructurant({
   // const mapBgData = useMemo(() => inputData.get('map_backgrounds/intro_map.geojson'), [inputData]);
   const mapBgData = inputData.get('map_backgrounds/intro_map.geojson');
   // const data = useMemo(() => {
-  const data = inputData.get('navigation_frlevant_to_marseille.csv')
+  const data = (inputData.get('navigation_frlevant_to_marseille.csv') || [])
       .map(d => ({
         ...d,
         ...['count_to_marseille', 'count_total', 'latitude', 'longitude']

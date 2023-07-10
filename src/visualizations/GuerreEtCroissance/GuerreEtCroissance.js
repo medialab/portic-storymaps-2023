@@ -315,7 +315,7 @@ export default function GuerreEtCroissance({
   useEffect(() => setNavigationMetric(navigation_metric || defaultNavigationMetric), [navigation_metric]);
 
   // const data = useMemo(() => {
-  const cleanData = inputData.get('impact-guerre-sur-croissance.csv').map(datum => ({
+  const cleanData = (inputData.get('impact-guerre-sur-croissance.csv') || []).map(datum => ({
     ...datum,
     ...['year', 'value', 'reg_point', 'peace_reg_memory', 'peace_reg', 'column_order',]
       .reduce((res, key) => ({ ...res, [key]: +datum[key] }), {})

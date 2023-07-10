@@ -42,7 +42,7 @@ export default function PartDesEtrangersDansNavigation({
   // lang
 }) {
   // const comparisonData = useMemo(() => inputData.get('share_of_strangers_1787_french_ports.csv')
-  const comparisonData = inputData.get('share_of_strangers_1787_french_ports.csv')
+  const comparisonData = (inputData.get('share_of_strangers_1787_french_ports.csv') || [])
     .map(d => ({ ...d, share_of_strangers: +d.share_of_strangers }))
     .sort((a, b) => {
       if (a.share_of_strangers > b.share_of_strangers) {
@@ -52,7 +52,7 @@ export default function PartDesEtrangersDansNavigation({
     })
     // , [inputData]);
   // const marseilleData = useMemo(() => {
-    const cleanData = inputData.get('share_of_strangers_marseille_1789.csv')
+    const cleanData = (inputData.get('share_of_strangers_marseille_1789.csv') || [])
       .map(d => ({ ...d, tonnage: +d.tonnage, label: flagToNationality[d.flag] }))
       .filter(d => d.flag !== 'unknown')
     const reducedData = cleanData

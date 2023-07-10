@@ -20,7 +20,7 @@ export default function EffetsGuerreSurLevant({
   lang
 }) {
   // const data = useMemo(() => 
-  const data = inputData.get('evolution-exports-levant.csv')
+  const data = (inputData.get('evolution-exports-levant.csv') || [])
     .map(d => ({
       ...d,
       year: +d.year,

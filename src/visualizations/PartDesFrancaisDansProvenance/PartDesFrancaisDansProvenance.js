@@ -15,7 +15,7 @@ export default function PartDesFrancaisDansProvenance({
   height
 }) {
   // const data = useMemo(() => inputData.get('compare_french_ships_to_marseille_accross_time.csv')
-  const data = inputData.get('compare_french_ships_to_marseille_accross_time.csv')
+  const data = (inputData.get('compare_french_ships_to_marseille_accross_time.csv') || [])
     .map(d => ({
       ...d,
       tonnage_french: +d.tonnage_french,
