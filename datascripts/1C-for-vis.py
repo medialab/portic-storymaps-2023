@@ -141,15 +141,14 @@ with open('../data/toflit18_all_flows.csv', 'r') as f1:
       value = float(row['value'] or 0)
       if  row['year'] == "1789" and \
           row['partner_grouping'] != 'France' and \
+          row['best_guess_region_prodxpart'] == '1' and \
           origin != "étranger" and \
           row['export_import'] == 'Exports':
             #  row['partner_simplification'] == "Marseille" and \
-          if row['best_guess_region_prodxpart'] == '1' and \
-             row['customs_region'] == 'Marseille' \
+          if row['customs_region'] == 'Marseille' \
             :
             local.update({origin: value})
-          if row['best_guess_region_prodxpart'] == '1' \
-            :
+          else:
             national.update({origin: value})
     data = [{"origin": origin, "value": value, "scope": "Marseille"} for origin, value in local.items()] + [{"origin": origin, "value": value, "scope": "France"} for origin, value in national.items()]
     with open(toflit_output_path, 'w') as f2:

@@ -130,7 +130,7 @@ export default function EffetsGuerreSurLevant({
         ...{
           width,
           height: height / 2,
-          title: `Les partenaires d'exportation de Marseille au fil du temps`,
+          title: `Les partenaires d'importation de Marseille au fil du temps`,
           data,
           annotations,
           color: {

@@ -3,6 +3,7 @@
 import './PartDesEtrangersDansNavigation.scss';
 import { scaleLinear } from 'd3-scale';
 import ReactTooltip from 'react-tooltip';
+import {formatNumber} from '../../utils/misc';
 
 const flagToNationality = {
   'Genoese': 'gênois',
@@ -254,7 +255,7 @@ export default function PartDesEtrangersDansNavigation({
                           style={{ fontSize: fontSize, color: 'white' }}
                           className="label"
                           data-for="part-etrangers-tooltip"
-                          data-tip={`En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`}
+                          data-tip={`En 1789, un total de ${formatNumber(tonnage)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`}
                         >
                           {label} ({parseInt(tonnage / marseilleSum * 100)}%)
                         </div>
