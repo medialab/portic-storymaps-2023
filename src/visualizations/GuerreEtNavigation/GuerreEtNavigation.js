@@ -7,7 +7,8 @@ const {warStatus: palette} = colorsPalettes;
 export default function GuerreEtNavigation ({
   width,
   height,
-  data: inputData
+  data: inputData,
+  atlasMode,
 }) {
   // const data = useMemo(() => {
     const cleanData = inputData.get('navigation_guerre.csv')
@@ -43,7 +44,7 @@ export default function GuerreEtNavigation ({
       <WarTransferChart
         {
           ...{
-            title: 'Le personnel de navigation à destination de Marseille',
+            title: atlasMode ? 'Le personnel de navigation à destination de Marseille' : undefined,
             width,
             height,
             data,

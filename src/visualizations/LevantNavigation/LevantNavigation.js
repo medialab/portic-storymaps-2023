@@ -124,7 +124,7 @@ export default function LevantNavigation({
         {...{
           width,
           height,
-          title: 'Le Levant du point de vue de la navigation',
+          title: atlasMode ? 'Le Levant du point de vue de la navigation' : undefined,
           projectionTemplate: 'Levant',
           className: `LevantNavigation ${atlasMode ? 'is-atlas-mode' : ''}`,
           layers: [

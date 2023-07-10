@@ -15,12 +15,12 @@ export default function DiversiteProduits({
   callerProps = {}
 }) {
   const {
-    year
+    annee
   } = callerProps;
-  const [highlightedYear, setHighlightedYear] = useState(year);
+  const [highlightedYear, setHighlightedYear] = useState(annee);
 
-  useEffect(() => setHighlightedYear(year), [year]);
-  
+  useEffect(() => setHighlightedYear(annee !== undefined && !isNaN(+annee) ? +annee : undefined), [annee]);
+
   const data = inputData.get('herfindal-exports-marseille.csv').map(d => ({ ...d, indice: +d.indice }));
   // const data = useMemo(() => inputData.get('herfindal-exports-marseille.csv').map(d => ({ ...d, indice: +d.indice })), [inputData])
   const years = range(MIN_YEAR, MAX_YEAR + 1);

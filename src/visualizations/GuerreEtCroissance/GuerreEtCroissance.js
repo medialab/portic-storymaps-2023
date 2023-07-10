@@ -151,7 +151,7 @@ const LineSeries = ({
             x2={xScale(activeYear)}
             y1={gutter * 2}
             y2={height - gutter}
-            stroke="blue"
+            stroke="rgb(81, 78, 238)"
             strokeDasharray={'2,2'}
           />
           : null
@@ -305,8 +305,8 @@ export default function GuerreEtCroissance({
   ];
   const defaultNavigationMetric = 'carrière';
 
-  const [visibleSeries, setVisibleSeries] = useState(series || defaultSeries);
-  const [visibleDirections, setVisibleDirections] = useState(directions || defaultDirections);
+  const [visibleSeries, setVisibleSeries] = useState(series ? series.split(',').map(s => s.trim()) : defaultSeries);
+  const [visibleDirections, setVisibleDirections] = useState(directions ? directions.split(',').map(d => d.trim()) : defaultDirections);
   const [navigationMetric, setNavigationMetric] = useState(navigation_metric || defaultNavigationMetric);
   const [activeYear, setActiveYear] = useState();
 
@@ -336,7 +336,7 @@ export default function GuerreEtCroissance({
   const topLabelsHeight = gutter * 3;
   const bottomAxisHeight = gutter * 3;
   const rowHeight = (height - topLabelsHeight - bottomAxisHeight) / visibleSeries.length;
-  const cellWidth = (width - sideWidth - gutter * 5) / (visibleDirections.length < 4 ? 4 : visibleDirections.length);
+  const cellWidth = (width - sideWidth - gutter * 5) / (visibleDirections.length < 3 ? 3 : visibleDirections.length);
 
   const xScale = scaleLinear().domain([MIN_YEAR, MAX_YEAR]).range([0, cellWidth - gutter * 3]);
   const navigationSources = [
@@ -368,7 +368,7 @@ export default function GuerreEtCroissance({
   const activeNavigationSource = navigationSources.find(({ id }) => id === navigationMetric).source;
   const activeNavigationTickFormat = navigationSources.find(({ id }) => id === navigationMetric).tickFormat;
   const xAxisValues = range(MIN_YEAR, MAX_YEAR + 20, 20);
-  const legendX = sideWidth + cellWidth * 2.5 + gutter * 2;
+  const legendX = sideWidth + (visibleDirections.length >= 4 ? cellWidth * 2.5 : cellWidth * 1.5) + gutter * 2;
   return (
     <>
       <svg

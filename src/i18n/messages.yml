@@ -124,13 +124,13 @@ viz-1-B:
     fr: Géographie
     en: Geography
   network:
-    fr: Réseau de corrélations
+    fr: Réseau de corrélations des prix
     en: Correlations network
   geographyTitle:
     fr: Carte des bassins versants
     en: Watershed basins map
   networkTitle:
-    fr: Réseau des corrélations (correlation + 1)² >= 3.5
+    fr: Réseau de corrélations des prix (corrélation + 1)² >= 3.5
     en: Correlation network (correlation + 1)² >= 3.5
   colorByBassinLabel:
     fr: Villes par bassins versants
