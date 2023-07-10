@@ -1,5 +1,5 @@
-html_sanitizer
 beautifulsoup4
+html_sanitizer
 validators
 citeproc-py
 pyzotero
@@ -17,5 +17,4 @@ altair
 casanova
 duckdb
 rich
-sklearn
 scikit-learn

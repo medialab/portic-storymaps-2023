@@ -35,12 +35,12 @@ sanitizer = Sanitizer({
     'tags': ('a', 'h1', 'h2', 'h3', 'strong', 'em', 'p', 'ul', 'ol', 'li', 'br', 'hr', 'caller', 'link', 'dfn', 'img'),
     'empty': ('hr', 'caller'),
     'attributes': {
-        'caller': ('id', 'class', 'year', 'object'),
-        'a': ('href', 'rel', 'target', 'class', 'title'),
-        'dfn': ('data-for', 'data-effect', 'data-tip'),
-        'h2': ('id'), 
-        'h3': ('id'),
-        'img':( 'src')
+        'caller': set(['id', 'class', 'year', 'object']),
+        'a': set(['href', 'rel', 'target', 'class', 'title']),
+        'dfn': set(['data-for', 'data-effect', 'data-tip']),
+        'h2': set(['id']), 
+        'h3': set(['id']),
+        'img':set([ 'src'])
     }
 })
 
