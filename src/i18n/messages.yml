@@ -66,8 +66,8 @@ viz-1-A:
     fr: valeur absolue ${kind}
     end: ${kind} absolute value
   regressionTitle:
-    fr: "Dynamisme : +${slope}%/an"
-    en: "Dynamics: +${slope}%/year"
+    fr: "Croissance : ${slope}%/an"
+    en: "Dynamics: ${slope}%/year"
   barTooltip:
     fr: En <strong>${year}</strong> ${pct}% des biens exportés depuis la France le sont à partir de <strong>${city}</strong>.
     en: In <strong>${year}</strong> ${pct}% of exported goods from France were exported from <strong>${city}</strong>.

@@ -151,6 +151,8 @@ const Provinces = ({
               opacity={highlightedCategory && highlightedCategory !== categoryId ? .3 : 1}
               title={port}
               key={port}
+              data-for={"styles-tooltip"}
+              data-tip={port}
               onMouseEnter={() => setHighlightedCategory(categoryId)}
               onMouseLeave={() => setHighlightedCategory()}
             />
@@ -310,7 +312,8 @@ export default function StylesNavigation({
                   renderObjects: ({ projection }) => {
                     const [marseilleX, marseilleY] = projection(MARSEILLE_COORDS);
                     return (
-                      <g transform={`translate(${marseilleX}, ${marseilleY})`}>
+                      <g 
+                      transform={`translate(${marseilleX}, ${marseilleY})`}>
                         <rect
                           width={cellWidth / 50}
                           height={cellWidth / 50}

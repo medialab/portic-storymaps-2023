@@ -10,7 +10,7 @@ import LangSwitcher from './LangSwitcher';
 import translate from '../../utils/translate';
 
 
-const MAX_DISPLAYED_TITLE_LENGTH = 40;
+const MAX_DISPLAYED_TITLE_LENGTH = 45;
 /**
  * Header contains navigation and…
  * @param {Object} props
