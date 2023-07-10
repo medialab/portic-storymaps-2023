@@ -1,6 +1,5 @@
 
 
-import { useMemo } from 'react';
 import './PartDesFrancaisDansProvenance.scss';
 
 import BarChart from '../../components/BarChart';
@@ -12,7 +11,8 @@ export default function PartDesFrancaisDansProvenance({
   width,
   height
 }) {
-  const data = useMemo(() => inputData.get('compare_french_ships_to_marseille_accross_time.csv')
+  // const data = useMemo(() => inputData.get('compare_french_ships_to_marseille_accross_time.csv')
+  const data = inputData.get('compare_french_ships_to_marseille_accross_time.csv')
     .map(d => ({
       ...d,
       tonnage_french: +d.tonnage_french,
@@ -25,7 +25,7 @@ export default function PartDesFrancaisDansProvenance({
       }
       return -1;
     })
-    , [inputData]);
+    // , [inputData]);
   return (
     <div className="PartDesFrancaisDansProvenance">
       <BarChart

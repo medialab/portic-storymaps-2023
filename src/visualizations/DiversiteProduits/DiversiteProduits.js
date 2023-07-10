@@ -1,7 +1,7 @@
 import { mean } from "d3-array";
 import { scalePow } from "d3-scale";
 import { groupBy, range, uniq } from "lodash";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import ReactTooltip from "react-tooltip";
 
 
@@ -18,8 +18,11 @@ export default function DiversiteProduits({
     year
   } = callerProps;
   const [highlightedYear, setHighlightedYear] = useState(year);
+
   useEffect(() => setHighlightedYear(year), [year]);
-  const data = useMemo(() => inputData.get('herfindal-exports-marseille.csv').map(d => ({ ...d, indice: +d.indice })), [inputData])
+  
+  const data = inputData.get('herfindal-exports-marseille.csv').map(d => ({ ...d, indice: +d.indice }));
+  // const data = useMemo(() => inputData.get('herfindal-exports-marseille.csv').map(d => ({ ...d, indice: +d.indice })), [inputData])
   const years = range(MIN_YEAR, MAX_YEAR + 1);
   const groups = groupBy(data, d => d.direction);
   const means = Object.entries(groups)

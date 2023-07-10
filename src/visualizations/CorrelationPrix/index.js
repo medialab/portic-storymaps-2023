@@ -11,7 +11,7 @@
  **/
 
 import GeographicMapChart from "../../components/GeographicMapChart";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { WheatCorrelationsLegend } from "./legend";
 import "./wheat-correlations.scss";
 import { keyBy, mapValues, pick } from "lodash";
@@ -49,23 +49,26 @@ const WheatCorrelation = ({
 
   useEffect(() => {
     setLayout(callerProps?.layout || DEFAULTS.layout);
-    setColorBy(callerProps?.colorBy || DEFAULTS.colorBy);
-  }, [callerProps]);
+    setColorBy(callerProps?.colorby || DEFAULTS.colorBy);
+  }, [callerProps?.layout, callerProps?.colorby]);
 
   const originalData = data.get("wheat_correlations_cities.csv");
 
-  const dataPoints = useMemo(() => {
+  // const dataPoints = useMemo(() => {
+    let dataPoints;
     switch (layout) {
       case "network":
-        return originalData.map((datum) => ({
+        dataPoints = originalData.map((datum) => ({
           ...datum,
           latitude: datum.networkLatitude,
           longitude: datum.networkLongitude,
         }));
+        break;
       default:
-        return originalData;
+        dataPoints = originalData;
+        break;
     }
-  }, [originalData, layout]);
+  // }, [originalData, layout]);
 
   return (
     <>

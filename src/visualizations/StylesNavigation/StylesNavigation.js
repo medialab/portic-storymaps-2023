@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { geoPath } from "d3-geo";
 import ReactTooltip from 'react-tooltip';
 import {uniq} from 'lodash';
@@ -40,19 +40,19 @@ const mapShortNameToCategory = {
   'Norvège': 'Ponant',
 
 
-  'Roussillon': 'méditerrannée occidentale',
-  'Languedoc': 'méditerrannée occidentale',
-  'Provence': 'méditerrannée occidentale',
-  'Isles de Corse': 'méditerrannée occidentale',
+  'Roussillon': 'méditerranée occidentale',
+  'Languedoc': 'méditerranée occidentale',
+  'Provence': 'méditerranée occidentale',
+  'Isles de Corse': 'méditerranée occidentale',
 
-  'République de Gènes': 'méditerrannée occidentale',
-  'Royaume de Piémont-Sardaigne': 'méditerrannée occidentale',
-  "Toscane": 'méditerrannée occidentale',
-  "Etats pontificaux": 'méditerrannée occidentale',
-  'Naples': 'méditerrannée occidentale',
-  'Sardaigne': 'méditerrannée occidentale',
-  'Sicile': 'méditerrannée occidentale',
-  'Espagne': 'méditerrannée occidentale',
+  'République de Gènes': 'méditerranée occidentale',
+  'Royaume de Piémont-Sardaigne': 'méditerranée occidentale',
+  "Toscane": 'méditerranée occidentale',
+  "Etats pontificaux": 'méditerranée occidentale',
+  'Naples': 'méditerranée occidentale',
+  'Sardaigne': 'méditerranée occidentale',
+  'Sicile': 'méditerranée occidentale',
+  'Espagne': 'méditerranée occidentale',
 
 
   'Empire ottoman': 'empire ottoman',
@@ -66,7 +66,7 @@ const mapShortNameToCategory = {
 const colors = {
   'Ponant': '#668EDB',
   'empire ottoman': '#019d2f',
-  'méditerrannée occidentale': 'orange',
+  'méditerranée occidentale': 'orange',
   'Marseille': 'red'
 }
 
@@ -80,10 +80,10 @@ const Provinces = ({
   width, 
   height
 }) => {
-  const data = useMemo(() => {
-    return inputData.features.filter(({ properties: { dominant, shortname } }) => 
+  // const data = useMemo(() => {
+  const data = inputData.features.filter(({ properties: { dominant, shortname } }) => 
     Object.keys(mapShortNameToCategory).includes(shortname))
-  }, [inputData]);
+  // }, [inputData]);
 
   const project = geoPath().projection(projection);
 
@@ -181,32 +181,32 @@ export default function StylesNavigation({
   const [highlightedSteps, setHighlightedSteps] = useState(steps);
   const [highlightedCategory, setHighlightedCategory] = useState(categorie);
   // reset from caller props change
-  useEffect(() => setHighlightedTonnage(tonnage), [tonnage])
-  useEffect(() => setHighlightedSteps(steps), [steps])
-  useEffect(() => setHighlightedCategory(categorie), [categorie])
+  useEffect(() => setHighlightedTonnage(tonnage ? +tonnage : undefined), [tonnage])
+  useEffect(() => setHighlightedSteps(steps ? +steps : undefined), [steps])
+  useEffect(() => setHighlightedCategory(categorie ? categorie : undefined), [categorie])
   
-  const data = useMemo(() => 
-  inputData.get('styles_navigation_long_cours.csv')
+  // const data = useMemo(() => 
+  const data = inputData.get('styles_navigation_long_cours.csv')
   .map(d => ({
     ...d,
     ...['nb_steps','tonnage','count']
     .reduce((res, k) =>({...res, [k]: +d[k]}), {})
   }))
-  , [inputData]);
-  const travelsSums = useMemo(() => {
-    return data.reduce((res, item) => {
+  // , [inputData]);
+  // const travelsSums = useMemo(() => {
+  const travelsSums = data.reduce((res, item) => {
       if (!res[item.category]) {
         res[item.category] = +item.count;
       } else res[item.category] += +item.count;
       return res;
     }, {})
-  }, [data])
-  const portsData = useMemo(() => 
-  inputData.get('styles_navigation_long_cours_ports.csv')
-  , [inputData])
-  const mapBgData = useMemo(() => {
+  // }, [data])
+  // const portsData = useMemo(() => 
+  const portsData = inputData.get('styles_navigation_long_cours_ports.csv')
+  // , [inputData])
+  // const mapBgData = useMemo(() => {
     const geojson = inputData.get('map_backgrounds/intro_map.geojson');
-    return {
+    const mapBgData = {
       ...geojson,
       features: geojson.features.map(object => {
         const { shortname } = object.properties;
@@ -220,7 +220,7 @@ export default function StylesNavigation({
         }
       })
     }
-  }, [inputData]);
+  // }, [inputData]);
   const layout = width < WIDTH_BREAKPOINT ? 'vertical' : 'horizontal';
   const cellWidth = layout === 'vertical' ? width : width / 2;
   const cellHeight = layout === 'vertical' ? height / 4 : height / 2;
@@ -341,10 +341,10 @@ export default function StylesNavigation({
             {...{
               width: cellWidth,
               height: cellHeight,
-              id:'méditerrannée',
-              title: `Méditerrannée occidentale (${formatNumber(travelsSums['méditerrannée occidentale'])} voyages vers Marseille consignés en temps de paix)`,
-              data: data.filter(({category}) => category === 'méditerrannée occidentale'),
-              color: colors['méditerrannée occidentale'],
+              id:'méditerranée',
+              title: `Méditerranée occidentale (${formatNumber(travelsSums['méditerranée occidentale'])} voyages vers Marseille consignés en temps de paix)`,
+              data: data.filter(({category}) => category === 'méditerranée occidentale'),
+              color: colors['méditerranée occidentale'],
               legendStep: 500,
               tonnageValues,
               highlightedTonnage, 

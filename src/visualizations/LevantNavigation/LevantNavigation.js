@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import { geoPath } from "d3-geo";
 
 import GeographicMapChart from '../../components/GeographicMapChart';
@@ -17,10 +16,10 @@ import { formatNumber } from '../../utils/misc';
 const Provinces = ({
   data: inputData, projection, width, height
 }) => {
-  const data = useMemo(() => {
-    return inputData.features.filter(({ properties: { dominant, shortname } }) => dominant === 'Empire ottoman' ||
+  // const data = useMemo(() => {
+  const data = inputData.features.filter(({ properties: { dominant, shortname } }) => dominant === 'Empire ottoman' ||
     ['Empire ottoman', 'reste Asie, Moyen-Orient et Océanie'].includes(shortname))
-  }, [inputData]);
+  // }, [inputData]);
 
   const project = geoPath().projection(projection);
   return (
@@ -91,12 +90,13 @@ export default function LevantNavigation({
   callerProps = {},
   atlasMode,
 }) {
-  const mapBgData = useMemo(() => inputData.get('map_backgrounds/intro_map.geojson'), [inputData]);
-  const data = useMemo(() => {
-    return inputData.get('navigation_depuis_levant.csv')
+  // const mapBgData = useMemo(() => inputData.get('map_backgrounds/intro_map.geojson'), [inputData]);
+  const mapBgData = inputData.get('map_backgrounds/intro_map.geojson');
+  // const data = useMemo(() => {
+  const data = inputData.get('navigation_depuis_levant.csv')
       .map(d => ({
         ...d,
-        ...['latitude','longitude','tonnage','count']
+        ...['latitude', 'longitude', 'tonnage', 'count']
           .reduce((res, k) => ({ ...res, [k]: +d[k] }), {}),
       }))
       .sort((a, b) => {
@@ -105,16 +105,16 @@ export default function LevantNavigation({
         }
         return 1;
       })
-  }, [inputData]);
+  // }, [inputData]);
 
   const maxCircleRadius = width / 50;
   const minCircleRadius = 2;
   const tonnageExtent = extent(data.map(d => d.tonnage));
-  const areaScale = useMemo(() => 
-    scaleLinear()
-    .domain(tonnageExtent)
-    .range([Math.PI * minCircleRadius * minCircleRadius, Math.PI * maxCircleRadius * maxCircleRadius])
-  , [minCircleRadius, maxCircleRadius, data]);
+  // const areaScale = useMemo(() =>
+  const areaScale = scaleLinear()
+      .domain(tonnageExtent)
+      .range([Math.PI * minCircleRadius * minCircleRadius, Math.PI * maxCircleRadius * maxCircleRadius])
+    // , [minCircleRadius, maxCircleRadius, data]);
 
   const gutter = 10;
   const MARSEILLE_COORDS = [43.34, 5.2158406];
@@ -181,37 +181,37 @@ export default function LevantNavigation({
             {
               type: 'custom',
               data: data,
-              renderObjects: ({projection}) => {
+              renderObjects: ({ projection }) => {
                 const [marseilleX, marseilleY] = projection(MARSEILLE_COORDS);
                 return (
                   <g>
                     {
-                      data.map(({port,latitude,longitude,tonnage,count}) => {
+                      data.map(({ port, latitude, longitude, tonnage, count }) => {
                         const [x, y] = projection([longitude, latitude]);
                         const area = areaScale(tonnage);
                         const radius = Math.sqrt(area / (Math.PI));
                         return (
-                          <g 
-                            title={port} 
-                            className="port-object" 
-                            key={port} 
+                          <g
+                            title={port}
+                            className="port-object"
+                            key={port}
                             transform={`translate(${x}, ${y})`}
                             data-for="levant-tooltip"
                             data-tip={`Selon le registre des patentes de Marseille, ${count} navires se sont rendus depuis le port de ${port} vers port focéen dans le siècle, pour un total de ${formatNumber(tonnage)} tonneaux cumulés.`}
                           >
-                              <circle
-                                cx={0}
-                                cy={0}
-                                r={radius}
-                                fill="#019d2f"
-                                stroke="white"
-                              />
+                            <circle
+                              cx={0}
+                              cy={0}
+                              r={radius}
+                              fill="#019d2f"
+                              stroke="white"
+                            />
                           </g>
                         );
                       })
                     }
                     {
-                      data.map(({port,latitude,longitude,tonnage,count}) => {
+                      data.map(({ port, latitude, longitude, tonnage, count }) => {
                         const [x, y] = projection([longitude, latitude]);
                         const area = areaScale(tonnage);
                         const radius = Math.sqrt(area / (Math.PI));
@@ -219,17 +219,17 @@ export default function LevantNavigation({
                           return;
                         }
                         return (
-                          <g 
-                            title={port} 
-                            className="port-object-label" 
-                            key={port} 
+                          <g
+                            title={port}
+                            className="port-object-label"
+                            key={port}
                             transform={`translate(${x}, ${y})`}
-                            
+
                           >
-                             
-                              <text x={0} y={radius * 1.5} fontSize={radius * .8} textAnchor="middle">
-                                {port}
-                              </text>
+
+                            <text x={0} y={radius * 1.5} fontSize={radius * .8} textAnchor="middle">
+                              {port}
+                            </text>
                           </g>
                         );
                       })

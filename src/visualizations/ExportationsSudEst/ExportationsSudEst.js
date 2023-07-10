@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import translate from "../../utils/translate";
 import { scaleLinear } from "d3-scale";
 import { formatNumber } from "../../utils/misc";
@@ -25,28 +25,36 @@ export default function ExportationsSudEst({
     colonies,
     relatif
   } = callerProps;
-  const [showInconnu, setShowInconnu] = useState(!!inconnu);
-  const [showColonies, setShowColonies] = useState(!!colonies);
-  const [relativeScale, setRelativeScale] = useState(!!relatif);
-  const data = useMemo(() => {
-    const cleanData = inputData
+
+
+  const [showInconnu, setShowInconnu] = useState(inconnu !== undefined);
+  const [showColonies, setShowColonies] = useState(colonies !== undefined);
+  const [relativeScale, setRelativeScale] = useState(relatif !== undefined);
+
+  useEffect(() => setShowInconnu(inconnu !== undefined), [inconnu])
+  useEffect(() => setShowColonies(colonies !== undefined), [colonies])
+  useEffect(() => setRelativeScale(relatif !== undefined), [relatif])
+
+  // const data = useMemo(() => {
+    // const cleanData = inputData
+    const data = inputData
       .get('origins_for_marseille_exports.csv')
       .filter(d => (showInconnu ? true : d.origin !== 'inconnue') && (showColonies ? true : d.origin !== 'colonies'))
       .map(d => ({ ...d, value: +d.value }));
 
-    const marseilleOrigins = new Set(cleanData.filter(d => d.scope === 'Marseille').map(d => d.origin));
+    // const marseilleOrigins = new Set(cleanData.filter(d => d.scope === 'Marseille').map(d => d.origin));
     // const filteredData = cleanData.filter(({origin}) => marseilleOrigins.has(origin));
-    return cleanData // filteredData;
-  }, [inputData, showInconnu, showColonies]);
+  //   return cleanData // filteredData;
+  // }, [inputData, showInconnu, showColonies]);
 
-  const nationalSum = useMemo(() =>
+  const nationalSum = //useMemo(() =>
     data.filter(({ scope }) => scope === 'France')
       .reduce((sum, { value }) => sum + value, 0)
-    , [data]);
-  const localSum = useMemo(() =>
+   // , [data]);
+  const localSum = //useMemo(() =>
     data.filter(({ scope }) => scope === 'Marseille')
       .reduce((sum, { value }) => sum + value, 0)
-    , [data]);
+   // , [data]);
   const gutter = 5;
   const barHeight = gutter * 2;
 
@@ -56,15 +64,17 @@ export default function ExportationsSudEst({
   const rightGutter = width > 300 ? 100 : width / 8;
   const minLabelFontSize = 6;
   const maxLabelFontSize = 14;
+
+
   const nationalBarWidthScale = useMemo(() => scaleLinear().domain([0, nationalSum]).range([0, width - labelsZoneWidth - rightGutter]), [nationalSum, width, labelsZoneWidth, rightGutter]);
   const localBarWidthScale = useMemo(() => scaleLinear().domain([0, localSum]).range([0, width - labelsZoneWidth - rightGutter]), [localSum, width, labelsZoneWidth, rightGutter]);
   const nationalFontScale = useMemo(() => scaleLinear().domain([0, max( data.filter(({ scope }) => scope === 'France').map(d => d.value))]).range([minLabelFontSize, maxLabelFontSize]), [nationalSum, width]);
   const localFontScale = useMemo(() => scaleLinear().domain([0,  max( data.filter(({ scope }) => scope === 'Marseille').map(d => d.value))]).range([minLabelFontSize, maxLabelFontSize]), [localSum, width]);
 
-  const {
-    marseilleOriginsValuesMap,
-    bottomBars
-  } = useMemo(() => {
+  // const {
+  //   marseilleOriginsValuesMap,
+  //   bottomBars
+  // } = useMemo(() => {
     const items = data.filter(({ scope, origin }) => scope === 'Marseille').sort((a, b) => {
       if (['inconnue', 'colonies'].includes(a.origin)) {
         return 1;
@@ -84,15 +94,15 @@ export default function ExportationsSudEst({
     }), {});
 
     // let xOffset = labelsZoneWidth +  (width - labelsZoneWidth) / 2 + nationalBarWidthScale(localSum) / 2;
-    let xOffset = labelsZoneWidth// width - rightGutter;
+    let xOffsetBottom = labelsZoneWidth// width - rightGutter;
 
-    const computed = items.map(({ value, origin }, i) => {
+    const computedBottom = items.map(({ value, origin }, i) => {
       let barWidth = relativeScale ? nationalBarWidthScale(value) : localBarWidthScale(value);
       if (barWidth < 2) {
         barWidth = 2;
       }
       // const barWidth = nationalBarWidthScale(value);
-      xOffset += barWidth;
+      xOffsetBottom += barWidth;
       let color;
       if (provincesColors[origin]) {
         color = provincesColors[origin];
@@ -104,19 +114,21 @@ export default function ExportationsSudEst({
         value,
         barWidth,
         color,
-        x: xOffset - barWidth,
+        x: xOffsetBottom - barWidth,
         y: bottomBarsY,
         barHeight,
       }
     });
-    return {
-      marseilleOriginsValuesMap: valuesMap,
-      bottomBars: computed
-    }
-  }, [data, width, relativeScale]);
+  //   return {
+  //     marseilleOriginsValuesMap: valuesMap,
+  //     bottomBars: computed
+  //   }
+  // }, [data, width, relativeScale]);
+  const marseilleOriginsValuesMap = valuesMap;
+  const bottomBars = computedBottom;
 
-  const topBars = useMemo(() => {
-    const items = data
+  // const topBars = useMemo(() => {
+    const topItems = data
       .filter(({ scope }) => scope === 'France')
       .sort((a, b) => {
         if (['inconnue', 'colonies'].includes(a.origin) && !['inconnue', 'colonies'].includes(b.origin)) {
@@ -134,13 +146,13 @@ export default function ExportationsSudEst({
         }
         return -1;
       });
-    let xOffset = labelsZoneWidth;
-    const computed = items.map(({ value, origin }, i) => {
+    let xOffsetTop = labelsZoneWidth;
+    const topComputed = topItems.map(({ value, origin }, i) => {
       let barWidth = nationalBarWidthScale(value);
       if (barWidth < 2) {
         barWidth = 2;
       }
-      xOffset += barWidth;
+      xOffsetTop += barWidth;
       let color;
       if (provincesColors[origin]) {
         color = provincesColors[origin];
@@ -153,16 +165,18 @@ export default function ExportationsSudEst({
         barWidth,
         marseilleBarWidth: nationalBarWidthScale(marseilleOriginsValuesMap[origin] || 0),
         color,
-        x: xOffset - barWidth,
+        x: xOffsetTop - barWidth,
         y: topBarsY,
         barHeight
       }
     });
-    return computed;
-  }, [data, width, marseilleOriginsValuesMap]);
+    const topBars = topComputed;
+    // return computed;
+  // }, [data, width, marseilleOriginsValuesMap]);
 
-  const links = useMemo(() => {
-    const edges = [];
+  // const links = useMemo(() => {
+  //   const edges = [];
+    const links = [];
     topBars.forEach(({
       label: topLabel,
       value: topValue,
@@ -181,7 +195,8 @@ export default function ExportationsSudEst({
         // barHeight: bottomBarHeight
       }) => {
         if (topLabel === bottomLabel) {
-          edges.push({
+          links.push({
+            // edges.push({
             x1: topX + topBarWidth / 2,
             y1: topY + topBarHeight * 1.5,
             x2: bottomX + bottomBarWidth / 2,
@@ -193,8 +208,8 @@ export default function ExportationsSudEst({
         }
       })
     })
-    return edges;
-  }, [bottomBars, topBars])
+  //   return edges;
+  // }, [bottomBars, topBars])
 
   const titleTop = translate('exportations-sud-est', 'title-top', lang);
   const titleBottom = translate('exportations-sud-est', 'title-bottom', lang);

@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import LineChart from "../../components/LineChart";
 import translate from "../../utils/translate";
 import './EffetsGuerreSurLevant.scss';
@@ -23,7 +22,8 @@ export default function EffetsGuerreSurLevant({
   height,
   lang
 }) {
-  const data = useMemo(() => inputData.get('evolution-exports-levant.csv')
+  // const data = useMemo(() => 
+  const data = inputData.get('evolution-exports-levant.csv')
     .map(d => ({
       ...d,
       year: +d.year,
@@ -38,7 +38,7 @@ export default function EffetsGuerreSurLevant({
       return -1;
     })
     // .filter(d => d.group !== 'total')
-    , [inputData]);
+    // , []);
 
   const totalValuesMap = data.filter(d => d.group === 'total').reduce((res, { year, value }) => ({
     ...res,
@@ -147,6 +147,7 @@ export default function EffetsGuerreSurLevant({
           y: {
             field: 'value',
             title: 'valeur des exports',
+            // tickSpan: 50000000,
             // domain: [0, 200000000],
             tickFormat: d => formatNumber(d) + ' lt.'
           },

@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import { geoPath } from "d3-geo";
 import ReactTooltip from 'react-tooltip';
 
@@ -45,9 +44,9 @@ const MARSEILLE_COLOR = "red";
 const Provinces = ({
   data: inputData, projection, width, height
 }) => {
-  const data = useMemo(() => {
-    return inputData.features.filter(({ properties: { shortname } }) => ['Roussillon', 'Languedoc', 'Provence', 'Isles de Corse'].includes(shortname))
-  }, [inputData]);
+  // const data = useMemo(() => {
+  const data = inputData.features.filter(({ properties: { shortname } }) => ['Roussillon', 'Languedoc', 'Provence', 'Isles de Corse'].includes(shortname))
+  // }, [inputData]);
 
   const project = geoPath().projection(projection);
   return (
@@ -114,23 +113,13 @@ const MapObjects = ({
   const [centerX, centerY] = projection(CENTER_COORDS.reverse());
   // const frameRadius = width * .2;
   // const objectsY = height * .8;
-  const vizData = useMemo(() => {
+  // const vizData = useMemo(() => {
     const vizStart = width * .2;
     const vizEnd = width * .7;
     // const vizBandWidth = vizEnd - vizStart;
     const scaleWidth = scaleLinear().domain([min(data.map(d => d.count_total)), max(data.map(d => d.count_total))]).range([10, width * .07]);
-    return data
-      // .sort((a, b) => {
-      //   const [aX, aY] = projection([a.longitude, a.latitude]);
-      //   const [bX, bY] = projection([b.longitude, b.latitude]);
-      //   let {radians: aRadians} = cartesian2Polar(centerX - aX, centerY - aY);
-      //   let {radians: bRadians} = cartesian2Polar(centerX - bX, centerY - bY);
-      //   console.log(aRadians, bRadians)
-      //   if (aRadians > bRadians) {
-      //     return 1;
-      //   }
-      //   return - 1;
-      // })
+    const vizData = data
+    // return data
       .map(({
         count_total,
         latitude,
@@ -163,7 +152,7 @@ const MapObjects = ({
           ...props
         }
       })
-  }, [data, width, height])
+  // }, [data, width, height])
   return (
     <g className="objects-container">
       {
@@ -283,9 +272,10 @@ export default function MarseillePortStructurant({
   callerProps = {},
   atlasMode,
 }) {
-  const mapBgData = useMemo(() => inputData.get('map_backgrounds/intro_map.geojson'), [inputData]);
-  const data = useMemo(() => {
-    return inputData.get('navigation_frlevant_to_marseille.csv')
+  // const mapBgData = useMemo(() => inputData.get('map_backgrounds/intro_map.geojson'), [inputData]);
+  const mapBgData = inputData.get('map_backgrounds/intro_map.geojson');
+  // const data = useMemo(() => {
+  const data = inputData.get('navigation_frlevant_to_marseille.csv')
       .map(d => ({
         ...d,
         ...['count_to_marseille', 'count_total', 'latitude', 'longitude']
@@ -299,7 +289,7 @@ export default function MarseillePortStructurant({
         }
         return -1;
       })
-  }, [inputData]);
+  // }, [inputData]);
 
   const gutter = 10;
   return (

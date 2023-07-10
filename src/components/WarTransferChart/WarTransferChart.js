@@ -152,12 +152,12 @@ export default function WarTransferChart({
                       xmlns="http://www.w3.org/1999/xhtml"
                       className="label"
                     >
-                      <strong>{peaceData.year}</strong> <br/>(année de paix)
+                      <strong>{peaceData.year}</strong> <br />(année de paix)
                     </div>
                   </foreignObject>
                   <g className="links-group" transform={`translate(${sideWidth}, ${0})`}>
                     {
-                      links.map(({ group, color, points, values }) => {
+                      links.map(({ group, color, points, values }, index) => {
                         let tooltip = `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé des navires du groupe ${group} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`
                         if (group.includes('guerre')) {
                           tooltip = `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé des navires qui allaient devenir ${group} en ${warData.year} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`;
@@ -166,9 +166,9 @@ export default function WarTransferChart({
                           <g className="link-group"
                             data-for="transfer-tooltip"
                             data-tip={tooltip}
+                            key={index}
                           >
                             <path
-                              key={group}
                               fill={color}
                               className="link"
                               stroke="none"
@@ -197,28 +197,28 @@ export default function WarTransferChart({
                     transform={`translate(${sideWidth}, ${0})`}
                   >
                     {
-                      peaceVizData.map(({ group, color, width, x, value }) => {
+                      peaceVizData.map(({ group, color, width, x, value }, index) => {
                         return (
                           <g className="bar-group"
                             data-for="transfer-toltip"
+                            key={index}
                             data-tip={`En ${peaceData.year}, le tonnage cumulé des navires ${group.includes('guerre') ? 'qui allaient devenir' : 'du groupe'} ${group} étant de ${parseInt(value * 100)}% de la navigation vers Marseille.`}
                           >
                             {
                               width > 0 ?
-                              <g className="bar-label"
-                              transform={`translate(${x + width / 2}, ${-2})rotate(-45)`}
+                                <g className="bar-label"
+                                  transform={`translate(${x + width / 2}, ${-2})rotate(-45)`}
 
-                            >
-                              <text x={0} y={0} fontSize={gutter}>
-                                {group}
-                              </text>
-                            </g>
-                              : null
+                                >
+                                  <text x={0} y={0} fontSize={gutter}>
+                                    {group}
+                                  </text>
+                                </g>
+                                : null
 
                             }
-                            
+
                             <rect
-                              key={group}
                               fill={color}
                               width={width}
                               height={barHeight}
@@ -228,7 +228,6 @@ export default function WarTransferChart({
                               title={group}
                             />
                             <rect
-                              key={group}
                               fill={`url(#diagonalHatch)`}
                               width={width}
                               height={barHeight}
@@ -247,10 +246,11 @@ export default function WarTransferChart({
                     transform={`translate(${sideWidth}, ${secondBarY})`}
                   >
                     {
-                      warVizData.map(({ group, color, width, x, value }) => {
+                      warVizData.map(({ group, color, width, x, value }, index) => {
                         return (
                           <g className="bar-group"
                             data-for="transfer-toltip"
+                            key={index}
                             data-tip={`En ${warData.year}, le tonnage cumulé des navires ${group.includes('guerre') ? 'provenant de pays' : 'du groupe'} ${group} étant de ${parseInt(value * 100)}% de la navigation vers Marseille.`}
                           >
                             <rect
@@ -278,7 +278,7 @@ export default function WarTransferChart({
                       xmlns="http://www.w3.org/1999/xhtml"
                       className="label"
                     >
-                      <strong>{warData.year}</strong> <br/>(année de guerre)
+                      <strong>{warData.year}</strong> <br />(année de guerre)
                     </div>
                   </foreignObject>
                 </g>
@@ -287,42 +287,6 @@ export default function WarTransferChart({
           }
         </g>
 
-        {/* <g className="legend" transform={`translate(${sideWidth + gutter}, ${height - legendHeight})`}>
-        {
-          Object.entries(palette)
-            .map(([modality, color], index) => {
-              const x = index * (barsWidth / Object.keys(palette).length);
-              return (
-                <g transform={`translate(${x}, ${0})`}
-                >
-                  <rect
-                    fill={color}
-                    x={0}
-                    y={0}
-                    width={gutter}
-                    height={gutter}
-                  />
-                  <foreignObject
-
-                    x={gutter * 1.5}
-                    y={-gutter / 2}
-                    width={barsWidth / Object.keys(palette).length - gutter * 2}
-                    height={legendHeight}
-                  >
-                    <div
-                      xmlns="http://www.w3.org/1999/xhtml"
-                      className="label"
-                      style={{ textAlign: 'left' }}
-                    >
-                      {modality}
-                    </div>
-                  </foreignObject>
-
-                </g>
-              )
-            })
-        }
-      </g> */}
         <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="4" height="4">
           <path
             d="M-1,1 l2,-2

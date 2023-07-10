@@ -1,7 +1,3 @@
-import React, { useMemo } from "react";
-
-import visualizationsMetas from "../content/viz";
-
 import Intro from "./Intro/Intro";
 import TradeDynamics from "./DynamiqueDuCommerce";
 import CorrelationPrix from "./CorrelationPrix";
@@ -70,7 +66,7 @@ export default function VisualizationController({
         <>Les données de cette visualisation n'ont pu être chargées.</>
       )}
 
-      {vizId in visualizations ? (
+      { vizId in visualizations ? (
         visualizations[vizId]({
           data: datasets,
           width,

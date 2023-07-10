@@ -1,6 +1,5 @@
 
 
-import { useEffect, useMemo } from 'react';
 import './PartDesEtrangersDansNavigation.scss';
 import { scaleLinear } from 'd3-scale';
 import ReactTooltip from 'react-tooltip';
@@ -30,7 +29,7 @@ const flagToNationality = {
   'British': 'britanniques',
   'Dutch': 'hollandais',
   'Danish': 'danois',
-  'Imperial Mediterranean': 'impériaux de la méditerrannée',
+  'Imperial Mediterranean': 'impériaux de la méditerranée',
   'Swedish': 'suédois',
 }
 
@@ -42,7 +41,8 @@ export default function PartDesEtrangersDansNavigation({
   height,
   // lang
 }) {
-  const comparisonData = useMemo(() => inputData.get('share_of_strangers_1787_french_ports.csv')
+  // const comparisonData = useMemo(() => inputData.get('share_of_strangers_1787_french_ports.csv')
+  const comparisonData = inputData.get('share_of_strangers_1787_french_ports.csv')
     .map(d => ({ ...d, share_of_strangers: +d.share_of_strangers }))
     .sort((a, b) => {
       if (a.share_of_strangers > b.share_of_strangers) {
@@ -50,8 +50,8 @@ export default function PartDesEtrangersDansNavigation({
       }
       return -1;
     })
-    , [inputData]);
-  const marseilleData = useMemo(() => {
+    // , [inputData]);
+  // const marseilleData = useMemo(() => {
     const cleanData = inputData.get('share_of_strangers_marseille_1789.csv')
       .map(d => ({ ...d, tonnage: +d.tonnage, label: flagToNationality[d.flag] }))
       .filter(d => d.flag !== 'unknown')
@@ -91,8 +91,8 @@ export default function PartDesEtrangersDansNavigation({
         }
         return 1;
       })
-    return sortedData;
-  }, [inputData]);
+    const marseilleData = sortedData;
+  // }, [inputData]);
 
   const titlesHeight = 40;
   const comparisonLabelsHeight = 50;

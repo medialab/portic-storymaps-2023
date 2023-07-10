@@ -1,5 +1,5 @@
 import { groupBy, range } from "lodash";
-import { useEffect, useMemo, useState } from "react"
+import { useEffect, useState } from "react"
 
 const seriesLabels = {
   'total': 'total',
@@ -22,6 +22,24 @@ import ReactTooltip from "react-tooltip";
 
 const MIN_YEAR = 1720;
 const MAX_YEAR = 1790;
+
+const WARS = [
+  {
+    start: 1744,
+    end: 1748,
+    name: 'succession Autriche'
+  },
+  {
+    start: 1756,
+    end: 1763,
+    name: 'sept ans'
+  },
+  {
+    start: 1776,
+    end: 1783,
+    name: 'indépendance américaine'
+  },
+];
 
 const LineSeries = ({
   width,
@@ -56,7 +74,10 @@ const LineSeries = ({
   const yScale = scaleLinear().domain(yDomain).range([height - gutter, gutter * 2]).nice();
   const yAxisTickValues = range(yDomain[0], yDomain[1] + yTickSpan, yTickSpan);
   const endX = xScale(MAX_YEAR + 10);
-  const tickFontSize = width / 25;
+  let tickFontSize = width / 25;
+  if (tickFontSize < 6) {
+    tickFontSize = 6;
+  }
   return (
     <g className="LineSeries">
       <rect x={0} y={gutter * 2} width={endX} height={height - gutter * 3} fill="rgba(0,0,0,0.05)" />
@@ -102,17 +123,38 @@ const LineSeries = ({
             )
           })
       }
+      <g className="wars">
+        {
+          WARS.map(({ start, end, name }) => {
+            const x1 = xScale(start);
+            const x2 = xScale(end);
+            return (
+              <rect
+                key={name}
+                title={name}
+                x={x1}
+                y={gutter * 2}
+                width={x2 - x1}
+                height={height - gutter * 3}
+                fill="url(#diagonalHatch)"
+                opacity={.5}
+                stroke="none"
+              />
+            )
+          })
+        }
+      </g>
       {
         activeYear ?
-        <line
-          x1={xScale(activeYear)}
-          x2={xScale(activeYear)}
-          y1={gutter * 2}
-          y2={height - gutter}
-          stroke="blue"
-          strokeDasharray={'2,2'}
-        />
-        : null
+          <line
+            x1={xScale(activeYear)}
+            x2={xScale(activeYear)}
+            y1={gutter * 2}
+            y2={height - gutter}
+            stroke="blue"
+            strokeDasharray={'2,2'}
+          />
+          : null
       }
       {
         data
@@ -268,25 +310,26 @@ export default function GuerreEtCroissance({
   const [navigationMetric, setNavigationMetric] = useState(navigation_metric || defaultNavigationMetric);
   const [activeYear, setActiveYear] = useState();
 
-  useEffect(() => setVisibleSeries(series || defaultSeries), [series]);
-  useEffect(() => setVisibleDirections(directions || defaultDirections), [directions]);
+  useEffect(() => setVisibleSeries(series ? series.split(',').map(s => s.trim())  : defaultSeries), [series]);
+  useEffect(() => setVisibleDirections(directions ? directions.split(',').map(d => d.trim()) : defaultDirections), [directions]);
   useEffect(() => setNavigationMetric(navigation_metric || defaultNavigationMetric), [navigation_metric]);
 
-  const data = useMemo(() => {
-    const cleanData = inputData.get('impact-guerre-sur-croissance.csv').map(datum => ({
-      ...datum,
-      ...['year', 'value', 'reg_point', 'peace_reg_memory', 'peace_reg', 'column_order',]
-        .reduce((res, key) => ({ ...res, [key]: +datum[key] }), {})
-    }))
-      .sort((a, b) => {
-        if (a.year > b.year) {
-          return 1;
-        }
-        return -1;
-      })
-    const groups = groupBy(cleanData, d => d.kind || d.data_type)
-    return groups;
-  }, [inputData]);
+  // const data = useMemo(() => {
+  const cleanData = inputData.get('impact-guerre-sur-croissance.csv').map(datum => ({
+    ...datum,
+    ...['year', 'value', 'reg_point', 'peace_reg_memory', 'peace_reg', 'column_order',]
+      .reduce((res, key) => ({ ...res, [key]: +datum[key] }), {})
+  }))
+    .sort((a, b) => {
+      if (a.year > b.year) {
+        return 1;
+      }
+      return -1;
+    })
+  const groups = groupBy(cleanData, d => d.kind || d.data_type)
+  const data = groups;
+  //   return groups;
+  // }, [inputData]);
 
   const gutter = 10;
   const sideWidth = width / 5 < 100 ? 100 : width / 5;
@@ -325,6 +368,7 @@ export default function GuerreEtCroissance({
   const activeNavigationSource = navigationSources.find(({ id }) => id === navigationMetric).source;
   const activeNavigationTickFormat = navigationSources.find(({ id }) => id === navigationMetric).tickFormat;
   const xAxisValues = range(MIN_YEAR, MAX_YEAR + 20, 20);
+  const legendX = sideWidth + cellWidth * 2.5 + gutter * 2;
   return (
     <>
       <svg
@@ -473,6 +517,9 @@ export default function GuerreEtCroissance({
                         :
                         visibleDirections.map((direction, index) => {
                           const x = index * cellWidth;
+                          if (!data[seriesId]) {
+                            return null;
+                          }
                           return (
                             <g
                               key={index}
@@ -537,9 +584,9 @@ export default function GuerreEtCroissance({
           </div>
         </foreignObject>
         <foreignObject
-          x={width - cellWidth * 2}
+          x={legendX}
           y={topLabelsHeight + rowHeight * (visibleSeries.length - 1) + gutter * 3}
-          width={cellWidth * 2 + gutter * 2}
+          width={width - legendX - gutter * 3}
           height={rowHeight}
         >
           <div
@@ -599,6 +646,12 @@ export default function GuerreEtCroissance({
           </text> */}
           {/* </g> */}
         </foreignObject>
+        <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="4" height="4">
+          <path d="M-1,1 l2,-2
+                              M0,4 l4,-4
+                              M3,5 l2,-2"
+            style={{ stroke: 'grey', opacity: 1, strokeWidth: 1 }} />
+        </pattern>
       </svg>
       <ReactTooltip id="guerre-tooltip" />
     </>

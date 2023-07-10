@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import WarTransferChart from '../../components/WarTransferChart';
 
 const palette = {
@@ -14,7 +13,7 @@ export default function GuerreEtNavigation ({
   height,
   data: inputData
 }) {
-  const data = useMemo(() => {
+  // const data = useMemo(() => {
     const cleanData = inputData.get('navigation_guerre.csv')
   .map(d => Object.entries(d).reduce((res, [key, val]) => ({...res, [key]: +val}), {}));
   const groups = cleanData.reduce((res, year, index) => {
@@ -40,8 +39,9 @@ export default function GuerreEtNavigation ({
     res[res.length - 1].push(operational);
     return res;
   }, []);
-  return groups;
-  }, [inputData]);
+  // return groups;
+  // }, []);
+  const data = groups;
   return (
     <div className="GuerreEtNavigation">
       <WarTransferChart

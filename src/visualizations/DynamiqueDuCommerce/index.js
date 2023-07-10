@@ -14,7 +14,15 @@ import TradeDynamicsChart from "../../components/TradeDynamicsChart";
  **/
 
 const TradeDynamics = ({ data, width, height, atlasMode, callerProps }) => {
-  const rows = callerProps?.rows || { France: 1, Marseille: 2, Bordeaux: 2 };
+  const rows = callerProps?.rows ? 
+  {
+    France: 1, 
+    ...callerProps?.rows.split(',')
+    .map(v => v.trim())
+    .reduce((r, v) => ({...r, [v]: 2}), {})
+  } 
+  : 
+  { France: 1, Marseille: 2, Bordeaux: 2 };
   const kind = callerProps?.kind || "exports";
   const regression = callerProps?.regression || "reg";
   return (
