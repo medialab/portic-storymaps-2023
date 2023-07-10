@@ -36,7 +36,7 @@ const DEFAULTS = {
   colorBy: "community",
 };
 
-const WheatCorrelation = ({
+const CorrelationPrix = ({
   data,
   width,
   height,
@@ -71,7 +71,7 @@ const WheatCorrelation = ({
   // }, [originalData, layout]);
 
   return (
-    <>
+    <div className="CorrelationPrix">
       <GeographicMapChart
         {...{
           title:
@@ -116,7 +116,7 @@ const WheatCorrelation = ({
               label: { field: "label" },
               size: { field: "size" },
               color: { field: colorBy, palette: colorsPalettes[colorBy] },
-              radiusRange: [7, 7],
+              radiusRange: [5, 5],
               labelSizeRange: [14, 14],
               disableHover: true,
               tooltip: (datum) => `${datum.market} (${datum.bassin})`,
@@ -168,8 +168,8 @@ const WheatCorrelation = ({
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
-export default WheatCorrelation;
+export default CorrelationPrix;

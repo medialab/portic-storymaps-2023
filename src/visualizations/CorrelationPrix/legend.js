@@ -49,7 +49,7 @@ export const WheatCorrelationsLegend = ({
                 <div
                   style={{
                     backgroundColor: adjustColorForBassinChoropleth(color),
-                    border: "1px solid black",
+                    border: "1px solid lightgrey",
                     width: "25px",
                     height: "25px",
                     marginRight: "0.2rem",

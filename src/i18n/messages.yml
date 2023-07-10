@@ -84,16 +84,16 @@ viz-1-A:
     fr: guerre d’indépendance Américaine
     en: American War of Independence
   value:
-    fr: Valeur
-    en: Trade Value
+    fr: Afficher
+    en: Display
   total:
     fr: Total
     en: Total
   imports:
-    fr: Imports
+    fr: Importations
     en: Imports
   exports:
-    fr: Exports
+    fr: Exportations
     en: Exports
   total_no_colonial_product:
     fr: Total hors produits coloniaux

@@ -245,7 +245,7 @@ const TradeDynamicsChart = (props) => {
 
       {atlasMode && (
         <div className="selectors" style={{ height: `${selectorsHeight}px` }}>
-          <div>
+          <div className="value-selector-container">
             <label htmlFor="variable">
               {translate("viz-1-A", "value", lang)}
             </label>
