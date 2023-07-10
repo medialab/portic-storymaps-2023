@@ -207,7 +207,7 @@ export default function ExportationsSudEst({
     >
       <foreignObject
         x={gutter}
-        y={topBarsY}
+        y={topBarsY - gutter * 2}
         width={labelsZoneWidth - gutter}
         height={labelsZoneWidth}
       >
@@ -217,7 +217,7 @@ export default function ExportationsSudEst({
       </foreignObject>
       <foreignObject
         x={gutter}
-        y={bottomBarsY}
+        y={bottomBarsY - gutter * 2}
         width={labelsZoneWidth - gutter}
         height={labelsZoneWidth}
       >

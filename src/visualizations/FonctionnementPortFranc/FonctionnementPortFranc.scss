@@ -1,5 +1,14 @@
 
 
 .FonctionnementPortFranc {
-  
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  .ui-container {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+  }
 }

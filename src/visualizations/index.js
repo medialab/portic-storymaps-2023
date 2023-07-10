@@ -16,7 +16,7 @@ import EffetsGuerreSurLevant from './EffetsGuerreSurLevant';
 import GuerreEtNavigation from './GuerreEtNavigation';
 import GuerreEtLevant from './GuerreEtLevant';
 import GuerreEtCroissance from './GuerreEtCroissance';
-// import FonctionnementPortFranc from './FonctionnementPortFranc';
+import FonctionnementPortFranc from './FonctionnementPortFranc';
 
 const visualizations = {
   intro: Intro,
@@ -32,7 +32,7 @@ const visualizations = {
   "guerre-et-navigation": GuerreEtNavigation,
   "levant-navigation-guerre": GuerreEtLevant,
   "styles-navigation": StylesNavigation,
-  // "fonctionnement-port-franc": FonctionnementPortFranc,
+  "fonctionnement-port-franc": FonctionnementPortFranc,
   "impact-guerre-sur-commerce-et-navigation": GuerreEtCroissance,
 };
 
