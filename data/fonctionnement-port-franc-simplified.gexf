@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gexf xmlns="http://gexf.net/1.3" version="1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2023-07-04">
+    <creator>Gephi 0.10.1</creator>
+    <title></title>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="type" type="string"/>
+      <attribute id="1" title="weight" type="long"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="2" title="from" type="string"/>
+      <attribute id="3" title="to" type="string"/>
+      <attribute id="4" title="flow_type" type="string"/>
+    </attributes>
+    <nodes>
+      <node id="Marseille comme partenaire" label="Marseille comme partenaire">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="106874254"/>
+        </attvalues>
+        <viz:size value="40.0"/>
+        <viz:position x="-224.88339" y="176.47685"/>
+        <viz:color r="63" g="177" b="125"/>
+      </node>
+      <node id="France comme rapporteur" label="France comme rapporteur">
+        <attvalues>
+          <attvalue for="0" value="France hors Marseille"/>
+          <attvalue for="1" value="40645322"/>
+        </attvalues>
+        <viz:size value="15.292546"/>
+        <viz:position x="205.97993" y="180.46873"/>
+        <viz:color r="238" g="121" b="147"/>
+      </node>
+      <node id="Marseille comme rapporteur" label="Marseille comme rapporteur">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="68562733"/>
+        </attvalues>
+        <viz:size value="25.707453"/>
+        <viz:position x="-225.47697" y="-83.72783"/>
+        <viz:color r="63" g="177" b="125"/>
+      </node>
+      <node id="France comme partenaire" label="France comme partenaire">
+        <attvalues>
+          <attvalue for="0" value="France hors Marseille"/>
+          <attvalue for="1" value="2333801"/>
+        </attvalues>
+        <viz:size value="1.0"/>
+        <viz:position x="186.41948" y="-83.742905"/>
+        <viz:color r="238" g="121" b="147"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Marseille comme partenaire" target="France comme rapporteur" label="33,761,722 lt." weight="3.376172E7">
+        <viz:color r="63" g="177" b="125"/>
+        <attvalues>
+          <attvalue for="2" value="Marseille comme partenaire"/>
+          <attvalue for="3" value="France comme rapporteur"/>
+          <attvalue for="4" value="France hors Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="1" source="Marseille comme partenaire" target="Marseille comme rapporteur" label="31,151,898 lt." weight="3.1151898E7">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Marseille comme partenaire"/>
+          <attvalue for="3" value="Marseille comme rapporteur"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="2" source="France comme rapporteur" target="Marseille comme partenaire" label="6,883,600 lt." weight="6883600.0">
+        <viz:color r="63" g="177" b="125"/>
+        <attvalues>
+          <attvalue for="2" value="France comme rapporteur"/>
+          <attvalue for="3" value="Marseille comme partenaire"/>
+          <attvalue for="4" value="France hors Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="3" source="Marseille comme rapporteur" target="Marseille comme partenaire" label="35,077,034 lt." weight="3.5077032E7">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Marseille comme rapporteur"/>
+          <attvalue for="3" value="Marseille comme partenaire"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="4" source="Marseille comme rapporteur" target="France comme partenaire" label="1,350,000 lt." weight="1350000.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Marseille comme rapporteur"/>
+          <attvalue for="3" value="France comme partenaire"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="5" source="France comme partenaire" target="Marseille comme rapporteur" label="983,801 lt." weight="983801.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="France comme partenaire"/>
+          <attvalue for="3" value="Marseille comme rapporteur"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

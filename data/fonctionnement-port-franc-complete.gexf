@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gexf xmlns="http://gexf.net/1.3" version="1.3" xmlns:viz="http://gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://gexf.net/1.3 http://gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2023-07-04">
+    <creator>Gephi 0.10.1</creator>
+    <title></title>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="type" type="string"/>
+      <attribute id="1" title="weight" type="long"/>
+    </attributes>
+    <attributes class="edge" mode="static">
+      <attribute id="2" title="from" type="string"/>
+      <attribute id="3" title="to" type="string"/>
+      <attribute id="4" title="flow_type" type="string"/>
+    </attributes>
+    <nodes>
+      <node id="directions des Fermes hors Marseille" label="directions des Fermes hors Marseille">
+        <attvalues>
+          <attvalue for="0" value="France hors Marseille"/>
+          <attvalue for="1" value="40645322"/>
+        </attvalues>
+        <viz:size value="8.403378"/>
+        <viz:position x="62.808754" y="30.855133"/>
+        <viz:color r="249" g="119" b="67"/>
+      </node>
+      <node id="Marseille comme partenaire" label="Marseille comme partenaire">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="106874254"/>
+        </attvalues>
+        <viz:size value="20.49776"/>
+        <viz:position x="-214.41866" y="27.980785"/>
+        <viz:color r="154" g="150" b="229"/>
+      </node>
+      <node id="bureau des fermes Arles" label="bureau des fermes Arles">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="6799632"/>
+        </attvalues>
+        <viz:size value="2.2226524"/>
+        <viz:position x="-211.71495" y="-407.96948"/>
+        <viz:color r="154" g="150" b="229"/>
+      </node>
+      <node id="bureau des fermes Marseille" label="bureau des fermes Marseille">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="171438347"/>
+        </attvalues>
+        <viz:size value="32.288124"/>
+        <viz:position x="-217.49628" y="153.44583"/>
+        <viz:color r="154" g="150" b="229"/>
+      </node>
+      <node id="Monde" label="Monde">
+        <attvalues>
+          <attvalue for="0" value="Monde"/>
+          <attvalue for="1" value="213668628"/>
+        </attvalues>
+        <viz:size value="40.0"/>
+        <viz:position x="-682.47406" y="111.022644"/>
+        <viz:color r="40" g="179" b="106"/>
+      </node>
+      <node id="bureau des fermes Lambesc" label="bureau des fermes Lambesc">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="389487"/>
+        </attvalues>
+        <viz:size value="1.0520649"/>
+        <viz:position x="28.18013" y="-103.41138"/>
+        <viz:color r="154" g="150" b="229"/>
+      </node>
+      <node id="bureau des fermes La Penne" label="bureau des fermes La Penne">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="6109908"/>
+        </attvalues>
+        <viz:size value="2.0966988"/>
+        <viz:position x="-212.41566" y="-207.72409"/>
+        <viz:color r="154" g="150" b="229"/>
+      </node>
+      <node id="bureau des fermes Marseille - Poids et Casse" label="bureau des fermes Marseille - Poids et Casse">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="25748685"/>
+        </attvalues>
+        <viz:size value="5.6830306"/>
+        <viz:position x="-217.67659" y="108.8353"/>
+        <viz:color r="154" g="150" b="229"/>
+      </node>
+      <node id="bureau des fermes Septemes" label="bureau des fermes Septemes">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="28861682"/>
+        </attvalues>
+        <viz:size value="6.25151"/>
+        <viz:position x="-210.2967" y="-298.65747"/>
+        <viz:color r="154" g="150" b="229"/>
+      </node>
+      <node id="bureau des fermes Marseille - Domaine d'Occident" label="bureau des fermes Marseille - Domaine d'Occident">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="42779241"/>
+        </attvalues>
+        <viz:size value="8.793063"/>
+        <viz:position x="-238.6596" y="244.20241"/>
+        <viz:color r="154" g="150" b="229"/>
+      </node>
+      <node id="France comme partenaire (ports francs...)" label="France comme partenaire (ports francs...)">
+        <attvalues>
+          <attvalue for="0" value="France hors Marseille"/>
+          <attvalue for="1" value="2333801"/>
+        </attvalues>
+        <viz:size value="1.4071255"/>
+        <viz:position x="94.36051" y="190.00827"/>
+        <viz:color r="249" g="119" b="67"/>
+      </node>
+      <node id="bureau des fermes La Ciotat" label="bureau des fermes La Ciotat">
+        <attvalues>
+          <attvalue for="0" value="Marseille"/>
+          <attvalue for="1" value="104379"/>
+        </attvalues>
+        <viz:size value="1.0"/>
+        <viz:position x="-464.32413" y="-354.1955"/>
+        <viz:color r="154" g="150" b="229"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="directions des Fermes hors Marseille" target="Marseille comme partenaire" label="6,883,600 lt." weight="6883600.0">
+        <viz:color r="63" g="177" b="125"/>
+        <attvalues>
+          <attvalue for="2" value="directions des Fermes hors Marseille"/>
+          <attvalue for="3" value="Marseille comme partenaire"/>
+          <attvalue for="4" value="France hors Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="1" source="Marseille comme partenaire" target="directions des Fermes hors Marseille" label="33,761,722 lt." weight="3.376172E7">
+        <viz:color r="63" g="177" b="125"/>
+        <attvalues>
+          <attvalue for="2" value="Marseille comme partenaire"/>
+          <attvalue for="3" value="directions des Fermes hors Marseille"/>
+          <attvalue for="4" value="France hors Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="2" source="Marseille comme partenaire" target="bureau des fermes La Penne" label="3,281,760 lt." weight="3281760.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Marseille comme partenaire"/>
+          <attvalue for="3" value="bureau des fermes La Penne"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="3" source="Marseille comme partenaire" target="bureau des fermes Septemes" label="22,216,652 lt." weight="2.2216652E7">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Marseille comme partenaire"/>
+          <attvalue for="3" value="bureau des fermes Septemes"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="4" source="Marseille comme partenaire" target="bureau des fermes Arles" label="5,653,486 lt." weight="5653486.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Marseille comme partenaire"/>
+          <attvalue for="3" value="bureau des fermes Arles"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="5" source="bureau des fermes Arles" target="Marseille comme partenaire" label="294,410 lt." weight="294410.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Arles"/>
+          <attvalue for="3" value="Marseille comme partenaire"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="6" source="bureau des fermes Arles" target="Monde" label="10,318 lt." weight="10318.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Arles"/>
+          <attvalue for="3" value="Monde"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="7" source="bureau des fermes Marseille" target="Monde" label="39,863,931 lt." weight="3.9863932E7">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille"/>
+          <attvalue for="3" value="Monde"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="8" source="Monde" target="bureau des fermes Marseille" label="130,590,615 lt." weight="1.30590616E8">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Monde"/>
+          <attvalue for="3" value="bureau des fermes Marseille"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="9" source="Monde" target="bureau des fermes La Ciotat" label="104,379 lt." weight="104379.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Monde"/>
+          <attvalue for="3" value="bureau des fermes La Ciotat"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="10" source="Monde" target="bureau des fermes La Penne" label="9,692 lt." weight="9692.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Monde"/>
+          <attvalue for="3" value="bureau des fermes La Penne"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="11" source="Monde" target="bureau des fermes Arles" label="841,418 lt." weight="841418.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="Monde"/>
+          <attvalue for="3" value="bureau des fermes Arles"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="12" source="bureau des fermes Lambesc" target="Marseille comme partenaire" label="389,487 lt." weight="389487.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Lambesc"/>
+          <attvalue for="3" value="Marseille comme partenaire"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="13" source="bureau des fermes La Penne" target="Marseille comme partenaire" label="2,781,599 lt." weight="2781599.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes La Penne"/>
+          <attvalue for="3" value="Marseille comme partenaire"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="14" source="bureau des fermes La Penne" target="Monde" label="36,857 lt." weight="36857.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes La Penne"/>
+          <attvalue for="3" value="Monde"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="15" source="bureau des fermes Marseille - Poids et Casse" target="Marseille comme partenaire" label="25,001,447 lt." weight="2.5001448E7">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille - Poids et Casse"/>
+          <attvalue for="3" value="Marseille comme partenaire"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="16" source="bureau des fermes Marseille - Poids et Casse" target="Monde" label="747,238 lt." weight="747238.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille - Poids et Casse"/>
+          <attvalue for="3" value="Monde"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="17" source="bureau des fermes Septemes" target="Marseille comme partenaire" label="6,610,091 lt." weight="6610091.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Septemes"/>
+          <attvalue for="3" value="Marseille comme partenaire"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="18" source="bureau des fermes Septemes" target="Monde" label="34,939 lt." weight="34939.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Septemes"/>
+          <attvalue for="3" value="Monde"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="19" source="bureau des fermes Marseille - Domaine d'Occident" target="Monde" label="41,429,241 lt." weight="4.142924E7">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille - Domaine d'Occident"/>
+          <attvalue for="3" value="Monde"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="20" source="bureau des fermes Marseille - Domaine d'Occident" target="France comme partenaire (ports francs...)" label="1,350,000 lt." weight="1350000.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="bureau des fermes Marseille - Domaine d'Occident"/>
+          <attvalue for="3" value="France comme partenaire (ports francs...)"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+      <edge id="21" source="France comme partenaire (ports francs...)" target="bureau des fermes Marseille" label="983,801 lt." weight="983801.0">
+        <viz:color r="238" g="121" b="147"/>
+        <attvalues>
+          <attvalue for="2" value="France comme partenaire (ports francs...)"/>
+          <attvalue for="3" value="bureau des fermes Marseille"/>
+          <attvalue for="4" value="Marseille"/>
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
