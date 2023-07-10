@@ -21,3 +21,5 @@ echo "Download data : fetching latest navigo sources data"
 curl -o data/navigo_sources_by_source_and_year_and_place.csv "data.portic.fr/api/sources/?format=csv"
 
 ./datascripts.sh
+cd datascripts  
+python fetch_content.py

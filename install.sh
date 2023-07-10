@@ -21,4 +21,4 @@ pip install --upgrade notebook jupyter jupyterlab # need jupyter_client >= 4.2 f
 
 echo "loading and preparing data"
 sh retrieve_data.sh
-echo "all done ! good datasprinting ;)"
+echo "all done ! good datasprinting or building ;)"
