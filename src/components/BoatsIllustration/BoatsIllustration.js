@@ -451,7 +451,7 @@ const BoatsIllustration = ({
   // const lumScale = scaleLinear().domain([12, 0]).range(['#336d7c', '#ebebeb']);
   // const lumScale = scaleLinear().domain([12, 0]).range(['#340b0b', '#ebebeb']);
   const lumScale = scaleLinear().domain([12, 0]).range(['#181D31', '#678983','#678983', '#340b0b' ]);
-  const darkRadiusScale = scaleLinear().domain([12, 0]).range([5, 80])
+  const darkRadiusScale = scaleLinear().domain([12, 0]).range([30, 50])
   const bgColorModel = lumScale(Math.abs(hourOfTime - 12))
   const darkRadiusModel = darkRadiusScale(Math.abs(hourOfTime - 12)) + '%';
   const {
@@ -476,8 +476,8 @@ const BoatsIllustration = ({
         />
         <radialGradient id={`sun`}>
           {/* <animated.stop offset={'0%'} stopColor={'rgb(238, 237, 192)'} /> */}
-          <animated.stop offset={'0%'} stopColor={'rgb(255, 255, 255)'} />
-          <animated.stop offset={'5%'} stopColor={colorPalettes.ui.colorBackground} />
+          <animated.stop offset={'0%'} stopColor={/*'rgb(255, 255, 255)'*/ '#ebd884'} />
+          <animated.stop offset={'10%'} stopColor={/*colorPalettes.ui.colorBackground*/ '#0e8dc7'} />
           <animated.stop offset={darkRadius} stopColor={bgColor} />
         </radialGradient>
       </animated.g>

@@ -44,8 +44,8 @@ function Home({
   const [focusOnViz, setFocusOnViz] = useState(false);
   const [inVis, setInVis] = useState(false);
   const title = useMemo(() => metadata[lang].title, [lang])
-  const titleHTML = title
-  // const title = translate('site', 'title', lang);
+  // const titleHTML = title;
+  const titleHTML = translate('site', 'titleHTML', lang);
   // const titleHTML = translate('site', 'titleHTML', lang);
   const subtitle = translate('site', 'subtitle', lang);
   const [activeCallerId, setActiveCallerId] = useState(undefined);
