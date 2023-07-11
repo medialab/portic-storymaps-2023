@@ -21,7 +21,6 @@ const Intro = ({
     // mode = 'toflit18_france',
     // mode = 'toflit18_world'
   } = callerProps;
-  console.log('mode', mode);
   const [initialDataType, initialDataScope] = mode.split('_');
   const [dataType, setDataType] = useState(initialDataType);
   const [dataScope, setDataScope] = useState(initialDataScope);
