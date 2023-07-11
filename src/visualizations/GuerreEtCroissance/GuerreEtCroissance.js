@@ -16,7 +16,7 @@ const seriesLabels = {
 
 import './GuerreEtCroissance.scss';
 import { scaleLinear } from "d3-scale";
-import { max } from "d3-array";
+import { extent, max } from "d3-array";
 import { formatNumber } from "../../utils/misc";
 import ReactTooltip from "react-tooltip";
 
@@ -52,12 +52,28 @@ const LineSeries = ({
   activeYear,
   onSetActiveYear,
   tickFormat,
-  // id,
+  id,
 }) => {
   if (!inputData || !inputData[0]) {
     return null;
   }
-  const data = inputData.filter(d => d.value > 0);
+  const data = inputData.filter(d => d.value > 0)
+  // .map(d => {
+  //   let cleanSlope = 0;
+  //   if (d.slope.length) {
+  //     const part2 = d.slope.split(' ').pop();
+  //     cleanSlope = +part2.split('%')[0]
+  //   }
+  //   return {
+  //     ...d,
+  //     cleanSlope,
+  //   }
+  // })
+  let cleanSlope = 0;
+  if (inputData[0].slope.length) {
+    const part2 = inputData[0].slope.split(' ').pop();
+    cleanSlope = +part2.split('%')[0]
+  }
   const yDomain = initialYDomain || [0, max(data.map(d => d.value))];
   let yTickSpan = 50000000;
   if (yDomain[1] <= 10000) {
@@ -78,6 +94,11 @@ const LineSeries = ({
   if (tickFontSize < 6) {
     tickFontSize = 6;
   }
+  // const slopeExtent = extent(data.map(d => d.cleanSlope));
+  // const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['red', 'green'])
+  const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['lightgrey', 'blue']);
+  const lossColorScale = scaleLinear().domain([-60, 60]).range(['red', 'green']);
+  // console.log(data.map(d => !d.slope.length ? 0 : (d.slope.split(' ')[1].split('%')[0])))
   return (
     <g className="LineSeries">
       <rect x={0} y={gutter * 2} width={endX} height={height - gutter * 3} fill="rgba(0,0,0,0.05)" />
@@ -238,7 +259,33 @@ const LineSeries = ({
             )
           })
       }
-      <text
+      {
+        slope ?
+        <foreignObject
+        x={gutter / 2}
+        y={gutter * 2}
+        height={gutter * 2}
+        width={gutter * 5 + 2}
+      >
+        <div
+          xmlns="http://www.w3.org/1999/xhtml"
+          className="slope"
+          style={{
+            fontSize: tickFontSize * 1.5,
+            fontWeight: '900',
+            color: slopeColorScale(cleanSlope),
+            // color: 'white',
+            width: '100%',
+            height: '100%',
+          }}
+        >
+          {slope}
+        </div>
+      </foreignObject>
+        : null
+      }
+      
+      {/* <text
         fill={'blue'}
         x={gutter / 2}
         y={gutter * 3}
@@ -247,16 +294,16 @@ const LineSeries = ({
         textAnchor="start"
       >
         {slope}
-      </text>
+      </text> */}
       <text
-        fill={'red'}
+        fill={lossColorScale(+avgMem.split('%')[0])}
         x={endX - gutter / 2}
-        y={gutter * 3}
+        y={id === 'navigation' ? height - gutter - 2 : gutter * 3}
         fontSize={tickFontSize * 1.5}
         fontWeight="bold"
         textAnchor="end"
       >
-        {avgMem}
+        {(+avgMem.split('%')[0] > 0 ? '+' : '') + avgMem}
       </text>
       {/* <text
         fill={'orange'}
@@ -625,7 +672,7 @@ export default function GuerreEtCroissance({
                 >
                   -1%
                 </span>
-                <span>Moyenne de la perte due aux guerres</span>
+                <span>Moyenne de l'estimation de la perte en temps de guerre</span>
               </li>
             </ul>
           </div>

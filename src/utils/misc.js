@@ -122,7 +122,7 @@ export const formatNumber = (n, style = 'fr') => {
       if (endOfLine) {
         return {
           count: 1,
-          result: [...result, style === 'fr' ? ' ' : ',', digit]
+          result: [...result, style === 'fr' ? '\u00A0' : ',', digit]
         }
       } else return {
         count: count + 1,
