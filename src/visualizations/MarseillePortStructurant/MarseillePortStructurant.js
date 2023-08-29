@@ -173,7 +173,7 @@ const MapObjects = ({
             return (
               <g className="port-object" key={port}
                 data-for="structurant-tooltip"
-                data-tip={`En 1789, ${count_total} navires sont partis du port de ${port}, dont ${count_total * ratio_to_marseille} (${parseInt(ratio_to_marseille * 100)}%) vers Marseille.`}
+                data-tip={`En 1789, ${count_total} navires sont partis du port de ${port}, dont ${parseInt(count_total * ratio_to_marseille)} (${parseInt(ratio_to_marseille * 100)}%) vers Marseille.`}
               >
                 <line
                   x1={portX}
