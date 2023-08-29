@@ -92,7 +92,11 @@ const PartnersObjects = ({
           arrowAngle = -45;
         }
 
-        if (dataType === 'navigo' && dataScope === 'france' && !['Rouen', 'Cap-Français'].includes(partner)) {
+        if (['Naples'].includes(partner)) {
+          labelPosition = 'right';
+        }
+
+        else if (dataType === 'navigo' && dataScope === 'france' && !['Rouen', 'Cap-Français'].includes(partner)) {
           labelPosition = 'left';
         }
         else if ([
@@ -101,7 +105,7 @@ const PartnersObjects = ({
       ].includes(partner)) {
           labelPosition = 'right';
         } else if ([
-          'Flandre et autres états de l\'Empereur', 
+          // 'Flandre et autres états de l\'Empereur', 
           'Milanais, Toscane et Lucques',
           'Narbonne',
           'Montpellier',

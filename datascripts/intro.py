@@ -13,8 +13,10 @@ geolocalizations = {
    # classification grouping
   "Inconnu": [-16.414, 43.87],
   "Afrique": [-15.414, 13.454],
-  "Allemagne": [10.4478, 51.1638],
-  "Amériques": [-66.379, 16.762],
+  # "Allemagne": [10.4478, 51.1638],
+  "Allemagne": [10.4478, 51.6],
+  # "Amériques": [-66.379, 16.762],
+  "Amériques": [-61.726, 16.150],
   "Angleterre": [-1.835, 52.829],
   "Asie": [76.64, -7.8],
   "Espagne": [-3.867, 40.33],
@@ -31,7 +33,8 @@ geolocalizations = {
   # Italie
   # "Royaume de Piemont et Sardaigne": [7.6597227,40.056245],
   "Royaume de Piemont et Sardaigne": [9,38.5],
-  "Gênes": [8.7260246,44.4471043],
+  "Gênes": [8.7260246,44.8],
+  # "Gênes": [8.7260246,44.4471043],
   "États ecclésiastiques": [12.3711899,41.9102088],
   "Venise": [12.2225255,45.4046658],
   "Naples": [16,40.8],
@@ -66,7 +69,8 @@ geolocalizations = {
   # "États ecclésiastiques": [0,0],
 
   #navigo specific
-  "République de Raguse": [14.6690884,36.9187451],
+  # "République de Raguse": [14.6690884,36.9187451],
+  "République de Raguse": [18.073, 42.645],
   "Duché de Massa et Carrare": [10.0272806,44],
   "Malte": [14.2135409,35.9426153],
   "Maroc": [-8.1521827,31.6703932]
@@ -83,7 +87,8 @@ directions_geolocs = {
   # "Charleville": [4.6480131, 49.7802714],
   "Châlons": [4.338868,48.9656081],
   # "Directions de terre": [],
-  "Flandre": [2.260707, 51.016986],
+  "Flandre": [2.260707, 50.016986],
+  # "Flandre": [2.260707, 51.016986],
   # "France": [],
   "Grenoble": [5.6743405, 45.1842864],
   "La Rochelle": [-1.2176732,46.1621033],
@@ -184,6 +189,7 @@ international_departures = {}
 local_departures = {}
 directions_for_compte_rendu = {}
 ports_without_ferme = set()
+brits = set()
 with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -211,6 +217,9 @@ with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
              if ship_class in tonnages_estimate:
                 tonnage = tonnages_estimate[ship_class]
           tonnage = int(tonnage or 0)
+          # remove peche
+          if partner == "Angleterre" and "terreneuve" in row["pointcall"].lower() or "terre neuve" in row["pointcall"].lower():
+             continue
           if partner not in international_departures:
              international_departures[partner] = {
                 "partner": partner,

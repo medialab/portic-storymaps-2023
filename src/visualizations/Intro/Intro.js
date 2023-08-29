@@ -7,6 +7,7 @@ import './Intro.scss';
 import PartnersObjects from './PartnersObjects';
 import Legend from './Legend';
 import SliderRange from '../../components/SliderRange/SliderRange';
+import ReactTooltip from 'react-tooltip';
 
 const Intro = ({
   data,
@@ -35,10 +36,14 @@ const Intro = ({
     setDataScope(initialDataScope);
   }, [initialDataType, initialDataScope]);
 
+  useEffect(() => {
+    ReactTooltip.rebuild();
+  }, [dataType, dataScope])
+
   let title = '';
   if (dataType === 'navigo') {
     if (dataScope === 'world') {
-      title = 'Pays de départ des navires à destination de Marseille en 1789';
+      title = 'Pays étrangers de départ des navires à destination de Marseille en 1789';
     } else {
       title = 'Sorties des 10 plus grands ports de France en 1787';
     }

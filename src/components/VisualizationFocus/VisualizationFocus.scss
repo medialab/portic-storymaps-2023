@@ -51,7 +51,7 @@
       padding: $medium-gutter;
       padding-top: 0;
       order: 2;
-      max-width: 30vw;
+      max-width: calc(30vw - $medium-gutter);
       .details-header {
         pointer-events: all;
         display: flex;

@@ -224,10 +224,10 @@
       right: 0;
       top: $medium-gutter * 3;
       width: 50vw;
-      height: calc(100vh - #{$header_height * 1.5});
+      height: calc(100vh - #{$header_height * 1.5} + 1rem);
       pointer-events: none;
       &.is-fixed {
-        top: $header_height * 1.5;
+        top: $header_height * 1.5 - 2rem;
         position: fixed;
         @include tablet {
           // width: 35vw;
