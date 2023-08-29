@@ -462,7 +462,7 @@ for lang in GDOC_URL.keys():
             # React requirements
             part = re.sub(r"(</?)caller", r"\1Caller",
                           part)  # caller -> Caller
-            part = re.sub(r"(</?)link", r"\1Link", part)  # link -> Caller
+            part = re.sub(r"(</?)link", r"\1Link", part)  # link -> Laller
             part = re.sub(r"class(=\")", r"className\1",
                           part)  # class -> className
 
@@ -500,7 +500,7 @@ for i, item in enumerate(summary):
     continue
   base_str = json.dumps(item, indent = 2, ensure_ascii=False)[:-2]
   base_str += ",\n";
-  component = "ScrollyPage" if '"navGroup": "primary"' in base_str and "Conclusion" not in base_str else "PlainPage"
+  component = "ScrollyPage" if '"navGroup": "primary"' in base_str else "PlainPage"
   base_str += "  Component: " + component + ",\n";
   base_str += "  contents: {" + "\n"
   for lang in GDOC_URL.keys():
