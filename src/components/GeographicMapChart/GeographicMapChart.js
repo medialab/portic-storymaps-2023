@@ -276,7 +276,7 @@ const GeographicMapChart = ({
               // centerX: 15,
               // centerY: 40,
               centerX: 5,
-              centerY: 43,
+              centerY: 46,
               translationX: width * .5,
               translationY: height * .5,
               // translationX: width * 0.4,

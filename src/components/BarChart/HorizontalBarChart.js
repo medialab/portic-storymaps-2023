@@ -246,7 +246,7 @@ const HorizontalBarChart = ({
                     <line
                       className="background-line"
                       x1={margins.left}
-                      x2={xScale(xAxisValues[xAxisValues.length - 1])}
+                      x2={xScale(xAxisValues[xAxisValues.length - 1]) + columnWidth / 2}
                       y1={0}
                       y2={0}
                     />
@@ -261,7 +261,7 @@ const HorizontalBarChart = ({
                     key={value}
                     transform={`translate(${xScale(value)}, 0)`}
                   >
-                    <text x={0} y={height - margins.bottom + 20}>
+                    <text x={0} y={height - margins.bottom + 15}>
                       {typeof xTickFormat === 'function' ? xTickFormat(value, valueIndex) : value}
                     </text>
                     <line
