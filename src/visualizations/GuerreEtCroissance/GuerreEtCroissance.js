@@ -261,30 +261,30 @@ const LineSeries = ({
       }
       {
         slope ?
-        <foreignObject
-        x={gutter / 2}
-        y={gutter * 2}
-        height={gutter * 2}
-        width={gutter * 5 + 2}
-      >
-        <div
-          xmlns="http://www.w3.org/1999/xhtml"
-          className="slope"
-          style={{
-            fontSize: tickFontSize * 1.5,
-            fontWeight: '900',
-            color: slopeColorScale(cleanSlope),
-            // color: 'white',
-            width: '100%',
-            height: '100%',
-          }}
-        >
-          {slope}
-        </div>
-      </foreignObject>
-        : null
+          <foreignObject
+            x={gutter / 2}
+            y={gutter * 2}
+            height={gutter * 2}
+            width={gutter * 5 + 2}
+          >
+            <div
+              xmlns="http://www.w3.org/1999/xhtml"
+              className="slope"
+              style={{
+                fontSize: tickFontSize * 1.5,
+                fontWeight: '900',
+                color: slopeColorScale(cleanSlope),
+                // color: 'white',
+                width: '100%',
+                height: '100%',
+              }}
+            >
+              {slope}
+            </div>
+          </foreignObject>
+          : null
       }
-      
+
       {/* <text
         fill={'blue'}
         x={gutter / 2}
@@ -323,6 +323,7 @@ export default function GuerreEtCroissance({
   height,
   data: inputData,
   callerProps = {},
+  atlasMode,
 }) {
   const {
     series,
@@ -356,8 +357,9 @@ export default function GuerreEtCroissance({
   const [visibleDirections, setVisibleDirections] = useState(directions ? directions.split(',').map(d => d.trim()) : defaultDirections);
   const [navigationMetric, setNavigationMetric] = useState(navigation_metric || defaultNavigationMetric);
   const [activeYear, setActiveYear] = useState();
+  const [controlsVisible, setControlsVisible] = useState();
 
-  useEffect(() => setVisibleSeries(series ? series.split(',').map(s => s.trim())  : defaultSeries), [series]);
+  useEffect(() => setVisibleSeries(series ? series.split(',').map(s => s.trim()) : defaultSeries), [series]);
   useEffect(() => setVisibleDirections(directions ? directions.split(',').map(d => d.trim()) : defaultDirections), [directions]);
   useEffect(() => setNavigationMetric(navigation_metric || defaultNavigationMetric), [navigation_metric]);
 
@@ -416,6 +418,7 @@ export default function GuerreEtCroissance({
   const activeNavigationTickFormat = navigationSources.find(({ id }) => id === navigationMetric).tickFormat;
   const xAxisValues = range(MIN_YEAR, MAX_YEAR + 20, 20);
   const legendX = sideWidth + (visibleDirections.length >= 4 ? cellWidth * 2.5 : cellWidth * 1.5) + gutter * 2;
+
   return (
     <>
       <svg
@@ -666,20 +669,20 @@ export default function GuerreEtCroissance({
               </li>
               <li>
                 <span>
-                <span
-                  style={{
-                    color: 'red'
-                  }}
-                >
-                  -1%
-                </span>
-                <span
-                  style={{
-                    color: 'green'
-                  }}
-                >
-                  +2%
-                </span>
+                  <span
+                    style={{
+                      color: 'red'
+                    }}
+                  >
+                    -1%
+                  </span>
+                  <span
+                    style={{
+                      color: 'green'
+                    }}
+                  >
+                    +2%
+                  </span>
                 </span>
                 <span>Moyenne de l'estimation de la perte ou du gain en temps de guerre</span>
               </li>
@@ -708,6 +711,73 @@ export default function GuerreEtCroissance({
                               M3,5 l2,-2"
             style={{ stroke: 'grey', opacity: 1, strokeWidth: 1 }} />
         </pattern>
+
+        {
+          atlasMode ?
+            <foreignObject
+              x={0}
+              y={topLabelsHeight - 10}
+              width={sideWidth * 1.5}
+              height={height}
+            >
+              <div className="controls-container">
+                <button
+                  className={`btn ${controlsVisible ? 'is-active' : ''}`}
+                  onClick={() => setControlsVisible(!controlsVisible)}
+                >
+                  Afficher ...
+                </button>
+                <div className={`collapsable-controls ${controlsVisible ? 'is-visible' : ''}`}>
+                  
+                  <p>Afficher les directions :</p>
+                  <ul>
+                    {
+                      defaultDirections
+                        .map(direction => {
+                          const isVisible = visibleDirections.includes(direction)
+                          const handleClick = () => {
+                            if (isVisible) {
+                              setVisibleDirections(visibleDirections.filter(d => d !== direction))
+                            } else {
+                              setVisibleDirections([...visibleDirections, direction])
+                            }
+                          }
+                          return (
+                            <li style={{ fontWeight: isVisible ? 800 : 400, opacity: isVisible ? 1 : .5, cursor: 'pointer' }} onClick={handleClick} key={direction}>
+                              {direction}
+                            </li>
+                          )
+                        })
+                    }
+                  </ul>
+                  <p>Afficher les séries : </p>
+                  <ul>
+                    {
+                      defaultSeries
+                        .map(series => {
+                          const isVisible = visibleSeries.includes(series)
+                          const handleClick = () => {
+                            if (isVisible) {
+                              setVisibleSeries(visibleSeries.filter(d => d !== series))
+                            } else {
+                              setVisibleSeries([...visibleSeries, series])
+                            }
+                          }
+                          return (
+                            <li style={{ fontWeight: isVisible ? 800 : 400, opacity: isVisible ? 1 : .5, cursor: 'pointer' }} onClick={handleClick} key={series}>
+                              {series}
+                            </li>
+                          )
+                        })
+                    }
+                  </ul>
+                </div>
+              </div>
+            </foreignObject>
+            : null
+        }
+
+
       </svg>
       <ReactTooltip id="guerre-tooltip" />
     </>

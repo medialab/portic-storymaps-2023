@@ -300,7 +300,7 @@ const GeographicMapChart = ({
           case 'Levant':
               projectionConfig = {
                 ...projectionConfig,
-                scale: 1600,
+                scale: 1100,
                 // centerX: 15,
                 // centerY: 40,
                 centerX: 15,
