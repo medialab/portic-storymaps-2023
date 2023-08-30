@@ -85,7 +85,7 @@ state_to_class = {
     'Portugal': 'Ponant', 
     'Empire russe': 'Ponant', 
     # 'France', 
-    'Brême': 'méditerranée occidentale', 
+    'Brême': 'Ponant', 
     'République de Lucques': 'méditerranée occidentale'
 }
 

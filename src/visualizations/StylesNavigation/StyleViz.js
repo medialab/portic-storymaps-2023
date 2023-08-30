@@ -102,7 +102,7 @@ export default function StyleViz({
                       textAnchor="end"
                       fontSize={axisStep * 2}
                     >
-                      {nb_steps}
+                      {nb_steps - 1}
                     </text>
                   </g>
                 )
@@ -240,7 +240,7 @@ export default function StyleViz({
                 return (
                   <g key={nb_steps}
                     data-for="styles-tooltip"
-                    data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1789), ${count} navires sont venus à Marseille en faisant ${nb_steps} étapes.`}
+                    data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires sont venus à Marseille en faisant ${nb_steps} étapes.`}
                     onMouseEnter={() => setHighlightedSteps(nb_steps)}
                     onMouseLeave={() => setHighlightedSteps()}
                     opacity={highlightedSteps && highlightedSteps !== nb_steps ? .3 : 1}
@@ -290,7 +290,7 @@ export default function StyleViz({
                 return (
                   <g key={tonnage}
                     data-for="styles-tooltip"
-                    data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1789), ${count} navires de ${tonnage} tonneaux sont venus à Marseille.`}
+                    data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille.`}
                     onMouseEnter={() => setHighlightedTonnage(tonnage)}
                     onMouseLeave={() => setHighlightedTonnage()}
                     opacity={highlightedTonnage && highlightedTonnage !== tonnage ? .3 : 1}
@@ -370,7 +370,7 @@ export default function StyleViz({
                     stroke="white"
                     data-for="styles-tooltip"
                     opacity={opacity}
-                    data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1789), ${count} navires de ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.`}
+                    data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.`}
                     onMouseEnter={() => {
                       setHighlightedTonnage(tonnage);
                       setHighlightedSteps(nb_steps);
