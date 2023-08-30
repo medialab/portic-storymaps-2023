@@ -68,11 +68,12 @@ grouping_to_groups = {
   "Italie": "Italie & Espagne",
   "Espagne": "Italie & Espagne",
   "Levant et Barbarie": "Levant & Barbarie",
-  "Angleterre": "Angleterre & Amériques",
-  "Amériques": "Angleterre & Amériques",
+  "Angleterre": "Angleterre & Amérique du Nord",
+  "Amériques": "Angleterre & Amérique du Nord",
   "Nord": "Nord, Hollande & Flandres",
   "Hollande": "Nord, Hollande & Flandres",
-  "Flandre et autres états de l'Empereur": "Nord, Hollande & Flandres"
+  "Flandre et autres états de l'Empereur": "Nord, Hollande & Flandres",
+  "": "Colonies françaises"
 }
 groups = set(grouping_to_groups.values())
 
@@ -92,13 +93,17 @@ with open('../data/toflit18_all_flows.csv', 'r') as f1:
             "year": year,
           }
         # register import value per group
-        if flow["export_import"] == "Imports" and partner in grouping_to_groups:
-          group = grouping_to_groups[partner]
+        if flow["export_import"] == "Imports":
+          # pas pris pour colonies françaises : Ports et pays de France à l'instar de l'étranger, Îles françaises
+          if flow["partner_simplification"] in ["Guinée et Sénégal", "Îles françaises de l'Amérique"]:
+            group = "Colonies françaises"
+          elif partner in grouping_to_groups:
+            group = grouping_to_groups[partner]
           if group not in years[year]:
             years[year][group] = 0
           years[year][group] += value
-        # register total trade for marseille
-        years[year]["total"] += value
+          # register total trade for marseille
+          years[year]["total"] += value
 data = []
 for year in years.keys():
   for group in groups:

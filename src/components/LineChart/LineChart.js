@@ -361,7 +361,7 @@ const LineChart = ({
                     const thatY1 = height - margins.bottom;
                     const thatY2 = yScale(yAxisValues[yAxisValues.length - 1]);
                     const x = xScale(start);
-                    const maxWidth = Math.abs(height - x + margins.right);
+                    const maxWidth = Math.abs(width - x - legendWidth / 2);
                     return (
                       <AnimatedGroup className="annotation x-axis-annotation" key={annotationIndex}>
                         <AnimatedRect

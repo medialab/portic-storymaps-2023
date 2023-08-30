@@ -246,7 +246,7 @@ const LineSeries = ({
                   onMouseEnter={() => onSetActiveYear(year)}
                   onMouseLeave={() => onSetActiveYear()}
                   data-for="guerre-tooltip"
-                  data-tip={`En ${year}, valeur de ${formatNumber(parseInt(value))} (perte mémoire de ${formatNumber(parseInt(data.find(d => d.year === year).peace_reg_memory))})`}
+                  data-tip={`En ${year}, valeur de ${formatNumber(parseInt(value))} (perte de ${formatNumber(parseInt(data.find(d => d.year === year).peace_reg_memory))})`}
                 />
                 <circle
                   fill={isActive ? 'blue' : "grey"}
@@ -391,24 +391,24 @@ export default function GuerreEtCroissance({
       id: 'carrière',
       source: 'Carriere',
       label: 'Carrière',
-      tickFormat: d => formatNumber(d) + ' v.'
+      tickFormat: d => formatNumber(d) + ' u.'
     },
     {
       id: 'entrées',
       source: 'Navigo entrées',
-      label: 'Entrées navigo',
-      tickFormat: d => formatNumber(d) + ' v.'
+      label: 'Nombre d\'entrées (Navigocorpus)',
+      tickFormat: d => formatNumber(d) + ' u.'
     },
     {
       id: 'tonnage',
       source: 'Navigo tonnage',
-      label: 'Tonnage navigo',
+      label: 'Tonnage estimé (Navigocorpus)',
       tickFormat: d => formatNumber(d) + ' tx.'
     },
     {
       id: 'mileage',
       source: 'Navigo mileage_total',
-      label: 'Distance navigo',
+      label: 'Distance (Navigocorpus)',
       tickFormat: d => formatNumber(d) + ' m.'
     },
   ];
@@ -665,6 +665,7 @@ export default function GuerreEtCroissance({
                 <span>Croissance annuelle moyenne</span>
               </li>
               <li>
+                <span>
                 <span
                   style={{
                     color: 'red'
@@ -672,7 +673,15 @@ export default function GuerreEtCroissance({
                 >
                   -1%
                 </span>
-                <span>Moyenne de l'estimation de la perte en temps de guerre</span>
+                <span
+                  style={{
+                    color: 'green'
+                  }}
+                >
+                  +2%
+                </span>
+                </span>
+                <span>Moyenne de l'estimation de la perte ou du gain en temps de guerre</span>
               </li>
             </ul>
           </div>

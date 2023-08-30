@@ -130,7 +130,7 @@ export default function EffetsGuerreSurLevant({
         ...{
           width,
           height: height / 2,
-          title: `Les partenaires d'importation de Marseille au fil du temps`,
+          title: `Principaux partenaires étrangers des importations de Marseille`,
           data,
           annotations,
           color: {
@@ -148,7 +148,7 @@ export default function EffetsGuerreSurLevant({
             // domain: [0, 200000000],
             tickFormat: d => formatNumber(d) + ' lt.'
           },
-          tooltip: d => `En ${d.year}, Marseille a exporté ${formatNumber(parseInt(d.value))} lt. vers les partenaires ${d.group === 'total' ? 'au' : 'de'} ${d.group}`
+          tooltip: d => `En ${d.year}, Marseille a importé ${formatNumber(parseInt(d.value))} lt. depuis les partenaires ${d.group === 'total' ? 'au' : 'de'} ${d.group}`
         }
         }
       />
@@ -191,7 +191,7 @@ export default function EffetsGuerreSurLevant({
               type: 'number'
             }
           },
-          tooltip: d => `En ${d.year}, Marseille a exporté ${parseInt(d.value)} % de sa valeur vers les partenaires ${d.group}`
+          tooltip: d => `En ${d.year}, Marseille a importé ${parseInt(d.value)} % de sa valeur depuis les partenaires ${d.group}`
         }
         }
       />

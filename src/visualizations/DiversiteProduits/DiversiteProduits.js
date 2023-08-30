@@ -21,6 +21,10 @@ export default function DiversiteProduits({
 
   useEffect(() => setHighlightedYear(annee !== undefined && !isNaN(+annee) ? +annee : undefined), [annee]);
 
+  useEffect(() => {
+    ReactTooltip.rebuild();
+  }, [highlightedYear])
+
   const data = (inputData.get('herfindal-exports-marseille.csv') || []).map(d => ({ ...d, indice: +d.indice }));
   // const data = useMemo(() => inputData.get('herfindal-exports-marseille.csv').map(d => ({ ...d, indice: +d.indice })), [inputData])
   const years = range(MIN_YEAR, MAX_YEAR + 1);
@@ -88,7 +92,8 @@ export default function DiversiteProduits({
             x={labelsWidth + (width - labelsWidth) / 2 - legendRectWidth / 2 - 5}
             y={topPartHeight / 4 - 2}
             fontSize={topPartHeight / 4}
-            fill={`grey`}
+            fill={`black`}
+            fontWeight="800"
             textAnchor="end"
             fontStyle={'italic'}
           >
@@ -98,7 +103,8 @@ export default function DiversiteProduits({
             x={labelsWidth + (width - labelsWidth) / 2 + legendRectWidth / 2 + 5}
             y={topPartHeight / 4 - 2}
             fontSize={topPartHeight / 4}
-            fill={`grey`}
+            fill={`black`}
+            fontWeight="800"
             fontStyle={'italic'}
           >
             commerce diversifié

@@ -75,10 +75,10 @@ viz-1-A:
     fr: En <strong>${year}</strong> les produits de la classe \"${product}\" représentent <strong>${pct}%</strong> de la valeur des biens exportés par la direction des fermes de La Rochelle.
     en: In <strong>${year}</strong> products classed as \"${product}\" represent ${pct}% of goods exported by La Rochelles direction des fermes.
   sevenYearsWar:
-    fr: guerre de sept ans
-    en: seven years war
+    fr: guerre de Sept Ans
+    en: Seven Years war
   austriaWar:
-    fr: guerre franco-britannique au sein de la guerre de succession d’Autriche
+    fr: guerre franco-britannique au sein de la guerre de Succession d’Autriche
     en: Franco-British conflict within the War of Jenkins's Ear
   usIndependance:
     fr: guerre d’indépendance Américaine

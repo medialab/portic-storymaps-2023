@@ -74,8 +74,8 @@
         flex-flow: row nowrap;
         justify-content: start;
         align-items: start;
-        span:first-of-type {
-          margin-right: .5rem;
+        > span:first-of-type {
+          margin-right: 1rem;
           min-width: 2rem;
           max-width: 2rem;
           text-align: right;

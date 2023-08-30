@@ -25,6 +25,7 @@ export default function WarTransferChart({
   const axisValues = range(0, 125, 25);
 
   const barsWidth = width - sideWidth * 2;
+
   return (
     <>
       <svg
@@ -158,9 +159,9 @@ export default function WarTransferChart({
                   <g className="links-group" transform={`translate(${sideWidth}, ${0})`}>
                     {
                       links.map(({ group, color, points, values }, index) => {
-                        let tooltip = `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé des navires du groupe ${group} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`
+                        let tooltip = `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé estimé des navires du groupe ${group} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`
                         if (group.includes('guerre')) {
-                          tooltip = `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé des navires qui allaient devenir ${group} en ${warData.year} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`;
+                          tooltip = `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${warData.year} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`;
                         }
                         return (
                           <g className="link-group"
@@ -182,7 +183,7 @@ export default function WarTransferChart({
                                   textAnchor={'middle'}
                                   fontSize={gutter}
                                 >
-                                  {(values[1] > values[0] ? '+' : '-') + parseInt(Math.abs(values[1] - values[0]) * 100)}%
+                                  {(values[1] > values[0] ? '+' : '-') + parseInt(Math.abs(values[1] - values[0]) * 100)} pp
                                 </text>
                                 : null
                             }
@@ -198,6 +199,11 @@ export default function WarTransferChart({
                   >
                     {
                       peaceVizData.map(({ group, color, width, x, value }, index) => {
+                        const prevLabelX = index > 0 ? peaceVizData[index - 1].x : undefined;
+                        let labelX = 0;
+                        if (prevLabelX && Math.abs(x - prevLabelX) < 10) {
+                          labelX = 10;
+                        }
                         return (
                           <g className="bar-group"
                             data-for="transfer-toltip"
@@ -207,7 +213,7 @@ export default function WarTransferChart({
                             {
                               width > 0 ?
                                 <g className="bar-label"
-                                  transform={`translate(${x + width / 2}, ${-2})rotate(-45)`}
+                                  transform={`translate(${x + labelX + width / 2}, ${-2})rotate(-45)`}
 
                                 >
                                   <text x={0} y={0} fontSize={gutter}>

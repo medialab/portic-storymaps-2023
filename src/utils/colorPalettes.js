@@ -183,9 +183,10 @@ const colorsPalettes = {
   },
   partnersGrouped: {
     'Levant & Barbarie': '#019d2f',
-    'Italie & Espagne': '#E27A0B',
+    'Italie & Espagne': '#DFBD3A',
+    'Angleterre & Amérique du Nord': '#c9072a',
+    'Colonies françaises': '#E5881A',
     'Nord, Hollande & Flandres': '#c8c8f0',
-    'Angleterre & Amériques': '#c9072a',
     'total': '#c4c4c4',
   },
   Marseille: 'red',
