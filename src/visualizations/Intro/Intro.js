@@ -60,13 +60,13 @@ const Intro = ({
   const visibleData = useMemo(() => {
     if (dataType === 'toflit18') {
       if (dataScope === 'world') {
-        return usableData.filter(datum => +datum.toflit_value > 0 && datum.scope === 'world')
+        return usableData.filter(datum => +datum.toflit_value > 0 && datum.scope === 'world' && datum.partner !== 'Inconnu')
       } else {
         return usableData.filter(datum => +datum.toflit_value > 0 && datum.scope === 'france')
       }
     } else {
       if (dataScope === 'world') {
-        return usableData.filter(datum => +datum.navigo_nb_ships > 0 && datum.scope === 'world')
+        return usableData.filter(datum => +datum.navigo_nb_ships > 0 && datum.scope === 'world' && datum.partner !== 'Inconnu')
       } else {
         return usableData
           .filter(datum => +datum.navigo_nb_ships > 0 && datum.scope === 'france')

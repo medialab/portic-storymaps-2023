@@ -16,7 +16,8 @@ geolocalizations = {
   # "Allemagne": [10.4478, 51.1638],
   "Allemagne": [10.4478, 51.6],
   # "Amériques": [-66.379, 16.762],
-  "Amériques": [-61.726, 16.150],
+  # "Amériques": [-61.726, 16.150],
+  "Amériques": [-98.569, 37.545],
   "Angleterre": [-1.835, 52.829],
   "Asie": [76.64, -7.8],
   "Espagne": [-3.867, 40.33],
@@ -28,7 +29,8 @@ geolocalizations = {
   "Monde": [5.427, 40.271],
   "Nord": [18.479, 56.475],
   "Portugal": [-8.102, 38.139],
-  "États-Unis d'Amérique": [-98.569, 37.545],
+  # "États-Unis d'Amérique": [-98.569, 37.545],
+  "États-Unis d'Amérique": [-98.569, 43.87],
 
   # Italie
   # "Royaume de Piemont et Sardaigne": [7.6597227,40.056245],
@@ -190,7 +192,6 @@ local_departures = {}
 directions_for_compte_rendu = {}
 ports_without_ferme = set()
 brits = set()
-nb_marseille = 0
 with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -200,9 +201,14 @@ with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
         if row["source_suite"] in accepted_sources \
           and departure_year == "1789"\
           and int(float(row["pointcall_rank_dedieu"])) == 1 \
-          and row["state_fr"] != "France" \
         :
+          # and row["state_fr"] != "France" \
           partner = row["partner_balance_1789"]
+          if row["state_fr"] == "France":
+             if row["pointcall_uhgs_id"][0] == "B":
+                partner = "Amériques"
+             else:
+                continue
           if partner == "":
              if row["state_fr"] != "":
               partner = row["state_fr"]
@@ -247,8 +253,6 @@ with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
           tonnage = row["tonnage"]
           tonnage = int(float(tonnage or 0))
           if locality == "Marseille":
-             nb_marseille += 1
-             print("Marseille")
              ship_class = row["ship_class_standardized"]
              if ship_class in tonnages_estimate:
                 tonnage = tonnages_estimate[ship_class]
@@ -266,8 +270,6 @@ with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
           if row["toponyme_fr"] in ports_names_compte_rendus_conges:
             directions_for_compte_rendu[row["toponyme_fr"]] = locality
 
-print(local_departures["Marseille"])
-print("nb marseille", str(nb_marseille))
 
 for p in international_departures.keys():
    international_departures[p]["mean_tonnage"] = international_departures[p]["tonnage"] / international_departures[p]["nb_ships"]
