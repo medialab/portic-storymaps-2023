@@ -111,7 +111,7 @@ with open('../data/navigo_all_flows.csv', newline='') as csvfile:
     for row in reader:
         year = row["indate_fixed"][:4]
         p = row["destination"] if year == "1789" else row["departure"] # row["destination"] if row["destination"] == "Marseille" else row['departure']
-        tonnage = float(row['tonnage'] or 0)
+        tonnage = 0 if p == "Marseille" else float(row['tonnage'] or 0)
         flag = row['flag'] or 'unknown'
         
         ship_class = row['ship_class_standardized']
