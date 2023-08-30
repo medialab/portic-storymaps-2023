@@ -195,7 +195,7 @@ export default function PartDesEtrangersDansNavigation({
                           fontSize={comparisonLabelsHeight / 4}
                           fontWeight={port === 'Marseille' ? 'bold' : undefined}
                         >
-                          {port}
+                          {port + (port === 'Marseille' ? ' (entrées)' : '')}
                         </text>
                       </g>
                       {
