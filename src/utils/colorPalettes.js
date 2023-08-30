@@ -178,7 +178,7 @@ const colorsPalettes = {
     'Péninsule italienne': '#E27A0B',
     Espagne: '#E25C0B',
     'Provinces-Unies': '#c8c8f0',
-    'Grande-Bretagne': '#c9072a',
+    'Grande-Bretagne et colonies (Terre-Neuve)': '#c9072a',
     autre: '#c4c4c4',
   },
   partnersGrouped: {
@@ -198,7 +198,7 @@ const colorsPalettes = {
     'neutre': '#c4c4c4',
   },
   stylesOfNavigation: {
-    'Ponant': '#A7E6F9',
+    'Ponant': '#0686AD',
     'empire ottoman': '#019d2f',
     'méditerranée occidentale': '#E5881A',
     'Marseille': 'red'
