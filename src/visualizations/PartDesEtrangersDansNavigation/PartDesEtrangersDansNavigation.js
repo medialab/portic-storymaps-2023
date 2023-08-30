@@ -108,8 +108,8 @@ export default function PartDesEtrangersDansNavigation({
   const topBarWidth = comparisonCellWidth / 2;
   const topAxisValues = [0, 25, 50, 75, 100];
 
-  const comparisonRowTitle = 'Part des étrangers partis de France en 1787 (tonnage cumulé)';
-  const marseilleRowTitle = 'Part des étrangers arrivés à Marseille en 1789 (tonnage cumulé)';
+  const comparisonRowTitle = 'Part de navires étrangers partis de France en 1787 (tonnage cumulé)';
+  const marseilleRowTitle = 'Pavillon des navires étrangers arrivés à Marseille en 1789 (tonnage cumulé estimé)';
 
   const marseilleSum = marseilleData.reduce((sum, { tonnage }) => sum + tonnage, 0);
   const marseilleScale = scaleLinear().domain([0, marseilleSum]).range([0, vizSpaceWidth]);
@@ -235,7 +235,11 @@ export default function PartDesEtrangersDansNavigation({
                   const fontSize = marseilleBandHeight / 5;
                   marseilleXOffset += width;
                   return (
-                    <g transform={`translate(${marseilleXOffset - width}, ${0})`}>
+                    <g transform={`translate(${marseilleXOffset - width}, ${0})`}
+                    data-for="part-etrangers-tooltip"
+                          data-tip={`En 1789, un total de ${formatNumber(tonnage)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`}
+                       
+                    >
                       <rect
                         x={0}
                         y={0}

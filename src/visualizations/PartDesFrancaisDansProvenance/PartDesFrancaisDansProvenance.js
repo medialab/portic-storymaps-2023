@@ -37,8 +37,11 @@ export default function PartDesFrancaisDansProvenance({
         ...{
           width,
           height: height / 2,
+          margins: {
+            left: 120
+          },
           data,
-          title: 'Part des français dans les provenances de voyages arrivés à Marseille',
+          title: 'Part des navires français dans les provenances de voyages arrivés à Marseille',
           layout: "groups",
           color: {
             field: 'state',
@@ -52,7 +55,7 @@ export default function PartDesFrancaisDansProvenance({
             field: 'share_of_french',
             tickFormat: d => d + '%',
             domain: [0, 100],
-            title: 'Part des français',
+            title: 'Part des n. français',
             sort: {
               type: 'number',
               field: 'order'
@@ -66,9 +69,12 @@ export default function PartDesFrancaisDansProvenance({
         {
         ...{
           width,
-          height: height / 2 - 20,
+          height: height / 2 - 30,
+          margins: {
+            left: 120
+          },
           data,
-          title: 'Tonnage des français dans les provenances de voyages arrivés à Marseille',
+          title: 'Tonnage estimé des navires français dans les provenances de voyages arrivés à Marseille',
           layout: "groups",
           color: {
             field: 'state',
