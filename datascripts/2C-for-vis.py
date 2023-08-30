@@ -35,7 +35,8 @@ flag_to_nationality = {
   "Royaume de Piémont-Sardaigne": "Péninsule italienne (agrégée)",
   "République de Gênes": "Péninsule italienne (agrégée)",
   "République de Lucques": "Péninsule italienne (agrégée)",
-  "République de Raguse": "Péninsule italienne (agrégée)",
+  "République de Raguse": "autre",
+  # "République de Raguse": "Péninsule italienne (agrégée)",
   "République de Venise": "Péninsule italienne (agrégée)",
   "Toscane": "Péninsule italienne (agrégée)",
   # multi-Etat
@@ -175,7 +176,7 @@ french_share_map = {
     "Malte": "autre",
     "Autriche": "autre",
     "République de Venise": "Péninsule italienne",
-    "Grande-Bretagne": "Grande-Bretagne",
+    "Grande-Bretagne": "Grande-Bretagne et colonies (Terre-Neuve)",
     "Maroc": "autre",
     "Principauté de Lampédouse": "Péninsule italienne",
     "Provinces-Unies": "Provinces-Unies",
@@ -191,18 +192,21 @@ french_shares = {}
 departure_states = set()
 for year in years_to_compare:
   french_shares[year] = {}
+obs_per_year = {}
 with open('../data/navigo_all_flows.csv', newline='') as csvfile:
     reader = DictReader(csvfile)
     for row in reader:
+        if row["source_suite"] != "la Santé registre de patentes de Marseille":
+           continue
         indate_year = row['indate_fixed'].split('-')[0]
         departure_state = row['departure_state_1789_fr']
         tonnage = float(row['tonnage'] or 0)
         flag = row['flag'] or 'unknown'
         flag_field = "tonnage_french" if flag == "French" else "tonnage_not_french"
         ship_class = row['ship_class_standardized']
-        if tonnage == 0:
-          if ship_class in tonnage_estimates:
-            tonnage = tonnage_estimates[ship_class]
+        # if tonnage == 0:
+        if ship_class in tonnage_estimates:
+          tonnage = tonnage_estimates[ship_class]
         if indate_year in years_to_compare and row["destination"] == "Marseille":
           departure_state = french_share_map[departure_state]
           # print("go for", indate_year)
@@ -212,7 +216,12 @@ with open('../data/navigo_all_flows.csv', newline='') as csvfile:
               "tonnage_french": 0,
               "tonnage_not_french": 0
             }
+          if indate_year not in obs_per_year:
+             obs_per_year[indate_year] = 0
+          obs_per_year[indate_year] += 1
           french_shares[indate_year][departure_state][flag_field] += tonnage
+for year, count in obs_per_year.items():
+   print(year, " : ", count, " flows")
 
 french_shares_arr = []
 for year in years_to_compare:

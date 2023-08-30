@@ -190,10 +190,12 @@ local_departures = {}
 directions_for_compte_rendu = {}
 ports_without_ferme = set()
 brits = set()
+nb_marseille = 0
 with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
-        departure_year = row['outdate_fixed'].split('-')[0]
+        departure_year = row['date_fixed'].split('-')[0]
+        # departure_year = row['outdate_fixed'].split('-')[0]
         # international 1789 Marseille
         if row["source_suite"] in accepted_sources \
           and departure_year == "1789"\
@@ -229,9 +231,10 @@ with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
           international_departures[partner]["tonnage"] += tonnage
           international_departures[partner]["nb_ships"] += 1
         # local all 1787
+          # and row["pointcall_action"] == "Out" \
         if departure_year == "1787"\
           and row["state_fr"] == "France" \
-          and row["pointcall_action"] == "Out" \
+          and row["pointcall_function"] == "O" \
         :
           locality = row["toponyme_fr"]
           # locality = row["ferme_direction"]
@@ -240,8 +243,15 @@ with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
           # if locality == "":
           #    ports_without_ferme.add(row["toponyme_fr"])
           #    continue
+          
           tonnage = row["tonnage"]
           tonnage = int(float(tonnage or 0))
+          if locality == "Marseille":
+             nb_marseille += 1
+             print("Marseille")
+             ship_class = row["ship_class_standardized"]
+             if ship_class in tonnages_estimate:
+                tonnage = tonnages_estimate[ship_class]
           if locality not in local_departures:
              local_departures[locality] = {
                 "partner": partner,
@@ -255,6 +265,10 @@ with open('../data/navigo_all_pointcalls.csv', newline='') as csvfile:
           local_departures[locality]["nb_ships"] += 1
           if row["toponyme_fr"] in ports_names_compte_rendus_conges:
             directions_for_compte_rendu[row["toponyme_fr"]] = locality
+
+print(local_departures["Marseille"])
+print("nb marseille", str(nb_marseille))
+
 for p in international_departures.keys():
    international_departures[p]["mean_tonnage"] = international_departures[p]["tonnage"] / international_departures[p]["nb_ships"]
 for p in local_departures.keys():
