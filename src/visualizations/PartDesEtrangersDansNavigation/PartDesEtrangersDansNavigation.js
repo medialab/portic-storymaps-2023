@@ -34,7 +34,7 @@ const flagToNationality = {
   'Swedish': 'suédois',
 }
 
-const italians = ['Genoese', 'Venitian', 'Tuscan', 'Neapolitan', 'Carrara', 'Ragusan', 'Roman'];
+const italians = ['Genoese', 'Savoyard', 'Venitian', 'Tuscan', 'Neapolitan', 'Carrara', 'Roman'];
 
 export default function PartDesEtrangersDansNavigation({
   data: inputData,
@@ -61,7 +61,7 @@ export default function PartDesEtrangersDansNavigation({
         let label = item.label;
         let flag = item.flag;
         if (italians.includes(item.flag)) {
-          label = 'napolitains, gênois, ragusois, vénitiens, toscans, carrarais, romains';
+          label = 'napolitains, gênois, vénitiens, toscans, carrarais, romains, savoyards';
           flag = 'italians';
         }
         if (res[label]) {
