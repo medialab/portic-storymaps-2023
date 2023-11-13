@@ -28,7 +28,7 @@ const Intro = ({
   const [topPortsNumber, setTopPortsNumber] = useState(+initialTopPorts);
 
   useEffect(() => {
-    setTopPortsNumber(initialTopPorts)
+    setTopPortsNumber(initialTopPorts);
   }, [initialTopPorts])
 
   useEffect(() => {
@@ -80,6 +80,10 @@ const Intro = ({
       }
     }
   }, [data, mode, dataType, dataScope, topPortsNumber]);
+
+  useEffect(() => {
+    ReactTooltip.rebuild();
+  }, [visibleData])
 
   const maxTriangleWidth = width * 0.05;
   const minTriangleWidth = 5;

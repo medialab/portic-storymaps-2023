@@ -127,9 +127,9 @@ const PartnersObjects = ({
           }
         } else {
           if (dataScope === 'world') {
-            tooltipText = `En 1789, ${formatNumber(parseInt(navigo_nb_ships))} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
+            tooltipText = `${formatNumber(parseInt(navigo_nb_ships))} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
           } else {
-            tooltipText = `En 1787, ${formatNumber(parseInt(navigo_nb_ships))} voyages ont été effectués depuis le port de ${partner} en 1787, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
+            tooltipText = `${formatNumber(parseInt(navigo_nb_ships))} voyages ont été effectués depuis le port de ${partner} en 1787, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
           }
         }
         return (
