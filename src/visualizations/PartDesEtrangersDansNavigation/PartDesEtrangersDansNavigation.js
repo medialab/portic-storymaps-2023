@@ -170,7 +170,7 @@ export default function PartDesEtrangersDansNavigation({
                       key={port}
                       transform={`translate(${x}, 0)`}
                       data-for={'part-etrangers-tooltip'}
-                      data-tip={`En 1787, ${(share_of_strangers * 100).toFixed(2)}% du tonnage cumulé des navires partis du port de ${port} étaient de pavillon étranger.`}
+                      data-tip={`En 1787, ${(share_of_strangers * 100).toFixed(2)}% du tonnage cumulé des navires partis du port de ${port} avaient un pavillon étranger.`}
                     >
                       <rect
                         x={0}

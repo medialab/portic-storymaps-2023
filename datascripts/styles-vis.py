@@ -101,7 +101,7 @@ for row in ranks_smaller_than_Marseille:
         if row["travel_rank"] == "1":
             travel["tonnage"] = tonnages_estimate[row["ship_class_standardized"]] if row["ship_class_standardized"] in tonnages_estimate else 0
             travel["departure_date"] = row["departure_out_date"]
-            travel["departure"] = row["departure"]
+            travel["departure"] = row["departure_fr"]
             travel["departure_latitude"] = row["departure_latitude"]
             travel["departure_longitude"] = row["departure_longitude"]
             travel["departure_state"] = row["departure_state_1789_fr"]
