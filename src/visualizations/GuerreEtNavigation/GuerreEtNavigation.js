@@ -44,7 +44,7 @@ export default function GuerreEtNavigation ({
       <WarTransferChart
         {
           ...{
-            title: atlasMode ? 'Le personnel de navigation à destination de Marseille (en tonnage estimé)' : undefined,
+            title: atlasMode ? 'Les acteurs de la navigation à destination de Marseille (en tonnage estimé)' : undefined,
             width,
             height,
             data,

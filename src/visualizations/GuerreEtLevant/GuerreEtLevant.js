@@ -47,7 +47,7 @@ export default function GuerreEtLevant ({
       <WarTransferChart
         {
           ...{
-            title: atlasMode ? 'Le personnel de navigation à destination de Marseille depuis le Levant' : undefined,
+            title: atlasMode ? 'Les acteurs de la navigation à destination de Marseille depuis le Levant' : undefined,
             width,
             height,
             data,

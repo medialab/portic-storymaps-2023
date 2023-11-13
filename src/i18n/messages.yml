@@ -68,9 +68,15 @@ viz-1-A:
   regressionTitle:
     fr: "Croissance : ${slope}%/an"
     en: "Dynamics: ${slope}%/year"
-  barTooltip:
+  barTooltipExports:
     fr: En <strong>${year}</strong> ${pct}% des biens exportés depuis la France le sont à partir de <strong>${city}</strong>.
     en: In <strong>${year}</strong> ${pct}% of exported goods from France were exported from <strong>${city}</strong>.
+  barTooltipImports:
+    fr: En <strong>${year}</strong> ${pct}% des biens importés depuis la France le sont à partir de <strong>${city}</strong>.
+    en: In <strong>${year}</strong> ${pct}% of imported goods from France were exported from <strong>${city}</strong>.
+  barTooltipTotal:
+    fr: En <strong>${year}</strong> ${pct}% des biens échangés avec la France le sont à partir de <strong>${city}</strong>.
+    en: In <strong>${year}</strong> ${pct}% of exchanged goods with France were exported from <strong>${city}</strong>.
   productTooltip:
     fr: En <strong>${year}</strong> les produits de la classe \"${product}\" représentent <strong>${pct}%</strong> de la valeur des biens exportés par la direction des fermes de La Rochelle.
     en: In <strong>${year}</strong> products classed as \"${product}\" represent ${pct}% of goods exported by La Rochelles direction des fermes.

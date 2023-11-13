@@ -7,6 +7,7 @@ import { fixSvgDimension } from "../../utils/misc";
 import translate from "../../utils/translate";
 import { useEffect, useState } from "react";
 import { omit } from "lodash";
+import ReactTooltip from "react-tooltip";
 
 /**
  * Configurable wrapper for main viz #1
@@ -41,12 +42,22 @@ const TradeDynamicsChart = (props) => {
   const [kind, setKind] = useState(originalKind);
 
   useEffect(() => setRows(originalRows), [originalRows, setRows]);
-  useEffect(() => setKind(originalKind), [originalKind, setKind]);
+  useEffect(() => {
+    setKind(originalKind);
+    ReactTooltip.rebuild();
+  }, [originalKind, setKind]);
 
   let height = fixSvgDimension(containerHeight);
   const selectorsHeight = height * 0.1;
   if (atlasMode) height = height - selectorsHeight;
   const width = fixSvgDimension(inputWidth);
+
+  let tooltipMessageKey = "barTooltipTotal";
+  if (kind.includes('import')) {
+    tooltipMessageKey = "barTooltipImports";
+  } else if (kind.includes('export')) {
+    tooltipMessageKey = "barTooltipExports";
+  }
 
   const messages = {
     franceOverviewTitle: (start, end, kind, slope) =>
@@ -79,7 +90,7 @@ const TradeDynamicsChart = (props) => {
     // herfindal0: () => translate("viz-1-A", "herfindal0", lang),
     // herfindal1: () => translate("viz-1-A", "herfindal1", lang),
     barTooltip: (year, pct, city, herfindal) =>
-      translate("viz-1-A", "barTooltip", lang, {
+      translate("viz-1-A", tooltipMessageKey, lang, {
         year: year,
         pct: pct,
         city: city,
