@@ -719,8 +719,9 @@ export default function GuerreEtCroissance({
               y={topLabelsHeight - 10}
               width={sideWidth * 1.5}
               height={height}
+              style={{pointerEvents: 'none'}}
             >
-              <div className="controls-container">
+              <div className="controls-container" style={{pointerEvents: 'all'}}>
                 <button
                   className={`btn ${controlsVisible ? 'is-active' : ''}`}
                   onClick={() => setControlsVisible(!controlsVisible)}
