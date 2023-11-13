@@ -1,425 +1,422 @@
 port,latitude,longitude,category,count
-Luan,44.133333,8.25,méditerranée occidentale,125
-Bonne,36.9,7.766667,empire ottoman,101
-La Pietra,44.15,8.283333,méditerranée occidentale,111
+Loano,44.133333,8.25,méditerranée occidentale,125
+Bône / Annaba,36.9,7.766667,empire ottoman,101
+La Pria / Pietra Ligure,44.15,8.283333,méditerranée occidentale,111
 Cadix,36.526274,-6.2887,méditerranée occidentale,70
-Alicant,38.349909,-0.483427,méditerranée occidentale,104
-Cale,36.895556,8.443333,empire ottoman,84
-Smirne,38.4103750184273,27.1420102471873,empire ottoman,188
+Alicante,38.349909,-0.483427,méditerranée occidentale,104
+La Calle,36.895556,8.443333,empire ottoman,84
+Smyrne,38.4103750184273,27.1420102471873,empire ottoman,188
 Bastia,42.702778,9.45,méditerranée occidentale,66
 Agde,43.316667,3.466667,méditerranée occidentale,272
-Georgenti,37.316667,13.566667,méditerranée occidentale,43
-Gerbis,33.8,10.9,empire ottoman,4
-Catagne en Sicile,37.5,15.1,méditerranée occidentale,28
-Carthagene,37.6,-0.983333,méditerranée occidentale,111
-Sette,43.4,3.683333,méditerranée occidentale,250
-Saint Faliou,41.781553,3.028657,méditerranée occidentale,74
-Les Aigles,37.4,-1.583333,méditerranée occidentale,38
+Agrigente,37.316667,13.566667,méditerranée occidentale,43
+Djerba,33.8,10.9,empire ottoman,4
+Catane,37.5,15.1,méditerranée occidentale,28
+Carthagène,37.6,-0.983333,méditerranée occidentale,111
+Sète,43.4,3.683333,méditerranée occidentale,250
+Sant Feliu de Guíxols,41.781553,3.028657,méditerranée occidentale,74
+Águilas,37.4,-1.583333,méditerranée occidentale,38
 Tunis,36.802778,10.179722,empire ottoman,124
-Porte Tourre en Sardaigne,40.835,8.397222,méditerranée occidentale,14
+Porto Torres,40.835,8.397222,méditerranée occidentale,14
 Martigues,43.4,5.05,méditerranée occidentale,210
-Civitavechia,42.1,11.8,méditerranée occidentale,73
-Marsalla,37.8,12.433333,méditerranée occidentale,4
-Cap Rouge en Terreneuve,50.916667,-55.866667,Ponant,3
+Civitavecchia,42.1,11.8,méditerranée occidentale,73
+Marsala,37.8,12.433333,méditerranée occidentale,4
+cap Rouge,50.916667,-55.866667,Ponant,3
 Trieste,45.648611,13.78,Ponant,46
 Constantinople,41.018611,28.964722,empire ottoman,41
 Cassis,43.216667,5.533333,méditerranée occidentale,81
-Havre de Paquet (Terre neuve),50,-55.866667,Ponant,1
-Baye du Griguet en Terreneuve,51.520649, -55.461824,Ponant,1
-Corron,36.8,21.95,empire ottoman,31
+Pacquet,50,-55.866667,Ponant,1
+Les Griquets,51.520649, -55.461824,Ponant,1
+Coron,36.8,21.95,empire ottoman,31
 Sfax,34.740556,10.760278,empire ottoman,11
 Mahon,39.883333,4.25,méditerranée occidentale,51
-Ile Rousse en Sardaigne,38.916667,8.716667,méditerranée occidentale,9
+Isola Rossa,38.916667,8.716667,méditerranée occidentale,9
 Messine,38.183333,15.566667,méditerranée occidentale,39
 Alger,36.763056,3.050556,empire ottoman,54
 Nice,43.697126,7.275338,méditerranée occidentale,401
 Cannes,43.554919, 6.996996,méditerranée occidentale,140
-Ancone,43.633333,13.5,méditerranée occidentale,44
-Arnaca en Chipres [Larnaca],34.916667,33.629167,empire ottoman,2
-Mogador,31.51,-9.76,méditerranée occidentale,7
-Port Maurice,43.866667,8.016667,méditerranée occidentale,86
-Terreneuve en Sicile,37.071993, 14.229377,méditerranée occidentale,24
+Ancône,43.633333,13.5,méditerranée occidentale,44
+Larnaca,34.916667,33.629167,empire ottoman,2
+Mogador / Essaouira,31.51,-9.76,méditerranée occidentale,7
+Porto Maurizio,43.866667,8.016667,méditerranée occidentale,86
+Terreneuve de Sicile / Gela,37.071993, 14.229377,méditerranée occidentale,24
 Acre,32.923611,35.072778,empire ottoman,31
-Ponte di Goro,44.852222,12.304167,méditerranée occidentale,16
+Goro,44.852222,12.304167,méditerranée occidentale,16
 Salonique,40.640278,22.943889,empire ottoman,59
-Zoigli,44.333333,9.266667,méditerranée occidentale,12
-Joye en Calabre,38.416667,15.9,méditerranée occidentale,9
+Zoagli,44.333333,9.266667,méditerranée occidentale,12
+Gioia,38.416667,15.9,méditerranée occidentale,9
 Portsmouth,50.766667,-1.083333,Ponant,6
-Bergen,60.391111,5.324722,Ponant,1
-Araisse,44.002817,8.167377,méditerranée occidentale,41
-Sarzana dans le golfe de l' especia [la Spezia],44.116667,9.966667,méditerranée occidentale,2
-Jaffe,32.033333,34.75,empire ottoman,2
-Canet,42.705814,3.007307,méditerranée occidentale,4
-Isles de Saint Pierre,39.141944,8.271111,méditerranée occidentale,16
-Maiori,40.65,14.633333,méditerranée occidentale,2
+Bergue,60.391111,5.324722,Ponant,1
+Alassio,44.002817,8.167377,méditerranée occidentale,41
+Sarzana,44.116667,9.966667,méditerranée occidentale,2
+Jaffa,32.033333,34.75,empire ottoman,2
+Le Canet,42.705814,3.007307,méditerranée occidentale,4
+îles  de Saint-Pierre,39.141944,8.271111,méditerranée occidentale,16
+,40.65,14.633333,méditerranée occidentale,7
 Gibraltar,36.133333,-5.35,Ponant,3
 Malte,35.899722,14.514722,méditerranée occidentale,50
-Genes,44.416667,8.95,méditerranée occidentale,291
-Bouc,43.4,4.983333,méditerranée occidentale,5
+Gênes,44.416667,8.95,méditerranée occidentale,291
+Port-de-Bouc,43.4,4.983333,méditerranée occidentale,5
 Sousse,35.825556,10.641111,empire ottoman,12
-Cagliary,39.216667,9.116667,méditerranée occidentale,70
+Cagliari,39.216667,9.116667,méditerranée occidentale,70
 Oneille,43.883333,8.033333,méditerranée occidentale,33
 Patras,38.244444,21.734444,empire ottoman,22
 Palerme,38.116667,13.366667,méditerranée occidentale,26
-Retimo en Candie,35.364722,24.471389,empire ottoman,5
+Réthymnon,35.364722,24.471389,empire ottoman,5
 Livourne,43.55,10.316667,méditerranée occidentale,213
-Morée,38.25,21.5,empire ottoman,10
+Golfe de Patras,38.25,21.5,empire ottoman,10
 Newcastle,54.988056,-1.619444,Ponant,2
-Ciotat,43.166667,5.6,méditerranée occidentale,178
+La Ciotat,43.166667,5.6,méditerranée occidentale,178
 Savone,44.283333,8.5,méditerranée occidentale,168
-Mayorque,39.566667,2.65,méditerranée occidentale,66
+Majorque,39.566667,2.65,méditerranée occidentale,66
 La Canée,35.512222,24.015556,empire ottoman,34
-Palme en Sicile,37.183333,13.766667,méditerranée occidentale,10
+Palma [di Montechiaro],37.183333,13.766667,méditerranée occidentale,10
 Amsterdam,52.35,4.916667,Ponant,16
 Salerne,40.683333,14.783333,méditerranée occidentale,6
 Hull,53.716667,-0.333333,Ponant,4
-Loret en Catalogne,41.700753, 2.839579,méditerranée occidentale,25
+Lloret,41.700753, 2.839579,méditerranée occidentale,25
 Naples,40.833333,14.25,méditerranée occidentale,68
 Tortose,40.81125,0.521135,méditerranée occidentale,68
-Catacolo,37.65,21.333333,empire ottoman,1
-Navarin,36.915039,21.695881,empire ottoman,9
+Katákolo,37.65,21.333333,empire ottoman,1
+Navarin / Pylos,36.915039,21.695881,empire ottoman,9
 Yarmouth,50.7,-1.5,Ponant,7
-Alexandrie,31.198056,29.919167,empire ottoman,71
+Alexandrie d'Egypte,31.198056,29.919167,empire ottoman,71
 Rotterdam,51.916667,4.5,Ponant,9
-Talamon,42.55,11.133333,méditerranée occidentale,3
-Alexandrete,36.581667,36.165,empire ottoman,29
-Modon,36.818492,21.705287,empire ottoman,5
-Naples de Romanie,37.563611,22.8075,empire ottoman,11
-Bingazy [Bengazi],32.116667,20.066667,empire ottoman,1
-Terre Neuve,49,-56,Ponant,2
-Tripoly de Barbarie,32.8925,13.18,empire ottoman,7
-Taormini en Sicile,37.85,15.283333,méditerranée occidentale,2
-Nord [Petit Nord de Terre-Neuve], 50.809788, -56.599812,Ponant,4
-Saint Laurent [de la Salanque],42.766667,2.983333,méditerranée occidentale,10
-Barcelonne,41.38822,2.169399,méditerranée occidentale,85
-Tossa en Catalogne,41.716736, 2.933404,méditerranée occidentale,22
-Enos,40.724722,26.0825,empire ottoman,25
-Arzeon,35.851667,-0.321389,empire ottoman,9
-Bizerti,37.274444,9.873889,empire ottoman,12
-Baruth,33.871944,35.509722,empire ottoman,1
-Brusq,43.066667,5.8,méditerranée occidentale,5
-Ipsera,38.533333,25.566667,empire ottoman,1
+Talamone,42.55,11.133333,méditerranée occidentale,3
+Alexandrette,36.581667,36.165,empire ottoman,29
+Modon / Méthoni,36.818492,21.705287,empire ottoman,5
+Naples de Romanie / Nauplie,37.563611,22.8075,empire ottoman,11
+Benghazi,32.116667,20.066667,empire ottoman,1
+"Terre-Neuve, île de",49,-56,Ponant,2
+Tripoli de Barbarie,32.8925,13.18,empire ottoman,7
+Taormine,37.85,15.283333,méditerranée occidentale,2
+Petit Nord de Terre-Neuve, 50.809788, -56.599812,Ponant,4
+Saint-Laurent-de-la-Salanque,42.766667,2.983333,méditerranée occidentale,10
+Barcelone,41.38822,2.169399,méditerranée occidentale,85
+Tossa,41.716736, 2.933404,méditerranée occidentale,22
+Enos / Enez,40.724722,26.0825,empire ottoman,25
+Arzew,35.851667,-0.321389,empire ottoman,9
+Bizerte,37.274444,9.873889,empire ottoman,12
+Beyrouth,33.871944,35.509722,empire ottoman,1
+Le Brusc,43.066667,5.8,méditerranée occidentale,5
+Ipsara,38.533333,25.566667,empire ottoman,1
 Brest,48.4,-4.483333,Ponant,3
-Larta,39.7,3.35,méditerranée occidentale,3
+Artá,39.7,3.35,méditerranée occidentale,3
 Damiette,31.419444,31.815,empire ottoman,10
 Arles,43.678359, 4.628813,méditerranée occidentale,530
 Bandol,43.133333,5.75,méditerranée occidentale,224
-Eleos,36.75,22.8,empire ottoman,4
-Isle Sainte Marie Trinité dans la Pouille,42.116667,15.516667,méditerranée occidentale,1
+Eléa,36.75,22.8,empire ottoman,4
+Ile de San Nicola,42.116667,15.516667,méditerranée occidentale,1
 Tarente,40.476111,17.229722,méditerranée occidentale,14
-Port Olivier,39.1,26.466667,empire ottoman,3
-Pont l' Abbé,47.865615,-4.220667,Ponant,1
-Blanes en Catalogne,41.676116, 2.789330,méditerranée occidentale,13
-Saint Nazaire [Sanary],43.116667,5.8,méditerranée occidentale,80
+Port Olivier / Port Iéro,39.1,26.466667,empire ottoman,3
+Pont-l'Abbé,47.865615,-4.220667,Ponant,1
+Blanes,41.676116, 2.789330,méditerranée occidentale,13
+Saint-Nazaire / Sanary-sur-Mer,43.116667,5.8,méditerranée occidentale,80
 Vilassar,41.503549, 2.390861,méditerranée occidentale,40
 Marseille,43.3,5.4,méditerranée occidentale,6
 Toulon,43.116667,5.933333,méditerranée occidentale,387
-Almazaron,37.59832,-1.314096,méditerranée occidentale,26
+Mazarrón,37.59832,-1.314096,méditerranée occidentale,26
 Malaga,36.726956,-4.425802,méditerranée occidentale,43
 Nantes,47.216667,-1.55,Ponant,7
 Le Havre,49.5,0.133333,Ponant,8
-Escalea en Catalogne,42.109674, 3.142839,méditerranée occidentale,16
-Ile Rousse en Corse,42.633333,8.933333,méditerranée occidentale,39
+La Escala,42.109674, 3.142839,méditerranée occidentale,16
+île Rousse (Corse),42.633333,8.933333,méditerranée occidentale,39
 Narbonne,43.183333,3,méditerranée occidentale,104
-Port Vendres,42.516667,3.116667,méditerranée occidentale,11
+Port-Vendres,42.516667,3.116667,méditerranée occidentale,11
 Fréjus,43.433333,6.733333,méditerranée occidentale,76
 Lorient,47.75,-3.366667,Ponant,6
-Colo,37.005833,6.5725,empire ottoman,3
-Castigliona,42.766667,10.883333,méditerranée occidentale,1
-Oczakou dans la Mer Noire,46.616667,31.55,Ponant,1
-Athenes,37.983333,23.733333,empire ottoman,8
-Castellamar,40.7,14.483333,méditerranée occidentale,45
-Terrassino en Romagne,41.283333,13.25,méditerranée occidentale,8
-Vietry dans le royaume de Naples,40.666667,14.733333,méditerranée occidentale,3
-Cotron,39.083333,17.133333,méditerranée occidentale,4
+Collo,37.005833,6.5725,empire ottoman,3
+Castiglione della Pescaia,42.766667,10.883333,méditerranée occidentale,1
+Ochakiv,46.616667,31.55,Ponant,1
+Athènes,37.983333,23.733333,empire ottoman,8
+Castellammare,40.7,14.483333,méditerranée occidentale,45
+Terracine,41.283333,13.25,méditerranée occidentale,8
+Vietri,40.666667,14.733333,méditerranée occidentale,3
+Crotone,39.083333,17.133333,méditerranée occidentale,4
 Otrante,40.15,18.5,méditerranée occidentale,5
-Galipoly,40.055556,17.976389,méditerranée occidentale,8
-Barletta en Pouille,41.316667,16.283333,méditerranée occidentale,4
-Brindisy,40.633333,17.933333,méditerranée occidentale,1
+Gallipoli,40.055556,17.976389,méditerranée occidentale,8
+Barletta,41.316667,16.283333,méditerranée occidentale,4
+Brindisi,40.633333,17.933333,méditerranée occidentale,1
 Manfredonia,41.633333,15.916667,méditerranée occidentale,11
-Mirabeau en l' Isle de Candie,35.233333,25.783333,empire ottoman,1
-Golfe de Monte Santo dans l' archipel,40.2,23.933333,empire ottoman,1
-Sude,35.484444,24.074444,empire ottoman,5
-Tripoli en Levant,34.436667,35.849722,empire ottoman,8
-Chipres,35,33,empire ottoman,2
+Mirabello,35.233333,25.783333,empire ottoman,1
+Golfe de Monte-Santo / golfe Singitique,40.2,23.933333,empire ottoman,1
+Souda,35.484444,24.074444,empire ottoman,5
+Tripoli de Syrie,34.436667,35.849722,empire ottoman,8
+Chypre,35,33,empire ottoman,2
 Embouchure du Danube,45.5,29.416667,empire ottoman,2
-Hoggia Dei dans la Mer Noire et dans la partie ottomane,46.483738,30.730705,empire ottoman,1
-Tagano dans la mer d' Azof,47.2273035475915,38.8908034936437,Ponant,1
-Kerson,46.633333,32.6,Ponant,13
-Canal de Negrepont,38.566422,23.455582,empire ottoman,1
-Bourdiguiere,43.766667,7.65,méditerranée occidentale,25
-Sallone dans le golfe de Patras,38.525,22.373056,empire ottoman,1
-Pescara dans le royaume de Naples,42.466667,14.216667,méditerranée occidentale,2
+Odessa,46.483738,30.730705,empire ottoman,1
+Taganrog,47.2273035475915,38.8908034936437,Ponant,1
+Kherson,46.633333,32.6,Ponant,13
+Canal de Négrepont / canal de l'Euripe,38.566422,23.455582,empire ottoman,1
+Bordighera,43.766667,7.65,méditerranée occidentale,25
+Salone /Amphissa,38.525,22.373056,empire ottoman,1
+Pescara,42.466667,14.216667,méditerranée occidentale,2
 Rochefort,45.943666,-0.97043,Ponant,1
-Satalie,36.9125,30.689722,empire ottoman,4
+Satalia,36.9125,30.689722,empire ottoman,4
 Valence,39.472934,-0.376396,méditerranée occidentale,31
-L' Escuillete en Sicile,36.883333,14.433333,méditerranée occidentale,12
-Caiffe,32.815556,34.989167,empire ottoman,3
+Scoglitti,36.883333,14.433333,méditerranée occidentale,12
+Caïffe / Haïfa,32.815556,34.989167,empire ottoman,3
 Menton,43.783333,7.5,méditerranée occidentale,93
-Cavale,40.939722,24.401944,empire ottoman,2
-Porte Farine,37.166667,10.183333,empire ottoman,10
-Larguier en Sardaigne,40.558889,8.318056,méditerranée occidentale,10
+Kavala,40.939722,24.401944,empire ottoman,2
+Porto Farina / Ghar el-Melh,37.166667,10.183333,empire ottoman,10
+Alghero,40.558889,8.318056,méditerranée occidentale,10
 Antibes,43.583333,7.116667,méditerranée occidentale,55
 Villefranche,43.7,7.316667,méditerranée occidentale,28
-Saint Reme,43.816667,7.766667,méditerranée occidentale,106
-Sulino embouchure du Danube dans la mer Noire,45.15,29.666667,empire ottoman,1
+San Remo,43.816667,7.766667,méditerranée occidentale,106
+Sulina,45.15,29.666667,empire ottoman,1
 Honfleur,49.420164,0.231886,Ponant,1
-Hières,43.08613645952041,6.150292341697001,méditerranée occidentale,6
-Final,44.166667,8.333333,méditerranée occidentale,28
-Aigues Mortes,43.566667,4.183333,méditerranée occidentale,24
-Saint Tropez,43.266667,6.633333,méditerranée occidentale,19
+Hyères,43.08613645952041,6.150292341697001,méditerranée occidentale,6
+Finale,44.166667,8.333333,méditerranée occidentale,28
+Aigues-Mortes,43.566667,4.183333,méditerranée occidentale,24
+Saint-Tropez,43.266667,6.633333,méditerranée occidentale,19
 Rouen,49.433333,1.083333,Ponant,4
-Plages du Roussillon,42.691521,3.048477,méditerranée occidentale,1
-Sandarly,38.937778,26.932778,empire ottoman,1
-Golfe de Larta,39,21,empire ottoman,3
+plages du Roussillon,42.691521,3.048477,méditerranée occidentale,1
+Sandarli,38.937778,26.932778,empire ottoman,1
+Golfe d'Arta / Golfe Ambracique,39,21,empire ottoman,3
 Montalto,42.351452, 11.606691,méditerranée occidentale,26
 Ajaccio,41.918584,8.736863,méditerranée occidentale,69
-Villarico,37.25,-1.766667,méditerranée occidentale,2
+Villaricos,37.25,-1.766667,méditerranée occidentale,2
 Safi,32.3,-9.23,méditerranée occidentale,16
 Corfou,39.666667,19.75,méditerranée occidentale,1
 Venise,45.438611,12.326667,méditerranée occidentale,11
-Escalea en Calabre,39.816667,15.783333,méditerranée occidentale,6
-Denia,38.85,0.116667,méditerranée occidentale,5
-Golfe de Volo,39.25,23,empire ottoman,1
-Silla en Calabre,38.25,15.716667,méditerranée occidentale,8
-Carrara,44.033333,10.033333,méditerranée occidentale,8
-Tossa en Sicile,37.983333,14.233333,méditerranée occidentale,3
-Volo,39.366667,22.945833,empire ottoman,1
-Topsom [Topsham],50.683333,-3.45,Ponant,1
-Sainte Eufemie en Calabre,38.916667,16.25,méditerranée occidentale,3
+Scalea,39.816667,15.783333,méditerranée occidentale,6
+Dénia,38.85,0.116667,méditerranée occidentale,5
+Golfe de Vólos,39.25,23,empire ottoman,1
+Scilla,38.25,15.716667,méditerranée occidentale,8
+Carrare,44.033333,10.033333,méditerranée occidentale,8
+Tusa,37.983333,14.233333,méditerranée occidentale,3
+Vólos,39.366667,22.945833,empire ottoman,1
+Topsham,50.683333,-3.45,Ponant,1
+Sainte-Euphémie,38.916667,16.25,méditerranée occidentale,3
 Calella,41.616667,2.666667,méditerranée occidentale,6
 Dian,43.9,8.083333,méditerranée occidentale,20
-Chiagi,38.198889,26.840833,empire ottoman,2
-Monopoly,40.95,17.3,méditerranée occidentale,5
-Terminy en Sicile,37.983333,13.7,méditerranée occidentale,10
-Amadea [Amantea],39.133333,16.066667,méditerranée occidentale,2
-Sainte Maxime,43.3,6.633333,méditerranée occidentale,7
-Larma,43.833333,7.85,méditerranée occidentale,3
+Siagi / Sığacık,38.198889,26.840833,empire ottoman,2
+Monopoli,40.95,17.3,méditerranée occidentale,5
+Termini,37.983333,13.7,méditerranée occidentale,10
+Amantea,39.133333,16.066667,méditerranée occidentale,2
+Sainte-Maxime,43.3,6.633333,méditerranée occidentale,7
+Arma di Taggia,43.833333,7.85,méditerranée occidentale,3
 Bagur,41.953663, 3.202570,méditerranée occidentale,18
 Stockholm,59.333333,18.05,Ponant,11
 Lisbonne,38.716667,-9.133333,Ponant,5
-Port Fornelly Ile de Mahon,40.057402, 4.132451,méditerranée occidentale,1
-Candie,35.325,25.130556,empire ottoman,1
-Saint Florent en Corse,42.683333,9.3,méditerranée occidentale,21
+Fornells,40.057402, 4.132451,méditerranée occidentale,1
+Candie / Crète,35.325,25.130556,empire ottoman,1
+Saint-Florent,42.683333,9.3,méditerranée occidentale,21
 Dunkerque,51.05,2.366667,Ponant,6
-Sfax de Tortose,40.766667,0.75,méditerranée occidentale,11
-Metelin,37.728611,26.908333,empire ottoman,4
-Premia en Catalogne,41.494412,2.358065,méditerranée occidentale,1
-Clarence dans le Golfe de Patras,37.933333,21.15,empire ottoman,3
-Pizzo en Calabre,38.733333,16.166667,méditerranée occidentale,2
+Fondeadero del Fangar,40.766667,0.75,méditerranée occidentale,11
+Mitilinii,37.728611,26.908333,empire ottoman,4
+Premià de Mar,41.494412,2.358065,méditerranée occidentale,1
+Clarence / Glarentza,37.933333,21.15,empire ottoman,3
+Pizzo,38.733333,16.166667,méditerranée occidentale,2
 Vintimille,43.783333,7.6,méditerranée occidentale,6
-Corneto,42.254114, 11.757619,méditerranée occidentale,14
-Vineros,40.466667,0.483333,méditerranée occidentale,13
+Corneto / Tarquinia,42.254114, 11.757619,méditerranée occidentale,14
+Vinaròs,40.466667,0.483333,méditerranée occidentale,13
 Quimper,47.996619,-4.099817,Ponant,1
-Mataron,41.538502, 2.443720,méditerranée occidentale,8
-Sassary,40.727222,8.560278,méditerranée occidentale,6
-Cadequies, 42.288445, 3.275721,méditerranée occidentale,10
-Languille,43.966667,8.15,méditerranée occidentale,7
+Mataró,41.538502, 2.443720,méditerranée occidentale,8
+Sassari,40.727222,8.560278,méditerranée occidentale,6
+Cadaqués, 42.288445, 3.275721,méditerranée occidentale,10
+Laigueglia,43.966667,8.15,méditerranée occidentale,7
 Procida,40.766667,14.033333,méditerranée occidentale,1
-Sainte Marguerite,44.333333,9.2,méditerranée occidentale,3
-Castellabato en Calabre,40.283333,14.95,méditerranée occidentale,1
-Port Louis,47.708064,-3.355494,Ponant,2
+Santa Margherita,44.333333,9.2,méditerranée occidentale,3
+Castellabate,40.283333,14.95,méditerranée occidentale,1
+Port-Louis,47.708064,-3.355494,Ponant,2
 Capraia,43.05,9.833333,méditerranée occidentale,1
 Cassano,39.783333,16.316667,méditerranée occidentale,1
-Cap Stillo en Calabre,38.45,16.583333,méditerranée occidentale,1
-Almeria,36.833333,-2.45,méditerranée occidentale,26
+Cap Stilo,38.45,16.583333,méditerranée occidentale,1
+Almérie,36.833333,-2.45,méditerranée occidentale,26
 Hambourg,53.55,10,Ponant,6
-Palamos,41.850439, 3.129803,méditerranée occidentale,45
-Boulogne sur Mer,50.716667,1.616667,Ponant,1
-Trany en Pouille,41.283333,16.416667,méditerranée occidentale,4
-Bagnara en Calabre,38.283333,15.8,méditerranée occidentale,3
-Seyne,43.1,5.883333,méditerranée occidentale,9
+Palamós,41.850439, 3.129803,méditerranée occidentale,45
+Boulogne-sur-Mer,50.716667,1.616667,Ponant,1
+Trani,41.283333,16.416667,méditerranée occidentale,4
+Bagnara,38.283333,15.8,méditerranée occidentale,3
+La Seyne,43.1,5.883333,méditerranée occidentale,9
 Collioure,42.524957,3.082595,méditerranée occidentale,4
-La Riva en rivière de Genes,43.833333,7.883333,méditerranée occidentale,6
-Alicate en Sicile,37.1,13.933333,méditerranée occidentale,36
-Galipoly dans le royaume de Tunis [La Galipia,36.85,11.1,empire ottoman,1
+Riva,43.833333,7.883333,méditerranée occidentale,6
+Licata,37.1,13.933333,méditerranée occidentale,36
+Kélibia,36.85,11.1,empire ottoman,1
 Cavalaire,43.166667,6.533333,méditerranée occidentale,4
-Negrepont,38.5,24,empire ottoman,3
-Saint Raphael,43.416667,6.766667,méditerranée occidentale,11
-Saint Paul en Catalogne,41.601861, 2.624171,méditerranée occidentale,5
-Seville,37.38388,-5.995502,méditerranée occidentale,2
-Salau,41.066667,1.133333,méditerranée occidentale,1
-Chiavary,44.316667,9.316667,méditerranée occidentale,20
-Tines,43.361168,4.583656,méditerranée occidentale,7
-Bouche de Maigre (riviera de Genes),44.05,10,méditerranée occidentale,1
-Corigliano en Calabre,39.6,16.516667,méditerranée occidentale,1
+Négrepont,38.5,24,empire ottoman,3
+Saint-Raphaël,43.416667,6.766667,méditerranée occidentale,11
+Sant Pol,41.601861, 2.624171,méditerranée occidentale,5
+Séville,37.38388,-5.995502,méditerranée occidentale,2
+Salou,41.066667,1.133333,méditerranée occidentale,1
+Chiavari,44.316667,9.316667,méditerranée occidentale,20
+pointe de Beauduc de Tignes,43.361168,4.583656,méditerranée occidentale,7
+Bocca di Magra,44.05,10,méditerranée occidentale,1
+Corigliano Calabro,39.6,16.516667,méditerranée occidentale,1
 Altea,38.6,-0.05,méditerranée occidentale,1
-Yvice,38.908173,1.432314,méditerranée occidentale,2
-Benicarlot en Catalogne,40.412552, 0.424996,méditerranée occidentale,1
-Selve,42.333333,3.2,méditerranée occidentale,6
-Tetouan,35.57,-5.37,méditerranée occidentale,1
-Pool,53.9,-1.616667,Ponant,1
+Ibiza,38.908173,1.432314,méditerranée occidentale,2
+Benicarló,40.412552, 0.424996,méditerranée occidentale,1
+Selva de Mar,42.333333,3.2,méditerranée occidentale,6
+Tétouan,35.57,-5.37,méditerranée occidentale,1
+Poole,53.9,-1.616667,Ponant,1
 Londres,51.516667,-0.1,Ponant,30
 Southampton,50.9,-1.4,Ponant,4
 Berwick,55.783333,-2,Ponant,1
 Texel,53.083333,4.833333,Ponant,1
-Cambrill (Catalogne),41.066617, 1.060329,méditerranée occidentale,2
-Villejoyeuse,38.5,-0.233333,méditerranée occidentale,3
-Palafrugel en Catalogne,41.916667,3.166667,méditerranée occidentale,2
+Cambrils,41.066617, 1.060329,méditerranée occidentale,2
+Ville Joyeuse,38.5,-0.233333,méditerranée occidentale,3
+Palafrugell,41.916667,3.166667,méditerranée occidentale,2
 Roses,42.262667, 3.177820,méditerranée occidentale,5
-Taragone en Catalogne,41.11772,1.244144,méditerranée occidentale,2
+Tarragone,41.11772,1.244144,méditerranée occidentale,2
 Tanger,35.78,-5.81,méditerranée occidentale,1
-Douelan en Bretagne,47.770556,-3.614444,Ponant,1
-Kerpont en Terreneuve,51.6,-55.433333,Ponant,2
+Douelan,47.770556,-3.614444,Ponant,1
+île Quirpon,51.6,-55.433333,Ponant,2
 Ostende,51.216667,2.916667,Ponant,1
 Porto,41.15,-8.616667,Ponant,4
-Cap Nord,71.167778,25.8025,Ponant,1
-Saint Valéry sur Somme,50.183333,1.633333,Ponant,3
-Masnou,41.482421, 2.312770,méditerranée occidentale,2
-Frédérickstad,59.216667,10.95,Ponant,1
-Corck,51.898611,-8.495833,Ponant,7
+Nordkapp / Cap Nord),71.167778,25.8025,Ponant,1
+Saint-Valery-sur-Somme,50.183333,1.633333,Ponant,3
+El Masnou,41.482421, 2.312770,méditerranée occidentale,2
+Fredrikstad,59.216667,10.95,Ponant,1
+Cork,51.898611,-8.495833,Ponant,7
 Morlaix,48.574926,-3.826103,Ponant,1
 La Rochelle,46.166667,-1.15,Ponant,2
 Limerick,52.664722,-8.623056,Ponant,1
 Calmar,56.666667,16.366667,Ponant,2
-Plages Sainte Marie,43.453417,4.42832,méditerranée occidentale,4
+Saintes-Maries-de-la-Mer,43.453417,4.42832,méditerranée occidentale,4
 Dieppe,49.933333,1.083333,Ponant,1
 Bormes,43.15,6.333333,méditerranée occidentale,1
-Leques,43.183333,5.666667,méditerranée occidentale,4
-Loristan,39.903056,8.591944,méditerranée occidentale,21
+Le Liouquet,43.183333,5.666667,méditerranée occidentale,4
+Oristano,39.903056,8.591944,méditerranée occidentale,21
 Monaco,43.733332999999995,7.4166670000000003,méditerranée occidentale,26
-Golfe de Valinco en Corse,41.666667,8.816667,méditerranée occidentale,1
+Golfe de Valinco,41.666667,8.816667,méditerranée occidentale,1
 Exeter,50.72077,-3.533664,Ponant,5
 Chichester,50.833333,-0.783333,Ponant,3
-Carcairane,43.083333,6.083333,méditerranée occidentale,1
+Carqueiranne,43.083333,6.083333,méditerranée occidentale,1
 La Nouvelle,43.016667,3.05,méditerranée occidentale,9
-Leoube,43.121786,6.291718,méditerranée occidentale,1
-Isle de Hidre en Morée,37.347778,23.458889,empire ottoman,1
-Saint Martin de Larena [San Martín de la Arena],43.45,-4.033333,méditerranée occidentale,1
-Golfe de Palme,41.188989,9.450617,méditerranée occidentale,1
+Léoube,43.121786,6.291718,méditerranée occidentale,1
+Hydra,37.347778,23.458889,empire ottoman,1
+San Martín de la Arena,43.45,-4.033333,méditerranée occidentale,1
+Golfe de Palmas,41.188989,9.450617,méditerranée occidentale,1
 Gandie,38.969439,-0.185065,méditerranée occidentale,1
-Saint Nicolo en Calabre,38.634573,15.852213,méditerranée occidentale,11
+San Nicolò,38.634573,15.852213,méditerranée occidentale,11
 Portofino,44.3,9.2,méditerranée occidentale,2
-Saint Chamas,43.55,5.033333,méditerranée occidentale,5
+Saint-Chamas,43.55,5.033333,méditerranée occidentale,5
 Bayonne,43.483333,-1.483333,Ponant,2
 Stora,36.9,6.866667,empire ottoman,4
 Berre,43.466667,5.183333,méditerranée occidentale,2
-Ile Dodin en Calabre,39.874109,15.774121,méditerranée occidentale,10
-Cap Danso,41.45,12.633333,méditerranée occidentale,5
-Saint Vincent [en Toscane],43.1,10.533333,méditerranée occidentale,1
-Celly en rivière de Gênes,44.333333,8.55,méditerranée occidentale,1
-Leccé en Pouille,40.383333,18.183333,méditerranée occidentale,1
-Golfe de l' Especia,44.116667,9.833333,méditerranée occidentale,1
+île de Dino,39.874109,15.774121,méditerranée occidentale,10
+cap d' Anzio,41.45,12.633333,méditerranée occidentale,5
+San Vincenzo,43.1,10.533333,méditerranée occidentale,1
+Celle Ligure,44.333333,8.55,méditerranée occidentale,1
+Lecce,40.383333,18.183333,méditerranée occidentale,1
+La Spezia,44.116667,9.833333,méditerranée occidentale,1
 Falmouth,50.148333,-5.076111,Ponant,3
-Segna (Istrie imperiale),44.989444,14.905833,Ponant,4
-Bisceglia (Roy. de Naples),41.233333,16.5,méditerranée occidentale,1
-Rossano,39.566667,16.633333,méditerranée occidentale,4
-Algayola en Corse,42.608826,8.860294,méditerranée occidentale,1
-Marina di Monasterace,38.433333,16.566667,méditerranée occidentale,1
-Arbissola,44.316667,8.5,méditerranée occidentale,5
+Senj,44.989444,14.905833,Ponant,4
+Bisceglie,41.233333,16.5,méditerranée occidentale,1
+Algajola,42.608826,8.860294,méditerranée occidentale,1
+Albissola,44.316667,8.5,méditerranée occidentale,5
 Fiumicino,41.766667,12.233333,méditerranée occidentale,4
-Tropea en Calabre,38.683333,15.9,méditerranée occidentale,2
+Tropea,38.683333,15.9,méditerranée occidentale,2
 Rapallo,44.349825,9.230783,méditerranée occidentale,3
-Pouzzolo,40.816667,14.116667,méditerranée occidentale,4
-Olivery en Sicile,38.116667,15.05,méditerranée occidentale,4
+Pozzuoli,40.816667,14.116667,méditerranée occidentale,4
+Oliveri,38.116667,15.05,méditerranée occidentale,4
 Saint Etienne,43.833333,7.9,méditerranée occidentale,5
 Albenga,44.05,8.216667,méditerranée occidentale,1
-Saint Vito en Pouille,42.29658,14.444954,méditerranée occidentale,1
-Viareggy,43.866667,10.233333,méditerranée occidentale,1
-Sorento,40.616667,14.366667,méditerranée occidentale,1
-Auxerro en rivière de Gènes  [Cervo],43.916667,8.116667,méditerranée occidentale,6
-Montinoso dans la Republique de Lucca,44.016667,10.166667,méditerranée occidentale,1
-Roxane en Calabre,38.316667,16.4,méditerranée occidentale,2
-Prevesa en Morée,38.95,20.75,empire ottoman,1
-Katarina,40.238056,22.581944,empire ottoman,1
-Corine (Golfe de Salonique),40.315,22.585278,empire ottoman,1
-Tour de Barra,41.183333,1.466667,méditerranée occidentale,1
-Norkoping [Norrköping],58.6,16.183333,Ponant,2
-Petersbourg,59.894444,30.264167,Ponant,2
+San Vito,42.29658,14.444954,méditerranée occidentale,1
+Viareggio,43.866667,10.233333,méditerranée occidentale,1
+Sorrente,40.616667,14.366667,méditerranée occidentale,1
+Cervo,43.916667,8.116667,méditerranée occidentale,6
+Montignoso,44.016667,10.166667,méditerranée occidentale,1
+Roccella,38.316667,16.4,méditerranée occidentale,2
+Préveza,38.95,20.75,empire ottoman,1
+Kateríni,40.238056,22.581944,empire ottoman,1
+Korinos,40.315,22.585278,empire ottoman,1
+Roda de Barà,41.183333,1.466667,méditerranée occidentale,1
+Norrköping,58.6,16.183333,Ponant,2
+Saint-Pétersbourg,59.894444,30.264167,Ponant,2
 Liverpool,53.41164,-2.978725,Ponant,8
-Baye de Crok en Terreneuve [Croque],51.060065, -55.819783,Ponant,1
-Baye de Fleur de Lys en Terreneuve,50.133333,-56.1,Ponant,1
-Landscrona,55.866667,12.833333,Ponant,1
-Abo,60.45,22.283333,Ponant,1
-Conce en Terreneuve,50.9,-55.9,Ponant,1
-Labrador en Terreneuve,54,-60,Ponant,1
-Havre de Pins en Terreneuve, 50,-55.866667,Ponant,1
-Carlcroon en Suede,56.161254,15.586202,Ponant,1
-Havre des Petites Oyes en Terreneuve,51.3,-55.616667,Ponant,1
-Lynn,52.75,0.383333,Ponant,5
-Westervic en Suede,57.75,16.633333,Ponant,1
+Le Croc,51.060065, -55.819783,Ponant,1
+Fleur-de-Lys,50.133333,-56.1,Ponant,1
+Landscrone,55.866667,12.833333,Ponant,1
+Abo / Turku,60.45,22.283333,Ponant,1
+La Conche,50.9,-55.9,Ponant,1
+Labrador,54,-60,Ponant,1
+Baie des Pins, 50,-55.866667,Ponant,1
+Carlscrone / Karlskrona,56.161254,15.586202,Ponant,1
+Les Petites Oies,51.3,-55.616667,Ponant,1
+King's Lynn,52.75,0.383333,Ponant,5
+Västervik,57.75,16.633333,Ponant,1
 Memel,55.702587,21.148453,Ponant,1
-Baye des Cannaries en Terreneuve,50.681441, -56.138237,Ponant,1
-Christiansand,58.153787,7.996559,Ponant,1
-Raguse,42.650556,18.091389,méditerranée occidentale,3
+Les Canaries,50.681441, -56.138237,Ponant,1
+Kristiansand,58.153787,7.996559,Ponant,1
+Raguse / Dubrovnik,42.650556,18.091389,méditerranée occidentale,3
 Es Sur,33.273333,35.193889,empire ottoman,3
 Golfe de Cazadaly,39.369492,26.647256,empire ottoman,1
-Golfe de Naples de Romanie,37.543115,22.767592,empire ottoman,1
-Boucary près de Fioume,45.308611,14.530278,Ponant,2
+Golfe de Nauplie,37.543115,22.767592,empire ottoman,1
+Buccari/ Bakar,45.308611,14.530278,Ponant,2
 Lipari,38.483333,14.933333,méditerranée occidentale,6
 Beaucaire,43.8,4.633333,méditerranée occidentale,4
-Terreneuve en Sardaigne [Olbia],40.916667,9.483333,méditerranée occidentale,2
-Louri en Corse,42.872001,9.477839,méditerranée occidentale,6
-Cefalu,38.038907, 14.022916,méditerranée occidentale,2
-Victoire en Sicile,36.95,14.533333,méditerranée occidentale,1
-Pietranegra en Calabre,38.396,15.863354,méditerranée occidentale,2
-Cap Passero,36.683333,15.166667,méditerranée occidentale,1
+Terranova (Olbia),40.916667,9.483333,méditerranée occidentale,2
+Luri [Porticciolo],42.872001,9.477839,méditerranée occidentale,6
+Cefalù,38.038907, 14.022916,méditerranée occidentale,2
+Vittoria,36.95,14.533333,méditerranée occidentale,1
+Pietranegra,38.396,15.863354,méditerranée occidentale,2
+cap Passero,36.683333,15.166667,méditerranée occidentale,1
 Calvi,42.566667,8.75,méditerranée occidentale,24
-Schate,39.166667,23.483333,empire ottoman,1
-Trezza en Sicile,37.55,15.133333,méditerranée occidentale,1
+Skiáthos,39.166667,23.483333,empire ottoman,1
+Aci Trezza,37.55,15.133333,méditerranée occidentale,1
 Stockton,54.564642, -1.310022,Ponant,3
-Siacca en Sicile,37.516667,13.05,méditerranée occidentale,9
+Sciacca,37.516667,13.05,méditerranée occidentale,9
 Salé,34.039134, -6.823007,méditerranée occidentale,2
-Trapano,38.018511, 12.535744,méditerranée occidentale,9
-Melasse,38.216667,15.233333,méditerranée occidentale,4
+Trapani,38.018511, 12.535744,méditerranée occidentale,9
+Melasse / Milazzo,38.216667,15.233333,méditerranée occidentale,4
 Porto Venere,44.051529,9.834477,méditerranée occidentale,1
-Agosta en Sicile,37.243892, 15.221945,méditerranée occidentale,2
-Embouchure du Rhone,43.335167,4.837303,méditerranée occidentale,7
+Auguste,37.243892, 15.221945,méditerranée occidentale,2
+embouchure du Rhône,43.335167,4.837303,méditerranée occidentale,7
 Alella,41.492026, 2.294075,méditerranée occidentale,1
-Badolato en Calabre,38.566667,16.566667,méditerranée occidentale,1
-Sextra en rivière de Gênes,44.266667,9.4,méditerranée occidentale,1
-Modric près d' Almerie,36.75,-3.516667,méditerranée occidentale,1
-Pegli en Riviere de Genes,44.433333,8.8,méditerranée occidentale,1
-Quinte en riviere de Genes,44.383333,9.016667,méditerranée occidentale,2
+Badolato,38.566667,16.566667,méditerranée occidentale,1
+Sestri Levante,44.266667,9.4,méditerranée occidentale,1
+Motril,36.75,-3.516667,méditerranée occidentale,1
+Pegli,44.433333,8.8,méditerranée occidentale,1
+Quinto,44.383333,9.016667,méditerranée occidentale,2
 Bonifacio,41.383333,9.15,méditerranée occidentale,7
-Shoram en Angleterre,50.833333,-0.233333,Ponant,2
-Fiume,45.343056,14.409167,Ponant,8
-Sainte Croix de Tanariffes,28.469167,-16.256776,méditerranée occidentale,1
+Shoreham,50.833333,-0.233333,Ponant,2
+Fiume / Rijeka,45.343056,14.409167,Ponant,8
+Santa Cruz de Tenerife,28.469167,-16.256776,méditerranée occidentale,1
 Sardaigne,40,9,méditerranée occidentale,1
-Lustica,38.7,13.183333,méditerranée occidentale,3
-Golfe de Salonique,40.372866,22.761863,empire ottoman,2
-Siculiana en Sicile,37.333333,13.416667,méditerranée occidentale,6
-Porte Ré dans l' Istrie imperiale,45.269722,14.570833,Ponant,6
+Ustica,38.7,13.183333,méditerranée occidentale,3
+Golfe Thermaïque,40.372866,22.761863,empire ottoman,2
+Siculiana,37.333333,13.416667,méditerranée occidentale,6
+Porto Re / Kraljevica,45.269722,14.570833,Ponant,6
 Oran,35.703635,-0.638416,empire ottoman,1
 Rochester,51.389812,0.504513,Ponant,1
 Bristol,51.45,-2.583333,Ponant,2
 Chester,53.192078,-2.895269,Ponant,2
 Cowes,50.766667,-1.3,Ponant,2
 Corse,42,9,méditerranée occidentale,1
-Maccinagy en Corse,42.95,9.45,méditerranée occidentale,2
-Golfe Juan,43.566667,7.083333,méditerranée occidentale,2
-Cap Corse,43,9.383333,méditerranée occidentale,6
-Espilaleti,43.8,7.716667,méditerranée occidentale,1
-La Carboniere en Espagne,36.983333,-1.9,méditerranée occidentale,1
+Macinaggio,42.95,9.45,méditerranée occidentale,2
+Golfe-Juan,43.566667,7.083333,méditerranée occidentale,2
+cap Corse,43,9.383333,méditerranée occidentale,6
+Ospedaletti,43.8,7.716667,méditerranée occidentale,1
+Carboneras,36.983333,-1.9,méditerranée occidentale,1
 Belfast,54.583333,-5.933333,Ponant,1
-Arens,41.583333,2.55,méditerranée occidentale,1
-Vestise dans la Pouille,41.883333,16.166667,méditerranée occidentale,1
+Arenys de Mar,41.583333,2.55,méditerranée occidentale,1
+Vieste,41.883333,16.166667,méditerranée occidentale,1
 Leith,55.95,-3.166667,Ponant,1
-Bevolo en Calabre,38.15,16.183333,méditerranée occidentale,1
-Potsallo en Sicile,36.716667,14.85,méditerranée occidentale,1
-Nicotera en Calabre,38.55,15.933333,méditerranée occidentale,1
-Marignance,43.416667,5.216667,méditerranée occidentale,1
-Massa di Carrara,44,10.1,méditerranée occidentale,2
-Roche Bernard,47.516667,-2.3,Ponant,1
-Dantzick,54.35,18.666667,Ponant,1
-Calvezé en Corse [Cargèse],42.133333,8.583333,méditerranée occidentale,1
-Mazella en Sicile,37.65,12.583333,méditerranée occidentale,2
+Bovalino,38.15,16.183333,méditerranée occidentale,1
+Pozzallo,36.716667,14.85,méditerranée occidentale,1
+Nicotera,38.55,15.933333,méditerranée occidentale,1
+Marignane,43.416667,5.216667,méditerranée occidentale,1
+Massa-Carrare,44,10.1,méditerranée occidentale,2
+La Roche-Bernard,47.516667,-2.3,Ponant,1
+Dantzig,54.35,18.666667,Ponant,1
+Cargèse,42.133333,8.583333,méditerranée occidentale,1
+Mazara,37.65,12.583333,méditerranée occidentale,2
 Campofelice,37.983333,13.883333,méditerranée occidentale,1
-Saint Lucar de Barrame,36.783333,-6.35,méditerranée occidentale,1
-Noly en Riviere de Genes,44.2,8.433333,méditerranée occidentale,2
+Sanlúcar de Barrameda,36.783333,-6.35,méditerranée occidentale,1
+Noli,44.2,8.433333,méditerranée occidentale,2
 Douvres,51.133333,1.3,Ponant,1
-Celabregna en Espagne,36.733333,-3.583333,méditerranée occidentale,1
+Salobreña,36.733333,-3.583333,méditerranée occidentale,1
 Zierikzee,51.65,3.916667,Ponant,1
-Altafouille en Catalogne,41.140783,1.377816,méditerranée occidentale,1
-Sainte Marie de Soverato en Calabre,38.683333,16.55,méditerranée occidentale,1
-Citadella,40.008309, 3.856622,méditerranée occidentale,2
-Bozza en Sardaigne [Bosa],40.3,8.5,méditerranée occidentale,1
-Port Escu près les isles de Saint Pierre,39.204722,8.378889,méditerranée occidentale,1
-Secca en Sicile,36.783333,14.483333,méditerranée occidentale,1
-Sartet en Corse [Sartène],41.616667,8.983333,méditerranée occidentale,1
-Pino en Corse,42.9,9.35,méditerranée occidentale,1
-Corbara en Corse,42.615265,8.907323,méditerranée occidentale,1
-Gerolata en Corse,42.35,8.6,méditerranée occidentale,1
-Caprara,41.118611,8.319444,méditerranée occidentale,1
-Bozo en Sardaigne,40.283333,8.483333,méditerranée occidentale,1
-Terrasino en Sicile,38.15,13.083333,méditerranée occidentale,1
+Altafulla,41.140783,1.377816,méditerranée occidentale,1
+Soverato,38.683333,16.55,méditerranée occidentale,1
+Ciutadella de Menorca,40.008309, 3.856622,méditerranée occidentale,2
+Bosa,40.3,8.5,méditerranée occidentale,2
+Portoscuso,39.204722,8.378889,méditerranée occidentale,1
+Punta Secca,36.783333,14.483333,méditerranée occidentale,1
+Sartène,41.616667,8.983333,méditerranée occidentale,1
+Pino,42.9,9.35,méditerranée occidentale,1
+Corbara,42.615265,8.907323,méditerranée occidentale,1
+Girolata,42.35,8.6,méditerranée occidentale,1
+Caprera,41.118611,8.319444,méditerranée occidentale,1
+Terrasini,38.15,13.083333,méditerranée occidentale,1
