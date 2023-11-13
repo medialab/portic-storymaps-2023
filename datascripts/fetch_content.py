@@ -279,7 +279,7 @@ for lang in GDOC_URL.keys():
                 footnote_text = ''.join(
                     [text.string for text in footnote_text_container.parent.find_all('span')])
                 footnote_text = footnote_text.replace(
-                    '“', '«').replace('”', '»')
+                    '“', '«').replace('”', '»').strip()
                 footnote_anchor = soup.find(
                     'a', {'href': str('#ftnt' + footnote_id)})
                 footnote_anchor_context = footnote_anchor.parent.find_previous().string
@@ -336,6 +336,7 @@ for lang in GDOC_URL.keys():
         # Unescape caller tags and their quotes
         content = re.sub(r"&lt;(.*?)&gt;", r"<\1>",
                          content).replace('”', '"').replace('“', '"')
+        
 
         # Second edition of HTML
         soup = BeautifulSoup(content, 'html.parser')
@@ -419,6 +420,13 @@ for lang in GDOC_URL.keys():
                     caller['class'] = 'is-blank'
                     continue
                 caller['id'] = caller['id'].strip()
+                attrs_to_remove = []
+                for attr in caller.attrs:
+                  if '"' in attr or "'" in attr:
+                      attrs_to_remove.append(attr)
+                for attr in attrs_to_remove:
+                    del caller[attr]
+                
                 if caller['id'] not in part_viz_id_list:
                     # <Caller> id is not find from viz id list
                     caller['class'] = 'is-invalid'
@@ -459,6 +467,8 @@ for lang in GDOC_URL.keys():
             """
             part = str(part_soup)
 
+            # MD issues with operations using *
+            part = re.sub(r"(\d)\*(\d)", r"\1×\2", part)
             # React requirements
             part = re.sub(r"(</?)caller", r"\1Caller",
                           part)  # caller -> Caller
