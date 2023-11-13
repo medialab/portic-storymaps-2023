@@ -32,7 +32,7 @@ for l in tonnage_data:
     
     tonnage_estimates[ship_class] = estimation
 
-
+accepted_years = {1749, 1759, 1769, 1779, 1787, 1789, 1799}
 ports = {}
 with open('../data/navigo_all_flows.csv', newline='', encoding='utf8') as csvfile:
   reader = csv.DictReader(csvfile)
@@ -44,6 +44,9 @@ with open('../data/navigo_all_flows.csv', newline='', encoding='utf8') as csvfil
       port = flow["departure_fr"]
       tonnage = flow["tonnage"]
       ship_class = flow["ship_class_standardized"]
+      year = int(flow["outdate_fixed"].split('-')[0])
+      if year not in accepted_years:
+        continue
       if ship_class in tonnage_estimates:
         tonnage = tonnage_estimates[ship_class]
       if port not in ports:
@@ -105,6 +108,7 @@ with open('../data/toflit18_all_flows.csv', 'r') as f1:
           # register total trade for marseille
           years[year]["total"] += value
 data = []
+
 for year in years.keys():
   for group in groups:
     if group in years[year]:

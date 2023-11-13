@@ -198,7 +198,8 @@ export default function LevantNavigation({
                             key={port}
                             transform={`translate(${x}, ${y})`}
                             data-for="levant-tooltip"
-                            data-tip={`Selon le registre des patentes de Marseille, ${count} navires se sont rendus depuis le port de ${port} vers port phocéen dans les six années étudiées, pour un total estimé de ${formatNumber(tonnage)} tonneaux cumulés.`}
+                            data-html="true"
+                            data-tip={`Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les six années étudiées, pour un total estimé de <strong>${formatNumber(tonnage)} tonneaux</strong> cumulés.`}
                           >
                             <circle
                               cx={0}
