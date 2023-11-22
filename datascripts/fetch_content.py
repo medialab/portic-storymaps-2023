@@ -469,10 +469,13 @@ for lang in GDOC_URL.keys():
 
             # MD issues with operations using *
             part = re.sub(r"(\d)\*(\d)", r"\1×\2", part)
+            # other MD issue
+            part = re.sub(r"&lt;", r"<", part)
+            part = re.sub(r"&gt;", r">", part)
             # React requirements
             part = re.sub(r"(</?)caller", r"\1Caller",
                           part)  # caller -> Caller
-            part = re.sub(r"(</?)link", r"\1Link", part)  # link -> Laller
+            part = re.sub(r"(</?)link", r"\1Link", part)  # link -> Caller
             part = re.sub(r"class(=\")", r"className\1",
                           part)  # class -> className
 
