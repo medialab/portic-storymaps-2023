@@ -54,7 +54,7 @@
           <attvalue for="market" value="BarleDuc"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="112.0035253405401"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="112.0035253405401"/>
         <viz:position x="27.381746292114258" y="213.6028289794922"/>
@@ -102,7 +102,7 @@
           <attvalue for="market" value="Blois"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="115.40364012640693"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="115.40364012640693"/>
         <viz:position x="79.06001281738281" y="179.302001953125"/>
@@ -162,7 +162,7 @@
           <attvalue for="market" value="Chateauroux"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="103.36544077219871"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="103.36544077219871"/>
         <viz:position x="-27.79985237121582" y="186.23828125"/>
@@ -642,7 +642,7 @@
           <attvalue for="market" value="Luneville"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="132.3286178058555"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="132.3286178058555"/>
         <viz:position x="43.83850860595703" y="63.84520721435547"/>
@@ -690,7 +690,7 @@
           <attvalue for="market" value="Bourges"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="110.56091008003553"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="110.56091008003553"/>
         <viz:position x="142.9293975830078" y="125.77957153320312"/>
@@ -726,7 +726,7 @@
           <attvalue for="market" value="LeMans"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="114.29192424091674"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="114.29192424091674"/>
         <viz:position x="-64.61428833007812" y="119.94129943847656"/>
@@ -858,6 +858,7 @@
           <attvalue for="market" value="BoulognesurMer"/>
           <attvalue for="bassin" value="Artois-Picardie"/>
           <attvalue for="weightedDegree" value="11.103416925522279"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="11.103416925522279"/>
         <viz:position x="-88.33039093017578" y="46.98553466796875"/>
@@ -869,7 +870,7 @@
           <attvalue for="market" value="Colmar"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="76.4449465934504"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="76.4449465934504"/>
         <viz:position x="108.76129913330078" y="72.67314147949219"/>
@@ -905,7 +906,7 @@
           <attvalue for="market" value="Guéret"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="40.18973487203522"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="40.18973487203522"/>
         <viz:position x="180.7830352783203" y="86.54058074951172"/>
@@ -917,7 +918,7 @@
           <attvalue for="market" value="Limoges"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="17.88524115535112"/>
-          <attvalue for="community" value="Issoire"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="17.88524115535112"/>
         <viz:position x="-228.19793701171875" y="-102.95454406738281"/>
@@ -977,7 +978,7 @@
           <attvalue for="market" value="Strasbourg"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="68.77298614899517"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="68.77298614899517"/>
         <viz:position x="207.56243896484375" y="126.02422332763672"/>
@@ -1121,6 +1122,7 @@
           <attvalue for="market" value="Verfeil"/>
           <attvalue for="bassin" value="Adour-Garonne"/>
           <attvalue for="weightedDegree" value="22.721017315491043"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="22.721017315491043"/>
         <viz:position x="-342.96417236328125" y="289.3645324707031"/>
@@ -1132,7 +1134,7 @@
           <attvalue for="market" value="Mulhouse"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="36.81071240467431"/>
-          <attvalue for="community" value="Nantes"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="36.81071240467431"/>
         <viz:position x="136.51197814941406" y="38.92678451538086"/>
@@ -1180,7 +1182,7 @@
           <attvalue for="market" value="BrivelaGaillarde"/>
           <attvalue for="bassin" value="Adour-Garonne"/>
           <attvalue for="weightedDegree" value="3.5076999837371208"/>
-          <attvalue for="community" value="Issoire"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="3.5076999837371208"/>
         <viz:position x="-346.3832092285156" y="-127.51372528076172"/>
@@ -1264,6 +1266,7 @@
           <attvalue for="market" value="SaintBrieuc"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="7.211472424735961"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="7.211472424735961"/>
         <viz:position x="-402.6598205566406" y="207.72804260253906"/>
