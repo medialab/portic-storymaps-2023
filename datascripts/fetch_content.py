@@ -315,6 +315,8 @@ for lang in GDOC_URL.keys():
             link['href'] = re.search(
                 r"(?<=q=)(.*?)(?=&)", link['href']).group(1) if re.search(
                 r"(?<=q=)(.*?)(?=&)", link['href']) is not None else link["href"]
+            # Fix issue with #
+            link["href"] = link["href"].replace("%23", "#")
 
             parse = urlsplit(link['href'])
             if parse.netloc == 'caller':
@@ -325,10 +327,8 @@ for lang in GDOC_URL.keys():
                     link[key] = query[key]
 
             # Add attributes for safe navigation
-            """
             link['target'] = '_blank'
             link['rel'] = 'noopener noreferrer'
-            """
 
         content = str(soup)
         # Remove useless tags and attributes
