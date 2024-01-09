@@ -426,7 +426,6 @@ for lang in GDOC_URL.keys():
                       attrs_to_remove.append(attr)
                 for attr in attrs_to_remove:
                     del caller[attr]
-                
                 if caller['id'] not in part_viz_id_list:
                     # <Caller> id is not find from viz id list
                     caller['class'] = 'is-invalid'

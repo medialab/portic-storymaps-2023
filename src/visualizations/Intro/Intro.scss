@@ -1,24 +1,24 @@
 .Intro {
-  &:not(.is-atlas-mode) {
-    .geopart {
-      stroke: rgba(255, 255, 255, 0.2)!important; // #0b2941 !important;
-      fill: rgba(255, 255, 255, 0.1)!important;
-      // fill: transparent!important;
-      // fill: rgba(255, 255, 255, 0.5) !important;
-    }
-    .label {
-      // stroke: white;
-      // stroke-width: 0.3;
-      fill: red;
-      font-weight: 500;
-    }
-  }
-  &.is-atlas-mode {
+  // &:not(.is-atlas-mode) {
+  //   .geopart {
+  //     stroke: rgba(255, 255, 255, 0.2)!important; // #0b2941 !important;
+  //     fill: rgba(255, 255, 255, 0.1)!important;
+  //     // fill: transparent!important;
+  //     // fill: rgba(255, 255, 255, 0.5) !important;
+  //   }
+  //   .label {
+  //     // stroke: white;
+  //     // stroke-width: 0.3;
+  //     fill: red;
+  //     font-weight: 500;
+  //   }
+  // }
+  // &.is-atlas-mode {
     .geopart {
       stroke: white !important;
       fill: lightgrey !important;
     }
-  }
+  // }
   .CustomObjectsLayer {
     .PartnersObject {
       .invariant-circle {
@@ -97,23 +97,27 @@
   }
 
   .legend-form {
-    stroke: white;
+    // stroke: white;
+    stroke: #403d3d;
     fill: transparent;
     stroke-dasharray: 2px 1px;
   }
   .legend-arrow {
-    stroke: white;
+    // stroke: white;
+    stroke: #403d3d;
     stroke-dasharray: 2px 1px;
   }
   .legend-indicator {
     font-size: 0.5rem;
-    fill: white;
+    // fill: white;
+    fill: #403d3d;
   }
   #legend-arrow-start path,
   #legend-arrow-end path,
   #legend-stop-mark path {
     fill: transparent;
-    stroke: white;
+    // stroke: white;
+    stroke: #403d3d;
   }
 
   .background-line {

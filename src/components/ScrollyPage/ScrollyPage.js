@@ -165,7 +165,7 @@ export default function ScrollyPage({
     if (visualizations[activeCallerId] === undefined) { return; }
     const { props } = visualizations[activeCallerId];
     setDisplayedVizProps(props);
-  }, [activeCallerId, visualizations])
+  }, [activeCallerId, visualizations]);
 
   useEffect(function displayButtonToResetDisplayedVizProps() {
     setCanResetVizProps(

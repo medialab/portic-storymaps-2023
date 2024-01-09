@@ -102,6 +102,12 @@
       section {
         padding: $medium-gutter;
         padding-left: 0;
+        display: flex;
+        justify-content: center;
+        > div {
+          width: 800px;
+          max-width: 100%;
+        }
       }
       p,
       h1,
@@ -114,7 +120,6 @@
       ol,
       pre,
       blockquote {
-        max-width: 40vw;
         margin-left: $medium-gutter * 4;
       }
       .Caller:not(.is-inline) {

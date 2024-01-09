@@ -289,7 +289,7 @@ function Home({
             <section className={cx({'is-focused': !focusOnViz})}>
               {lang === 'fr' ? <ContentsFr  components={{ Caller, Link }} /> : <ContentsEn  components={{ Caller, Link }} />}
             </section>
-            <aside className={cx({'is-focused': focusOnViz, 'is-fixed': inVis})}>
+            {/* <aside className={cx({'is-focused': focusOnViz, 'is-fixed': inVis})}>
               {
                 loadingState === 'success' ?
                 <VisualizationContainer 
@@ -300,34 +300,27 @@ function Home({
                   {...{
                     displayedVizId: activeVisualization && activeVisualization.visualizationId,
                     datasets,
-                    // canResetVizProps,
-                    // onClickToggleFullScreen: () => {
-                    //   setIsFullScreen(!isFullScreen);
-                    //   setScrollYBeforeFullScreen(scrollY);
-                    //   ReactTooltip.hide();
-                    // },
-                    // resetVizProps
                   }}
                 />
                 :
                 <div>Chargement</div>
               }
               
-            </aside>
+            </aside> */}
             
           </div>
         {/* </VisualizationControlContext.Provider> */}
         </VisualisationContext.Provider>
 
         <HomeSummary lang={lang} summary={summary} />
-        <div className={cx("vis-focus-container", {
+        {/* <div className={cx("vis-focus-container", {
           'is-active': focusOnViz,
           'is-visible': activeVisualization
           })}>
           <button data-for="contents-tooltip" data-effect="solid" data-tip={lang === 'fr' ? 'voir la visualisation associée' : 'see associated visualization'} onClick={() => setFocusOnViz(!focusOnViz)}>
             <span>{'˃'}</span>
           </button>
-        </div>
+        </div> */}
       </main>
       <ReactTooltip id="contents-tooltip" />
     </div>
