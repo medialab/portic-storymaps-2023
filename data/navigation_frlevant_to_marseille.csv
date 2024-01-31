@@ -1,64 +1,78 @@
 count_to_marseille,latitude,longitude,province,port,count_total,ratio_to_marseille
-73,43.4,5.05,Provence,Martigues,358,0.20391061452513967
-51,43.433333,6.733333,Provence,Fréjus,247,0.20647773279352227
-99,43.266667,6.633333,Provence,Saint-Tropez,417,0.23741007194244604
-28,43.316667,3.466667,Languedoc,Agde,306,0.0915032679738562
-10,43.3,6.633333,Provence,Sainte-Maxime,,
-68,43.166667,5.6,Provence,La Ciotat,,
-60,43.133333,5.75,Provence,Bandol,200,0.3
-136,43.116667,5.933333,Provence,Toulon,806,0.1687344913151365
-84,43.678359, 4.628813,Provence,Arles,463,0.18142548596112312
-55,43.08613645952041,6.150292341697001,Provence,Hyères,,
-16,43.566667,7.083333,Provence,Golfe-Juan,,
-1,43.05,5.85,Provence,cap Sicié,,
-16,43.116667,5.8,Provence,Sanary-sur-Mer,103,0.1553398058252427
-7,43.1,5.883333,Provence,La Seyne,60,0.11666666666666667
-20,43.583333,7.116667,Provence,Antibes,266,0.07518796992481203
-86,43.4,3.683333,Languedoc,Sète,625,0.1376
-31,43.216667,5.533333,Provence,Cassis,19,1.631578947368421
-4,43.466667,5.183333,Provence,Berre,,
-18,43.15,6.333333,Provence,Bormes,28,0.6428571428571429
-8,43.121786,6.291718,Provence,Léoube,,
-5,43.8,4.633333,Provence,Beaucaire,,
-2,42.524957,3.082595,Roussillon,Collioure,226,0.008849557522123894
-22,43.554919, 6.996996,Provence,Cannes,,
-7,42.516667,3.116667,Roussillon,Port-Vendres,,
-2,43.516667,6.933333,Provence,Napoule,,
-2,43.083333,6.083333,Provence,Carqueiranne,,
-3,42.766667,2.983333,Roussillon,Saint-Laurent-de-la-Salanque,74,0.04054054054054054
-15,43.183333,3,Languedoc,Narbonne,164,0.09146341463414634
-4,43.566667,4.183333,Languedoc,Aigues-Mortes,7,0.5714285714285714
-107,42,9,Corse,Corse,,
-10,42.633333,8.933333,Corse,île Rousse (Corse),,
-3,43.55,5.033333,Provence,Saint-Chamas,,
+176,43.4,5.05,Provence,Martigues,358,0.49162011173184356
+384,43.116667,5.933333,Provence,Toulon,806,0.47642679900744417
+159,43.433333,6.733333,Provence,Fréjus,247,0.6437246963562753
+159,43.133333,5.75,Provence,Bandol,200,0.795
+261,43.678359, 4.628813,Provence,Arles,463,0.5637149028077754
+55,43.15,6.333333,Provence,Bormes,28,1.9642857142857142
+254,43.166667,5.6,Provence,La Ciotat,,
+228,43.266667,6.633333,Provence,Saint-Tropez,417,0.5467625899280576
+84,43.316667,3.466667,Languedoc,Agde,306,0.27450980392156865
+26,43.3,6.633333,Provence,Sainte-Maxime,,
+27,43.183333,3,Languedoc,Narbonne,164,0.16463414634146342
+223,43.4,3.683333,Languedoc,Sète,625,0.3568
+164,43.08613645952041,6.150292341697001,Provence,Hyères,,
+69,43.566667,7.083333,Provence,Golfe-Juan,,
+3,43.05,5.85,Provence,cap Sicié,,
+64,43.116667,5.8,Provence,Sanary-sur-Mer,103,0.6213592233009708
+9,43.55,5.033333,Provence,Saint-Chamas,,
+25,43.1,5.883333,Provence,La Seyne,60,0.4166666666666667
+65,43.583333,7.116667,Provence,Antibes,266,0.24436090225563908
+178,43.216667,5.533333,Provence,Cassis,19,9.368421052631579
+9,43.466667,5.183333,Provence,Berre,,
+20,43.121786,6.291718,Provence,Léoube,,
+10,43.8,4.633333,Provence,Beaucaire,,
+6,42.524957,3.082595,Roussillon,Collioure,226,0.02654867256637168
+69,43.554919, 6.996996,Provence,Cannes,,
+20,42.516667,3.116667,Roussillon,Port-Vendres,,
+4,43.516667,6.933333,Provence,Napoule,,
+7,43.083333,6.083333,Provence,Carqueiranne,,
+4,42.766667,2.983333,Roussillon,Saint-Laurent-de-la-Salanque,74,0.05405405405405406
+5,43.566667,4.183333,Languedoc,Aigues-Mortes,7,0.7142857142857143
+183,42,9,Corse,Corse,,
+22,42.633333,8.933333,Corse,île Rousse (Corse),,
+1,43.453417,4.42832,Provence,Saintes-Maries-de-la-Mer,20,0.05
+8,43.3,5.4,Provence,Marseille,4353,0.001837813002526993
+19,42.702778,9.45,Corse,Bastia,255,0.07450980392156863
+3,43.416667,6.766667,Provence,Saint-Raphaël,,
 1,43.361168,4.583656,Provence,pointe de Beauduc de Tignes,,
-4,43.3,5.4,Provence,Marseille,4353,0.0009189065012634965
-1,43.516667,7.05,Provence,île Sainte-Marguerite,,
-11,43.066667,5.8,Provence,Le Brusc,,
-3,43.113327,6.190524,Provence,Gapeau,66,0.045454545454545456
-1,43.416667,6.766667,Provence,Saint-Raphaël,,
-3,43.016667,3.05,Languedoc,La Nouvelle,,
-2,43.166667,6.533333,Provence,Cavalaire,,
-3,43.033333,6.133333,Provence,Giens,,
-4,43.578152,7.055082,Provence,Vallauris,,
-12,42.702778,9.45,Corse,Bastia,255,0.047058823529411764
-14,41.918584,8.736863,Corse,Ajaccio,110,0.12727272727272726
-4,42.872001,9.477839,Corse,Luri [Porticciolo],,
-6,42.566667,8.75,Corse,Calvi,2,3.0
-2,43.010516,6.381977,Provence,Port-Cros,,
+2,43.516667,7.05,Provence,île Sainte-Marguerite,,
+10,43.433333,6.85,Provence,Agay,,
+42,43.066667,5.8,Provence,Le Brusc,,
+11,43.113327,6.190524,Provence,Gapeau,66,0.16666666666666666
+14,43.166667,6.533333,Provence,Cavalaire,,
+37,41.918584,8.736863,Corse,Ajaccio,110,0.33636363636363636
+6,43.016667,3.05,Languedoc,La Nouvelle,,
+8,43.033333,6.133333,Provence,Giens,,
+5,43.183333,5.666667,Provence,Le Liouquet,,
+1,43.335167,4.837303,Provence,embouchure du Rhône,,
+18,43.4,4.983333,Provence,Port-de-Bouc,,
+6,43.578152,7.055082,Provence,Vallauris,,
+12,42.566667,8.75,Corse,Calvi,2,6.0
+5,42.872001,9.477839,Corse,Luri [Porticciolo],,
+4,43.010516,6.381977,Provence,Port-Cros,,
 1,42.35,8.6,Corse,Girolata,,
 1,42.9,9.35,Corse,Pino,,
-1,43.4,4.983333,Provence,Port-de-Bouc,,
-3,43.068731,5.872875,Provence,Entre le cap Cépet et Fabrégas,,
+10,42.683333,9.3,Corse,Saint-Florent,,
+4,43.068731,5.872875,Provence,Entre le cap Cépet et Fabrégas,,
 3,43,9.383333,Corse,cap Corse,,
-1,43.183333,5.666667,Provence,Le Liouquet,,
-1,43.066667,5.95,Provence,cap Cépet,,
-1,43.283333,5.3,Provence,Frioul,,
+2,43.5,6.933333,Provence,Théoule,,
+5,41.383333,9.15,Corse,Bonifacio,44,0.11363636363636363
+8,43.066667,5.95,Provence,cap Cépet,,
+1,42.705814,3.007307,Roussillon,Le Canet,,
+2,43.283333,5.3,Provence,Frioul,,
 1,43.183333,5.716667,Provence,Saint Cyr (sur mer),,
 1,41.477032, 9.075326,Corse,Figari,,
 1,42.866778, 9.340408,Corse,Barrettali,,
-1,42.683333,9.3,Corse,Saint-Florent,,
-2,41.383333,9.15,Corse,Bonifacio,44,0.045454545454545456
-1,41.616667,8.983333,Corse,Sartène,,
-1,43.433333,6.85,Provence,Agay,,
+2,41.616667,8.983333,Corse,Sartène,,
 1,43.416667,5.216667,Provence,Marignane,,
+1,43.066667,6.233333,Provence,Golfe des îles d'Hyères,,
+1,42.990586,4.89418,Provence,Port-de-Bouc (sur),,
+1,43,6.2,Provence,Porquerolles,,
+1,43.211270,5.521310,Provence,Port-Miou,,
+1,42.992741, 9.376622,Corse,Ersa,,
+1,43.133333,6.366667,Provence,Lavandou,,
+1,43.666667,7.15,Provence,Cagnes,,
+1,43.211182,5.484466,Provence,Côtes de Provence,,
+1,43.033333,6.166667,Provence,Rade du Pradeau,,
+1,41.583333,9.283333,Corse,Porto-Vecchio,,
