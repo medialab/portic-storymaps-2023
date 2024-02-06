@@ -18,6 +18,7 @@
           <attvalue for="market" value="Abbeville"/>
           <attvalue for="bassin" value="Artois-Picardie"/>
           <attvalue for="weightedDegree" value="102.91748253988942"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="102.91748253988942"/>
         <viz:position x="-106.38131713867188" y="468.1654357910156"/>
@@ -41,7 +42,7 @@
           <attvalue for="market" value="Auzerre"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="85.69681100012478"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="85.69681100012478"/>
         <viz:position x="115.41665649414062" y="245.6195068359375"/>
@@ -53,7 +54,7 @@
           <attvalue for="market" value="BarleDuc"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="112.0035253405401"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="112.0035253405401"/>
         <viz:position x="27.381746292114258" y="213.6028289794922"/>
@@ -65,6 +66,7 @@
           <attvalue for="market" value="Bayeux"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="39.780944492821604"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="39.780944492821604"/>
         <viz:position x="-280.7075500488281" y="338.0047302246094"/>
@@ -76,6 +78,7 @@
           <attvalue for="market" value="Beaumont"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="53.05396261633482"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="53.05396261633482"/>
         <viz:position x="-237.07810974121094" y="493.2322692871094"/>
@@ -87,7 +90,7 @@
           <attvalue for="market" value="Bernay"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="79.3337177097927"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="79.3337177097927"/>
         <viz:position x="41.248680114746094" y="319.9720764160156"/>
@@ -99,7 +102,7 @@
           <attvalue for="market" value="Blois"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="115.40364012640693"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="115.40364012640693"/>
         <viz:position x="79.06001281738281" y="179.302001953125"/>
@@ -111,6 +114,7 @@
           <attvalue for="market" value="Cany"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="28.93983851947354"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="28.93983851947354"/>
         <viz:position x="-182.18312072753906" y="594.839599609375"/>
@@ -122,7 +126,7 @@
           <attvalue for="market" value="ChalonssurMarne"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="75.24743924010939"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="75.24743924010939"/>
         <viz:position x="70.74463653564453" y="281.28662109375"/>
@@ -134,7 +138,7 @@
           <attvalue for="market" value="Charleville"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="71.55165453097847"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="71.55165453097847"/>
         <viz:position x="-0.5457315444946289" y="289.4307861328125"/>
@@ -146,7 +150,7 @@
           <attvalue for="market" value="Chateaudun"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="51.14140319893775"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="51.14140319893775"/>
         <viz:position x="118.35043334960938" y="333.2125549316406"/>
@@ -158,7 +162,7 @@
           <attvalue for="market" value="Chateauroux"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="103.36544077219871"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="103.36544077219871"/>
         <viz:position x="-27.79985237121582" y="186.23828125"/>
@@ -170,6 +174,7 @@
           <attvalue for="market" value="ChaumontenCaux"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="64.54590569989935"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="64.54590569989935"/>
         <viz:position x="-294.6692810058594" y="381.5587158203125"/>
@@ -181,6 +186,7 @@
           <attvalue for="market" value="ChaumontenVexin"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="119.79051133217938"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="119.79051133217938"/>
         <viz:position x="-128.80848693847656" y="397.2041015625"/>
@@ -192,6 +198,7 @@
           <attvalue for="market" value="Eu"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="47.920713271724296"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="47.920713271724296"/>
         <viz:position x="-269.4788513183594" y="485.3460693359375"/>
@@ -203,6 +210,7 @@
           <attvalue for="market" value="Gonesse"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="52.66476160216282"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="52.66476160216282"/>
         <viz:position x="-225.24403381347656" y="354.1123962402344"/>
@@ -214,6 +222,7 @@
           <attvalue for="market" value="LeHavre"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="32.634580387579724"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="32.634580387579724"/>
         <viz:position x="-304.068603515625" y="503.18035888671875"/>
@@ -225,6 +234,7 @@
           <attvalue for="market" value="Lille"/>
           <attvalue for="bassin" value="Artois-Picardie"/>
           <attvalue for="weightedDegree" value="39.45224868536596"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="39.45224868536596"/>
         <viz:position x="-330.47869873046875" y="537.4241943359375"/>
@@ -236,6 +246,7 @@
           <attvalue for="market" value="MagnyenVexin"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="63.7902542424785"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="63.7902542424785"/>
         <viz:position x="-246.40357971191406" y="561.4887084960938"/>
@@ -247,6 +258,7 @@
           <attvalue for="market" value="Melun"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="62.6923577735058"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="62.6923577735058"/>
         <viz:position x="-247.03367614746094" y="428.2356262207031"/>
@@ -258,6 +270,7 @@
           <attvalue for="market" value="Meulan"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="67.73644133437384"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="67.73644133437384"/>
         <viz:position x="-279.4972229003906" y="535.066650390625"/>
@@ -269,7 +282,7 @@
           <attvalue for="market" value="Orléans"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="153.4733397872273"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="153.4733397872273"/>
         <viz:position x="-8.156461715698242" y="129.39146423339844"/>
@@ -281,6 +294,7 @@
           <attvalue for="market" value="Paris"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="97.09756857767239"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="97.09756857767239"/>
         <viz:position x="-40.34033966064453" y="412.70281982421875"/>
@@ -292,6 +306,7 @@
           <attvalue for="market" value="Pontoise"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="67.5475912665168"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="67.5475912665168"/>
         <viz:position x="-210.97555541992188" y="543.6029052734375"/>
@@ -303,6 +318,7 @@
           <attvalue for="market" value="Reims"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="52.540468116156454"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="52.540468116156454"/>
         <viz:position x="-181.7348175048828" y="513.6362915039062"/>
@@ -326,6 +342,7 @@
           <attvalue for="market" value="RozayenBrie"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="105.13508301872213"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="105.13508301872213"/>
         <viz:position x="-132.49539184570312" y="314.677734375"/>
@@ -337,7 +354,7 @@
           <attvalue for="market" value="Soissons"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="67.8588912715156"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="67.8588912715156"/>
         <viz:position x="69.34830474853516" y="354.5121154785156"/>
@@ -625,7 +642,7 @@
           <attvalue for="market" value="Luneville"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="132.3286178058555"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="132.3286178058555"/>
         <viz:position x="43.83850860595703" y="63.84520721435547"/>
@@ -673,7 +690,7 @@
           <attvalue for="market" value="Bourges"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="110.56091008003553"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="110.56091008003553"/>
         <viz:position x="142.9293975830078" y="125.77957153320312"/>
@@ -709,7 +726,7 @@
           <attvalue for="market" value="LeMans"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="114.29192424091674"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="114.29192424091674"/>
         <viz:position x="-64.61428833007812" y="119.94129943847656"/>
@@ -853,7 +870,7 @@
           <attvalue for="market" value="Colmar"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="76.4449465934504"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="76.4449465934504"/>
         <viz:position x="108.76129913330078" y="72.67314147949219"/>
@@ -877,6 +894,7 @@
           <attvalue for="market" value="Douai"/>
           <attvalue for="bassin" value="Artois-Picardie"/>
           <attvalue for="weightedDegree" value="36.037898390519736"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="36.037898390519736"/>
         <viz:position x="-72.6316146850586" y="261.2337341308594"/>
@@ -888,7 +906,7 @@
           <attvalue for="market" value="Guéret"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="40.18973487203522"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="40.18973487203522"/>
         <viz:position x="180.7830352783203" y="86.54058074951172"/>
@@ -960,7 +978,7 @@
           <attvalue for="market" value="Strasbourg"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="68.77298614899517"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="68.77298614899517"/>
         <viz:position x="207.56243896484375" y="126.02422332763672"/>
@@ -1116,7 +1134,7 @@
           <attvalue for="market" value="Mulhouse"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="36.81071240467431"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="36.81071240467431"/>
         <viz:position x="136.51197814941406" y="38.92678451538086"/>
@@ -1200,6 +1218,7 @@
           <attvalue for="market" value="Chartres"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="21.74288806329023"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="21.74288806329023"/>
         <viz:position x="-315.376708984375" y="457.1012878417969"/>
