@@ -328,7 +328,7 @@ export default function GuerreEtCroissance({
   const {
     series,
     directions,
-    navigation_metric // ['tonnage', 'travels', 'mileage']
+    'navigation-metric': navigation_metric // ['tonnage', 'travels', 'mileage']
   } = callerProps;
 
   const defaultSeries = [
