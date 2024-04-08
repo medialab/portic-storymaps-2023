@@ -13,7 +13,7 @@ menu:
     fr: accueil
     en: home
   atlas:
-    fr: Atlas des visualisations
+    fr: Atlas
     en: visualizations atlas
 about:
   title:
@@ -21,7 +21,7 @@ about:
     en: About
 atlas:
   title:
-    fr: Atlas des visualisations
+    fr: Atlas
     en: Visualizations atlas
 vizFocus:
   description:
