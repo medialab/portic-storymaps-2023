@@ -153,7 +153,7 @@ export default function DiversiteProduits({
                             x={x + 1}
                             y={rowHeight / 2 - rectHeight / 2}
                             stroke="none"
-                            opacity={highlightedYear && highlightedYear !== year ? .6 : 1}
+                            opacity={highlightedYear && highlightedYear !== year ? .1 : 1}
                             fill={val === 0 ? 'transparent' : `hsl(${hueVal} ${saturationPct}% ${luminancePct}%)`}
                             data-for="concentration-tooltip"
                             data-tip={val === 0 ? undefined : `En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${parseInt(+val * 100)}%.`}
