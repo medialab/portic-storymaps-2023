@@ -510,9 +510,11 @@ summary_js += "\nexport default [\n"
 for i, item in enumerate(summary):
   if i == 0:
     continue
+  print("item:")
+  print(item)
   base_str = json.dumps(item, indent = 2, ensure_ascii=False)[:-2]
   base_str += ",\n";
-  component = "ScrollyPage" if '"navGroup": "primary"' in base_str else "PlainPage"
+  component = "ScrollyPage" if '"navGroup": "primary"' in base_str and 'conclusion' not in base_str.lower() else "PlainPage"
   base_str += "  Component: " + component + ",\n";
   base_str += "  contents: {" + "\n"
   for lang in GDOC_URL.keys():
