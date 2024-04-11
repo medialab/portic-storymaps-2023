@@ -1,51 +1,60 @@
 category,nb_steps,tonnage,count
-méditerranée occidentale,1,5,1797
-méditerranée occidentale,1,150,353
-méditerranée occidentale,1,50,2445
-méditerranée occidentale,1,80,439
-méditerranée occidentale,1,10,140
-méditerranée occidentale,1,100,513
-méditerranée occidentale,1,140,34
-méditerranée occidentale,1,300,157
+méditerranée occidentale,1,5,1855
+méditerranée occidentale,1,160,63
+méditerranée occidentale,1,150,367
+méditerranée occidentale,1,50,2490
+méditerranée occidentale,1,80,449
+méditerranée occidentale,1,10,143
+méditerranée occidentale,1,100,525
+méditerranée occidentale,1,140,38
+méditerranée occidentale,1,300,166
 méditerranée occidentale,1,130,15
 méditerranée occidentale,1,0,19
 méditerranée occidentale,1,175,15
-méditerranée occidentale,1,250,8
-méditerranée occidentale,1,160,59
+méditerranée occidentale,1,250,9
 méditerranée occidentale,1,35,7
 méditerranée occidentale,1,15,3
-méditerranée occidentale,2,80,125
-méditerranée occidentale,2,150,100
-méditerranée occidentale,2,250,3
-méditerranée occidentale,2,50,380
-méditerranée occidentale,2,300,48
-méditerranée occidentale,2,5,88
-méditerranée occidentale,2,100,19
-méditerranée occidentale,2,160,23
-méditerranée occidentale,2,140,16
-méditerranée occidentale,2,10,7
+méditerranée occidentale,2,150,194
+méditerranée occidentale,2,80,151
+méditerranée occidentale,2,50,439
+méditerranée occidentale,2,250,5
+méditerranée occidentale,2,100,24
+méditerranée occidentale,2,10,10
+méditerranée occidentale,2,5,115
+méditerranée occidentale,2,300,65
+méditerranée occidentale,2,130,4
+méditerranée occidentale,2,160,40
+méditerranée occidentale,2,140,19
 méditerranée occidentale,2,0,1
-méditerranée occidentale,2,130,2
-méditerranée occidentale,2,175,6
-méditerranée occidentale,3,160,10
-méditerranée occidentale,3,150,16
-méditerranée occidentale,3,50,61
-méditerranée occidentale,3,175,1
-méditerranée occidentale,3,80,20
-méditerranée occidentale,3,5,9
-méditerranée occidentale,3,300,6
-méditerranée occidentale,3,100,3
+méditerranée occidentale,2,175,7
+méditerranée occidentale,3,160,30
+méditerranée occidentale,3,80,62
+méditerranée occidentale,3,50,135
+méditerranée occidentale,3,5,34
+méditerranée occidentale,3,140,8
+méditerranée occidentale,3,150,45
+méditerranée occidentale,3,175,4
+méditerranée occidentale,3,10,1
+méditerranée occidentale,3,300,7
+méditerranée occidentale,3,100,6
 méditerranée occidentale,3,35,1
-méditerranée occidentale,3,140,3
-méditerranée occidentale,4,150,5
-méditerranée occidentale,4,80,4
-méditerranée occidentale,4,50,15
-méditerranée occidentale,4,160,3
-méditerranée occidentale,4,100,1
+méditerranée occidentale,4,80,11
+méditerranée occidentale,4,150,19
+méditerranée occidentale,4,50,37
+méditerranée occidentale,4,250,1
+méditerranée occidentale,4,5,3
+méditerranée occidentale,4,160,5
+méditerranée occidentale,4,175,5
+méditerranée occidentale,4,100,2
+méditerranée occidentale,4,140,1
 méditerranée occidentale,4,35,1
-méditerranée occidentale,4,175,1
-méditerranée occidentale,5,50,2
-méditerranée occidentale,5,80,2
+méditerranée occidentale,5,160,3
+méditerranée occidentale,5,150,3
+méditerranée occidentale,5,50,4
+méditerranée occidentale,5,80,3
+méditerranée occidentale,5,5,1
+méditerranée occidentale,6,50,3
+méditerranée occidentale,6,150,1
 empire ottoman,1,50,52
 empire ottoman,1,80,13
 empire ottoman,1,150,113
@@ -54,69 +63,81 @@ empire ottoman,1,160,11
 empire ottoman,1,140,2
 empire ottoman,1,300,15
 empire ottoman,1,100,2
+empire ottoman,2,150,158
+empire ottoman,2,50,112
 empire ottoman,2,80,55
-empire ottoman,2,150,154
-empire ottoman,2,50,103
 empire ottoman,2,160,20
-empire ottoman,2,175,23
-empire ottoman,2,140,13
+empire ottoman,2,175,25
+empire ottoman,2,140,14
 empire ottoman,2,300,14
 empire ottoman,2,100,3
-empire ottoman,3,150,116
-empire ottoman,3,50,84
+empire ottoman,3,150,134
+empire ottoman,3,50,96
+empire ottoman,3,300,12
 empire ottoman,3,160,14
-empire ottoman,3,140,12
-empire ottoman,3,80,29
-empire ottoman,3,175,12
-empire ottoman,3,300,7
-empire ottoman,4,150,58
-empire ottoman,4,175,6
-empire ottoman,4,50,36
-empire ottoman,4,80,19
-empire ottoman,4,160,11
+empire ottoman,3,140,13
+empire ottoman,3,175,16
+empire ottoman,3,80,32
+empire ottoman,4,150,73
+empire ottoman,4,175,9
+empire ottoman,4,300,6
+empire ottoman,4,50,42
+empire ottoman,4,80,23
+empire ottoman,4,160,14
 empire ottoman,4,140,4
-empire ottoman,4,300,5
-empire ottoman,5,50,18
-empire ottoman,5,150,16
+empire ottoman,5,50,21
+empire ottoman,5,150,26
+empire ottoman,5,80,12
+empire ottoman,5,160,2
 empire ottoman,5,175,5
 empire ottoman,5,300,1
-empire ottoman,5,80,9
 empire ottoman,5,140,2
 empire ottoman,5,0,1
-empire ottoman,6,80,4
-empire ottoman,6,150,6
-empire ottoman,6,160,2
-empire ottoman,6,50,6
-empire ottoman,6,140,1
+empire ottoman,6,80,5
+empire ottoman,6,150,8
+empire ottoman,6,50,7
+empire ottoman,6,160,3
+empire ottoman,6,140,2
 empire ottoman,6,175,1
-empire ottoman,7,150,2
-empire ottoman,7,50,2
-empire ottoman,8,80,2
+empire ottoman,7,150,4
+empire ottoman,7,80,3
+empire ottoman,7,50,3
+empire ottoman,7,160,1
+empire ottoman,8,150,2
+empire ottoman,8,80,3
+empire ottoman,8,300,1
 empire ottoman,8,50,1
 empire ottoman,9,150,1
-Ponant,1,300,52
-Ponant,1,150,9
-Ponant,1,140,5
-Ponant,1,5,2
+Ponant,1,300,67
+Ponant,1,150,5
 Ponant,1,160,1
-Ponant,1,80,1
-Ponant,2,300,89
-Ponant,2,150,84
-Ponant,2,130,3
+Ponant,1,5,2
+Ponant,1,140,2
+Ponant,2,150,395
+Ponant,2,300,438
+Ponant,2,130,24
+Ponant,2,5,10
 Ponant,2,160,3
+Ponant,2,0,1
 Ponant,2,50,5
-Ponant,2,140,2
-Ponant,2,80,1
-Ponant,3,150,21
-Ponant,3,300,19
-Ponant,3,160,5
+Ponant,2,140,8
+Ponant,2,35,2
+Ponant,2,30,2
+Ponant,3,300,85
+Ponant,3,150,76
+Ponant,3,250,1
+Ponant,3,130,2
+Ponant,3,50,1
+Ponant,3,5,4
 Ponant,3,175,1
-Ponant,3,5,1
-Ponant,4,50,3
-Ponant,4,300,1
-Ponant,4,150,12
-Ponant,4,175,3
-Ponant,5,150,2
-Ponant,6,150,2
-Ponant,7,160,1
-Ponant,8,300,1
+Ponant,3,160,1
+Ponant,3,80,1
+Ponant,3,140,2
+Ponant,3,30,1
+Ponant,4,150,6
+Ponant,4,5,1
+Ponant,4,300,7
+Ponant,4,175,1
+Ponant,4,50,2
+Ponant,5,150,1
+Ponant,5,300,2
