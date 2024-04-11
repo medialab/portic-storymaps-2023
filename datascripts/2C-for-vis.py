@@ -111,6 +111,7 @@ with open('../data/navigo_all_flows.csv', newline='') as csvfile:
     for row in reader:
         year = row["indate_fixed"][:4]
         p = row["destination"] if year == "1789" else row["departure"] # row["destination"] if row["destination"] == "Marseille" else row['departure']
+        # si patentes tonnage setté à 0 sinon
         tonnage = 0 if p == "Marseille" else float(row['tonnage'] or 0)
         flag = row['flag'] or 'unknown'
         
@@ -185,6 +186,11 @@ french_share_map = {
     "Pologne": "autre",
     "Danemark": "autre",
     "Empire russe": "autre",
+    "Suède": "autre",
+    "Etats-Unis d'Amérique": "autre",
+    "Prusse": "autre",
+    "Duché de Courland": "autre",
+    "Duché de Courlande": "autre",
     "": "autre"
 }
 
@@ -200,14 +206,22 @@ with open('../data/navigo_all_flows.csv', newline='') as csvfile:
            continue
         indate_year = row['indate_fixed'].split('-')[0]
         departure_state = row['departure_state_1789_fr']
-        tonnage = float(row['tonnage'] or 0)
+        # @todo si tonnage_unit = "quintaux" alors diviser par 24
+        tonnage = float(row['tonnage'] or 0) if row["tonnage_unit"].lower() != "quintaux" else float(row['tonnage'] or 0) / 24
+        if row["tonnage_unit"] == "quintaux":
+           print(row["tonnage"], row["tonnage_unit"], tonnage)
         flag = row['flag'] or 'unknown'
         flag_field = "tonnage_french" if flag == "French" else "tonnage_not_french"
         ship_class = row['ship_class_standardized']
         # if tonnage == 0:
-        if ship_class in tonnage_estimates:
+
+        if tonnage == 0 and ship_class in tonnage_estimates:
           tonnage = tonnage_estimates[ship_class]
-        if indate_year in years_to_compare and row["destination"] == "Marseille":
+          
+        if indate_year in years_to_compare and row["travel_rank"] == "1":
+        # if indate_year in years_to_compare and row["destination"] == "Marseille":
+          # if indate_year == "1789" and departure_state == "Grande-Bretagne":
+            #  print("departure pour bateau qui vient d'angleterre en 1787 : ", row["departure"])
           departure_state = french_share_map[departure_state]
           # print("go for", indate_year)
           departure_states.add(departure_state)
