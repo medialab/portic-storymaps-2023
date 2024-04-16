@@ -323,3 +323,13 @@ MarseillePortStructurant:
   port-tooltip:
     fr: En 1789, ${count_total} navires sont partis du port de ${port}, dont ${count} (${ratio}%) vers Marseille.
     en: En 1789, ${count_total} navires sont partis du port de ${port}, dont ${count} (${ratio}%) vers Marseille.
+DiversiteProduits:
+  concentrated-trade:
+    fr: commerce concentré
+    en: concentrated trade
+  diversified-trade:
+    fr: commerce diversifié
+    en: diversified trade
+  tooltip:
+    fr: En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${count}%.
+    en: En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${count}%.

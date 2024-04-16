@@ -3,7 +3,7 @@ import { scalePow } from "d3-scale";
 import { groupBy, range, uniq } from "lodash";
 import { useEffect, useState } from "react";
 import ReactTooltip from "react-tooltip";
-
+import translate from "../../utils/translate";
 
 const MIN_YEAR = 1749;
 const MAX_YEAR = 1790;
@@ -12,7 +12,8 @@ export default function DiversiteProduits({
   width,
   height,
   atlasMode,
-  callerProps = {}
+  callerProps = {},
+  lang
 }) {
   const {
     annee
@@ -97,7 +98,7 @@ export default function DiversiteProduits({
             textAnchor="end"
             fontStyle={'italic'}
           >
-            commerce concentré
+            {translate('DiversiteProduits', 'concentrated-trade', lang)}
           </text>
           <text
             x={labelsWidth + (width - labelsWidth) / 2 + legendRectWidth / 2 + 5}
@@ -107,7 +108,7 @@ export default function DiversiteProduits({
             fontWeight="800"
             fontStyle={'italic'}
           >
-            commerce diversifié
+            {translate('DiversiteProduits', 'diversified-trade', lang)}
           </text>
           
           <linearGradient id="legend-gradient">
@@ -156,7 +157,14 @@ export default function DiversiteProduits({
                             opacity={highlightedYear && highlightedYear !== year ? .1 : 1}
                             fill={val === 0 ? 'transparent' : `hsl(${hueVal} ${saturationPct}% ${luminancePct}%)`}
                             data-for="concentration-tooltip"
-                            data-tip={val === 0 ? undefined : `En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${parseInt(+val * 100)}%.`}
+                            data-tip={val === 0 ? undefined : 
+                              translate('DiversiteProduits', 'tooltip', lang, {
+                                year,
+                                direction,
+                                count: parseInt(+val * 100)
+                              })
+                              // `En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${parseInt(+val * 100)}%.`
+                            }
                             onMouseEnter={() => val === 0 ? undefined : setHighlightedYear(year)}
                             onMouseLeave={() => setHighlightedYear()}
                           />
