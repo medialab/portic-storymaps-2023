@@ -1,5 +1,6 @@
 import { max } from "d3-array";
 import { formatNumber } from "../../utils/misc";
+import translate from "../../utils/translate";
 
 
 const Legend = ({
@@ -11,6 +12,7 @@ const Legend = ({
   toflitAreaScale,
   arrowSide,
   dataScope,
+  lang,
   // data
 
 }) => {
@@ -86,7 +88,7 @@ const Legend = ({
               y={triangleHeight}
               className={'legend-indicator'}
             >
-              nombre de voyages
+              {translate('Intro', 'number-of-travels', lang)}
             </text>
             <line
               x1={0}
@@ -110,7 +112,9 @@ const Legend = ({
               className="legend-indicator"
               
             >
-              {formatNumber(maxShips)} voyages
+              {
+                translate('Intro', 'n-travels', lang, {count: formatNumber(maxShips)})
+              }
             </text>
 
             <line
@@ -126,7 +130,7 @@ const Legend = ({
               className="legend-indicator"
               
             >
-              {formatNumber(maxShips / 2)} voyages
+              {translate('Intro', 'n-travels', lang, {count: formatNumber(maxShips / 2)})}
             </text>
             
             <line
@@ -143,7 +147,7 @@ const Legend = ({
               y={triangleHeight * 2 + 3}
               className={'legend-indicator'}
             >
-              tonnage moyen
+              {translate('Intro', 'mean-tonnage', lang)}
             </text>
             <g
               transform={`translate(${triangleWidth / 2},${triangleHeight * 2})`}
@@ -195,7 +199,8 @@ const Legend = ({
                 y={maxCircleCy - 3 - maxRadius / 2}
                 className="legend-indicator"
               >
-                Commerce total
+                {translate('Intro', 'total-trade', lang)}
+                
               </text>
             <g
               transform={`translate(${maxCircleCx + maxRadius}, ${maxCircleCy - 3})`}

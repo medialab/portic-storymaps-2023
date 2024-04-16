@@ -233,3 +233,64 @@ WarTransferChart:
   tooltip-war:
     fr: Entre ${start} et ${end}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${end} est passé de ${from}% à ${to}% de la navigation vers Marseille.
     en: Entre ${start} et ${end}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${end} est passé de ${from}% à ${to}% de la navigation vers Marseille.
+Intro:
+  title-navigo-world:
+    fr: Pays étrangers de départ des navires à destination de Marseille en 1789
+    en: Pays étrangers de départ des navires à destination de Marseille en 1789
+  title-navigo-france:
+    fr: Sorties des 10 plus grands ports de France en 1787
+    en: Sorties des 10 plus grands ports de France en 1787
+  title-trade-world:
+    fr: Partenaires de commerce de Marseille en 1789
+    en: Partenaires de commerce de Marseille en 1789
+  title-trade-france:
+    fr: Commerce des directions des fermes de France en 1789
+    en: Commerce des directions des fermes de France en 1789
+  scale:
+    fr: Échelle
+    en: Scale
+  legend:
+    fr: Légende
+    en: Legend
+  sources:
+    fr: Sources
+    en: Sources
+  france:
+    fr: France
+    en: France
+  world:
+    fr: Monde
+    en: World
+  navigation:
+    fr: Navigation
+    en: Navigation
+  trade:
+    fr: Commerce
+    en: Trade
+  filter-title:
+    fr: Afficher les ${count} plus grands ports
+    en: Display ${count} top ports
+  number-of-travels:
+    fr: nombre de voyages
+    en: nombre de voyages
+  mean-tonnage:
+    fr: tonnage moyen
+    en: tonnage moyen
+  total-trade:
+    fr: Commerce total
+    en: Total trade
+  n-travels:
+    fr: ${count} voyages
+    en: ${count} travels
+  tooltip-navigo-world:
+    fr: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
+    en: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
+  tooltip-navigo-france:
+    fr: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
+    en: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
+  tooltip-trade-world:
+    fr: La direction des fermes de Marseille a effectué un commerce total de ${count} lt. avec le partenaire ${partner} en 1789.
+    en: La direction des fermes de Marseille a effectué un commerce total de ${count} lt. avec le partenaire ${partner} en 1789.
+  tooltip-trade-france:
+    fr: La direction des fermes de ${partner} a effectué un commerce total de ${count} lt. en 1789.
+    en: La direction des fermes de ${partner} a effectué un commerce total de ${count} lt. en 1789.

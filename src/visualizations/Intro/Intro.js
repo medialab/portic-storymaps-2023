@@ -8,13 +8,15 @@ import PartnersObjects from './PartnersObjects';
 import Legend from './Legend';
 import SliderRange from '../../components/SliderRange/SliderRange';
 import ReactTooltip from 'react-tooltip';
+import translate from '../../utils/translate';
 
 const Intro = ({
   data,
   width,
   height,
   atlasMode,
-  callerProps = {}
+  callerProps = {},
+  lang
 }) => {
   const {
     mode = 'navigo_france',
@@ -43,15 +45,15 @@ const Intro = ({
   let title = '';
   if (dataType === 'navigo') {
     if (dataScope === 'world') {
-      title = 'Pays étrangers de départ des navires à destination de Marseille en 1789';
+      title = translate('Intro', 'title-navigo-world', lang)// 'Pays étrangers de départ des navires à destination de Marseille en 1789';
     } else {
-      title = 'Sorties des 10 plus grands ports de France en 1787';
+      title = translate('Intro', 'title-navigo-france', lang) // 'Sorties des 10 plus grands ports de France en 1787';
     }
   } else {
     if (dataScope === 'world') {
-      title = 'Partenaires de commerce de Marseille en 1789';
+      title = translate('Intro', 'title-trade-world', lang)// 'Partenaires de commerce de Marseille en 1789';
     } else {
-      title = 'Commerce des directions des fermes de France en 1789';
+      title = translate('Intro', 'title-trade-france', lang) // 'Commerce des directions des fermes de France en 1789';
     }
   }
 
@@ -169,6 +171,7 @@ const Intro = ({
                     navigoHeightScale,
                     arrowsMargin,
                     toflitAreaScale,
+                    lang,
                   }
                   }
                 />
@@ -179,7 +182,7 @@ const Intro = ({
       />
       <ul className={`intro-ui-container ${atlasMode ? 'is-atlas-mode' : ''} ${legendPosition}`}>
         <h3>
-          Légende
+        {translate('Intro', 'legend', lang)}
         </h3>
         <li>
           <Legend
@@ -194,6 +197,7 @@ const Intro = ({
               toflitAreaScale,
               data: usableData,
               arrowSide,
+              lang,
             }
             }
           />
@@ -202,36 +206,44 @@ const Intro = ({
           atlasMode ?
             <>
               <li>
-                <h4>Échelle</h4>
+                <h4>
+                  {translate('Intro', 'scale', lang)}
+                </h4>
                 <ul>
                   <li>
                     <button
                       className={dataScope === 'france' ? 'is-active' : ''}
                       onClick={() => setDataScope('france')}
-                    >France</button>
+                    >{translate('Intro', 'france', lang)}</button>
                   </li>
                   <li>
                     <button
                       className={dataScope === 'world' ? 'is-active' : ''}
                       onClick={() => setDataScope('world')}
-                    >Monde</button>
+                    >
+                      {translate('Intro', 'world', lang)}
+                    </button>
                   </li>
                 </ul>
               </li>
               <li>
-                <h4>Sources</h4>
+                <h4>{translate('Intro', 'sources', lang)}</h4>
                 <ul>
                   <li>
                     <button
                       className={dataType === 'navigo' ? 'is-active' : ''}
                       onClick={() => setDataType('navigo')}
-                    >Navigation</button>
+                    >
+                      {translate('Intro', 'navigation', lang)}
+                    </button>
                   </li>
                   <li>
                     <button
                       className={dataType === 'toflit18' ? 'is-active' : ''}
                       onClick={() => setDataType('toflit18')}
-                    >Commerce</button>
+                    >
+                      {translate('Intro', 'trade', lang)}
+                    </button>
                   </li>
                 </ul>
               </li>
@@ -249,7 +261,8 @@ const Intro = ({
           <SliderRange
             {
             ...{
-              title: `Afficher les ${topPortsNumber} plus grands ports`,
+              // `Afficher les ${topPortsNumber} plus grands ports`
+              title: translate('Intro', 'filter-title', lang, {count: topPortsNumber}),
               min: 1,
               max: data.get('intro_data_world.csv')
                 .filter(datum => +datum.navigo_nb_ships > 0 && datum.scope === 'france').length,
