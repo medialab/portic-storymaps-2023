@@ -310,3 +310,16 @@ LevantNavigation:
   tooltip:
     fr: Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${tonnage} tonneaux</strong> cumulés.
     en: Selon le register des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${tonnage} tonneaux</strong> cumulés.
+MarseillePortStructurant:
+  legend:
+    fr: Légende
+    en: Legend
+  legend-share-marseille:
+    fr: part des départs pour Marseille
+    en: share of departures to Marseille
+  legend-nb-departures:
+    fr: nombre de départs en 1789
+    en: number de départs en 1789
+  port-tooltip:
+    fr: En 1789, ${count_total} navires sont partis du port de ${port}, dont ${count} (${ratio}%) vers Marseille.
+    en: En 1789, ${count_total} navires sont partis du port de ${port}, dont ${count} (${ratio}%) vers Marseille.

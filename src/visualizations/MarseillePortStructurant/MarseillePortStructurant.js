@@ -3,7 +3,7 @@ import ReactTooltip from 'react-tooltip';
 
 import { scaleLinear } from 'd3-scale';
 import { useSpring, animated } from '@react-spring/web';
-
+import translate from "../../utils/translate";
 import GeographicMapChart from '../../components/GeographicMapChart';
 
 
@@ -42,7 +42,11 @@ const labelsCoordinates = {
 
 const MARSEILLE_COLOR = "red";
 const Provinces = ({
-  data: inputData, projection, width, height
+  data: inputData, 
+  projection, 
+  width, 
+  height,
+  lang,
 }) => {
   // const data = useMemo(() => {
   const data = inputData.features.filter(({ properties: { shortname } }) => ['Roussillon', 'Languedoc', 'Provence', 'Isles de Corse'].includes(shortname))
@@ -104,7 +108,8 @@ const Provinces = ({
 }
 
 const MapObjects = ({
-  data, projection, width, height
+  data, projection, width, height,
+  lang,
 }) => {
   // const CENTER_COORDS = [41.3, 5.8];
   const CENTER_COORDS = [41.3, 5.2158406];
@@ -173,7 +178,15 @@ const MapObjects = ({
             return (
               <g className="port-object" key={port}
                 data-for="structurant-tooltip"
-                data-tip={`En 1789, ${count_total} navires sont partis du port de ${port}, dont ${parseInt(count_total * ratio_to_marseille)} (${parseInt(ratio_to_marseille * 100)}%) vers Marseille.`}
+                data-tip={
+                  translate('MarseillePortStructurant', 'port-tooltip', lang, {
+                    count_total,
+                    port,
+                    count: parseInt(count_total * ratio_to_marseille),
+                    ratio: parseInt(ratio_to_marseille * 100)
+                  })
+                  // `En 1789, ${count_total} navires sont partis du port de ${port}, dont ${parseInt(count_total * ratio_to_marseille)} (${parseInt(ratio_to_marseille * 100)}%) vers Marseille.`
+                }
               >
                 <line
                   x1={portX}
@@ -355,13 +368,13 @@ export default function MarseillePortStructurant({
               type: 'custom',
               data: mapBgData,
               renderObjects: (props) =>
-                <Provinces {...props} />
+                <Provinces {...props} lang={lang} />
             },
             {
               type: 'custom',
               data: data,
               renderObjects: (props) =>
-                <MapObjects {...props} />
+                <MapObjects {...props} lang={lang} />
             },
             {
               type: 'custom',
@@ -379,7 +392,7 @@ export default function MarseillePortStructurant({
                         xmlns="http://www.w3.org/1999/xhtml"
                         className="legend-title"
                       >
-                        Légende
+                        {translate('MarseillePortStructurant', 'legend', lang)}
                       </h4>
                     </foreignObject>
                     <rect
@@ -428,7 +441,7 @@ export default function MarseillePortStructurant({
                         className="legend-label"
                         style={{ fontSize: gutter }}
                       >
-                        part des départs pour Marseille
+                        {translate('MarseillePortStructurant', 'legend-share-marseille', lang)}
                       </p>
                     </foreignObject>
                     <foreignObject
@@ -442,7 +455,7 @@ export default function MarseillePortStructurant({
                         className="legend-label"
                         style={{ textAlign: 'right', fontSize: gutter }}
                       >
-                        nombre de départs en 1789
+                        {translate('MarseillePortStructurant', 'legend-nb-departures', lang)}
                       </p>
                     </foreignObject>
 
