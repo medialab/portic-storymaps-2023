@@ -4,6 +4,8 @@ import { range } from 'lodash';
 import './WarTransferChart.scss';
 import { mean } from 'd3-array';
 import ReactTooltip from 'react-tooltip';
+import translate from '../../utils/translate';
+import { useMemo } from 'react';
 
 export default function WarTransferChart({
   title,
@@ -11,6 +13,7 @@ export default function WarTransferChart({
   height,
   data,
   palette,
+  lang,
 }) {
   const gutter = 10;
   const topAxisHeight = gutter * 12;
@@ -138,6 +141,25 @@ export default function WarTransferChart({
                 })
               });
 
+              const translateLabel = useMemo(() =>
+                (group) => {
+                  switch(group) {
+                    case 'neutre':
+                      return translate('WarTransferChart', 'group-neutral', lang);
+                    case 'France du Levant':
+                      return translate('WarTransferChart', 'group-levant', lang);
+                    case 'France du Ponant':
+                      return translate('WarTransferChart', 'group-ponant', lang);
+                    case 'en guerre allié de la France':
+                      return translate('WarTransferChart', 'group-war-ally', lang);
+                    case 'en guerre ennemi de la France':
+                      return translate('WarTransferChart', 'group-war-ennemy', lang);
+                    default:
+                      return 'no translation for group :(';
+                  }
+                }
+              , [])
+
               return (
                 <g
                   key={coupleIndex}
@@ -153,15 +175,29 @@ export default function WarTransferChart({
                       xmlns="http://www.w3.org/1999/xhtml"
                       className="label"
                     >
-                      <strong>{peaceData.year}</strong> <br />(année de paix)
+                      <strong>{peaceData.year}</strong> <br />({translate('WarTransferChart', 'peace-year', lang)})
                     </div>
                   </foreignObject>
                   <g className="links-group" transform={`translate(${sideWidth}, ${0})`}>
                     {
                       links.map(({ group, color, points, values }, index) => {
-                        let tooltip = `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé estimé des navires du groupe ${group} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`
+                        let tooltip = translate('WarTransferChart', 'tooltip-peace', lang, {
+                          start: peaceData.year,
+                          end: warData.year,
+                          group,
+                          from: parseInt(values[0] * 100),
+                          to: parseInt(values[1] * 100),
+                        }) 
+                        // `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé estimé des navires du groupe ${group} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`
                         if (group.includes('guerre')) {
-                          tooltip = `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${warData.year} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`;
+                          // tooltip = `Entre ${peaceData.year} et ${warData.year}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${warData.year} est passé de ${parseInt(values[0] * 100)}% à ${parseInt(values[1] * 100)}% de la navigation vers Marseille.`;
+                          tooltip = translate('WarTransferChart', 'tooltip-war', lang, {
+                            start: peaceData.year,
+                            end: warData.year,
+                            group,
+                            from: parseInt(values[0] * 100),
+                            to: parseInt(values[1] * 100),
+                          }) 
                         }
                         return (
                           <g className="link-group"
@@ -217,7 +253,7 @@ export default function WarTransferChart({
 
                                 >
                                   <text x={0} y={0} fontSize={gutter}>
-                                    {group}
+                                    {translateLabel(group)}
                                   </text>
                                 </g>
                                 : null
@@ -284,7 +320,7 @@ export default function WarTransferChart({
                       xmlns="http://www.w3.org/1999/xhtml"
                       className="label"
                     >
-                      <strong>{warData.year}</strong> <br />(année de guerre)
+                      <strong>{warData.year}</strong> <br />({translate('WarTransferChart', 'war-year', lang)})
                     </div>
                   </foreignObject>
                 </g>

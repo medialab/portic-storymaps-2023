@@ -1,6 +1,7 @@
 import WarTransferChart from '../../components/WarTransferChart';
 
 import colorsPalettes from '../../utils/colorPalettes';
+import translate from '../../utils/translate';
 
 const {warStatus: palette} = colorsPalettes;
 
@@ -9,6 +10,7 @@ export default function GuerreEtNavigation ({
   height,
   data: inputData,
   atlasMode,
+  lang,
 }) {
   // const data = useMemo(() => {
     const cleanData = (inputData.get('navigation_guerre.csv') || [])
@@ -44,11 +46,12 @@ export default function GuerreEtNavigation ({
       <WarTransferChart
         {
           ...{
-            title: atlasMode ? 'Les acteurs de la navigation à destination de Marseille (en tonnage estimé)' : undefined,
+            title: atlasMode ? translate('GuerreEtNavigation', 'atlas-title', lang) : undefined,
             width,
             height,
             data,
             palette,
+            lang,
           }
         }
       />

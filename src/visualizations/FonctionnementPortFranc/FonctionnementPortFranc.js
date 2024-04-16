@@ -4,6 +4,9 @@
 import { useEffect, useState } from 'react';
 
 import './FonctionnementPortFranc.scss';
+import translate from '../../utils/translate';
+
+
 
 const simplifiedData = ({width, height}) => `<svg width="${width}" height="${height}" viewBox="0 0 1921 1276" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M539.783 215.886C530.59 221.391 527.601 233.305 533.106 242.497C538.61 251.689 550.524 254.679 559.717 249.174L539.783 215.886ZM1493.11 254.732L1374.21 64.8767L1269.24 262.772L1493.11 254.732ZM559.717 249.174C699.85 165.257 860.89 122.758 1024.18 126.601L1025.1 87.812C854.474 83.7965 686.205 128.203 539.783 215.886L559.717 249.174ZM1024.18 126.601C1130.17 129.096 1234.29 151.047 1331.52 190.871L1346.23 154.967C1244.64 113.355 1135.84 90.4184 1025.1 87.812L1024.18 126.601Z" fill="#EE7993"/>
@@ -147,7 +150,8 @@ export default function FonctionnementPortFranc({
   width,
   height,
   // data: inputData,
-  callerProps = {}
+  callerProps = {},
+  lang,
 }) {
   const {
     mode = 'complete'
@@ -170,13 +174,13 @@ export default function FonctionnementPortFranc({
         className={`button ${activeMode === 'complete' ? 'is-active': ''}`}
         onClick={() => setActiveMode('complete')}
       >
-        Réseau complet
+        {translate('FonctionnementPortFranc', 'reseau-complet', lang)}
       </button>
       <button 
         className={`button ${activeMode === 'simplified' ? 'is-active': ''}`}
         onClick={() => setActiveMode('simplified')}
       >
-        Réseau simplifié
+                {translate('FonctionnementPortFranc', 'reseau-simplifie', lang)}
       </button>
     </div>
     </div>

@@ -194,3 +194,42 @@ StylesNavigation:
   intersection-tooltip:
     fr: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.
     en: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.
+FonctionnementPortFranc:
+  reseau-complet:
+    fr: Réseau complet
+    en: Complete network
+  reseau-simplifie:
+    fr: Réseau simplifié
+    en: Simplified network
+GuerreEtNavigation:
+  atlas-title:
+    fr: Les acteurs de la navigation à destination de Marseille (en tonnage estimé)
+    en: Les actors de la navigation à destination de Marseille (en tonnage estimé)
+WarTransferChart:
+  peace-year:
+    fr: année de paix
+    en: peace year
+  war-year:
+    fr: année de guerre
+    en: war year
+  group-neutral:
+    fr: neutre
+    en: neutral
+  group-levant:
+    fr: France du Levant
+    en: Levant France
+  group-ponant:
+    fr: France du Ponant
+    en: Ponant France
+  group-war-ally:
+    fr: en guerre allié de la France
+    en: at war, allied of France
+  group-war-ennemy:
+    fr: en guerre ennemi de la France
+    en: at war, ennemy of France
+  tooltip-peace:
+    fr: Entre ${start} et ${end}, le tonnage cumulé estimé des navires du groupe ${group} est passé de ${from}% à ${to}% de la navigation vers Marseille.
+    en: Entre ${start} et ${end}, le tonnage cumulé estimé des navires du groupe ${group} est passé de ${from}% à ${to}% de la navigation vers Marseille.
+  tooltip-war:
+    fr: Entre ${start} et ${end}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${end} est passé de ${from}% à ${to}% de la navigation vers Marseille.
+    en: Entre ${start} et ${end}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${end} est passé de ${from}% à ${to}% de la navigation vers Marseille.
