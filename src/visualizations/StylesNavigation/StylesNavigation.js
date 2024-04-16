@@ -7,6 +7,7 @@ import {scaleLinear} from 'd3-scale';
 
 import { useSpring, animated } from '@react-spring/web';
 
+import translate from '../../utils/translate';
 
 import './StylesNavigation.scss';
 import GeographicMapChart from '../../components/GeographicMapChart';
@@ -168,7 +169,8 @@ export default function StylesNavigation({
   width,
   height,
   atlasMode,
-  callerProps = {}
+  callerProps = {},
+  lang,
 }) {
   const {
     tonnage,
@@ -341,10 +343,11 @@ export default function StylesNavigation({
               width: cellWidth,
               height: cellHeight,
               id:'méditerranée',
-              title: `Méditerranée occidentale (${formatNumber(travelsSums['méditerranée occidentale'])} voyages vers Marseille consignés en temps de paix)`,
+              title: translate('StylesNavigation', 'title-mediterrannee', lang, {count: formatNumber(travelsSums['méditerranée occidentale'])}),
+              // title: `Europe méditerranéenne (${formatNumber(travelsSums['méditerranée occidentale'])} voyages vers Marseille consignés en temps de paix)`,
               data: data.filter(({category}) => category === 'méditerranée occidentale'),
               color: colors['méditerranée occidentale'],
-              legendStep: 500,
+              legendStep: 250,
               tonnageValues,
               highlightedTonnage, 
               setHighlightedTonnage,
@@ -352,6 +355,7 @@ export default function StylesNavigation({
               setHighlightedCategory,
               highlightedSteps, 
               setHighlightedSteps,
+              lang,
             }}
           />
         </div>
@@ -363,10 +367,11 @@ export default function StylesNavigation({
               width: cellWidth,
               height: cellHeight,
               id:'ponant',
-              title: `Ponant (${formatNumber(travelsSums['Ponant'])} voyages vers Marseille consignés en temps de paix)`,
+              title: translate('StylesNavigation', 'title-ponant', lang, {count: formatNumber(travelsSums['Ponant'])}),
+              // title: `Ponant et Terre-Neuve (${formatNumber(travelsSums['Ponant'])} voyages vers Marseille consignés en temps de paix)`,
               data: data.filter(({category}) => category === 'Ponant'),
               color: colors['Ponant'],
-              legendStep: 20,
+              legendStep: 40,
               tonnageValues,
               highlightedTonnage, 
               setHighlightedTonnage,
@@ -374,6 +379,7 @@ export default function StylesNavigation({
               setHighlightedCategory,
               highlightedSteps, 
               setHighlightedSteps,
+              lang,
             }}
           />
         </div>
@@ -383,7 +389,8 @@ export default function StylesNavigation({
               width: cellWidth,
               height: cellHeight,
               id:'empire',
-              title: `Empire ottoman (${formatNumber(travelsSums['empire ottoman'])} voyages vers Marseille consignés en temps de paix)`,
+              // title: `Empire ottoman et mer Noire (${formatNumber(travelsSums['empire ottoman'])} voyages vers Marseille consignés en temps de paix)`,
+              title: translate('StylesNavigation', 'title-ottoman', lang, {count: formatNumber(travelsSums['empire ottoman'])}),
               data: data.filter(({category}) => category === 'empire ottoman'),
               color: colors['empire ottoman'],
               tonnageValues,
@@ -394,6 +401,7 @@ export default function StylesNavigation({
               setHighlightedCategory,
               highlightedSteps, 
               setHighlightedSteps,
+              lang,
             }}
           />
         </div>

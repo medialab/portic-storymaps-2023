@@ -160,3 +160,37 @@ exportations-sud-est:
   title-bottom: 
     fr: Province d'origine des produits exportés par Marseille
     en: Province of origin of products exported by Marseille
+StylesNavigation:
+  title-mediterrannee:
+    fr: Europe méditerranéenne (${count} voyages vers Marseille consignés en temps de paix)
+    en: Mediterrannean Europe (${count} voyages vers Marseille consignés en temps de paix)
+  title-ponant:
+    fr: Ponant et Terre-Neuve (${count} voyages vers Marseille consignés en temps de paix)
+    en: Ponant et Terre-Neuve (${count} voyages vers Marseille consignés en temps de paix)
+  title-ottoman:
+    fr: Empire ottoman et mer Noire (${count} voyages vers Marseille consignés en temps de paix)
+    en: Empire ottoman et mer Noire (${count} voyages vers Marseille consignés en temps de paix)
+  number-of-travels:
+    fr: nombre de voyages
+    en: number of travels
+  travels-tick:
+    fr: ${count} voyages
+    en: ${count} travels
+  tonnage:
+    fr: tonnage
+    en: tonnage
+  travels-minified:
+    fr: ${count} v.
+    en: ${count} t.
+  number-of-steps:
+    fr: nombre d'étapes
+    en: number of steps
+  steps-bar-tooltip:
+    fr: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires sont venus à Marseille en faisant ${nb_steps} étapes.
+    en: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires sont venus à Marseille en faisant ${nb_steps} étapes.
+  tonnage-bar-tooltip:
+    fr: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille.
+    en: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille.
+  intersection-tooltip:
+    fr: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.
+    en: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.

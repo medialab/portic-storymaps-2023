@@ -1,6 +1,7 @@
 import { max } from "d3-array";
 import { scaleLinear } from "d3-scale";
 import { range, uniq } from "lodash";
+import translate from "../../utils/translate";
 
 // category,nb_steps,tonnage,count
 
@@ -19,6 +20,7 @@ export default function StyleViz({
   setHighlightedCategory,
   highlightedSteps,
   setHighlightedSteps,
+  lang,
 }) {
   const titleHeight = 60;
   const sideWidth = width / 4 < 20 ? 20 : width / 4;
@@ -59,7 +61,7 @@ export default function StyleViz({
       onMouseEnter={() => setHighlightedCategory(id)}
           onMouseLeave={() => setHighlightedCategory()}
     >
-      <h4 style={{ height: titleHeight }}>{title}</h4>
+      <h4 style={{ height: titleHeight / 2 }}>{title}</h4>
       <svg
         width={width}
         height={matrixHeight + sideWidth}
@@ -116,14 +118,14 @@ export default function StyleViz({
               fontSize={axisStep * 2}
               className="axis-title"
             >
-              nombre d'étapes
+              {translate('StylesNavigation', 'number-of-steps', lang)}
             </text>
           </g>
         </g>
         <g className="legend">
           <foreignObject
             x={axisStep}
-            y={axisStep}
+            y={axisStep * 4}
             width={sideWidth - axisStep * 8}
             height={cellHeight * 3}
           >
@@ -132,7 +134,7 @@ export default function StyleViz({
               className="axis-title"
               style={{ fontSize: axisStep * 2 }}
             >
-              {`nombre de voyages`}
+              {translate('StylesNavigation', 'number-of-travels', lang)}
             </div>
           </foreignObject>
           {
@@ -140,7 +142,6 @@ export default function StyleViz({
               .map((legendValue, index) => {
                 // const cy = cellHeight * 2 + index * legendCellHeight + legendCellHeight / 2;
                 const cy = legendObjectOffset;
-
                 const cx = maxRadius;
                 const area = areaScale(legendValue);
                 const radius = Math.sqrt(area / Math.PI);
@@ -161,7 +162,7 @@ export default function StyleViz({
                       fontSize={axisStep * 1.5}
                       fontStyle="italic"
                     >
-                      {legendValue} voyages
+                      {translate('StylesNavigation', 'travels-tick', lang, {count: legendValue})}
                     </text>
                   </g>
                 )
@@ -223,7 +224,7 @@ export default function StyleViz({
             fontSize={axisStep * 2}
             className="axis-title"
           >
-            tonnage
+            {translate('StylesNavigation', 'tonnage', lang)}
           </text>
         </g>
         <g
@@ -240,7 +241,8 @@ export default function StyleViz({
                 return (
                   <g key={nb_steps}
                     data-for="styles-tooltip"
-                    data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires sont venus à Marseille en faisant ${nb_steps} étapes.`}
+                    data-tip={translate('StylesNavigation', 'steps-bar-tooltip', lang, {count, nb_steps})}
+                    // data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires sont venus à Marseille en faisant ${nb_steps} étapes.`}
                     onMouseEnter={() => setHighlightedSteps(nb_steps)}
                     onMouseLeave={() => setHighlightedSteps()}
                     opacity={highlightedSteps && highlightedSteps !== nb_steps ? .3 : 1}
@@ -265,7 +267,7 @@ export default function StyleViz({
                             textAnchor={textOutside ? 'start' : 'end'}
                             fill={textOutside ? 'grey' : 'white'}
                           >
-                            {count} v.
+                            {translate('StylesNavigation', 'travels-minified', lang, {count})}
                           </text>
                         </g>
                         : null
@@ -290,7 +292,7 @@ export default function StyleViz({
                 return (
                   <g key={tonnage}
                     data-for="styles-tooltip"
-                    data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille.`}
+                    data-tip={translate('StylesNavigation', 'tonnage-bar-tooltip', lang, {count, tonnage})}
                     onMouseEnter={() => setHighlightedTonnage(tonnage)}
                     onMouseLeave={() => setHighlightedTonnage()}
                     opacity={highlightedTonnage && highlightedTonnage !== tonnage ? .3 : 1}
@@ -370,7 +372,7 @@ export default function StyleViz({
                     stroke="white"
                     data-for="styles-tooltip"
                     opacity={opacity}
-                    data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.`}
+                    data-tip={translate('StylesNavigation', 'intersection-tooltip', lang, {count, tonnage, nb_steps})}
                     onMouseEnter={() => {
                       setHighlightedTonnage(tonnage);
                       setHighlightedSteps(nb_steps);
