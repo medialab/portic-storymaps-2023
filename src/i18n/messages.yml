@@ -333,3 +333,58 @@ DiversiteProduits:
   tooltip:
     fr: En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${count}%.
     en: En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${count}%.
+PartDesEtrangersDansNavigation:
+  comparison-row-title:
+    fr: Part de navires étrangers partis de France en 1787 (tonnage cumulé)
+    en: Share de navires étrangers partis de France en 1787 (tonnage cumulé)
+  marseille-row-title:
+    fr: Pavillon des navires étrangers arrivés à Marseille en 1789 (tonnage cumulé estimé)
+    en: Pavillon des navires étrangers arrivés à Marseille en 1789 (tonnage cumulé estimé)
+  ins:
+    fr: entrées
+    en: in
+  top-row-tooltip:
+    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}%) du total des étrangers).
+    en: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}%) du total des étrangers).
+  bottom-row-tooltip:
+    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}%) du total des étrangers).
+    en: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}%) du total des étrangers).
+  gênois:
+    fr: gênois
+    en: genoese
+  britanniques:
+    fr: britanniques
+    en: british
+  italians:
+    fr: napolitains, gênois, vénitiens, toscans, carrarais, romains, savoyards
+    en: napolitans, genoese, venitians, toscans, carraras, romans, savoyards
+  espagnols:
+    fr: espagnols
+    en: spanish
+  unknown:
+    fr: inconnus
+    en: unknown
+  jerusalemites:
+    fr: jérusalémites
+    en: jerusalemites
+  monégasques:
+    fr: monégasques
+    en: monegasques
+  savoyards:
+    fr: savoyards
+    en: savoyards
+  hollandais:
+    fr: hollandais
+    en: dutch
+  danois:
+    fr: danois
+    en: danish
+  impériaux-mediterrannee:
+    fr: impériaux de la méditerrannée
+    en: mediterrannean imperials
+  suédois:
+    fr: suédois
+    en: swedish
+  ragusois:
+    fr: ragusois
+    en: ragusans

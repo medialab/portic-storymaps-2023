@@ -1,17 +1,28 @@
 
 
 import './PartDesEtrangersDansNavigation.scss';
+import { useMemo } from 'react';
 import { scaleLinear } from 'd3-scale';
 import ReactTooltip from 'react-tooltip';
 import {formatNumber} from '../../utils/misc';
+import translate from '../../utils/translate';
 
-const flagToNationality = {
+const italians = ['Genoese', 'Savoyard', 'Venitian', 'Tuscan', 'Neapolitan', 'Carrara', 'Roman'];
+
+export default function PartDesEtrangersDansNavigation({
+  data: inputData,
+  width,
+  height,
+  lang
+}) {
+
+const flagToNationality = useMemo(() => ({
   'Genoese': 'gênois',
   'Venitian': 'vénitiens',
   'Tuscan': 'toscans',
   'Neapolitan': 'napolitains',
   'Carrara': 'carrarais',
-  'Ragusan': 'ragusois',
+  'Ragusan': translate('PartDesEtrangersDansNavigation', 'ragusois', lang),
   'Roman': 'romains',
 
   // 'Genoese': 'italiens',
@@ -22,26 +33,19 @@ const flagToNationality = {
   // 'Roman': 'italiens',
   // 'Ragusan': 'italiens',
 
-  'Spanish': 'espagnols',
-  'unknown': 'inconnu',
-  'Jerusalemite': 'jérusalémites',
-  'Monegasque': 'monégasques',
-  'Savoyard': 'savoyards',
-  'British': 'britanniques',
-  'Dutch': 'hollandais',
-  'Danish': 'danois',
-  'Imperial Mediterranean': 'impériaux de la méditerranée',
-  'Swedish': 'suédois',
-}
+  'Spanish': translate('PartDesEtrangersDansNavigation', 'espagnols', lang),
+  'unknown': translate('PartDesEtrangersDansNavigation', 'unknown', lang),
+  'Jerusalemite': translate('PartDesEtrangersDansNavigation', 'jerusalemites', lang),
+  'Monegasque': translate('PartDesEtrangersDansNavigation', 'monégasques', lang),
+  'Savoyard': translate('PartDesEtrangersDansNavigation', 'savoyards', lang),
+  'British': translate('PartDesEtrangersDansNavigation', 'britanniques', lang),
+  'Dutch': translate('PartDesEtrangersDansNavigation', 'hollandais', lang),
+  'Danish': translate('PartDesEtrangersDansNavigation', 'danois', lang),
+  'Imperial Mediterranean': translate('PartDesEtrangersDansNavigation', 'imperiaux-mediterrannee', lang),
+  // 'Imperial Mediterranean': 'impériaux de la méditerranée',
+  'Swedish': translate('PartDesEtrangersDansNavigation', 'suédois', lang),
+}), [lang]);
 
-const italians = ['Genoese', 'Savoyard', 'Venitian', 'Tuscan', 'Neapolitan', 'Carrara', 'Roman'];
-
-export default function PartDesEtrangersDansNavigation({
-  data: inputData,
-  width,
-  height,
-  // lang
-}) {
   // const comparisonData = useMemo(() => inputData.get('share_of_strangers_1787_french_ports.csv')
   const comparisonData = (inputData.get('share_of_strangers_1787_french_ports.csv') || [])
     .map(d => ({ ...d, share_of_strangers: +d.share_of_strangers }))
@@ -61,7 +65,7 @@ export default function PartDesEtrangersDansNavigation({
         let label = item.label;
         let flag = item.flag;
         if (italians.includes(item.flag)) {
-          label = 'napolitains, gênois, vénitiens, toscans, carrarais, romains, savoyards';
+          label = translate('PartDesEtrangersDansNavigation', 'italians', lang);
           flag = 'italians';
         }
         if (res[label]) {
@@ -108,8 +112,8 @@ export default function PartDesEtrangersDansNavigation({
   const topBarWidth = comparisonCellWidth / 2;
   const topAxisValues = [0, 25, 50, 75, 100];
 
-  const comparisonRowTitle = 'Part de navires étrangers partis de France en 1787 (tonnage cumulé)';
-  const marseilleRowTitle = 'Pavillon des navires étrangers arrivés à Marseille en 1789 (tonnage cumulé estimé)';
+  const comparisonRowTitle = translate('PartDesEtrangersDansNavigation', 'comparison-row-title', lang);
+  const marseilleRowTitle = translate('PartDesEtrangersDansNavigation', 'marseille-row-title', lang);
 
   const marseilleSum = marseilleData.reduce((sum, { tonnage }) => sum + tonnage, 0);
   const marseilleScale = scaleLinear().domain([0, marseilleSum]).range([0, vizSpaceWidth]);
@@ -195,7 +199,7 @@ export default function PartDesEtrangersDansNavigation({
                           fontSize={comparisonLabelsHeight / 4}
                           fontWeight={port === 'Marseille' ? 'bold' : undefined}
                         >
-                          {port + (port === 'Marseille' ? ' (entrées)' : '')}
+                          {port + (port === 'Marseille' ? ` (${translate('PartDesEtrangersDansNavigation', 'ins', lang)})` : '')}
                         </text>
                       </g>
                       {
@@ -237,7 +241,14 @@ export default function PartDesEtrangersDansNavigation({
                   return (
                     <g transform={`translate(${marseilleXOffset - width}, ${0})`}
                     data-for="part-etrangers-tooltip"
-                          data-tip={`En 1789, un total de ${formatNumber(tonnage)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`}
+                          data-tip={
+                            // `En 1789, un total de ${formatNumber(tonnage)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`
+                            translate('PartDesEtrangersDansNavigation', 'top-row-tooltip', lang, {
+                              tonnage: formatNumber(tonnage),
+                              label,
+                              pct: parseInt(tonnage / marseilleSum * 100)
+                            })
+                        }
                        
                     >
                       <rect
@@ -259,7 +270,14 @@ export default function PartDesEtrangersDansNavigation({
                           style={{ fontSize: fontSize, color: 'white' }}
                           className="label"
                           data-for="part-etrangers-tooltip"
-                          data-tip={`En 1789, un total de ${formatNumber(tonnage)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`}
+                          data-tip={
+                            translate('PartDesEtrangersDansNavigation', 'bottom-row-tooltip', lang, {
+                                tonnage: formatNumber(tonnage),
+                                label,
+                                pct: parseInt(tonnage / marseilleSum * 100)
+                            })
+                            // `En 1789, un total de ${formatNumber(tonnage)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`
+                          }
                         >
                           {label} ({parseInt(tonnage / marseilleSum * 100)}%)
                         </div>
