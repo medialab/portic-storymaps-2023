@@ -13,7 +13,14 @@ import TradeDynamicsChart from "../../components/TradeDynamicsChart";
  *
  **/
 
-const TradeDynamics = ({ data, width, height, atlasMode, callerProps }) => {
+const TradeDynamics = ({ 
+  data, 
+  width, 
+  height, 
+  atlasMode, 
+  callerProps, 
+  lang
+}) => {
   const rows = callerProps?.rows ? 
   {
     France: 1, 
@@ -27,13 +34,18 @@ const TradeDynamics = ({ data, width, height, atlasMode, callerProps }) => {
   const regression = callerProps?.regression || "reg";
   return (
     <TradeDynamicsChart
-      rows={rows}
-      kind={kind}
-      regression={regression}
-      datasets={data}
-      width={width}
-      height={height}
-      atlasMode={atlasMode}
+      {
+        ...{
+          rows,
+          kind,
+          regression,
+          datasets: data,
+          width,
+          height,
+          atlasMode,
+          lang,
+        }
+      }
     />
   );
 };

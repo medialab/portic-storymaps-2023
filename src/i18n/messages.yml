@@ -64,7 +64,7 @@ viz-1-A:
     en: share of french ${kind}
   absoluteValue:
     fr: valeur absolue ${kind}
-    end: ${kind} absolute value
+    en: ${kind} absolute value
   regressionTitle:
     fr: "Croissance : ${slope}%/an"
     en: "Dynamics: ${slope}%/year"

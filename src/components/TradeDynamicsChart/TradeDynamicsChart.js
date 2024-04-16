@@ -27,7 +27,7 @@ const TradeDynamicsChart = (props) => {
   const {
     width: inputWidth,
     height: containerHeight,
-    lang = "fr",
+    lang,
     startYear = 1740,
     endYear = 1790,
     productTradePartThreshold = 0.9,
