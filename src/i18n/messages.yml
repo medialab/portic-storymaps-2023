@@ -160,6 +160,18 @@ exportations-sud-est:
   title-bottom: 
     fr: Province d'origine des produits exportés par Marseille
     en: Province of origin of products exported by Marseille
+  display-unknown-origins:
+    fr: Afficher les origines inconnues
+    en: Display unknown origin
+  display-colonial-products:
+    fr: Afficher les produits coloniaux
+    en: Display colonial products
+  scale-marseille:
+    fr: Mettre Marseille à l'échelle nationale
+    en: Scale Marseille relatively to France
+  unknown:
+    fr: inconnue
+    en: unknown
 StylesNavigation:
   title-mediterrannee:
     fr: Europe méditerranéenne (${count} voyages vers Marseille consignés en temps de paix)

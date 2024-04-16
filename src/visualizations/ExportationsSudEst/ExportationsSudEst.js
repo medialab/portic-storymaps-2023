@@ -296,7 +296,7 @@ export default function ExportationsSudEst({
                         y={0}
                         fontSize={nationalFontScale(value)}
                       >
-                        {label} ({formatNumber(parseInt(value))} lt.)
+                        {label === 'inconnue' ? translate('exportations-sud-est', 'unknown', lang) : label} ({formatNumber(parseInt(value))} lt.)
                       </Text>
                     </G>
                     : null
@@ -395,15 +395,21 @@ export default function ExportationsSudEst({
         <ul className="controls">
           <li>
             <input type="checkbox" checked={showInconnu} onClick={() => setShowInconnu(!showInconnu)} />
-            <label>Afficher les origines inconnues</label>
+            <label>
+              {translate('exportations-sud-est', 'display-unknown-origins', lang)}
+            </label>
           </li>
           <li>
             <input type="checkbox" checked={showColonies} onClick={() => setShowColonies(!showColonies)} />
-            <label>Afficher les produits coloniaux</label>
+            <label>
+            {translate('exportations-sud-est', 'display-colonial-products', lang)}
+            </label>
           </li>
           <li>
             <input type="checkbox" checked={relativeScale} onClick={() => setRelativeScale(!relativeScale)} />
-            <label>Mettre Marseille à l'échelle nationale</label>
+            <label>
+            {translate('exportations-sud-est', 'scale-marseille', lang)}
+            </label>
           </li>
         </ul>
       </foreignObject>
