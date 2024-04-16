@@ -12,6 +12,7 @@ const { provinces: provincesPalette } = colorsPalettes;
 import './LevantNavigation.scss';
 import { extent } from 'd3-array';
 import { formatNumber } from '../../utils/misc';
+import translate from "../../utils/translate";
 
 const Provinces = ({
   data: inputData, projection, width, height
@@ -199,7 +200,14 @@ export default function LevantNavigation({
                             transform={`translate(${x}, ${y})`}
                             data-for="levant-tooltip"
                             data-html="true"
-                            data-tip={`Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${formatNumber(tonnage)} tonneaux</strong> cumulés.`}
+                            data-tip={
+                              translate('LevantNavigation', 'tooltip', lang, {
+                                count,
+                                port,
+                                tonnage: formatNumber(tonnage)
+                              })
+                              // `Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${formatNumber(tonnage)} tonneaux</strong> cumulés.`
+                            }
                           >
                             <circle
                               cx={0}

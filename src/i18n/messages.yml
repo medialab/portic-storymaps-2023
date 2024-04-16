@@ -294,3 +294,7 @@ Intro:
   tooltip-trade-france:
     fr: La direction des fermes de ${partner} a effectué un commerce total de ${count} lt. en 1789.
     en: La direction des fermes de ${partner} a effectué un commerce total de ${count} lt. en 1789.
+LevantNavigation:
+  tooltip:
+    fr: Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${tonnage} tonneaux</strong> cumulés.
+    en: Selon le register des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${tonnage} tonneaux</strong> cumulés.
