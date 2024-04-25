@@ -18,6 +18,7 @@
           <attvalue for="market" value="Abbeville"/>
           <attvalue for="bassin" value="Artois-Picardie"/>
           <attvalue for="weightedDegree" value="102.91748253988942"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="102.91748253988942"/>
         <viz:position x="-106.38131713867188" y="468.1654357910156"/>
@@ -41,7 +42,7 @@
           <attvalue for="market" value="Auzerre"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="85.69681100012478"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="85.69681100012478"/>
         <viz:position x="115.41665649414062" y="245.6195068359375"/>
@@ -53,7 +54,7 @@
           <attvalue for="market" value="BarleDuc"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="112.0035253405401"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="112.0035253405401"/>
         <viz:position x="27.381746292114258" y="213.6028289794922"/>
@@ -65,6 +66,7 @@
           <attvalue for="market" value="Bayeux"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="39.780944492821604"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="39.780944492821604"/>
         <viz:position x="-280.7075500488281" y="338.0047302246094"/>
@@ -76,6 +78,7 @@
           <attvalue for="market" value="Beaumont"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="53.05396261633482"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="53.05396261633482"/>
         <viz:position x="-237.07810974121094" y="493.2322692871094"/>
@@ -87,7 +90,7 @@
           <attvalue for="market" value="Bernay"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="79.3337177097927"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="79.3337177097927"/>
         <viz:position x="41.248680114746094" y="319.9720764160156"/>
@@ -99,7 +102,7 @@
           <attvalue for="market" value="Blois"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="115.40364012640693"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="115.40364012640693"/>
         <viz:position x="79.06001281738281" y="179.302001953125"/>
@@ -111,6 +114,7 @@
           <attvalue for="market" value="Cany"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="28.93983851947354"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="28.93983851947354"/>
         <viz:position x="-182.18312072753906" y="594.839599609375"/>
@@ -122,7 +126,7 @@
           <attvalue for="market" value="ChalonssurMarne"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="75.24743924010939"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="75.24743924010939"/>
         <viz:position x="70.74463653564453" y="281.28662109375"/>
@@ -134,7 +138,7 @@
           <attvalue for="market" value="Charleville"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="71.55165453097847"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="71.55165453097847"/>
         <viz:position x="-0.5457315444946289" y="289.4307861328125"/>
@@ -146,7 +150,7 @@
           <attvalue for="market" value="Chateaudun"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="51.14140319893775"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="51.14140319893775"/>
         <viz:position x="118.35043334960938" y="333.2125549316406"/>
@@ -158,7 +162,7 @@
           <attvalue for="market" value="Chateauroux"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="103.36544077219871"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="103.36544077219871"/>
         <viz:position x="-27.79985237121582" y="186.23828125"/>
@@ -170,6 +174,7 @@
           <attvalue for="market" value="ChaumontenCaux"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="64.54590569989935"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="64.54590569989935"/>
         <viz:position x="-294.6692810058594" y="381.5587158203125"/>
@@ -181,6 +186,7 @@
           <attvalue for="market" value="ChaumontenVexin"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="119.79051133217938"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="119.79051133217938"/>
         <viz:position x="-128.80848693847656" y="397.2041015625"/>
@@ -192,6 +198,7 @@
           <attvalue for="market" value="Eu"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="47.920713271724296"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="47.920713271724296"/>
         <viz:position x="-269.4788513183594" y="485.3460693359375"/>
@@ -203,6 +210,7 @@
           <attvalue for="market" value="Gonesse"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="52.66476160216282"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="52.66476160216282"/>
         <viz:position x="-225.24403381347656" y="354.1123962402344"/>
@@ -214,6 +222,7 @@
           <attvalue for="market" value="LeHavre"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="32.634580387579724"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="32.634580387579724"/>
         <viz:position x="-304.068603515625" y="503.18035888671875"/>
@@ -225,6 +234,7 @@
           <attvalue for="market" value="Lille"/>
           <attvalue for="bassin" value="Artois-Picardie"/>
           <attvalue for="weightedDegree" value="39.45224868536596"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="39.45224868536596"/>
         <viz:position x="-330.47869873046875" y="537.4241943359375"/>
@@ -236,6 +246,7 @@
           <attvalue for="market" value="MagnyenVexin"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="63.7902542424785"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="63.7902542424785"/>
         <viz:position x="-246.40357971191406" y="561.4887084960938"/>
@@ -247,6 +258,7 @@
           <attvalue for="market" value="Melun"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="62.6923577735058"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="62.6923577735058"/>
         <viz:position x="-247.03367614746094" y="428.2356262207031"/>
@@ -258,6 +270,7 @@
           <attvalue for="market" value="Meulan"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="67.73644133437384"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="67.73644133437384"/>
         <viz:position x="-279.4972229003906" y="535.066650390625"/>
@@ -269,7 +282,7 @@
           <attvalue for="market" value="Orléans"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="153.4733397872273"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="153.4733397872273"/>
         <viz:position x="-8.156461715698242" y="129.39146423339844"/>
@@ -281,6 +294,7 @@
           <attvalue for="market" value="Paris"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="97.09756857767239"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="97.09756857767239"/>
         <viz:position x="-40.34033966064453" y="412.70281982421875"/>
@@ -292,6 +306,7 @@
           <attvalue for="market" value="Pontoise"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="67.5475912665168"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="67.5475912665168"/>
         <viz:position x="-210.97555541992188" y="543.6029052734375"/>
@@ -303,6 +318,7 @@
           <attvalue for="market" value="Reims"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="52.540468116156454"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="52.540468116156454"/>
         <viz:position x="-181.7348175048828" y="513.6362915039062"/>
@@ -326,6 +342,7 @@
           <attvalue for="market" value="RozayenBrie"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="105.13508301872213"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="105.13508301872213"/>
         <viz:position x="-132.49539184570312" y="314.677734375"/>
@@ -337,7 +354,7 @@
           <attvalue for="market" value="Soissons"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="67.8588912715156"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="67.8588912715156"/>
         <viz:position x="69.34830474853516" y="354.5121154785156"/>
@@ -625,7 +642,7 @@
           <attvalue for="market" value="Luneville"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="132.3286178058555"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="132.3286178058555"/>
         <viz:position x="43.83850860595703" y="63.84520721435547"/>
@@ -673,7 +690,7 @@
           <attvalue for="market" value="Bourges"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="110.56091008003553"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="110.56091008003553"/>
         <viz:position x="142.9293975830078" y="125.77957153320312"/>
@@ -709,7 +726,7 @@
           <attvalue for="market" value="LeMans"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="114.29192424091674"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="114.29192424091674"/>
         <viz:position x="-64.61428833007812" y="119.94129943847656"/>
@@ -853,7 +870,7 @@
           <attvalue for="market" value="Colmar"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="76.4449465934504"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="76.4449465934504"/>
         <viz:position x="108.76129913330078" y="72.67314147949219"/>
@@ -877,6 +894,7 @@
           <attvalue for="market" value="Douai"/>
           <attvalue for="bassin" value="Artois-Picardie"/>
           <attvalue for="weightedDegree" value="36.037898390519736"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="36.037898390519736"/>
         <viz:position x="-72.6316146850586" y="261.2337341308594"/>
@@ -888,7 +906,7 @@
           <attvalue for="market" value="Guéret"/>
           <attvalue for="bassin" value="Loire-Bretagne"/>
           <attvalue for="weightedDegree" value="40.18973487203522"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Nantes"/>
         </attvalues>
         <viz:size value="40.18973487203522"/>
         <viz:position x="180.7830352783203" y="86.54058074951172"/>
@@ -960,7 +978,7 @@
           <attvalue for="market" value="Strasbourg"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="68.77298614899517"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="68.77298614899517"/>
         <viz:position x="207.56243896484375" y="126.02422332763672"/>
@@ -1116,7 +1134,7 @@
           <attvalue for="market" value="Mulhouse"/>
           <attvalue for="bassin" value="Rhin-Meuse"/>
           <attvalue for="weightedDegree" value="36.81071240467431"/>
-          <attvalue for="community" value="Rouen"/>
+          <attvalue for="community" value="Orléans"/>
         </attvalues>
         <viz:size value="36.81071240467431"/>
         <viz:position x="136.51197814941406" y="38.92678451538086"/>
@@ -1200,6 +1218,7 @@
           <attvalue for="market" value="Chartres"/>
           <attvalue for="bassin" value="Seine-Normandie"/>
           <attvalue for="weightedDegree" value="21.74288806329023"/>
+          <attvalue for="community" value="Rouen"/>
         </attvalues>
         <viz:size value="21.74288806329023"/>
         <viz:position x="-315.376708984375" y="457.1012878417969"/>
@@ -1254,877 +1273,877 @@
       </node>
     </nodes>
     <edges>
-      <edge id="geid_66_0" source="Abbeville" target="Arras" weight="3.80296606428025"/>
-      <edge id="geid_66_1" source="Abbeville" target="Auzerre" weight="3.5008791823513223"/>
-      <edge id="geid_66_2" source="Abbeville" target="BarleDuc" weight="3.6532962468288446"/>
-      <edge id="geid_66_3" source="Abbeville" target="Bayeux" weight="3.5715308302743365"/>
-      <edge id="geid_66_4" source="Abbeville" target="Beaumont" weight="3.5137369785525316"/>
-      <edge id="geid_66_5" source="Abbeville" target="Bernay" weight="3.8899754947723264"/>
-      <edge id="geid_66_6" source="Abbeville" target="Blois" weight="3.6559192942613055"/>
-      <edge id="geid_66_7" source="Abbeville" target="Cany" weight="3.581672374741263"/>
-      <edge id="geid_66_8" source="Abbeville" target="ChalonssurMarne" weight="3.6624054954019125"/>
-      <edge id="geid_66_9" source="Abbeville" target="Charleville" weight="3.774167253960992"/>
-      <edge id="geid_66_10" source="Abbeville" target="Chateaudun" weight="3.6310878746706496"/>
-      <edge id="geid_66_11" source="Abbeville" target="Chateauroux" weight="3.5689386919489805"/>
-      <edge id="geid_66_12" source="Abbeville" target="ChaumontenCaux" weight="3.7559956306503746"/>
-      <edge id="geid_66_13" source="Abbeville" target="ChaumontenVexin" weight="3.7610722165825603"/>
-      <edge id="geid_66_14" source="Abbeville" target="Eu" weight="3.7584027119196004"/>
-      <edge id="geid_66_15" source="Abbeville" target="Gonesse" weight="3.586507187941608"/>
-      <edge id="geid_66_16" source="Abbeville" target="LeHavre" weight="3.5702267642490972"/>
-      <edge id="geid_66_17" source="Abbeville" target="Lille" weight="3.5164337340049223"/>
-      <edge id="geid_66_18" source="Abbeville" target="MagnyenVexin" weight="3.7380582968185743"/>
-      <edge id="geid_66_19" source="Abbeville" target="Melun" weight="3.631856382049"/>
-      <edge id="geid_66_20" source="Abbeville" target="Meulan" weight="3.702017850750122"/>
-      <edge id="geid_66_21" source="Abbeville" target="Orléans" weight="3.8100618387277208"/>
-      <edge id="geid_66_22" source="Abbeville" target="Paris" weight="3.6870748340810326"/>
-      <edge id="geid_66_23" source="Abbeville" target="Pontoise" weight="3.662301924458789"/>
-      <edge id="geid_66_24" source="Abbeville" target="Reims" weight="3.757498652800922"/>
-      <edge id="geid_66_25" source="Abbeville" target="Rouen" weight="3.586817173065725"/>
-      <edge id="geid_66_26" source="Abbeville" target="RozayenBrie" weight="3.73905607816321"/>
-      <edge id="geid_66_27" source="Abbeville" target="Soissons" weight="3.847525481581441"/>
-      <edge id="geid_66_28" source="Aigueperse" target="Billom" weight="3.884382440672669"/>
-      <edge id="geid_66_29" source="Aigueperse" target="Brioude" weight="3.714448208840545"/>
-      <edge id="geid_66_30" source="Aigueperse" target="Issoire" weight="3.801033741376"/>
-      <edge id="geid_66_31" source="Aigueperse" target="Maringues" weight="3.6950735887450565"/>
-      <edge id="geid_66_32" source="Aigueperse" target="Riom" weight="3.9134806985487245"/>
-      <edge id="geid_66_33" source="Aigueperse" target="VicleComte" weight="3.748730880002882"/>
-      <edge id="geid_66_34" source="AixenProvence" target="Arles" weight="3.5743434419354285"/>
-      <edge id="geid_66_35" source="AixenProvence" target="Aubenas" weight="3.5477865955376093"/>
-      <edge id="geid_66_36" source="AixenProvence" target="Avignon" weight="4"/>
-      <edge id="geid_66_37" source="AixenProvence" target="BuislesBaronnies" weight="3.6311153526290454"/>
-      <edge id="geid_66_38" source="AixenProvence" target="Carcassonne" weight="3.5160966533180926"/>
-      <edge id="geid_66_39" source="AixenProvence" target="Draguignan" weight="3.803607017559469"/>
-      <edge id="geid_66_40" source="AixenProvence" target="Montpellier" weight="3.516932934126563"/>
-      <edge id="geid_66_41" source="AixenProvence" target="PontSaintEsprit" weight="3.625419540456903"/>
-      <edge id="geid_66_42" source="AixenProvence" target="Toulouse" weight="3.539862832433382"/>
-      <edge id="geid_66_43" source="AixenProvence" target="VilleneuvedeBerg" weight="3.51896381734922"/>
-      <edge id="geid_66_44" source="Albi" target="Bordeaux" weight="3.5552714620775623"/>
-      <edge id="geid_66_45" source="Albi" target="Castelnaudary" weight="3.513051208741061"/>
-      <edge id="geid_66_46" source="Albi" target="Castres" weight="3.591066500619903"/>
-      <edge id="geid_66_47" source="Albi" target="ChaumontenCaux" weight="3.65831364403586"/>
-      <edge id="geid_66_48" source="Albi" target="Eu" weight="3.5008849826510393"/>
-      <edge id="geid_66_49" source="Albi" target="Grenade" weight="3.563621318596697"/>
-      <edge id="geid_66_50" source="Albi" target="Luneville" weight="3.665202081548063"/>
-      <edge id="geid_66_51" source="Albi" target="Marmande" weight="3.5983539718385282"/>
-      <edge id="geid_66_52" source="Albi" target="Melun" weight="3.5771465313304684"/>
-      <edge id="geid_66_53" source="Albi" target="Montauban" weight="3.5487115199218078"/>
-      <edge id="geid_66_54" source="Albi" target="Montpellier" weight="3.5104643077753566"/>
-      <edge id="geid_66_55" source="Albi" target="Orléans" weight="3.628736703025949"/>
-      <edge id="geid_66_56" source="Albi" target="RozayenBrie" weight="3.5857001304302494"/>
-      <edge id="geid_66_57" source="Angers" target="Arras" weight="3.629054413259598"/>
-      <edge id="geid_66_58" source="Angers" target="BarleDuc" weight="3.7177941213535686"/>
-      <edge id="geid_66_59" source="Angers" target="Blois" weight="3.757717969614896"/>
-      <edge id="geid_66_60" source="Angers" target="Bourges" weight="3.61534972049329"/>
-      <edge id="geid_66_61" source="Angers" target="ChateauGontier" weight="3.648030667329422"/>
-      <edge id="geid_66_62" source="Angers" target="Chateauroux" weight="3.659020295649297"/>
-      <edge id="geid_66_63" source="Angers" target="Fontenay" weight="3.5329272486523924"/>
-      <edge id="geid_66_64" source="Angers" target="LeMans" weight="3.8132075282860876"/>
-      <edge id="geid_66_65" source="Angers" target="Luneville" weight="3.7476417894416367"/>
-      <edge id="geid_66_66" source="Angers" target="Nantes" weight="3.930457793760768"/>
-      <edge id="geid_66_67" source="Angers" target="Orléans" weight="3.6172655279974406"/>
-      <edge id="geid_66_68" source="Angers" target="Poitiers" weight="3.69215225820676"/>
-      <edge id="geid_66_69" source="Angers" target="Rennes" weight="3.56524066827656"/>
-      <edge id="geid_66_70" source="Angoulême" target="Arras" weight="3.626455114825637"/>
-      <edge id="geid_66_71" source="Angoulême" target="Aubenas" weight="4"/>
-      <edge id="geid_66_72" source="Angoulême" target="Fontenay" weight="3.7193641935067028"/>
-      <edge id="geid_66_73" source="Angoulême" target="Marmande" weight="3.6004973317555224"/>
-      <edge id="geid_66_74" source="Angoulême" target="Montauban" weight="3.7317695253073233"/>
-      <edge id="geid_66_75" source="Angoulême" target="Poitiers" weight="3.7195881418826238"/>
-      <edge id="geid_66_76" source="Annonay" target="Aubenas" weight="3.5713093811520884"/>
-      <edge id="geid_66_77" source="Annonay" target="Bordeaux" weight="3.543287640225062"/>
-      <edge id="geid_66_78" source="Annonay" target="BuislesBaronnies" weight="3.55069766457025"/>
-      <edge id="geid_66_79" source="Annonay" target="Grenoble" weight="3.624281310495521"/>
-      <edge id="geid_66_80" source="Annonay" target="LePuyenVelay" weight="3.5767341944463364"/>
-      <edge id="geid_66_81" source="Annonay" target="Lyon" weight="3.5821226976451226"/>
-      <edge id="geid_66_82" source="Annonay" target="PontSaintEsprit" weight="3.638270969892048"/>
-      <edge id="geid_66_83" source="Annonay" target="Romans" weight="3.689557232516881"/>
-      <edge id="geid_66_84" source="Annonay" target="SaintAffrique" weight="3.552026693447694"/>
-      <edge id="geid_66_85" source="Annonay" target="VilleneuvedeBerg" weight="3.649689102014402"/>
-      <edge id="geid_66_86" source="Arles" target="Aubenas" weight="3.572051729563073"/>
-      <edge id="geid_66_87" source="Arles" target="Avignon" weight="3.5743434419354285"/>
-      <edge id="geid_66_88" source="Arles" target="Draguignan" weight="3.6210260504043843"/>
-      <edge id="geid_66_89" source="Arles" target="PontSaintEsprit" weight="3.6235689605568044"/>
-      <edge id="geid_66_90" source="Arles" target="Romans" weight="3.5203105726758652"/>
-      <edge id="geid_66_91" source="Arles" target="VilleneuvedeBerg" weight="3.5244019837484655"/>
-      <edge id="geid_66_92" source="Arras" target="Auzerre" weight="3.847265468073668"/>
-      <edge id="geid_66_93" source="Arras" target="Avignon" weight="3.5673241687673762"/>
-      <edge id="geid_66_94" source="Arras" target="BarleDuc" weight="3.8635815516482115"/>
-      <edge id="geid_66_95" source="Arras" target="Bayeux" weight="3.82311010200625"/>
-      <edge id="geid_66_96" source="Arras" target="Bernay" weight="3.81349224361592"/>
-      <edge id="geid_66_97" source="Arras" target="Blois" weight="3.7678680453400903"/>
-      <edge id="geid_66_98" source="Arras" target="Bordeaux" weight="3.533671424750688"/>
-      <edge id="geid_66_99" source="Arras" target="BoulognesurMer" weight="3.9371624624202646"/>
-      <edge id="geid_66_100" source="Arras" target="Bourges" weight="3.85737648513984"/>
-      <edge id="geid_66_101" source="Arras" target="BuislesBaronnies" weight="3.7136181712495016"/>
-      <edge id="geid_66_102" source="Arras" target="ChalonssurMarne" weight="3.794861945483492"/>
-      <edge id="geid_66_103" source="Arras" target="Charleville" weight="3.771044897310265"/>
-      <edge id="geid_66_104" source="Arras" target="ChateauGontier" weight="3.8387181646660893"/>
-      <edge id="geid_66_105" source="Arras" target="Chateauroux" weight="3.795723573756422"/>
-      <edge id="geid_66_106" source="Arras" target="ChaumontenVexin" weight="3.6937490029951223"/>
-      <edge id="geid_66_107" source="Arras" target="Colmar" weight="3.5302098578229733"/>
-      <edge id="geid_66_108" source="Arras" target="Dole" weight="3.737806610277824"/>
-      <edge id="geid_66_109" source="Arras" target="Douai" weight="3.854463293139264"/>
-      <edge id="geid_66_110" source="Arras" target="Fontenay" weight="3.5230362768100902"/>
-      <edge id="geid_66_111" source="Arras" target="Grenoble" weight="3.73738600448864"/>
-      <edge id="geid_66_112" source="Arras" target="Guéret" weight="3.795864083689108"/>
-      <edge id="geid_66_113" source="Arras" target="Issoire" weight="3.8001524844280805"/>
-      <edge id="geid_66_114" source="Arras" target="LeMans" weight="3.849764008850402"/>
-      <edge id="geid_66_115" source="Arras" target="LePuyenVelay" weight="3.771930386143472"/>
-      <edge id="geid_66_116" source="Arras" target="Limoges" weight="3.535098341691919"/>
-      <edge id="geid_66_117" source="Arras" target="Luneville" weight="3.6975788684482818"/>
-      <edge id="geid_66_118" source="Arras" target="Lyon" weight="3.7871158957578497"/>
-      <edge id="geid_66_119" source="Arras" target="Mende" weight="3.7555372983815576"/>
-      <edge id="geid_66_120" source="Arras" target="Montauban" weight="3.5620482744403237"/>
-      <edge id="geid_66_121" source="Arras" target="Mâcon" weight="3.833965206719905"/>
-      <edge id="geid_66_122" source="Arras" target="Nantes" weight="3.637358095302528"/>
-      <edge id="geid_66_123" source="Arras" target="Orléans" weight="3.713805408219432"/>
-      <edge id="geid_66_124" source="Arras" target="Paris" weight="3.68625404304476"/>
-      <edge id="geid_66_125" source="Arras" target="Poitiers" weight="3.646460678404056"/>
-      <edge id="geid_66_126" source="Arras" target="PontlAbbé" weight="3.747139406003585"/>
-      <edge id="geid_66_127" source="Arras" target="Rennes" weight="3.7784294667857927"/>
-      <edge id="geid_66_128" source="Arras" target="Rouen" weight="3.8788476102201606"/>
-      <edge id="geid_66_129" source="Arras" target="RozayenBrie" weight="3.676370415166323"/>
-      <edge id="geid_66_130" source="Arras" target="SaintAffrique" weight="3.7557805501479766"/>
-      <edge id="geid_66_131" source="Arras" target="SaintEtienne" weight="3.8974826181384903"/>
-      <edge id="geid_66_132" source="Arras" target="Soissons" weight="3.6998428633259532"/>
-      <edge id="geid_66_133" source="Arras" target="Strasbourg" weight="3.5465147059061772"/>
-      <edge id="geid_66_134" source="Arras" target="Tulle" weight="3.801220595636487"/>
-      <edge id="geid_66_135" source="Arras" target="Vannes" weight="3.6685949274135226"/>
-      <edge id="geid_66_136" source="Aubenas" target="Auzerre" weight="4"/>
-      <edge id="geid_66_137" source="Aubenas" target="Avignon" weight="3.5433574009134086"/>
-      <edge id="geid_66_138" source="Aubenas" target="Bayonne" weight="4"/>
-      <edge id="geid_66_139" source="Aubenas" target="Bernay" weight="4"/>
-      <edge id="geid_66_140" source="Aubenas" target="Blois" weight="4"/>
-      <edge id="geid_66_141" source="Aubenas" target="Bourges" weight="4"/>
-      <edge id="geid_66_142" source="Aubenas" target="BuislesBaronnies" weight="3.548542431831701"/>
-      <edge id="geid_66_143" source="Aubenas" target="Carcassonne" weight="3.5197395781896095"/>
-      <edge id="geid_66_144" source="Aubenas" target="Castelnaudary" weight="3.541119641231964"/>
-      <edge id="geid_66_145" source="Aubenas" target="ChalonssurMarne" weight="4"/>
-      <edge id="geid_66_146" source="Aubenas" target="Charleville" weight="4"/>
-      <edge id="geid_66_147" source="Aubenas" target="Chateauroux" weight="4"/>
-      <edge id="geid_66_148" source="Aubenas" target="Digne" weight="4"/>
-      <edge id="geid_66_149" source="Aubenas" target="Draguignan" weight="3.6474109045441603"/>
-      <edge id="geid_66_150" source="Aubenas" target="LeMans" weight="4"/>
-      <edge id="geid_66_151" source="Aubenas" target="LePuyenVelay" weight="3.649592550230862"/>
-      <edge id="geid_66_152" source="Aubenas" target="Mende" weight="4"/>
-      <edge id="geid_66_153" source="Aubenas" target="Montauban" weight="3.5679156698911436"/>
-      <edge id="geid_66_154" source="Aubenas" target="Mâcon" weight="4"/>
-      <edge id="geid_66_155" source="Aubenas" target="Nantes" weight="4"/>
-      <edge id="geid_66_156" source="Aubenas" target="PontSaintEsprit" weight="3.7254481015611605"/>
-      <edge id="geid_66_157" source="Aubenas" target="PontlAbbé" weight="4"/>
-      <edge id="geid_66_158" source="Aubenas" target="Romans" weight="3.647374503473405"/>
-      <edge id="geid_66_159" source="Aubenas" target="SaintAffrique" weight="3.5862466805002158"/>
-      <edge id="geid_66_160" source="Aubenas" target="Soissons" weight="4"/>
-      <edge id="geid_66_161" source="Aubenas" target="Toulouse" weight="3.641173199976506"/>
-      <edge id="geid_66_162" source="Aubenas" target="Vannes" weight="4"/>
-      <edge id="geid_66_163" source="Aubenas" target="VilleneuvedeBerg" weight="3.8705157572677704"/>
-      <edge id="geid_66_164" source="Auzerre" target="BarleDuc" weight="3.9260556114416287"/>
-      <edge id="geid_66_165" source="Auzerre" target="Bernay" weight="3.70325493408649"/>
-      <edge id="geid_66_166" source="Auzerre" target="Blois" weight="3.7986072757825924"/>
-      <edge id="geid_66_167" source="Auzerre" target="Bourges" weight="3.706415639668623"/>
-      <edge id="geid_66_168" source="Auzerre" target="ChalonssurMarne" weight="3.874225006052112"/>
-      <edge id="geid_66_169" source="Auzerre" target="Charleville" weight="3.739986267017448"/>
-      <edge id="geid_66_170" source="Auzerre" target="Chateaudun" weight="3.6752610224348206"/>
-      <edge id="geid_66_171" source="Auzerre" target="Chateauroux" weight="3.582173458688563"/>
-      <edge id="geid_66_172" source="Auzerre" target="ChaumontenVexin" weight="3.617385007034305"/>
-      <edge id="geid_66_173" source="Auzerre" target="LeMans" weight="3.7367840589447425"/>
-      <edge id="geid_66_174" source="Auzerre" target="Luneville" weight="3.7748411753145024"/>
-      <edge id="geid_66_175" source="Auzerre" target="Lyon" weight="3.61183996639154"/>
-      <edge id="geid_66_176" source="Auzerre" target="Montauban" weight="3.69058064061456"/>
-      <edge id="geid_66_177" source="Auzerre" target="Mâcon" weight="3.5929629746970133"/>
-      <edge id="geid_66_178" source="Auzerre" target="Orléans" weight="3.9050054756491686"/>
-      <edge id="geid_66_179" source="Auzerre" target="Paris" weight="3.8059371443724546"/>
-      <edge id="geid_66_180" source="Auzerre" target="Rouen" weight="3.591384338888936"/>
-      <edge id="geid_66_181" source="Auzerre" target="RozayenBrie" weight="3.8449942150018623"/>
-      <edge id="geid_66_182" source="Auzerre" target="Soissons" weight="3.643345650025"/>
-      <edge id="geid_66_183" source="Auzerre" target="Strasbourg" weight="3.527626487593429"/>
-      <edge id="geid_66_184" source="Avignon" target="BuislesBaronnies" weight="3.8174693706203207"/>
-      <edge id="geid_66_185" source="Avignon" target="Carcassonne" weight="3.5160966533180926"/>
-      <edge id="geid_66_186" source="Avignon" target="Castelnaudary" weight="3.72218104914843"/>
-      <edge id="geid_66_187" source="Avignon" target="Digne" weight="3.851405229500068"/>
-      <edge id="geid_66_188" source="Avignon" target="Dole" weight="3.6439721303448094"/>
-      <edge id="geid_66_189" source="Avignon" target="Draguignan" weight="3.756926063324723"/>
-      <edge id="geid_66_190" source="Avignon" target="Grenoble" weight="3.6778210610131596"/>
-      <edge id="geid_66_191" source="Avignon" target="LePuyenVelay" weight="3.5567535399719183"/>
-      <edge id="geid_66_192" source="Avignon" target="Lyon" weight="3.7134644693355225"/>
-      <edge id="geid_66_193" source="Avignon" target="Marseille" weight="3.7092721164415843"/>
-      <edge id="geid_66_194" source="Avignon" target="Mende" weight="3.5805983305596096"/>
-      <edge id="geid_66_195" source="Avignon" target="Montpellier" weight="3.69192391098648"/>
-      <edge id="geid_66_196" source="Avignon" target="Mâcon" weight="3.8389239294021844"/>
-      <edge id="geid_66_197" source="Avignon" target="Pamiers" weight="3.5338235779039557"/>
-      <edge id="geid_66_198" source="Avignon" target="PontSaintEsprit" weight="3.782520211540253"/>
-      <edge id="geid_66_199" source="Avignon" target="SaintAffrique" weight="3.658809807938434"/>
-      <edge id="geid_66_200" source="Avignon" target="SaintEtienne" weight="3.572172273965575"/>
-      <edge id="geid_66_201" source="Avignon" target="Toulouse" weight="3.717855514164739"/>
-      <edge id="geid_66_202" source="Avignon" target="VilleneuvedeBerg" weight="3.51896381734922"/>
-      <edge id="geid_66_203" source="Ayen" target="Castres" weight="3.5324757811699494"/>
-      <edge id="geid_66_204" source="Ayen" target="Gonesse" weight="4"/>
-      <edge id="geid_66_205" source="Ayen" target="Narbonne" weight="3.883824464127252"/>
-      <edge id="geid_66_206" source="Ayen" target="Puylaurens" weight="4"/>
-      <edge id="geid_66_207" source="Ayen" target="Treignac" weight="3.9998111622287844"/>
-      <edge id="geid_66_208" source="BarleDuc" target="Bernay" weight="3.803165291097536"/>
-      <edge id="geid_66_209" source="BarleDuc" target="Blois" weight="3.8667492139465223"/>
-      <edge id="geid_66_210" source="BarleDuc" target="Bourges" weight="3.8078325442515855"/>
-      <edge id="geid_66_211" source="BarleDuc" target="ChalonssurMarne" weight="3.8392985599920957"/>
-      <edge id="geid_66_212" source="BarleDuc" target="Charleville" weight="3.805445070025"/>
-      <edge id="geid_66_213" source="BarleDuc" target="ChateauGontier" weight="3.63914576767643"/>
-      <edge id="geid_66_214" source="BarleDuc" target="Chateaudun" weight="3.6738255253507597"/>
-      <edge id="geid_66_215" source="BarleDuc" target="Chateauroux" weight="3.7793946341849103"/>
-      <edge id="geid_66_216" source="BarleDuc" target="ChaumontenVexin" weight="3.726278765163266"/>
-      <edge id="geid_66_217" source="BarleDuc" target="Colmar" weight="3.662180098427876"/>
-      <edge id="geid_66_218" source="BarleDuc" target="Dole" weight="3.591022877600313"/>
-      <edge id="geid_66_219" source="BarleDuc" target="Fontenay" weight="3.53886753886884"/>
-      <edge id="geid_66_220" source="BarleDuc" target="Guéret" weight="3.5080187935455367"/>
-      <edge id="geid_66_221" source="BarleDuc" target="LeMans" weight="3.7909242243355683"/>
-      <edge id="geid_66_222" source="BarleDuc" target="Luneville" weight="3.882629222180545"/>
-      <edge id="geid_66_223" source="BarleDuc" target="Lyon" weight="3.651798964559525"/>
-      <edge id="geid_66_224" source="BarleDuc" target="Montauban" weight="3.6898979942109182"/>
-      <edge id="geid_66_225" source="BarleDuc" target="Mâcon" weight="3.647310295941428"/>
-      <edge id="geid_66_226" source="BarleDuc" target="Nantes" weight="3.5918967529"/>
-      <edge id="geid_66_227" source="BarleDuc" target="Orléans" weight="3.883539027084696"/>
-      <edge id="geid_66_228" source="BarleDuc" target="Paris" weight="3.8573554308689166"/>
-      <edge id="geid_66_229" source="BarleDuc" target="Poitiers" weight="3.6083532298442282"/>
-      <edge id="geid_66_230" source="BarleDuc" target="Rouen" weight="3.7751362679815803"/>
-      <edge id="geid_66_231" source="BarleDuc" target="RozayenBrie" weight="3.84976565699908"/>
-      <edge id="geid_66_232" source="BarleDuc" target="Soissons" weight="3.726645812311973"/>
-      <edge id="geid_66_233" source="BarleDuc" target="Strasbourg" weight="3.646320249918722"/>
-      <edge id="geid_66_234" source="Bayeux" target="ChaumontenCaux" weight="3.6403814222282898"/>
-      <edge id="geid_66_235" source="Bayeux" target="Gonesse" weight="3.5745868410745283"/>
-      <edge id="geid_66_236" source="Bayeux" target="LeHavre" weight="3.7206683265315603"/>
-      <edge id="geid_66_237" source="Bayeux" target="LeMans" weight="3.515359467514056"/>
-      <edge id="geid_66_238" source="Bayeux" target="Lille" weight="3.60669718778681"/>
-      <edge id="geid_66_239" source="Bayeux" target="MagnyenVexin" weight="3.5038171064480164"/>
-      <edge id="geid_66_240" source="Bayeux" target="Meulan" weight="3.5677567024513963"/>
-      <edge id="geid_66_241" source="Bayeux" target="Orléans" weight="3.6088430687080697"/>
-      <edge id="geid_66_242" source="Bayeux" target="Rennes" weight="3.648193437798292"/>
-      <edge id="geid_66_243" source="Bayonne" target="Pau" weight="3.5336335655548226"/>
-      <edge id="geid_66_244" source="Beaumont" target="ChaumontenCaux" weight="3.928879455313614"/>
-      <edge id="geid_66_245" source="Beaumont" target="ChaumontenVexin" weight="3.9148785770391443"/>
-      <edge id="geid_66_246" source="Beaumont" target="Douai" weight="3.5604469718612086"/>
-      <edge id="geid_66_247" source="Beaumont" target="Eu" weight="3.8727077488561226"/>
-      <edge id="geid_66_248" source="Beaumont" target="Lille" weight="3.538373744297903"/>
-      <edge id="geid_66_249" source="Beaumont" target="MagnyenVexin" weight="3.8626883562221823"/>
-      <edge id="geid_66_250" source="Beaumont" target="Melun" weight="3.803312920443065"/>
-      <edge id="geid_66_251" source="Beaumont" target="Meulan" weight="3.928430751245225"/>
-      <edge id="geid_66_252" source="Beaumont" target="Paris" weight="3.7328107108148227"/>
-      <edge id="geid_66_253" source="Beaumont" target="Pontoise" weight="3.969509287740307"/>
-      <edge id="geid_66_254" source="Beaumont" target="Reims" weight="3.8128692815427203"/>
-      <edge id="geid_66_255" source="Beaumont" target="RozayenBrie" weight="3.80265849765161"/>
-      <edge id="geid_66_256" source="Beaumont" target="Verfeil" weight="3.812659334754368"/>
-      <edge id="geid_66_257" source="Bernay" target="Blois" weight="3.747324930860723"/>
-      <edge id="geid_66_258" source="Bernay" target="Bourges" weight="3.59579326480929"/>
-      <edge id="geid_66_259" source="Bernay" target="ChalonssurMarne" weight="3.786547553322409"/>
-      <edge id="geid_66_260" source="Bernay" target="Charleville" weight="3.837104879723703"/>
-      <edge id="geid_66_261" source="Bernay" target="Chateaudun" weight="3.640029790308164"/>
-      <edge id="geid_66_262" source="Bernay" target="Chateauroux" weight="3.6394693893836356"/>
-      <edge id="geid_66_263" source="Bernay" target="ChaumontenVexin" weight="3.9205922207561312"/>
-      <edge id="geid_66_264" source="Bernay" target="Douai" weight="3.6359936699055493"/>
-      <edge id="geid_66_265" source="Bernay" target="LeMans" weight="3.6245759034576106"/>
-      <edge id="geid_66_266" source="Bernay" target="Luneville" weight="3.662403658210563"/>
-      <edge id="geid_66_267" source="Bernay" target="Orléans" weight="3.8344189789725625"/>
-      <edge id="geid_66_268" source="Bernay" target="Paris" weight="3.8716291678464483"/>
-      <edge id="geid_66_269" source="Bernay" target="Rouen" weight="3.961492923465003"/>
-      <edge id="geid_66_270" source="Bernay" target="RozayenBrie" weight="3.870773053229681"/>
-      <edge id="geid_66_271" source="Bernay" target="Soissons" weight="3.875310287385408"/>
-      <edge id="geid_66_272" source="Bernay" target="Strasbourg" weight="3.62037007458354"/>
-      <edge id="geid_66_273" source="Billom" target="BoulognesurMer" weight="3.5303906088995567"/>
-      <edge id="geid_66_274" source="Billom" target="Castres" weight="3.7046750733855625"/>
-      <edge id="geid_66_275" source="Billom" target="Issoire" weight="3.853315174727964"/>
-      <edge id="geid_66_276" source="Billom" target="Maringues" weight="3.7411637206816155"/>
-      <edge id="geid_66_277" source="Billom" target="Riom" weight="3.9268490547932946"/>
-      <edge id="geid_66_278" source="Blois" target="Bourges" weight="3.770214112943367"/>
-      <edge id="geid_66_279" source="Blois" target="ChalonssurMarne" weight="3.748994473997921"/>
-      <edge id="geid_66_280" source="Blois" target="Charleville" weight="3.62960719134784"/>
-      <edge id="geid_66_281" source="Blois" target="ChateauGontier" weight="3.6729358365902502"/>
-      <edge id="geid_66_282" source="Blois" target="Chateaudun" weight="3.7559693121252287"/>
-      <edge id="geid_66_283" source="Blois" target="Chateauroux" weight="3.8103980869808103"/>
-      <edge id="geid_66_284" source="Blois" target="ChaumontenVexin" weight="3.720644639635507"/>
-      <edge id="geid_66_285" source="Blois" target="Colmar" weight="3.688248961384474"/>
-      <edge id="geid_66_286" source="Blois" target="Dole" weight="3.5606669517711618"/>
-      <edge id="geid_66_287" source="Blois" target="LeMans" weight="3.908513658495054"/>
-      <edge id="geid_66_288" source="Blois" target="Luneville" weight="3.7628054179430404"/>
-      <edge id="geid_66_289" source="Blois" target="Lyon" weight="3.688903298430204"/>
-      <edge id="geid_66_290" source="Blois" target="Montauban" weight="3.7145440343362575"/>
-      <edge id="geid_66_291" source="Blois" target="Montpellier" weight="3.506953191679488"/>
-      <edge id="geid_66_292" source="Blois" target="Mulhouse" weight="3.538675133595956"/>
-      <edge id="geid_66_293" source="Blois" target="Mâcon" weight="3.6302442642936"/>
-      <edge id="geid_66_294" source="Blois" target="Nantes" weight="3.66080987697049"/>
-      <edge id="geid_66_295" source="Blois" target="Orléans" weight="3.8925043574610245"/>
-      <edge id="geid_66_296" source="Blois" target="Paris" weight="3.75366352392377"/>
-      <edge id="geid_66_297" source="Blois" target="Poitiers" weight="3.6502648476695567"/>
-      <edge id="geid_66_298" source="Blois" target="Rouen" weight="3.7275909830368805"/>
-      <edge id="geid_66_299" source="Blois" target="RozayenBrie" weight="3.78348800196576"/>
-      <edge id="geid_66_300" source="Blois" target="Soissons" weight="3.622937688950592"/>
-      <edge id="geid_66_301" source="Blois" target="Strasbourg" weight="3.6098755510725624"/>
-      <edge id="geid_66_302" source="Bordeaux" target="Castelnaudary" weight="3.5273280482959684"/>
-      <edge id="geid_66_303" source="Bordeaux" target="Castres" weight="3.552915338946979"/>
-      <edge id="geid_66_304" source="Bordeaux" target="ChateauGontier" weight="3.529789225519289"/>
-      <edge id="geid_66_305" source="Bordeaux" target="Fontenay" weight="3.612369916827074"/>
-      <edge id="geid_66_306" source="Bordeaux" target="Grenade" weight="3.7963141927755624"/>
-      <edge id="geid_66_307" source="Bordeaux" target="Lavaur" weight="3.6714377154421514"/>
-      <edge id="geid_66_308" source="Bordeaux" target="Limoges" weight="3.5056154348820545"/>
-      <edge id="geid_66_309" source="Bordeaux" target="Lyon" weight="3.515924293869636"/>
-      <edge id="geid_66_310" source="Bordeaux" target="Montauban" weight="3.842030310449452"/>
-      <edge id="geid_66_311" source="Bordeaux" target="Poitiers" weight="3.6054725044349127"/>
-      <edge id="geid_66_312" source="Bordeaux" target="Revel" weight="3.649989731258837"/>
-      <edge id="geid_66_313" source="Bordeaux" target="Romans" weight="3.5874455173391966"/>
-      <edge id="geid_66_314" source="Bordeaux" target="SaintAffrique" weight="3.5387195285603714"/>
-      <edge id="geid_66_315" source="Bordeaux" target="TarasconsurAriège" weight="3.705601399537577"/>
-      <edge id="geid_66_316" source="Bordeaux" target="Toulouse" weight="3.613352644047485"/>
-      <edge id="geid_66_317" source="Bordeaux" target="VilleneuvedeBerg" weight="3.560844895544412"/>
-      <edge id="geid_66_318" source="BoulognesurMer" target="Verfeil" weight="3.635863854202457"/>
-      <edge id="geid_66_319" source="Bourges" target="ChalonssurMarne" weight="3.50584109158994"/>
-      <edge id="geid_66_320" source="Bourges" target="ChateauGontier" weight="3.601344728160065"/>
-      <edge id="geid_66_321" source="Bourges" target="Chateaudun" weight="3.6994273610492026"/>
-      <edge id="geid_66_322" source="Bourges" target="Chateauroux" weight="3.9136210369987605"/>
-      <edge id="geid_66_323" source="Bourges" target="ChaumontenVexin" weight="3.6136365653705624"/>
-      <edge id="geid_66_324" source="Bourges" target="Colmar" weight="3.6219264822451214"/>
-      <edge id="geid_66_325" source="Bourges" target="Dole" weight="3.553459799478799"/>
-      <edge id="geid_66_326" source="Bourges" target="Grenoble" weight="3.518917070322182"/>
-      <edge id="geid_66_327" source="Bourges" target="Guéret" weight="3.8314979108031375"/>
-      <edge id="geid_66_328" source="Bourges" target="Issoire" weight="3.6185831397644646"/>
-      <edge id="geid_66_329" source="Bourges" target="LeMans" weight="3.8293309604791697"/>
-      <edge id="geid_66_330" source="Bourges" target="Luneville" weight="3.75994778885991"/>
-      <edge id="geid_66_331" source="Bourges" target="Lyon" weight="3.752514556510272"/>
-      <edge id="geid_66_332" source="Bourges" target="Montauban" weight="3.6624201163995025"/>
-      <edge id="geid_66_333" source="Bourges" target="Mulhouse" weight="3.5822100250321984"/>
-      <edge id="geid_66_334" source="Bourges" target="Mâcon" weight="3.748930307543012"/>
-      <edge id="geid_66_335" source="Bourges" target="Orléans" weight="3.744799175210689"/>
-      <edge id="geid_66_336" source="Bourges" target="Paris" weight="3.5991839277813407"/>
-      <edge id="geid_66_337" source="Bourges" target="Rouen" weight="3.5567625547503727"/>
-      <edge id="geid_66_338" source="Bourges" target="RozayenBrie" weight="3.612257096693454"/>
-      <edge id="geid_66_339" source="Bourges" target="SaintEtienne" weight="3.684312717944449"/>
-      <edge id="geid_66_340" source="Bourges" target="Strasbourg" weight="3.6424498881937155"/>
-      <edge id="geid_66_341" source="Bourges" target="Tulle" weight="3.5545540115492003"/>
-      <edge id="geid_66_342" source="Brioude" target="Dole" weight="3.5152821458594454"/>
-      <edge id="geid_66_343" source="Brioude" target="Issoire" weight="3.9297322975554576"/>
-      <edge id="geid_66_344" source="Brioude" target="LePuyenVelay" weight="3.7478653872273937"/>
-      <edge id="geid_66_345" source="Brioude" target="Maringues" weight="3.6069317342339122"/>
-      <edge id="geid_66_346" source="Brioude" target="Riom" weight="3.75957173726148"/>
-      <edge id="geid_66_347" source="Brioude" target="Romans" weight="3.5409116692648612"/>
-      <edge id="geid_66_348" source="Brioude" target="SaintEtienne" weight="3.5401508133823225"/>
-      <edge id="geid_66_349" source="Brioude" target="VicleComte" weight="3.7158948581899227"/>
-      <edge id="geid_66_350" source="BrivelaGaillarde" target="Limoges" weight="3.5076999837371208"/>
-      <edge id="geid_66_351" source="BuislesBaronnies" target="Castelnaudary" weight="3.75229403563921"/>
-      <edge id="geid_66_352" source="BuislesBaronnies" target="Digne" weight="3.7585085247287826"/>
-      <edge id="geid_66_353" source="BuislesBaronnies" target="Dole" weight="3.720214199373062"/>
-      <edge id="geid_66_354" source="BuislesBaronnies" target="Draguignan" weight="3.7135079048348163"/>
-      <edge id="geid_66_355" source="BuislesBaronnies" target="Grenade" weight="3.6503443276740053"/>
-      <edge id="geid_66_356" source="BuislesBaronnies" target="Grenoble" weight="3.8078725473768684"/>
-      <edge id="geid_66_357" source="BuislesBaronnies" target="Issoire" weight="3.533988968750862"/>
-      <edge id="geid_66_358" source="BuislesBaronnies" target="LePuyenVelay" weight="3.5839134436679285"/>
-      <edge id="geid_66_359" source="BuislesBaronnies" target="Lyon" weight="3.77378998685274"/>
-      <edge id="geid_66_360" source="BuislesBaronnies" target="Marseille" weight="3.669295713626737"/>
-      <edge id="geid_66_361" source="BuislesBaronnies" target="Mende" weight="3.6137920272855695"/>
-      <edge id="geid_66_362" source="BuislesBaronnies" target="Montpellier" weight="3.7253638706408285"/>
-      <edge id="geid_66_363" source="BuislesBaronnies" target="Mâcon" weight="3.800464355515321"/>
-      <edge id="geid_66_364" source="BuislesBaronnies" target="Pamiers" weight="3.528068704310852"/>
-      <edge id="geid_66_365" source="BuislesBaronnies" target="PontSaintEsprit" weight="3.8387183997778576"/>
-      <edge id="geid_66_366" source="BuislesBaronnies" target="Romans" weight="3.695799814832616"/>
-      <edge id="geid_66_367" source="BuislesBaronnies" target="SaintAffrique" weight="3.6507636372320658"/>
-      <edge id="geid_66_368" source="BuislesBaronnies" target="SaintEtienne" weight="3.6488000485805623"/>
-      <edge id="geid_66_369" source="BuislesBaronnies" target="Toulouse" weight="3.66208655823241"/>
-      <edge id="geid_66_370" source="BuislesBaronnies" target="VilleneuvedeBerg" weight="3.6525703484426124"/>
-      <edge id="geid_66_371" source="Cany" target="ChaumontenVexin" weight="3.6034561761776662"/>
-      <edge id="geid_66_372" source="Cany" target="Eu" weight="3.68092427490225"/>
-      <edge id="geid_66_373" source="Cany" target="MagnyenVexin" weight="3.5809078331505417"/>
-      <edge id="geid_66_374" source="Cany" target="Meulan" weight="3.5585620049646147"/>
-      <edge id="geid_66_375" source="Cany" target="Pontoise" weight="3.672422465055034"/>
-      <edge id="geid_66_376" source="Cany" target="Reims" weight="3.6169385968805052"/>
-      <edge id="geid_66_377" source="Cany" target="Rouen" weight="3.644954793601661"/>
-      <edge id="geid_66_378" source="Carcassonne" target="Castres" weight="3.767582282060688"/>
-      <edge id="geid_66_379" source="Carcassonne" target="Draguignan" weight="3.6018334078761023"/>
-      <edge id="geid_66_380" source="Carcassonne" target="Montauban" weight="3.5231226557428554"/>
-      <edge id="geid_66_381" source="Carcassonne" target="Pamiers" weight="3.5337227436468166"/>
-      <edge id="geid_66_382" source="Carcassonne" target="PontSaintEsprit" weight="3.549829531666757"/>
-      <edge id="geid_66_383" source="Carcassonne" target="Revel" weight="3.504640768223217"/>
-      <edge id="geid_66_384" source="Carcassonne" target="SaintAffrique" weight="3.5062303720977477"/>
-      <edge id="geid_66_385" source="Carcassonne" target="TarasconsurAriège" weight="3.645283446647251"/>
-      <edge id="geid_66_386" source="Carcassonne" target="Toulouse" weight="3.524290733513113"/>
-      <edge id="geid_66_387" source="Castelnaudary" target="Dole" weight="3.7123155057037405"/>
-      <edge id="geid_66_388" source="Castelnaudary" target="Draguignan" weight="3.7778473933857315"/>
-      <edge id="geid_66_389" source="Castelnaudary" target="Fontenay" weight="3.559467202224301"/>
-      <edge id="geid_66_390" source="Castelnaudary" target="Grenade" weight="3.8803085497360144"/>
-      <edge id="geid_66_391" source="Castelnaudary" target="Grenoble" weight="3.6943428594946752"/>
-      <edge id="geid_66_392" source="Castelnaudary" target="Issoire" weight="3.6138405028879528"/>
-      <edge id="geid_66_393" source="Castelnaudary" target="Lavaur" weight="3.837749408584852"/>
-      <edge id="geid_66_394" source="Castelnaudary" target="LePuyenVelay" weight="3.56854394326218"/>
-      <edge id="geid_66_395" source="Castelnaudary" target="Luneville" weight="3.5605542626376097"/>
-      <edge id="geid_66_396" source="Castelnaudary" target="Lyon" weight="3.7057826976777215"/>
-      <edge id="geid_66_397" source="Castelnaudary" target="Marmande" weight="3.553043627614572"/>
-      <edge id="geid_66_398" source="Castelnaudary" target="Marseille" weight="3.7485478760188897"/>
-      <edge id="geid_66_399" source="Castelnaudary" target="Montauban" weight="3.631103080906623"/>
-      <edge id="geid_66_400" source="Castelnaudary" target="Montpellier" weight="3.866819100301326"/>
-      <edge id="geid_66_401" source="Castelnaudary" target="Mâcon" weight="3.50950129397569"/>
-      <edge id="geid_66_402" source="Castelnaudary" target="Orléans" weight="3.508171517228823"/>
-      <edge id="geid_66_403" source="Castelnaudary" target="Pamiers" weight="3.8175208738722444"/>
-      <edge id="geid_66_404" source="Castelnaudary" target="PontSaintEsprit" weight="3.8112952119750543"/>
-      <edge id="geid_66_405" source="Castelnaudary" target="Revel" weight="3.8865402666182405"/>
-      <edge id="geid_66_406" source="Castelnaudary" target="Romans" weight="3.5504137394773054"/>
-      <edge id="geid_66_407" source="Castelnaudary" target="SaintAffrique" weight="3.7605939109010063"/>
-      <edge id="geid_66_408" source="Castelnaudary" target="SaintEtienne" weight="3.5300808547388836"/>
-      <edge id="geid_66_409" source="Castelnaudary" target="TarasconsurAriège" weight="3.508559353677415"/>
-      <edge id="geid_66_410" source="Castelnaudary" target="Toulouse" weight="3.9495265555968966"/>
-      <edge id="geid_66_411" source="Castelnaudary" target="Tulle" weight="3.611756839693553"/>
-      <edge id="geid_66_412" source="Castres" target="ChaumontenCaux" weight="3.9959176421347227"/>
-      <edge id="geid_66_413" source="Castres" target="Cordes" weight="3.5678030927736675"/>
-      <edge id="geid_66_414" source="Castres" target="Foix" weight="3.5511318650469836"/>
-      <edge id="geid_66_415" source="Castres" target="Montauban" weight="3.631860917718756"/>
-      <edge id="geid_66_416" source="Castres" target="Puylaurens" weight="3.5063187543285554"/>
-      <edge id="geid_66_417" source="Castres" target="Revel" weight="3.549287346323458"/>
-      <edge id="geid_66_418" source="Castres" target="RozayenBrie" weight="3.8903907148858754"/>
-      <edge id="geid_66_419" source="Castres" target="SaintAffrique" weight="3.673723824753445"/>
-      <edge id="geid_66_420" source="Castres" target="TarasconsurAriège" weight="3.6615737541416875"/>
-      <edge id="geid_66_421" source="Castres" target="Toulouse" weight="3.585101287238776"/>
-      <edge id="geid_66_422" source="Castres" target="Treignac" weight="3.537503959586115"/>
-      <edge id="geid_66_423" source="ChalonssurMarne" target="Charleville" weight="3.922910012026388"/>
-      <edge id="geid_66_424" source="ChalonssurMarne" target="Chateaudun" weight="3.599459399454257"/>
-      <edge id="geid_66_425" source="ChalonssurMarne" target="ChaumontenVexin" weight="3.7360552087310843"/>
-      <edge id="geid_66_426" source="ChalonssurMarne" target="LeMans" weight="3.601396080671492"/>
-      <edge id="geid_66_427" source="ChalonssurMarne" target="Luneville" weight="3.67493424133924"/>
-      <edge id="geid_66_428" source="ChalonssurMarne" target="Montauban" weight="3.733151145490416"/>
-      <edge id="geid_66_429" source="ChalonssurMarne" target="Orléans" weight="3.89656624637284"/>
-      <edge id="geid_66_430" source="ChalonssurMarne" target="Paris" weight="3.8498638794490003"/>
-      <edge id="geid_66_431" source="ChalonssurMarne" target="Rouen" weight="3.696977406986554"/>
-      <edge id="geid_66_432" source="ChalonssurMarne" target="RozayenBrie" weight="3.913198446652748"/>
-      <edge id="geid_66_433" source="ChalonssurMarne" target="Soissons" weight="3.848325898162202"/>
-      <edge id="geid_66_434" source="ChalonssurMarne" target="Strasbourg" weight="3.562427148933276"/>
-      <edge id="geid_66_435" source="Charleville" target="Chateaudun" weight="3.5360303735742735"/>
-      <edge id="geid_66_436" source="Charleville" target="ChaumontenVexin" weight="3.7992436904421174"/>
-      <edge id="geid_66_437" source="Charleville" target="Douai" weight="3.5059431000923045"/>
-      <edge id="geid_66_438" source="Charleville" target="Luneville" weight="3.64302303939684"/>
-      <edge id="geid_66_439" source="Charleville" target="Montauban" weight="3.6452158590666253"/>
-      <edge id="geid_66_440" source="Charleville" target="Orléans" weight="3.82628143739689"/>
-      <edge id="geid_66_441" source="Charleville" target="Paris" weight="3.8497834334822496"/>
-      <edge id="geid_66_442" source="Charleville" target="Rouen" weight="3.799774622517124"/>
-      <edge id="geid_66_443" source="Charleville" target="RozayenBrie" weight="3.8807779791591415"/>
-      <edge id="geid_66_444" source="Charleville" target="Soissons" weight="3.947534417440896"/>
-      <edge id="geid_66_445" source="Charleville" target="Strasbourg" weight="3.6377810069983685"/>
-      <edge id="geid_66_446" source="Chartres" target="ChaumontenVexin" weight="3.501325520099726"/>
-      <edge id="geid_66_447" source="Chartres" target="Melun" weight="3.793269083034355"/>
-      <edge id="geid_66_448" source="Chartres" target="Meulan" weight="3.55445714279824"/>
-      <edge id="geid_66_449" source="Chartres" target="Pontoise" weight="3.5423692199101584"/>
-      <edge id="geid_66_450" source="Chartres" target="Rouen" weight="3.564485283441803"/>
-      <edge id="geid_66_451" source="Chartres" target="Verfeil" weight="3.786981814005948"/>
-      <edge id="geid_66_452" source="ChateauGontier" target="Chateauroux" weight="3.609071795672718"/>
-      <edge id="geid_66_453" source="ChateauGontier" target="Fontenay" weight="3.5327269604338998"/>
-      <edge id="geid_66_454" source="ChateauGontier" target="LeMans" weight="3.8160056590464064"/>
-      <edge id="geid_66_455" source="ChateauGontier" target="Luneville" weight="3.538785218569446"/>
-      <edge id="geid_66_456" source="ChateauGontier" target="Nantes" weight="3.692992499958961"/>
-      <edge id="geid_66_457" source="ChateauGontier" target="Orléans" weight="3.621162870162209"/>
-      <edge id="geid_66_458" source="ChateauGontier" target="Poitiers" weight="3.6342376550938753"/>
-      <edge id="geid_66_459" source="ChateauGontier" target="Rennes" weight="3.760365977839016"/>
-      <edge id="geid_66_460" source="ChateauGontier" target="Vannes" weight="3.5627549669338228"/>
-      <edge id="geid_66_461" source="Chateaudun" target="Chateauroux" weight="3.675298290895562"/>
-      <edge id="geid_66_462" source="Chateaudun" target="Gonesse" weight="3.6645470934484625"/>
-      <edge id="geid_66_463" source="Chateaudun" target="Guéret" weight="3.53339690318224"/>
-      <edge id="geid_66_464" source="Chateaudun" target="LeMans" weight="3.64653740536281"/>
-      <edge id="geid_66_465" source="Chateaudun" target="Orléans" weight="3.793068947044878"/>
-      <edge id="geid_66_466" source="Chateaudun" target="Soissons" weight="3.6174639000364492"/>
-      <edge id="geid_66_467" source="Chateauroux" target="ChaumontenVexin" weight="3.67664127015072"/>
-      <edge id="geid_66_468" source="Chateauroux" target="Colmar" weight="3.7235155852585162"/>
-      <edge id="geid_66_469" source="Chateauroux" target="Guéret" weight="3.8764264743053483"/>
-      <edge id="geid_66_470" source="Chateauroux" target="LeMans" weight="3.7873434704226296"/>
-      <edge id="geid_66_471" source="Chateauroux" target="Luneville" weight="3.7596731844120286"/>
-      <edge id="geid_66_472" source="Chateauroux" target="Lyon" weight="3.582351711913023"/>
-      <edge id="geid_66_473" source="Chateauroux" target="Montauban" weight="3.618290388274985"/>
-      <edge id="geid_66_474" source="Chateauroux" target="Mulhouse" weight="3.6108366564704255"/>
-      <edge id="geid_66_475" source="Chateauroux" target="Mâcon" weight="3.572744330053202"/>
-      <edge id="geid_66_476" source="Chateauroux" target="Nantes" weight="3.5779792209231838"/>
-      <edge id="geid_66_477" source="Chateauroux" target="Orléans" weight="3.7086389305879823"/>
-      <edge id="geid_66_478" source="Chateauroux" target="Paris" weight="3.6101269591162284"/>
-      <edge id="geid_66_479" source="Chateauroux" target="Poitiers" weight="3.6601621305512007"/>
-      <edge id="geid_66_480" source="Chateauroux" target="Rouen" weight="3.64216002789136"/>
-      <edge id="geid_66_481" source="Chateauroux" target="RozayenBrie" weight="3.5850222935085605"/>
-      <edge id="geid_66_482" source="Chateauroux" target="Strasbourg" weight="3.66600520814862"/>
-      <edge id="geid_66_483" source="Chateauroux" target="Tulle" weight="3.674413676051041"/>
-      <edge id="geid_66_484" source="ChaumontenCaux" target="ChaumontenVexin" weight="3.999826681877489"/>
-      <edge id="geid_66_485" source="ChaumontenCaux" target="Eu" weight="3.6443471280599824"/>
-      <edge id="geid_66_486" source="ChaumontenCaux" target="Lille" weight="3.6872030261269924"/>
-      <edge id="geid_66_487" source="ChaumontenCaux" target="MagnyenVexin" weight="3.9344569556878333"/>
-      <edge id="geid_66_488" source="ChaumontenCaux" target="Melun" weight="3.7155586809044023"/>
-      <edge id="geid_66_489" source="ChaumontenCaux" target="Meulan" weight="3.9516320270617133"/>
-      <edge id="geid_66_490" source="ChaumontenCaux" target="Orléans" weight="3.5777963477505774"/>
-      <edge id="geid_66_491" source="ChaumontenCaux" target="Paris" weight="3.7458933880127234"/>
-      <edge id="geid_66_492" source="ChaumontenCaux" target="Pontoise" weight="3.9132340539843677"/>
-      <edge id="geid_66_493" source="ChaumontenCaux" target="Reims" weight="3.8243068645839196"/>
-      <edge id="geid_66_494" source="ChaumontenCaux" target="Rennes" weight="3.74860464317545"/>
-      <edge id="geid_66_495" source="ChaumontenCaux" target="RozayenBrie" weight="3.823558108311043"/>
-      <edge id="geid_66_496" source="ChaumontenVexin" target="Colmar" weight="3.6170540005462684"/>
-      <edge id="geid_66_497" source="ChaumontenVexin" target="Eu" weight="3.709517794317722"/>
-      <edge id="geid_66_498" source="ChaumontenVexin" target="Gonesse" weight="3.824243934165456"/>
-      <edge id="geid_66_499" source="ChaumontenVexin" target="LeHavre" weight="3.667113011654978"/>
-      <edge id="geid_66_500" source="ChaumontenVexin" target="LeMans" weight="3.59400607442496"/>
-      <edge id="geid_66_501" source="ChaumontenVexin" target="Lille" weight="3.67357988228859"/>
-      <edge id="geid_66_502" source="ChaumontenVexin" target="Luneville" weight="3.645142544433409"/>
-      <edge id="geid_66_503" source="ChaumontenVexin" target="MagnyenVexin" weight="3.9258609980276735"/>
-      <edge id="geid_66_504" source="ChaumontenVexin" target="Melun" weight="3.720093034043233"/>
-      <edge id="geid_66_505" source="ChaumontenVexin" target="Meulan" weight="3.9522555275868028"/>
-      <edge id="geid_66_506" source="ChaumontenVexin" target="Mulhouse" weight="3.5403349798212846"/>
-      <edge id="geid_66_507" source="ChaumontenVexin" target="Orléans" weight="3.6423823268869695"/>
-      <edge id="geid_66_508" source="ChaumontenVexin" target="Paris" weight="3.7943104362850404"/>
-      <edge id="geid_66_509" source="ChaumontenVexin" target="Pontoise" weight="3.930757955777766"/>
-      <edge id="geid_66_510" source="ChaumontenVexin" target="Reims" weight="3.78736110219821"/>
-      <edge id="geid_66_511" source="ChaumontenVexin" target="Rouen" weight="3.7261931736183"/>
-      <edge id="geid_66_512" source="ChaumontenVexin" target="RozayenBrie" weight="3.8763131079301214"/>
-      <edge id="geid_66_513" source="ChaumontenVexin" target="Soissons" weight="3.879205906117201"/>
-      <edge id="geid_66_514" source="Colmar" target="Dole" weight="3.651523293508484"/>
-      <edge id="geid_66_515" source="Colmar" target="LeMans" weight="3.532359516988418"/>
-      <edge id="geid_66_516" source="Colmar" target="Luneville" weight="3.7875982204830776"/>
-      <edge id="geid_66_517" source="Colmar" target="Lyon" weight="3.6002507751319826"/>
-      <edge id="geid_66_518" source="Colmar" target="Marseille" weight="3.5174605270221484"/>
-      <edge id="geid_66_519" source="Colmar" target="Montauban" weight="3.79357369874122"/>
-      <edge id="geid_66_520" source="Colmar" target="Montpellier" weight="3.625748225612858"/>
-      <edge id="geid_66_521" source="Colmar" target="Mulhouse" weight="3.8471389559279996"/>
-      <edge id="geid_66_522" source="Colmar" target="Mâcon" weight="3.5367903352127845"/>
-      <edge id="geid_66_523" source="Colmar" target="Orléans" weight="3.579973310841428"/>
-      <edge id="geid_66_524" source="Colmar" target="Paris" weight="3.5712985715567207"/>
-      <edge id="geid_66_525" source="Colmar" target="Rouen" weight="3.531160712944124"/>
-      <edge id="geid_66_526" source="Colmar" target="RozayenBrie" weight="3.529969740368677"/>
-      <edge id="geid_66_527" source="Colmar" target="Strasbourg" weight="3.794796024077904"/>
-      <edge id="geid_66_528" source="Colmar" target="Toulouse" weight="3.7021696993473356"/>
-      <edge id="geid_66_529" source="Cordes" target="Montauban" weight="3.5281983468300098"/>
-      <edge id="geid_66_530" source="Cordes" target="SaintAffrique" weight="3.5577239578012807"/>
-      <edge id="geid_66_531" source="Digne" target="Dole" weight="3.525733217927088"/>
-      <edge id="geid_66_532" source="Digne" target="Draguignan" weight="3.7756856824470173"/>
-      <edge id="geid_66_533" source="Digne" target="Lyon" weight="3.5289845551910886"/>
-      <edge id="geid_66_534" source="Digne" target="Marseille" weight="3.6706638819114294"/>
-      <edge id="geid_66_535" source="Digne" target="Montauban" weight="3.768987172405202"/>
-      <edge id="geid_66_536" source="Digne" target="PontSaintEsprit" weight="3.6819562711683047"/>
-      <edge id="geid_66_537" source="Dole" target="Draguignan" weight="3.702999149342266"/>
-      <edge id="geid_66_538" source="Dole" target="Grenoble" weight="3.8339005521359173"/>
-      <edge id="geid_66_539" source="Dole" target="Issoire" weight="3.8117639234961658"/>
-      <edge id="geid_66_540" source="Dole" target="Langres" weight="3.5004413671462227"/>
-      <edge id="geid_66_541" source="Dole" target="LeMans" weight="3.5558995263923037"/>
-      <edge id="geid_66_542" source="Dole" target="LePuyenVelay" weight="3.648854030558865"/>
-      <edge id="geid_66_543" source="Dole" target="Luneville" weight="3.6651856171095027"/>
-      <edge id="geid_66_544" source="Dole" target="Lyon" weight="3.8863980883134017"/>
-      <edge id="geid_66_545" source="Dole" target="Marseille" weight="3.7959990239898174"/>
-      <edge id="geid_66_546" source="Dole" target="Montpellier" weight="3.7818850046958863"/>
-      <edge id="geid_66_547" source="Dole" target="Mâcon" weight="3.852881327710609"/>
-      <edge id="geid_66_548" source="Dole" target="Orléans" weight="3.6085515853134402"/>
-      <edge id="geid_66_549" source="Dole" target="Pamiers" weight="3.6111100653224106"/>
-      <edge id="geid_66_550" source="Dole" target="PontSaintEsprit" weight="3.7738941899507683"/>
-      <edge id="geid_66_551" source="Dole" target="Riom" weight="3.582869538267364"/>
-      <edge id="geid_66_552" source="Dole" target="Romans" weight="3.7439502737395793"/>
-      <edge id="geid_66_553" source="Dole" target="SaintAffrique" weight="3.68469853877306"/>
-      <edge id="geid_66_554" source="Dole" target="SaintEtienne" weight="3.738496187405575"/>
-      <edge id="geid_66_555" source="Dole" target="Strasbourg" weight="3.64798352912964"/>
-      <edge id="geid_66_556" source="Dole" target="Toulouse" weight="3.74490460283536"/>
-      <edge id="geid_66_557" source="Dole" target="Tulle" weight="3.6073854655641857"/>
-      <edge id="geid_66_558" source="Dole" target="VilleneuvedeBerg" weight="3.529832662892312"/>
-      <edge id="geid_66_559" source="Douai" target="Marseille" weight="3.601567334264976"/>
-      <edge id="geid_66_560" source="Douai" target="Melun" weight="3.6559896961280627"/>
-      <edge id="geid_66_561" source="Douai" target="Montpellier" weight="3.532314898814437"/>
-      <edge id="geid_66_562" source="Douai" target="Orléans" weight="3.6061479801148817"/>
-      <edge id="geid_66_563" source="Douai" target="Pontoise" weight="3.511461895688041"/>
-      <edge id="geid_66_564" source="Douai" target="Soissons" weight="3.5735695505110128"/>
-      <edge id="geid_66_565" source="Draguignan" target="Grenoble" weight="3.6030787326315075"/>
-      <edge id="geid_66_566" source="Draguignan" target="Issoire" weight="3.512735281555562"/>
-      <edge id="geid_66_567" source="Draguignan" target="Lyon" weight="3.6260657669114598"/>
-      <edge id="geid_66_568" source="Draguignan" target="Marseille" weight="3.825565855512944"/>
-      <edge id="geid_66_569" source="Draguignan" target="Montpellier" weight="3.8267881984099086"/>
-      <edge id="geid_66_570" source="Draguignan" target="Pamiers" weight="3.703083088562122"/>
-      <edge id="geid_66_571" source="Draguignan" target="PontSaintEsprit" weight="3.8501050654187714"/>
-      <edge id="geid_66_572" source="Draguignan" target="Romans" weight="3.528547653422695"/>
-      <edge id="geid_66_573" source="Draguignan" target="SaintAffrique" weight="3.67691171325625"/>
-      <edge id="geid_66_574" source="Draguignan" target="Toulouse" weight="3.73451570626004"/>
-      <edge id="geid_66_575" source="Draguignan" target="VilleneuvedeBerg" weight="3.6149739361199105"/>
-      <edge id="geid_66_576" source="Eu" target="Lille" weight="3.5429909861439026"/>
-      <edge id="geid_66_577" source="Eu" target="MagnyenVexin" weight="3.7555188106392103"/>
-      <edge id="geid_66_578" source="Eu" target="Meulan" weight="3.7845584377621053"/>
-      <edge id="geid_66_579" source="Eu" target="Paris" weight="3.6710279498135825"/>
-      <edge id="geid_66_580" source="Eu" target="Pontoise" weight="3.7336848206412303"/>
-      <edge id="geid_66_581" source="Eu" target="Reims" weight="3.59277247833944"/>
-      <edge id="geid_66_582" source="Eu" target="RozayenBrie" weight="3.6733751476781116"/>
-      <edge id="geid_66_583" source="Foix" target="Pamiers" weight="3.6716069473098134"/>
-      <edge id="geid_66_584" source="Foix" target="SaintAffrique" weight="3.5013239483062497"/>
-      <edge id="geid_66_585" source="Foix" target="TarasconsurAriège" weight="3.83329370282401"/>
-      <edge id="geid_66_586" source="Fontenay" target="Grenade" weight="3.5202515461275556"/>
-      <edge id="geid_66_587" source="Fontenay" target="Luneville" weight="3.5745843832198374"/>
-      <edge id="geid_66_588" source="Fontenay" target="Marseille" weight="3.5545623448120907"/>
-      <edge id="geid_66_589" source="Fontenay" target="Montpellier" weight="3.549245334245928"/>
-      <edge id="geid_66_590" source="Fontenay" target="Nantes" weight="3.78619982802336"/>
-      <edge id="geid_66_591" source="Fontenay" target="Orléans" weight="3.516297144623393"/>
-      <edge id="geid_66_592" source="Fontenay" target="Pamiers" weight="3.5323895131896488"/>
-      <edge id="geid_66_593" source="Fontenay" target="Poitiers" weight="3.6935416699463883"/>
-      <edge id="geid_66_594" source="Fontenay" target="Toulouse" weight="3.6389306637314602"/>
-      <edge id="geid_66_595" source="Gonesse" target="LeHavre" weight="3.5980125320381284"/>
-      <edge id="geid_66_596" source="Gonesse" target="MagnyenVexin" weight="3.817515051408288"/>
-      <edge id="geid_66_597" source="Gonesse" target="Maringues" weight="3.9069159344640005"/>
-      <edge id="geid_66_598" source="Gonesse" target="Meulan" weight="3.8223223221820817"/>
-      <edge id="geid_66_599" source="Gonesse" target="Paris" weight="3.6570626723339363"/>
-      <edge id="geid_66_600" source="Gonesse" target="Pontoise" weight="3.8163114207177125"/>
-      <edge id="geid_66_601" source="Gonesse" target="Reims" weight="3.7832278662196224"/>
-      <edge id="geid_66_602" source="Gonesse" target="Rouen" weight="3.6135087461689968"/>
-      <edge id="geid_66_603" source="Gonesse" target="Treignac" weight="4"/>
-      <edge id="geid_66_604" source="Grenade" target="Lavaur" weight="3.901217720015002"/>
-      <edge id="geid_66_605" source="Grenade" target="LePuyenVelay" weight="3.5143787604631695"/>
-      <edge id="geid_66_606" source="Grenade" target="Montauban" weight="3.9214337469366605"/>
-      <edge id="geid_66_607" source="Grenade" target="PontSaintEsprit" weight="3.531528770559889"/>
-      <edge id="geid_66_608" source="Grenade" target="Puylaurens" weight="3.892134636709397"/>
-      <edge id="geid_66_609" source="Grenade" target="Revel" weight="3.8102510229041453"/>
-      <edge id="geid_66_610" source="Grenade" target="Romans" weight="3.7387432952323203"/>
-      <edge id="geid_66_611" source="Grenade" target="SaintAffrique" weight="3.6152042262705217"/>
-      <edge id="geid_66_612" source="Grenade" target="TarasconsurAriège" weight="3.616582203642077"/>
-      <edge id="geid_66_613" source="Grenade" target="Toulouse" weight="3.54164321116516"/>
-      <edge id="geid_66_614" source="Grenoble" target="Issoire" weight="3.75973883882116"/>
-      <edge id="geid_66_615" source="Grenoble" target="LePuyenVelay" weight="3.702924139812722"/>
-      <edge id="geid_66_616" source="Grenoble" target="Lyon" weight="3.8983703893925563"/>
-      <edge id="geid_66_617" source="Grenoble" target="Marseille" weight="3.629593550466608"/>
-      <edge id="geid_66_618" source="Grenoble" target="Mende" weight="3.6109659866125563"/>
-      <edge id="geid_66_619" source="Grenoble" target="Montpellier" weight="3.7357895573556643"/>
-      <edge id="geid_66_620" source="Grenoble" target="Mâcon" weight="3.876122763253637"/>
-      <edge id="geid_66_621" source="Grenoble" target="Orléans" weight="3.5165103932384882"/>
-      <edge id="geid_66_622" source="Grenoble" target="PontSaintEsprit" weight="3.7958183377959998"/>
-      <edge id="geid_66_623" source="Grenoble" target="Romans" weight="3.7960833482830805"/>
-      <edge id="geid_66_624" source="Grenoble" target="SaintAffrique" weight="3.718392684318365"/>
-      <edge id="geid_66_625" source="Grenoble" target="SaintEtienne" weight="3.7491059630670724"/>
-      <edge id="geid_66_626" source="Grenoble" target="Strasbourg" weight="3.5200046381496515"/>
-      <edge id="geid_66_627" source="Grenoble" target="Toulouse" weight="3.7264527309809283"/>
-      <edge id="geid_66_628" source="Grenoble" target="VilleneuvedeBerg" weight="3.5665300749708093"/>
-      <edge id="geid_66_629" source="Guéret" target="LeMans" weight="3.596679213045865"/>
-      <edge id="geid_66_630" source="Guéret" target="Luneville" weight="3.539908815277412"/>
-      <edge id="geid_66_631" source="Guéret" target="Lyon" weight="3.5520161392356626"/>
-      <edge id="geid_66_632" source="Guéret" target="Maringues" weight="3.733601192268295"/>
-      <edge id="geid_66_633" source="Guéret" target="Orléans" weight="3.6810845926494786"/>
-      <edge id="geid_66_634" source="Guéret" target="Tulle" weight="3.541240754033141"/>
-      <edge id="geid_66_635" source="Issoire" target="LePuyenVelay" weight="3.8263308874688837"/>
-      <edge id="geid_66_636" source="Issoire" target="Lyon" weight="3.805776237398414"/>
-      <edge id="geid_66_637" source="Issoire" target="Maringues" weight="3.831530364916021"/>
-      <edge id="geid_66_638" source="Issoire" target="Marseille" weight="3.6973897719988438"/>
-      <edge id="geid_66_639" source="Issoire" target="Mende" weight="3.7365607919648447"/>
-      <edge id="geid_66_640" source="Issoire" target="Montpellier" weight="3.6378148806680355"/>
-      <edge id="geid_66_641" source="Issoire" target="Mâcon" weight="3.7943410962769217"/>
-      <edge id="geid_66_642" source="Issoire" target="Orléans" weight="3.59869702133824"/>
-      <edge id="geid_66_643" source="Issoire" target="PontSaintEsprit" weight="3.6458178688182"/>
-      <edge id="geid_66_644" source="Issoire" target="Riom" weight="3.9124747429654754"/>
-      <edge id="geid_66_645" source="Issoire" target="Romans" weight="3.610766424674822"/>
-      <edge id="geid_66_646" source="Issoire" target="SaintAffrique" weight="3.714084769311288"/>
-      <edge id="geid_66_647" source="Issoire" target="SaintEtienne" weight="3.8073970896776674"/>
-      <edge id="geid_66_648" source="Issoire" target="Toulouse" weight="3.617584523546215"/>
-      <edge id="geid_66_649" source="Issoire" target="Tulle" weight="3.669485929271452"/>
-      <edge id="geid_66_650" source="Issoire" target="VicleComte" weight="3.8059404218534416"/>
-      <edge id="geid_66_651" source="Langres" target="Montpellier" weight="3.519472352019463"/>
-      <edge id="geid_66_652" source="Lavaur" target="Montauban" weight="3.8008117994197264"/>
-      <edge id="geid_66_653" source="Lavaur" target="Puylaurens" weight="3.8731497168601634"/>
-      <edge id="geid_66_654" source="Lavaur" target="Revel" weight="3.7732619999797317"/>
-      <edge id="geid_66_655" source="Lavaur" target="Réalmont" weight="3.525556867150357"/>
-      <edge id="geid_66_656" source="Lavaur" target="TarasconsurAriège" weight="3.613475670182225"/>
-      <edge id="geid_66_657" source="Lavaur" target="Toulouse" weight="3.87634220737298"/>
-      <edge id="geid_66_658" source="LeHavre" target="Lille" weight="3.516229638495113"/>
-      <edge id="geid_66_659" source="LeHavre" target="MagnyenVexin" weight="3.5764041453724227"/>
-      <edge id="geid_66_660" source="LeHavre" target="Meulan" weight="3.6521994380071225"/>
-      <edge id="geid_66_661" source="LeHavre" target="Pontoise" weight="3.579307291206833"/>
-      <edge id="geid_66_662" source="LeHavre" target="Rouen" weight="3.754419240024465"/>
-      <edge id="geid_66_663" source="LeMans" target="Luneville" weight="3.7113297754238164"/>
-      <edge id="geid_66_664" source="LeMans" target="Lyon" weight="3.747685153339332"/>
-      <edge id="geid_66_665" source="LeMans" target="Montauban" weight="3.734564559754622"/>
-      <edge id="geid_66_666" source="LeMans" target="Mâcon" weight="3.686008215210121"/>
-      <edge id="geid_66_667" source="LeMans" target="Nantes" weight="3.736349245406823"/>
-      <edge id="geid_66_668" source="LeMans" target="Orléans" weight="3.773333561599421"/>
-      <edge id="geid_66_669" source="LeMans" target="Paris" weight="3.5864785157520007"/>
-      <edge id="geid_66_670" source="LeMans" target="Poitiers" weight="3.5986011464242846"/>
-      <edge id="geid_66_671" source="LeMans" target="Rennes" weight="3.6821848088479205"/>
-      <edge id="geid_66_672" source="LeMans" target="Rouen" weight="3.596792927562413"/>
-      <edge id="geid_66_673" source="LeMans" target="RozayenBrie" weight="3.624830983343232"/>
-      <edge id="geid_66_674" source="LeMans" target="SaintAffrique" weight="3.5593259686297603"/>
-      <edge id="geid_66_675" source="LeMans" target="SaintEtienne" weight="3.5362574583767237"/>
-      <edge id="geid_66_676" source="LeMans" target="Strasbourg" weight="3.519495164528698"/>
-      <edge id="geid_66_677" source="LePuyenVelay" target="Lyon" weight="3.7209189724604568"/>
-      <edge id="geid_66_678" source="LePuyenVelay" target="Maringues" weight="3.5205879252760797"/>
-      <edge id="geid_66_679" source="LePuyenVelay" target="Marseille" weight="3.574604651093"/>
-      <edge id="geid_66_680" source="LePuyenVelay" target="Mende" weight="3.7687131698900647"/>
-      <edge id="geid_66_681" source="LePuyenVelay" target="Montauban" weight="3.532460782870272"/>
-      <edge id="geid_66_682" source="LePuyenVelay" target="Montpellier" weight="3.5832542886650454"/>
-      <edge id="geid_66_683" source="LePuyenVelay" target="Mâcon" weight="3.6749015371906926"/>
-      <edge id="geid_66_684" source="LePuyenVelay" target="PontSaintEsprit" weight="3.5927959820945286"/>
-      <edge id="geid_66_685" source="LePuyenVelay" target="Riom" weight="3.559081052146236"/>
-      <edge id="geid_66_686" source="LePuyenVelay" target="Romans" weight="3.7364351854737667"/>
-      <edge id="geid_66_687" source="LePuyenVelay" target="SaintAffrique" weight="3.721614127967102"/>
-      <edge id="geid_66_688" source="LePuyenVelay" target="SaintEtienne" weight="3.707130348849722"/>
-      <edge id="geid_66_689" source="LePuyenVelay" target="Toulouse" weight="3.600536913665287"/>
-      <edge id="geid_66_690" source="LePuyenVelay" target="Tulle" weight="3.6343653828493463"/>
-      <edge id="geid_66_691" source="LePuyenVelay" target="VicleComte" weight="3.515967645848477"/>
-      <edge id="geid_66_692" source="LePuyenVelay" target="VilleneuvedeBerg" weight="3.6980790724425607"/>
-      <edge id="geid_66_693" source="Lille" target="MagnyenVexin" weight="3.5470187109443025"/>
-      <edge id="geid_66_694" source="Lille" target="Melun" weight="3.601152225921444"/>
-      <edge id="geid_66_695" source="Lille" target="Meulan" weight="3.656913128498604"/>
-      <edge id="geid_66_696" source="Lille" target="Pontoise" weight="3.565656420857376"/>
-      <edge id="geid_66_697" source="Limoges" target="Poitiers" weight="3.624782205617766"/>
-      <edge id="geid_66_698" source="Limoges" target="Tulle" weight="3.71204518942226"/>
-      <edge id="geid_66_699" source="Luneville" target="Lyon" weight="3.660579937266924"/>
-      <edge id="geid_66_700" source="Luneville" target="Marseille" weight="3.5922559837755528"/>
-      <edge id="geid_66_701" source="Luneville" target="Montauban" weight="3.9139872661296016"/>
-      <edge id="geid_66_702" source="Luneville" target="Montpellier" weight="3.627507140446465"/>
-      <edge id="geid_66_703" source="Luneville" target="Mulhouse" weight="3.6610201543305623"/>
-      <edge id="geid_66_704" source="Luneville" target="Mâcon" weight="3.657637201524801"/>
-      <edge id="geid_66_705" source="Luneville" target="Nantes" weight="3.620858901651812"/>
-      <edge id="geid_66_706" source="Luneville" target="Orléans" weight="3.7083088202671806"/>
-      <edge id="geid_66_707" source="Luneville" target="Pamiers" weight="3.6151684045665444"/>
-      <edge id="geid_66_708" source="Luneville" target="Paris" weight="3.7052668431545803"/>
-      <edge id="geid_66_709" source="Luneville" target="Poitiers" weight="3.600541239985008"/>
-      <edge id="geid_66_710" source="Luneville" target="Rouen" weight="3.6332693610831424"/>
-      <edge id="geid_66_711" source="Luneville" target="RozayenBrie" weight="3.677920516957681"/>
-      <edge id="geid_66_712" source="Luneville" target="Soissons" weight="3.52905533965556"/>
-      <edge id="geid_66_713" source="Luneville" target="Strasbourg" weight="3.833069881261108"/>
-      <edge id="geid_66_714" source="Luneville" target="Toulouse" weight="3.592981740283088"/>
-      <edge id="geid_66_715" source="Luneville" target="Tulle" weight="3.6454197692670975"/>
-      <edge id="geid_66_716" source="Lyon" target="Marseille" weight="3.6933400312616027"/>
-      <edge id="geid_66_717" source="Lyon" target="Mende" weight="3.6001863386064903"/>
-      <edge id="geid_66_718" source="Lyon" target="Montpellier" weight="3.733718442293568"/>
-      <edge id="geid_66_719" source="Lyon" target="Mâcon" weight="3.9464913951843963"/>
-      <edge id="geid_66_720" source="Lyon" target="Orléans" weight="3.615494342978809"/>
-      <edge id="geid_66_721" source="Lyon" target="Pamiers" weight="3.608616362605223"/>
-      <edge id="geid_66_722" source="Lyon" target="PontSaintEsprit" weight="3.7957001167220357"/>
-      <edge id="geid_66_723" source="Lyon" target="Romans" weight="3.8263218111659048"/>
-      <edge id="geid_66_724" source="Lyon" target="SaintAffrique" weight="3.717947681459841"/>
-      <edge id="geid_66_725" source="Lyon" target="SaintEtienne" weight="3.8233310906626805"/>
-      <edge id="geid_66_726" source="Lyon" target="Strasbourg" weight="3.5016215100692407"/>
-      <edge id="geid_66_727" source="Lyon" target="Toulouse" weight="3.74206623825241"/>
-      <edge id="geid_66_728" source="Lyon" target="Tulle" weight="3.556092851936303"/>
-      <edge id="geid_66_729" source="Lyon" target="VilleneuvedeBerg" weight="3.5309393915043596"/>
-      <edge id="geid_66_730" source="MagnyenVexin" target="Melun" weight="3.6845335355126543"/>
-      <edge id="geid_66_731" source="MagnyenVexin" target="Meulan" weight="3.936542058316968"/>
-      <edge id="geid_66_732" source="MagnyenVexin" target="Paris" weight="3.7855311195163392"/>
-      <edge id="geid_66_733" source="MagnyenVexin" target="Pontoise" weight="3.91860949248484"/>
-      <edge id="geid_66_734" source="MagnyenVexin" target="Reims" weight="3.806109487161584"/>
-      <edge id="geid_66_735" source="MagnyenVexin" target="Rouen" weight="3.5364993316430624"/>
-      <edge id="geid_66_736" source="MagnyenVexin" target="RozayenBrie" weight="3.880182953124"/>
-      <edge id="geid_66_737" source="Maringues" target="Puylaurens" weight="3.9841006707698634"/>
-      <edge id="geid_66_738" source="Maringues" target="Riom" weight="3.792203686477097"/>
-      <edge id="geid_66_739" source="Maringues" target="Tulle" weight="3.5005461783621152"/>
-      <edge id="geid_66_740" source="Maringues" target="VicleComte" weight="3.7132143058456575"/>
-      <edge id="geid_66_741" source="Marmande" target="Montauban" weight="3.9782339309471237"/>
-      <edge id="geid_66_742" source="Marmande" target="Pamiers" weight="3.696037702166912"/>
-      <edge id="geid_66_743" source="Marmande" target="Toulouse" weight="3.6182046765324096"/>
-      <edge id="geid_66_744" source="Marseille" target="Montpellier" weight="3.876246010307665"/>
-      <edge id="geid_66_745" source="Marseille" target="Mâcon" weight="3.7759412060467343"/>
-      <edge id="geid_66_746" source="Marseille" target="Pamiers" weight="3.784958265729487"/>
-      <edge id="geid_66_747" source="Marseille" target="PontSaintEsprit" weight="3.772277921721384"/>
-      <edge id="geid_66_748" source="Marseille" target="SaintAffrique" weight="3.7059261146168048"/>
-      <edge id="geid_66_749" source="Marseille" target="SaintEtienne" weight="3.55242165841161"/>
-      <edge id="geid_66_750" source="Marseille" target="Strasbourg" weight="3.517914635173621"/>
-      <edge id="geid_66_751" source="Marseille" target="Toulouse" weight="3.7368232231736025"/>
-      <edge id="geid_66_752" source="Marseille" target="Tulle" weight="3.6673878534079507"/>
-      <edge id="geid_66_753" source="Melun" target="Meulan" weight="3.708220662383846"/>
-      <edge id="geid_66_754" source="Melun" target="Orléans" weight="3.7048038020011558"/>
-      <edge id="geid_66_755" source="Melun" target="Paris" weight="3.6211853248339136"/>
-      <edge id="geid_66_756" source="Melun" target="Pontoise" weight="3.7725386518918076"/>
-      <edge id="geid_66_757" source="Melun" target="Reims" weight="3.6926892209618942"/>
-      <edge id="geid_66_758" source="Melun" target="Rouen" weight="3.585115298681605"/>
-      <edge id="geid_66_759" source="Melun" target="RozayenBrie" weight="3.6179194345557266"/>
-      <edge id="geid_66_760" source="Melun" target="Verfeil" weight="3.806973288829156"/>
-      <edge id="geid_66_761" source="Mende" target="Montauban" weight="3.8881093686215236"/>
-      <edge id="geid_66_762" source="Mende" target="Mâcon" weight="3.5861527516702805"/>
-      <edge id="geid_66_763" source="Mende" target="PontSaintEsprit" weight="3.55682818569936"/>
-      <edge id="geid_66_764" source="Mende" target="SaintAffrique" weight="3.5554677120751434"/>
-      <edge id="geid_66_765" source="Mende" target="SaintEtienne" weight="3.7230417190229903"/>
-      <edge id="geid_66_766" source="Meulan" target="Paris" weight="3.7312879870107243"/>
-      <edge id="geid_66_767" source="Meulan" target="Pontoise" weight="3.958233759123482"/>
-      <edge id="geid_66_768" source="Meulan" target="Reims" weight="3.788391912337473"/>
-      <edge id="geid_66_769" source="Meulan" target="Rouen" weight="3.6715982863450805"/>
-      <edge id="geid_66_770" source="Meulan" target="RozayenBrie" weight="3.811061335548241"/>
-      <edge id="geid_66_771" source="Montauban" target="Mulhouse" weight="3.9191071666022506"/>
-      <edge id="geid_66_772" source="Montauban" target="Mâcon" weight="3.790069682270617"/>
-      <edge id="geid_66_773" source="Montauban" target="Nantes" weight="3.696342733608"/>
-      <edge id="geid_66_774" source="Montauban" target="Pau" weight="3.7334017477896126"/>
-      <edge id="geid_66_775" source="Montauban" target="Peyrehorade" weight="3.616209740126233"/>
-      <edge id="geid_66_776" source="Montauban" target="PontlAbbé" weight="3.589451450715953"/>
-      <edge id="geid_66_777" source="Montauban" target="Puylaurens" weight="3.813450804962575"/>
-      <edge id="geid_66_778" source="Montauban" target="Revel" weight="3.765894748882996"/>
-      <edge id="geid_66_779" source="Montauban" target="Romans" weight="3.5705518041885442"/>
-      <edge id="geid_66_780" source="Montauban" target="SaintAffrique" weight="3.60927537636649"/>
-      <edge id="geid_66_781" source="Montauban" target="TarasconsurAriège" weight="3.681649991909264"/>
-      <edge id="geid_66_782" source="Montauban" target="Toulouse" weight="3.7269843441028083"/>
-      <edge id="geid_66_783" source="Montauban" target="Vannes" weight="3.6160390515228737"/>
-      <edge id="geid_66_784" source="Montauban" target="VilleneuvedeBerg" weight="3.547035548140551"/>
-      <edge id="geid_66_785" source="Montpellier" target="Mulhouse" weight="3.655889657610848"/>
-      <edge id="geid_66_786" source="Montpellier" target="Mâcon" weight="3.753690764342472"/>
-      <edge id="geid_66_787" source="Montpellier" target="Orléans" weight="3.5732910260628037"/>
-      <edge id="geid_66_788" source="Montpellier" target="Pamiers" weight="3.7121009859041956"/>
-      <edge id="geid_66_789" source="Montpellier" target="PontSaintEsprit" weight="3.865595531454768"/>
-      <edge id="geid_66_790" source="Montpellier" target="SaintAffrique" weight="3.7877812799417363"/>
-      <edge id="geid_66_791" source="Montpellier" target="SaintEtienne" weight="3.509019593095553"/>
-      <edge id="geid_66_792" source="Montpellier" target="Strasbourg" weight="3.546215468681244"/>
-      <edge id="geid_66_793" source="Montpellier" target="Toulouse" weight="3.8507317290358594"/>
-      <edge id="geid_66_794" source="Montpellier" target="Tulle" weight="3.5719935937924223"/>
-      <edge id="geid_66_795" source="Mulhouse" target="Strasbourg" weight="3.840977019658745"/>
-      <edge id="geid_66_796" source="Mulhouse" target="Toulouse" weight="3.61452265562404"/>
-      <edge id="geid_66_797" source="Mâcon" target="Orléans" weight="3.556144748255976"/>
-      <edge id="geid_66_798" source="Mâcon" target="PontSaintEsprit" weight="3.8457899362418453"/>
-      <edge id="geid_66_799" source="Mâcon" target="SaintAffrique" weight="3.6768342072031444"/>
-      <edge id="geid_66_800" source="Mâcon" target="SaintEtienne" weight="3.875351588320213"/>
-      <edge id="geid_66_801" source="Mâcon" target="Toulouse" weight="3.5465351576966095"/>
-      <edge id="geid_66_802" source="Nantes" target="Poitiers" weight="3.7863049028152806"/>
-      <edge id="geid_66_803" source="Nantes" target="Rennes" weight="3.682680286005966"/>
-      <edge id="geid_66_804" source="Nantes" target="Tulle" weight="3.631345927666265"/>
-      <edge id="geid_66_805" source="Nantes" target="Vannes" weight="3.6856683627054916"/>
-      <edge id="geid_66_806" source="Narbonne" target="Treignac" weight="3.8850182343414015"/>
-      <edge id="geid_66_807" source="Orléans" target="Paris" weight="3.5129278799931964"/>
-      <edge id="geid_66_808" source="Orléans" target="Poitiers" weight="3.571876000711748"/>
-      <edge id="geid_66_809" source="Orléans" target="PontSaintEsprit" weight="3.5349898558081967"/>
-      <edge id="geid_66_810" source="Orléans" target="Reims" weight="3.5184023107958207"/>
-      <edge id="geid_66_811" source="Orléans" target="Rennes" weight="3.571514388603305"/>
-      <edge id="geid_66_812" source="Orléans" target="Rouen" weight="3.5003233488263117"/>
-      <edge id="geid_66_813" source="Orléans" target="RozayenBrie" weight="3.553435293711409"/>
-      <edge id="geid_66_814" source="Orléans" target="SaintAffrique" weight="3.5244057759744063"/>
-      <edge id="geid_66_815" source="Orléans" target="Soissons" weight="3.8220328591040396"/>
-      <edge id="geid_66_816" source="Orléans" target="Toulouse" weight="3.551840451601944"/>
-      <edge id="geid_66_817" source="Orléans" target="Tulle" weight="3.559905108324366"/>
-      <edge id="geid_66_818" source="Pamiers" target="PontSaintEsprit" weight="3.6703566933062497"/>
-      <edge id="geid_66_819" source="Pamiers" target="Revel" weight="3.60266554914721"/>
-      <edge id="geid_66_820" source="Pamiers" target="Réalmont" weight="3.7154555176218564"/>
-      <edge id="geid_66_821" source="Pamiers" target="SaintAffrique" weight="3.638580933091861"/>
-      <edge id="geid_66_822" source="Pamiers" target="TarasconsurAriège" weight="3.713925314818278"/>
-      <edge id="geid_66_823" source="Pamiers" target="Toulouse" weight="3.73496587393176"/>
-      <edge id="geid_66_824" source="Paris" target="Pontoise" weight="3.7321658595788447"/>
-      <edge id="geid_66_825" source="Paris" target="Reims" weight="3.8307538136749457"/>
-      <edge id="geid_66_826" source="Paris" target="RozayenBrie" weight="3.9624735897617644"/>
-      <edge id="geid_66_827" source="Paris" target="Soissons" weight="3.8862215716130355"/>
-      <edge id="geid_66_828" source="Pau" target="Peyrehorade" weight="3.852778866276103"/>
-      <edge id="geid_66_829" source="Poitiers" target="Rennes" weight="3.5695229207739723"/>
-      <edge id="geid_66_830" source="Poitiers" target="Tulle" weight="3.55832522607757"/>
-      <edge id="geid_66_831" source="Poitiers" target="Verfeil" weight="3.971532630483202"/>
-      <edge id="geid_66_832" source="PontSaintEsprit" target="Romans" weight="3.730352468256962"/>
-      <edge id="geid_66_833" source="PontSaintEsprit" target="SaintAffrique" weight="3.7349990375239934"/>
-      <edge id="geid_66_834" source="PontSaintEsprit" target="SaintEtienne" weight="3.6541151957074804"/>
-      <edge id="geid_66_835" source="PontSaintEsprit" target="Toulouse" weight="3.815243964898502"/>
-      <edge id="geid_66_836" source="PontSaintEsprit" target="VilleneuvedeBerg" weight="3.78907597871401"/>
-      <edge id="geid_66_837" source="PontlAbbé" target="Vannes" weight="3.5831520701712645"/>
-      <edge id="geid_66_838" source="Pontoise" target="Reims" weight="3.8404864087128097"/>
-      <edge id="geid_66_839" source="Pontoise" target="Rouen" weight="3.668599026280038"/>
-      <edge id="geid_66_840" source="Pontoise" target="RozayenBrie" weight="3.7599413124073755"/>
-      <edge id="geid_66_841" source="Puylaurens" target="Revel" weight="3.9466576337661223"/>
-      <edge id="geid_66_842" source="Puylaurens" target="TarasconsurAriège" weight="3.559809072324097"/>
-      <edge id="geid_66_843" source="Puylaurens" target="Treignac" weight="4"/>
-      <edge id="geid_66_844" source="Reims" target="RozayenBrie" weight="3.8886601199465876"/>
-      <edge id="geid_66_845" source="Rennes" target="SaintAffrique" weight="3.536039775748324"/>
-      <edge id="geid_66_846" source="Rennes" target="SaintBrieuc" weight="3.5044660315200478"/>
-      <edge id="geid_66_847" source="Rennes" target="Vannes" weight="3.722125176961"/>
-      <edge id="geid_66_848" source="Revel" target="SaintAffrique" weight="3.5230895080306706"/>
-      <edge id="geid_66_849" source="Revel" target="TarasconsurAriège" weight="3.522558565251842"/>
-      <edge id="geid_66_850" source="Revel" target="Toulouse" weight="3.8472027805551376"/>
-      <edge id="geid_66_851" source="Riom" target="SaintEtienne" weight="3.551463007390805"/>
-      <edge id="geid_66_852" source="Riom" target="Tulle" weight="3.547904469507476"/>
-      <edge id="geid_66_853" source="Riom" target="VicleComte" weight="3.802809822310714"/>
-      <edge id="geid_66_854" source="Romans" target="SaintAffrique" weight="3.595033095277563"/>
-      <edge id="geid_66_855" source="Romans" target="SaintEtienne" weight="3.6523229325786253"/>
-      <edge id="geid_66_856" source="Romans" target="VilleneuvedeBerg" weight="3.743376666657409"/>
-      <edge id="geid_66_857" source="Rouen" target="RozayenBrie" weight="3.512013890273504"/>
-      <edge id="geid_66_858" source="Rouen" target="Soissons" weight="3.839361183080864"/>
-      <edge id="geid_66_859" source="RozayenBrie" target="Soissons" weight="3.9089749052970726"/>
-      <edge id="geid_66_860" source="SaintAffrique" target="SaintEtienne" weight="3.610694597408528"/>
-      <edge id="geid_66_861" source="SaintAffrique" target="TarasconsurAriège" weight="3.5995568794900317"/>
-      <edge id="geid_66_862" source="SaintAffrique" target="Toulouse" weight="3.8012705853888673"/>
-      <edge id="geid_66_863" source="SaintAffrique" target="Tulle" weight="3.585808482726072"/>
-      <edge id="geid_66_864" source="SaintAffrique" target="VilleneuvedeBerg" weight="3.579716408591823"/>
-      <edge id="geid_66_865" source="SaintBrieuc" target="Verfeil" weight="3.7070063932159125"/>
-      <edge id="geid_66_866" source="SaintEtienne" target="Toulouse" weight="3.5611722255747855"/>
-      <edge id="geid_66_867" source="Soissons" target="Strasbourg" weight="3.5915379569169152"/>
-      <edge id="geid_66_868" source="TarasconsurAriège" target="Toulouse" weight="3.674507833604337"/>
-      <edge id="geid_66_869" source="Toulouse" target="Tulle" weight="3.5167207603691524"/>
-      <edge id="geid_66_870" source="Toulouse" target="VilleneuvedeBerg" weight="3.612683032337165"/>
+      <edge id="geid_141_0" source="Abbeville" target="Arras" weight="3.80296606428025"/>
+      <edge id="geid_141_1" source="Abbeville" target="Auzerre" weight="3.5008791823513223"/>
+      <edge id="geid_141_2" source="Abbeville" target="BarleDuc" weight="3.6532962468288446"/>
+      <edge id="geid_141_3" source="Abbeville" target="Bayeux" weight="3.5715308302743365"/>
+      <edge id="geid_141_4" source="Abbeville" target="Beaumont" weight="3.5137369785525316"/>
+      <edge id="geid_141_5" source="Abbeville" target="Bernay" weight="3.8899754947723264"/>
+      <edge id="geid_141_6" source="Abbeville" target="Blois" weight="3.6559192942613055"/>
+      <edge id="geid_141_7" source="Abbeville" target="Cany" weight="3.581672374741263"/>
+      <edge id="geid_141_8" source="Abbeville" target="ChalonssurMarne" weight="3.6624054954019125"/>
+      <edge id="geid_141_9" source="Abbeville" target="Charleville" weight="3.774167253960992"/>
+      <edge id="geid_141_10" source="Abbeville" target="Chateaudun" weight="3.6310878746706496"/>
+      <edge id="geid_141_11" source="Abbeville" target="Chateauroux" weight="3.5689386919489805"/>
+      <edge id="geid_141_12" source="Abbeville" target="ChaumontenCaux" weight="3.7559956306503746"/>
+      <edge id="geid_141_13" source="Abbeville" target="ChaumontenVexin" weight="3.7610722165825603"/>
+      <edge id="geid_141_14" source="Abbeville" target="Eu" weight="3.7584027119196004"/>
+      <edge id="geid_141_15" source="Abbeville" target="Gonesse" weight="3.586507187941608"/>
+      <edge id="geid_141_16" source="Abbeville" target="LeHavre" weight="3.5702267642490972"/>
+      <edge id="geid_141_17" source="Abbeville" target="Lille" weight="3.5164337340049223"/>
+      <edge id="geid_141_18" source="Abbeville" target="MagnyenVexin" weight="3.7380582968185743"/>
+      <edge id="geid_141_19" source="Abbeville" target="Melun" weight="3.631856382049"/>
+      <edge id="geid_141_20" source="Abbeville" target="Meulan" weight="3.702017850750122"/>
+      <edge id="geid_141_21" source="Abbeville" target="Orléans" weight="3.8100618387277208"/>
+      <edge id="geid_141_22" source="Abbeville" target="Paris" weight="3.6870748340810326"/>
+      <edge id="geid_141_23" source="Abbeville" target="Pontoise" weight="3.662301924458789"/>
+      <edge id="geid_141_24" source="Abbeville" target="Reims" weight="3.757498652800922"/>
+      <edge id="geid_141_25" source="Abbeville" target="Rouen" weight="3.586817173065725"/>
+      <edge id="geid_141_26" source="Abbeville" target="RozayenBrie" weight="3.73905607816321"/>
+      <edge id="geid_141_27" source="Abbeville" target="Soissons" weight="3.847525481581441"/>
+      <edge id="geid_141_28" source="Aigueperse" target="Billom" weight="3.884382440672669"/>
+      <edge id="geid_141_29" source="Aigueperse" target="Brioude" weight="3.714448208840545"/>
+      <edge id="geid_141_30" source="Aigueperse" target="Issoire" weight="3.801033741376"/>
+      <edge id="geid_141_31" source="Aigueperse" target="Maringues" weight="3.6950735887450565"/>
+      <edge id="geid_141_32" source="Aigueperse" target="Riom" weight="3.9134806985487245"/>
+      <edge id="geid_141_33" source="Aigueperse" target="VicleComte" weight="3.748730880002882"/>
+      <edge id="geid_141_34" source="AixenProvence" target="Arles" weight="3.5743434419354285"/>
+      <edge id="geid_141_35" source="AixenProvence" target="Aubenas" weight="3.5477865955376093"/>
+      <edge id="geid_141_36" source="AixenProvence" target="Avignon" weight="4"/>
+      <edge id="geid_141_37" source="AixenProvence" target="BuislesBaronnies" weight="3.6311153526290454"/>
+      <edge id="geid_141_38" source="AixenProvence" target="Carcassonne" weight="3.5160966533180926"/>
+      <edge id="geid_141_39" source="AixenProvence" target="Draguignan" weight="3.803607017559469"/>
+      <edge id="geid_141_40" source="AixenProvence" target="Montpellier" weight="3.516932934126563"/>
+      <edge id="geid_141_41" source="AixenProvence" target="PontSaintEsprit" weight="3.625419540456903"/>
+      <edge id="geid_141_42" source="AixenProvence" target="Toulouse" weight="3.539862832433382"/>
+      <edge id="geid_141_43" source="AixenProvence" target="VilleneuvedeBerg" weight="3.51896381734922"/>
+      <edge id="geid_141_44" source="Albi" target="Bordeaux" weight="3.5552714620775623"/>
+      <edge id="geid_141_45" source="Albi" target="Castelnaudary" weight="3.513051208741061"/>
+      <edge id="geid_141_46" source="Albi" target="Castres" weight="3.591066500619903"/>
+      <edge id="geid_141_47" source="Albi" target="ChaumontenCaux" weight="3.65831364403586"/>
+      <edge id="geid_141_48" source="Albi" target="Eu" weight="3.5008849826510393"/>
+      <edge id="geid_141_49" source="Albi" target="Grenade" weight="3.563621318596697"/>
+      <edge id="geid_141_50" source="Albi" target="Luneville" weight="3.665202081548063"/>
+      <edge id="geid_141_51" source="Albi" target="Marmande" weight="3.5983539718385282"/>
+      <edge id="geid_141_52" source="Albi" target="Melun" weight="3.5771465313304684"/>
+      <edge id="geid_141_53" source="Albi" target="Montauban" weight="3.5487115199218078"/>
+      <edge id="geid_141_54" source="Albi" target="Montpellier" weight="3.5104643077753566"/>
+      <edge id="geid_141_55" source="Albi" target="Orléans" weight="3.628736703025949"/>
+      <edge id="geid_141_56" source="Albi" target="RozayenBrie" weight="3.5857001304302494"/>
+      <edge id="geid_141_57" source="Angers" target="Arras" weight="3.629054413259598"/>
+      <edge id="geid_141_58" source="Angers" target="BarleDuc" weight="3.7177941213535686"/>
+      <edge id="geid_141_59" source="Angers" target="Blois" weight="3.757717969614896"/>
+      <edge id="geid_141_60" source="Angers" target="Bourges" weight="3.61534972049329"/>
+      <edge id="geid_141_61" source="Angers" target="ChateauGontier" weight="3.648030667329422"/>
+      <edge id="geid_141_62" source="Angers" target="Chateauroux" weight="3.659020295649297"/>
+      <edge id="geid_141_63" source="Angers" target="Fontenay" weight="3.5329272486523924"/>
+      <edge id="geid_141_64" source="Angers" target="LeMans" weight="3.8132075282860876"/>
+      <edge id="geid_141_65" source="Angers" target="Luneville" weight="3.7476417894416367"/>
+      <edge id="geid_141_66" source="Angers" target="Nantes" weight="3.930457793760768"/>
+      <edge id="geid_141_67" source="Angers" target="Orléans" weight="3.6172655279974406"/>
+      <edge id="geid_141_68" source="Angers" target="Poitiers" weight="3.69215225820676"/>
+      <edge id="geid_141_69" source="Angers" target="Rennes" weight="3.56524066827656"/>
+      <edge id="geid_141_70" source="Angoulême" target="Arras" weight="3.626455114825637"/>
+      <edge id="geid_141_71" source="Angoulême" target="Aubenas" weight="4"/>
+      <edge id="geid_141_72" source="Angoulême" target="Fontenay" weight="3.7193641935067028"/>
+      <edge id="geid_141_73" source="Angoulême" target="Marmande" weight="3.6004973317555224"/>
+      <edge id="geid_141_74" source="Angoulême" target="Montauban" weight="3.7317695253073233"/>
+      <edge id="geid_141_75" source="Angoulême" target="Poitiers" weight="3.7195881418826238"/>
+      <edge id="geid_141_76" source="Annonay" target="Aubenas" weight="3.5713093811520884"/>
+      <edge id="geid_141_77" source="Annonay" target="Bordeaux" weight="3.543287640225062"/>
+      <edge id="geid_141_78" source="Annonay" target="BuislesBaronnies" weight="3.55069766457025"/>
+      <edge id="geid_141_79" source="Annonay" target="Grenoble" weight="3.624281310495521"/>
+      <edge id="geid_141_80" source="Annonay" target="LePuyenVelay" weight="3.5767341944463364"/>
+      <edge id="geid_141_81" source="Annonay" target="Lyon" weight="3.5821226976451226"/>
+      <edge id="geid_141_82" source="Annonay" target="PontSaintEsprit" weight="3.638270969892048"/>
+      <edge id="geid_141_83" source="Annonay" target="Romans" weight="3.689557232516881"/>
+      <edge id="geid_141_84" source="Annonay" target="SaintAffrique" weight="3.552026693447694"/>
+      <edge id="geid_141_85" source="Annonay" target="VilleneuvedeBerg" weight="3.649689102014402"/>
+      <edge id="geid_141_86" source="Arles" target="Aubenas" weight="3.572051729563073"/>
+      <edge id="geid_141_87" source="Arles" target="Avignon" weight="3.5743434419354285"/>
+      <edge id="geid_141_88" source="Arles" target="Draguignan" weight="3.6210260504043843"/>
+      <edge id="geid_141_89" source="Arles" target="PontSaintEsprit" weight="3.6235689605568044"/>
+      <edge id="geid_141_90" source="Arles" target="Romans" weight="3.5203105726758652"/>
+      <edge id="geid_141_91" source="Arles" target="VilleneuvedeBerg" weight="3.5244019837484655"/>
+      <edge id="geid_141_92" source="Arras" target="Auzerre" weight="3.847265468073668"/>
+      <edge id="geid_141_93" source="Arras" target="Avignon" weight="3.5673241687673762"/>
+      <edge id="geid_141_94" source="Arras" target="BarleDuc" weight="3.8635815516482115"/>
+      <edge id="geid_141_95" source="Arras" target="Bayeux" weight="3.82311010200625"/>
+      <edge id="geid_141_96" source="Arras" target="Bernay" weight="3.81349224361592"/>
+      <edge id="geid_141_97" source="Arras" target="Blois" weight="3.7678680453400903"/>
+      <edge id="geid_141_98" source="Arras" target="Bordeaux" weight="3.533671424750688"/>
+      <edge id="geid_141_99" source="Arras" target="BoulognesurMer" weight="3.9371624624202646"/>
+      <edge id="geid_141_100" source="Arras" target="Bourges" weight="3.85737648513984"/>
+      <edge id="geid_141_101" source="Arras" target="BuislesBaronnies" weight="3.7136181712495016"/>
+      <edge id="geid_141_102" source="Arras" target="ChalonssurMarne" weight="3.794861945483492"/>
+      <edge id="geid_141_103" source="Arras" target="Charleville" weight="3.771044897310265"/>
+      <edge id="geid_141_104" source="Arras" target="ChateauGontier" weight="3.8387181646660893"/>
+      <edge id="geid_141_105" source="Arras" target="Chateauroux" weight="3.795723573756422"/>
+      <edge id="geid_141_106" source="Arras" target="ChaumontenVexin" weight="3.6937490029951223"/>
+      <edge id="geid_141_107" source="Arras" target="Colmar" weight="3.5302098578229733"/>
+      <edge id="geid_141_108" source="Arras" target="Dole" weight="3.737806610277824"/>
+      <edge id="geid_141_109" source="Arras" target="Douai" weight="3.854463293139264"/>
+      <edge id="geid_141_110" source="Arras" target="Fontenay" weight="3.5230362768100902"/>
+      <edge id="geid_141_111" source="Arras" target="Grenoble" weight="3.73738600448864"/>
+      <edge id="geid_141_112" source="Arras" target="Guéret" weight="3.795864083689108"/>
+      <edge id="geid_141_113" source="Arras" target="Issoire" weight="3.8001524844280805"/>
+      <edge id="geid_141_114" source="Arras" target="LeMans" weight="3.849764008850402"/>
+      <edge id="geid_141_115" source="Arras" target="LePuyenVelay" weight="3.771930386143472"/>
+      <edge id="geid_141_116" source="Arras" target="Limoges" weight="3.535098341691919"/>
+      <edge id="geid_141_117" source="Arras" target="Luneville" weight="3.6975788684482818"/>
+      <edge id="geid_141_118" source="Arras" target="Lyon" weight="3.7871158957578497"/>
+      <edge id="geid_141_119" source="Arras" target="Mende" weight="3.7555372983815576"/>
+      <edge id="geid_141_120" source="Arras" target="Montauban" weight="3.5620482744403237"/>
+      <edge id="geid_141_121" source="Arras" target="Mâcon" weight="3.833965206719905"/>
+      <edge id="geid_141_122" source="Arras" target="Nantes" weight="3.637358095302528"/>
+      <edge id="geid_141_123" source="Arras" target="Orléans" weight="3.713805408219432"/>
+      <edge id="geid_141_124" source="Arras" target="Paris" weight="3.68625404304476"/>
+      <edge id="geid_141_125" source="Arras" target="Poitiers" weight="3.646460678404056"/>
+      <edge id="geid_141_126" source="Arras" target="PontlAbbé" weight="3.747139406003585"/>
+      <edge id="geid_141_127" source="Arras" target="Rennes" weight="3.7784294667857927"/>
+      <edge id="geid_141_128" source="Arras" target="Rouen" weight="3.8788476102201606"/>
+      <edge id="geid_141_129" source="Arras" target="RozayenBrie" weight="3.676370415166323"/>
+      <edge id="geid_141_130" source="Arras" target="SaintAffrique" weight="3.7557805501479766"/>
+      <edge id="geid_141_131" source="Arras" target="SaintEtienne" weight="3.8974826181384903"/>
+      <edge id="geid_141_132" source="Arras" target="Soissons" weight="3.6998428633259532"/>
+      <edge id="geid_141_133" source="Arras" target="Strasbourg" weight="3.5465147059061772"/>
+      <edge id="geid_141_134" source="Arras" target="Tulle" weight="3.801220595636487"/>
+      <edge id="geid_141_135" source="Arras" target="Vannes" weight="3.6685949274135226"/>
+      <edge id="geid_141_136" source="Aubenas" target="Auzerre" weight="4"/>
+      <edge id="geid_141_137" source="Aubenas" target="Avignon" weight="3.5433574009134086"/>
+      <edge id="geid_141_138" source="Aubenas" target="Bayonne" weight="4"/>
+      <edge id="geid_141_139" source="Aubenas" target="Bernay" weight="4"/>
+      <edge id="geid_141_140" source="Aubenas" target="Blois" weight="4"/>
+      <edge id="geid_141_141" source="Aubenas" target="Bourges" weight="4"/>
+      <edge id="geid_141_142" source="Aubenas" target="BuislesBaronnies" weight="3.548542431831701"/>
+      <edge id="geid_141_143" source="Aubenas" target="Carcassonne" weight="3.5197395781896095"/>
+      <edge id="geid_141_144" source="Aubenas" target="Castelnaudary" weight="3.541119641231964"/>
+      <edge id="geid_141_145" source="Aubenas" target="ChalonssurMarne" weight="4"/>
+      <edge id="geid_141_146" source="Aubenas" target="Charleville" weight="4"/>
+      <edge id="geid_141_147" source="Aubenas" target="Chateauroux" weight="4"/>
+      <edge id="geid_141_148" source="Aubenas" target="Digne" weight="4"/>
+      <edge id="geid_141_149" source="Aubenas" target="Draguignan" weight="3.6474109045441603"/>
+      <edge id="geid_141_150" source="Aubenas" target="LeMans" weight="4"/>
+      <edge id="geid_141_151" source="Aubenas" target="LePuyenVelay" weight="3.649592550230862"/>
+      <edge id="geid_141_152" source="Aubenas" target="Mende" weight="4"/>
+      <edge id="geid_141_153" source="Aubenas" target="Montauban" weight="3.5679156698911436"/>
+      <edge id="geid_141_154" source="Aubenas" target="Mâcon" weight="4"/>
+      <edge id="geid_141_155" source="Aubenas" target="Nantes" weight="4"/>
+      <edge id="geid_141_156" source="Aubenas" target="PontSaintEsprit" weight="3.7254481015611605"/>
+      <edge id="geid_141_157" source="Aubenas" target="PontlAbbé" weight="4"/>
+      <edge id="geid_141_158" source="Aubenas" target="Romans" weight="3.647374503473405"/>
+      <edge id="geid_141_159" source="Aubenas" target="SaintAffrique" weight="3.5862466805002158"/>
+      <edge id="geid_141_160" source="Aubenas" target="Soissons" weight="4"/>
+      <edge id="geid_141_161" source="Aubenas" target="Toulouse" weight="3.641173199976506"/>
+      <edge id="geid_141_162" source="Aubenas" target="Vannes" weight="4"/>
+      <edge id="geid_141_163" source="Aubenas" target="VilleneuvedeBerg" weight="3.8705157572677704"/>
+      <edge id="geid_141_164" source="Auzerre" target="BarleDuc" weight="3.9260556114416287"/>
+      <edge id="geid_141_165" source="Auzerre" target="Bernay" weight="3.70325493408649"/>
+      <edge id="geid_141_166" source="Auzerre" target="Blois" weight="3.7986072757825924"/>
+      <edge id="geid_141_167" source="Auzerre" target="Bourges" weight="3.706415639668623"/>
+      <edge id="geid_141_168" source="Auzerre" target="ChalonssurMarne" weight="3.874225006052112"/>
+      <edge id="geid_141_169" source="Auzerre" target="Charleville" weight="3.739986267017448"/>
+      <edge id="geid_141_170" source="Auzerre" target="Chateaudun" weight="3.6752610224348206"/>
+      <edge id="geid_141_171" source="Auzerre" target="Chateauroux" weight="3.582173458688563"/>
+      <edge id="geid_141_172" source="Auzerre" target="ChaumontenVexin" weight="3.617385007034305"/>
+      <edge id="geid_141_173" source="Auzerre" target="LeMans" weight="3.7367840589447425"/>
+      <edge id="geid_141_174" source="Auzerre" target="Luneville" weight="3.7748411753145024"/>
+      <edge id="geid_141_175" source="Auzerre" target="Lyon" weight="3.61183996639154"/>
+      <edge id="geid_141_176" source="Auzerre" target="Montauban" weight="3.69058064061456"/>
+      <edge id="geid_141_177" source="Auzerre" target="Mâcon" weight="3.5929629746970133"/>
+      <edge id="geid_141_178" source="Auzerre" target="Orléans" weight="3.9050054756491686"/>
+      <edge id="geid_141_179" source="Auzerre" target="Paris" weight="3.8059371443724546"/>
+      <edge id="geid_141_180" source="Auzerre" target="Rouen" weight="3.591384338888936"/>
+      <edge id="geid_141_181" source="Auzerre" target="RozayenBrie" weight="3.8449942150018623"/>
+      <edge id="geid_141_182" source="Auzerre" target="Soissons" weight="3.643345650025"/>
+      <edge id="geid_141_183" source="Auzerre" target="Strasbourg" weight="3.527626487593429"/>
+      <edge id="geid_141_184" source="Avignon" target="BuislesBaronnies" weight="3.8174693706203207"/>
+      <edge id="geid_141_185" source="Avignon" target="Carcassonne" weight="3.5160966533180926"/>
+      <edge id="geid_141_186" source="Avignon" target="Castelnaudary" weight="3.72218104914843"/>
+      <edge id="geid_141_187" source="Avignon" target="Digne" weight="3.851405229500068"/>
+      <edge id="geid_141_188" source="Avignon" target="Dole" weight="3.6439721303448094"/>
+      <edge id="geid_141_189" source="Avignon" target="Draguignan" weight="3.756926063324723"/>
+      <edge id="geid_141_190" source="Avignon" target="Grenoble" weight="3.6778210610131596"/>
+      <edge id="geid_141_191" source="Avignon" target="LePuyenVelay" weight="3.5567535399719183"/>
+      <edge id="geid_141_192" source="Avignon" target="Lyon" weight="3.7134644693355225"/>
+      <edge id="geid_141_193" source="Avignon" target="Marseille" weight="3.7092721164415843"/>
+      <edge id="geid_141_194" source="Avignon" target="Mende" weight="3.5805983305596096"/>
+      <edge id="geid_141_195" source="Avignon" target="Montpellier" weight="3.69192391098648"/>
+      <edge id="geid_141_196" source="Avignon" target="Mâcon" weight="3.8389239294021844"/>
+      <edge id="geid_141_197" source="Avignon" target="Pamiers" weight="3.5338235779039557"/>
+      <edge id="geid_141_198" source="Avignon" target="PontSaintEsprit" weight="3.782520211540253"/>
+      <edge id="geid_141_199" source="Avignon" target="SaintAffrique" weight="3.658809807938434"/>
+      <edge id="geid_141_200" source="Avignon" target="SaintEtienne" weight="3.572172273965575"/>
+      <edge id="geid_141_201" source="Avignon" target="Toulouse" weight="3.717855514164739"/>
+      <edge id="geid_141_202" source="Avignon" target="VilleneuvedeBerg" weight="3.51896381734922"/>
+      <edge id="geid_141_203" source="Ayen" target="Castres" weight="3.5324757811699494"/>
+      <edge id="geid_141_204" source="Ayen" target="Gonesse" weight="4"/>
+      <edge id="geid_141_205" source="Ayen" target="Narbonne" weight="3.883824464127252"/>
+      <edge id="geid_141_206" source="Ayen" target="Puylaurens" weight="4"/>
+      <edge id="geid_141_207" source="Ayen" target="Treignac" weight="3.9998111622287844"/>
+      <edge id="geid_141_208" source="BarleDuc" target="Bernay" weight="3.803165291097536"/>
+      <edge id="geid_141_209" source="BarleDuc" target="Blois" weight="3.8667492139465223"/>
+      <edge id="geid_141_210" source="BarleDuc" target="Bourges" weight="3.8078325442515855"/>
+      <edge id="geid_141_211" source="BarleDuc" target="ChalonssurMarne" weight="3.8392985599920957"/>
+      <edge id="geid_141_212" source="BarleDuc" target="Charleville" weight="3.805445070025"/>
+      <edge id="geid_141_213" source="BarleDuc" target="ChateauGontier" weight="3.63914576767643"/>
+      <edge id="geid_141_214" source="BarleDuc" target="Chateaudun" weight="3.6738255253507597"/>
+      <edge id="geid_141_215" source="BarleDuc" target="Chateauroux" weight="3.7793946341849103"/>
+      <edge id="geid_141_216" source="BarleDuc" target="ChaumontenVexin" weight="3.726278765163266"/>
+      <edge id="geid_141_217" source="BarleDuc" target="Colmar" weight="3.662180098427876"/>
+      <edge id="geid_141_218" source="BarleDuc" target="Dole" weight="3.591022877600313"/>
+      <edge id="geid_141_219" source="BarleDuc" target="Fontenay" weight="3.53886753886884"/>
+      <edge id="geid_141_220" source="BarleDuc" target="Guéret" weight="3.5080187935455367"/>
+      <edge id="geid_141_221" source="BarleDuc" target="LeMans" weight="3.7909242243355683"/>
+      <edge id="geid_141_222" source="BarleDuc" target="Luneville" weight="3.882629222180545"/>
+      <edge id="geid_141_223" source="BarleDuc" target="Lyon" weight="3.651798964559525"/>
+      <edge id="geid_141_224" source="BarleDuc" target="Montauban" weight="3.6898979942109182"/>
+      <edge id="geid_141_225" source="BarleDuc" target="Mâcon" weight="3.647310295941428"/>
+      <edge id="geid_141_226" source="BarleDuc" target="Nantes" weight="3.5918967529"/>
+      <edge id="geid_141_227" source="BarleDuc" target="Orléans" weight="3.883539027084696"/>
+      <edge id="geid_141_228" source="BarleDuc" target="Paris" weight="3.8573554308689166"/>
+      <edge id="geid_141_229" source="BarleDuc" target="Poitiers" weight="3.6083532298442282"/>
+      <edge id="geid_141_230" source="BarleDuc" target="Rouen" weight="3.7751362679815803"/>
+      <edge id="geid_141_231" source="BarleDuc" target="RozayenBrie" weight="3.84976565699908"/>
+      <edge id="geid_141_232" source="BarleDuc" target="Soissons" weight="3.726645812311973"/>
+      <edge id="geid_141_233" source="BarleDuc" target="Strasbourg" weight="3.646320249918722"/>
+      <edge id="geid_141_234" source="Bayeux" target="ChaumontenCaux" weight="3.6403814222282898"/>
+      <edge id="geid_141_235" source="Bayeux" target="Gonesse" weight="3.5745868410745283"/>
+      <edge id="geid_141_236" source="Bayeux" target="LeHavre" weight="3.7206683265315603"/>
+      <edge id="geid_141_237" source="Bayeux" target="LeMans" weight="3.515359467514056"/>
+      <edge id="geid_141_238" source="Bayeux" target="Lille" weight="3.60669718778681"/>
+      <edge id="geid_141_239" source="Bayeux" target="MagnyenVexin" weight="3.5038171064480164"/>
+      <edge id="geid_141_240" source="Bayeux" target="Meulan" weight="3.5677567024513963"/>
+      <edge id="geid_141_241" source="Bayeux" target="Orléans" weight="3.6088430687080697"/>
+      <edge id="geid_141_242" source="Bayeux" target="Rennes" weight="3.648193437798292"/>
+      <edge id="geid_141_243" source="Bayonne" target="Pau" weight="3.5336335655548226"/>
+      <edge id="geid_141_244" source="Beaumont" target="ChaumontenCaux" weight="3.928879455313614"/>
+      <edge id="geid_141_245" source="Beaumont" target="ChaumontenVexin" weight="3.9148785770391443"/>
+      <edge id="geid_141_246" source="Beaumont" target="Douai" weight="3.5604469718612086"/>
+      <edge id="geid_141_247" source="Beaumont" target="Eu" weight="3.8727077488561226"/>
+      <edge id="geid_141_248" source="Beaumont" target="Lille" weight="3.538373744297903"/>
+      <edge id="geid_141_249" source="Beaumont" target="MagnyenVexin" weight="3.8626883562221823"/>
+      <edge id="geid_141_250" source="Beaumont" target="Melun" weight="3.803312920443065"/>
+      <edge id="geid_141_251" source="Beaumont" target="Meulan" weight="3.928430751245225"/>
+      <edge id="geid_141_252" source="Beaumont" target="Paris" weight="3.7328107108148227"/>
+      <edge id="geid_141_253" source="Beaumont" target="Pontoise" weight="3.969509287740307"/>
+      <edge id="geid_141_254" source="Beaumont" target="Reims" weight="3.8128692815427203"/>
+      <edge id="geid_141_255" source="Beaumont" target="RozayenBrie" weight="3.80265849765161"/>
+      <edge id="geid_141_256" source="Beaumont" target="Verfeil" weight="3.812659334754368"/>
+      <edge id="geid_141_257" source="Bernay" target="Blois" weight="3.747324930860723"/>
+      <edge id="geid_141_258" source="Bernay" target="Bourges" weight="3.59579326480929"/>
+      <edge id="geid_141_259" source="Bernay" target="ChalonssurMarne" weight="3.786547553322409"/>
+      <edge id="geid_141_260" source="Bernay" target="Charleville" weight="3.837104879723703"/>
+      <edge id="geid_141_261" source="Bernay" target="Chateaudun" weight="3.640029790308164"/>
+      <edge id="geid_141_262" source="Bernay" target="Chateauroux" weight="3.6394693893836356"/>
+      <edge id="geid_141_263" source="Bernay" target="ChaumontenVexin" weight="3.9205922207561312"/>
+      <edge id="geid_141_264" source="Bernay" target="Douai" weight="3.6359936699055493"/>
+      <edge id="geid_141_265" source="Bernay" target="LeMans" weight="3.6245759034576106"/>
+      <edge id="geid_141_266" source="Bernay" target="Luneville" weight="3.662403658210563"/>
+      <edge id="geid_141_267" source="Bernay" target="Orléans" weight="3.8344189789725625"/>
+      <edge id="geid_141_268" source="Bernay" target="Paris" weight="3.8716291678464483"/>
+      <edge id="geid_141_269" source="Bernay" target="Rouen" weight="3.961492923465003"/>
+      <edge id="geid_141_270" source="Bernay" target="RozayenBrie" weight="3.870773053229681"/>
+      <edge id="geid_141_271" source="Bernay" target="Soissons" weight="3.875310287385408"/>
+      <edge id="geid_141_272" source="Bernay" target="Strasbourg" weight="3.62037007458354"/>
+      <edge id="geid_141_273" source="Billom" target="BoulognesurMer" weight="3.5303906088995567"/>
+      <edge id="geid_141_274" source="Billom" target="Castres" weight="3.7046750733855625"/>
+      <edge id="geid_141_275" source="Billom" target="Issoire" weight="3.853315174727964"/>
+      <edge id="geid_141_276" source="Billom" target="Maringues" weight="3.7411637206816155"/>
+      <edge id="geid_141_277" source="Billom" target="Riom" weight="3.9268490547932946"/>
+      <edge id="geid_141_278" source="Blois" target="Bourges" weight="3.770214112943367"/>
+      <edge id="geid_141_279" source="Blois" target="ChalonssurMarne" weight="3.748994473997921"/>
+      <edge id="geid_141_280" source="Blois" target="Charleville" weight="3.62960719134784"/>
+      <edge id="geid_141_281" source="Blois" target="ChateauGontier" weight="3.6729358365902502"/>
+      <edge id="geid_141_282" source="Blois" target="Chateaudun" weight="3.7559693121252287"/>
+      <edge id="geid_141_283" source="Blois" target="Chateauroux" weight="3.8103980869808103"/>
+      <edge id="geid_141_284" source="Blois" target="ChaumontenVexin" weight="3.720644639635507"/>
+      <edge id="geid_141_285" source="Blois" target="Colmar" weight="3.688248961384474"/>
+      <edge id="geid_141_286" source="Blois" target="Dole" weight="3.5606669517711618"/>
+      <edge id="geid_141_287" source="Blois" target="LeMans" weight="3.908513658495054"/>
+      <edge id="geid_141_288" source="Blois" target="Luneville" weight="3.7628054179430404"/>
+      <edge id="geid_141_289" source="Blois" target="Lyon" weight="3.688903298430204"/>
+      <edge id="geid_141_290" source="Blois" target="Montauban" weight="3.7145440343362575"/>
+      <edge id="geid_141_291" source="Blois" target="Montpellier" weight="3.506953191679488"/>
+      <edge id="geid_141_292" source="Blois" target="Mulhouse" weight="3.538675133595956"/>
+      <edge id="geid_141_293" source="Blois" target="Mâcon" weight="3.6302442642936"/>
+      <edge id="geid_141_294" source="Blois" target="Nantes" weight="3.66080987697049"/>
+      <edge id="geid_141_295" source="Blois" target="Orléans" weight="3.8925043574610245"/>
+      <edge id="geid_141_296" source="Blois" target="Paris" weight="3.75366352392377"/>
+      <edge id="geid_141_297" source="Blois" target="Poitiers" weight="3.6502648476695567"/>
+      <edge id="geid_141_298" source="Blois" target="Rouen" weight="3.7275909830368805"/>
+      <edge id="geid_141_299" source="Blois" target="RozayenBrie" weight="3.78348800196576"/>
+      <edge id="geid_141_300" source="Blois" target="Soissons" weight="3.622937688950592"/>
+      <edge id="geid_141_301" source="Blois" target="Strasbourg" weight="3.6098755510725624"/>
+      <edge id="geid_141_302" source="Bordeaux" target="Castelnaudary" weight="3.5273280482959684"/>
+      <edge id="geid_141_303" source="Bordeaux" target="Castres" weight="3.552915338946979"/>
+      <edge id="geid_141_304" source="Bordeaux" target="ChateauGontier" weight="3.529789225519289"/>
+      <edge id="geid_141_305" source="Bordeaux" target="Fontenay" weight="3.612369916827074"/>
+      <edge id="geid_141_306" source="Bordeaux" target="Grenade" weight="3.7963141927755624"/>
+      <edge id="geid_141_307" source="Bordeaux" target="Lavaur" weight="3.6714377154421514"/>
+      <edge id="geid_141_308" source="Bordeaux" target="Limoges" weight="3.5056154348820545"/>
+      <edge id="geid_141_309" source="Bordeaux" target="Lyon" weight="3.515924293869636"/>
+      <edge id="geid_141_310" source="Bordeaux" target="Montauban" weight="3.842030310449452"/>
+      <edge id="geid_141_311" source="Bordeaux" target="Poitiers" weight="3.6054725044349127"/>
+      <edge id="geid_141_312" source="Bordeaux" target="Revel" weight="3.649989731258837"/>
+      <edge id="geid_141_313" source="Bordeaux" target="Romans" weight="3.5874455173391966"/>
+      <edge id="geid_141_314" source="Bordeaux" target="SaintAffrique" weight="3.5387195285603714"/>
+      <edge id="geid_141_315" source="Bordeaux" target="TarasconsurAriège" weight="3.705601399537577"/>
+      <edge id="geid_141_316" source="Bordeaux" target="Toulouse" weight="3.613352644047485"/>
+      <edge id="geid_141_317" source="Bordeaux" target="VilleneuvedeBerg" weight="3.560844895544412"/>
+      <edge id="geid_141_318" source="BoulognesurMer" target="Verfeil" weight="3.635863854202457"/>
+      <edge id="geid_141_319" source="Bourges" target="ChalonssurMarne" weight="3.50584109158994"/>
+      <edge id="geid_141_320" source="Bourges" target="ChateauGontier" weight="3.601344728160065"/>
+      <edge id="geid_141_321" source="Bourges" target="Chateaudun" weight="3.6994273610492026"/>
+      <edge id="geid_141_322" source="Bourges" target="Chateauroux" weight="3.9136210369987605"/>
+      <edge id="geid_141_323" source="Bourges" target="ChaumontenVexin" weight="3.6136365653705624"/>
+      <edge id="geid_141_324" source="Bourges" target="Colmar" weight="3.6219264822451214"/>
+      <edge id="geid_141_325" source="Bourges" target="Dole" weight="3.553459799478799"/>
+      <edge id="geid_141_326" source="Bourges" target="Grenoble" weight="3.518917070322182"/>
+      <edge id="geid_141_327" source="Bourges" target="Guéret" weight="3.8314979108031375"/>
+      <edge id="geid_141_328" source="Bourges" target="Issoire" weight="3.6185831397644646"/>
+      <edge id="geid_141_329" source="Bourges" target="LeMans" weight="3.8293309604791697"/>
+      <edge id="geid_141_330" source="Bourges" target="Luneville" weight="3.75994778885991"/>
+      <edge id="geid_141_331" source="Bourges" target="Lyon" weight="3.752514556510272"/>
+      <edge id="geid_141_332" source="Bourges" target="Montauban" weight="3.6624201163995025"/>
+      <edge id="geid_141_333" source="Bourges" target="Mulhouse" weight="3.5822100250321984"/>
+      <edge id="geid_141_334" source="Bourges" target="Mâcon" weight="3.748930307543012"/>
+      <edge id="geid_141_335" source="Bourges" target="Orléans" weight="3.744799175210689"/>
+      <edge id="geid_141_336" source="Bourges" target="Paris" weight="3.5991839277813407"/>
+      <edge id="geid_141_337" source="Bourges" target="Rouen" weight="3.5567625547503727"/>
+      <edge id="geid_141_338" source="Bourges" target="RozayenBrie" weight="3.612257096693454"/>
+      <edge id="geid_141_339" source="Bourges" target="SaintEtienne" weight="3.684312717944449"/>
+      <edge id="geid_141_340" source="Bourges" target="Strasbourg" weight="3.6424498881937155"/>
+      <edge id="geid_141_341" source="Bourges" target="Tulle" weight="3.5545540115492003"/>
+      <edge id="geid_141_342" source="Brioude" target="Dole" weight="3.5152821458594454"/>
+      <edge id="geid_141_343" source="Brioude" target="Issoire" weight="3.9297322975554576"/>
+      <edge id="geid_141_344" source="Brioude" target="LePuyenVelay" weight="3.7478653872273937"/>
+      <edge id="geid_141_345" source="Brioude" target="Maringues" weight="3.6069317342339122"/>
+      <edge id="geid_141_346" source="Brioude" target="Riom" weight="3.75957173726148"/>
+      <edge id="geid_141_347" source="Brioude" target="Romans" weight="3.5409116692648612"/>
+      <edge id="geid_141_348" source="Brioude" target="SaintEtienne" weight="3.5401508133823225"/>
+      <edge id="geid_141_349" source="Brioude" target="VicleComte" weight="3.7158948581899227"/>
+      <edge id="geid_141_350" source="BrivelaGaillarde" target="Limoges" weight="3.5076999837371208"/>
+      <edge id="geid_141_351" source="BuislesBaronnies" target="Castelnaudary" weight="3.75229403563921"/>
+      <edge id="geid_141_352" source="BuislesBaronnies" target="Digne" weight="3.7585085247287826"/>
+      <edge id="geid_141_353" source="BuislesBaronnies" target="Dole" weight="3.720214199373062"/>
+      <edge id="geid_141_354" source="BuislesBaronnies" target="Draguignan" weight="3.7135079048348163"/>
+      <edge id="geid_141_355" source="BuislesBaronnies" target="Grenade" weight="3.6503443276740053"/>
+      <edge id="geid_141_356" source="BuislesBaronnies" target="Grenoble" weight="3.8078725473768684"/>
+      <edge id="geid_141_357" source="BuislesBaronnies" target="Issoire" weight="3.533988968750862"/>
+      <edge id="geid_141_358" source="BuislesBaronnies" target="LePuyenVelay" weight="3.5839134436679285"/>
+      <edge id="geid_141_359" source="BuislesBaronnies" target="Lyon" weight="3.77378998685274"/>
+      <edge id="geid_141_360" source="BuislesBaronnies" target="Marseille" weight="3.669295713626737"/>
+      <edge id="geid_141_361" source="BuislesBaronnies" target="Mende" weight="3.6137920272855695"/>
+      <edge id="geid_141_362" source="BuislesBaronnies" target="Montpellier" weight="3.7253638706408285"/>
+      <edge id="geid_141_363" source="BuislesBaronnies" target="Mâcon" weight="3.800464355515321"/>
+      <edge id="geid_141_364" source="BuislesBaronnies" target="Pamiers" weight="3.528068704310852"/>
+      <edge id="geid_141_365" source="BuislesBaronnies" target="PontSaintEsprit" weight="3.8387183997778576"/>
+      <edge id="geid_141_366" source="BuislesBaronnies" target="Romans" weight="3.695799814832616"/>
+      <edge id="geid_141_367" source="BuislesBaronnies" target="SaintAffrique" weight="3.6507636372320658"/>
+      <edge id="geid_141_368" source="BuislesBaronnies" target="SaintEtienne" weight="3.6488000485805623"/>
+      <edge id="geid_141_369" source="BuislesBaronnies" target="Toulouse" weight="3.66208655823241"/>
+      <edge id="geid_141_370" source="BuislesBaronnies" target="VilleneuvedeBerg" weight="3.6525703484426124"/>
+      <edge id="geid_141_371" source="Cany" target="ChaumontenVexin" weight="3.6034561761776662"/>
+      <edge id="geid_141_372" source="Cany" target="Eu" weight="3.68092427490225"/>
+      <edge id="geid_141_373" source="Cany" target="MagnyenVexin" weight="3.5809078331505417"/>
+      <edge id="geid_141_374" source="Cany" target="Meulan" weight="3.5585620049646147"/>
+      <edge id="geid_141_375" source="Cany" target="Pontoise" weight="3.672422465055034"/>
+      <edge id="geid_141_376" source="Cany" target="Reims" weight="3.6169385968805052"/>
+      <edge id="geid_141_377" source="Cany" target="Rouen" weight="3.644954793601661"/>
+      <edge id="geid_141_378" source="Carcassonne" target="Castres" weight="3.767582282060688"/>
+      <edge id="geid_141_379" source="Carcassonne" target="Draguignan" weight="3.6018334078761023"/>
+      <edge id="geid_141_380" source="Carcassonne" target="Montauban" weight="3.5231226557428554"/>
+      <edge id="geid_141_381" source="Carcassonne" target="Pamiers" weight="3.5337227436468166"/>
+      <edge id="geid_141_382" source="Carcassonne" target="PontSaintEsprit" weight="3.549829531666757"/>
+      <edge id="geid_141_383" source="Carcassonne" target="Revel" weight="3.504640768223217"/>
+      <edge id="geid_141_384" source="Carcassonne" target="SaintAffrique" weight="3.5062303720977477"/>
+      <edge id="geid_141_385" source="Carcassonne" target="TarasconsurAriège" weight="3.645283446647251"/>
+      <edge id="geid_141_386" source="Carcassonne" target="Toulouse" weight="3.524290733513113"/>
+      <edge id="geid_141_387" source="Castelnaudary" target="Dole" weight="3.7123155057037405"/>
+      <edge id="geid_141_388" source="Castelnaudary" target="Draguignan" weight="3.7778473933857315"/>
+      <edge id="geid_141_389" source="Castelnaudary" target="Fontenay" weight="3.559467202224301"/>
+      <edge id="geid_141_390" source="Castelnaudary" target="Grenade" weight="3.8803085497360144"/>
+      <edge id="geid_141_391" source="Castelnaudary" target="Grenoble" weight="3.6943428594946752"/>
+      <edge id="geid_141_392" source="Castelnaudary" target="Issoire" weight="3.6138405028879528"/>
+      <edge id="geid_141_393" source="Castelnaudary" target="Lavaur" weight="3.837749408584852"/>
+      <edge id="geid_141_394" source="Castelnaudary" target="LePuyenVelay" weight="3.56854394326218"/>
+      <edge id="geid_141_395" source="Castelnaudary" target="Luneville" weight="3.5605542626376097"/>
+      <edge id="geid_141_396" source="Castelnaudary" target="Lyon" weight="3.7057826976777215"/>
+      <edge id="geid_141_397" source="Castelnaudary" target="Marmande" weight="3.553043627614572"/>
+      <edge id="geid_141_398" source="Castelnaudary" target="Marseille" weight="3.7485478760188897"/>
+      <edge id="geid_141_399" source="Castelnaudary" target="Montauban" weight="3.631103080906623"/>
+      <edge id="geid_141_400" source="Castelnaudary" target="Montpellier" weight="3.866819100301326"/>
+      <edge id="geid_141_401" source="Castelnaudary" target="Mâcon" weight="3.50950129397569"/>
+      <edge id="geid_141_402" source="Castelnaudary" target="Orléans" weight="3.508171517228823"/>
+      <edge id="geid_141_403" source="Castelnaudary" target="Pamiers" weight="3.8175208738722444"/>
+      <edge id="geid_141_404" source="Castelnaudary" target="PontSaintEsprit" weight="3.8112952119750543"/>
+      <edge id="geid_141_405" source="Castelnaudary" target="Revel" weight="3.8865402666182405"/>
+      <edge id="geid_141_406" source="Castelnaudary" target="Romans" weight="3.5504137394773054"/>
+      <edge id="geid_141_407" source="Castelnaudary" target="SaintAffrique" weight="3.7605939109010063"/>
+      <edge id="geid_141_408" source="Castelnaudary" target="SaintEtienne" weight="3.5300808547388836"/>
+      <edge id="geid_141_409" source="Castelnaudary" target="TarasconsurAriège" weight="3.508559353677415"/>
+      <edge id="geid_141_410" source="Castelnaudary" target="Toulouse" weight="3.9495265555968966"/>
+      <edge id="geid_141_411" source="Castelnaudary" target="Tulle" weight="3.611756839693553"/>
+      <edge id="geid_141_412" source="Castres" target="ChaumontenCaux" weight="3.9959176421347227"/>
+      <edge id="geid_141_413" source="Castres" target="Cordes" weight="3.5678030927736675"/>
+      <edge id="geid_141_414" source="Castres" target="Foix" weight="3.5511318650469836"/>
+      <edge id="geid_141_415" source="Castres" target="Montauban" weight="3.631860917718756"/>
+      <edge id="geid_141_416" source="Castres" target="Puylaurens" weight="3.5063187543285554"/>
+      <edge id="geid_141_417" source="Castres" target="Revel" weight="3.549287346323458"/>
+      <edge id="geid_141_418" source="Castres" target="RozayenBrie" weight="3.8903907148858754"/>
+      <edge id="geid_141_419" source="Castres" target="SaintAffrique" weight="3.673723824753445"/>
+      <edge id="geid_141_420" source="Castres" target="TarasconsurAriège" weight="3.6615737541416875"/>
+      <edge id="geid_141_421" source="Castres" target="Toulouse" weight="3.585101287238776"/>
+      <edge id="geid_141_422" source="Castres" target="Treignac" weight="3.537503959586115"/>
+      <edge id="geid_141_423" source="ChalonssurMarne" target="Charleville" weight="3.922910012026388"/>
+      <edge id="geid_141_424" source="ChalonssurMarne" target="Chateaudun" weight="3.599459399454257"/>
+      <edge id="geid_141_425" source="ChalonssurMarne" target="ChaumontenVexin" weight="3.7360552087310843"/>
+      <edge id="geid_141_426" source="ChalonssurMarne" target="LeMans" weight="3.601396080671492"/>
+      <edge id="geid_141_427" source="ChalonssurMarne" target="Luneville" weight="3.67493424133924"/>
+      <edge id="geid_141_428" source="ChalonssurMarne" target="Montauban" weight="3.733151145490416"/>
+      <edge id="geid_141_429" source="ChalonssurMarne" target="Orléans" weight="3.89656624637284"/>
+      <edge id="geid_141_430" source="ChalonssurMarne" target="Paris" weight="3.8498638794490003"/>
+      <edge id="geid_141_431" source="ChalonssurMarne" target="Rouen" weight="3.696977406986554"/>
+      <edge id="geid_141_432" source="ChalonssurMarne" target="RozayenBrie" weight="3.913198446652748"/>
+      <edge id="geid_141_433" source="ChalonssurMarne" target="Soissons" weight="3.848325898162202"/>
+      <edge id="geid_141_434" source="ChalonssurMarne" target="Strasbourg" weight="3.562427148933276"/>
+      <edge id="geid_141_435" source="Charleville" target="Chateaudun" weight="3.5360303735742735"/>
+      <edge id="geid_141_436" source="Charleville" target="ChaumontenVexin" weight="3.7992436904421174"/>
+      <edge id="geid_141_437" source="Charleville" target="Douai" weight="3.5059431000923045"/>
+      <edge id="geid_141_438" source="Charleville" target="Luneville" weight="3.64302303939684"/>
+      <edge id="geid_141_439" source="Charleville" target="Montauban" weight="3.6452158590666253"/>
+      <edge id="geid_141_440" source="Charleville" target="Orléans" weight="3.82628143739689"/>
+      <edge id="geid_141_441" source="Charleville" target="Paris" weight="3.8497834334822496"/>
+      <edge id="geid_141_442" source="Charleville" target="Rouen" weight="3.799774622517124"/>
+      <edge id="geid_141_443" source="Charleville" target="RozayenBrie" weight="3.8807779791591415"/>
+      <edge id="geid_141_444" source="Charleville" target="Soissons" weight="3.947534417440896"/>
+      <edge id="geid_141_445" source="Charleville" target="Strasbourg" weight="3.6377810069983685"/>
+      <edge id="geid_141_446" source="Chartres" target="ChaumontenVexin" weight="3.501325520099726"/>
+      <edge id="geid_141_447" source="Chartres" target="Melun" weight="3.793269083034355"/>
+      <edge id="geid_141_448" source="Chartres" target="Meulan" weight="3.55445714279824"/>
+      <edge id="geid_141_449" source="Chartres" target="Pontoise" weight="3.5423692199101584"/>
+      <edge id="geid_141_450" source="Chartres" target="Rouen" weight="3.564485283441803"/>
+      <edge id="geid_141_451" source="Chartres" target="Verfeil" weight="3.786981814005948"/>
+      <edge id="geid_141_452" source="ChateauGontier" target="Chateauroux" weight="3.609071795672718"/>
+      <edge id="geid_141_453" source="ChateauGontier" target="Fontenay" weight="3.5327269604338998"/>
+      <edge id="geid_141_454" source="ChateauGontier" target="LeMans" weight="3.8160056590464064"/>
+      <edge id="geid_141_455" source="ChateauGontier" target="Luneville" weight="3.538785218569446"/>
+      <edge id="geid_141_456" source="ChateauGontier" target="Nantes" weight="3.692992499958961"/>
+      <edge id="geid_141_457" source="ChateauGontier" target="Orléans" weight="3.621162870162209"/>
+      <edge id="geid_141_458" source="ChateauGontier" target="Poitiers" weight="3.6342376550938753"/>
+      <edge id="geid_141_459" source="ChateauGontier" target="Rennes" weight="3.760365977839016"/>
+      <edge id="geid_141_460" source="ChateauGontier" target="Vannes" weight="3.5627549669338228"/>
+      <edge id="geid_141_461" source="Chateaudun" target="Chateauroux" weight="3.675298290895562"/>
+      <edge id="geid_141_462" source="Chateaudun" target="Gonesse" weight="3.6645470934484625"/>
+      <edge id="geid_141_463" source="Chateaudun" target="Guéret" weight="3.53339690318224"/>
+      <edge id="geid_141_464" source="Chateaudun" target="LeMans" weight="3.64653740536281"/>
+      <edge id="geid_141_465" source="Chateaudun" target="Orléans" weight="3.793068947044878"/>
+      <edge id="geid_141_466" source="Chateaudun" target="Soissons" weight="3.6174639000364492"/>
+      <edge id="geid_141_467" source="Chateauroux" target="ChaumontenVexin" weight="3.67664127015072"/>
+      <edge id="geid_141_468" source="Chateauroux" target="Colmar" weight="3.7235155852585162"/>
+      <edge id="geid_141_469" source="Chateauroux" target="Guéret" weight="3.8764264743053483"/>
+      <edge id="geid_141_470" source="Chateauroux" target="LeMans" weight="3.7873434704226296"/>
+      <edge id="geid_141_471" source="Chateauroux" target="Luneville" weight="3.7596731844120286"/>
+      <edge id="geid_141_472" source="Chateauroux" target="Lyon" weight="3.582351711913023"/>
+      <edge id="geid_141_473" source="Chateauroux" target="Montauban" weight="3.618290388274985"/>
+      <edge id="geid_141_474" source="Chateauroux" target="Mulhouse" weight="3.6108366564704255"/>
+      <edge id="geid_141_475" source="Chateauroux" target="Mâcon" weight="3.572744330053202"/>
+      <edge id="geid_141_476" source="Chateauroux" target="Nantes" weight="3.5779792209231838"/>
+      <edge id="geid_141_477" source="Chateauroux" target="Orléans" weight="3.7086389305879823"/>
+      <edge id="geid_141_478" source="Chateauroux" target="Paris" weight="3.6101269591162284"/>
+      <edge id="geid_141_479" source="Chateauroux" target="Poitiers" weight="3.6601621305512007"/>
+      <edge id="geid_141_480" source="Chateauroux" target="Rouen" weight="3.64216002789136"/>
+      <edge id="geid_141_481" source="Chateauroux" target="RozayenBrie" weight="3.5850222935085605"/>
+      <edge id="geid_141_482" source="Chateauroux" target="Strasbourg" weight="3.66600520814862"/>
+      <edge id="geid_141_483" source="Chateauroux" target="Tulle" weight="3.674413676051041"/>
+      <edge id="geid_141_484" source="ChaumontenCaux" target="ChaumontenVexin" weight="3.999826681877489"/>
+      <edge id="geid_141_485" source="ChaumontenCaux" target="Eu" weight="3.6443471280599824"/>
+      <edge id="geid_141_486" source="ChaumontenCaux" target="Lille" weight="3.6872030261269924"/>
+      <edge id="geid_141_487" source="ChaumontenCaux" target="MagnyenVexin" weight="3.9344569556878333"/>
+      <edge id="geid_141_488" source="ChaumontenCaux" target="Melun" weight="3.7155586809044023"/>
+      <edge id="geid_141_489" source="ChaumontenCaux" target="Meulan" weight="3.9516320270617133"/>
+      <edge id="geid_141_490" source="ChaumontenCaux" target="Orléans" weight="3.5777963477505774"/>
+      <edge id="geid_141_491" source="ChaumontenCaux" target="Paris" weight="3.7458933880127234"/>
+      <edge id="geid_141_492" source="ChaumontenCaux" target="Pontoise" weight="3.9132340539843677"/>
+      <edge id="geid_141_493" source="ChaumontenCaux" target="Reims" weight="3.8243068645839196"/>
+      <edge id="geid_141_494" source="ChaumontenCaux" target="Rennes" weight="3.74860464317545"/>
+      <edge id="geid_141_495" source="ChaumontenCaux" target="RozayenBrie" weight="3.823558108311043"/>
+      <edge id="geid_141_496" source="ChaumontenVexin" target="Colmar" weight="3.6170540005462684"/>
+      <edge id="geid_141_497" source="ChaumontenVexin" target="Eu" weight="3.709517794317722"/>
+      <edge id="geid_141_498" source="ChaumontenVexin" target="Gonesse" weight="3.824243934165456"/>
+      <edge id="geid_141_499" source="ChaumontenVexin" target="LeHavre" weight="3.667113011654978"/>
+      <edge id="geid_141_500" source="ChaumontenVexin" target="LeMans" weight="3.59400607442496"/>
+      <edge id="geid_141_501" source="ChaumontenVexin" target="Lille" weight="3.67357988228859"/>
+      <edge id="geid_141_502" source="ChaumontenVexin" target="Luneville" weight="3.645142544433409"/>
+      <edge id="geid_141_503" source="ChaumontenVexin" target="MagnyenVexin" weight="3.9258609980276735"/>
+      <edge id="geid_141_504" source="ChaumontenVexin" target="Melun" weight="3.720093034043233"/>
+      <edge id="geid_141_505" source="ChaumontenVexin" target="Meulan" weight="3.9522555275868028"/>
+      <edge id="geid_141_506" source="ChaumontenVexin" target="Mulhouse" weight="3.5403349798212846"/>
+      <edge id="geid_141_507" source="ChaumontenVexin" target="Orléans" weight="3.6423823268869695"/>
+      <edge id="geid_141_508" source="ChaumontenVexin" target="Paris" weight="3.7943104362850404"/>
+      <edge id="geid_141_509" source="ChaumontenVexin" target="Pontoise" weight="3.930757955777766"/>
+      <edge id="geid_141_510" source="ChaumontenVexin" target="Reims" weight="3.78736110219821"/>
+      <edge id="geid_141_511" source="ChaumontenVexin" target="Rouen" weight="3.7261931736183"/>
+      <edge id="geid_141_512" source="ChaumontenVexin" target="RozayenBrie" weight="3.8763131079301214"/>
+      <edge id="geid_141_513" source="ChaumontenVexin" target="Soissons" weight="3.879205906117201"/>
+      <edge id="geid_141_514" source="Colmar" target="Dole" weight="3.651523293508484"/>
+      <edge id="geid_141_515" source="Colmar" target="LeMans" weight="3.532359516988418"/>
+      <edge id="geid_141_516" source="Colmar" target="Luneville" weight="3.7875982204830776"/>
+      <edge id="geid_141_517" source="Colmar" target="Lyon" weight="3.6002507751319826"/>
+      <edge id="geid_141_518" source="Colmar" target="Marseille" weight="3.5174605270221484"/>
+      <edge id="geid_141_519" source="Colmar" target="Montauban" weight="3.79357369874122"/>
+      <edge id="geid_141_520" source="Colmar" target="Montpellier" weight="3.625748225612858"/>
+      <edge id="geid_141_521" source="Colmar" target="Mulhouse" weight="3.8471389559279996"/>
+      <edge id="geid_141_522" source="Colmar" target="Mâcon" weight="3.5367903352127845"/>
+      <edge id="geid_141_523" source="Colmar" target="Orléans" weight="3.579973310841428"/>
+      <edge id="geid_141_524" source="Colmar" target="Paris" weight="3.5712985715567207"/>
+      <edge id="geid_141_525" source="Colmar" target="Rouen" weight="3.531160712944124"/>
+      <edge id="geid_141_526" source="Colmar" target="RozayenBrie" weight="3.529969740368677"/>
+      <edge id="geid_141_527" source="Colmar" target="Strasbourg" weight="3.794796024077904"/>
+      <edge id="geid_141_528" source="Colmar" target="Toulouse" weight="3.7021696993473356"/>
+      <edge id="geid_141_529" source="Cordes" target="Montauban" weight="3.5281983468300098"/>
+      <edge id="geid_141_530" source="Cordes" target="SaintAffrique" weight="3.5577239578012807"/>
+      <edge id="geid_141_531" source="Digne" target="Dole" weight="3.525733217927088"/>
+      <edge id="geid_141_532" source="Digne" target="Draguignan" weight="3.7756856824470173"/>
+      <edge id="geid_141_533" source="Digne" target="Lyon" weight="3.5289845551910886"/>
+      <edge id="geid_141_534" source="Digne" target="Marseille" weight="3.6706638819114294"/>
+      <edge id="geid_141_535" source="Digne" target="Montauban" weight="3.768987172405202"/>
+      <edge id="geid_141_536" source="Digne" target="PontSaintEsprit" weight="3.6819562711683047"/>
+      <edge id="geid_141_537" source="Dole" target="Draguignan" weight="3.702999149342266"/>
+      <edge id="geid_141_538" source="Dole" target="Grenoble" weight="3.8339005521359173"/>
+      <edge id="geid_141_539" source="Dole" target="Issoire" weight="3.8117639234961658"/>
+      <edge id="geid_141_540" source="Dole" target="Langres" weight="3.5004413671462227"/>
+      <edge id="geid_141_541" source="Dole" target="LeMans" weight="3.5558995263923037"/>
+      <edge id="geid_141_542" source="Dole" target="LePuyenVelay" weight="3.648854030558865"/>
+      <edge id="geid_141_543" source="Dole" target="Luneville" weight="3.6651856171095027"/>
+      <edge id="geid_141_544" source="Dole" target="Lyon" weight="3.8863980883134017"/>
+      <edge id="geid_141_545" source="Dole" target="Marseille" weight="3.7959990239898174"/>
+      <edge id="geid_141_546" source="Dole" target="Montpellier" weight="3.7818850046958863"/>
+      <edge id="geid_141_547" source="Dole" target="Mâcon" weight="3.852881327710609"/>
+      <edge id="geid_141_548" source="Dole" target="Orléans" weight="3.6085515853134402"/>
+      <edge id="geid_141_549" source="Dole" target="Pamiers" weight="3.6111100653224106"/>
+      <edge id="geid_141_550" source="Dole" target="PontSaintEsprit" weight="3.7738941899507683"/>
+      <edge id="geid_141_551" source="Dole" target="Riom" weight="3.582869538267364"/>
+      <edge id="geid_141_552" source="Dole" target="Romans" weight="3.7439502737395793"/>
+      <edge id="geid_141_553" source="Dole" target="SaintAffrique" weight="3.68469853877306"/>
+      <edge id="geid_141_554" source="Dole" target="SaintEtienne" weight="3.738496187405575"/>
+      <edge id="geid_141_555" source="Dole" target="Strasbourg" weight="3.64798352912964"/>
+      <edge id="geid_141_556" source="Dole" target="Toulouse" weight="3.74490460283536"/>
+      <edge id="geid_141_557" source="Dole" target="Tulle" weight="3.6073854655641857"/>
+      <edge id="geid_141_558" source="Dole" target="VilleneuvedeBerg" weight="3.529832662892312"/>
+      <edge id="geid_141_559" source="Douai" target="Marseille" weight="3.601567334264976"/>
+      <edge id="geid_141_560" source="Douai" target="Melun" weight="3.6559896961280627"/>
+      <edge id="geid_141_561" source="Douai" target="Montpellier" weight="3.532314898814437"/>
+      <edge id="geid_141_562" source="Douai" target="Orléans" weight="3.6061479801148817"/>
+      <edge id="geid_141_563" source="Douai" target="Pontoise" weight="3.511461895688041"/>
+      <edge id="geid_141_564" source="Douai" target="Soissons" weight="3.5735695505110128"/>
+      <edge id="geid_141_565" source="Draguignan" target="Grenoble" weight="3.6030787326315075"/>
+      <edge id="geid_141_566" source="Draguignan" target="Issoire" weight="3.512735281555562"/>
+      <edge id="geid_141_567" source="Draguignan" target="Lyon" weight="3.6260657669114598"/>
+      <edge id="geid_141_568" source="Draguignan" target="Marseille" weight="3.825565855512944"/>
+      <edge id="geid_141_569" source="Draguignan" target="Montpellier" weight="3.8267881984099086"/>
+      <edge id="geid_141_570" source="Draguignan" target="Pamiers" weight="3.703083088562122"/>
+      <edge id="geid_141_571" source="Draguignan" target="PontSaintEsprit" weight="3.8501050654187714"/>
+      <edge id="geid_141_572" source="Draguignan" target="Romans" weight="3.528547653422695"/>
+      <edge id="geid_141_573" source="Draguignan" target="SaintAffrique" weight="3.67691171325625"/>
+      <edge id="geid_141_574" source="Draguignan" target="Toulouse" weight="3.73451570626004"/>
+      <edge id="geid_141_575" source="Draguignan" target="VilleneuvedeBerg" weight="3.6149739361199105"/>
+      <edge id="geid_141_576" source="Eu" target="Lille" weight="3.5429909861439026"/>
+      <edge id="geid_141_577" source="Eu" target="MagnyenVexin" weight="3.7555188106392103"/>
+      <edge id="geid_141_578" source="Eu" target="Meulan" weight="3.7845584377621053"/>
+      <edge id="geid_141_579" source="Eu" target="Paris" weight="3.6710279498135825"/>
+      <edge id="geid_141_580" source="Eu" target="Pontoise" weight="3.7336848206412303"/>
+      <edge id="geid_141_581" source="Eu" target="Reims" weight="3.59277247833944"/>
+      <edge id="geid_141_582" source="Eu" target="RozayenBrie" weight="3.6733751476781116"/>
+      <edge id="geid_141_583" source="Foix" target="Pamiers" weight="3.6716069473098134"/>
+      <edge id="geid_141_584" source="Foix" target="SaintAffrique" weight="3.5013239483062497"/>
+      <edge id="geid_141_585" source="Foix" target="TarasconsurAriège" weight="3.83329370282401"/>
+      <edge id="geid_141_586" source="Fontenay" target="Grenade" weight="3.5202515461275556"/>
+      <edge id="geid_141_587" source="Fontenay" target="Luneville" weight="3.5745843832198374"/>
+      <edge id="geid_141_588" source="Fontenay" target="Marseille" weight="3.5545623448120907"/>
+      <edge id="geid_141_589" source="Fontenay" target="Montpellier" weight="3.549245334245928"/>
+      <edge id="geid_141_590" source="Fontenay" target="Nantes" weight="3.78619982802336"/>
+      <edge id="geid_141_591" source="Fontenay" target="Orléans" weight="3.516297144623393"/>
+      <edge id="geid_141_592" source="Fontenay" target="Pamiers" weight="3.5323895131896488"/>
+      <edge id="geid_141_593" source="Fontenay" target="Poitiers" weight="3.6935416699463883"/>
+      <edge id="geid_141_594" source="Fontenay" target="Toulouse" weight="3.6389306637314602"/>
+      <edge id="geid_141_595" source="Gonesse" target="LeHavre" weight="3.5980125320381284"/>
+      <edge id="geid_141_596" source="Gonesse" target="MagnyenVexin" weight="3.817515051408288"/>
+      <edge id="geid_141_597" source="Gonesse" target="Maringues" weight="3.9069159344640005"/>
+      <edge id="geid_141_598" source="Gonesse" target="Meulan" weight="3.8223223221820817"/>
+      <edge id="geid_141_599" source="Gonesse" target="Paris" weight="3.6570626723339363"/>
+      <edge id="geid_141_600" source="Gonesse" target="Pontoise" weight="3.8163114207177125"/>
+      <edge id="geid_141_601" source="Gonesse" target="Reims" weight="3.7832278662196224"/>
+      <edge id="geid_141_602" source="Gonesse" target="Rouen" weight="3.6135087461689968"/>
+      <edge id="geid_141_603" source="Gonesse" target="Treignac" weight="4"/>
+      <edge id="geid_141_604" source="Grenade" target="Lavaur" weight="3.901217720015002"/>
+      <edge id="geid_141_605" source="Grenade" target="LePuyenVelay" weight="3.5143787604631695"/>
+      <edge id="geid_141_606" source="Grenade" target="Montauban" weight="3.9214337469366605"/>
+      <edge id="geid_141_607" source="Grenade" target="PontSaintEsprit" weight="3.531528770559889"/>
+      <edge id="geid_141_608" source="Grenade" target="Puylaurens" weight="3.892134636709397"/>
+      <edge id="geid_141_609" source="Grenade" target="Revel" weight="3.8102510229041453"/>
+      <edge id="geid_141_610" source="Grenade" target="Romans" weight="3.7387432952323203"/>
+      <edge id="geid_141_611" source="Grenade" target="SaintAffrique" weight="3.6152042262705217"/>
+      <edge id="geid_141_612" source="Grenade" target="TarasconsurAriège" weight="3.616582203642077"/>
+      <edge id="geid_141_613" source="Grenade" target="Toulouse" weight="3.54164321116516"/>
+      <edge id="geid_141_614" source="Grenoble" target="Issoire" weight="3.75973883882116"/>
+      <edge id="geid_141_615" source="Grenoble" target="LePuyenVelay" weight="3.702924139812722"/>
+      <edge id="geid_141_616" source="Grenoble" target="Lyon" weight="3.8983703893925563"/>
+      <edge id="geid_141_617" source="Grenoble" target="Marseille" weight="3.629593550466608"/>
+      <edge id="geid_141_618" source="Grenoble" target="Mende" weight="3.6109659866125563"/>
+      <edge id="geid_141_619" source="Grenoble" target="Montpellier" weight="3.7357895573556643"/>
+      <edge id="geid_141_620" source="Grenoble" target="Mâcon" weight="3.876122763253637"/>
+      <edge id="geid_141_621" source="Grenoble" target="Orléans" weight="3.5165103932384882"/>
+      <edge id="geid_141_622" source="Grenoble" target="PontSaintEsprit" weight="3.7958183377959998"/>
+      <edge id="geid_141_623" source="Grenoble" target="Romans" weight="3.7960833482830805"/>
+      <edge id="geid_141_624" source="Grenoble" target="SaintAffrique" weight="3.718392684318365"/>
+      <edge id="geid_141_625" source="Grenoble" target="SaintEtienne" weight="3.7491059630670724"/>
+      <edge id="geid_141_626" source="Grenoble" target="Strasbourg" weight="3.5200046381496515"/>
+      <edge id="geid_141_627" source="Grenoble" target="Toulouse" weight="3.7264527309809283"/>
+      <edge id="geid_141_628" source="Grenoble" target="VilleneuvedeBerg" weight="3.5665300749708093"/>
+      <edge id="geid_141_629" source="Guéret" target="LeMans" weight="3.596679213045865"/>
+      <edge id="geid_141_630" source="Guéret" target="Luneville" weight="3.539908815277412"/>
+      <edge id="geid_141_631" source="Guéret" target="Lyon" weight="3.5520161392356626"/>
+      <edge id="geid_141_632" source="Guéret" target="Maringues" weight="3.733601192268295"/>
+      <edge id="geid_141_633" source="Guéret" target="Orléans" weight="3.6810845926494786"/>
+      <edge id="geid_141_634" source="Guéret" target="Tulle" weight="3.541240754033141"/>
+      <edge id="geid_141_635" source="Issoire" target="LePuyenVelay" weight="3.8263308874688837"/>
+      <edge id="geid_141_636" source="Issoire" target="Lyon" weight="3.805776237398414"/>
+      <edge id="geid_141_637" source="Issoire" target="Maringues" weight="3.831530364916021"/>
+      <edge id="geid_141_638" source="Issoire" target="Marseille" weight="3.6973897719988438"/>
+      <edge id="geid_141_639" source="Issoire" target="Mende" weight="3.7365607919648447"/>
+      <edge id="geid_141_640" source="Issoire" target="Montpellier" weight="3.6378148806680355"/>
+      <edge id="geid_141_641" source="Issoire" target="Mâcon" weight="3.7943410962769217"/>
+      <edge id="geid_141_642" source="Issoire" target="Orléans" weight="3.59869702133824"/>
+      <edge id="geid_141_643" source="Issoire" target="PontSaintEsprit" weight="3.6458178688182"/>
+      <edge id="geid_141_644" source="Issoire" target="Riom" weight="3.9124747429654754"/>
+      <edge id="geid_141_645" source="Issoire" target="Romans" weight="3.610766424674822"/>
+      <edge id="geid_141_646" source="Issoire" target="SaintAffrique" weight="3.714084769311288"/>
+      <edge id="geid_141_647" source="Issoire" target="SaintEtienne" weight="3.8073970896776674"/>
+      <edge id="geid_141_648" source="Issoire" target="Toulouse" weight="3.617584523546215"/>
+      <edge id="geid_141_649" source="Issoire" target="Tulle" weight="3.669485929271452"/>
+      <edge id="geid_141_650" source="Issoire" target="VicleComte" weight="3.8059404218534416"/>
+      <edge id="geid_141_651" source="Langres" target="Montpellier" weight="3.519472352019463"/>
+      <edge id="geid_141_652" source="Lavaur" target="Montauban" weight="3.8008117994197264"/>
+      <edge id="geid_141_653" source="Lavaur" target="Puylaurens" weight="3.8731497168601634"/>
+      <edge id="geid_141_654" source="Lavaur" target="Revel" weight="3.7732619999797317"/>
+      <edge id="geid_141_655" source="Lavaur" target="Réalmont" weight="3.525556867150357"/>
+      <edge id="geid_141_656" source="Lavaur" target="TarasconsurAriège" weight="3.613475670182225"/>
+      <edge id="geid_141_657" source="Lavaur" target="Toulouse" weight="3.87634220737298"/>
+      <edge id="geid_141_658" source="LeHavre" target="Lille" weight="3.516229638495113"/>
+      <edge id="geid_141_659" source="LeHavre" target="MagnyenVexin" weight="3.5764041453724227"/>
+      <edge id="geid_141_660" source="LeHavre" target="Meulan" weight="3.6521994380071225"/>
+      <edge id="geid_141_661" source="LeHavre" target="Pontoise" weight="3.579307291206833"/>
+      <edge id="geid_141_662" source="LeHavre" target="Rouen" weight="3.754419240024465"/>
+      <edge id="geid_141_663" source="LeMans" target="Luneville" weight="3.7113297754238164"/>
+      <edge id="geid_141_664" source="LeMans" target="Lyon" weight="3.747685153339332"/>
+      <edge id="geid_141_665" source="LeMans" target="Montauban" weight="3.734564559754622"/>
+      <edge id="geid_141_666" source="LeMans" target="Mâcon" weight="3.686008215210121"/>
+      <edge id="geid_141_667" source="LeMans" target="Nantes" weight="3.736349245406823"/>
+      <edge id="geid_141_668" source="LeMans" target="Orléans" weight="3.773333561599421"/>
+      <edge id="geid_141_669" source="LeMans" target="Paris" weight="3.5864785157520007"/>
+      <edge id="geid_141_670" source="LeMans" target="Poitiers" weight="3.5986011464242846"/>
+      <edge id="geid_141_671" source="LeMans" target="Rennes" weight="3.6821848088479205"/>
+      <edge id="geid_141_672" source="LeMans" target="Rouen" weight="3.596792927562413"/>
+      <edge id="geid_141_673" source="LeMans" target="RozayenBrie" weight="3.624830983343232"/>
+      <edge id="geid_141_674" source="LeMans" target="SaintAffrique" weight="3.5593259686297603"/>
+      <edge id="geid_141_675" source="LeMans" target="SaintEtienne" weight="3.5362574583767237"/>
+      <edge id="geid_141_676" source="LeMans" target="Strasbourg" weight="3.519495164528698"/>
+      <edge id="geid_141_677" source="LePuyenVelay" target="Lyon" weight="3.7209189724604568"/>
+      <edge id="geid_141_678" source="LePuyenVelay" target="Maringues" weight="3.5205879252760797"/>
+      <edge id="geid_141_679" source="LePuyenVelay" target="Marseille" weight="3.574604651093"/>
+      <edge id="geid_141_680" source="LePuyenVelay" target="Mende" weight="3.7687131698900647"/>
+      <edge id="geid_141_681" source="LePuyenVelay" target="Montauban" weight="3.532460782870272"/>
+      <edge id="geid_141_682" source="LePuyenVelay" target="Montpellier" weight="3.5832542886650454"/>
+      <edge id="geid_141_683" source="LePuyenVelay" target="Mâcon" weight="3.6749015371906926"/>
+      <edge id="geid_141_684" source="LePuyenVelay" target="PontSaintEsprit" weight="3.5927959820945286"/>
+      <edge id="geid_141_685" source="LePuyenVelay" target="Riom" weight="3.559081052146236"/>
+      <edge id="geid_141_686" source="LePuyenVelay" target="Romans" weight="3.7364351854737667"/>
+      <edge id="geid_141_687" source="LePuyenVelay" target="SaintAffrique" weight="3.721614127967102"/>
+      <edge id="geid_141_688" source="LePuyenVelay" target="SaintEtienne" weight="3.707130348849722"/>
+      <edge id="geid_141_689" source="LePuyenVelay" target="Toulouse" weight="3.600536913665287"/>
+      <edge id="geid_141_690" source="LePuyenVelay" target="Tulle" weight="3.6343653828493463"/>
+      <edge id="geid_141_691" source="LePuyenVelay" target="VicleComte" weight="3.515967645848477"/>
+      <edge id="geid_141_692" source="LePuyenVelay" target="VilleneuvedeBerg" weight="3.6980790724425607"/>
+      <edge id="geid_141_693" source="Lille" target="MagnyenVexin" weight="3.5470187109443025"/>
+      <edge id="geid_141_694" source="Lille" target="Melun" weight="3.601152225921444"/>
+      <edge id="geid_141_695" source="Lille" target="Meulan" weight="3.656913128498604"/>
+      <edge id="geid_141_696" source="Lille" target="Pontoise" weight="3.565656420857376"/>
+      <edge id="geid_141_697" source="Limoges" target="Poitiers" weight="3.624782205617766"/>
+      <edge id="geid_141_698" source="Limoges" target="Tulle" weight="3.71204518942226"/>
+      <edge id="geid_141_699" source="Luneville" target="Lyon" weight="3.660579937266924"/>
+      <edge id="geid_141_700" source="Luneville" target="Marseille" weight="3.5922559837755528"/>
+      <edge id="geid_141_701" source="Luneville" target="Montauban" weight="3.9139872661296016"/>
+      <edge id="geid_141_702" source="Luneville" target="Montpellier" weight="3.627507140446465"/>
+      <edge id="geid_141_703" source="Luneville" target="Mulhouse" weight="3.6610201543305623"/>
+      <edge id="geid_141_704" source="Luneville" target="Mâcon" weight="3.657637201524801"/>
+      <edge id="geid_141_705" source="Luneville" target="Nantes" weight="3.620858901651812"/>
+      <edge id="geid_141_706" source="Luneville" target="Orléans" weight="3.7083088202671806"/>
+      <edge id="geid_141_707" source="Luneville" target="Pamiers" weight="3.6151684045665444"/>
+      <edge id="geid_141_708" source="Luneville" target="Paris" weight="3.7052668431545803"/>
+      <edge id="geid_141_709" source="Luneville" target="Poitiers" weight="3.600541239985008"/>
+      <edge id="geid_141_710" source="Luneville" target="Rouen" weight="3.6332693610831424"/>
+      <edge id="geid_141_711" source="Luneville" target="RozayenBrie" weight="3.677920516957681"/>
+      <edge id="geid_141_712" source="Luneville" target="Soissons" weight="3.52905533965556"/>
+      <edge id="geid_141_713" source="Luneville" target="Strasbourg" weight="3.833069881261108"/>
+      <edge id="geid_141_714" source="Luneville" target="Toulouse" weight="3.592981740283088"/>
+      <edge id="geid_141_715" source="Luneville" target="Tulle" weight="3.6454197692670975"/>
+      <edge id="geid_141_716" source="Lyon" target="Marseille" weight="3.6933400312616027"/>
+      <edge id="geid_141_717" source="Lyon" target="Mende" weight="3.6001863386064903"/>
+      <edge id="geid_141_718" source="Lyon" target="Montpellier" weight="3.733718442293568"/>
+      <edge id="geid_141_719" source="Lyon" target="Mâcon" weight="3.9464913951843963"/>
+      <edge id="geid_141_720" source="Lyon" target="Orléans" weight="3.615494342978809"/>
+      <edge id="geid_141_721" source="Lyon" target="Pamiers" weight="3.608616362605223"/>
+      <edge id="geid_141_722" source="Lyon" target="PontSaintEsprit" weight="3.7957001167220357"/>
+      <edge id="geid_141_723" source="Lyon" target="Romans" weight="3.8263218111659048"/>
+      <edge id="geid_141_724" source="Lyon" target="SaintAffrique" weight="3.717947681459841"/>
+      <edge id="geid_141_725" source="Lyon" target="SaintEtienne" weight="3.8233310906626805"/>
+      <edge id="geid_141_726" source="Lyon" target="Strasbourg" weight="3.5016215100692407"/>
+      <edge id="geid_141_727" source="Lyon" target="Toulouse" weight="3.74206623825241"/>
+      <edge id="geid_141_728" source="Lyon" target="Tulle" weight="3.556092851936303"/>
+      <edge id="geid_141_729" source="Lyon" target="VilleneuvedeBerg" weight="3.5309393915043596"/>
+      <edge id="geid_141_730" source="MagnyenVexin" target="Melun" weight="3.6845335355126543"/>
+      <edge id="geid_141_731" source="MagnyenVexin" target="Meulan" weight="3.936542058316968"/>
+      <edge id="geid_141_732" source="MagnyenVexin" target="Paris" weight="3.7855311195163392"/>
+      <edge id="geid_141_733" source="MagnyenVexin" target="Pontoise" weight="3.91860949248484"/>
+      <edge id="geid_141_734" source="MagnyenVexin" target="Reims" weight="3.806109487161584"/>
+      <edge id="geid_141_735" source="MagnyenVexin" target="Rouen" weight="3.5364993316430624"/>
+      <edge id="geid_141_736" source="MagnyenVexin" target="RozayenBrie" weight="3.880182953124"/>
+      <edge id="geid_141_737" source="Maringues" target="Puylaurens" weight="3.9841006707698634"/>
+      <edge id="geid_141_738" source="Maringues" target="Riom" weight="3.792203686477097"/>
+      <edge id="geid_141_739" source="Maringues" target="Tulle" weight="3.5005461783621152"/>
+      <edge id="geid_141_740" source="Maringues" target="VicleComte" weight="3.7132143058456575"/>
+      <edge id="geid_141_741" source="Marmande" target="Montauban" weight="3.9782339309471237"/>
+      <edge id="geid_141_742" source="Marmande" target="Pamiers" weight="3.696037702166912"/>
+      <edge id="geid_141_743" source="Marmande" target="Toulouse" weight="3.6182046765324096"/>
+      <edge id="geid_141_744" source="Marseille" target="Montpellier" weight="3.876246010307665"/>
+      <edge id="geid_141_745" source="Marseille" target="Mâcon" weight="3.7759412060467343"/>
+      <edge id="geid_141_746" source="Marseille" target="Pamiers" weight="3.784958265729487"/>
+      <edge id="geid_141_747" source="Marseille" target="PontSaintEsprit" weight="3.772277921721384"/>
+      <edge id="geid_141_748" source="Marseille" target="SaintAffrique" weight="3.7059261146168048"/>
+      <edge id="geid_141_749" source="Marseille" target="SaintEtienne" weight="3.55242165841161"/>
+      <edge id="geid_141_750" source="Marseille" target="Strasbourg" weight="3.517914635173621"/>
+      <edge id="geid_141_751" source="Marseille" target="Toulouse" weight="3.7368232231736025"/>
+      <edge id="geid_141_752" source="Marseille" target="Tulle" weight="3.6673878534079507"/>
+      <edge id="geid_141_753" source="Melun" target="Meulan" weight="3.708220662383846"/>
+      <edge id="geid_141_754" source="Melun" target="Orléans" weight="3.7048038020011558"/>
+      <edge id="geid_141_755" source="Melun" target="Paris" weight="3.6211853248339136"/>
+      <edge id="geid_141_756" source="Melun" target="Pontoise" weight="3.7725386518918076"/>
+      <edge id="geid_141_757" source="Melun" target="Reims" weight="3.6926892209618942"/>
+      <edge id="geid_141_758" source="Melun" target="Rouen" weight="3.585115298681605"/>
+      <edge id="geid_141_759" source="Melun" target="RozayenBrie" weight="3.6179194345557266"/>
+      <edge id="geid_141_760" source="Melun" target="Verfeil" weight="3.806973288829156"/>
+      <edge id="geid_141_761" source="Mende" target="Montauban" weight="3.8881093686215236"/>
+      <edge id="geid_141_762" source="Mende" target="Mâcon" weight="3.5861527516702805"/>
+      <edge id="geid_141_763" source="Mende" target="PontSaintEsprit" weight="3.55682818569936"/>
+      <edge id="geid_141_764" source="Mende" target="SaintAffrique" weight="3.5554677120751434"/>
+      <edge id="geid_141_765" source="Mende" target="SaintEtienne" weight="3.7230417190229903"/>
+      <edge id="geid_141_766" source="Meulan" target="Paris" weight="3.7312879870107243"/>
+      <edge id="geid_141_767" source="Meulan" target="Pontoise" weight="3.958233759123482"/>
+      <edge id="geid_141_768" source="Meulan" target="Reims" weight="3.788391912337473"/>
+      <edge id="geid_141_769" source="Meulan" target="Rouen" weight="3.6715982863450805"/>
+      <edge id="geid_141_770" source="Meulan" target="RozayenBrie" weight="3.811061335548241"/>
+      <edge id="geid_141_771" source="Montauban" target="Mulhouse" weight="3.9191071666022506"/>
+      <edge id="geid_141_772" source="Montauban" target="Mâcon" weight="3.790069682270617"/>
+      <edge id="geid_141_773" source="Montauban" target="Nantes" weight="3.696342733608"/>
+      <edge id="geid_141_774" source="Montauban" target="Pau" weight="3.7334017477896126"/>
+      <edge id="geid_141_775" source="Montauban" target="Peyrehorade" weight="3.616209740126233"/>
+      <edge id="geid_141_776" source="Montauban" target="PontlAbbé" weight="3.589451450715953"/>
+      <edge id="geid_141_777" source="Montauban" target="Puylaurens" weight="3.813450804962575"/>
+      <edge id="geid_141_778" source="Montauban" target="Revel" weight="3.765894748882996"/>
+      <edge id="geid_141_779" source="Montauban" target="Romans" weight="3.5705518041885442"/>
+      <edge id="geid_141_780" source="Montauban" target="SaintAffrique" weight="3.60927537636649"/>
+      <edge id="geid_141_781" source="Montauban" target="TarasconsurAriège" weight="3.681649991909264"/>
+      <edge id="geid_141_782" source="Montauban" target="Toulouse" weight="3.7269843441028083"/>
+      <edge id="geid_141_783" source="Montauban" target="Vannes" weight="3.6160390515228737"/>
+      <edge id="geid_141_784" source="Montauban" target="VilleneuvedeBerg" weight="3.547035548140551"/>
+      <edge id="geid_141_785" source="Montpellier" target="Mulhouse" weight="3.655889657610848"/>
+      <edge id="geid_141_786" source="Montpellier" target="Mâcon" weight="3.753690764342472"/>
+      <edge id="geid_141_787" source="Montpellier" target="Orléans" weight="3.5732910260628037"/>
+      <edge id="geid_141_788" source="Montpellier" target="Pamiers" weight="3.7121009859041956"/>
+      <edge id="geid_141_789" source="Montpellier" target="PontSaintEsprit" weight="3.865595531454768"/>
+      <edge id="geid_141_790" source="Montpellier" target="SaintAffrique" weight="3.7877812799417363"/>
+      <edge id="geid_141_791" source="Montpellier" target="SaintEtienne" weight="3.509019593095553"/>
+      <edge id="geid_141_792" source="Montpellier" target="Strasbourg" weight="3.546215468681244"/>
+      <edge id="geid_141_793" source="Montpellier" target="Toulouse" weight="3.8507317290358594"/>
+      <edge id="geid_141_794" source="Montpellier" target="Tulle" weight="3.5719935937924223"/>
+      <edge id="geid_141_795" source="Mulhouse" target="Strasbourg" weight="3.840977019658745"/>
+      <edge id="geid_141_796" source="Mulhouse" target="Toulouse" weight="3.61452265562404"/>
+      <edge id="geid_141_797" source="Mâcon" target="Orléans" weight="3.556144748255976"/>
+      <edge id="geid_141_798" source="Mâcon" target="PontSaintEsprit" weight="3.8457899362418453"/>
+      <edge id="geid_141_799" source="Mâcon" target="SaintAffrique" weight="3.6768342072031444"/>
+      <edge id="geid_141_800" source="Mâcon" target="SaintEtienne" weight="3.875351588320213"/>
+      <edge id="geid_141_801" source="Mâcon" target="Toulouse" weight="3.5465351576966095"/>
+      <edge id="geid_141_802" source="Nantes" target="Poitiers" weight="3.7863049028152806"/>
+      <edge id="geid_141_803" source="Nantes" target="Rennes" weight="3.682680286005966"/>
+      <edge id="geid_141_804" source="Nantes" target="Tulle" weight="3.631345927666265"/>
+      <edge id="geid_141_805" source="Nantes" target="Vannes" weight="3.6856683627054916"/>
+      <edge id="geid_141_806" source="Narbonne" target="Treignac" weight="3.8850182343414015"/>
+      <edge id="geid_141_807" source="Orléans" target="Paris" weight="3.5129278799931964"/>
+      <edge id="geid_141_808" source="Orléans" target="Poitiers" weight="3.571876000711748"/>
+      <edge id="geid_141_809" source="Orléans" target="PontSaintEsprit" weight="3.5349898558081967"/>
+      <edge id="geid_141_810" source="Orléans" target="Reims" weight="3.5184023107958207"/>
+      <edge id="geid_141_811" source="Orléans" target="Rennes" weight="3.571514388603305"/>
+      <edge id="geid_141_812" source="Orléans" target="Rouen" weight="3.5003233488263117"/>
+      <edge id="geid_141_813" source="Orléans" target="RozayenBrie" weight="3.553435293711409"/>
+      <edge id="geid_141_814" source="Orléans" target="SaintAffrique" weight="3.5244057759744063"/>
+      <edge id="geid_141_815" source="Orléans" target="Soissons" weight="3.8220328591040396"/>
+      <edge id="geid_141_816" source="Orléans" target="Toulouse" weight="3.551840451601944"/>
+      <edge id="geid_141_817" source="Orléans" target="Tulle" weight="3.559905108324366"/>
+      <edge id="geid_141_818" source="Pamiers" target="PontSaintEsprit" weight="3.6703566933062497"/>
+      <edge id="geid_141_819" source="Pamiers" target="Revel" weight="3.60266554914721"/>
+      <edge id="geid_141_820" source="Pamiers" target="Réalmont" weight="3.7154555176218564"/>
+      <edge id="geid_141_821" source="Pamiers" target="SaintAffrique" weight="3.638580933091861"/>
+      <edge id="geid_141_822" source="Pamiers" target="TarasconsurAriège" weight="3.713925314818278"/>
+      <edge id="geid_141_823" source="Pamiers" target="Toulouse" weight="3.73496587393176"/>
+      <edge id="geid_141_824" source="Paris" target="Pontoise" weight="3.7321658595788447"/>
+      <edge id="geid_141_825" source="Paris" target="Reims" weight="3.8307538136749457"/>
+      <edge id="geid_141_826" source="Paris" target="RozayenBrie" weight="3.9624735897617644"/>
+      <edge id="geid_141_827" source="Paris" target="Soissons" weight="3.8862215716130355"/>
+      <edge id="geid_141_828" source="Pau" target="Peyrehorade" weight="3.852778866276103"/>
+      <edge id="geid_141_829" source="Poitiers" target="Rennes" weight="3.5695229207739723"/>
+      <edge id="geid_141_830" source="Poitiers" target="Tulle" weight="3.55832522607757"/>
+      <edge id="geid_141_831" source="Poitiers" target="Verfeil" weight="3.971532630483202"/>
+      <edge id="geid_141_832" source="PontSaintEsprit" target="Romans" weight="3.730352468256962"/>
+      <edge id="geid_141_833" source="PontSaintEsprit" target="SaintAffrique" weight="3.7349990375239934"/>
+      <edge id="geid_141_834" source="PontSaintEsprit" target="SaintEtienne" weight="3.6541151957074804"/>
+      <edge id="geid_141_835" source="PontSaintEsprit" target="Toulouse" weight="3.815243964898502"/>
+      <edge id="geid_141_836" source="PontSaintEsprit" target="VilleneuvedeBerg" weight="3.78907597871401"/>
+      <edge id="geid_141_837" source="PontlAbbé" target="Vannes" weight="3.5831520701712645"/>
+      <edge id="geid_141_838" source="Pontoise" target="Reims" weight="3.8404864087128097"/>
+      <edge id="geid_141_839" source="Pontoise" target="Rouen" weight="3.668599026280038"/>
+      <edge id="geid_141_840" source="Pontoise" target="RozayenBrie" weight="3.7599413124073755"/>
+      <edge id="geid_141_841" source="Puylaurens" target="Revel" weight="3.9466576337661223"/>
+      <edge id="geid_141_842" source="Puylaurens" target="TarasconsurAriège" weight="3.559809072324097"/>
+      <edge id="geid_141_843" source="Puylaurens" target="Treignac" weight="4"/>
+      <edge id="geid_141_844" source="Reims" target="RozayenBrie" weight="3.8886601199465876"/>
+      <edge id="geid_141_845" source="Rennes" target="SaintAffrique" weight="3.536039775748324"/>
+      <edge id="geid_141_846" source="Rennes" target="SaintBrieuc" weight="3.5044660315200478"/>
+      <edge id="geid_141_847" source="Rennes" target="Vannes" weight="3.722125176961"/>
+      <edge id="geid_141_848" source="Revel" target="SaintAffrique" weight="3.5230895080306706"/>
+      <edge id="geid_141_849" source="Revel" target="TarasconsurAriège" weight="3.522558565251842"/>
+      <edge id="geid_141_850" source="Revel" target="Toulouse" weight="3.8472027805551376"/>
+      <edge id="geid_141_851" source="Riom" target="SaintEtienne" weight="3.551463007390805"/>
+      <edge id="geid_141_852" source="Riom" target="Tulle" weight="3.547904469507476"/>
+      <edge id="geid_141_853" source="Riom" target="VicleComte" weight="3.802809822310714"/>
+      <edge id="geid_141_854" source="Romans" target="SaintAffrique" weight="3.595033095277563"/>
+      <edge id="geid_141_855" source="Romans" target="SaintEtienne" weight="3.6523229325786253"/>
+      <edge id="geid_141_856" source="Romans" target="VilleneuvedeBerg" weight="3.743376666657409"/>
+      <edge id="geid_141_857" source="Rouen" target="RozayenBrie" weight="3.512013890273504"/>
+      <edge id="geid_141_858" source="Rouen" target="Soissons" weight="3.839361183080864"/>
+      <edge id="geid_141_859" source="RozayenBrie" target="Soissons" weight="3.9089749052970726"/>
+      <edge id="geid_141_860" source="SaintAffrique" target="SaintEtienne" weight="3.610694597408528"/>
+      <edge id="geid_141_861" source="SaintAffrique" target="TarasconsurAriège" weight="3.5995568794900317"/>
+      <edge id="geid_141_862" source="SaintAffrique" target="Toulouse" weight="3.8012705853888673"/>
+      <edge id="geid_141_863" source="SaintAffrique" target="Tulle" weight="3.585808482726072"/>
+      <edge id="geid_141_864" source="SaintAffrique" target="VilleneuvedeBerg" weight="3.579716408591823"/>
+      <edge id="geid_141_865" source="SaintBrieuc" target="Verfeil" weight="3.7070063932159125"/>
+      <edge id="geid_141_866" source="SaintEtienne" target="Toulouse" weight="3.5611722255747855"/>
+      <edge id="geid_141_867" source="Soissons" target="Strasbourg" weight="3.5915379569169152"/>
+      <edge id="geid_141_868" source="TarasconsurAriège" target="Toulouse" weight="3.674507833604337"/>
+      <edge id="geid_141_869" source="Toulouse" target="Tulle" weight="3.5167207603691524"/>
+      <edge id="geid_141_870" source="Toulouse" target="VilleneuvedeBerg" weight="3.612683032337165"/>
     </edges>
   </graph>
 </gexf>
