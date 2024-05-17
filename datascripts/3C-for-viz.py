@@ -72,11 +72,14 @@ grouping_to_groups = {
   "Espagne": "Italie & Espagne",
   "Levant et Barbarie": "Levant & Barbarie",
   "Angleterre": "Angleterre & Amérique du Nord",
-  "Amériques": "Angleterre & Amérique du Nord",
+  # "Amériques": "Angleterre & Amérique du Nord",
+  "États-Unis d'Amérique": "Angleterre & Amérique du Nord",
+  "Afrique": "Colonies françaises",
+  "Amériques": "Colonies françaises",
   "Nord": "Nord, Hollande & Flandres",
   "Hollande": "Nord, Hollande & Flandres",
   "Flandre et autres états de l'Empereur": "Nord, Hollande & Flandres",
-  "": "Colonies françaises"
+  # "": "Colonies françaises"
 }
 groups = set(grouping_to_groups.values())
 
@@ -88,8 +91,8 @@ with open('../data/toflit18_all_flows.csv', 'r') as f1:
       value = float(flow["value"] or 0)
       year = flow["year"]
       if    flow["best_guess_region_prodxpart"] == "1" \
-        and flow['customs_region'] == 'Marseille':
-        
+        and flow['customs_region'] == 'Marseille' \
+        and year != "1787":
         if year not in years:
           years[year] = {
             "total": 0,

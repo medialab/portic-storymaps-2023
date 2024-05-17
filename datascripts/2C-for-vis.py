@@ -215,6 +215,7 @@ with open('../data/navigo_all_flows.csv', newline='') as csvfile:
         ship_class = row['ship_class_standardized']
         # if tonnage == 0:
 
+        # @todo harmoniser ailleurs, documenter dans l'atlas
         if tonnage == 0 and ship_class in tonnage_estimates:
           tonnage = tonnage_estimates[ship_class]
           
