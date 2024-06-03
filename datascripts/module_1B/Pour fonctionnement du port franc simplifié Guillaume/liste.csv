@@ -1,0 +1,10 @@
+exportateur,importateur,value_en_Mlt
+DirMar_hors_Mar,Marseille,10.075642
+DirMar_hors_Mar,RdM,.082115091
+Fr_hors_DirMar,Marseille,7.8674831
+Fr_hors_Mar,Marseille_conso,25.001455
+Marseille,DirMar_hors_Mar,31.152077
+Marseille,RdM,82.040779
+Marseille,Fr_hors_DirMar,35.112015
+RdM,Marseille,130.59088
+RdM,DirMar_hors_Mar,.95549339
