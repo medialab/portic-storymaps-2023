@@ -13,10 +13,11 @@ export default function PartDesEtrangersDansNavigation({
   data: inputData,
   width,
   height,
-  lang
+  lang = 'fr'
 }) {
 
-const flagToNationality = useMemo(() => ({
+// const flagToNationality = useMemo(() => ({
+const flagToNationality = {
   'Genoese': 'gênois',
   'Venitian': 'vénitiens',
   'Tuscan': 'toscans',
@@ -44,7 +45,8 @@ const flagToNationality = useMemo(() => ({
   'Imperial Mediterranean': translate('PartDesEtrangersDansNavigation', 'imperiaux-mediterrannee', lang),
   // 'Imperial Mediterranean': 'impériaux de la méditerranée',
   'Swedish': translate('PartDesEtrangersDansNavigation', 'suédois', lang),
-}), [lang]);
+};
+// }), [lang]);
 
   // const comparisonData = useMemo(() => inputData.get('share_of_strangers_1787_french_ports.csv')
   const comparisonData = (inputData.get('share_of_strangers_1787_french_ports.csv') || [])
