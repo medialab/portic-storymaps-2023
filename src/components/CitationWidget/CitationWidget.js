@@ -4,6 +4,7 @@ import cx from 'classnames';
 // import copy from 'copy-to-clipboard';
 
 import FrMla from './mla-fr.mdx';
+import EnMla from './mla-en.mdx';
 import FrIso690 from './iso-fr.mdx';
 import FrApa from './apa-fr.mdx';
 import Doi from './doi.mdx';
@@ -19,7 +20,7 @@ const CONTENTS = {
     'DOI': Doi
   },
   en: {
-    'MLA': FrMla,
+    'MLA': EnMla,
     'DOI': Doi
   }
 }
