@@ -329,6 +329,7 @@ dfn {
 .centered-contents {
   min-width: $screen-md-min;
   max-width: $screen-md-min;
+  margin-bottom: $medium-gutter * 5;
   @include tablet {
     margin-top: $header_height;
     min-width: unset;

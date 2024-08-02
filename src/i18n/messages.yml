@@ -388,3 +388,7 @@ PartDesEtrangersDansNavigation:
   ragusois:
     fr: ragusois
     en: ragusans
+CommentedImage:
+  click-prompt:
+    fr: Cliquer pour consulter
+    en: Click to expand
