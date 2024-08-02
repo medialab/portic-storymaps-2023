@@ -61,7 +61,7 @@ const mapShortNameToCategory = {
 
 
   'Empire ottoman': 'empire ottoman',
-  // 'reste Asie, Moyen-Orient et Océanie': 'empire ottoman',
+  'reste Asie, Moyen-Orient et Océanie': 'empire ottoman',
   "Régence d'Alger": 'empire ottoman',
   'Régence de Tripoli': 'empire ottoman',
   'Régence de Tunis': 'empire ottoman',
@@ -127,7 +127,7 @@ const Provinces = ({
                 M3,5 l2,-2"
                   style={{
                     stroke: color,// provincesPalette['shortname'],
-                    strokeWidth: 1
+                    strokeWidth: 1.5
                   }}
                 />
               </pattern>
