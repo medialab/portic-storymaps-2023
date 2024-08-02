@@ -16,6 +16,7 @@
   .navigation-ui-container {
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 0.6rem;
+    // background: rgba(255,255,255,.5);
 
     p {
       margin: 0;
@@ -57,11 +58,14 @@
   .legend {
     font-family: "IBM Plex Sans", sans-serif;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
+    // background: rgba(255,255,255,.5);
     h4 {
       margin: 0;
       font-size: 0.8rem;
       margin-right: 1rem;
+      margin-left: 2rem;
+      padding-bottom: .5rem;
     }
     ul {
       list-style: none;
@@ -73,10 +77,11 @@
         flex-flow: row nowrap;
         justify-content: start;
         align-items: start;
+        margin-bottom: .5rem;
         > span:first-of-type {
           margin-right: 1rem;
-          min-width: 2rem;
-          max-width: 2rem;
+          min-width: 1rem;
+          max-width: 1rem;
           text-align: right;
         }
       }

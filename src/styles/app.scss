@@ -88,6 +88,58 @@ button.is-active {
   color: white;
 }
 
+
+input[type="radio"] {
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  min-width: 1em;
+  min-height: 1em;
+  border: 0.15em solid currentColor;
+  border-radius: 50%;
+  transform: translateY(0.25em);
+  cursor: pointer;
+
+  border: none;
+  background: rgba(0,0,0,0.1);
+  margin-right: .25em;
+  // background: grey;
+  //   display: grid;
+  //   place-content: center;
+  
+  
+  &::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    cursor: pointer;
+  }
+  
+  &:checked{
+    background: red;
+    &::before {
+      transform: scale(1);
+      background: red;
+    }
+  }
+  
+  &:focus{
+    outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+  }
+  &::before {
+    background-color: CanvasText;
+  }
+  
+}
 /**
  * Scrollbar customization
  */

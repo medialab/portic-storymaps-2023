@@ -96,12 +96,12 @@ const LineSeries = ({
   }
   // const slopeExtent = extent(data.map(d => d.cleanSlope));
   // const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['red', 'green'])
-  const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['lightgrey', 'blue']);
-  const lossColorScale = scaleLinear().domain([-60, 60]).range(['red', 'green']);
+  const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['lightgrey', '#336D7C']);
+  const lossColorScale = scaleLinear().domain([-60, 60]).range(['#FEA43B', 'green']);
   // console.log(data.map(d => !d.slope.length ? 0 : (d.slope.split(' ')[1].split('%')[0])))
   return (
     <g className="LineSeries">
-      <rect x={0} y={gutter * 2} width={endX} height={height - gutter * 3} fill="rgba(0,0,0,0.05)" />
+      <rect x={0} y={gutter * 2} width={endX} height={height - gutter * 3} fill="rgba(0,0,0,0)" />
       {
         yAxisTickValues
           .map(value => {
@@ -172,7 +172,7 @@ const LineSeries = ({
             x2={xScale(activeYear)}
             y1={gutter * 2}
             y2={height - gutter}
-            stroke="rgb(81, 78, 238)"
+            stroke="black"
             strokeDasharray={'2,2'}
           />
           : null
@@ -192,7 +192,7 @@ const LineSeries = ({
             return (
               <line
                 key={year1}
-                stroke="grey"
+                stroke="black"
                 x1={x1}
                 y1={y1}
                 x2={x2}
@@ -249,7 +249,7 @@ const LineSeries = ({
                   data-tip={`En ${year}, valeur de ${formatNumber(parseInt(value))} (perte de ${formatNumber(parseInt(data.find(d => d.year === year).peace_reg_memory))})`}
                 />
                 <circle
-                  fill={isActive ? 'blue' : "grey"}
+                  fill={isActive ? 'black' : "black"}
                   cx={x}
                   cy={y}
                   r={isActive ? 3 : 1.5}
@@ -417,7 +417,7 @@ export default function GuerreEtCroissance({
   const activeNavigationSource = navigationSources.find(({ id }) => id === navigationMetric).source;
   const activeNavigationTickFormat = navigationSources.find(({ id }) => id === navigationMetric).tickFormat;
   const xAxisValues = range(MIN_YEAR, MAX_YEAR + 20, 20);
-  const legendX = sideWidth + (visibleDirections.length >= 4 ? cellWidth * 2.5 : cellWidth * 1.5) + gutter * 2;
+  // const legendX = sideWidth + (visibleDirections.length >= 4 ? cellWidth * 2.5 : cellWidth * 1.5) + gutter * 2;
 
   return (
     <>
@@ -447,7 +447,7 @@ export default function GuerreEtCroissance({
                             transform={`translate(${x}, 0)`}
                           >
                             <line
-                              stroke="grey"
+                              stroke="lightgrey"
                               strokeDasharray={'2,2'}
                               x1={0}
                               x2={0}
@@ -455,14 +455,14 @@ export default function GuerreEtCroissance({
                               y2={yEnd}
                             />
                             <line
-                              stroke="grey"
+                              stroke="lightgrey"
                               x1={0}
                               x2={0}
                               y1={yEnd}
                               y2={yEnd + gutter / 2}
                             />
                             <text
-                              fill="grey"
+                              fill="lightgrey"
                               x={0}
                               y={yEnd + gutter * 1.5}
                               textAnchor="middle"
@@ -524,7 +524,7 @@ export default function GuerreEtCroissance({
                         y={0}
                         width={width}
                         height={rowHeight}
-                        fill={`rgba(0,0,0,0.05)`}
+                        fill={`rgba(0,0,0,0.0)`}
                       />
                       : null
                   }
@@ -600,8 +600,8 @@ export default function GuerreEtCroissance({
         </g>
         <foreignObject
 
-          x={sideWidth + cellWidth + gutter * 2}
-          y={topLabelsHeight + rowHeight * (visibleSeries.length - 1) + gutter * 2}
+          x={sideWidth + cellWidth * 1.5}
+          y={topLabelsHeight + rowHeight * (visibleSeries.length - 1) + gutter * 3}
           width={cellWidth * 2}
           height={rowHeight}
         >
@@ -610,7 +610,7 @@ export default function GuerreEtCroissance({
             className="navigation-ui-container"
           >
             <p>
-              Utiliser les données de navigation :
+              <strong>← Données de navigation</strong>
             </p>
             <ul>
               {
@@ -634,10 +634,14 @@ export default function GuerreEtCroissance({
           </div>
         </foreignObject>
         <foreignObject
-          x={legendX}
-          y={topLabelsHeight + rowHeight * (visibleSeries.length - 1) + gutter * 3}
-          width={width - legendX - gutter * 3}
-          height={rowHeight}
+          // x={legendX}
+          // y={topLabelsHeight + rowHeight * (visibleSeries.length - 1) + gutter * 3}
+          // width={width - legendX - gutter * 3}
+          // height={rowHeight}
+          x={gutter}
+          y={topLabelsHeight + rowHeight * .25 + gutter}
+          width={sideWidth / 2}
+          height={rowHeight * 2}
         >
           <div
             xmlns="http://www.w3.org/1999/xhtml"
@@ -660,7 +664,7 @@ export default function GuerreEtCroissance({
               <li>
                 <span
                   style={{
-                    color: 'blue'
+                    color: '#336D7C'
                   }}
                 >
                   +1%/an
@@ -715,7 +719,7 @@ export default function GuerreEtCroissance({
         {
           atlasMode ?
             <foreignObject
-              x={0}
+              x={gutter * 4}
               y={topLabelsHeight - 10}
               width={sideWidth * 1.5}
               height={height}
