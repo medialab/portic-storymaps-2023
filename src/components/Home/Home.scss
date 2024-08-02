@@ -65,6 +65,23 @@
       transition: color 1s ease;
       &.is-night-mode {
         color: white;
+        .CitationWidget {
+          .collapsible-contents,
+          .collapse-toggler {
+            color: white;
+          }
+          .list-item {
+            span {
+              background: $color-accent-background;
+              opacity: 0.6;
+            }
+            &.is-active {
+              span {
+                opacity: 1;
+              }
+            }
+          }
+        }
       }
 
       @include tablet {

@@ -191,6 +191,82 @@ dfn {
   }
 }
 
+
+.CommentedImage,
+.CommentedVideo {
+  margin: 0;
+  max-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  > img,
+  > iframe {
+    flex: 1;
+    flex: 1;
+    cursor: pointer;
+    transition: .5s ease all;
+    background: rgba(0,0,0,0.02);
+    &:hover {
+      background: rgba(0,0,0,0.05);
+
+    }
+  }
+
+  .click-prompt {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    opacity: 0;
+    transition: .5s ease all;
+    font-family: $font-family-1;
+  }
+  &:hover {
+    .click-prompt {
+     opacity: 1;
+    }
+  }
+}
+
+.CommentedVideo {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.PlainPageVisualization {
+  min-height: 500px;
+  max-height: 70vh;
+  width: 100%;
+  // border: 1px solid rgba(100,100,100,0.3);
+  padding: 0;
+  .VisualizationController {
+    position: relative;
+    height: 100%;
+  }
+  figcaption {
+    border-top: 1px solid rgba(100,100,100,0.3);
+    margin: 1rem 1rem 0 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    // font-style: italic;
+    font-size: .9em;
+    font-family: $font-family-1;
+  }
+}
+
 /**
  * controller wrapping visualizations in several contexts and displaying a margin
  */

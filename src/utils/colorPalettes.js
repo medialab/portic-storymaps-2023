@@ -186,6 +186,7 @@ const colorsPalettes = {
     'Italie & Espagne': '#DFBD3A',
     'Angleterre & Amérique du Nord': '#c9072a',
     'Colonies françaises': '#E5881A',
+    // 'Colonies': '#E5881A',
     'Nord, Hollande & Flandres': '#c8c8f0',
     'total': '#c4c4c4',
   },
