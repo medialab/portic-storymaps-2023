@@ -284,7 +284,7 @@ const LongitudinalTradeChart = ({
             const y = height - margins.bottom;
             return (
               <g
-                key={i}
+                key={year}
                 className="axis-group"
                 transform={`translate(${x}, ${y})`}
               >
@@ -431,7 +431,7 @@ const LongitudinalTradeChart = ({
                 return (
                   <>
                     <circle
-                      key={index}
+                      key={index + "a"}
                       {...{
                         cx: x,
                         cy: y,
@@ -446,7 +446,7 @@ const LongitudinalTradeChart = ({
                       data-html={true}
                     />
                     <circle
-                      key={index + "a"}
+                      key={index + "b"}
                       {...{
                         cx: x,
                         cy: y,

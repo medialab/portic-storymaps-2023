@@ -38,8 +38,10 @@ const TradeDynamicsChart = (props) => {
     atlasMode,
   } = props;
 
+
   const [rows, setRows] = useState(originalRows);
   const [kind, setKind] = useState(originalKind);
+
 
   useEffect(() => setRows(originalRows), [originalRows, setRows]);
   useEffect(() => {
@@ -138,7 +140,7 @@ const TradeDynamicsChart = (props) => {
   ];
 
   const totalRows = Object.entries(rows).reduce(
-    (sum, [id, count]) => sum + count,
+    (sum, [id, flexNumber]) => sum + (+flexNumber),
     0
   );
   const renderRow = (row, rowFlex, rowIndex) => {
@@ -156,7 +158,7 @@ const TradeDynamicsChart = (props) => {
         return (
           <LongitudinalTradeChart
             width={width}
-            height={fixSvgDimension((height / totalRows) * rowFlex)}
+            height={fixSvgDimension((height / (totalRows)) * rowFlex)}
             data={frenchData.filter((d) => d.kind === kind)}
             absoluteField="value"
             regressionField="reg"
