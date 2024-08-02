@@ -1,3 +1,4 @@
+
 import Intro from "./Intro/Intro";
 import TradeDynamics from "./DynamiqueDuCommerce";
 import CorrelationPrix from "./CorrelationPrix";
@@ -13,6 +14,13 @@ import GuerreEtNavigation from './GuerreEtNavigation';
 import GuerreEtLevant from './GuerreEtLevant';
 import GuerreEtCroissance from './GuerreEtCroissance';
 import FonctionnementPortFranc from './FonctionnementPortFranc';
+import PhotoDatasprint from "./About/PhotosDatasprint";
+import ModulesScreencast from "./About/ModulesScreencast";
+import DocumentaireSentendre from "./About/DocumentaireSentendre";
+import MaquettesVisualisations from "./About/MaquettesVisualisations";
+import ProcessusMaj from "./About/ProcessusMaj";
+import SchemasGeneraux from "./About/SchemasGeneraux";
+
 
 const visualizations = {
   intro: Intro,
@@ -30,6 +38,12 @@ const visualizations = {
   "styles-navigation": StylesNavigation,
   "fonctionnement-port-franc": FonctionnementPortFranc,
   "impact-guerre-sur-commerce-et-navigation": GuerreEtCroissance,
+  'photos-datasprint': PhotoDatasprint,
+  'modules-screencast': ModulesScreencast,
+  'documentaire-s-entendre': DocumentaireSentendre,
+  'maquettes-visualisations': MaquettesVisualisations,
+  'processus-maj': ProcessusMaj,
+  'schemas-generaux': SchemasGeneraux,
 };
 
 /**
@@ -66,7 +80,7 @@ export default function VisualizationController({
         <>Les données de cette visualisation n'ont pu être chargées.</>
       )}
 
-      { vizId in visualizations ? (
+      {vizId in visualizations ? (
         visualizations[vizId]({
           data: datasets,
           width,

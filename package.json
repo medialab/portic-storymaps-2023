@@ -45,7 +45,8 @@
     "react-use-scroll-position": "^2.0.0",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "yet-another-react-lightbox": "^3.21.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.12",
