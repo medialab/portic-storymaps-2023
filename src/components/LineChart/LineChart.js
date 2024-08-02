@@ -507,6 +507,7 @@ const LineChart = ({
                           let next;
                           let consecutive;
                           const hasNext = itemIndex < items.length - 1;
+                          
                           if (hasNext) {
                             next = items[itemIndex + 1];
                             consecutive = +item[x.field] + 1 === +next[x.field];

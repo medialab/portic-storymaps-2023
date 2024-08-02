@@ -29,6 +29,12 @@ export default function EffetsGuerreSurLevant({
       orderReversed: -orderMap[d.group]
     }))
     .sort((a, b) => {
+      if (a.year > b.year) {
+        return 1;
+      }
+      return -1;
+    })
+    .sort((a, b) => {
       if (a.order > b.order) {
         return 1;
       }
