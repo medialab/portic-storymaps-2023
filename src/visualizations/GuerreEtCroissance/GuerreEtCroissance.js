@@ -641,7 +641,7 @@ export default function GuerreEtCroissance({
           x={gutter}
           y={topLabelsHeight + rowHeight * .25 + gutter}
           width={sideWidth / 2}
-          height={rowHeight * 2}
+          height={rowHeight * 3}
         >
           <div
             xmlns="http://www.w3.org/1999/xhtml"
