@@ -33,6 +33,7 @@ const Hull = ({
     config: { duration: hourDuration }
   });
   return (
+    <>
     <animated.path
       className="hull"
       style={{
@@ -40,6 +41,7 @@ const Hull = ({
       }}
       d={`M 0 0 L ${width / 3} ${0} L ${width / 3} ${height / 4} L ${width * .6} ${height / 4} L ${width * .6} 0 L ${width} 0 L ${bottomRightX} ${height} L ${bottomLeftX} ${height} Z`}
     />
+    </>
   )
 
 }
@@ -90,11 +92,19 @@ const Sail = ({
 
   return (
     <>
+
       <animated.polygon
         points={points}
         className="sail"
         style={{
           fill: color
+        }}
+      />
+      <animated.polygon
+        points={points}
+        className="sail"
+        style={{
+          fill: 'url(#diagonalHatch)'
         }}
       />
     </>
@@ -501,6 +511,17 @@ const BoatsIllustration = ({
           />
         ))
       }
+      <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="4" height="4">
+        <path
+          d="M-1,1 l2,-2
+                M0,4 l4,-4
+                M3,5 l2,-2"
+          style={{
+            stroke: 'rgba(255,255,255,0.5)',
+            strokeWidth: .5
+          }}
+        />
+      </pattern>
     </svg>
   )
 }

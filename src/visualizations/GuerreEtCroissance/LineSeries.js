@@ -55,7 +55,8 @@ const LineSeries = ({
     yTickSpan = 500000;
   }
   const avgMem = data[0].avg_loss_mem.split(' ').pop().replace('memoire', '');
-  const slope = data[0].slope.split(' ').pop();
+  let slope = data[0].slope.split(' ').pop();
+  slope = lang === 'fr' ? slope : slope.replace('an', 'year')
   // const avgNoMem = data[0].avg_loss_no_mem.split(' ').pop().replace('memoire', '');
 
   const yScale = scaleLinear().domain(yDomain).range([height - gutter, gutter * 2]).nice();
@@ -244,7 +245,7 @@ const LineSeries = ({
             x={gutter / 2}
             y={gutter * 2}
             height={gutter * 2}
-            width={gutter * 5 + 2}
+            width={gutter * 10 + 2}
           >
             <div
               xmlns="http://www.w3.org/1999/xhtml"
