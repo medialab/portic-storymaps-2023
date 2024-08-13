@@ -1,328 +1,23 @@
 import { groupBy, range } from "lodash";
-import { useEffect, useState } from "react"
-
-const seriesLabels = {
-  'total': 'total',
-  'imports': 'importations',
-  'exports': 'exportations',
-  'total_no_colonial_product': 'total (sans produits coloniaux)',
-  'total_no_colonial_trade': 'total (sans commerce colonial)',
-  'imports_no_colonial_product': 'importations (sans produits coloniaux)',
-  'exports_no_colonial_product': 'exportations (sans produits coloniaux)',
-  'imports_no_colonial_trade': 'importations (sans commerce colonial)',
-  'exports_no_colonial_trade': 'exportations (sans commerce colonial)',
-  'navigation': 'navigation de Marseille'
-}
+import React, { useEffect, useMemo, useState } from "react"
 
 import './GuerreEtCroissance.scss';
 import { scaleLinear } from "d3-scale";
 import { extent, max } from "d3-array";
 import { formatNumber } from "../../utils/misc";
 import ReactTooltip from "react-tooltip";
+import translate from "../../utils/translate";
+import LineSeries from "./LineSeries";
 
 const MIN_YEAR = 1720;
 const MAX_YEAR = 1790;
-
-const WARS = [
-  {
-    start: 1744,
-    end: 1748,
-    name: 'succession Autriche'
-  },
-  {
-    start: 1756,
-    end: 1763,
-    name: 'sept ans'
-  },
-  {
-    start: 1776,
-    end: 1783,
-    name: 'indépendance américaine'
-  },
-];
-
-const LineSeries = ({
-  width,
-  height,
-  data: inputData,
-  xScale,
-  yDomain: initialYDomain,
-  gutter,
-  displayYTicks,
-  activeYear,
-  onSetActiveYear,
-  tickFormat,
-  id,
-}) => {
-  if (!inputData || !inputData[0]) {
-    return null;
-  }
-  const data = inputData.filter(d => d.value > 0)
-  // .map(d => {
-  //   let cleanSlope = 0;
-  //   if (d.slope.length) {
-  //     const part2 = d.slope.split(' ').pop();
-  //     cleanSlope = +part2.split('%')[0]
-  //   }
-  //   return {
-  //     ...d,
-  //     cleanSlope,
-  //   }
-  // })
-  let cleanSlope = 0;
-  if (inputData[0].slope.length) {
-    const part2 = inputData[0].slope.split(' ').pop();
-    cleanSlope = +part2.split('%')[0]
-  }
-  const yDomain = initialYDomain || [0, max(data.map(d => d.value))];
-  let yTickSpan = 50000000;
-  if (yDomain[1] <= 10000) {
-    yTickSpan = 500;
-  } else if (yDomain[1] <= 1000000) {
-    yTickSpan = 50000;
-  } else if (yDomain[1] <= 5000000) {
-    yTickSpan = 500000;
-  }
-  const avgMem = data[0].avg_loss_mem.split(' ').pop().replace('memoire', '');
-  const slope = data[0].slope.split(' ').pop();
-  // const avgNoMem = data[0].avg_loss_no_mem.split(' ').pop().replace('memoire', '');
-
-  const yScale = scaleLinear().domain(yDomain).range([height - gutter, gutter * 2]).nice();
-  const yAxisTickValues = range(yDomain[0], yDomain[1] + yTickSpan, yTickSpan);
-  const endX = xScale(MAX_YEAR + 10);
-  let tickFontSize = width / 25;
-  if (tickFontSize < 6) {
-    tickFontSize = 6;
-  }
-  // const slopeExtent = extent(data.map(d => d.cleanSlope));
-  // const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['red', 'green'])
-  const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['lightgrey', '#336D7C']);
-  const lossColorScale = scaleLinear().domain([-60, 60]).range(['#FEA43B', 'green']);
-  // console.log(data.map(d => !d.slope.length ? 0 : (d.slope.split(' ')[1].split('%')[0])))
-  return (
-    <g className="LineSeries">
-      <rect x={0} y={gutter * 2} width={endX} height={height - gutter * 3} fill="rgba(0,0,0,0)" />
-      {
-        yAxisTickValues
-          .map(value => {
-            const y = yScale(value);
-            return (
-              <g key={value}
-                className="axis-tick-group">
-                <line
-                  stroke="grey"
-                  strokeDasharray={'2,2'}
-                  x1={0}
-                  x2={endX}
-                  y1={y}
-                  y2={y}
-                />
-                {
-                  displayYTicks ?
-                    <>
-                      <line
-                        x1={endX}
-                        x2={endX + gutter / 4}
-                        y1={y}
-                        y2={y}
-                        stroke="grey"
-                      />
-
-                      <text
-                        x={endX + gutter / 2}
-                        y={y + tickFontSize / 4}
-                        fontSize={tickFontSize}
-                      >
-                        {tickFormat(value)}
-                      </text>
-
-                    </>
-                    : null
-                }
-
-              </g>
-            )
-          })
-      }
-      <g className="wars">
-        {
-          WARS.map(({ start, end, name }) => {
-            const x1 = xScale(start);
-            const x2 = xScale(end);
-            return (
-              <rect
-                key={name}
-                title={name}
-                x={x1}
-                y={gutter * 2}
-                width={x2 - x1}
-                height={height - gutter * 3}
-                fill="url(#diagonalHatch)"
-                opacity={.5}
-                stroke="none"
-              />
-            )
-          })
-        }
-      </g>
-      {
-        activeYear ?
-          <line
-            x1={xScale(activeYear)}
-            x2={xScale(activeYear)}
-            y1={gutter * 2}
-            y2={height - gutter}
-            stroke="black"
-            strokeDasharray={'2,2'}
-          />
-          : null
-      }
-      {
-        data
-          .map(({ year: year1, value: value1 }, index) => {
-            const next = data[index + 1];
-            if (!next || next.year !== year1 + 1) {
-              return null;
-            }
-            const { year: year2, value: value2 } = next;
-            const x1 = xScale(year1);
-            const y1 = yScale(value1);
-            const x2 = xScale(year2);
-            const y2 = yScale(value2);
-            return (
-              <line
-                key={year1}
-                stroke="black"
-                x1={x1}
-                y1={y1}
-                x2={x2}
-                y2={y2}
-              />
-            )
-          })
-      }
-      {
-        inputData
-          .map(({ year: year1, peace_reg_memory: value1 }, index) => {
-            const next = inputData[index + 1];
-            if (!next) {
-              return null;
-            }
-            const { year: year2, peace_reg_memory: value2 } = next;
-            if (value1 === 0 || value2 === 0) {
-              return null;
-            }
-            const x1 = xScale(year1);
-            const y1 = yScale(value1);
-            const x2 = xScale(year2);
-            const y2 = yScale(value2);
-            return (
-              <line
-                key={year1}
-                stroke="red"
-                strokeWidth={2}
-                x1={x1}
-                y1={y1}
-                x2={x2}
-                y2={y2}
-              />
-            )
-          })
-      }
-
-      {
-        data
-          .map(({ year, value }) => {
-            const x = xScale(year);
-            const y = yScale(value);
-            const isActive = activeYear === year;
-            return (
-              <g key={year}>
-                <circle
-                  fill="transparent"
-                  cx={x}
-                  cy={y}
-                  r={isActive ? width / data.length * 5 : width / data.length * 2}
-                  onMouseEnter={() => onSetActiveYear(year)}
-                  onMouseLeave={() => onSetActiveYear()}
-                  data-for="guerre-tooltip"
-                  data-tip={`En ${year}, valeur de ${formatNumber(parseInt(value))} (perte de ${formatNumber(parseInt(data.find(d => d.year === year).peace_reg_memory))})`}
-                />
-                <circle
-                  fill={isActive ? 'black' : "black"}
-                  cx={x}
-                  cy={y}
-                  r={isActive ? 3 : 1.5}
-                  style={{ pointerEvents: 'none' }}
-                />
-              </g>
-            )
-          })
-      }
-      {
-        slope ?
-          <foreignObject
-            x={gutter / 2}
-            y={gutter * 2}
-            height={gutter * 2}
-            width={gutter * 5 + 2}
-          >
-            <div
-              xmlns="http://www.w3.org/1999/xhtml"
-              className="slope"
-              style={{
-                fontSize: tickFontSize * 1.5,
-                fontWeight: '900',
-                color: slopeColorScale(cleanSlope),
-                // color: 'white',
-                width: '100%',
-                height: '100%',
-              }}
-            >
-              {slope}
-            </div>
-          </foreignObject>
-          : null
-      }
-
-      {/* <text
-        fill={'blue'}
-        x={gutter / 2}
-        y={gutter * 3}
-        fontSize={tickFontSize * 1.5}
-        fontWeight="bold"
-        textAnchor="start"
-      >
-        {slope}
-      </text> */}
-      <text
-        fill={lossColorScale(+avgMem.split('%')[0])}
-        x={endX - gutter / 2}
-        y={id === 'navigation' ? height - gutter - 2 : gutter * 3}
-        fontSize={tickFontSize * 1.5}
-        fontWeight="bold"
-        textAnchor="end"
-      >
-        {(+avgMem.split('%')[0] > 0 ? '+' : '') + avgMem}
-      </text>
-      {/* <text
-        fill={'orange'}
-        x={endX - gutter / 2}
-        y={gutter * 4}
-        fontSize={tickFontSize * 1.5}
-        textAnchor="end"
-      >
-        {avgNoMem}
-      </text> */}
-    </g>
-  )
-}
 
 export default function GuerreEtCroissance({
   width,
   height,
   data: inputData,
   callerProps = {},
+  lang,
   atlasMode,
 }) {
   const {
@@ -362,7 +57,9 @@ export default function GuerreEtCroissance({
   useEffect(() => setVisibleSeries(series ? series.split(',').map(s => s.trim()) : defaultSeries), [series]);
   useEffect(() => setVisibleDirections(directions ? directions.split(',').map(d => d.trim()) : defaultDirections), [directions]);
   useEffect(() => setNavigationMetric(navigation_metric || defaultNavigationMetric), [navigation_metric]);
-
+  useEffect(() => {
+    ReactTooltip.rebuild();
+  }, [lang, visibleSeries, visibleDirections])
   // const data = useMemo(() => {
   const cleanData = (inputData.get('impact-guerre-sur-croissance.csv') || []).map(datum => ({
     ...datum,
@@ -392,25 +89,25 @@ export default function GuerreEtCroissance({
     {
       id: 'carrière',
       source: 'Carriere',
-      label: 'Carrière',
+      label: translate('GuerreEtCroissance', 'navigation-interface-carriere', lang),
       tickFormat: d => formatNumber(d) + ' u.'
     },
     {
       id: 'entrées',
       source: 'Navigo entrées',
-      label: 'Nombre d\'entrées (Navigocorpus)',
+      label: translate('GuerreEtCroissance', 'navigation-interface-arrivals', lang),
       tickFormat: d => formatNumber(d) + ' u.'
     },
     {
       id: 'tonnage',
       source: 'Navigo tonnage',
-      label: 'Tonnage estimé (Navigocorpus)',
+      label: translate('GuerreEtCroissance', 'navigation-interface-tonnage', lang),
       tickFormat: d => formatNumber(d) + ' tx.'
     },
     {
       id: 'mileage',
       source: 'Navigo mileage_total',
-      label: 'Distance (Navigocorpus)',
+      label: translate('GuerreEtCroissance', 'navigation-interface-distance', lang),
       tickFormat: d => formatNumber(d) + ' m.'
     },
   ];
@@ -418,7 +115,38 @@ export default function GuerreEtCroissance({
   const activeNavigationTickFormat = navigationSources.find(({ id }) => id === navigationMetric).tickFormat;
   const xAxisValues = range(MIN_YEAR, MAX_YEAR + 20, 20);
   // const legendX = sideWidth + (visibleDirections.length >= 4 ? cellWidth * 2.5 : cellWidth * 1.5) + gutter * 2;
+  const seriesLabels = useMemo(() => {
+    return {
+      'total': translate('GuerreEtCroissance', 'total', lang), 
+      'imports': translate('GuerreEtCroissance', 'imports', lang),
+      'exports': translate('GuerreEtCroissance', 'exports', lang),
+      'total_no_colonial_product': translate('GuerreEtCroissance', 'total_no_colonial_product', lang),
+      'total_no_colonial_trade': translate('GuerreEtCroissance', 'total_no_colonial_trade', lang),
+      'imports_no_colonial_product': translate('GuerreEtCroissance', 'imports_no_colonial_product', lang),
+      'exports_no_colonial_product': translate('GuerreEtCroissance', 'exports_no_colonial_product', lang),
+      'imports_no_colonial_trade': translate('GuerreEtCroissance', 'imports_no_colonial_trade', lang),
+      'exports_no_colonial_trade': translate('GuerreEtCroissance', 'exports_no_colonial_trade', lang),
+      'navigation': translate('GuerreEtCroissance', 'navigation', lang),
+    }
+  }, [translate, lang]);
 
+  const wars = [
+    {
+      start: 1744,
+      end: 1748,
+      name: 'succession Autriche'
+    },
+    {
+      start: 1756,
+      end: 1763,
+      name: 'sept ans'
+    },
+    {
+      start: 1776,
+      end: 1783,
+      name: 'indépendance américaine'
+    },
+  ];
   return (
     <>
       <svg
@@ -562,6 +290,9 @@ export default function GuerreEtCroissance({
                           onSetActiveYear={y => setActiveYear(y)}
                           xScale={xScale}
                           gutter={gutter}
+                          seriesLabels={seriesLabels}
+                          wars={wars}
+                          lang={lang}
                           displayYTicks
                         />
                         :
@@ -586,6 +317,9 @@ export default function GuerreEtCroissance({
                                 activeYear={activeYear}
                                 onSetActiveYear={y => setActiveYear(y)}
                                 gutter={gutter}
+                                seriesLabels={seriesLabels}
+                                wars={wars}
+                                lang={lang}
                                 displayYTicks={index === visibleDirections.length - 1}
                               />
                             </g>
@@ -610,7 +344,7 @@ export default function GuerreEtCroissance({
             className="navigation-ui-container"
           >
             <p>
-              <strong>← Données de navigation</strong>
+              <strong>← {translate('GuerreEtCroissance', 'navigation-interface-title', lang)}</strong>
             </p>
             <ul>
               {
@@ -648,7 +382,7 @@ export default function GuerreEtCroissance({
             className="legend"
           >
             <h4>
-              Légende
+              {translate('GuerreEtCroissance', 'legend-title', lang)}
             </h4>
             <ul>
               <li>
@@ -659,7 +393,7 @@ export default function GuerreEtCroissance({
                     display: 'inline-block',
                   }}
                 ></span>
-                <span>Projection d'une valeur estimée par régression à partir de la période de paix précédente</span>
+                <span>{translate('GuerreEtCroissance', 'legend-slope', lang)}</span>
               </li>
               <li>
                 <span
@@ -667,9 +401,9 @@ export default function GuerreEtCroissance({
                     color: '#336D7C'
                   }}
                 >
-                  +1%/an
+                  +1%/{translate('GuerreEtCroissance', 'year', lang)}
                 </span>
-                <span>Croissance annuelle moyenne</span>
+                <span>{translate('GuerreEtCroissance', 'legend-growth', lang)}</span>
               </li>
               <li>
                 <span>
@@ -688,7 +422,7 @@ export default function GuerreEtCroissance({
                     +2%
                   </span>
                 </span>
-                <span>Moyenne de l'estimation de la perte ou du gain en temps de guerre</span>
+                <span>{translate('GuerreEtCroissance', 'legend-loss', lang)}</span>
               </li>
             </ul>
           </div>
@@ -723,18 +457,20 @@ export default function GuerreEtCroissance({
               y={topLabelsHeight - 10}
               width={sideWidth * 1.5}
               height={height}
-              style={{pointerEvents: 'none'}}
+              style={{ pointerEvents: 'none' }}
             >
-              <div className="controls-container" style={{pointerEvents: 'all'}}>
+              <div className="controls-container" style={{ pointerEvents: 'all' }}>
                 <button
                   className={`btn ${controlsVisible ? 'is-active' : ''}`}
                   onClick={() => setControlsVisible(!controlsVisible)}
                 >
-                  Afficher ...
+                  {translate('GuerreEtCroissance', 'filters-title', lang)}
                 </button>
                 <div className={`collapsable-controls ${controlsVisible ? 'is-visible' : ''}`}>
-                  
-                  <p>Afficher les directions :</p>
+
+                  <p>
+                  {translate('GuerreEtCroissance', 'filters-directions-title', lang)}
+                  </p>
                   <ul>
                     {
                       defaultDirections
@@ -755,7 +491,9 @@ export default function GuerreEtCroissance({
                         })
                     }
                   </ul>
-                  <p>Afficher les séries : </p>
+                  <p>
+                  {translate('GuerreEtCroissance', 'filters-series-title', lang)}
+                  </p>
                   <ul>
                     {
                       defaultSeries
@@ -770,7 +508,7 @@ export default function GuerreEtCroissance({
                           }
                           return (
                             <li style={{ fontWeight: isVisible ? 800 : 400, opacity: isVisible ? 1 : .5, cursor: 'pointer' }} onClick={handleClick} key={series}>
-                              {series}
+                              {translate('GuerreEtCroissance', series, lang)}
                             </li>
                           )
                         })

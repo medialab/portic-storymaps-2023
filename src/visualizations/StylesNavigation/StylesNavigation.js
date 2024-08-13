@@ -178,6 +178,7 @@ export default function StylesNavigation({
     categorie
   } = callerProps;
   const [highlightedTonnage, setHighlightedTonnage] = useState(tonnage);
+  console.log(highlightedTonnage);
   const [highlightedSteps, setHighlightedSteps] = useState(steps);
   const [highlightedCategory, setHighlightedCategory] = useState(categorie);
   // reset from caller props change

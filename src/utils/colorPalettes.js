@@ -25,7 +25,7 @@ const colorsPalettes = {
     Provence: "#668EDB",
     Lyonnais: "#41BEA3",
     Languedoc: "#A7E6F9",
-    
+
     Corse: "#514EEE",
     'Isles de Corse': "#514EEE",
   },
@@ -174,21 +174,53 @@ const colorsPalettes = {
   provenanceCountries: {
     France: '#EE7993',
     'Empire ottoman': '#019d2f',
-
     'Péninsule italienne': '#E27A0B',
     Espagne: '#E25C0B',
     'Provinces-Unies': '#c8c8f0',
     'Grande-Bretagne et colonies (Terre-Neuve)': '#c9072a',
     autre: '#c4c4c4',
+    fr: {
+      France: '#EE7993',
+      'Empire ottoman': '#019d2f',
+      'Péninsule italienne': '#E27A0B',
+      Espagne: '#E25C0B',
+      'Provinces-Unies': '#c8c8f0',
+      'Grande-Bretagne et colonies (Terre-Neuve)': '#c9072a',
+      Autres: '#c4c4c4',
+    },
+    en: {
+      France: '#EE7993',
+      'Ottoman empire': '#019d2f',
+      'Italian peninsula': '#E27A0B',
+      Spain: '#E25C0B',
+      'United provinces': '#c8c8f0',
+      'Great Britain and colonies (Newfoundland)': '#c9072a',
+      Others: '#c4c4c4',
+    }
   },
   partnersGrouped: {
     'Levant & Barbarie': '#019d2f',
     'Italie & Espagne': '#DFBD3A',
     'Angleterre & Amérique du Nord': '#c9072a',
     'Colonies françaises': '#E5881A',
-    // 'Colonies': '#E5881A',
     'Nord, Hollande & Flandres': '#c8c8f0',
     'total': '#c4c4c4',
+    en: {
+      'Levant & Barbary': '#019d2f',
+    'Italy & Spain': '#DFBD3A',
+    'England & North America': '#c9072a',
+    'French colonies': '#E5881A',
+    'North, Holland & Flanders': '#c8c8f0',
+    'total': '#c4c4c4',
+    },
+    fr: {
+      'Levant & Barbarie': '#019d2f',
+    'Italie & Espagne': '#DFBD3A',
+    'Angleterre & Amérique du Nord': '#c9072a',
+    'Colonies françaises': '#E5881A',
+    'Nord, Hollande & Flandres': '#c8c8f0',
+    'total': '#c4c4c4',
+    }
   },
   Marseille: 'red',
   warStatus: {

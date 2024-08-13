@@ -14,7 +14,7 @@ menu:
     en: home
   atlas:
     fr: Atlas
-    en: visualizations atlas
+    en: Atlas
 about:
   title:
     fr: À propos
@@ -22,7 +22,7 @@ about:
 atlas:
   title:
     fr: Atlas
-    en: Visualizations atlas
+    en: Atlas
 vizFocus:
   description:
     fr: De quoi s'agit t'il ?
@@ -175,13 +175,13 @@ exportations-sud-est:
 StylesNavigation:
   title-mediterrannee:
     fr: Europe méditerranéenne (${count} voyages vers Marseille consignés en temps de paix)
-    en: Mediterrannean Europe (${count} voyages vers Marseille consignés en temps de paix)
+    en: Mediterrannean europe (${count} travels to Marseille consigned in peacetime)
   title-ponant:
     fr: Ponant et Terre-Neuve (${count} voyages vers Marseille consignés en temps de paix)
-    en: Ponant et Terre-Neuve (${count} voyages vers Marseille consignés en temps de paix)
+    en: Ponant and Newfoundland (${count} travels to Marseille consigned in peacetime)
   title-ottoman:
     fr: Empire ottoman et mer Noire (${count} voyages vers Marseille consignés en temps de paix)
-    en: Empire ottoman et mer Noire (${count} voyages vers Marseille consignés en temps de paix)
+    en: Ottoman empire and Black sea (${count} travels to Marseille consigned in peacetime)
   number-of-travels:
     fr: nombre de voyages
     en: number of travels
@@ -199,13 +199,13 @@ StylesNavigation:
     en: number of steps
   steps-bar-tooltip:
     fr: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires sont venus à Marseille en faisant ${nb_steps} étapes.
-    en: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires sont venus à Marseille en faisant ${nb_steps} étapes.
+    en: During the years of peace available in the data (1749, 1769, 1787, 1789), ${count} ships came to Marseille making ${nb_steps}.
   tonnage-bar-tooltip:
     fr: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille.
-    en: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille.
+    en: During the years of peace available in the data (1749, 1769, 1787, 1789), ${count} ships with an estimated tonnage of ${tonnage} came to Marseille.
   intersection-tooltip:
     fr: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.
-    en: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.
+    en: During the years of peace available in the data (1749, 1769, 1787, 1789), ${count} ships with an estimated tonnage of ${tonnage} tonnes came to Marseille making ${nb_steps}.
 FonctionnementPortFranc:
   reseau-complet:
     fr: Réseau complet
@@ -216,7 +216,7 @@ FonctionnementPortFranc:
 GuerreEtNavigation:
   atlas-title:
     fr: Les acteurs de la navigation à destination de Marseille (en tonnage estimé)
-    en: Les actors de la navigation à destination de Marseille (en tonnage estimé)
+    en: Shipping to Marseille (in estimated tonnage)
 WarTransferChart:
   peace-year:
     fr: année de paix
@@ -241,23 +241,23 @@ WarTransferChart:
     en: at war, ennemy of France
   tooltip-peace:
     fr: Entre ${start} et ${end}, le tonnage cumulé estimé des navires du groupe ${group} est passé de ${from}% à ${to}% de la navigation vers Marseille.
-    en: Entre ${start} et ${end}, le tonnage cumulé estimé des navires du groupe ${group} est passé de ${from}% à ${to}% de la navigation vers Marseille.
+    en: Between ${start} and ${end}, the estimated cumulative tonnage of ${group} ships increased from ${from}% to ${to}% of shipping to Marseille.
   tooltip-war:
     fr: Entre ${start} et ${end}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${end} est passé de ${from}% à ${to}% de la navigation vers Marseille.
-    en: Entre ${start} et ${end}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${end} est passé de ${from}% à ${to}% de la navigation vers Marseille.
+    en: Between ${start} and ${end}, the estimated cumulative tonnage of the ships that were to become ${group} in ${end} rose from ${from}% to ${to}% of shipping to Marseille.
 Intro:
   title-navigo-world:
     fr: Pays étrangers de départ des navires à destination de Marseille en 1789
-    en: Pays étrangers de départ des navires à destination de Marseille en 1789
+    en: Foreign countries of departure for ships bound for Marseille in 1789
   title-navigo-france:
-    fr: Sorties des 10 plus grands ports de France en 1787
-    en: Sorties des 10 plus grands ports de France en 1787
+    fr: Sorties des ${number} plus grands ports de France en 1787
+    en: Departures from the ${number} top ports in France in 1787
   title-trade-world:
     fr: Partenaires de commerce de Marseille en 1789
-    en: Partenaires de commerce de Marseille en 1789
+    en: Marseille's trading partners in 1789
   title-trade-france:
     fr: Commerce des directions des fermes de France en 1789
-    en: Commerce des directions des fermes de France en 1789
+    en: Trade of the directions des fermes of France in 1789
   scale:
     fr: Échelle
     en: Scale
@@ -284,10 +284,10 @@ Intro:
     en: Display ${count} top ports
   number-of-travels:
     fr: nombre de voyages
-    en: nombre de voyages
+    en: number of travels
   mean-tonnage:
     fr: tonnage moyen
-    en: tonnage moyen
+    en: mean tonnage
   total-trade:
     fr: Commerce total
     en: Total trade
@@ -296,20 +296,26 @@ Intro:
     en: ${count} travels
   tooltip-navigo-world:
     fr: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
-    en: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
+    en: ${nb_ships} travels were made from the ports of ${partner} to Marseille in 1789, for a mean tonnage of ${tonnage}.
   tooltip-navigo-france:
     fr: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
-    en: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
+    en: ${nb_ships} travels were made from the ports of ${partner} to Marseille in 1789, for a mean tonnage of ${tonnage}.
   tooltip-trade-world:
     fr: La direction des fermes de Marseille a effectué un commerce total de ${count} lt. avec le partenaire ${partner} en 1789.
-    en: La direction des fermes de Marseille a effectué un commerce total de ${count} lt. avec le partenaire ${partner} en 1789.
+    en: The direction des fermes of Marseille carried out a total trade of ${count} lt. with partner ${partner}.
   tooltip-trade-france:
     fr: La direction des fermes de ${partner} a effectué un commerce total de ${count} lt. en 1789.
-    en: La direction des fermes de ${partner} a effectué un commerce total de ${count} lt. en 1789.
+    en: The direction des fermes of ${partner} carried on a total trade of ${count} lt. in 1789.
 LevantNavigation:
+  title:
+    fr: Le Levant du point de vue de la navigation
+    en: The Levant from the point of view of navigation
+  legend-title:
+    fr: Légende
+    en: Legend
   tooltip:
-    fr: Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${tonnage} tonneaux</strong> cumulés.
-    en: Selon le register des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${tonnage} tonneaux</strong> cumulés.
+    fr: Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers le port phocéen dans les sept années étudiées, pour un total estimé de <strong>${tonnage} tonneaux</strong> cumulés.
+    en: According to the registre des patentes de Marseille, <strong>${count}&nbsp;ships</strong> went from the port of <strong>${port}</strong> to the port of Marseille in one of the seven years studies, for an estimated total tonnage of <strong>${tonnage}&nbsp;tonneaux</strong>.
 MarseillePortStructurant:
   legend:
     fr: Légende
@@ -319,10 +325,10 @@ MarseillePortStructurant:
     en: share of departures to Marseille
   legend-nb-departures:
     fr: nombre de départs en 1789
-    en: number de départs en 1789
+    en: number of departures in 1789
   port-tooltip:
     fr: En 1789, ${count_total} navires sont partis du port de ${port}, dont ${count} (${ratio}%) vers Marseille.
-    en: En 1789, ${count_total} navires sont partis du port de ${port}, dont ${count} (${ratio}%) vers Marseille.
+    en: In 1789, ${count_total} ships left the port of ${port}, including ${count} (${ratio}%) for Marseille.
 DiversiteProduits:
   concentrated-trade:
     fr: commerce concentré
@@ -332,23 +338,23 @@ DiversiteProduits:
     en: diversified trade
   tooltip:
     fr: En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${count}%.
-    en: En ${year}, la concentration des exports de la direction des fermes de ${direction} était de ${count}%.
+    en: In ${year}, the concentration of exports from ${direction} direction des fermes was ${count}%.
 PartDesEtrangersDansNavigation:
   comparison-row-title:
     fr: Part de navires étrangers partis de France en 1787 (tonnage cumulé)
-    en: Share de navires étrangers partis de France en 1787 (tonnage cumulé)
+    en: Share of foreign ships leaving France in 1787 (cumulative tonnage)
   marseille-row-title:
     fr: Pavillon des navires étrangers arrivés à Marseille en 1789 (tonnage cumulé estimé)
-    en: Pavillon des navires étrangers arrivés à Marseille en 1789 (tonnage cumulé estimé)
+    en: Flag of foreign ships arriving in Marseille in 1789 (estimated cumulative tonnage)
   ins:
     fr: entrées
     en: in
   top-row-tooltip:
-    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}%) du total des étrangers).
-    en: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}%) du total des étrangers).
+    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} (${pct}% du total des étrangers).
+    en: In 1789, a total of ${tonnage} tonneaux arriving in Marseille were handled by ${label} (${pct}% of the total number of foreigners).
   bottom-row-tooltip:
-    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}%) du total des étrangers).
-    en: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}%) du total des étrangers).
+    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}% du total des étrangers).
+    en: In 1789, a total of ${tonnage} tonneaux arriving in Marseille were handled by ${label} (${pct}% of the total number of foreigners).
   gênois:
     fr: gênois
     en: genoese
@@ -392,3 +398,159 @@ CommentedImage:
   click-prompt:
     fr: Cliquer pour consulter
     en: Click to expand
+PartDesFrancaisDansProvenance:
+  top-title:
+    fr: Part des navires français dans les provenances de voyages arrivés à Marseille
+    en: Share of French ships in the origin of voyages arriving in Marseille
+  top-y-axis:
+    fr: Part des n. français
+    en: Share of french sh.
+  top-tooltip:
+    fr: En ${year}, ${share}% des voyages partis de ports de ${state} et arrivés à Marseille étaient assurés par des navires français (${tonnage} tx. cumulés)
+    en: In ${year}, ${share}% of travels from ports of ${state} to Marseille were done by french ships (cumulative tonnage of ${tonnage})
+  bottom-title:
+    fr: Tonnage estimé des navires français dans les provenances de voyages arrivés à Marseille
+    en: Estimated tonnage of French ships in the origins of voyages arriving in Marseille
+  bottom-tooltip:
+    fr: En ${year}, ${share}% des voyages partis de ports de ${state} et arrivés à Marseille étaient assurés par des navires français (${tonnage} tx. cumulés)
+    en: In ${year}, ${share}% of travels from ports of ${state} to Marseille were done by french ships (cumulative tonnage of ${tonnage})
+  bottom-y-axis:
+    fr: Tonnage cum.
+    en: Cumulative t.
+  legend-title:
+    fr: Provenance du voyage
+    en: Origin of the trip
+  provenance-italy:
+    fr: Péninsule italienne
+    en: Italian peninsula
+  provenance-spain:
+    fr: Espagne
+    en: Spain
+  provenance-ottoman:
+    fr: Empire ottoman
+    en: Ottoman empire
+  provenance-dutch:
+    fr: Provinces-Unies
+    en: United provinces
+  provenance-uk:
+    fr: Grande-Bretagne et colonies (Terre-Neuve)
+    en: Great Britain and colonies (Newfoundland)
+  provenance-france:
+    fr: France
+    en: France
+  provenance-other:
+    fr: Autres
+    en: Others
+EffetsGuerreSurLevant:
+  title:
+    fr: Principaux partenaires étrangers des importations de Marseille
+    en: Main foreign partners for Marseille imports
+  top-y-axis:
+    fr: valeur des import°s
+    en: imports value
+  top-x-axis:
+    fr: année
+    en: year
+  top-tooltip:
+    fr: En ${year}, Marseille a importé ${value} lt. depuis les partenaires ${particule} ${group}
+    en: In ${year}, Marseille imported ${value} lt. from partners of ${group}
+  bottom-y-axis:
+    fr: part des import°s
+    en: share of imports
+  bottom-x-axis:
+    fr: année
+    en: year
+  bottom-tooltip:
+    fr: En ${year}, Marseille a importé ${share}% de sa valeur depuis les partenaires ${group}
+    en: In ${year}, Marseille imported ${share}% of its value from partners of ${group}
+  group-levant-barbarie:
+    fr: Levant & Barbarie
+    en: Levant & Barbary
+  group-italie-espagne:
+    fr: Italie & Espagne
+    en: Italy & Spain
+  group-angleterre:
+    fr: Angleterre & Amérique du Nord
+    en: England & North America
+  group-colonies:
+    fr: Colonies françaises
+    en: French colonies
+  group-nord:
+    fr: Nord, Hollande & Flandres
+    en: North, Holland & Flanders
+  group-total:
+    fr: total
+    en: total
+GuerreEtCroissance:
+  total: 
+    fr: total
+    en: total
+  imports: 
+    fr: importations
+    en: imports
+  exports: 
+    fr: exportations
+    en: exports
+  total_no_colonial_product: 
+    fr: total (sans produits coloniaux)
+    en: total (without colonial products)
+  total_no_colonial_trade: 
+    fr: total (sans commerce colonial)
+    en: total (without colonial trade)
+  imports_no_colonial_product: 
+    fr: importations (sans produits coloniaux)
+    en: imports (without colonial products)
+  exports_no_colonial_product: 
+    fr: exportations (sans produits coloniaux)
+    en: exports (without colonial products)
+  imports_no_colonial_trade: 
+    fr: importations (sans commerce colonial)
+    en: imports (without colonial trade)
+  exports_no_colonial_trade: 
+    fr: exportations (sans commerce colonial)
+    en: exports (without colonial trade)
+  navigation: 
+    fr: navigation de Marseille
+    en: Marseille navigation
+  legend-title:
+    fr: Légende
+    en: Legend
+  legend-slope:
+    fr: Projection d'une valeur estimée par régression à partir de la période de paix précédente
+    en: Projection of a value estimated by regression from the previous peace period
+  legend-growth:
+    fr: Croissance annuelle moyenne
+    en: Average annual growth
+  legend-loss:
+    fr: Moyenne de l'estimation de la perte ou du gain en temps de guerre
+    en: Average estimate of wartime loss or gain
+  navigation-interface-title:
+    fr: Données de navigation
+    en: Navigation data
+  navigation-interface-carriere:
+    fr: Sources de Carrière
+    en: Carrière sources
+  navigation-interface-arrivals:
+    fr: Nombre d'entrées (Navigocorpus)
+    en: Number of arrivals (Navigocorpus)
+  navigation-interface-tonnage:
+    fr: Tonnage estimé (Navigocorpus)
+    en: Estimated tonnage (Navigocorpus)
+  navigation-interface-distance:
+    fr: Distance (Navigocorpus)
+    en: Distance (Navigocorpus)
+  year:
+    fr: an
+    en: year
+  tooltip:
+    fr: En ${year}, valeur de ${value} lt. (perte de ${loss} lt.)
+    en: In ${year}, value of ${value} lt. (loss of ${loss} lt.)
+  filters-title:
+    fr: Afficher ...
+    en: Display ...
+  filters-directions-title:
+    fr: "Afficher les directions :"
+    en: "Display directions:"
+  filters-series-title:
+    fr: "Afficher les séries :"
+    en: "Display series:"

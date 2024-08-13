@@ -47,7 +47,7 @@ const Intro = ({
     if (dataScope === 'world') {
       title = translate('Intro', 'title-navigo-world', lang)// 'Pays étrangers de départ des navires à destination de Marseille en 1789';
     } else {
-      title = translate('Intro', 'title-navigo-france', lang) // 'Sorties des 10 plus grands ports de France en 1787';
+      title = translate('Intro', 'title-navigo-france', lang, {number: topPortsNumber}) // 'Sorties des 10 plus grands ports de France en 1787';
     }
   } else {
     if (dataScope === 'world') {

@@ -1,0 +1,299 @@
+import { range } from "lodash";
+
+import './GuerreEtCroissance.scss';
+import { scaleLinear } from "d3-scale";
+import { max } from "d3-array";
+import { formatNumber } from "../../utils/misc";
+import translate from "../../utils/translate";
+
+const MIN_YEAR = 1720;
+const MAX_YEAR = 1790;
+
+const LineSeries = ({
+  width,
+  height,
+  data: inputData,
+  xScale,
+  yDomain: initialYDomain,
+  seriesLabels,
+  gutter,
+  displayYTicks,
+  activeYear,
+  onSetActiveYear,
+  tickFormat,
+  lang,
+  wars,
+  id,
+}) => {
+  if (!inputData || !inputData[0]) {
+    return null;
+  }
+  const data = inputData.filter(d => d.value > 0)
+  // .map(d => {
+  //   let cleanSlope = 0;
+  //   if (d.slope.length) {
+  //     const part2 = d.slope.split(' ').pop();
+  //     cleanSlope = +part2.split('%')[0]
+  //   }
+  //   return {
+  //     ...d,
+  //     cleanSlope,
+  //   }
+  // })
+  let cleanSlope = 0;
+  if (inputData[0].slope.length) {
+    const part2 = inputData[0].slope.split(' ').pop();
+    cleanSlope = +part2.split('%')[0]
+  }
+  const yDomain = initialYDomain || [0, max(data.map(d => d.value))];
+  let yTickSpan = 50000000;
+  if (yDomain[1] <= 10000) {
+    yTickSpan = 500;
+  } else if (yDomain[1] <= 1000000) {
+    yTickSpan = 50000;
+  } else if (yDomain[1] <= 5000000) {
+    yTickSpan = 500000;
+  }
+  const avgMem = data[0].avg_loss_mem.split(' ').pop().replace('memoire', '');
+  const slope = data[0].slope.split(' ').pop();
+  // const avgNoMem = data[0].avg_loss_no_mem.split(' ').pop().replace('memoire', '');
+
+  const yScale = scaleLinear().domain(yDomain).range([height - gutter, gutter * 2]).nice();
+  const yAxisTickValues = range(yDomain[0], yDomain[1] + yTickSpan, yTickSpan);
+  const endX = xScale(MAX_YEAR + 10);
+  let tickFontSize = width / 25;
+  if (tickFontSize < 6) {
+    tickFontSize = 6;
+  }
+  // const slopeExtent = extent(data.map(d => d.cleanSlope));
+  // const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['red', 'green'])
+  const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['lightgrey', '#336D7C']);
+  const lossColorScale = scaleLinear().domain([-60, 60]).range(['#FEA43B', 'green']);
+
+
+  return (
+    <g className="LineSeries">
+      <rect x={0} y={gutter * 2} width={endX} height={height - gutter * 3} fill="rgba(0,0,0,0)" />
+      {
+        yAxisTickValues
+          .map(value => {
+            const y = yScale(value);
+            return (
+              <g key={value}
+                className="axis-tick-group">
+                <line
+                  stroke="grey"
+                  strokeDasharray={'2,2'}
+                  x1={0}
+                  x2={endX}
+                  y1={y}
+                  y2={y}
+                />
+                {
+                  displayYTicks ?
+                    <>
+                      <line
+                        x1={endX}
+                        x2={endX + gutter / 4}
+                        y1={y}
+                        y2={y}
+                        stroke="grey"
+                      />
+
+                      <text
+                        x={endX + gutter / 2}
+                        y={y + tickFontSize / 4}
+                        fontSize={tickFontSize}
+                      >
+                        {tickFormat(value)}
+                      </text>
+
+                    </>
+                    : null
+                }
+
+              </g>
+            )
+          })
+      }
+      <g className="wars">
+        {
+          wars.map(({ start, end, name }) => {
+            const x1 = xScale(start);
+            const x2 = xScale(end);
+            return (
+              <rect
+                key={name}
+                title={name}
+                x={x1}
+                y={gutter * 2}
+                width={x2 - x1}
+                height={height - gutter * 3}
+                fill="url(#diagonalHatch)"
+                opacity={.5}
+                stroke="none"
+              />
+            )
+          })
+        }
+      </g>
+      {
+        activeYear ?
+          <line
+            x1={xScale(activeYear)}
+            x2={xScale(activeYear)}
+            y1={gutter * 2}
+            y2={height - gutter}
+            stroke="black"
+            strokeDasharray={'2,2'}
+          />
+          : null
+      }
+      {
+        data
+          .map(({ year: year1, value: value1 }, index) => {
+            const next = data[index + 1];
+            if (!next || next.year !== year1 + 1) {
+              return null;
+            }
+            const { year: year2, value: value2 } = next;
+            const x1 = xScale(year1);
+            const y1 = yScale(value1);
+            const x2 = xScale(year2);
+            const y2 = yScale(value2);
+            return (
+              <line
+                key={year1}
+                stroke="black"
+                x1={x1}
+                y1={y1}
+                x2={x2}
+                y2={y2}
+              />
+            )
+          })
+      }
+      {
+        inputData
+          .map(({ year: year1, peace_reg_memory: value1 }, index) => {
+            const next = inputData[index + 1];
+            if (!next) {
+              return null;
+            }
+            const { year: year2, peace_reg_memory: value2 } = next;
+            if (value1 === 0 || value2 === 0) {
+              return null;
+            }
+            const x1 = xScale(year1);
+            const y1 = yScale(value1);
+            const x2 = xScale(year2);
+            const y2 = yScale(value2);
+            return (
+              <line
+                key={year1}
+                stroke="red"
+                strokeWidth={2}
+                x1={x1}
+                y1={y1}
+                x2={x2}
+                y2={y2}
+              />
+            )
+          })
+      }
+
+      {
+        data
+          .map(({ year, value }) => {
+            const x = xScale(year);
+            const y = yScale(value);
+            const isActive = activeYear === year;
+            return (
+              <g key={year}>
+                <circle
+                  fill="transparent"
+                  cx={x}
+                  cy={y}
+                  r={isActive ? width / data.length * 5 : width / data.length * 2}
+                  onMouseEnter={() => onSetActiveYear(year)}
+                  onMouseLeave={() => onSetActiveYear()}
+                  data-for="guerre-tooltip"
+                  data-tip={
+                    translate('GuerreEtCroissance', 'tooltip', lang, {
+                      year,
+                      value: formatNumber(parseInt(value)),
+                      loss: formatNumber(parseInt(data.find(d => d.year === year).peace_reg_memory))
+                    })
+                    // `En ${year}, valeur de ${formatNumber(parseInt(value))} (perte de ${formatNumber(parseInt(data.find(d => d.year === year).peace_reg_memory))})`
+                  }
+                />
+                <circle
+                  fill={isActive ? 'black' : "black"}
+                  cx={x}
+                  cy={y}
+                  r={isActive ? 3 : 1.5}
+                  style={{ pointerEvents: 'none' }}
+                />
+              </g>
+            )
+          })
+      }
+      {
+        slope ?
+          <foreignObject
+            x={gutter / 2}
+            y={gutter * 2}
+            height={gutter * 2}
+            width={gutter * 5 + 2}
+          >
+            <div
+              xmlns="http://www.w3.org/1999/xhtml"
+              className="slope"
+              style={{
+                fontSize: tickFontSize * 1.5,
+                fontWeight: '900',
+                color: slopeColorScale(cleanSlope),
+                // color: 'white',
+                width: '100%',
+                height: '100%',
+              }}
+            >
+              {slope}
+            </div>
+          </foreignObject>
+          : null
+      }
+
+      {/* <text
+        fill={'blue'}
+        x={gutter / 2}
+        y={gutter * 3}
+        fontSize={tickFontSize * 1.5}
+        fontWeight="bold"
+        textAnchor="start"
+      >
+        {slope}
+      </text> */}
+      <text
+        fill={lossColorScale(+avgMem.split('%')[0])}
+        x={endX - gutter / 2}
+        y={id === 'navigation' ? height - gutter - 2 : gutter * 3}
+        fontSize={tickFontSize * 1.5}
+        fontWeight="bold"
+        textAnchor="end"
+      >
+        {(+avgMem.split('%')[0] > 0 ? '+' : '') + avgMem}
+      </text>
+      {/* <text
+        fill={'orange'}
+        x={endX - gutter / 2}
+        y={gutter * 4}
+        fontSize={tickFontSize * 1.5}
+        textAnchor="end"
+      >
+        {avgNoMem}
+      </text> */}
+    </g>
+  )
+}
+export default LineSeries;

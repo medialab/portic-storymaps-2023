@@ -6,7 +6,6 @@ import { useSpring, animated } from '@react-spring/web';
 import ReactTooltip from 'react-tooltip';
 import colorsPalettes from '../../utils/colorPalettes';
 
-
 const { provinces: provincesPalette } = colorsPalettes;
 
 import './LevantNavigation.scss';
@@ -126,7 +125,7 @@ export default function LevantNavigation({
         {...{
           width,
           height,
-          title: atlasMode ? 'Le Levant du point de vue de la navigation' : undefined,
+          title: atlasMode ? translate('LevantNavigation', 'title', lang) : undefined,
           projectionTemplate: 'Levant',
           className: `LevantNavigation ${atlasMode ? 'is-atlas-mode' : ''}`,
           layers: [
@@ -285,7 +284,7 @@ export default function LevantNavigation({
                         xmlns="http://www.w3.org/1999/xhtml"
                         className="legend-title"
                       >
-                        Légende
+                        {translate('LevantNavigation', 'legend-title', lang)}
                       </h4>
                     </foreignObject>
                     <circle
