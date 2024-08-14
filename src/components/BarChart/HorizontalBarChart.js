@@ -479,7 +479,7 @@ const HorizontalBarChart = ({
                                     +item[y.field] > 0 ?
                                       <rect key={itemIndex}
                                         fill={thatColor}
-                                        width={fixSvgDimension(bandWidth)}
+                                        width={fixSvgDimension(bandWidth) - 2}
                                         x={thatX}
                                         y={thatY}
                                         height={fixSvgDimension(thatHeight)}

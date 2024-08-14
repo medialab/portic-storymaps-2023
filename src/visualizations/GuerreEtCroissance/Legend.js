@@ -39,7 +39,66 @@ const Legend = ({
           <h4>
             {translate('GuerreEtCroissance', 'legend-title', lang)}
           </h4>
+
           <ul>
+            <li>
+              <span className="indicator-example">
+                <svg
+                  width={30}
+                  height={20}
+                >
+                  <rect
+                    width={30}
+                    height={20}
+                    x={0}
+                    y={0}
+                    fill="url(#diagonalHatch)"
+                  />
+                  <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="4" height="4">
+                    <path d="M-1,1 l2,-2
+                              M0,4 l4,-4
+                              M3,5 l2,-2"
+                      style={{ stroke: 'grey', fill: 'lightgrey', opacity: 1, strokeWidth: 1 }} />
+                  </pattern>
+                </svg>
+
+              </span>
+              <span className="legend-label" style={{marginTop: 5}}>{translate('GuerreEtCroissance', 'legend-war', lang)}</span>
+            </li>
+            <li>
+              <span className="indicator-example">
+                <svg
+                  width={30}
+                  height={20}
+                >
+                  <circle
+                    fill="black"
+                    cx={5}
+                    cy={5}
+                    r={2}
+                  />
+                  <line
+                    y1={5}
+                    y2={5}
+                    x1={5}
+                    x2={25}
+                    stroke="black"
+                  />
+                  <circle
+                    fill="black"
+                    cx={25}
+                    cy={5}
+                    r={2}
+                  />
+                </svg>
+
+              </span>
+              <span className="legend-label"
+                dangerouslySetInnerHTML={{
+                  __html: translate('GuerreEtCroissance', 'legend-observations', lang)
+                }}
+              />
+            </li>
             <li>
               <span
                 style={{
@@ -48,36 +107,42 @@ const Legend = ({
                   display: 'inline-block',
                 }}
               ></span>
-              <span>{translate('GuerreEtCroissance', 'legend-slope', lang)}</span>
+              <span className="legend-label">{translate('GuerreEtCroissance', 'legend-slope', lang)}</span>
             </li>
             <li>
               <span
+                className="indicator-example"
                 style={{
-                  color: '#336D7C'
+                  background: '#336D7C',
+                  color: 'white',
                 }}
               >
                 +1%/{translate('GuerreEtCroissance', 'year', lang)}
               </span>
-              <span>{translate('GuerreEtCroissance', 'legend-growth', lang)}</span>
+              <span className="legend-label">{translate('GuerreEtCroissance', 'legend-growth', lang)}</span>
             </li>
             <li>
               <span>
                 <span
+                  className="indicator-example"
                   style={{
-                    color: 'red'
+                    background: '#FEA43B',
+                    color: 'white',
                   }}
                 >
                   -1%
                 </span>
                 <span
+                  className="indicator-example"
                   style={{
-                    color: 'green'
+                    background: 'green',
+                    color: 'white',
                   }}
                 >
                   +2%
                 </span>
               </span>
-              <span>{translate('GuerreEtCroissance', 'legend-loss', lang)}</span>
+              <span className="legend-label">{translate('GuerreEtCroissance', 'legend-loss', lang)}</span>
             </li>
           </ul>
         </div>

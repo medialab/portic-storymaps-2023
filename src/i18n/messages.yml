@@ -524,6 +524,12 @@ GuerreEtCroissance:
   legend-loss:
     fr: Moyenne de l'estimation de la perte ou du gain en temps de guerre
     en: Average estimate of wartime loss or gain
+  legend-war:
+    fr: Période de guerre
+    en: War period
+  legend-observations:
+    fr: Valeurs observées (lt. pour le commerce&nbsp;; observations, mètres ou tonnages pour la navigation suivant la source/métrique choisie)
+    en: Observed values (lt. for trade; observations, meters, or tonnage for navigation depending on the chosen source/metric)
   navigation-interface-title:
     fr: Données de navigation
     en: Navigation data

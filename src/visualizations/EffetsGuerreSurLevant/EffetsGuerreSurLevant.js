@@ -87,19 +87,20 @@ export default function EffetsGuerreSurLevant({
       start: 1756,
       end: 1763,
       axis: 'x',
-      labelPosition: height / 10,
+      // labelPosition: 40,
+      labelPosition: height / 8,
       label: translate("viz-1-A", "sevenYearsWar", lang),
     },
     {
       type: "span",
       start: 1778,
       end: 1781,
-      labelPosition: height / 5,
+      labelPosition: height / 6,
       row: 3,
       axis: 'x',
       label: translate("viz-1-A", "usIndependance", lang),
     },
-  ], [translate, lang]);
+  ], [translate, lang, height]);
   return (
     <div className="EffetsGuerreSurLevant">
       <LineChart

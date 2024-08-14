@@ -219,7 +219,7 @@ const LineSeries = ({
                   fill="transparent"
                   cx={x}
                   cy={y}
-                  r={isActive ? width / data.length * 5 : width / data.length * 2}
+                  r={isActive ? width / data.length * 2 : width / data.length * 1}
                   onMouseEnter={() => onSetActiveYear(year)}
                   onMouseLeave={() => onSetActiveYear()}
                   data-for="guerre-tooltip"
@@ -256,20 +256,24 @@ const LineSeries = ({
               xmlns="http://www.w3.org/1999/xhtml"
               className="metrics-container"
               style={{
-                fontSize: width / 20
+                fontSize: width / 15
               }}
             >
               <div 
                 className="slope"
                 style={{
-                color: slopeColorScale(cleanSlope),
+                background: slopeColorScale(cleanSlope),
+                color:'white'
 
                 }}
               >
               {slope}
               </div>
               <div
-                style={{color: lossColorScale(+avgMem.split('%')[0])}}
+                style={{
+                  background: lossColorScale(+avgMem.split('%')[0]),
+                  color:'white'
+                }}
                 // x={endX - gutter / 2}
                 // y={0}
                 // fontSize={tickFontSize * 1.5}
