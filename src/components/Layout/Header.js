@@ -146,9 +146,9 @@ export default function Header({
                         </Link>
                     </li>
 
-                    {/* <li className="navitem-container lang-toggle">
+                    <li className="navitem-container lang-toggle">
                         <LangSwitcher {...{ onLangChange, langagesFlag, lang }} />
-                    </li> */}
+                    </li>
                 </ul>
             </nav>
             <nav
