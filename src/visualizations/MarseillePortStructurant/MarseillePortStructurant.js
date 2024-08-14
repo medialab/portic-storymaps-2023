@@ -215,7 +215,7 @@ const MapObjects = ({
                   y={objectY - objectWidth / 2 + 1}
                   width={objectWidth * ratio_to_marseille}
                   height={objectWidth - 2}
-                  fill={marseilleColor}
+                  fill={'red'}
                 />
 
                 <text

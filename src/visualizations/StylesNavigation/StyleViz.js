@@ -124,15 +124,15 @@ export default function StyleViz({
         </g>
         <g className="legend">
           <foreignObject
-            x={axisStep}
-            y={axisStep * 4}
+            x={axisStep * 1.5}
+            y={cellWidth}
             width={sideWidth - axisStep * 8}
             height={cellHeight * 3}
           >
             <div
               xmlns="http://www.w3.org/1999/xhtml"
               className="axis-title"
-              style={{ fontSize: axisStep * 2 }}
+              style={{ fontSize: axisStep * 1.5 }}
             >
               {translate('StylesNavigation', 'number-of-travels', lang)}
             </div>
