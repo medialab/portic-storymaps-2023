@@ -227,10 +227,10 @@ const LineSeries = ({
                     translate('GuerreEtCroissance', 'tooltip', lang, {
                       year,
                       unit,
-                      value: formatNumber(parseInt(value)),
-                      loss: formatNumber(parseInt(data.find(d => d.year === year).peace_reg_memory))
+                      value: formatNumber(parseInt(value, lang)),
+                      loss: formatNumber(parseInt(data.find(d => d.year === year, lang).peace_reg_memory))
                     })
-                    // `En ${year}, valeur de ${formatNumber(parseInt(value))} (perte de ${formatNumber(parseInt(data.find(d => d.year === year).peace_reg_memory))})`
+                    // `En ${year}, valeur de ${formatNumber(parseInt(value, lang))} (perte de ${formatNumber(parseInt(data.find(d => d.year === year, lang).peace_reg_memory))})`
                   }
                 />
                 <circle

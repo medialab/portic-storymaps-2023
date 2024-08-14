@@ -8,35 +8,9 @@ import cx from "classnames";
 import ReactTooltip from "react-tooltip";
 
 import colorsPalettes from "../../utils/colorPalettes";
-import { fixSvgDimension } from "../../utils/misc";
+import { fixSvgDimension, formatNumber } from "../../utils/misc";
 
 const {marseilleColor} = colorsPalettes;
-
-/**
- * Improve the display of numbers
- * @param {string|number} str - the number to prettify
- * @returns {string}
- */
-const prettifyValue = (str) => {
-  const inted = Math.round(+str) + "";
-  let finalStr = "";
-  let count = 0;
-  for (let i = inted.length - 1; i >= 0; i--) {
-    const char = inted[i];
-    count++;
-
-    finalStr = char + finalStr;
-    if (count === 3) {
-      count = 0;
-      finalStr = " " + finalStr;
-    }
-  }
-  if (finalStr[0] === ",") {
-    finalStr = finalStr.slice(1);
-  }
-
-  return finalStr;
-};
 
 /**
  * Displays a double diagram displaying a histogram and a linechart, with optional additional annotations
@@ -88,6 +62,7 @@ const LongitudinalTradeChart = ({
   colorScaleMessages,
   annotations = [],
   margins,
+  lang,
 }) => {
   const data = useMemo(
     () =>
@@ -441,8 +416,8 @@ const LongitudinalTradeChart = ({
                         r: width * 0.005,
                       }}
                       fill={"transparent"}
-                      data-tip={`${datum.year} : <strong>${prettifyValue(
-                        +datum[absoluteField]
+                      data-tip={`${datum.year} : <strong>${formatNumber(
+                        parseInt(+datum[absoluteField]), lang
                       )}</strong> livres tournois.`}
                       data-for={cityName}
                       data-class="bar-tooltip"
@@ -508,12 +483,12 @@ const LongitudinalTradeChart = ({
                         stroke={colorsPalettes.generic.accent1}
                         title={`${datum.year}-${next.year}`}
                         strokeWidth={2}
-                        data-tip={`${datum.year} → <strong>${prettifyValue(
-                          +datum[absoluteField]
+                        data-tip={`${datum.year} → <strong>${formatNumber(
+                          parseInt(+datum[absoluteField]), lang
                         )}</strong> livres tournois <br/>${
                           next.year
-                        } → <strong>${prettifyValue(
-                          +next[absoluteField]
+                        } → <strong>${formatNumber(
+                          parseInt(+next[absoluteField]), lang
                         )}</strong> livres tournois<br/><i>(${
                           ratio > 0 ? "+" : ""
                         }${Math.round(ratio * 100)}%)</i>`}

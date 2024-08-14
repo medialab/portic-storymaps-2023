@@ -95,9 +95,9 @@ export default function PartDesFrancaisDansProvenance({
             year: d.year,
             share: d.share_of_french.toFixed(2),
             state: d.state,
-            tonnage: formatNumber(d.tonnage_french)
+            tonnage: formatNumber(d.tonnage_french, lang)
           })
-            // `En ${d.year}, ${d.share_of_french.toFixed(2)}% des voyages partis de ports de ${d.state} et arrivés à Marseille étaient assurés par des navires français (${formatNumber(d.tonnage_french)} tx. cumulés)`
+            // `En ${d.year}, ${d.share_of_french.toFixed(2)}% des voyages partis de ports de ${d.state} et arrivés à Marseille étaient assurés par des navires français (${formatNumber(d.tonnage_french, lang)} tx. cumulés)`
         }
         }
       />
@@ -121,7 +121,7 @@ export default function PartDesFrancaisDansProvenance({
           },
           y: {
             field: 'tonnage_french',
-            tickFormat: d => formatNumber(d) + ' tx',
+            tickFormat: d => formatNumber(d, lang) + ' tx',
             // domain: [0, 100],
             title: translate('PartDesFrancaisDansProvenance', 'bottom-y-axis', lang),
             sort: {
@@ -134,9 +134,9 @@ export default function PartDesFrancaisDansProvenance({
             year: d.year,
             share: d.share_of_french.toFixed(2),
             state: d.state,
-            tonnage: formatNumber(d.tonnage_french)
+            tonnage: formatNumber(d.tonnage_french, lang)
           })
-            // `En ${d.year}, ${d.share_of_french.toFixed(2)}% des voyages partis de ports de ${d.state} et arrivés à Marseille étaient assurés par des navires français (${formatNumber(d.tonnage_french)} tx. cumulés)`
+            // `En ${d.year}, ${d.share_of_french.toFixed(2)}% des voyages partis de ports de ${d.state} et arrivés à Marseille étaient assurés par des navires français (${formatNumber(d.tonnage_french, lang)} tx. cumulés)`
         }
         }
       />

@@ -98,28 +98,28 @@ export default function GuerreEtCroissance({
       id: 'carrière',
       source: 'Carriere',
       label: translate('GuerreEtCroissance', 'navigation-interface-carriere', lang),
-      tickFormat: d => formatNumber(d) + ' u.',
+      tickFormat: d => formatNumber(d, lang) + ' u.',
       unit: 'u.',
     },
     {
       id: 'entrées',
       source: 'Navigo entrées',
       label: translate('GuerreEtCroissance', 'navigation-interface-arrivals', lang),
-      tickFormat: d => formatNumber(d) + ' u.',
+      tickFormat: d => formatNumber(d, lang) + ' u.',
       unit: 'u.',
     },
     {
       id: 'tonnage',
       source: 'Navigo tonnage',
       label: translate('GuerreEtCroissance', 'navigation-interface-tonnage', lang),
-      tickFormat: d => formatNumber(d) + ' tx.',
+      tickFormat: d => formatNumber(d, lang) + ' tx.',
       unit: 'tx.',
     },
     {
       id: 'mileage',
       source: 'Navigo mileage_total',
       label: translate('GuerreEtCroissance', 'navigation-interface-distance', lang),
-      tickFormat: d => formatNumber(d) + ' m.',
+      tickFormat: d => formatNumber(d, lang) + ' m.',
       unit: 'm.',
     },
   ];
@@ -346,7 +346,7 @@ export default function GuerreEtCroissance({
                                   data={data[seriesId].filter(d => d.direction_ferme === direction)}
                                   xScale={xScale}
                                   yDomain={[0, 350000000]}
-                                  tickFormat={d => formatNumber(d / 1000) + ' k lt.'}
+                                  tickFormat={d => formatNumber(d / 1000, lang) + ' k lt.'}
                                   activeYear={activeYear}
                                   onSetActiveYear={y => setActiveYear(y)}
                                   gutter={gutter}

@@ -113,7 +113,7 @@ const Legend = ({
               
             >
               {
-                translate('Intro', 'n-travels', lang, {count: formatNumber(maxShips)})
+                translate('Intro', 'n-travels', lang, {count: formatNumber(maxShips, lang)})
               }
             </text>
 
@@ -130,7 +130,7 @@ const Legend = ({
               className="legend-indicator"
               
             >
-              {translate('Intro', 'n-travels', lang, {count: formatNumber(maxShips / 2)})}
+              {translate('Intro', 'n-travels', lang, {count: formatNumber(maxShips / 2, lang)})}
             </text>
             
             <line
@@ -169,7 +169,7 @@ const Legend = ({
               y={triangleHeight * 1.5 + 9}
               className={'legend-indicator'}
             >
-              {formatNumber(maxTonnage)} tx.
+              {formatNumber(maxTonnage, lang)} tx.
             </text>
             <line
               x1={width * .75}
@@ -183,7 +183,7 @@ const Legend = ({
               y={triangleHeight * 1.5 + 9}
               className={'legend-indicator'}
             >
-              {formatNumber(maxTonnage / 2)} tx.
+              {formatNumber(maxTonnage / 2, lang)} tx.
             </text>
           </>
           :
@@ -218,7 +218,7 @@ const Legend = ({
                 y={3}
                 className="legend-indicator"
               >
-                {formatNumber(maxAreaValue)} lt.
+                {formatNumber(maxAreaValue, lang)} lt.
               </text>
             </g>
             <circle
@@ -243,7 +243,7 @@ const Legend = ({
                 y={3}
                 className="legend-indicator"
               >
-                {formatNumber(minAreaValue)} lt.
+                {formatNumber(minAreaValue, lang)} lt.
               </text>
             </g>
           </>

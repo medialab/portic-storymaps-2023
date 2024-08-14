@@ -204,7 +204,7 @@ const Provinces = ({
             xmlns="http://www.w3.org/1999/xhtml"
             className="legend-label"
           >
-            {translate('StylesNavigation', 'travels-tick', lang, {count: legendValues[0]})}
+            {translate('StylesNavigation', 'travels-tick', lang, {count: formatNumber(legendValues[0], lang)})}
           </p>
         </foreignObject>
 
@@ -218,7 +218,7 @@ const Provinces = ({
             xmlns="http://www.w3.org/1999/xhtml"
             className="legend-label"
           >
-            {translate('StylesNavigation', 'travels-tick', lang, {count: legendValues[1]})}
+            {translate('StylesNavigation', 'travels-tick', lang, {count: formatNumber(legendValues[1], lang)})}
           </p>
         </foreignObject>
 
@@ -438,8 +438,8 @@ export default function StylesNavigation({
               width: cellWidth,
               height: cellHeight,
               id: 'méditerranée',
-              title: translate('StylesNavigation', 'title-mediterrannee', lang, { count: formatNumber(travelsSums['méditerranée occidentale']) }),
-              // title: `Europe méditerranéenne (${formatNumber(travelsSums['méditerranée occidentale'])} voyages vers Marseille consignés en temps de paix)`,
+              title: translate('StylesNavigation', 'title-mediterrannee', lang, { count: formatNumber(travelsSums['méditerranée occidentale'], lang) }),
+              // title: `Europe méditerranéenne (${formatNumber(travelsSums['méditerranée occidentale'], lang)} voyages vers Marseille consignés en temps de paix)`,
               data: data.filter(({ category }) => category === 'méditerranée occidentale'),
               color: colors['méditerranée occidentale'],
               legendStep: 250,
@@ -462,8 +462,8 @@ export default function StylesNavigation({
               width: cellWidth,
               height: cellHeight,
               id: 'ponant',
-              title: translate('StylesNavigation', 'title-ponant', lang, { count: formatNumber(travelsSums['Ponant']) }),
-              // title: `Ponant et Terre-Neuve (${formatNumber(travelsSums['Ponant'])} voyages vers Marseille consignés en temps de paix)`,
+              title: translate('StylesNavigation', 'title-ponant', lang, { count: formatNumber(travelsSums['Ponant'], lang) }),
+              // title: `Ponant et Terre-Neuve (${formatNumber(travelsSums['Ponant'], lang)} voyages vers Marseille consignés en temps de paix)`,
               data: data.filter(({ category }) => category === 'Ponant'),
               color: colors['Ponant'],
               legendStep: 40,
@@ -484,8 +484,8 @@ export default function StylesNavigation({
               width: cellWidth,
               height: cellHeight,
               id: 'empire',
-              // title: `Empire ottoman et mer Noire (${formatNumber(travelsSums['empire ottoman'])} voyages vers Marseille consignés en temps de paix)`,
-              title: translate('StylesNavigation', 'title-ottoman', lang, { count: formatNumber(travelsSums['empire ottoman']) }),
+              // title: `Empire ottoman et mer Noire (${formatNumber(travelsSums['empire ottoman'], lang)} voyages vers Marseille consignés en temps de paix)`,
+              title: translate('StylesNavigation', 'title-ottoman', lang, { count: formatNumber(travelsSums['empire ottoman'], lang) }),
               data: data.filter(({ category }) => category === 'empire ottoman'),
               color: colors['empire ottoman'],
               tonnageValues,

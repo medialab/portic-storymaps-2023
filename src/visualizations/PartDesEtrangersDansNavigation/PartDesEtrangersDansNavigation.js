@@ -247,9 +247,9 @@ const flagToNationality = {
                     <g transform={`translate(${marseilleXOffset - width}, ${0})`}
                     data-for="part-etrangers-tooltip"
                           data-tip={
-                            // `En 1789, un total de ${formatNumber(tonnage)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`
+                            // `En 1789, un total de ${formatNumber(tonnage, lang)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`
                             translate('PartDesEtrangersDansNavigation', 'top-row-tooltip', lang, {
-                              tonnage: formatNumber(tonnage),
+                              tonnage: formatNumber(tonnage, lang),
                               label,
                               pct: parseInt(tonnage / marseilleSum * 100)
                             })
@@ -277,11 +277,11 @@ const flagToNationality = {
                           data-for="part-etrangers-tooltip"
                           data-tip={
                             translate('PartDesEtrangersDansNavigation', 'bottom-row-tooltip', lang, {
-                                tonnage: formatNumber(tonnage),
+                                tonnage: formatNumber(tonnage, lang),
                                 label,
                                 pct: parseInt(tonnage / marseilleSum * 100)
                             })
-                            // `En 1789, un total de ${formatNumber(tonnage)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`
+                            // `En 1789, un total de ${formatNumber(tonnage, lang)} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${parseInt(tonnage / marseilleSum * 100)}%) du total des étrangers).`
                           }
                         >
                           {label} ({parseInt(tonnage / marseilleSum * 100)}%)

@@ -184,6 +184,7 @@ const TradeDynamicsChart = (props) => {
             {...{
               startYear,
               endYear,
+              lang,
             }}
           />
         );
@@ -227,6 +228,7 @@ const TradeDynamicsChart = (props) => {
             {...{
               startYear,
               endYear,
+              lang
             }}
           />
         );

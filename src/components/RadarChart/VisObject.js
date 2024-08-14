@@ -106,7 +106,7 @@ const VisObject = ({
           })
           .map(([key, portion]) => `
             <li>
-              <strong>${key}</strong> : <strong>${(portion * 100).toFixed(2)}% (${formatNumber(absoluteData[key])} lt)</strong>
+              <strong>${key}</strong> : <strong>${(portion * 100).toFixed(2)}% (${formatNumber(absoluteData[key], lang)} lt)</strong>
             </li>
           `).join('\n')
         }

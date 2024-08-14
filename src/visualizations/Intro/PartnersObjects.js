@@ -125,31 +125,31 @@ const PartnersObjects = ({
         let tooltipText = '';
         if (dataType === 'toflit18') {
           if (dataScope === 'world') {
-            // tooltipText = `La direction des fermes de Marseille a effectué un commerce total de ${formatNumber(parseInt(toflit_value))} lt. avec le partenaire ${partner} en 1789.`
+            // tooltipText = `La direction des fermes de Marseille a effectué un commerce total de ${formatNumber(parseInt(toflit_value, lang))} lt. avec le partenaire ${partner} en 1789.`
             tooltipText = translate('Intro', 'tooltip-trade-world', lang, {
-              count: formatNumber(parseInt(toflit_value)),
+              count: formatNumber(parseInt(toflit_value), lang),
               partner
             });
           } else {
-            // tooltipText = `La direction des fermes de ${partner} a effectué un commerce total de ${formatNumber(parseInt(toflit_value))} lt. en 1789.`
+            // tooltipText = `La direction des fermes de ${partner} a effectué un commerce total de ${formatNumber(parseInt(toflit_value, lang))} lt. en 1789.`
             tooltipText = translate('Intro', 'tooltip-trade-france', lang, {
-              count: formatNumber(parseInt(toflit_value)),
+              count: formatNumber(parseInt(toflit_value), lang),
               partner
             });
           }
         } else {
           if (dataScope === 'world') {
-            // tooltipText = `${formatNumber(parseInt(navigo_nb_ships))} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
+            // tooltipText = `${formatNumber(parseInt(navigo_nb_ships, lang))} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage, lang))} tonneaux.`
             tooltipText = translate('Intro', 'tooltip-navigo-world', lang, {
-              nb_ships: formatNumber(parseInt(navigo_nb_ships)),
-              tonnage: formatNumber(parseInt(navigo_mean_tonnage)),
+              nb_ships: formatNumber(parseInt(navigo_nb_ships, lang)),
+              tonnage: formatNumber(parseInt(navigo_mean_tonnage, lang)),
               partner
             });
           } else {
-            // tooltipText = `${formatNumber(parseInt(navigo_nb_ships))} voyages ont été effectués depuis le port de ${partner} en 1787, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage))} tonneaux.`
+            // tooltipText = `${formatNumber(parseInt(navigo_nb_ships, lang))} voyages ont été effectués depuis le port de ${partner} en 1787, pour un tonnage moyen de ${formatNumber(parseInt(navigo_mean_tonnage, lang))} tonneaux.`
             tooltipText = translate('Intro', 'tooltip-navigo-france', lang, {
-              nb_ships: formatNumber(parseInt(navigo_nb_ships)),
-              tonnage: formatNumber(parseInt(navigo_mean_tonnage)),
+              nb_ships: formatNumber(parseInt(navigo_nb_ships, lang)),
+              tonnage: formatNumber(parseInt(navigo_mean_tonnage, lang)),
               partner
             });
           }

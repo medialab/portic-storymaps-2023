@@ -560,7 +560,7 @@ export default function AlluvialImportExport({
 
                 {isTooSmallForText === false &&
                   <text x={-5} y={5} className="number-label left">
-                    {formatNumber(value) + ' lt.'}
+                    {formatNumber(value, lang) + ' lt.'}
                   </text>
                 }
               </g>
@@ -675,7 +675,7 @@ export default function AlluvialImportExport({
                       </>
 
                   }
-                  {isTooSmallForText === false && <text x={5} y={5} className="number-label right">{`${formatNumber(value)} lt. ${isFraude ? ' (fraude ?)' : ''}`}</text>}
+                  {isTooSmallForText === false && <text x={5} y={5} className="number-label right">{`${formatNumber(value, lang)} lt. ${isFraude ? ' (fraude ?)' : ''}`}</text>}
                 </g>
               )
             })

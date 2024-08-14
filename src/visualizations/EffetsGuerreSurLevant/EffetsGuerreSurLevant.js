@@ -124,15 +124,15 @@ export default function EffetsGuerreSurLevant({
             title: translate('EffetsGuerreSurLevant', 'top-y-axis', lang),
             // tickSpan: 100000000,
             // domain: [0, 200000000],
-            tickFormat: d => formatNumber(d) + ' lt.'
+            tickFormat: d => formatNumber(d, lang) + ' lt.'
           },
           tooltip: d => translate('EffetsGuerreSurLevant', 'top-tooltip', lang, {
             year: d.year,
-            value: formatNumber(parseInt(d.value)),
+            value: formatNumber(parseInt(d.value), lang),
             particule: d.group === 'total' ? 'au' : 'de',
             group: d.group
           })
-          // `En ${d.year}, Marseille a importé ${formatNumber(parseInt(d.value))} lt. depuis les partenaires ${d.group === 'total' ? 'au' : 'de'} ${d.group}`
+          // `En ${d.year}, Marseille a importé ${formatNumber(parseInt(d.value, lang))} lt. depuis les partenaires ${d.group === 'total' ? 'au' : 'de'} ${d.group}`
         }
         }
       />

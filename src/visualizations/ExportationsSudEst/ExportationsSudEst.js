@@ -296,7 +296,7 @@ export default function ExportationsSudEst({
                         y={0}
                         fontSize={nationalFontScale(value)}
                       >
-                        {label === 'inconnue' ? translate('exportations-sud-est', 'unknown', lang) : label} ({formatNumber(parseInt(value))} lt.)
+                        {label === 'inconnue' ? translate('exportations-sud-est', 'unknown', lang) : label} ({formatNumber(parseInt(value), lang)} lt.)
                       </Text>
                     </G>
                     : null
@@ -347,7 +347,7 @@ export default function ExportationsSudEst({
                         y={0}
                         fontSize={localFontScale(value)}
                       >
-                        {label} ({formatNumber(parseInt(value))} lt.)
+                        {label} ({formatNumber(parseInt(value), lang)} lt.)
                       </Text>
                     </G>
                     : null

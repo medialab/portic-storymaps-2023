@@ -203,9 +203,9 @@ export default function LevantNavigation({
                               translate('LevantNavigation', 'tooltip', lang, {
                                 count,
                                 port,
-                                tonnage: formatNumber(tonnage)
+                                tonnage: formatNumber(tonnage, lang)
                               })
-                              // `Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${formatNumber(tonnage)} tonneaux</strong> cumulés.`
+                              // `Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${formatNumber(tonnage, lang)} tonneaux</strong> cumulés.`
                             }
                           >
                             <circle
@@ -307,7 +307,7 @@ export default function LevantNavigation({
                         className="legend-label"
                         style={{ fontSize: gutter }}
                       >
-                        40 000 tx.
+                        {formatNumber(legendMaxTonnage, lang)} tx.
                       </p>
                     </foreignObject>
 
@@ -322,7 +322,7 @@ export default function LevantNavigation({
                         className="legend-label"
                         style={{ fontSize: gutter }}
                       >
-                        20 000 tx.
+                        {formatNumber(legendMinTonnage, lang)} tx.
                       </p>
                     </foreignObject>
 
