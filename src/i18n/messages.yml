@@ -54,10 +54,10 @@ vizContainer:
     en: Back to main visualization
 viz-1-A:
   franceOverviewTitle:
-    fr: France ${kind}, ${start}-${end}
+    fr: ${kind} de la France, ${start}-${end}
     en: France ${kind}, ${start}-${end}
   tradeEvolutionTitle:
-    fr: ${cityName} ${kind}, ${start}-${end}
+    fr: ${kind} de ${cityName}, ${start}-${end}
     en: ${cityName} ${kind}, ${start}-${end}
   partInPct:
     fr: part des ${kind} fr

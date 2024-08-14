@@ -9,7 +9,7 @@ import GeographicMapChart from '../../components/GeographicMapChart';
 
 import colorsPalettes from '../../utils/colorPalettes';
 
-const { provinces: provincesPalette } = colorsPalettes;
+const { provinces: provincesPalette, marseilleColor } = colorsPalettes;
 
 import './MarseillePortStructurant.scss';
 import { min, max } from 'd3-array';
@@ -40,7 +40,6 @@ const labelsCoordinates = {
   "Bastia": [43, 9],
 }
 
-const MARSEILLE_COLOR = "red";
 const Provinces = ({
   data: inputData, 
   projection, 
@@ -216,7 +215,7 @@ const MapObjects = ({
                   y={objectY - objectWidth / 2 + 1}
                   width={objectWidth * ratio_to_marseille}
                   height={objectWidth - 2}
-                  fill={MARSEILLE_COLOR}
+                  fill={marseilleColor}
                 />
 
                 <text
@@ -234,14 +233,14 @@ const MapObjects = ({
       }
       <g className="marseille-group">
         <line
-          stroke={MARSEILLE_COLOR}
+          stroke={marseilleColor}
           x1={marseilleX}
           y1={marseilleY}
           x2={centerX}
           y2={centerY}
         />
         <circle
-          fill={MARSEILLE_COLOR}
+          fill={marseilleColor}
           cx={marseilleX}
           cy={marseilleY}
           r={2}
@@ -249,7 +248,7 @@ const MapObjects = ({
         />
         <g transform={`translate(${centerX}, ${centerY})rotate(45)`}>
           <rect
-            fill={MARSEILLE_COLOR}
+            fill={marseilleColor}
             stroke="white"
             x={-10}
             y={-10}

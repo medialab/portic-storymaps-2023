@@ -6,7 +6,7 @@ import { useSpring, animated } from '@react-spring/web';
 import ReactTooltip from 'react-tooltip';
 import colorsPalettes from '../../utils/colorPalettes';
 
-const { provinces: provincesPalette } = colorsPalettes;
+const { provinces: provincesPalette, marseilleColor } = colorsPalettes;
 
 import './LevantNavigation.scss';
 import { extent } from 'd3-array';
@@ -250,7 +250,7 @@ export default function LevantNavigation({
                         x={-width / 100}
                         y={-width / 100}
                         transform={'rotate(45)'}
-                        fill="red"
+                        fill={marseilleColor}
                         stroke="white"
                       />
                       <text fontSize={width / 100} fontStyle="italic" x={0} textAnchor="middle" y={height / 50 + 20}>

@@ -17,7 +17,7 @@ import { formatNumber } from '../../utils/misc';
 
 import colorsPalettes from '../../utils/colorPalettes';
 
-const {stylesOfNavigation: colors} = colorsPalettes;
+const {stylesOfNavigation: colors, marseilleColor} = colorsPalettes;
 
 
 const WIDTH_BREAKPOINT = 800;
@@ -323,7 +323,7 @@ export default function StylesNavigation({
                           x={-cellWidth / 100}
                           y={-cellWidth / 100}
                           transform={'rotate(45)'}
-                          fill="red"
+                          fill={marseilleColor}
                           stroke="white"
                         />
                         <text fontSize={cellWidth / 50} fontStyle="italic" x={0} textAnchor="middle" y={cellWidth / 50 + 5}>

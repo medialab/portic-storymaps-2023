@@ -17,6 +17,12 @@
     }
   }
 
+  .chart-header {
+    .visualization-title::first-letter {
+      text-transform: capitalize;
+    }
+  }
+
   h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;

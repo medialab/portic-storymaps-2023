@@ -10,6 +10,8 @@ import ReactTooltip from "react-tooltip";
 import colorsPalettes from "../../utils/colorPalettes";
 import { fixSvgDimension } from "../../utils/misc";
 
+const {marseilleColor} = colorsPalettes;
+
 /**
  * Improve the display of numbers
  * @param {string|number} str - the number to prettify
@@ -92,6 +94,7 @@ const LongitudinalTradeChart = ({
       inputData.filter((d) => (+d.year >= startYear) & (+d.year <= endYear)),
     [startYear, endYear, inputData]
   );
+  const isMarseille = title.includes('Marseille');
   const headerRef = useRef(null);
   const footerRef = useRef(null);
   const [height, setHeight] = useState(wholeHeight);
@@ -162,7 +165,7 @@ const LongitudinalTradeChart = ({
             style={{
               background:
                 axisLeftTitle && axisLeftTitle.length
-                  ? colorsPalettes.generic.accent2
+                  ? isMarseille ? marseilleColor: colorsPalettes.generic.accent2
                   : undefined,
               marginLeft: margins.left,
             }}
@@ -225,21 +228,21 @@ const LongitudinalTradeChart = ({
                   x2={margins.left}
                   y1={yShareScale(value)}
                   y2={yShareScale(value)}
-                  stroke={colorsPalettes.generic.accent2}
+                  stroke={isMarseille ? marseilleColor : colorsPalettes.generic.accent2}
                 />
                 <line
                   x1={margins.left}
                   x2={width - margins.right}
                   y1={yShareScale(value)}
                   y2={yShareScale(value)}
-                  stroke={colorsPalettes.generic.accent2}
+                  stroke={isMarseille ? marseilleColor : colorsPalettes.generic.accent2}
                   strokeDasharray={"2, 2"}
                   opacity={0.2}
                 />
                 <text
                   x={margins.left * 0.7}
                   y={yShareScale(value) + height / 100}
-                  fill={colorsPalettes.generic.accent2}
+                  fill={isMarseille ? marseilleColor : colorsPalettes.generic.accent2}
                 >
                   {Math.round(+value * 100) + "%"}
                 </text>
@@ -378,7 +381,7 @@ const LongitudinalTradeChart = ({
                   fill={
                     herfindhalField && d[herfindhalField]
                       ? herfindhalColorScale(+d[herfindhalField])
-                      : colorsPalettes.generic.accent2
+                      : isMarseille ? marseilleColor : colorsPalettes.generic.accent2
                   }
                   // opacity={herfindhalField && d[herfindhalField]
                   //         ? herfindhalOpacityScale(+d[herfindhalField])

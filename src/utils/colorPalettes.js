@@ -1,4 +1,6 @@
 const colorsPalettes = {
+  marseilleColor: '#0d94d6',
+  genericObjectColor: '#ec9712', // orange
   ui: {
     colorText: "#403d3d",
     colorAccent: "#34495e",

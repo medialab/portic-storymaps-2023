@@ -2,6 +2,7 @@ import { useEffect, useState, useMemo } from 'react';
 import GeographicMapChart from '../../components/GeographicMapChart'
 import { extent, min, max } from "d3-array";
 import { scaleLinear } from "d3-scale";
+import palettes from '../../utils/colorPalettes';
 
 import './Intro.scss';
 import PartnersObjects from './PartnersObjects';
@@ -9,6 +10,8 @@ import Legend from './Legend';
 import SliderRange from '../../components/SliderRange/SliderRange';
 import ReactTooltip from 'react-tooltip';
 import translate from '../../utils/translate';
+
+const {marseilleColor} = palettes;
 
 const Intro = ({
   data,
@@ -137,6 +140,7 @@ const Intro = ({
     }
   }
 
+  const MARSEILLE_COORDS = [ 5.2158406, 43.280477 ];
 
   return (
     <>
@@ -176,6 +180,37 @@ const Intro = ({
                   }
                 />
             },
+            {
+              type: 'custom',
+              data: [],
+              renderObjects: ({projection}) => {
+                const [marseilleX, marseilleY] = projection(MARSEILLE_COORDS);
+                if (dataScope !== 'world') {
+                  return null;
+                }
+                return (
+                  <g className="marseille-marker" transform={`translate(${marseilleX}, ${marseilleY})`}>
+                      <rect
+                        width={width / 100}
+                        height={width / 100}
+                        x={-width / 200}
+                        y={-width / 200}
+                        transform={'rotate(45)'}
+                        fill={marseilleColor}
+                        stroke="white"
+                      />
+                      <text 
+                        fontSize={width / 75}
+                        // fontStyle="italic" 
+                        x={-width/100} 
+                        textAnchor="end" 
+                        y={width/200}>
+                        Marseille
+                      </text>
+                    </g>
+                )
+              }
+            }
 
           ]
         }}

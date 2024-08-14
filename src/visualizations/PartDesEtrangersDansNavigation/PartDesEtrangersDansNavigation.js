@@ -6,6 +6,9 @@ import { scaleLinear } from 'd3-scale';
 import ReactTooltip from 'react-tooltip';
 import {formatNumber} from '../../utils/misc';
 import translate from '../../utils/translate';
+import colorsPalettes from '../../utils/colorPalettes';
+
+const {marseilleColor} = colorsPalettes;
 
 const italians = ['Genoese', 'Savoyard', 'Venitian', 'Tuscan', 'Neapolitan', 'Carrara', 'Roman'];
 
@@ -192,7 +195,7 @@ const flagToNationality = {
                         y={topBarHeight - secondBarHeight}
                         width={topBarWidth}
                         height={secondBarHeight}
-                        fill={port === 'Marseille' ? "red" : 'grey'}
+                        fill={port === 'Marseille' ? marseilleColor : 'grey'}
                       />
                       <g transform={`translate(${topBarWidth/2 - 10}, ${topBarHeight + 10})rotate(45)`}>
                         <text
@@ -259,7 +262,7 @@ const flagToNationality = {
                         width={width}
                         height={marseilleBandHeight}
                         stroke="white"
-                        fill="red"
+                        fill={marseilleColor}
                       />
                       <foreignObject
                         x={5}

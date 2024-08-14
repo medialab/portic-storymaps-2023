@@ -2,7 +2,9 @@ import { extent, max } from "d3-array";
 import { scaleLinear } from "d3-scale";
 import { formatNumber } from "../../utils/misc";
 import translate from "../../utils/translate";
+import colorsPalettes from "../../utils/colorPalettes";
 
+const {marseilleColor, genericObjectColor} = colorsPalettes;
 const PartnersObjects = ({
   // data,
   projection,
@@ -152,6 +154,9 @@ const PartnersObjects = ({
             });
           }
         }
+        if (partner === 'Marseille') {
+          console.log('ok marseille', [latitude, longitude])
+        }
         return (
           <g
             className="PartnersObject"
@@ -170,7 +175,7 @@ const PartnersObjects = ({
                     x2={-radius - arrowsMargin + 5}
                     y1={0}
                     y2={0}
-                    stroke="red"
+                    stroke={genericObjectColor}
                     markerEnd="url(#arrow-end)"
                   />
                 </g>
@@ -182,7 +187,7 @@ const PartnersObjects = ({
               cx={0}
               cy={0}
               r={dataType === 'toflit18' ? radius : max([triangleWidth, triangleHeight]) / 2 + 5}
-              fill={dataType === 'toflit18' ? "red" : "rgba(0,0,0,0.07)"}
+              fill={dataType === 'toflit18' ? partner === 'Marseille' ? marseilleColor : genericObjectColor : "rgba(0,0,0,0.07)"}
             />
             {
               dataType === 'navigo' &&
@@ -191,13 +196,14 @@ const PartnersObjects = ({
               >
                 <path
                   d={`M ${-triangleWidth / 2} ${-triangleHeight / 2} L ${triangleWidth / 2} ${-triangleHeight / 2} L 0 ${triangleHeight / 2} Z`}
-                  fill="red"
+                  fill={partner === 'Marseille' ? marseilleColor : genericObjectColor}
                 />
               </g>
             }
             <text
               x={labelPosition === 'right' ? labelMargin : -labelMargin}
               textAnchor={labelPosition === 'right' ? 'start' : 'end'}
+              fontSize={width / 75}
               y={5}
               className="label"
               // fill="red"
@@ -220,7 +226,7 @@ const PartnersObjects = ({
           markerHeight={arrowSide}
           orient="auto">
 
-          <path d={`M 0 0 L ${arrowSide} ${arrowSide / 2} L 0 ${arrowSide} z`} fill="red" />
+          <path d={`M 0 0 L ${arrowSide} ${arrowSide / 2} L 0 ${arrowSide} z`} fill={genericObjectColor} />
         </marker>
       </defs>
     </>

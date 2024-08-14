@@ -9,6 +9,15 @@ import { useEffect, useState } from "react";
 import { omit } from "lodash";
 import ReactTooltip from "react-tooltip";
 
+const formatKind = (kind, lang) => {
+  if (lang === 'fr') {
+    if (kind === 'exports') {
+      return 'exportations';
+    } else return 'importations';
+  }
+  return kind;
+}
+
 /**
  * Configurable wrapper for main viz #1
  * @param {number} width
@@ -82,9 +91,9 @@ const TradeDynamicsChart = (props) => {
     //     start: start,
     //     end: end,
     //   }),
-    partInPct: (kind) => translate("viz-1-A", "partInPct", lang, { kind }),
+    partInPct: (kind) => translate("viz-1-A", "partInPct", lang, { kind: formatKind(kind, lang) }),
     absoluteValue: (kind) =>
-      translate("viz-1-A", "absoluteValue", lang, { kind }),
+      translate("viz-1-A", "absoluteValue", lang, { kind: formatKind(kind, lang) }),
     regressionTitle: (slope) =>
       translate("viz-1-A", "regressionTitle", lang, { slope }),
     // herfindalLegendTitle: () =>
@@ -163,7 +172,7 @@ const TradeDynamicsChart = (props) => {
             absoluteField="value"
             regressionField="reg"
             slopeField="slope"
-            title={messages.franceOverviewTitle(startYear, endYear, kind)}
+            title={messages.franceOverviewTitle(startYear, endYear, formatKind(kind, lang))}
             axisLeftTitle={""}
             axisRightTitle={messages.absoluteValue(kind)}
             regressionTitle={messages.regressionTitle(
@@ -195,7 +204,7 @@ const TradeDynamicsChart = (props) => {
             regressionField={`${kind}_${regression}`}
             slopeField={`${kind}_slope`}
             //herfindhalField="product_revolutionempire_exports_herfindahl"
-            title={messages.tradeEvolutionTitle(row, startYear, endYear, kind)}
+            title={messages.tradeEvolutionTitle(row, startYear, endYear, formatKind(kind, lang))}
             axisLeftTitle={
               kind.includes("colonial") ? undefined : messages.partInPct(kind)
             }
