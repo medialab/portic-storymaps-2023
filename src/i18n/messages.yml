@@ -483,8 +483,8 @@ EffetsGuerreSurLevant:
     en: total
 GuerreEtCroissance:
   total: 
-    fr: total
-    en: total
+    fr: valeur totale du commerce
+    en: total value of trade
   imports: 
     fr: importations
     en: imports

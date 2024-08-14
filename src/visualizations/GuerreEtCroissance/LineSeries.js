@@ -47,7 +47,10 @@ const LineSeries = ({
     const part2 = inputData[0].slope.split(' ').pop();
     cleanSlope = +part2.split('%')[0]
   }
-  const yDomain = initialYDomain || [0, max(data.map(d => max([d.value, d.peace_reg_memory])))];
+  const yDomain = initialYDomain || [0, max(inputData.map(d => max([d.value, +d.peace_reg_memory, +d.peace_reg])))];
+  // const yDomain = initialYDomain || [0, max(data.map(d => d.value))];
+  
+  // console.log(yDomain, initialYDomain, max(data.map(d => max([d.value, +d.peace_reg_memory, +d.peace_reg]))), inputData)
   let yTickSpan = 50000000;
   if (yDomain[1] <= 10000) {
     yTickSpan = 500;
@@ -61,12 +64,12 @@ const LineSeries = ({
   slope = lang === 'fr' ? slope : slope.replace('an', 'year')
   // const avgNoMem = data[0].avg_loss_no_mem.split(' ').pop().replace('memoire', '');
 
-  const yScale = scaleLinear().domain(yDomain).range([height - gutter, gutter * 2]).nice();
   const yAxisTickValues = range(yDomain[0], yDomain[1] + yTickSpan, yTickSpan);
-  const endX = xScale(MAX_YEAR + 10);
+  const yScale = scaleLinear().domain([yDomain[0], yAxisTickValues[yAxisTickValues.length - 1]]).range([height - gutter, gutter * 2]).nice();
+  const endX = xScale(MAX_YEAR + gutter);
   let tickFontSize = width / 25;
-  if (tickFontSize < 6) {
-    tickFontSize = 6;
+  if (tickFontSize < 3) {
+    tickFontSize = 3;
   }
   // const slopeExtent = extent(data.map(d => d.cleanSlope));
   // const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['red', 'green'])

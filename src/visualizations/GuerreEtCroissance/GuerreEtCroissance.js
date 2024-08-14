@@ -31,13 +31,14 @@ export default function GuerreEtCroissance({
     'total',
     'imports',
     'exports',
-    // 'total_no_colonial_product',
     'total_no_colonial_trade',
-    // 'imports_no_colonial_product',
-    // 'exports_no_colonial_product',
     'imports_no_colonial_trade',
     'exports_no_colonial_trade',
     'navigation',
+
+    // 'imports_no_colonial_product',
+    // 'exports_no_colonial_product',
+    // 'total_no_colonial_product',
   ];
   const defaultDirections = [
     'Marseille',
@@ -345,7 +346,7 @@ export default function GuerreEtCroissance({
                                   data={data[seriesId].filter(d => d.direction_ferme === direction)}
                                   xScale={xScale}
                                   yDomain={[0, 350000000]}
-                                  tickFormat={d => formatNumber(d) + ' lt.'}
+                                  tickFormat={d => formatNumber(d / 1000) + ' k lt.'}
                                   activeYear={activeYear}
                                   onSetActiveYear={y => setActiveYear(y)}
                                   gutter={gutter}
