@@ -543,14 +543,14 @@ GuerreEtCroissance:
     fr: an
     en: year
   tooltip:
-    fr: En ${year}, valeur de ${value} lt. (perte de ${loss} lt.)
-    en: In ${year}, value of ${value} lt. (loss of ${loss} lt.)
+    fr: En ${year}, valeur de ${value} ${unit} (perte de ${loss} ${unit})
+    en: In ${year}, value of ${value} ${unit} (loss of ${loss} ${unit})
   filters-title:
     fr: Afficher ...
     en: Display ...
   filters-directions-title:
-    fr: "Afficher les directions :"
-    en: "Display directions:"
+    fr: "Directions des fermes"
+    en: "Directions des fermes"
   filters-series-title:
-    fr: "Afficher les séries :"
-    en: "Display series:"
+    fr: "Séries"
+    en: "Series"

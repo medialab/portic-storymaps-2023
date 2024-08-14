@@ -23,7 +23,9 @@ const LineSeries = ({
   tickFormat,
   lang,
   wars,
+  circleRadius,
   id,
+  unit = 'lt.'
 }) => {
   if (!inputData || !inputData[0]) {
     return null;
@@ -45,14 +47,14 @@ const LineSeries = ({
     const part2 = inputData[0].slope.split(' ').pop();
     cleanSlope = +part2.split('%')[0]
   }
-  const yDomain = initialYDomain || [0, max(data.map(d => d.value))];
+  const yDomain = initialYDomain || [0, max(data.map(d => max([d.value, d.peace_reg_memory])))];
   let yTickSpan = 50000000;
   if (yDomain[1] <= 10000) {
     yTickSpan = 500;
   } else if (yDomain[1] <= 1000000) {
     yTickSpan = 50000;
   } else if (yDomain[1] <= 5000000) {
-    yTickSpan = 500000;
+    yTickSpan = 1000000;
   }
   const avgMem = data[0].avg_loss_mem.split(' ').pop().replace('memoire', '');
   let slope = data[0].slope.split(' ').pop();
@@ -70,7 +72,6 @@ const LineSeries = ({
   // const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['red', 'green'])
   const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['lightgrey', '#336D7C']);
   const lossColorScale = scaleLinear().domain([-60, 60]).range(['#FEA43B', 'green']);
-
 
   return (
     <g className="LineSeries">
@@ -165,7 +166,7 @@ const LineSeries = ({
             return (
               <line
                 key={year1}
-                stroke="black"
+                stroke="grey"
                 x1={x1}
                 y1={y1}
                 x2={x2}
@@ -222,6 +223,7 @@ const LineSeries = ({
                   data-tip={
                     translate('GuerreEtCroissance', 'tooltip', lang, {
                       year,
+                      unit,
                       value: formatNumber(parseInt(value)),
                       loss: formatNumber(parseInt(data.find(d => d.year === year).peace_reg_memory))
                     })
@@ -232,7 +234,7 @@ const LineSeries = ({
                   fill={isActive ? 'black' : "black"}
                   cx={x}
                   cy={y}
-                  r={isActive ? 3 : 1.5}
+                  r={isActive ? circleRadius * 2 : circleRadius}
                   style={{ pointerEvents: 'none' }}
                 />
               </g>
@@ -242,58 +244,42 @@ const LineSeries = ({
       {
         slope ?
           <foreignObject
-            x={gutter / 2}
+            x={0}
             y={gutter * 2}
-            height={gutter * 2}
-            width={gutter * 10 + 2}
+            height={height}
+            width={xScale(1800)}
           >
             <div
               xmlns="http://www.w3.org/1999/xhtml"
-              className="slope"
+              className="metrics-container"
               style={{
-                fontSize: tickFontSize * 1.5,
-                fontWeight: '900',
-                color: slopeColorScale(cleanSlope),
-                // color: 'white',
-                width: '100%',
-                height: '100%',
+                fontSize: width / 20
               }}
             >
+              <div 
+                className="slope"
+                style={{
+                color: slopeColorScale(cleanSlope),
+
+                }}
+              >
               {slope}
+              </div>
+              <div
+                style={{color: lossColorScale(+avgMem.split('%')[0])}}
+                // x={endX - gutter / 2}
+                // y={0}
+                // fontSize={tickFontSize * 1.5}
+                // fontWeight="bold"
+                // textAnchor="end"
+                className="memory"
+              >
+                {(+avgMem.split('%')[0] > 0 ? '+' : '') + avgMem}
+              </div>
             </div>
           </foreignObject>
           : null
       }
-
-      {/* <text
-        fill={'blue'}
-        x={gutter / 2}
-        y={gutter * 3}
-        fontSize={tickFontSize * 1.5}
-        fontWeight="bold"
-        textAnchor="start"
-      >
-        {slope}
-      </text> */}
-      <text
-        fill={lossColorScale(+avgMem.split('%')[0])}
-        x={endX - gutter / 2}
-        y={id === 'navigation' ? height - gutter - 2 : gutter * 3}
-        fontSize={tickFontSize * 1.5}
-        fontWeight="bold"
-        textAnchor="end"
-      >
-        {(+avgMem.split('%')[0] > 0 ? '+' : '') + avgMem}
-      </text>
-      {/* <text
-        fill={'orange'}
-        x={endX - gutter / 2}
-        y={gutter * 4}
-        fontSize={tickFontSize * 1.5}
-        textAnchor="end"
-      >
-        {avgNoMem}
-      </text> */}
     </g>
   )
 }

@@ -8,6 +8,7 @@ import { formatNumber } from "../../utils/misc";
 import ReactTooltip from "react-tooltip";
 import translate from "../../utils/translate";
 import LineSeries from "./LineSeries";
+import Legend from "./Legend";
 
 const MIN_YEAR = 1720;
 const MAX_YEAR = 1790;
@@ -57,9 +58,9 @@ export default function GuerreEtCroissance({
   useEffect(() => setVisibleSeries(series ? series.split(',').map(s => s.trim()) : defaultSeries), [series]);
   useEffect(() => setVisibleDirections(directions ? directions.split(',').map(d => d.trim()) : defaultDirections), [directions]);
   useEffect(() => setNavigationMetric(navigation_metric || defaultNavigationMetric), [navigation_metric]);
-  useEffect(() => {
-    ReactTooltip.rebuild();
-  }, [lang, visibleSeries, visibleDirections])
+  
+
+
   // const data = useMemo(() => {
   const cleanData = (inputData.get('impact-guerre-sur-croissance.csv') || []).map(datum => ({
     ...datum,
@@ -77,12 +78,18 @@ export default function GuerreEtCroissance({
   //   return groups;
   // }, [inputData]);
 
+
+  let legendWidth = 200;
+  legendWidth = width < 400 ? width / 3 : legendWidth;
+  const matrixWidth = width - legendWidth;
+
   const gutter = 10;
-  const sideWidth = width / 5 < 100 ? 100 : width / 5;
+  const sideWidth = matrixWidth / 5 < 100 ? 100 : matrixWidth / 5;
   const topLabelsHeight = gutter * 3;
   const bottomAxisHeight = gutter * 3;
   const rowHeight = (height - topLabelsHeight - bottomAxisHeight) / visibleSeries.length;
-  const cellWidth = (width - sideWidth - gutter * 5) / (visibleDirections.length < 3 ? 3 : visibleDirections.length);
+  const cellWidth = (matrixWidth - gutter * 6) / (visibleDirections.length + 1);
+  // const cellWidth = (matrixWidth - sideWidth - gutter * 5) / (visibleDirections.length < 3 ? 3 : visibleDirections.length);
 
   const xScale = scaleLinear().domain([MIN_YEAR, MAX_YEAR]).range([0, cellWidth - gutter * 3]);
   const navigationSources = [
@@ -90,25 +97,29 @@ export default function GuerreEtCroissance({
       id: 'carrière',
       source: 'Carriere',
       label: translate('GuerreEtCroissance', 'navigation-interface-carriere', lang),
-      tickFormat: d => formatNumber(d) + ' u.'
+      tickFormat: d => formatNumber(d) + ' u.',
+      unit: 'u.',
     },
     {
       id: 'entrées',
       source: 'Navigo entrées',
       label: translate('GuerreEtCroissance', 'navigation-interface-arrivals', lang),
-      tickFormat: d => formatNumber(d) + ' u.'
+      tickFormat: d => formatNumber(d) + ' u.',
+      unit: 'u.',
     },
     {
       id: 'tonnage',
       source: 'Navigo tonnage',
       label: translate('GuerreEtCroissance', 'navigation-interface-tonnage', lang),
-      tickFormat: d => formatNumber(d) + ' tx.'
+      tickFormat: d => formatNumber(d) + ' tx.',
+      unit: 'tx.',
     },
     {
       id: 'mileage',
       source: 'Navigo mileage_total',
       label: translate('GuerreEtCroissance', 'navigation-interface-distance', lang),
-      tickFormat: d => formatNumber(d) + ' m.'
+      tickFormat: d => formatNumber(d) + ' m.',
+      unit: 'm.',
     },
   ];
   const activeNavigationSource = navigationSources.find(({ id }) => id === navigationMetric).source;
@@ -117,7 +128,7 @@ export default function GuerreEtCroissance({
   // const legendX = sideWidth + (visibleDirections.length >= 4 ? cellWidth * 2.5 : cellWidth * 1.5) + gutter * 2;
   const seriesLabels = useMemo(() => {
     return {
-      'total': translate('GuerreEtCroissance', 'total', lang), 
+      'total': translate('GuerreEtCroissance', 'total', lang),
       'imports': translate('GuerreEtCroissance', 'imports', lang),
       'exports': translate('GuerreEtCroissance', 'exports', lang),
       'total_no_colonial_product': translate('GuerreEtCroissance', 'total_no_colonial_product', lang),
@@ -129,6 +140,10 @@ export default function GuerreEtCroissance({
       'navigation': translate('GuerreEtCroissance', 'navigation', lang),
     }
   }, [translate, lang]);
+
+  useEffect(() => {
+    ReactTooltip.rebuild();
+  }, [lang, visibleSeries, visibleDirections, data, activeNavigationSource]);
 
   const wars = [
     {
@@ -147,6 +162,14 @@ export default function GuerreEtCroissance({
       name: 'indépendance américaine'
     },
   ];
+  let circleRadius = width / 1000; // width / (visibleDirections.length * visibleSeries.length * 20);
+  const numberOfCells = visibleDirections.length * visibleSeries.length;
+  if (numberOfCells < 3) {
+    circleRadius = width / 350;
+  }
+  else if (numberOfCells < 9) {
+    circleRadius = width / 500;
+  }
   return (
     <>
       <svg
@@ -154,185 +177,197 @@ export default function GuerreEtCroissance({
         width={width}
         height={height}
       >
-        <g className="x-axis-wrapper">
-          {
-            visibleDirections.map((direction, index) => {
-              const x = sideWidth + index * cellWidth;
-              return (
-                <g className="x-axis-container"
-                  transform={`translate(${x}, 0)`}
-                  key={direction}
-                >
-                  {
-                    xAxisValues
-                      .map(value => {
-                        const x = xScale(value);
-                        const yEnd = direction === 'Marseille' ? height - bottomAxisHeight : height - bottomAxisHeight - rowHeight;
-                        return (
-                          <g
-                            className="x-axis-group"
-                            key={value}
-                            transform={`translate(${x}, 0)`}
-                          >
-                            <line
-                              stroke="lightgrey"
-                              strokeDasharray={'2,2'}
-                              x1={0}
-                              x2={0}
-                              y1={topLabelsHeight + gutter * 2}
-                              y2={yEnd}
-                            />
-                            <line
-                              stroke="lightgrey"
-                              x1={0}
-                              x2={0}
-                              y1={yEnd}
-                              y2={yEnd + gutter / 2}
-                            />
-                            <text
-                              fill="lightgrey"
-                              x={0}
-                              y={yEnd + gutter * 1.5}
-                              textAnchor="middle"
-                              fontSize={gutter * .6}
-                            >
-                              {value}
-                            </text>
-                          </g>
-                        )
-                      })
-                  }
-                </g>
-              )
-            })
-          }
-        </g>
-        <g className="top-labels">
-          {
-            visibleDirections.map((direction, index) => {
-              const x = sideWidth + index * cellWidth;
-              const y = 0 // topLabelsHeight / 2;
-              return (
-                <foreignObject
-                  x={x}
-                  y={y}
-                  width={cellWidth}
-                  height={topLabelsHeight * 2}
-                  key={direction}
-                >
-                  <div
-                    className="top-label-container">
-                    <h4
-                      xmlns="http://www.w3.org/1999/xhtml"
-                      className="top-label"
-                    >
-                      {direction}
-                    </h4>
-                  </div>
-                </foreignObject>
-              )
-            })
-          }
-        </g>
-
-        <g className="rows">
-          {
-            visibleSeries.map((seriesId, index) => {
-              const y = topLabelsHeight + index * rowHeight;
-              return (
-                <g
-                  className="row"
-                  transform={`translate(${0}, ${y})`}
-                  key={seriesId}
-                >
-                  {
-                    seriesId === 'navigation' ?
-                      <rect
-                        x={0}
-                        y={0}
-                        width={width}
-                        height={rowHeight}
-                        fill={`rgba(0,0,0,0.0)`}
-                      />
-                      : null
-                  }
-                  <g className="row-title-container">
-                    <foreignObject
-                      x={0}
-                      y={0}
-                      width={sideWidth}
-                      height={rowHeight}
-                    >
-                      <div
-                        xmlns="http://www.w3.org/1999/xhtml"
-                        className="row-title-wrapper">
-                        <h4
-                          className="row-title"
-                        >
-                          {seriesLabels[seriesId]}
-                        </h4>
-                      </div>
-                    </foreignObject>
-                  </g>
-                  <g
-                    className="row-columns-container"
-                    transform={`translate(${sideWidth}, 0)`}
+        {/* <rect
+          fill="pink"
+          x={0}
+          y={0}
+          height={height}
+          width={legendWidth + sideWidth}
+        /> */}
+        <g className="viz-space-wrapper" transform={`translate(${legendWidth}, 0)`}>
+          <g className="x-axis-wrapper">
+            {
+              visibleDirections.map((direction, index) => {
+                const x = sideWidth + index * cellWidth;
+                return (
+                  <g className="x-axis-container"
+                    transform={`translate(${x}, 0)`}
+                    key={direction}
                   >
                     {
-                      seriesId === 'navigation' ?
-                        <LineSeries
-                          width={cellWidth}
-                          height={rowHeight}
-                          id={seriesId}
-                          data={data[activeNavigationSource]}
-                          tickFormat={activeNavigationTickFormat}
-                          activeYear={activeYear}
-                          onSetActiveYear={y => setActiveYear(y)}
-                          xScale={xScale}
-                          gutter={gutter}
-                          seriesLabels={seriesLabels}
-                          wars={wars}
-                          lang={lang}
-                          displayYTicks
-                        />
-                        :
-                        visibleDirections.map((direction, index) => {
-                          const x = index * cellWidth;
-                          if (!data[seriesId]) {
-                            return null;
-                          }
+                      xAxisValues
+                        .map(value => {
+                          const x = xScale(value);
+                          const yEnd = direction === 'Marseille' ? height - bottomAxisHeight : height - bottomAxisHeight - rowHeight;
                           return (
                             <g
-                              key={index}
+                              className="x-axis-group"
+                              key={value}
                               transform={`translate(${x}, 0)`}
                             >
-                              <LineSeries
-                                width={cellWidth}
-                                height={rowHeight}
-                                id={seriesId}
-                                data={data[seriesId].filter(d => d.direction_ferme === direction)}
-                                xScale={xScale}
-                                yDomain={[0, 350000000]}
-                                tickFormat={d => formatNumber(d) + ' lt.'}
-                                activeYear={activeYear}
-                                onSetActiveYear={y => setActiveYear(y)}
-                                gutter={gutter}
-                                seriesLabels={seriesLabels}
-                                wars={wars}
-                                lang={lang}
-                                displayYTicks={index === visibleDirections.length - 1}
+                              <line
+                                stroke="lightgrey"
+                                strokeDasharray={'2,2'}
+                                x1={0}
+                                x2={0}
+                                y1={topLabelsHeight + gutter * 2}
+                                y2={yEnd}
                               />
+                              <line
+                                stroke="lightgrey"
+                                x1={0}
+                                x2={0}
+                                y1={yEnd}
+                                y2={yEnd + gutter / 2}
+                              />
+                              <text
+                                fill="grey"
+                                x={0}
+                                y={yEnd + gutter * 1.5}
+                                textAnchor="middle"
+                                fontSize={gutter * .6}
+                              >
+                                {value}
+                              </text>
                             </g>
                           )
                         })
                     }
                   </g>
-                </g>
-              )
-            })
-          }
+                )
+              })
+            }
+          </g>
+          <g className="top-labels">
+            {
+              visibleDirections.map((direction, index) => {
+                const x = sideWidth + index * cellWidth;
+                const y = 0 // topLabelsHeight / 2;
+                return (
+                  <foreignObject
+                    x={x}
+                    y={y}
+                    width={cellWidth}
+                    height={topLabelsHeight * 2}
+                    key={direction}
+                  >
+                    <div
+                      className="top-label-container">
+                      <h4
+                        xmlns="http://www.w3.org/1999/xhtml"
+                        className="top-label"
+                      >
+                        {direction}
+                      </h4>
+                    </div>
+                  </foreignObject>
+                )
+              })
+            }
+          </g>
+          <g className="rows">
+            {
+              visibleSeries.map((seriesId, index) => {
+                const y = topLabelsHeight + index * rowHeight;
+                return (
+                  <g
+                    className="row"
+                    transform={`translate(${0}, ${y})`}
+                    key={seriesId}
+                  >
+                    {
+                      seriesId === 'navigation' ?
+                        <rect
+                          x={0}
+                          y={0}
+                          width={width}
+                          height={rowHeight}
+                          fill={`rgba(0,0,0,0.0)`}
+                        />
+                        : null
+                    }
+                    <g className="row-title-container">
+                      <foreignObject
+                        x={0}
+                        y={0}
+                        width={sideWidth}
+                        height={rowHeight}
+                      >
+                        <div
+                          xmlns="http://www.w3.org/1999/xhtml"
+                          className="row-title-wrapper">
+                          <h4
+                            className="row-title"
+                          >
+                            {seriesLabels[seriesId]}
+                          </h4>
+                        </div>
+                      </foreignObject>
+                    </g>
+                    <g
+                      className="row-columns-container"
+                      transform={`translate(${sideWidth}, 0)`}
+                    >
+                      {
+                        seriesId === 'navigation' ?
+                          <LineSeries
+                            width={cellWidth}
+                            height={rowHeight}
+                            id={seriesId}
+                            data={data[activeNavigationSource]}
+                            tickFormat={activeNavigationTickFormat}
+                            activeYear={activeYear}
+                            onSetActiveYear={y => setActiveYear(y)}
+                            xScale={xScale}
+                            gutter={gutter}
+                            seriesLabels={seriesLabels}
+                            wars={wars}
+                            lang={lang}
+                            displayYTicks
+                            circleRadius={circleRadius}
+                            unit={navigationSources.find(({ id }) => id === navigationMetric).unit}
+                          />
+                          :
+                          visibleDirections.map((direction, index) => {
+                            const x = index * cellWidth;
+                            if (!data[seriesId]) {
+                              return null;
+                            }
+                            return (
+                              <g
+                                key={index}
+                                transform={`translate(${x}, 0)`}
+                              >
+                                <LineSeries
+                                  width={cellWidth}
+                                  height={rowHeight}
+                                  id={seriesId}
+                                  data={data[seriesId].filter(d => d.direction_ferme === direction)}
+                                  xScale={xScale}
+                                  yDomain={[0, 350000000]}
+                                  tickFormat={d => formatNumber(d) + ' lt.'}
+                                  activeYear={activeYear}
+                                  onSetActiveYear={y => setActiveYear(y)}
+                                  gutter={gutter}
+                                  seriesLabels={seriesLabels}
+                                  wars={wars}
+                                  lang={lang}
+                                  displayYTicks={index === visibleDirections.length - 1}
+                                  circleRadius={circleRadius}
+                                  unit={'lt.'}
+                                />
+                              </g>
+                            )
+                          })
+                      }
+                    </g>
+                  </g>
+                )
+              })
+            }
+          </g>
         </g>
-        <foreignObject
+        {/* <foreignObject
 
           x={sideWidth + cellWidth * 1.5}
           y={topLabelsHeight + rowHeight * (visibleSeries.length - 1) + gutter * 3}
@@ -366,83 +401,31 @@ export default function GuerreEtCroissance({
               }
             </ul>
           </div>
-        </foreignObject>
-        <foreignObject
-          // x={legendX}
-          // y={topLabelsHeight + rowHeight * (visibleSeries.length - 1) + gutter * 3}
-          // width={width - legendX - gutter * 3}
-          // height={rowHeight}
-          x={gutter}
-          y={topLabelsHeight + rowHeight * .25 + gutter}
-          width={sideWidth / 2}
-          height={rowHeight * 3}
-        >
-          <div
-            xmlns="http://www.w3.org/1999/xhtml"
-            className="legend"
-          >
-            <h4>
-              {translate('GuerreEtCroissance', 'legend-title', lang)}
-            </h4>
-            <ul>
-              <li>
-                <span
-                  style={{
-                    height: '.3rem',
-                    borderBottom: '2px solid red',
-                    display: 'inline-block',
-                  }}
-                ></span>
-                <span>{translate('GuerreEtCroissance', 'legend-slope', lang)}</span>
-              </li>
-              <li>
-                <span
-                  style={{
-                    color: '#336D7C'
-                  }}
-                >
-                  +1%/{translate('GuerreEtCroissance', 'year', lang)}
-                </span>
-                <span>{translate('GuerreEtCroissance', 'legend-growth', lang)}</span>
-              </li>
-              <li>
-                <span>
-                  <span
-                    style={{
-                      color: 'red'
-                    }}
-                  >
-                    -1%
-                  </span>
-                  <span
-                    style={{
-                      color: 'green'
-                    }}
-                  >
-                    +2%
-                  </span>
-                </span>
-                <span>{translate('GuerreEtCroissance', 'legend-loss', lang)}</span>
-              </li>
-            </ul>
-          </div>
-          {/*         
-        <g transform={`translate(${0}, ${0})`}>
-          <line
-            stroke="red"
-            x1={0}
-            x2={gutter * 2}
-            y1={gutter}
-            y2={gutter}
-          />
-           <text
-            x={gutter * 3}
-            y={gutter}
-          >
-            Régression d'après la période de paix précédente
-          </text> */}
-          {/* </g> */}
-        </foreignObject>
+        </foreignObject> */}
+        <Legend
+          {
+          ...{
+            x: gutter,
+            y: topLabelsHeight,
+            width: legendWidth,
+            height: height - topLabelsHeight * 2,
+            lang,
+
+            atlasMode,
+            defaultDirections,
+            visibleDirections,
+            setVisibleDirections,
+            defaultSeries,
+            visibleSeries,
+            setVisibleSeries,
+
+            navigationMetric,
+            setNavigationMetric,
+            navigationSources,
+          }
+          }
+        />
+
         <pattern id="diagonalHatch" patternUnits="userSpaceOnUse" width="4" height="4">
           <path d="M-1,1 l2,-2
                               M0,4 l4,-4
@@ -450,7 +433,7 @@ export default function GuerreEtCroissance({
             style={{ stroke: 'grey', opacity: 1, strokeWidth: 1 }} />
         </pattern>
 
-        {
+        {/*
           atlasMode ?
             <foreignObject
               x={gutter * 4}
@@ -467,7 +450,6 @@ export default function GuerreEtCroissance({
                   {translate('GuerreEtCroissance', 'filters-title', lang)}
                 </button>
                 <div className={`collapsable-controls ${controlsVisible ? 'is-visible' : ''}`}>
-
                   <p>
                   {translate('GuerreEtCroissance', 'filters-directions-title', lang)}
                   </p>
@@ -518,7 +500,7 @@ export default function GuerreEtCroissance({
               </div>
             </foreignObject>
             : null
-        }
+       */ }
 
 
       </svg>
