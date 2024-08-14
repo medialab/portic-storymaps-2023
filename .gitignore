@@ -68,7 +68,6 @@ __pycache__
 /data/
 /public/data
 /public/thumbnails
-/public/assets/drafts/*.jpg
 /src/content/
 # production
 /build
