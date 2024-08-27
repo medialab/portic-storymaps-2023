@@ -55,9 +55,10 @@ export default function StyleViz({
   const legendObjectsValues = range(legendStep, legendStep * numberOfLegendObjects, legendStep);
   // const legendCellHeight =  (matrixHeight - cellHeight * 3) / 7 * 1.2;
   let legendObjectOffset = cellHeight * 1.8;
+  const statusClass = highlightedCategory ? highlightedCategory === id ? 'is-highlighted': 'is-shadowed' : '';
   return (
     <div 
-      className={`StyleViz ${highlightedCategory ? highlightedCategory === id ? 'is-highlighted': 'is-shadowed' : ''}`}
+      className={`StyleViz ${statusClass}`}
       onMouseEnter={() => setHighlightedCategory(id)}
           onMouseLeave={() => setHighlightedCategory()}
     >

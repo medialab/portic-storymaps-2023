@@ -85,9 +85,9 @@ const Provinces = ({
 
   const project = geoPath().projection(projection);
 
-  const maxRadius = width / 80;
+  const maxRadius = width / 50;
   const maxArea = Math.PI * maxRadius * maxRadius;
-  const areaScale = scaleLinear().domain([0, max(portsData.map(d => +d.count))]).range([5, maxArea]);
+  const areaScale = scaleLinear().domain([0, max(portsData.map(d => +d.count))]).range([width / 100, maxArea]);
 
   const legendValues = [1000, 100];
   const areaMax = areaScale(legendValues[0]);
@@ -100,6 +100,7 @@ const Provinces = ({
   return (
     <g>
       {
+        /*
         data.map((datum) => {
           const shortname = datum.properties.shortname;
           const category = mapShortNameToCategory[shortname];
@@ -118,18 +119,6 @@ const Provinces = ({
                 className={`geopart dashed ${highlightedCategory && highlightedCategory !== categoryId ? 'is-shadowed' : ''}`}
                 fill={`url(#diagonalHatch-${categoryId}`}
               />
-              {/* <text
-                x={centroidX}
-                y={centroidY}
-                textAnchor="middle"
-                fill="black"
-                opacity={.8}
-                fontStyle="italic"
-                // stroke="white"
-                fontWeight="bold"
-              >
-                {shortname}
-              </text> */}
               <pattern id={`diagonalHatch-${categoryId}`} patternUnits="userSpaceOnUse" width="4" height="4">
                 <path
                   d="M-1,1 l2,-2
@@ -144,6 +133,7 @@ const Provinces = ({
             </g>
           )
         })
+        */
       }
       {
         portsData.map(({ port, category, latitude, longitude, count }) => {
@@ -152,6 +142,39 @@ const Provinces = ({
           const radius = Math.sqrt(area / Math.PI);
           const color = colors[category];
           const categoryId = category.split(' ')[0].toLowerCase();
+          const id = `port-${latitude.trim()}-${longitude.trim()}`;
+          const gradientId = `gradient-${id}`;
+          return (
+            <>
+            <circle
+              fill={`url(#${gradientId})`}
+              stroke="none"
+              cx={x}
+              cy={y}
+              r={radius * 3 + width / 20}
+              opacity={highlightedCategory ? highlightedCategory !== categoryId ? 0 : .1 : 0.1}
+              title={port}
+              key={port + '1'}
+            />
+            <defs>
+          <radialGradient id={gradientId} key={port + '3'}>
+            <stop offset="10%" stop-color={color} stop-opacity={.3} />
+            <stop offset="95%" stop-color={color} stop-opacity={0} />
+          </radialGradient>
+        </defs>
+            </>
+          )
+        })
+      }
+      {
+        portsData.map(({ port, category, latitude, longitude, count }) => {
+          const [x, y] = projection([longitude, latitude]);
+          const area = areaScale(+count);
+          const radius = Math.sqrt(area / Math.PI);
+          const color = colors[category];
+          const categoryId = category.split(' ')[0].toLowerCase();
+          const id = `port-${latitude.trim()}-${longitude.trim()}`;
+          const gradientId = `gradient-${id}`;
           return (
             <circle
               fill={color}
@@ -159,9 +182,9 @@ const Provinces = ({
               cx={x}
               cy={y}
               r={radius}
-              opacity={highlightedCategory && highlightedCategory !== categoryId ? .3 : 1}
+              opacity={highlightedCategory && highlightedCategory !== categoryId ? .2 : 1}
               title={port}
-              key={port}
+              key={port + '2'}
               data-for={"styles-tooltip"}
               data-tip={`${port} (${translate('StylesNavigation', 'travels-tick', lang, {count})})`}
               onMouseEnter={() => setHighlightedCategory(categoryId)}
@@ -271,7 +294,6 @@ export default function StylesNavigation({
     categorie
   } = callerProps;
   const [highlightedTonnage, setHighlightedTonnage] = useState(tonnage);
-  console.log(highlightedTonnage);
   const [highlightedSteps, setHighlightedSteps] = useState(steps);
   const [highlightedCategory, setHighlightedCategory] = useState(categorie);
   // reset from caller props change

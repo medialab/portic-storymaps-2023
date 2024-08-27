@@ -40,6 +40,7 @@
   }
 
   .StyleViz {
+    transition: .5s ease opacity;
     h4{
       margin: .5rem;
       // margin: 0;
@@ -53,7 +54,7 @@
     }
 
     &.is-shadowed {
-      opacity: .8;
+      opacity: .5;
     }
   }
 
