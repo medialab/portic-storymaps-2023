@@ -286,7 +286,7 @@ const GeographicMapChart = ({
         case 'French Levant':
             projectionConfig = {
               ...projectionConfig,
-              scale: width > 950 ? 5800 : 3800,
+              scale: width > 800 ? 5800 : 3800,
               // centerX: 15,
               // centerY: 40,
               centerX: 6,

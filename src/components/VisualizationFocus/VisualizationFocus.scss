@@ -97,6 +97,11 @@
       .details-contents {
         margin-top: $medium-gutter * 5;
         pointer-events: all;
+        @include tablet {
+          .details-contents-section {
+            width: 100%;
+          }
+        }
       }
     }
     .visualization-wrapper {
