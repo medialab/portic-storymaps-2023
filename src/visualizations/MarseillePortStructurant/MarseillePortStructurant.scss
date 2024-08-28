@@ -1,5 +1,5 @@
 
-
+@import '../../styles/variables.scss';
 .MarseillePortStructurant {
   .geopart {
     // fill: rgba(150, 150, 150, 1)!important; // #0b2941 !important;
@@ -11,4 +11,13 @@
   .legend-label {
     margin: 0;
   }
+  @include tablet {
+    .legend-title {
+      font-size: .9rem;
+    }
+    .legend-label {
+      font-size: .5rem!important;
+    }
+  }
+  
 }

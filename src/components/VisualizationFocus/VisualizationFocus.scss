@@ -114,12 +114,18 @@
       cursor: pointer;
       &.full-screen {
         height: calc(100vh - (2 * $medium-gutter));
+        @include tablet {
+          height: 200vh;
+        }
         background: white;
         overflow: hidden;
         > div {
           margin: $medium-gutter;
           height: calc(100% - (2 * $medium-gutter));
           width: calc(100% - (2 * $medium-gutter));
+          @include tablet {
+            height: 200vh;
+          }
         }
       }
       .VisualizationController {

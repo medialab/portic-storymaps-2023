@@ -272,7 +272,7 @@ const GeographicMapChart = ({
         case 'mediterranean and Ponant':
             projectionConfig = {
               ...projectionConfig,
-              scale: 500,
+              scale: width > 950 ? 500 : 300,
               // centerX: 15,
               // centerY: 40,
               centerX: 5,
@@ -286,7 +286,7 @@ const GeographicMapChart = ({
         case 'French Levant':
             projectionConfig = {
               ...projectionConfig,
-              scale: 5800,
+              scale: width > 950 ? 5800 : 3800,
               // centerX: 15,
               // centerY: 40,
               centerX: 6,
