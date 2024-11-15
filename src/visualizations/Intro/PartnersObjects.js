@@ -154,9 +154,7 @@ const PartnersObjects = ({
             });
           }
         }
-        if (partner === 'Marseille') {
-          console.log('ok marseille', [latitude, longitude])
-        }
+
         return (
           <g
             className="PartnersObject"

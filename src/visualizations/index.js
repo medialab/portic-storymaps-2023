@@ -20,6 +20,7 @@ import DocumentaireSentendre from "./About/DocumentaireSentendre";
 import MaquettesVisualisations from "./About/MaquettesVisualisations";
 import ProcessusMaj from "./About/ProcessusMaj";
 import SchemasGeneraux from "./About/SchemasGeneraux";
+import EvolutionCorrelationIndices from "./About/EvolutionCorrelationIndices";
 
 
 const visualizations = {
@@ -44,6 +45,7 @@ const visualizations = {
   'maquettes-visualisations': MaquettesVisualisations,
   'processus-maj': ProcessusMaj,
   'schemas-generaux': SchemasGeneraux,
+  'evolution-correlation-indices': EvolutionCorrelationIndices
 };
 
 /**

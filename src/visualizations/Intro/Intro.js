@@ -60,7 +60,7 @@ const Intro = ({
     }
   }
 
-  const usableData = data.get('intro_data_world.csv');
+  const usableData = data.get('intro_data_world.csv') || [];
 
   const visibleData = useMemo(() => {
     if (dataType === 'toflit18') {
