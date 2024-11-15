@@ -6,7 +6,9 @@ import cx from 'classnames';
 import FrMla from './mla-fr.mdx';
 import EnMla from './mla-en.mdx';
 import FrIso690 from './iso-fr.mdx';
+import EnIso690 from './iso-en.mdx';
 import FrApa from './apa-fr.mdx';
+import EnApa from './apa-en.mdx';
 import Doi from './doi.mdx';
 
 import './CitationWidget.scss';
@@ -21,6 +23,8 @@ const CONTENTS = {
   },
   en: {
     'MLA': EnMla,
+    'ISO 690': EnIso690,
+    'APA': EnApa,
     'DOI': Doi
   }
 }
