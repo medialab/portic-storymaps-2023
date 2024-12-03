@@ -128,7 +128,7 @@ const PartnersObjects = ({
             // tooltipText = `La direction des fermes de Marseille a effectué un commerce total de ${formatNumber(parseInt(toflit_value, lang))} lt. avec le partenaire ${partner} en 1789.`
             tooltipText = translate('Intro', 'tooltip-trade-world', lang, {
               count: formatNumber(parseInt(toflit_value), lang),
-              partner
+              partner: translate('Intro', partner, lang)
             });
           } else {
             // tooltipText = `La direction des fermes de ${partner} a effectué un commerce total de ${formatNumber(parseInt(toflit_value, lang))} lt. en 1789.`
@@ -206,7 +206,7 @@ const PartnersObjects = ({
               className="label"
               // fill="red"
             >
-              {partner}
+              {dataScope === 'world' ? translate("Intro", partner, lang) : partner}
             </text>
 
           </g>

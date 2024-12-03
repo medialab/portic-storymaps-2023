@@ -296,16 +296,133 @@ Intro:
     en: ${count} travels
   tooltip-navigo-world:
     fr: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
-    en: ${nb_ships} travels were made from the ports of ${partner} to Marseille in 1789, for a mean tonnage of ${tonnage}.
+    en: ${nb_ships} ships departured from the ports of ${partner} to Marseille in 1789, for a mean tonnage of ${tonnage} tx.
   tooltip-navigo-france:
-    fr: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
-    en: ${nb_ships} travels were made from the ports of ${partner} to Marseille in 1789, for a mean tonnage of ${tonnage}.
+    fr: ${nb_ships} voyages ont été effectués depuis le port ${partner} vers Marseille en 1787, pour un tonnage moyen de ${tonnage} tonneaux.
+    en: ${nb_ships} ships departured from the port of ${partner} to Marseille in 1787, for a mean tonnage of ${tonnage} tx.
   tooltip-trade-world:
     fr: La direction des fermes de Marseille a effectué un commerce total de ${count} lt. avec le partenaire ${partner} en 1789.
     en: The direction des fermes of Marseille carried out a total trade of ${count} lt. with partner ${partner}.
   tooltip-trade-france:
     fr: La direction des fermes de ${partner} a effectué un commerce total de ${count} lt. en 1789.
     en: The direction des fermes of ${partner} carried on a total trade of ${count} lt. in 1789.
+  Duché de Massa et Carrare:
+    fr: Duché de Massa et Carrare
+    en: Duchy of Massa et Carrara
+  Quatre villes hanséatiques:
+    fr: Quatre villes hanséatiques
+    en: Four hanseatic cities
+  Espagne:
+    fr: Espagne
+    en: Spain
+  République de Lucques:
+    fr: République de Lucques
+    en: Republic of Lucca
+  Suède:
+    fr: Suède
+    en: Sweden
+  Hollande:
+    fr: Hollande
+    en: Holland
+  Angleterre:
+    fr: Angleterre
+    en: England
+  République de Gênes:
+    fr: République de Gênes
+    en: Republic of Genoa
+  Empire ottoman:
+    fr: Empire ottoman
+    en: Ottoman Empire
+  Etats de l'Empereur:
+    fr: Etats de l'Empereur
+    en: States of the Emperor
+  Malte:
+    fr: Malte
+    en: Malta
+  Russie:
+    fr: Russie
+    en: Russia
+  Royaume de Naples:
+    fr: Royaume de Naples
+    en: Kingdom of Napoli
+  Prusse:
+    fr: Prusse
+    en: Prussia
+  République de Raguse:
+    fr: République de Raguse
+    en: Républic of Ragusa
+  Etats pontificaux:
+    fr: Etats pontificaux
+    en: Papal States
+  États ecclésiastiques:
+    fr: Etats ecclésiastiques
+    en: Ecclesiastic States
+  Danemark:
+    fr: Danemark
+    en: Denmark
+  Maroc:
+    fr: Maroc
+    en: Marocco
+  Toscane:
+    fr: Toscane
+    en: Tuscany
+  Duché de Courlande:
+    fr: Duché de Courlande
+    en: Duchy of Courland
+  Portugal:
+    fr: Portugal
+    en: Portugal
+  Royaume de Piémont-Sardaigne:
+    fr: Royaume de Piémont-Sardaigne
+    en: Kingdom of Sardinia-Piedmont
+  Royaume de Piemont et Sardaigne:
+    fr: Royaume de Piémont et Sardaigne
+    en: Kingdom of Sardinia and Piedmont
+  République de Venise:
+    fr: République de Venise
+    en: Republic of Venice
+  Etats-Unis:
+    fr: Etats-Unis
+    en: United States
+  Monaco:
+    fr: Monaco
+    en: Monaco
+  Inconnu:
+    fr: Inconnu
+    en: Unknown
+  Allemagne:
+    fr: Allemagne
+    en: Germany
+  États-Unis d'Amérique:
+    fr: États-Unis d'Amérique
+    en: United States of America
+  Amériques:
+    fr: Amériques
+    en: Americas
+  Afrique:
+    fr: Afrique
+    en: Africa
+  Levant et Barbarie:
+    fr: Levant et Barbarie
+    en: Levant and Barbary Coast
+  Naples:
+    fr: Naples
+    en: Napoli
+  Gênes:
+    fr: Gênes
+    en: Genoa
+  Venise:
+    fr: Venise
+    en: Venice
+  Milanais, Toscane et Lucques:
+    fr: Milanais, Toscane et Lucques
+    en: Milan, Tuscany and Lucca
+  Flandre et autres états de l'Empereur:
+    fr: Flandre et autres états de l'Empereur
+    en: Flanders and other states of the Emperor
+  Nord:
+    fr: Nord
+    en: North
 LevantNavigation:
   title:
     fr: Le Levant du point de vue de la navigation

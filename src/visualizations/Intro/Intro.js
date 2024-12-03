@@ -82,9 +82,18 @@ const Intro = ({
             return 1;
           })
           .slice(0, topPortsNumber)
+          .map(d => {
+            if (d.partner === 'Dunkerque' && lang === 'en') {
+              return {
+                ...d,
+                partner: 'Dunkirk'
+              }
+            }
+            return d;
+          })
       }
     }
-  }, [data, mode, dataType, dataScope, topPortsNumber]);
+  }, [data, mode, dataType, dataScope, topPortsNumber, lang]);
 
   useEffect(() => {
     ReactTooltip.rebuild();
