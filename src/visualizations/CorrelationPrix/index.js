@@ -11,7 +11,7 @@
  **/
 
 import GeographicMapChart from "../../components/GeographicMapChart";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { WheatCorrelationsLegend } from "./legend";
 import "./wheat-correlations.scss";
 import { keyBy, mapValues, pick } from "lodash";
@@ -36,6 +36,118 @@ const DEFAULTS = {
   colorBy: "community",
 };
 
+const cleanCityNamesMap = {
+  "Abbeville": "Abbeville",
+  "Arras": "Arras",
+  "Auzerre": "Auzerre",
+  "BarleDuc": "Bar-le-Duc",
+  "Bayeux": "Bayeux",
+  "Beaumont": "Beaumont",
+  "Bernay": "Bernay",
+  "Blois": "Blois",
+  "Cany": "Cany",
+  "ChalonssurMarne": "Chalons-sur-Marne",
+  "Charleville": "Charleville",
+  "Chateaudun": "Chateaudun",
+  "Chateauroux": "Chateauroux",
+  "ChaumontenCaux": "Chaumont-en-Caux",
+  "ChaumontenVexin": "Chaumont-en-Vexin",
+  "Eu": "Eu",
+  "Gonesse": "Gonesse",
+  "LeHavre": "LeHavre",
+  "Lille": "Lille",
+  "MagnyenVexin": "Magny-en-Vexin",
+  "Melun": "Melun",
+  "Meulan": "Meulan",
+  "Orléans": "Orléans",
+  "Paris": "Paris",
+  "Pontoise": "Pontoise",
+  "Reims": "Reims",
+  "Rouen": "Rouen",
+  "RozayenBrie": "Rozay-en-Brie",
+  "Soissons": "Soissons",
+  "Aigueperse": "Aigueperse",
+  "Billom": "Billom",
+  "Brioude": "Brioude",
+  "Issoire": "Issoire",
+  "Maringues": "Maringues",
+  "Riom": "Riom",
+  "VicleComte": "Vic-le-Comte",
+  "AixenProvence": "Aix-en-Provence",
+  "Arles": "Arles",
+  "Aubenas": "Aubenas",
+  "Avignon": "Avignon",
+  "BuislesBaronnies": "Buis-les-Baronnies",
+  "Carcassonne": "Carcassonne",
+  "Draguignan": "Draguignan",
+  "Montpellier": "Montpellier",
+  "PontSaintEsprit": "Pont-Saint-Esprit",
+  "Toulouse": "Toulouse",
+  "VilleneuvedeBerg": "Villeneuve-de-Berg",
+  "Albi": "Albi",
+  "Bordeaux": "Bordeaux",
+  "Castelnaudary": "Castelnaudary",
+  "Castres": "Castres",
+  "Grenade": "Grenade",
+  "Luneville": "Luneville",
+  "Marmande": "Marmande",
+  "Montauban": "Montauban",
+  "Angers": "Angers",
+  "Bourges": "Bourges",
+  "ChateauGontier": "Château-Gontier",
+  "Fontenay": "Fontenay",
+  "LeMans": "Le Mans",
+  "Nantes": "Nantes",
+  "Poitiers": "Poitiers",
+  "Rennes": "Rennes",
+  "Angoulême": "Angoulême",
+  "Annonay": "Annonay",
+  "Grenoble": "Grenoble",
+  "LePuyenVelay": "Le Puy-en-Velay",
+  "Lyon": "Lyon",
+  "Romans": "Romans",
+  "SaintAffrique": "Saint-Affrique",
+  "BoulognesurMer": "Boulogne-sur-Mer",
+  "Colmar": "Colmar",
+  "Dole": "Dole",
+  "Douai": "Douai",
+  "Guéret": "Guéret",
+  "Limoges": "Limoges",
+  "Mende": "Mende",
+  "Mâcon": "Mâcon",
+  "PontlAbbé": "Pont-l’Abbé",
+  "SaintEtienne": "Saint-Etienne",
+  "Strasbourg": "Strasbourg",
+  "Tulle": "Tulle",
+  "Vannes": "Vannes",
+  "Bayonne": "Bayonne",
+  "Digne": "Digne",
+  "Marseille": "Marseille",
+  "Pamiers": "Pamiers",
+  "Ayen": "Ayen",
+  "Narbonne": "Narbonne",
+  "Puylaurens": "Puylaurens",
+  "Treignac": "Treignac",
+  "Pau": "Pau",
+  "Verfeil": "Verfeil",
+  "Mulhouse": "Mulhouse",
+  "Lavaur": "Lavaur",
+  "Revel": "Revel",
+  "TarasconsurAriège": "Tarascon-sur-Ariège",
+  "BrivelaGaillarde": "Brive-la-Gaillarde",
+  "Cordes": "Cordes",
+  "Foix": "Foix",
+  "Chartres": "Chartres",
+  "Langres": "Langres",
+  "Réalmont": "Réalmont",
+  "Peyrehorade": "Peyrehorade",
+  "SaintBrieuc": "Saint-Brieuc",
+}
+
+const cleanCityName = originalName => {
+  return cleanCityNamesMap[originalName];
+}
+
 const CorrelationPrix = ({
   data,
   width,
@@ -47,27 +159,35 @@ const CorrelationPrix = ({
   const [layout, setLayout] = useState(DEFAULTS.layout);
   const [colorBy, setColorBy] = useState(DEFAULTS.colorBy);
 
+
   useEffect(() => {
     setLayout(callerProps?.layout || DEFAULTS.layout);
     setColorBy(callerProps?.colorby || DEFAULTS.colorBy);
   }, [callerProps?.layout, callerProps?.colorby]);
 
-  const originalData = data.get("wheat_correlations_cities.csv");
+  const originalData = useMemo(() => data.get("wheat_correlations_cities.csv")
+    .map(datum => {
+      return {
+        ...datum,
+        label: datum.label || cleanCityName(datum.id)
+      }
+    }), [data]);
+  console.log(originalData.map(d => d.label).join('\n'))
 
   // const dataPoints = useMemo(() => {
-    let dataPoints;
-    switch (layout) {
-      case "network":
-        dataPoints = originalData.map((datum) => ({
-          ...datum,
-          latitude: datum.networkLatitude,
-          longitude: datum.networkLongitude,
-        }));
-        break;
-      default:
-        dataPoints = originalData;
-        break;
-    }
+  let dataPoints;
+  switch (layout) {
+    case "network":
+      dataPoints = originalData.map((datum) => ({
+        ...datum,
+        latitude: datum.networkLatitude,
+        longitude: datum.networkLongitude,
+      }));
+      break;
+    default:
+      dataPoints = originalData;
+      break;
+  }
   // }, [originalData, layout]);
 
   return (
@@ -119,7 +239,7 @@ const CorrelationPrix = ({
               radiusRange: [5, 5],
               labelSizeRange: [14, 14],
               disableHover: true,
-              tooltip: (datum) => `${datum.market} (${datum.bassin})`,
+              tooltip: (datum) => `${datum.label} (${datum.bassin})`,
             },
           ],
         }}

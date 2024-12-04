@@ -72,7 +72,7 @@ const PointGroup = ({
           layer.size && layer.size.displayMetric && labelSize > 9 ?
             <text
               x={0}
-              y={labelSize * .8 * .33}
+              y={labelSize * .8 * .5}
               textAnchor="middle"
               fontSize={labelSize * .8}
               fill="white"
@@ -86,7 +86,7 @@ const PointGroup = ({
           label && displayLabel ?
             <text
               x={labelPosition === 'right' ? size + 5 : -size - 5}
-              y={size / 2}
+              y={size}
               fill={layer.color && layer.color.labelsColor}
               textAnchor={labelPosition === 'right' ? 'start' : 'end'}
               fontSize={labelSize}
