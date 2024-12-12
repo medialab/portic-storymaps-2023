@@ -1,14 +1,16 @@
 echo "Download data: fetching isolated toflit18 data"
 curl -o "data/toflit18_all_flows.csv" "https://sandbox.robindemourat.com/portic-storymaps-data/toflit18_all_flows.csv"
+echo "Done fetching isolated toflit18 data"
 
 echo "Download data: fetching isolated navigo pointcalls data"
 curl -o data/navigo_all_pointcalls_1789.csv "https://sandbox.robindemourat.com/portic-storymaps-data/navigo_all_pointcalls_1789.csv"
 curl -o data/navigo_all_pointcalls_1787.csv "https://sandbox.robindemourat.com/portic-storymaps-data/navigo_all_pointcalls_1787.csv"
+echo "Done fetching isolated navigo pointcalls data"
 
 echo "Download data: fetching isolated navigo flows data"
 curl -o data/navigo_all_flows_1789.csv "https://sandbox.robindemourat.com/portic-storymaps-data/navigo_all_flows_1789.csv"
 curl -o data/navigo_all_flows_1787.csv "https://sandbox.robindemourat.com/portic-storymaps-data/navigo_all_flows_1787.csv"
-
+echo "Done fetching isolated navigo flows data"
 
 
 # echo "Download data : fetching isolated toflit18 data"
@@ -22,7 +24,7 @@ curl -o data/navigo_all_flows_1787.csv "https://sandbox.robindemourat.com/portic
 
 # echo "Download data : fetching isolated navigo pointcalls, flows and travels data"
 # curl -o data/navigo_all_pointcalls.csv "http://sandbox.robindemourat.com/portic-datasprint-2023-data/navigo_all_pointcalls.csv"
-# curl -o data/navigo_all_flows.csv "http://sandbox.robindemourat.com/portic-datasprint-2023-data/navigo_all_flows.csv"
+curl -o data/navigo_all_flows.csv "http://sandbox.robindemourat.com/portic-datasprint-2023-data/navigo_all_flows.csv"
 # curl -o data/navigo_all_travels.csv "http://sandbox.robindemourat.com/portic-datasprint-2023-data/navigo_all_travels.csv"
 
 # API-based methods (not needed anymore)
@@ -34,6 +36,7 @@ echo "Download data : fetching latest navigo sources data"
 # curl -o data/navigo_all_flows_1789.csv "data.portic.fr/api/rawflows/?date=1789&format=csv"
 # curl -o data/navigo_all_flows_1787.csv "data.portic.fr/api/rawflows/?date=1787&format=csv"
 curl -o data/navigo_sources_by_source_and_year_and_place.csv "data.portic.fr/api/sources/?format=csv"
+echo "Done fetching latest navigo sources data"
 
 ./datascripts.sh
 cd datascripts  
