@@ -179,7 +179,13 @@ const flagToNationality = {
                       key={port}
                       transform={`translate(${x}, 0)`}
                       data-for={'part-etrangers-tooltip'}
-                      data-tip={`En 1787, ${(share_of_strangers * 100).toFixed(2)}% du tonnage cumulé des navires partis du port de ${port} avaient un pavillon étranger.`}
+                      data-tip={
+                        translate('PartDesEtrangersDansNavigation', 'top-barchart-tooltip', lang, {
+                          share: (share_of_strangers * 100).toFixed(2),
+                          port
+                        })
+                        // `En 1787, ${(share_of_strangers * 100).toFixed(2)}% du tonnage cumulé des navires partis du port de ${port} avaient un pavillon étranger.`
+                      }
                     >
                       <rect
                         x={0}
@@ -204,7 +210,7 @@ const flagToNationality = {
                           fontSize={comparisonLabelsHeight / 4}
                           fontWeight={port === 'Marseille' ? 'bold' : undefined}
                         >
-                          {port + (port === 'Marseille' ? ` (${translate('PartDesEtrangersDansNavigation', 'ins', lang)})` : '')}
+                          {(port === 'Dunkerque' && lang === 'en' ? 'Dunkirk' : port) + (port === 'Marseille' ? ` (${translate('PartDesEtrangersDansNavigation', 'ins', lang)})` : '')}
                         </text>
                       </g>
                       {

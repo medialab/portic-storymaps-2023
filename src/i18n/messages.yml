@@ -156,7 +156,7 @@ viz-1-B:
 exportations-sud-est:
   title-top:
     fr: Province d'origine des produits exportés par la France
-    en: Province of origin from products exported by France
+    en: Province of origin of products exported by France
   title-bottom: 
     fr: Province d'origine des produits exportés par Marseille
     en: Province of origin of products exported by Marseille
@@ -466,12 +466,15 @@ PartDesEtrangersDansNavigation:
   ins:
     fr: entrées
     en: in
+  top-barchart-tooltip:
+    fr: En 1787, ${share}% du tonnage cumulé des navires partis du port de ${port} avaient un pavillon étranger.
+    en: In 1787, ${share}% of the total tonnage departed from the port of ${port} had a foreign (Non-French) flag
   top-row-tooltip:
-    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} (${pct}% du total des étrangers).
-    en: In 1789, a total of ${tonnage} tonneaux arriving in Marseille were handled by ${label} (${pct}% of the total number of foreigners).
+    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} (${pct}% du total de tonnage des étrangers).
+    en: In 1789, a total of ${tonnage} tonneaux arriving in Marseille were handled by ${label} (${pct}% of the total foreign tonnage).
   bottom-row-tooltip:
-    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}% du total des étrangers).
-    en: In 1789, a total of ${tonnage} tonneaux arriving in Marseille were handled by ${label} (${pct}% of the total number of foreigners).
+    fr: En 1789, un total de ${tonnage} tonneaux arrivant à Marseille a été pris en charge par des ${label} ((${pct}% du total de tonnage des étrangers).
+    en: In 1789, a total of ${tonnage} tonneaux arriving in Marseille were handled by ${label} ships (${pct}% of the total foreign tonnage).
   gênois:
     fr: gênois
     en: genoese
@@ -480,7 +483,7 @@ PartDesEtrangersDansNavigation:
     en: british
   italians:
     fr: napolitains, gênois, vénitiens, toscans, carrarais, romains, savoyards
-    en: napolitans, genoese, venitians, toscans, carraras, romans, savoyards
+    en: neapolitan, genoese, venitian, tuscan, carrara's, roman, Savoyard
   espagnols:
     fr: espagnols
     en: spanish
@@ -524,13 +527,13 @@ PartDesFrancaisDansProvenance:
     en: Share of french sh.
   top-tooltip:
     fr: En ${year}, ${share}% des voyages partis de ports de ${state} et arrivés à Marseille étaient assurés par des navires français (${tonnage} tx. cumulés)
-    en: In ${year}, ${share}% of travels from ports of ${state} to Marseille were done by french ships (cumulative tonnage of ${tonnage})
+    en: In ${year}, ${share}% of travels from ports of ${state} to Marseille were done by French ships (total estimated tonnage of ${tonnage} tx)
   bottom-title:
     fr: Tonnage estimé des navires français dans les provenances de voyages arrivés à Marseille
     en: Estimated tonnage of French ships in the origins of voyages arriving in Marseille
   bottom-tooltip:
     fr: En ${year}, ${share}% des voyages partis de ports de ${state} et arrivés à Marseille étaient assurés par des navires français (${tonnage} tx. cumulés)
-    en: In ${year}, ${share}% of travels from ports of ${state} to Marseille were done by french ships (cumulative tonnage of ${tonnage})
+    en: In ${year}, ${share}% of travels from ports of ${state} to Marseille were done by French ships (total estimated tonnage of ${tonnage} tx)
   bottom-y-axis:
     fr: Tonnage cum.
     en: Cumulative t.

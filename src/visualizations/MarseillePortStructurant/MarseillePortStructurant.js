@@ -277,7 +277,7 @@ const MapObjects = ({
 }
 
 export default function MarseillePortStructurant({
-  data: inputData,
+  data: inputData = new Map(),
   width,
   height,
   lang,
@@ -378,7 +378,8 @@ export default function MarseillePortStructurant({
             {
               type: 'custom',
               renderObjects: (props) => {
-                const squareSize = width / 10;
+                let squareSize = width / 10;
+                squareSize = squareSize < 150 ? 150 : squareSize;
                 return (
                   <g className="legend" transform={`translate(${gutter}, ${height - squareSize - gutter * 8})`}>
                     <foreignObject
@@ -444,9 +445,9 @@ export default function MarseillePortStructurant({
                       </p>
                     </foreignObject>
                     <foreignObject
-                      x={squareSize / 3}
+                      x={squareSize / 2}
                       y={squareSize + gutter}
-                      width={squareSize * 2 / 3}
+                      width={squareSize / 2}
                       height={squareSize}
                     >
                       <p
