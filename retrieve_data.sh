@@ -22,10 +22,10 @@ echo "Done fetching isolated navigo flows data"
 
 # echo "Download data : fetching latest navigo pointcalls data"
 
-# echo "Download data : fetching isolated navigo pointcalls, flows and travels data"
-# curl -o data/navigo_all_pointcalls.csv "http://sandbox.robindemourat.com/portic-datasprint-2023-data/navigo_all_pointcalls.csv"
+echo "Download data : fetching combinated isolated navigo pointcalls, flows and travels data"
+curl -o data/navigo_all_pointcalls.csv "http://sandbox.robindemourat.com/portic-datasprint-2023-data/navigo_all_pointcalls.csv"
 curl -o data/navigo_all_flows.csv "http://sandbox.robindemourat.com/portic-datasprint-2023-data/navigo_all_flows.csv"
-# curl -o data/navigo_all_travels.csv "http://sandbox.robindemourat.com/portic-datasprint-2023-data/navigo_all_travels.csv"
+curl -o data/navigo_all_travels.csv "http://sandbox.robindemourat.com/portic-datasprint-2023-data/navigo_all_travels.csv"
 
 # API-based methods (not needed anymore)
 # curl -o data/navigo_all_pointcalls.csv "data.portic.fr/api/pointcalls/?&format=csv"
