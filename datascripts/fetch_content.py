@@ -465,7 +465,11 @@ for lang in GDOC_URL.keys():
             part_soup.div.append(bib_container_soup)
             """
             part = str(part_soup)
-
+            # centuries typography
+            part = re.sub(r"(\d+)th", r"\1<sup>th</sup>", part)
+            part = re.sub(r"XVIIIe", r"XVIII<sup>e</sup>", part)
+            part = re.sub(r"(\d+)e", r"\1<sup>e</sup>", part)
+            part = re.sub(r"(\d+)ème", r"\1<sup>ème</sup>", part)
             # MD issues with operations using *
             part = re.sub(r"(\d)\*(\d)", r"\1×\2", part)
             # other MD issue
