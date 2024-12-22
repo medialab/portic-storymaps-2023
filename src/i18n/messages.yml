@@ -72,8 +72,8 @@ viz-1-A:
     fr: En <strong>${year}</strong> ${pct}% des biens exportés depuis la France le sont à partir de <strong>${city}</strong>.
     en: In <strong>${year}</strong> ${pct}% of exported goods from France were exported from <strong>${city}</strong>.
   barTooltipImports:
-    fr: En <strong>${year}</strong> ${pct}% des biens importés depuis la France le sont à partir de <strong>${city}</strong>.
-    en: In <strong>${year}</strong> ${pct}% of imported goods from France were exported from <strong>${city}</strong>.
+    fr: En <strong>${year}</strong> ${pct}% des biens importés en France le sont à partir de <strong>${city}</strong>.
+    en: In <strong>${year}</strong> ${pct}% of goods imported into France were imported from <strong>${city}</strong>.
   barTooltipTotal:
     fr: En <strong>${year}</strong> ${pct}% des biens échangés avec la France le sont à partir de <strong>${city}</strong>.
     en: In <strong>${year}</strong> ${pct}% of exchanged goods with France were exported from <strong>${city}</strong>.
@@ -649,7 +649,7 @@ GuerreEtCroissance:
     en: War period
   legend-observations:
     fr: Valeurs observées (lt. pour le commerce&nbsp;; observations, miles marins ou tonnages pour la navigation suivant la source/métrique choisie)
-    en: Observed values (lt. for trade; observations, nautic miles, or tonnage for navigation depending on the chosen source/metric)
+    en: Observed values (lt. for trade; observations, nautical miles, or tonnage for navigation depending on the chosen source/metric)
   navigation-interface-title:
     fr: Données de navigation
     en: Navigation data
