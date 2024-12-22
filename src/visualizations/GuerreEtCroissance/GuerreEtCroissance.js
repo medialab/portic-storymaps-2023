@@ -277,15 +277,15 @@ export default function GuerreEtCroissance({
                     key={seriesId}
                   >
                     {
-                      seriesId === 'navigation' ?
-                        <rect
-                          x={0}
-                          y={0}
-                          width={width}
-                          height={rowHeight}
-                          fill={`rgba(0,0,0,0.0)`}
-                        />
-                        : null
+                      // seriesId === 'navigation' ?
+                      //   <rect
+                      //     x={0}
+                      //     y={0}
+                      //     width={width}
+                      //     height={rowHeight}
+                      //     fill={`rgba(0,0,0,0.0)`}
+                      //   />
+                      //   : null
                     }
                     <g className="row-title-container">
                       <foreignObject

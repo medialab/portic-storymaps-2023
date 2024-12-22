@@ -76,6 +76,9 @@ const LineSeries = ({
   const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['lightgrey', '#336D7C']);
   const lossColorScale = scaleLinear().domain([-60, 60]).range(['#FEA43B', 'green']);
 
+  if (id === "navigation") {
+    console.log('in navigation', {slope, avgMem, data})
+  }
   return (
     <g className="LineSeries">
       <rect x={0} y={gutter * 2} width={endX} height={height - gutter * 3} fill="rgba(0,0,0,0)" />

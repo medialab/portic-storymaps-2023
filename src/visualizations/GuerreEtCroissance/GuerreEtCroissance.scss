@@ -95,10 +95,14 @@
 
       ul {
         margin: 0 0 $small-gutter $medium-gutter;
+        cursor: pointer;
       }
       li {
         margin-left: $medium-gutter;
         margin-bottom: 0;
+        cursor: pointer;
+      }
+      label {
         cursor: pointer;
       }
     }

@@ -96,7 +96,7 @@ with open('../data/navigo_all_flows.csv', newline='') as csvfile:
 # reconstitution des voyages
 travels = defaultdict(lambda: {"total_miles": 0, "total_steps": 0, "keep": True, "rows": []})
 null_distance = 0
-
+departures = set()
 # on reparcourt tous les segments qui concernent des étapes de voyages aboutissant à Marseille
 for row in ranks_smaller_than_Marseille:
     doc_id = row["source_doc_id"]
@@ -113,6 +113,8 @@ for row in ranks_smaller_than_Marseille:
             travel["tonnage"] = tonnages_estimate[row["ship_class_standardized"]] if row["ship_class_standardized"] in tonnages_estimate else 0
             travel["departure_date"] = row["departure_out_date"]
             travel["departure"] = row["departure_fr"]
+            travel["departure_fr"] = row["departure_fr"]
+            travel["departure_en"] = row["departure_en"]
             travel["departure_latitude"] = row["departure_latitude"]
             travel["departure_longitude"] = row["departure_longitude"]
             travel["departure_state"] = row["departure_state_1789_fr"]
@@ -120,7 +122,10 @@ for row in ranks_smaller_than_Marseille:
             if row["departure_state_1789_fr"] == "France":
                 if row["departure_province"] in province_to_class:
                     travel["departure_class"] = province_to_class[row["departure_province"]]
+            elif row["departure"] in ["Redondella", "Redondella en Galice", "Carril", "Carrie en Galice", "Vilanueva de Arosa", "Bilbao", "Santander", "San Martìn de la Arena", "Saint Martin de Larena [San Martín de la Arena]"]:
+              travel["departure_class"] = "Ponant"
             else:
+                departures.add(row["departure"])
                 if row["departure_state_1789_fr"] in state_to_class:
                     travel["departure_class"] = state_to_class[row["departure_state_1789_fr"]]
                 # else:
@@ -140,7 +145,7 @@ for row in ranks_smaller_than_Marseille:
             travel["wartimes"] = "guerre" if year in ["1759", "1779", "1799"] else "paix"
     else:
         travel["keep"] = False
-
+# print('\n'.join(sorted([d for d in departures])))
 # suppression des voyages invalides
 good_travels = {}
 error_list = []
@@ -182,12 +187,16 @@ travels_in_war = [t for t in travels_clean if t["wartimes"] == "guerre"]
 ports = {}
 for travel in travels_in_peace:
   port = travel['departure']
+  port_fr = travel['departure_fr']
+  port_en = travel['departure_en']
   latitude = travel['departure_latitude']
   longitude = travel['departure_longitude']
   category = travel['departure_class'] if 'departure_class' in travel else ''
   if port not in ports:
       ports[port] = {
           "port": port,
+          "port_fr": port_fr,
+          "port_en": port_en,
           "latitude": latitude,
           "longitude": longitude,
           "category": category,

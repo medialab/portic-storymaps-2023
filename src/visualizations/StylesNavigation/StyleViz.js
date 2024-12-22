@@ -242,7 +242,7 @@ export default function StyleViz({
                 return (
                   <g key={nb_steps}
                     data-for="styles-tooltip"
-                    data-tip={translate('StylesNavigation', 'steps-bar-tooltip', lang, {count, nb_steps})}
+                    data-tip={translate('StylesNavigation', 'steps-bar-tooltip', lang, {count, nb_steps: nb_steps - 1})}
                     // data-tip={`Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires sont venus à Marseille en faisant ${nb_steps} étapes.`}
                     onMouseEnter={() => setHighlightedSteps(nb_steps)}
                     onMouseLeave={() => setHighlightedSteps()}
@@ -373,7 +373,7 @@ export default function StyleViz({
                     stroke="white"
                     data-for="styles-tooltip"
                     opacity={opacity}
-                    data-tip={translate('StylesNavigation', 'intersection-tooltip', lang, {count, tonnage, nb_steps})}
+                    data-tip={translate('StylesNavigation', 'intersection-tooltip', lang, {count, tonnage, nb_steps: nb_steps - 1})}
                     onMouseEnter={() => {
                       setHighlightedTonnage(tonnage);
                       setHighlightedSteps(nb_steps);

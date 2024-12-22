@@ -167,7 +167,7 @@ const Provinces = ({
         })
       }
       {
-        portsData.map(({ port, category, latitude, longitude, count }) => {
+        portsData.map(({ port, category, latitude, longitude, count, ...rest }) => {
           const [x, y] = projection([longitude, latitude]);
           const area = areaScale(+count);
           const radius = Math.sqrt(area / Math.PI);
@@ -186,7 +186,7 @@ const Provinces = ({
               title={port}
               key={port + '2'}
               data-for={"styles-tooltip"}
-              data-tip={`${port} (${translate('StylesNavigation', 'travels-tick', lang, {count})})`}
+              data-tip={`${rest[`port_${lang}`]} (${translate('StylesNavigation', 'travels-tick', lang, {count})})`}
               onMouseEnter={() => setHighlightedCategory(categoryId)}
               onMouseLeave={() => setHighlightedCategory()}
             />

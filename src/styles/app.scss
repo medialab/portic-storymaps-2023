@@ -360,6 +360,11 @@ dfn {
   }
 }
 
+select {
+  background: inherit;
+  border: none;
+}
+
 /**
   * Secondary page layout (used in Atlas, PlainPage, ...)
   */
