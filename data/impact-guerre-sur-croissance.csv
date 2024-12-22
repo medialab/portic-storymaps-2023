@@ -3995,299 +3995,299 @@ year,data_type,value,kind,slope,reg_point,peace_reg_memory,peace_reg,direction_f
 1787,trade,,exports_no_colonial_trade,La Rochelle +1.1%/an,2829400.8233310985,,,La Rochelle,4,Perte memoire-42.8%,Perte -62.3%
 1788,trade,,exports_no_colonial_trade,La Rochelle +1.1%/an,2860285.296258169,,,La Rochelle,4,Perte memoire-42.8%,Perte -62.3%
 1789,trade,3079465.435469552,exports_no_colonial_trade,La Rochelle +1.1%/an,2891506.890267596,,,La Rochelle,4,Perte memoire-42.8%,Perte -62.3%
-1726,navigation,1401.0,Carriere,,,,,,,-6.1%,4.5%
-1726,navigation,,Navigo entrées,,,1762.1074305099087,,,,-22.9%,0.0%
-1726,navigation,,Navigo mileage_total,,,1224456.3232539014,,,,-66.4%,0.0%
-1726,navigation,,Navigo tonnage,,,149386.85570326258,,,,-44.0%,0.0%
-1727,navigation,1478.0,Carriere,,,,,,,-6.1%,4.5%
-1727,navigation,,Navigo entrées,,,1778.1638544230732,,,,-22.9%,0.0%
-1727,navigation,,Navigo mileage_total,,,1233953.218156968,,,,-66.4%,0.0%
-1727,navigation,,Navigo tonnage,,,150666.92018631773,,,,-44.0%,0.0%
-1728,navigation,1644.0,Carriere,,,,,,,-6.1%,4.5%
-1728,navigation,,Navigo entrées,,,1794.3665853913103,,,,-22.9%,0.0%
-1728,navigation,,Navigo mileage_total,,,1243523.7710673353,,,,-66.4%,0.0%
-1728,navigation,,Navigo tonnage,,,151957.95327215298,,,,-44.0%,0.0%
-1729,navigation,1432.0,Carriere,,,,,,,-6.1%,4.5%
-1729,navigation,,Navigo entrées,,,1810.716956572892,,,,-22.9%,0.0%
-1729,navigation,,Navigo mileage_total,,,1253168.5532772131,,,,-66.4%,0.0%
-1729,navigation,,Navigo tonnage,,,153260.04894841395,,,,-44.0%,0.0%
-1730,navigation,1444.0,Carriere,,,,,,,-6.1%,4.5%
-1730,navigation,,Navigo entrées,,,1827.2163132739058,,,,-22.9%,0.0%
-1730,navigation,,Navigo mileage_total,,,1262888.1405097512,,,,-66.4%,0.0%
-1730,navigation,,Navigo tonnage,,,154573.30200810678,,,,-44.0%,0.0%
-1731,navigation,1508.0,Carriere,,,,,,,-6.1%,4.5%
-1731,navigation,,Navigo entrées,,,1843.8660130589444,,,,-22.9%,0.0%
-1731,navigation,,Navigo mileage_total,,,1272683.112953422,,,,-66.4%,0.0%
-1731,navigation,,Navigo tonnage,,,155897.80805649812,,,,-44.0%,0.0%
-1732,navigation,1811.0,Carriere,,,,,,,-6.1%,4.5%
-1732,navigation,,Navigo entrées,,,1860.6674258628072,,,,-22.9%,0.0%
-1732,navigation,,Navigo mileage_total,,,1282554.0552966387,,,,-66.4%,0.0%
-1732,navigation,,Navigo tonnage,,,157233.66351807682,,,,-44.0%,0.0%
-1733,navigation,1565.0,Carriere,,,,,,,-6.1%,4.5%
-1733,navigation,,Navigo entrées,,,1877.6219341032183,,,,-22.9%,0.0%
-1733,navigation,,Navigo mileage_total,,,1292501.5567626634,,,,-66.4%,0.0%
-1733,navigation,,Navigo tonnage,,,158580.9656435726,,,,-44.0%,0.0%
-1734,navigation,1811.0,Carriere,,,,,,,-6.1%,4.5%
-1734,navigation,,Navigo entrées,,,1894.7309327945713,,,,-22.9%,0.0%
-1734,navigation,,Navigo mileage_total,,,1302526.2111447863,,,,-66.4%,0.0%
-1734,navigation,,Navigo tonnage,,,159939.81251703642,,,,-44.0%,0.0%
-1735,navigation,1617.0,Carriere,,,,,,,-6.1%,4.5%
-1735,navigation,,Navigo entrées,,,1911.9958296627105,,,,-22.9%,0.0%
-1735,navigation,,Navigo mileage_total,,,1312628.6168417544,,,,-66.4%,0.0%
-1735,navigation,,Navigo tonnage,,,161310.30306297998,,,,-44.0%,0.0%
-1736,navigation,1833.0,Carriere,,,,,,,-6.1%,4.5%
-1736,navigation,,Navigo entrées,,,1929.4180452607593,,,,-22.9%,0.0%
-1736,navigation,,Navigo mileage_total,,,1322809.376893511,,,,-66.4%,0.0%
-1736,navigation,,Navigo tonnage,,,162692.53705357917,,,,-44.0%,0.0%
-1737,navigation,1620.0,Carriere,,,,,,,-6.1%,4.5%
-1737,navigation,,Navigo entrées,,,1946.9990130859987,,,,-22.9%,0.0%
-1737,navigation,,Navigo mileage_total,,,1333069.099017173,,,,-66.4%,0.0%
-1737,navigation,,Navigo tonnage,,,164086.61511593623,,,,-44.0%,0.0%
-1738,navigation,1572.0,Carriere,,,,,,,-6.1%,4.5%
-1738,navigation,,Navigo entrées,,,1964.7401796978297,,,,-22.9%,0.0%
-1738,navigation,,Navigo mileage_total,,,1343408.395643327,,,,-66.4%,0.0%
-1738,navigation,,Navigo tonnage,,,165492.63873940628,,,,-44.0%,0.0%
-1739,navigation,1571.0,Carriere,,,,,,,-6.1%,4.5%
-1739,navigation,,Navigo entrées,,,1982.6430048367754,,,,-22.9%,0.0%
-1739,navigation,,Navigo mileage_total,,,1353827.8839525697,,,,-66.4%,0.0%
-1739,navigation,,Navigo tonnage,,,166910.71028298428,,,,-44.0%,0.0%
-1740,navigation,1393.0,Carriere,,,,,,,-6.1%,4.5%
-1740,navigation,,Navigo entrées,,,2000.708961544601,,,,-22.9%,0.0%
-1740,navigation,,Navigo mileage_total,,,1364328.185912356,,,,-66.4%,0.0%
-1740,navigation,,Navigo tonnage,,,168340.93298275888,,,,-44.0%,0.0%
-1741,navigation,1677.0,Carriere,,,,,,,-6.1%,4.5%
-1741,navigation,,Navigo entrées,,,2018.939536285513,,,,-22.9%,0.0%
-1741,navigation,,Navigo mileage_total,,,1374909.9283141342,,,,-66.4%,0.0%
-1741,navigation,,Navigo tonnage,,,169783.4109594269,,,,-44.0%,0.0%
-1742,navigation,1540.0,Carriere,,,,,,,-6.1%,4.5%
-1742,navigation,,Navigo entrées,,,2037.3362290684652,,,,-22.9%,0.0%
-1742,navigation,,Navigo mileage_total,,,1385573.7428107432,,,,-66.4%,0.0%
-1742,navigation,,Navigo tonnage,,,171238.24922587269,,,,-44.0%,0.0%
-1743,navigation,2135.0,Carriere,,,,,,,-6.1%,4.5%
-1743,navigation,,Navigo entrées,,,2055.9005535705787,,,,-22.9%,0.0%
-1743,navigation,,Navigo mileage_total,,,1396320.2659541366,,,,-66.4%,0.0%
-1743,navigation,,Navigo tonnage,,,172705.55369481465,,,,-44.0%,0.0%
-1744,navigation,1533.0,Carriere,,,1745.315471636461,1745.315471636461,,,-6.1%,4.5%
-1744,navigation,,Navigo entrées,,,2074.6340372616874,,,,-22.9%,0.0%
-1744,navigation,,Navigo mileage_total,,,1407150.139233364,,,,-66.4%,0.0%
-1744,navigation,,Navigo tonnage,,,174185.43118651473,,,,-44.0%,0.0%
-1745,navigation,1966.0,Carriere,,,1760.8489178831244,1760.8489178831244,,,-6.1%,4.5%
-1745,navigation,,Navigo entrées,,,2093.538221530018,,,,-22.9%,0.0%
-1745,navigation,,Navigo mileage_total,,,1418064.0091128706,,,,-66.4%,0.0%
-1745,navigation,,Navigo tonnage,,,175677.98943655548,,,,-44.0%,0.0%
-1746,navigation,1737.0,Carriere,,,1776.5206130344843,1776.5206130344843,,,-6.1%,4.5%
-1746,navigation,,Navigo entrées,,,2112.6146618090147,,,,-22.9%,0.0%
-1746,navigation,,Navigo mileage_total,,,1429062.5270710925,,,,-66.4%,0.0%
-1746,navigation,,Navigo tonnage,,,177183.33710368202,,,,-44.0%,0.0%
-1747,navigation,2180.0,Carriere,,,1792.331787516764,1792.331787516764,,,-6.1%,4.5%
-1747,navigation,,Navigo entrées,,,2131.864927705321,,,,-22.9%,0.0%
-1747,navigation,,Navigo mileage_total,,,1440146.3496393294,,,,-66.4%,0.0%
-1747,navigation,,Navigo tonnage,,,178701.58377771426,,,,-44.0%,0.0%
-1748,navigation,2195.0,Carriere,,,1808.283682707081,1808.283682707081,,,-6.1%,4.5%
-1748,navigation,,Navigo entrées,,,2151.2906031279213,,,,-22.9%,0.0%
-1748,navigation,,Navigo mileage_total,,,1451316.138440954,,,,-66.4%,0.0%
-1748,navigation,,Navigo tonnage,,,180232.83998752388,,,,-44.0%,0.0%
-1749,navigation,2277.0,Carriere,,,,,,,-6.1%,4.5%
-1749,navigation,2291.0,Navigo entrées,,,2170.893286418482,,,,-22.9%,0.0%
-1749,navigation,1514057.0,Navigo mileage_total,,,1462572.5602308887,,,,-66.4%,0.0%
-1749,navigation,190595.0,Navigo tonnage,,,181777.21720908154,,,,-44.0%,0.0%
-1750,navigation,2120.0,Carriere,,,,,,,-6.1%,4.5%
-1750,navigation,,Navigo entrées,,,2190.674590482838,,,,-22.9%,0.0%
-1750,navigation,,Navigo mileage_total,,,1473916.2869354128,,,,-66.4%,0.0%
-1750,navigation,,Navigo tonnage,,,183334.827873571,,,,-44.0%,0.0%
-1751,navigation,2013.0,Carriere,,,,,,,-6.1%,4.5%
-1751,navigation,,Navigo entrées,,,2210.63614292372,,,,-22.9%,0.0%
-1751,navigation,,Navigo mileage_total,,,1485347.9956922808,,,,-66.4%,0.0%
-1751,navigation,,Navigo tonnage,,,184905.78537557606,,,,-44.0%,0.0%
-1752,navigation,1892.0,Carriere,,,,,,,-6.1%,4.5%
-1752,navigation,,Navigo entrées,,,2230.779586174666,,,,-22.9%,0.0%
-1752,navigation,,Navigo mileage_total,,,1496868.368891123,,,,-66.4%,0.0%
-1752,navigation,,Navigo tonnage,,,186490.20408133487,,,,-44.0%,0.0%
-1753,navigation,2360.0,Carriere,,,,,,,-6.1%,4.5%
-1753,navigation,,Navigo entrées,,,2251.1065776351634,,,,-22.9%,0.0%
-1753,navigation,,Navigo mileage_total,,,1508478.0942142012,,,,-66.4%,0.0%
-1753,navigation,,Navigo tonnage,,,188088.1993370648,,,,-44.0%,0.0%
-1754,navigation,2074.0,Carriere,,,,,,,-6.1%,4.5%
-1754,navigation,,Navigo entrées,,,2271.6187898070193,,,,-22.9%,0.0%
-1754,navigation,,Navigo mileage_total,,,1520177.8646774387,,,,-66.4%,0.0%
-1754,navigation,,Navigo tonnage,,,189699.8874773616,,,,-44.0%,0.0%
-1755,navigation,1978.0,Carriere,,,,,,,-6.1%,4.5%
-1755,navigation,,Navigo entrées,,,2292.317910431973,,,,-22.9%,0.0%
-1755,navigation,,Navigo mileage_total,,,1531968.378671798,,,,-66.4%,0.0%
-1755,navigation,,Navigo tonnage,,,191325.3858336673,,,,-44.0%,0.0%
-1756,navigation,1981.0,Carriere,,,2160.4696431703974,2006.460711110404,,,-6.1%,4.5%
-1756,navigation,,Navigo entrées,,,2313.205642630562,,,,-22.9%,0.0%
-1756,navigation,,Navigo mileage_total,,,1543850.3400049757,,,,-66.4%,0.0%
-1756,navigation,,Navigo tonnage,,,192964.8127428127,,,,-44.0%,0.0%
-1757,navigation,1837.0,Carriere,,,2189.6449697118746,1984.570399583298,,,-6.1%,4.5%
-1757,navigation,,Navigo entrées,,,2334.283705042258,,,,-22.9%,0.0%
-1757,navigation,,Navigo mileage_total,,,1555824.4579433966,,,,-66.4%,0.0%
-1757,navigation,,Navigo tonnage,,,194618.287555631,,,,-44.0%,0.0%
-1758,navigation,1797.0,Carriere,,,2219.2142845148824,1962.9189094475607,,,-6.1%,4.5%
-1758,navigation,,Navigo entrées,,,2355.5538319668717,,,,-22.9%,0.0%
-1758,navigation,,Navigo mileage_total,,,1567891.4472545749,,,,-66.4%,0.0%
-1758,navigation,,Navigo tonnage,,,196285.93064564842,,,,-44.0%,0.0%
-1759,navigation,1901.0,Carriere,,,2249.182908059732,1941.5036351826218,,,-6.1%,4.5%
-1759,navigation,1926.0,Navigo entrées,,,2377.017773507255,,,,-22.9%,0.0%
-1759,navigation,637901.0,Navigo mileage_total,,,1580052.0282497585,,,,-66.4%,0.0%
-1759,navigation,110810.0,Navigo tonnage,,,197967.86341784635,,,,-44.0%,0.0%
-1760,navigation,1895.0,Carriere,,,2279.556232675327,1920.3219996939129,,,-6.1%,4.5%
-1760,navigation,,Navigo entrées,,,2398.6772957132916,,,,-22.9%,0.0%
-1760,navigation,,Navigo mileage_total,,,1592306.9268269374,,,,-66.4%,0.0%
-1760,navigation,,Navigo tonnage,,,199664.2083175002,,,,-44.0%,0.0%
-1761,navigation,2006.0,Carriere,,,2310.3397235094617,1899.3714540027433,,,-6.1%,4.5%
-1761,navigation,,Navigo entrées,,,2420.534180727227,,,,-22.9%,0.0%
-1761,navigation,,Navigo mileage_total,,,1604656.8745141812,,,,-66.4%,0.0%
-1761,navigation,,Navigo tonnage,,,201375.088839092,,,,-44.0%,0.0%
-1762,navigation,1922.0,Carriere,,,2341.5389195121516,1878.6494769395583,,,-6.1%,4.5%
-1762,navigation,,Navigo entrées,,,2442.590226930275,,,,-22.9%,0.0%
-1762,navigation,,Navigo mileage_total,,,1617102.608513287,,,,-66.4%,0.0%
-1762,navigation,,Navigo tonnage,,,203100.6295353031,,,,-44.0%,0.0%
-1763,navigation,2346.0,Carriere,,,2373.1594344322843,1858.153574840542,,,-6.1%,4.5%
-1763,navigation,,Navigo entrées,,,2464.8472490906074,,,,-22.9%,0.0%
-1763,navigation,,Navigo mileage_total,,,1629644.8717438076,,,,-66.4%,0.0%
-1763,navigation,,Navigo tonnage,,,204840.9560260802,,,,-44.0%,0.0%
-1764,navigation,3193.0,Carriere,,,,,,,-6.1%,4.5%
-1764,navigation,,Navigo entrées,,,2487.307078512667,,,,-22.9%,0.0%
-1764,navigation,,Navigo mileage_total,,,1642284.412887378,,,,-66.4%,0.0%
-1764,navigation,,Navigo tonnage,,,206596.19500778118,,,,-44.0%,0.0%
-1765,navigation,2567.0,Carriere,,,,,,,-6.1%,4.5%
-1765,navigation,,Navigo entrées,,,2509.9715631878526,,,,-22.9%,0.0%
-1765,navigation,,Navigo mileage_total,,,1655021.9864324152,,,,-66.4%,0.0%
-1765,navigation,,Navigo tonnage,,,208366.47426239715,,,,-44.0%,0.0%
-1766,navigation,2518.0,Carriere,,,,,,,-6.1%,4.5%
-1766,navigation,,Navigo entrées,,,2532.8425679465477,,,,-22.9%,0.0%
-1766,navigation,,Navigo mileage_total,,,1667858.3527191647,,,,-66.4%,0.0%
-1766,navigation,,Navigo tonnage,,,210151.9226668574,,,,-44.0%,0.0%
-1767,navigation,2393.0,Carriere,,,,,,,-6.1%,4.5%
-1767,navigation,,Navigo entrées,,,2555.921974611601,,,,-22.9%,0.0%
-1767,navigation,,Navigo mileage_total,,,1680794.2779850655,,,,-66.4%,0.0%
-1767,navigation,,Navigo tonnage,,,211952.67020241034,,,,-44.0%,0.0%
-1768,navigation,2288.0,Carriere,,,,,,,-6.1%,4.5%
-1768,navigation,,Navigo entrées,,,2579.2116821531376,,,,-22.9%,0.0%
-1768,navigation,,Navigo mileage_total,,,1693830.5344105144,,,,-66.4%,0.0%
-1768,navigation,,Navigo tonnage,,,213768.84796408526,,,,-44.0%,0.0%
-1769,navigation,2304.0,Carriere,,,,,,,-6.1%,4.5%
-1769,navigation,2320.0,Navigo entrées,,,2602.713606844781,,,,-22.9%,0.0%
-1769,navigation,1589028.0,Navigo mileage_total,,,1706967.9001649339,,,,-66.4%,0.0%
-1769,navigation,194560.0,Navigo tonnage,,,215600.58817023828,,,,-44.0%,0.0%
-1770,navigation,2527.0,Carriere,,,,,,,-6.1%,4.5%
-1770,navigation,,Navigo entrées,,,2626.4296824213857,,,,-22.9%,0.0%
-1770,navigation,,Navigo mileage_total,,,1720207.1594532486,,,,-66.4%,0.0%
-1770,navigation,,Navigo tonnage,,,217448.02417217626,,,,-44.0%,0.0%
-1771,navigation,2984.0,Carriere,,,,,,,-6.1%,4.5%
-1771,navigation,,Navigo entrées,,,2650.3618602380725,,,,-22.9%,0.0%
-1771,navigation,,Navigo mileage_total,,,1733549.1025626746,,,,-66.4%,0.0%
-1771,navigation,,Navigo tonnage,,,219311.29046386582,,,,-44.0%,0.0%
-1772,navigation,2561.0,Carriere,,,,,,,-6.1%,4.5%
-1772,navigation,,Navigo entrées,,,2674.5121094308583,,,,-22.9%,0.0%
-1772,navigation,,Navigo mileage_total,,,1746994.525909903,,,,-66.4%,0.0%
-1772,navigation,,Navigo tonnage,,,221190.52269172276,,,,-44.0%,0.0%
-1773,navigation,2579.0,Carriere,,,,,,,-6.1%,4.5%
-1773,navigation,,Navigo entrées,,,2698.8824170786042,,,,-22.9%,0.0%
-1773,navigation,,Navigo mileage_total,,,1760544.23208865,,,,-66.4%,0.0%
-1773,navigation,,Navigo tonnage,,,223085.85766448968,,,,-44.0%,0.0%
-1774,navigation,2491.0,Carriere,,,,,,,-6.1%,4.5%
-1774,navigation,,Navigo entrées,,,2723.4747883665846,,,,-22.9%,0.0%
-1774,navigation,,Navigo mileage_total,,,1774199.0299175438,,,,-66.4%,0.0%
-1774,navigation,,Navigo tonnage,,,224997.43336319405,,,,-44.0%,0.0%
-1775,navigation,2584.0,Carriere,,,,,,,-6.1%,4.5%
-1775,navigation,,Navigo entrées,,,2748.2912467513993,,,,-22.9%,0.0%
-1775,navigation,,Navigo mileage_total,,,1787959.7344884295,,,,-66.4%,0.0%
-1775,navigation,,Navigo tonnage,,,226925.38895119404,,,,-44.0%,0.0%
-1776,navigation,2830.0,Carriere,,,2785.362053512663,2501.8229485880893,,,-6.1%,4.5%
-1776,navigation,,Navigo entrées,,,2773.3338341275385,,,,-22.9%,0.0%
-1776,navigation,,Navigo mileage_total,,,1801827.1672150034,,,,-66.4%,0.0%
-1776,navigation,,Navigo tonnage,,,228869.86478430816,,,,-44.0%,0.0%
-1777,navigation,2848.0,Carriere,,,2821.721212908793,2491.3270907127035,,,-6.1%,4.5%
-1777,navigation,,Navigo entrées,,,2798.604610995314,,,,-22.9%,0.0%
-1777,navigation,,Navigo mileage_total,,,1815802.1558818545,,,,-66.4%,0.0%
-1777,navigation,,Navigo tonnage,,,230831.00242103552,,,,-44.0%,0.0%
-1778,navigation,2593.0,Carriere,,,2858.5549922812734,2480.8752659422994,,,-6.1%,4.5%
-1778,navigation,,Navigo entrées,,,2824.1056566304633,,,,-22.9%,0.0%
-1778,navigation,,Navigo mileage_total,,,1829885.534693886,,,,-66.4%,0.0%
-1778,navigation,,Navigo tonnage,,,232808.9446328598,,,,-44.0%,0.0%
-1779,navigation,2263.0,Carriere,,,2895.86958715624,2470.4672895454946,,,-6.1%,4.5%
-1779,navigation,2329.0,Navigo entrées,,,2849.8390692552043,,,,-22.9%,0.0%
-1779,navigation,780051.0,Navigo mileage_total,,,1844078.1443260896,,,,-66.4%,0.0%
-1779,navigation,147240.0,Navigo tonnage,,,234803.83541464384,,,,-44.0%,0.0%
-1780,navigation,2555.0,Carriere,,,2933.6712739340987,2460.102977565907,,,-6.1%,4.5%
-1780,navigation,,Navigo entrées,,,2875.8069662108455,,,,-22.9%,0.0%
-1780,navigation,,Navigo mileage_total,,,1858380.8319737534,,,,-66.4%,0.0%
-1780,navigation,,Navigo tonnage,,,236815.81999511083,,,,-44.0%,0.0%
-1781,navigation,,Carriere,,,2971.9664109451996,2449.7821468189045,,,-6.1%,4.5%
-1781,navigation,,Navigo entrées,,,2902.0114841320715,,,,-22.9%,0.0%
-1781,navigation,,Navigo mileage_total,,,1872794.45140301,,,,-66.4%,0.0%
-1781,navigation,,Navigo tonnage,,,238845.0448474196,,,,-44.0%,0.0%
-1782,navigation,,Carriere,,,3010.7614395193946,2439.504614888366,,,-6.1%,4.5%
-1782,navigation,,Navigo entrées,,,2928.4547791226632,,,,-22.9%,0.0%
-1782,navigation,,Navigo mileage_total,,,1887319.8630018104,,,,-66.4%,0.0%
-1782,navigation,,Navigo tonnage,,,240891.65769982655,,,,-44.0%,0.0%
-1783,navigation,,Carriere,,,3050.0628850693993,2429.270200123458,,,-6.1%,4.5%
-1783,navigation,,Navigo entrées,,,2955.139026932985,,,,-22.9%,0.0%
-1783,navigation,,Navigo mileage_total,,,1901957.933831293,,,,-66.4%,0.0%
-1783,navigation,,Navigo tonnage,,,242955.80754643917,,,,-44.0%,0.0%
-1784,navigation,,Carriere,,,,,,,-6.1%,4.5%
-1784,navigation,,Navigo entrées,,,2982.0664231389205,,,,-22.9%,0.0%
-1784,navigation,,Navigo mileage_total,,,1916709.537677517,,,,-66.4%,0.0%
-1784,navigation,,Navigo tonnage,,,245037.64465806523,,,,-44.0%,0.0%
-1785,navigation,,Carriere,,,,,,,-6.1%,4.5%
-1785,navigation,,Navigo entrées,,,3009.2391833226097,,,,-22.9%,0.0%
-1785,navigation,,Navigo mileage_total,,,1931575.5551036482,,,,-66.4%,0.0%
-1785,navigation,,Navigo tonnage,,,247137.32059315106,,,,-44.0%,0.0%
-1786,navigation,,Carriere,,,,,,,-6.1%,4.5%
-1786,navigation,,Navigo entrées,,,3036.659543254661,,,,-22.9%,0.0%
-1786,navigation,,Navigo mileage_total,,,1946556.8735024985,,,,-66.4%,0.0%
-1786,navigation,,Navigo tonnage,,,249254.98820881575,,,,-44.0%,0.0%
-1787,navigation,,Carriere,,,,,,,-6.1%,4.5%
-1787,navigation,3296.0,Navigo entrées,,,3064.3297590781954,,,,-22.9%,0.0%
-1787,navigation,2009391.0,Navigo mileage_total,,,1961654.3871495065,,,,-66.4%,0.0%
-1787,navigation,272190.0,Navigo tonnage,,,251390.80167197753,,,,-44.0%,0.0%
-1788,navigation,3273.0,Carriere,,,,,,,-6.1%,4.5%
-1788,navigation,,Navigo entrées,,,3092.252107494397,,,,-22.9%,0.0%
-1788,navigation,,Navigo mileage_total,,,1976868.9972561307,,,,-66.4%,0.0%
-1788,navigation,,Navigo tonnage,,,253544.91647057983,,,,-44.0%,0.0%
-1789,navigation,,Carriere,,,,,,,-6.1%,4.5%
-1789,navigation,3084.0,Navigo entrées,,,3120.4288859499243,,,,-22.9%,0.0%
-1789,navigation,2018182.0,Navigo mileage_total,,,1992201.6120236197,,,,-66.4%,0.0%
-1789,navigation,249610.0,Navigo tonnage,,,255717.48942490894,,,,-44.0%,0.0%
-1790,navigation,,Carriere,,,,,,,-6.1%,4.5%
-1790,navigation,,Navigo entrées,,,3148.8624128258584,,,,-22.9%,0.0%
-1790,navigation,,Navigo mileage_total,,,2007653.146697254,,,,-66.4%,0.0%
-1790,navigation,,Navigo tonnage,,,257908.6786990117,,,,-44.0%,0.0%
-1791,navigation,,Carriere,,,,,,,-6.1%,4.5%
-1791,navigation,,Navigo entrées,,,3177.5550276285335,,,,-22.9%,0.0%
-1791,navigation,,Navigo mileage_total,,,2023224.5236209547,,,,-66.4%,0.0%
-1791,navigation,,Navigo tonnage,,,260118.6438122079,,,,-44.0%,0.0%
-1792,navigation,,Carriere,,,,,,,-6.1%,4.5%
-1792,navigation,,Navigo entrées,,,3206.5090911820007,,,,-22.9%,0.0%
-1792,navigation,,Navigo mileage_total,,,2038916.6722923506,,,,-66.4%,0.0%
-1792,navigation,,Navigo tonnage,,,262347.5456507062,,,,-44.0%,0.0%
-1793,navigation,,Carriere,,,3475.8598015964944,3272.9999999999973,,,-6.1%,4.5%
-1793,navigation,,Navigo entrées,,,3235.7269858222417,,,,-22.9%,0.0%
-1793,navigation,,Navigo mileage_total,,,2054730.5294182743,,,,-66.4%,0.0%
-1793,navigation,,Navigo tonnage,,,264595.54647931526,,,,-44.0%,0.0%
-1794,navigation,,Carriere,,,3521.30138215404,3272.9999999999973,,,-6.1%,4.5%
-1794,navigation,,Navigo entrées,,,3265.211115593265,,,,-22.9%,0.0%
-1794,navigation,,Navigo mileage_total,,,2070667.0389706506,,,,-66.4%,0.0%
-1794,navigation,,Navigo tonnage,,,266862.8099532552,,,,-44.0%,0.0%
-1795,navigation,,Carriere,,,3567.3370422664234,3272.9999999999973,,,-6.1%,4.5%
-1795,navigation,2258.0,Navigo entrées,,,3294.9639064448197,,,,-22.9%,0.0%
-1795,navigation,,Navigo mileage_total,,,2086727.1522428747,,,,-66.4%,0.0%
-1795,navigation,,Navigo tonnage,,,269149.50113007467,,,,-44.0%,0.0%
-1796,navigation,,Carriere,,,3613.9745486202783,3272.9999999999973,,,-6.1%,4.5%
-1796,navigation,,Navigo entrées,,,3324.987806432096,,,,-22.9%,0.0%
-1796,navigation,,Navigo mileage_total,,,2102911.827906567,,,,-66.4%,0.0%
-1796,navigation,,Navigo tonnage,,,271455.78648166533,,,,-44.0%,0.0%
-1797,navigation,,Carriere,,,3661.2217694398914,3272.9999999999973,,,-6.1%,4.5%
-1797,navigation,,Navigo entrées,,,3355.285285917054,,,,-22.9%,0.0%
-1797,navigation,,Navigo mileage_total,,,2119222.03206883,,,,-66.4%,0.0%
-1797,navigation,,Navigo tonnage,,,273781.83390638174,,,,-44.0%,0.0%
-1798,navigation,,Carriere,,,3709.0866758146035,3272.9999999999973,,,-6.1%,4.5%
-1798,navigation,,Navigo entrées,,,3385.8588377717833,,,,-22.9%,0.0%
-1798,navigation,,Navigo mileage_total,,,2135658.7383298893,,,,-66.4%,0.0%
-1798,navigation,,Navigo tonnage,,,276127.81274126266,,,,-44.0%,0.0%
-1799,navigation,,Carriere,,,3757.5773430436384,3272.9999999999973,,,-6.1%,4.5%
-1799,navigation,2629.0,Navigo entrées,,,3416.710977583518,,,,-22.9%,0.0%
-1799,navigation,390923.0,Navigo mileage_total,,,2152222.9278412247,,,,-66.4%,0.0%
-1799,navigation,137600.0,Navigo tonnage,,,278493.8937743617,,,,-44.0%,0.0%
+1726,navigation,1401.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1726,navigation,,Navigo entrées,+0.9%/an,,1762.1074305099087,,,,-22.9%,0.0%
+1726,navigation,,Navigo mileage_total,+0.8%/an,,1224456.3232539014,,,,-66.4%,0.0%
+1726,navigation,,Navigo tonnage,+0.9%/an,,149386.85570326258,,,,-44.0%,0.0%
+1727,navigation,1478.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1727,navigation,,Navigo entrées,+0.9%/an,,1778.1638544230732,,,,-22.9%,0.0%
+1727,navigation,,Navigo mileage_total,+0.8%/an,,1233953.218156968,,,,-66.4%,0.0%
+1727,navigation,,Navigo tonnage,+0.9%/an,,150666.92018631773,,,,-44.0%,0.0%
+1728,navigation,1644.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1728,navigation,,Navigo entrées,+0.9%/an,,1794.3665853913103,,,,-22.9%,0.0%
+1728,navigation,,Navigo mileage_total,+0.8%/an,,1243523.7710673353,,,,-66.4%,0.0%
+1728,navigation,,Navigo tonnage,+0.9%/an,,151957.95327215298,,,,-44.0%,0.0%
+1729,navigation,1432.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1729,navigation,,Navigo entrées,+0.9%/an,,1810.716956572892,,,,-22.9%,0.0%
+1729,navigation,,Navigo mileage_total,+0.8%/an,,1253168.5532772131,,,,-66.4%,0.0%
+1729,navigation,,Navigo tonnage,+0.9%/an,,153260.04894841395,,,,-44.0%,0.0%
+1730,navigation,1444.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1730,navigation,,Navigo entrées,+0.9%/an,,1827.2163132739058,,,,-22.9%,0.0%
+1730,navigation,,Navigo mileage_total,+0.8%/an,,1262888.1405097512,,,,-66.4%,0.0%
+1730,navigation,,Navigo tonnage,+0.9%/an,,154573.30200810678,,,,-44.0%,0.0%
+1731,navigation,1508.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1731,navigation,,Navigo entrées,+0.9%/an,,1843.8660130589444,,,,-22.9%,0.0%
+1731,navigation,,Navigo mileage_total,+0.8%/an,,1272683.112953422,,,,-66.4%,0.0%
+1731,navigation,,Navigo tonnage,+0.9%/an,,155897.80805649812,,,,-44.0%,0.0%
+1732,navigation,1811.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1732,navigation,,Navigo entrées,+0.9%/an,,1860.6674258628072,,,,-22.9%,0.0%
+1732,navigation,,Navigo mileage_total,+0.8%/an,,1282554.0552966387,,,,-66.4%,0.0%
+1732,navigation,,Navigo tonnage,+0.9%/an,,157233.66351807682,,,,-44.0%,0.0%
+1733,navigation,1565.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1733,navigation,,Navigo entrées,+0.9%/an,,1877.6219341032183,,,,-22.9%,0.0%
+1733,navigation,,Navigo mileage_total,+0.8%/an,,1292501.5567626634,,,,-66.4%,0.0%
+1733,navigation,,Navigo tonnage,+0.9%/an,,158580.9656435726,,,,-44.0%,0.0%
+1734,navigation,1811.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1734,navigation,,Navigo entrées,+0.9%/an,,1894.7309327945713,,,,-22.9%,0.0%
+1734,navigation,,Navigo mileage_total,+0.8%/an,,1302526.2111447863,,,,-66.4%,0.0%
+1734,navigation,,Navigo tonnage,+0.9%/an,,159939.81251703642,,,,-44.0%,0.0%
+1735,navigation,1617.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1735,navigation,,Navigo entrées,+0.9%/an,,1911.9958296627105,,,,-22.9%,0.0%
+1735,navigation,,Navigo mileage_total,+0.8%/an,,1312628.6168417544,,,,-66.4%,0.0%
+1735,navigation,,Navigo tonnage,+0.9%/an,,161310.30306297998,,,,-44.0%,0.0%
+1736,navigation,1833.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1736,navigation,,Navigo entrées,+0.9%/an,,1929.4180452607593,,,,-22.9%,0.0%
+1736,navigation,,Navigo mileage_total,+0.8%/an,,1322809.376893511,,,,-66.4%,0.0%
+1736,navigation,,Navigo tonnage,+0.9%/an,,162692.53705357917,,,,-44.0%,0.0%
+1737,navigation,1620.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1737,navigation,,Navigo entrées,+0.9%/an,,1946.9990130859987,,,,-22.9%,0.0%
+1737,navigation,,Navigo mileage_total,+0.8%/an,,1333069.099017173,,,,-66.4%,0.0%
+1737,navigation,,Navigo tonnage,+0.9%/an,,164086.61511593623,,,,-44.0%,0.0%
+1738,navigation,1572.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1738,navigation,,Navigo entrées,+0.9%/an,,1964.7401796978297,,,,-22.9%,0.0%
+1738,navigation,,Navigo mileage_total,+0.8%/an,,1343408.395643327,,,,-66.4%,0.0%
+1738,navigation,,Navigo tonnage,+0.9%/an,,165492.63873940628,,,,-44.0%,0.0%
+1739,navigation,1571.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1739,navigation,,Navigo entrées,+0.9%/an,,1982.6430048367754,,,,-22.9%,0.0%
+1739,navigation,,Navigo mileage_total,+0.8%/an,,1353827.8839525697,,,,-66.4%,0.0%
+1739,navigation,,Navigo tonnage,+0.9%/an,,166910.71028298428,,,,-44.0%,0.0%
+1740,navigation,1393.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1740,navigation,,Navigo entrées,+0.9%/an,,2000.708961544601,,,,-22.9%,0.0%
+1740,navigation,,Navigo mileage_total,+0.8%/an,,1364328.185912356,,,,-66.4%,0.0%
+1740,navigation,,Navigo tonnage,+0.9%/an,,168340.93298275888,,,,-44.0%,0.0%
+1741,navigation,1677.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1741,navigation,,Navigo entrées,+0.9%/an,,2018.939536285513,,,,-22.9%,0.0%
+1741,navigation,,Navigo mileage_total,+0.8%/an,,1374909.9283141342,,,,-66.4%,0.0%
+1741,navigation,,Navigo tonnage,+0.9%/an,,169783.4109594269,,,,-44.0%,0.0%
+1742,navigation,1540.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1742,navigation,,Navigo entrées,+0.9%/an,,2037.3362290684652,,,,-22.9%,0.0%
+1742,navigation,,Navigo mileage_total,+0.8%/an,,1385573.7428107432,,,,-66.4%,0.0%
+1742,navigation,,Navigo tonnage,+0.9%/an,,171238.24922587269,,,,-44.0%,0.0%
+1743,navigation,2135.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1743,navigation,,Navigo entrées,+0.9%/an,,2055.9005535705787,,,,-22.9%,0.0%
+1743,navigation,,Navigo mileage_total,+0.8%/an,,1396320.2659541366,,,,-66.4%,0.0%
+1743,navigation,,Navigo tonnage,+0.9%/an,,172705.55369481465,,,,-44.0%,0.0%
+1744,navigation,1533.0,Carriere,+1.2%/an,,1745.315471636461,1745.315471636461,,,-6.1%,4.5%
+1744,navigation,,Navigo entrées,+0.9%/an,,2074.6340372616874,,,,-22.9%,0.0%
+1744,navigation,,Navigo mileage_total,+0.8%/an,,1407150.139233364,,,,-66.4%,0.0%
+1744,navigation,,Navigo tonnage,+0.9%/an,,174185.43118651473,,,,-44.0%,0.0%
+1745,navigation,1966.0,Carriere,+1.2%/an,,1760.8489178831244,1760.8489178831244,,,-6.1%,4.5%
+1745,navigation,,Navigo entrées,+0.9%/an,,2093.538221530018,,,,-22.9%,0.0%
+1745,navigation,,Navigo mileage_total,+0.8%/an,,1418064.0091128706,,,,-66.4%,0.0%
+1745,navigation,,Navigo tonnage,+0.9%/an,,175677.98943655548,,,,-44.0%,0.0%
+1746,navigation,1737.0,Carriere,+1.2%/an,,1776.5206130344843,1776.5206130344843,,,-6.1%,4.5%
+1746,navigation,,Navigo entrées,+0.9%/an,,2112.6146618090147,,,,-22.9%,0.0%
+1746,navigation,,Navigo mileage_total,+0.8%/an,,1429062.5270710925,,,,-66.4%,0.0%
+1746,navigation,,Navigo tonnage,+0.9%/an,,177183.33710368202,,,,-44.0%,0.0%
+1747,navigation,2180.0,Carriere,+1.2%/an,,1792.331787516764,1792.331787516764,,,-6.1%,4.5%
+1747,navigation,,Navigo entrées,+0.9%/an,,2131.864927705321,,,,-22.9%,0.0%
+1747,navigation,,Navigo mileage_total,+0.8%/an,,1440146.3496393294,,,,-66.4%,0.0%
+1747,navigation,,Navigo tonnage,+0.9%/an,,178701.58377771426,,,,-44.0%,0.0%
+1748,navigation,2195.0,Carriere,+1.2%/an,,1808.283682707081,1808.283682707081,,,-6.1%,4.5%
+1748,navigation,,Navigo entrées,+0.9%/an,,2151.2906031279213,,,,-22.9%,0.0%
+1748,navigation,,Navigo mileage_total,+0.8%/an,,1451316.138440954,,,,-66.4%,0.0%
+1748,navigation,,Navigo tonnage,+0.9%/an,,180232.83998752388,,,,-44.0%,0.0%
+1749,navigation,2277.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1749,navigation,2291.0,Navigo entrées,+0.9%/an,,2170.893286418482,,,,-22.9%,0.0%
+1749,navigation,1514057.0,Navigo mileage_total,+0.8%/an,,1462572.5602308887,,,,-66.4%,0.0%
+1749,navigation,190595.0,Navigo tonnage,+0.9%/an,,181777.21720908154,,,,-44.0%,0.0%
+1750,navigation,2120.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1750,navigation,,Navigo entrées,+0.9%/an,,2190.674590482838,,,,-22.9%,0.0%
+1750,navigation,,Navigo mileage_total,+0.8%/an,,1473916.2869354128,,,,-66.4%,0.0%
+1750,navigation,,Navigo tonnage,+0.9%/an,,183334.827873571,,,,-44.0%,0.0%
+1751,navigation,2013.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1751,navigation,,Navigo entrées,+0.9%/an,,2210.63614292372,,,,-22.9%,0.0%
+1751,navigation,,Navigo mileage_total,+0.8%/an,,1485347.9956922808,,,,-66.4%,0.0%
+1751,navigation,,Navigo tonnage,+0.9%/an,,184905.78537557606,,,,-44.0%,0.0%
+1752,navigation,1892.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1752,navigation,,Navigo entrées,+0.9%/an,,2230.779586174666,,,,-22.9%,0.0%
+1752,navigation,,Navigo mileage_total,+0.8%/an,,1496868.368891123,,,,-66.4%,0.0%
+1752,navigation,,Navigo tonnage,+0.9%/an,,186490.20408133487,,,,-44.0%,0.0%
+1753,navigation,2360.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1753,navigation,,Navigo entrées,+0.9%/an,,2251.1065776351634,,,,-22.9%,0.0%
+1753,navigation,,Navigo mileage_total,+0.8%/an,,1508478.0942142012,,,,-66.4%,0.0%
+1753,navigation,,Navigo tonnage,+0.9%/an,,188088.1993370648,,,,-44.0%,0.0%
+1754,navigation,2074.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1754,navigation,,Navigo entrées,+0.9%/an,,2271.6187898070193,,,,-22.9%,0.0%
+1754,navigation,,Navigo mileage_total,+0.8%/an,,1520177.8646774387,,,,-66.4%,0.0%
+1754,navigation,,Navigo tonnage,+0.9%/an,,189699.8874773616,,,,-44.0%,0.0%
+1755,navigation,1978.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1755,navigation,,Navigo entrées,+0.9%/an,,2292.317910431973,,,,-22.9%,0.0%
+1755,navigation,,Navigo mileage_total,+0.8%/an,,1531968.378671798,,,,-66.4%,0.0%
+1755,navigation,,Navigo tonnage,+0.9%/an,,191325.3858336673,,,,-44.0%,0.0%
+1756,navigation,1981.0,Carriere,+1.2%/an,,2160.4696431703974,2006.460711110404,,,-6.1%,4.5%
+1756,navigation,,Navigo entrées,+0.9%/an,,2313.205642630562,,,,-22.9%,0.0%
+1756,navigation,,Navigo mileage_total,+0.8%/an,,1543850.3400049757,,,,-66.4%,0.0%
+1756,navigation,,Navigo tonnage,+0.9%/an,,192964.8127428127,,,,-44.0%,0.0%
+1757,navigation,1837.0,Carriere,+1.2%/an,,2189.6449697118746,1984.570399583298,,,-6.1%,4.5%
+1757,navigation,,Navigo entrées,+0.9%/an,,2334.283705042258,,,,-22.9%,0.0%
+1757,navigation,,Navigo mileage_total,+0.8%/an,,1555824.4579433966,,,,-66.4%,0.0%
+1757,navigation,,Navigo tonnage,+0.9%/an,,194618.287555631,,,,-44.0%,0.0%
+1758,navigation,1797.0,Carriere,+1.2%/an,,2219.2142845148824,1962.9189094475607,,,-6.1%,4.5%
+1758,navigation,,Navigo entrées,+0.9%/an,,2355.5538319668717,,,,-22.9%,0.0%
+1758,navigation,,Navigo mileage_total,+0.8%/an,,1567891.4472545749,,,,-66.4%,0.0%
+1758,navigation,,Navigo tonnage,+0.9%/an,,196285.93064564842,,,,-44.0%,0.0%
+1759,navigation,1901.0,Carriere,+1.2%/an,,2249.182908059732,1941.5036351826218,,,-6.1%,4.5%
+1759,navigation,1926.0,Navigo entrées,+0.9%/an,,2377.017773507255,,,,-22.9%,0.0%
+1759,navigation,637901.0,Navigo mileage_total,+0.8%/an,,1580052.0282497585,,,,-66.4%,0.0%
+1759,navigation,110810.0,Navigo tonnage,+0.9%/an,,197967.86341784635,,,,-44.0%,0.0%
+1760,navigation,1895.0,Carriere,+1.2%/an,,2279.556232675327,1920.3219996939129,,,-6.1%,4.5%
+1760,navigation,,Navigo entrées,+0.9%/an,,2398.6772957132916,,,,-22.9%,0.0%
+1760,navigation,,Navigo mileage_total,+0.8%/an,,1592306.9268269374,,,,-66.4%,0.0%
+1760,navigation,,Navigo tonnage,+0.9%/an,,199664.2083175002,,,,-44.0%,0.0%
+1761,navigation,2006.0,Carriere,+1.2%/an,,2310.3397235094617,1899.3714540027433,,,-6.1%,4.5%
+1761,navigation,,Navigo entrées,+0.9%/an,,2420.534180727227,,,,-22.9%,0.0%
+1761,navigation,,Navigo mileage_total,+0.8%/an,,1604656.8745141812,,,,-66.4%,0.0%
+1761,navigation,,Navigo tonnage,+0.9%/an,,201375.088839092,,,,-44.0%,0.0%
+1762,navigation,1922.0,Carriere,+1.2%/an,,2341.5389195121516,1878.6494769395583,,,-6.1%,4.5%
+1762,navigation,,Navigo entrées,+0.9%/an,,2442.590226930275,,,,-22.9%,0.0%
+1762,navigation,,Navigo mileage_total,+0.8%/an,,1617102.608513287,,,,-66.4%,0.0%
+1762,navigation,,Navigo tonnage,+0.9%/an,,203100.6295353031,,,,-44.0%,0.0%
+1763,navigation,2346.0,Carriere,+1.2%/an,,2373.1594344322843,1858.153574840542,,,-6.1%,4.5%
+1763,navigation,,Navigo entrées,+0.9%/an,,2464.8472490906074,,,,-22.9%,0.0%
+1763,navigation,,Navigo mileage_total,+0.8%/an,,1629644.8717438076,,,,-66.4%,0.0%
+1763,navigation,,Navigo tonnage,+0.9%/an,,204840.9560260802,,,,-44.0%,0.0%
+1764,navigation,3193.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1764,navigation,,Navigo entrées,+0.9%/an,,2487.307078512667,,,,-22.9%,0.0%
+1764,navigation,,Navigo mileage_total,+0.8%/an,,1642284.412887378,,,,-66.4%,0.0%
+1764,navigation,,Navigo tonnage,+0.9%/an,,206596.19500778118,,,,-44.0%,0.0%
+1765,navigation,2567.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1765,navigation,,Navigo entrées,+0.9%/an,,2509.9715631878526,,,,-22.9%,0.0%
+1765,navigation,,Navigo mileage_total,+0.8%/an,,1655021.9864324152,,,,-66.4%,0.0%
+1765,navigation,,Navigo tonnage,+0.9%/an,,208366.47426239715,,,,-44.0%,0.0%
+1766,navigation,2518.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1766,navigation,,Navigo entrées,+0.9%/an,,2532.8425679465477,,,,-22.9%,0.0%
+1766,navigation,,Navigo mileage_total,+0.8%/an,,1667858.3527191647,,,,-66.4%,0.0%
+1766,navigation,,Navigo tonnage,+0.9%/an,,210151.9226668574,,,,-44.0%,0.0%
+1767,navigation,2393.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1767,navigation,,Navigo entrées,+0.9%/an,,2555.921974611601,,,,-22.9%,0.0%
+1767,navigation,,Navigo mileage_total,+0.8%/an,,1680794.2779850655,,,,-66.4%,0.0%
+1767,navigation,,Navigo tonnage,+0.9%/an,,211952.67020241034,,,,-44.0%,0.0%
+1768,navigation,2288.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1768,navigation,,Navigo entrées,+0.9%/an,,2579.2116821531376,,,,-22.9%,0.0%
+1768,navigation,,Navigo mileage_total,+0.8%/an,,1693830.5344105144,,,,-66.4%,0.0%
+1768,navigation,,Navigo tonnage,+0.9%/an,,213768.84796408526,,,,-44.0%,0.0%
+1769,navigation,2304.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1769,navigation,2320.0,Navigo entrées,+0.9%/an,,2602.713606844781,,,,-22.9%,0.0%
+1769,navigation,1589028.0,Navigo mileage_total,+0.8%/an,,1706967.9001649339,,,,-66.4%,0.0%
+1769,navigation,194560.0,Navigo tonnage,+0.9%/an,,215600.58817023828,,,,-44.0%,0.0%
+1770,navigation,2527.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1770,navigation,,Navigo entrées,+0.9%/an,,2626.4296824213857,,,,-22.9%,0.0%
+1770,navigation,,Navigo mileage_total,+0.8%/an,,1720207.1594532486,,,,-66.4%,0.0%
+1770,navigation,,Navigo tonnage,+0.9%/an,,217448.02417217626,,,,-44.0%,0.0%
+1771,navigation,2984.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1771,navigation,,Navigo entrées,+0.9%/an,,2650.3618602380725,,,,-22.9%,0.0%
+1771,navigation,,Navigo mileage_total,+0.8%/an,,1733549.1025626746,,,,-66.4%,0.0%
+1771,navigation,,Navigo tonnage,+0.9%/an,,219311.29046386582,,,,-44.0%,0.0%
+1772,navigation,2561.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1772,navigation,,Navigo entrées,+0.9%/an,,2674.5121094308583,,,,-22.9%,0.0%
+1772,navigation,,Navigo mileage_total,+0.8%/an,,1746994.525909903,,,,-66.4%,0.0%
+1772,navigation,,Navigo tonnage,+0.9%/an,,221190.52269172276,,,,-44.0%,0.0%
+1773,navigation,2579.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1773,navigation,,Navigo entrées,+0.9%/an,,2698.8824170786042,,,,-22.9%,0.0%
+1773,navigation,,Navigo mileage_total,+0.8%/an,,1760544.23208865,,,,-66.4%,0.0%
+1773,navigation,,Navigo tonnage,+0.9%/an,,223085.85766448968,,,,-44.0%,0.0%
+1774,navigation,2491.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1774,navigation,,Navigo entrées,+0.9%/an,,2723.4747883665846,,,,-22.9%,0.0%
+1774,navigation,,Navigo mileage_total,+0.8%/an,,1774199.0299175438,,,,-66.4%,0.0%
+1774,navigation,,Navigo tonnage,+0.9%/an,,224997.43336319405,,,,-44.0%,0.0%
+1775,navigation,2584.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1775,navigation,,Navigo entrées,+0.9%/an,,2748.2912467513993,,,,-22.9%,0.0%
+1775,navigation,,Navigo mileage_total,+0.8%/an,,1787959.7344884295,,,,-66.4%,0.0%
+1775,navigation,,Navigo tonnage,+0.9%/an,,226925.38895119404,,,,-44.0%,0.0%
+1776,navigation,2830.0,Carriere,+1.2%/an,,2785.362053512663,2501.8229485880893,,,-6.1%,4.5%
+1776,navigation,,Navigo entrées,+0.9%/an,,2773.3338341275385,,,,-22.9%,0.0%
+1776,navigation,,Navigo mileage_total,+0.8%/an,,1801827.1672150034,,,,-66.4%,0.0%
+1776,navigation,,Navigo tonnage,+0.9%/an,,228869.86478430816,,,,-44.0%,0.0%
+1777,navigation,2848.0,Carriere,+1.2%/an,,2821.721212908793,2491.3270907127035,,,-6.1%,4.5%
+1777,navigation,,Navigo entrées,+0.9%/an,,2798.604610995314,,,,-22.9%,0.0%
+1777,navigation,,Navigo mileage_total,+0.8%/an,,1815802.1558818545,,,,-66.4%,0.0%
+1777,navigation,,Navigo tonnage,+0.9%/an,,230831.00242103552,,,,-44.0%,0.0%
+1778,navigation,2593.0,Carriere,+1.2%/an,,2858.5549922812734,2480.8752659422994,,,-6.1%,4.5%
+1778,navigation,,Navigo entrées,+0.9%/an,,2824.1056566304633,,,,-22.9%,0.0%
+1778,navigation,,Navigo mileage_total,+0.8%/an,,1829885.534693886,,,,-66.4%,0.0%
+1778,navigation,,Navigo tonnage,+0.9%/an,,232808.9446328598,,,,-44.0%,0.0%
+1779,navigation,2263.0,Carriere,+1.2%/an,,2895.86958715624,2470.4672895454946,,,-6.1%,4.5%
+1779,navigation,2329.0,Navigo entrées,+0.9%/an,,2849.8390692552043,,,,-22.9%,0.0%
+1779,navigation,780051.0,Navigo mileage_total,+0.8%/an,,1844078.1443260896,,,,-66.4%,0.0%
+1779,navigation,147240.0,Navigo tonnage,+0.9%/an,,234803.83541464384,,,,-44.0%,0.0%
+1780,navigation,2555.0,Carriere,+1.2%/an,,2933.6712739340987,2460.102977565907,,,-6.1%,4.5%
+1780,navigation,,Navigo entrées,+0.9%/an,,2875.8069662108455,,,,-22.9%,0.0%
+1780,navigation,,Navigo mileage_total,+0.8%/an,,1858380.8319737534,,,,-66.4%,0.0%
+1780,navigation,,Navigo tonnage,+0.9%/an,,236815.81999511083,,,,-44.0%,0.0%
+1781,navigation,,Carriere,+1.2%/an,,2971.9664109451996,2449.7821468189045,,,-6.1%,4.5%
+1781,navigation,,Navigo entrées,+0.9%/an,,2902.0114841320715,,,,-22.9%,0.0%
+1781,navigation,,Navigo mileage_total,+0.8%/an,,1872794.45140301,,,,-66.4%,0.0%
+1781,navigation,,Navigo tonnage,+0.9%/an,,238845.0448474196,,,,-44.0%,0.0%
+1782,navigation,,Carriere,+1.2%/an,,3010.7614395193946,2439.504614888366,,,-6.1%,4.5%
+1782,navigation,,Navigo entrées,+0.9%/an,,2928.4547791226632,,,,-22.9%,0.0%
+1782,navigation,,Navigo mileage_total,+0.8%/an,,1887319.8630018104,,,,-66.4%,0.0%
+1782,navigation,,Navigo tonnage,+0.9%/an,,240891.65769982655,,,,-44.0%,0.0%
+1783,navigation,,Carriere,+1.2%/an,,3050.0628850693993,2429.270200123458,,,-6.1%,4.5%
+1783,navigation,,Navigo entrées,+0.9%/an,,2955.139026932985,,,,-22.9%,0.0%
+1783,navigation,,Navigo mileage_total,+0.8%/an,,1901957.933831293,,,,-66.4%,0.0%
+1783,navigation,,Navigo tonnage,+0.9%/an,,242955.80754643917,,,,-44.0%,0.0%
+1784,navigation,,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1784,navigation,,Navigo entrées,+0.9%/an,,2982.0664231389205,,,,-22.9%,0.0%
+1784,navigation,,Navigo mileage_total,+0.8%/an,,1916709.537677517,,,,-66.4%,0.0%
+1784,navigation,,Navigo tonnage,+0.9%/an,,245037.64465806523,,,,-44.0%,0.0%
+1785,navigation,,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1785,navigation,,Navigo entrées,+0.9%/an,,3009.2391833226097,,,,-22.9%,0.0%
+1785,navigation,,Navigo mileage_total,+0.8%/an,,1931575.5551036482,,,,-66.4%,0.0%
+1785,navigation,,Navigo tonnage,+0.9%/an,,247137.32059315106,,,,-44.0%,0.0%
+1786,navigation,,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1786,navigation,,Navigo entrées,+0.9%/an,,3036.659543254661,,,,-22.9%,0.0%
+1786,navigation,,Navigo mileage_total,+0.8%/an,,1946556.8735024985,,,,-66.4%,0.0%
+1786,navigation,,Navigo tonnage,+0.9%/an,,249254.98820881575,,,,-44.0%,0.0%
+1787,navigation,,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1787,navigation,3296.0,Navigo entrées,+0.9%/an,,3064.3297590781954,,,,-22.9%,0.0%
+1787,navigation,2009391.0,Navigo mileage_total,+0.8%/an,,1961654.3871495065,,,,-66.4%,0.0%
+1787,navigation,272190.0,Navigo tonnage,+0.9%/an,,251390.80167197753,,,,-44.0%,0.0%
+1788,navigation,3273.0,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1788,navigation,,Navigo entrées,+0.9%/an,,3092.252107494397,,,,-22.9%,0.0%
+1788,navigation,,Navigo mileage_total,+0.8%/an,,1976868.9972561307,,,,-66.4%,0.0%
+1788,navigation,,Navigo tonnage,+0.9%/an,,253544.91647057983,,,,-44.0%,0.0%
+1789,navigation,,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1789,navigation,3084.0,Navigo entrées,+0.9%/an,,3120.4288859499243,,,,-22.9%,0.0%
+1789,navigation,2018182.0,Navigo mileage_total,+0.8%/an,,1992201.6120236197,,,,-66.4%,0.0%
+1789,navigation,249610.0,Navigo tonnage,+0.9%/an,,255717.48942490894,,,,-44.0%,0.0%
+1790,navigation,,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1790,navigation,,Navigo entrées,+0.9%/an,,3148.8624128258584,,,,-22.9%,0.0%
+1790,navigation,,Navigo mileage_total,+0.8%/an,,2007653.146697254,,,,-66.4%,0.0%
+1790,navigation,,Navigo tonnage,+0.9%/an,,257908.6786990117,,,,-44.0%,0.0%
+1791,navigation,,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1791,navigation,,Navigo entrées,+0.9%/an,,3177.5550276285335,,,,-22.9%,0.0%
+1791,navigation,,Navigo mileage_total,+0.8%/an,,2023224.5236209547,,,,-66.4%,0.0%
+1791,navigation,,Navigo tonnage,+0.9%/an,,260118.6438122079,,,,-44.0%,0.0%
+1792,navigation,,Carriere,+1.2%/an,,,,,,-6.1%,4.5%
+1792,navigation,,Navigo entrées,+0.9%/an,,3206.5090911820007,,,,-22.9%,0.0%
+1792,navigation,,Navigo mileage_total,+0.8%/an,,2038916.6722923506,,,,-66.4%,0.0%
+1792,navigation,,Navigo tonnage,+0.9%/an,,262347.5456507062,,,,-44.0%,0.0%
+1793,navigation,,Carriere,+1.2%/an,,3475.8598015964944,3272.9999999999973,,,-6.1%,4.5%
+1793,navigation,,Navigo entrées,+0.9%/an,,3235.7269858222417,,,,-22.9%,0.0%
+1793,navigation,,Navigo mileage_total,+0.8%/an,,2054730.5294182743,,,,-66.4%,0.0%
+1793,navigation,,Navigo tonnage,+0.9%/an,,264595.54647931526,,,,-44.0%,0.0%
+1794,navigation,,Carriere,+1.2%/an,,3521.30138215404,3272.9999999999973,,,-6.1%,4.5%
+1794,navigation,,Navigo entrées,+0.9%/an,,3265.211115593265,,,,-22.9%,0.0%
+1794,navigation,,Navigo mileage_total,+0.8%/an,,2070667.0389706506,,,,-66.4%,0.0%
+1794,navigation,,Navigo tonnage,+0.9%/an,,266862.8099532552,,,,-44.0%,0.0%
+1795,navigation,,Carriere,+1.2%/an,,3567.3370422664234,3272.9999999999973,,,-6.1%,4.5%
+1795,navigation,2258.0,Navigo entrées,+0.9%/an,,3294.9639064448197,,,,-22.9%,0.0%
+1795,navigation,,Navigo mileage_total,+0.8%/an,,2086727.1522428747,,,,-66.4%,0.0%
+1795,navigation,,Navigo tonnage,+0.9%/an,,269149.50113007467,,,,-44.0%,0.0%
+1796,navigation,,Carriere,+1.2%/an,,3613.9745486202783,3272.9999999999973,,,-6.1%,4.5%
+1796,navigation,,Navigo entrées,+0.9%/an,,3324.987806432096,,,,-22.9%,0.0%
+1796,navigation,,Navigo mileage_total,+0.8%/an,,2102911.827906567,,,,-66.4%,0.0%
+1796,navigation,,Navigo tonnage,+0.9%/an,,271455.78648166533,,,,-44.0%,0.0%
+1797,navigation,,Carriere,+1.2%/an,,3661.2217694398914,3272.9999999999973,,,-6.1%,4.5%
+1797,navigation,,Navigo entrées,+0.9%/an,,3355.285285917054,,,,-22.9%,0.0%
+1797,navigation,,Navigo mileage_total,+0.8%/an,,2119222.03206883,,,,-66.4%,0.0%
+1797,navigation,,Navigo tonnage,+0.9%/an,,273781.83390638174,,,,-44.0%,0.0%
+1798,navigation,,Carriere,+1.2%/an,,3709.0866758146035,3272.9999999999973,,,-6.1%,4.5%
+1798,navigation,,Navigo entrées,+0.9%/an,,3385.8588377717833,,,,-22.9%,0.0%
+1798,navigation,,Navigo mileage_total,+0.8%/an,,2135658.7383298893,,,,-66.4%,0.0%
+1798,navigation,,Navigo tonnage,+0.9%/an,,276127.81274126266,,,,-44.0%,0.0%
+1799,navigation,,Carriere,+1.2%/an,,3757.5773430436384,3272.9999999999973,,,-6.1%,4.5%
+1799,navigation,2629.0,Navigo entrées,+0.9%/an,,3416.710977583518,,,,-22.9%,0.0%
+1799,navigation,390923.0,Navigo mileage_total,+0.8%/an,,2152222.9278412247,,,,-66.4%,0.0%
+1799,navigation,137600.0,Navigo tonnage,+0.9%/an,,278493.8937743617,,,,-44.0%,0.0%
