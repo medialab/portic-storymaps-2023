@@ -20,6 +20,7 @@ export default function StyleViz({
   setHighlightedCategory,
   highlightedSteps,
   setHighlightedSteps,
+  layout,
   lang,
 }) {
   const titleHeight = 60;
@@ -54,7 +55,12 @@ export default function StyleViz({
   const numberOfLegendObjects = parseInt(maxCount / legendStep);
   const legendObjectsValues = range(legendStep, legendStep * numberOfLegendObjects, legendStep);
   // const legendCellHeight =  (matrixHeight - cellHeight * 3) / 7 * 1.2;
-  let legendObjectOffset = cellHeight * 1.8;
+  const legendObjectsStartY = layout === 'vertical' ? cellHeight * 2.5 : cellHeight * 1.5;
+  let legendObjectOffset = legendObjectsStartY;
+  // let legendHeightStep = maxRadius * 2;
+  // let legendHeightStep = radius * 2 + axisStep * 2;
+  // const legendObjectsHeight = legendObjectOffset + legendHeightStep * legendObjectsValues.length;
+
   const statusClass = highlightedCategory ? highlightedCategory === id ? 'is-highlighted': 'is-shadowed' : '';
   return (
     <div 
@@ -126,7 +132,7 @@ export default function StyleViz({
         <g className="legend">
           <foreignObject
             x={axisStep * 1.5}
-            y={cellWidth}
+            y={layout === 'vertical' ? 0 : cellHeight / 3}
             width={sideWidth - axisStep * 8}
             height={cellHeight * 3}
           >
@@ -142,11 +148,29 @@ export default function StyleViz({
             legendObjectsValues
               .map((legendValue, index) => {
                 // const cy = cellHeight * 2 + index * legendCellHeight + legendCellHeight / 2;
-                const cy = legendObjectOffset;
-                const cx = maxRadius;
+                let cx, cy;
                 const area = areaScale(legendValue);
                 const radius = Math.sqrt(area / Math.PI);
-                legendObjectOffset += radius * 2 + axisStep * 2;
+                const legendHeightStep = radius + axisStep * 3;
+                if (layout === 'vertical') {
+                  if (index > legendObjectsValues.length / 2) {
+                    cx = sideWidth / 2 - maxRadius / 2;
+                    
+                    
+                  } else {
+                    cx = maxRadius;
+                  }
+                  if (index === Math.floor(legendObjectsValues.length / 2) + 1) {
+                    legendObjectOffset = legendObjectsStartY + radius / 4;
+                  }
+                  cy = legendObjectOffset;
+                  legendObjectOffset += legendHeightStep;
+                } else {
+                  cy = legendObjectOffset;
+                  cx = maxRadius;
+                  legendObjectOffset += legendHeightStep;
+                }
+                
                 return (
                   <g key={legendValue}>
                     <circle
@@ -158,7 +182,7 @@ export default function StyleViz({
                       fill="transparent"
                     />
                     <text
-                      x={maxRadius * 2}
+                      x={cx + maxRadius}
                       y={cy + axisStep / 2}
                       fontSize={axisStep * 1.5}
                       fontStyle="italic"

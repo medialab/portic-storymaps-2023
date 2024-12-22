@@ -483,37 +483,37 @@ PartDesEtrangersDansNavigation:
     en: british
   italians:
     fr: napolitains, gênois, vénitiens, toscans, carrarais, romains, savoyards
-    en: neapolitan, genoese, venitian, tuscan, carrara's, roman, Savoyard
+    en: Neapolitan, Genoese, Venitian, Tuscan, Carrara's, Roman, Savoyard
   espagnols:
     fr: espagnols
-    en: spanish
+    en: Spanish
   unknown:
     fr: inconnus
     en: unknown
   jerusalemites:
     fr: jérusalémites
-    en: jerusalemites
+    en: Jerusalemites
   monégasques:
     fr: monégasques
-    en: monegasques
+    en: Monegasques
   savoyards:
     fr: savoyards
-    en: savoyards
+    en: Savoyards
   hollandais:
     fr: hollandais
-    en: dutch
+    en: Dutch
   danois:
     fr: danois
-    en: danish
+    en: Danish
   impériaux-mediterrannee:
     fr: impériaux de la méditerrannée
     en: mediterrannean imperials
   suédois:
     fr: suédois
-    en: swedish
+    en: Swedish
   ragusois:
     fr: ragusois
-    en: ragusans
+    en: Ragusans
 CommentedImage:
   click-prompt:
     fr: Cliquer pour consulter

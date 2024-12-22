@@ -472,6 +472,7 @@ export default function StylesNavigation({
               setHighlightedCategory,
               highlightedSteps,
               setHighlightedSteps,
+              layout,
               lang,
             }}
           />
@@ -496,6 +497,7 @@ export default function StylesNavigation({
               setHighlightedCategory,
               highlightedSteps,
               setHighlightedSteps,
+              layout,
               lang,
             }}
           />
@@ -518,6 +520,7 @@ export default function StylesNavigation({
               setHighlightedCategory,
               highlightedSteps,
               setHighlightedSteps,
+              layout,
               lang,
             }}
           />

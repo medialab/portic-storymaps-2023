@@ -8,7 +8,6 @@ import './Footer.scss';
 
 export default function Footer() {
     const { lang } = useParams();
-  console.log(lang)
     const Content = (lang === 'fr') ? frContent : enContent;
 
     return (
