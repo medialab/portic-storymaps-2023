@@ -31,12 +31,13 @@ with open("module_intro_C/evolution_directions_fermes_local.csv", "r") as data_f
 with open('module_intro_C/war_navigo.csv', 'r') as f1:
   r = DictReader(f1)
   for year in r:
+    slope = float(year["slope"])
     data.append({
       "year": year["year"],
       "data_type": "navigation",
       "value": float(year['entrées']) if year['entrées']!='' else None, 
       "kind" : year["source"],
-      # "slope" : ,
+      "slope" : f"{'+' if slope>0 else ''}{slope*100:0.1f}%/an",
       # "reg_point": ,
       "peace_reg_memory": year["reg_mem"],
       "peace_reg": year["reg_no_mem"],

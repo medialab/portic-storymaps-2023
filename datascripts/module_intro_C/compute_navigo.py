@@ -48,6 +48,10 @@ with open("entrees_navigo_marseille.csv", "r") as f, open("../module_3B/mileage_
     # navigo
     war_years = [str(y) for ys in wars for y in ys]
     reg_navigo = defaultdict(lambda:defaultdict(str))
+    slope_navigo = defaultdict(lambda:defaultdict(str))
+
+    (score, slope, y0) = regress.regress("carriere", {"carriere": carriere},"")
+    slope_carriere = slope
     average_loss_navigo={}
     for variable, data in navigo.items():
         data_peace_navigo = {year:int(value) for year,value in navigo[variable].items() if year not in war_years}
@@ -55,6 +59,7 @@ with open("entrees_navigo_marseille.csv", "r") as f, open("../module_3B/mileage_
         (score, slope, y0) = regress.regress("navigo tonnage", {"navigo tonnage": data_peace_navigo},"")
         for year in years:
             reg_navigo[variable][year] = math.exp(slope*int(year)+y0)
+            slope_navigo[variable][year] = slope
   
         navigo_loss_rates = [(navigo[variable][year] - reg_navigo[variable][year])/reg_navigo[variable][year] for year in war_years if navigo[variable][year] != '']
         average_loss_navigo[variable] = 0
@@ -72,19 +77,19 @@ with open("entrees_navigo_marseille.csv", "r") as f, open("../module_3B/mileage_
         average_loss_carriere_no_mem = sum(carriere_loss_rates_no_mem)/len(carriere_loss_rates_no_mem)
         print("average loss carriere no mem", average_loss_carriere_no_mem )
         
-        
     with open("war_navigo.csv", "w") as of:
-        writer = csv.DictWriter(of, ["year", "source","entrées", "reg_mem", "reg_no_mem", "avg_loss_label", "avg_loss", "avg_loss_no_mem",  "avg_loss_no_mem_label"])
+        writer = csv.DictWriter(of, ["year", "source","entrées", "reg_mem", "reg_no_mem", "avg_loss_label", "avg_loss", "avg_loss_no_mem",  "avg_loss_no_mem_label", "slope"])
 
         writer.writeheader()
         for year in years:
-            
+            # print('carrière slope', slope_carriere);
             writer.writerow({
                 "year": year,
                 "source": "Carriere",
                 "entrées" : carriere[year],
                 "reg_mem": reg_memory[year],
                 "reg_no_mem": reg_no_memory[year],
+                "slope": slope_carriere,
                 "avg_loss_label": f"Perte memoire{average_loss_carriere_mem*100:0.1f}%",
                 "avg_loss_no_mem_label": f"Perte {average_loss_carriere_no_mem*100:0.1f}%",
                 "avg_loss":average_loss_carriere_mem,
@@ -100,5 +105,7 @@ with open("entrees_navigo_marseille.csv", "r") as f, open("../module_3B/mileage_
                     "reg_no_mem": "",
                     "avg_loss_label": f"Perte memoire{average_loss_navigo[variable]*100:0.1f}%",
                     "avg_loss":average_loss_navigo[variable],
-                    "avg_loss_no_mem": ""
-                })
+                    "avg_loss_no_mem": "",
+                    "slope": slope_navigo[variable][year]
+                })                
+
