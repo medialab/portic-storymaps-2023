@@ -144,7 +144,7 @@ export default function GuerreEtCroissance({
 
   useEffect(() => {
     ReactTooltip.rebuild();
-  }, [lang, visibleSeries, visibleDirections, data, activeNavigationSource]);
+  }, [lang, visibleSeries, visibleDirections, data, activeNavigationSource, activeYear]);
 
   const wars = [
     {
@@ -161,6 +161,11 @@ export default function GuerreEtCroissance({
       start: 1776,
       end: 1783,
       name: 'indépendance américaine'
+    },
+    {
+      start: 1793,
+      end: 1800,
+      name: 'Guerres de la Révolution française'
     },
   ];
   let circleRadius = width / 1000; // width / (visibleDirections.length * visibleSeries.length * 20);

@@ -114,6 +114,9 @@ export const fixSvgDimension = num => isNaN(num) ? 0 : Math.abs(+num);
  * @returns {string}
  */
 export const formatNumber = (n, style = 'fr') => {
+  if (+n === 0) {
+    return '0';
+  }
   return ('' + n)
     .split('')
     .reverse()

@@ -229,10 +229,10 @@ WarTransferChart:
     en: neutral
   group-levant:
     fr: France du Levant
-    en: Levant France
+    en: French Mediterranean
   group-ponant:
     fr: France du Ponant
-    en: Ponant France
+    en: French Atlantic
   group-war-ally:
     fr: en guerre allié de la France
     en: at war, allied of France
@@ -241,7 +241,7 @@ WarTransferChart:
     en: at war, ennemy of France
   tooltip-peace:
     fr: Entre ${start} et ${end}, le tonnage cumulé estimé des navires du groupe ${group} est passé de ${from}% à ${to}% de la navigation vers Marseille.
-    en: Between ${start} and ${end}, the estimated cumulative tonnage of ${group} ships increased from ${from}% to ${to}% of shipping to Marseille.
+    en: Between ${start} and ${end}, the estimated cumulative tonnage of ${group} ships evolved from ${from}% to ${to}% of shipping to Marseille.
   tooltip-war:
     fr: Entre ${start} et ${end}, le tonnage cumulé estimé des navires qui allaient devenir ${group} en ${end} est passé de ${from}% à ${to}% de la navigation vers Marseille.
     en: Between ${start} and ${end}, the estimated cumulative tonnage of the ships that were to become ${group} in ${end} rose from ${from}% to ${to}% of shipping to Marseille.
@@ -432,7 +432,7 @@ LevantNavigation:
     en: Legend
   tooltip:
     fr: Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers le port phocéen dans les sept années étudiées, pour un total estimé de <strong>${tonnage} tonneaux</strong> cumulés.
-    en: According to the registre des patentes de Marseille, <strong>${count}&nbsp;ships</strong> went from the port of <strong>${port}</strong> to the port of Marseille in one of the seven years studies, for an estimated total tonnage of <strong>${tonnage}&nbsp;tonneaux</strong>.
+    en: According to the registre des patentes de Marseille, <strong>${count}&nbsp;ships</strong> went from the port of <strong>${port}</strong> to the port of Marseille in the seven studied years, for an estimated total tonnage of <strong>${tonnage}&nbsp;tonneaux</strong>.
 MarseillePortStructurant:
   legend:
     fr: Légende
@@ -573,7 +573,7 @@ EffetsGuerreSurLevant:
     en: year
   top-tooltip:
     fr: En ${year}, Marseille a importé ${value} lt. depuis les partenaires ${particule} ${group}
-    en: In ${year}, Marseille imported ${value} lt. from partners of ${group}
+    en: In ${year}, Marseille imported ${value} lt. from ${group}
   bottom-y-axis:
     fr: part des import°s
     en: share of imports
@@ -582,7 +582,7 @@ EffetsGuerreSurLevant:
     en: year
   bottom-tooltip:
     fr: En ${year}, Marseille a importé ${share}% de sa valeur depuis les partenaires ${group}
-    en: In ${year}, Marseille imported ${share}% of its value from partners of ${group}
+    en: In ${year}, Marseille imported ${share}% of its value from ${group}
   group-levant-barbarie:
     fr: Levant & Barbarie
     en: Levant & Barbary
@@ -648,8 +648,8 @@ GuerreEtCroissance:
     fr: Période de guerre
     en: War period
   legend-observations:
-    fr: Valeurs observées (lt. pour le commerce&nbsp;; observations, mètres ou tonnages pour la navigation suivant la source/métrique choisie)
-    en: Observed values (lt. for trade; observations, meters, or tonnage for navigation depending on the chosen source/metric)
+    fr: Valeurs observées (lt. pour le commerce&nbsp;; observations, miles marins ou tonnages pour la navigation suivant la source/métrique choisie)
+    en: Observed values (lt. for trade; observations, nautic miles, or tonnage for navigation depending on the chosen source/metric)
   navigation-interface-title:
     fr: Données de navigation
     en: Navigation data

@@ -42,6 +42,8 @@ with open('../data/navigo_all_flows.csv', newline='', encoding='utf8') as csvfil
              or flow["source_suite"] == "la Santé registre de patentes de Marseille") \
       :
       port = flow["departure_fr"]
+      port_fr = flow["departure_fr"]
+      port_en = flow["departure_en"]
       tonnage = flow["tonnage"]
       ship_class = flow["ship_class_standardized"]
       year = int(flow["outdate_fixed"].split('-')[0])
@@ -52,6 +54,8 @@ with open('../data/navigo_all_flows.csv', newline='', encoding='utf8') as csvfil
       if port not in ports:
         ports[port] = {
           "port": port,
+          "port_fr": port_fr,
+          "port_en": port_en,
           "latitude": flow["departure_latitude"],
           "longitude": flow["departure_longitude"],
           "tonnage": 0,

@@ -116,4 +116,10 @@
       padding: $small-gutter / 4;
     }
   }
+
+  .LineSeries {
+    foreignObject {
+      pointer-events: none;
+    }
+  }
 }

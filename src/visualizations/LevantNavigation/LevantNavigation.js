@@ -187,7 +187,7 @@ export default function LevantNavigation({
                 return (
                   <g>
                     {
-                      data.map(({ port, latitude, longitude, tonnage, count }) => {
+                      data.map(({ port, latitude, longitude, tonnage, count, ...portNames }) => {
                         const [x, y] = projection([longitude, latitude]);
                         const area = areaScale(tonnage);
                         const radius = Math.sqrt(area / (Math.PI));
@@ -202,7 +202,7 @@ export default function LevantNavigation({
                             data-tip={
                               translate('LevantNavigation', 'tooltip', lang, {
                                 count,
-                                port,
+                                port: portNames['port_' + lang],
                                 tonnage: formatNumber(tonnage, lang)
                               })
                               // `Selon le registre des patentes de Marseille, <strong>${count}&nbsp;navires</strong> se sont rendus depuis le port de <strong>${port}</strong> vers port phocéen dans les sept années étudiées, pour un total estimé de <strong>${formatNumber(tonnage, lang)} tonneaux</strong> cumulés.`
@@ -220,7 +220,7 @@ export default function LevantNavigation({
                       })
                     }
                     {
-                      data.map(({ port, latitude, longitude, tonnage, count }) => {
+                      data.map(({ port, latitude, longitude, tonnage, count, ...portNames }) => {
                         const [x, y] = projection([longitude, latitude]);
                         const area = areaScale(tonnage);
                         const radius = Math.sqrt(area / (Math.PI));
@@ -237,7 +237,7 @@ export default function LevantNavigation({
                           >
 
                             <text x={0} y={radius * 1.5} fontSize={radius * .8} textAnchor="middle">
-                              {port}
+                              {portNames['port_' + lang]}
                             </text>
                           </g>
                         );

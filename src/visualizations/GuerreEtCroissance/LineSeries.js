@@ -76,9 +76,6 @@ const LineSeries = ({
   const slopeColorScale = scaleLinear().domain([-1.1, 3.5]).range(['lightgrey', '#336D7C']);
   const lossColorScale = scaleLinear().domain([-60, 60]).range(['#FEA43B', 'green']);
 
-  if (id === "navigation") {
-    console.log('in navigation', {slope, avgMem, data})
-  }
   return (
     <g className="LineSeries">
       <rect x={0} y={gutter * 2} width={endX} height={height - gutter * 3} fill="rgba(0,0,0,0)" />
@@ -222,7 +219,7 @@ const LineSeries = ({
                   fill="transparent"
                   cx={x}
                   cy={y}
-                  r={isActive ? width / data.length * 2 : width / data.length * 1}
+                  r={isActive ? width / data.length + 5 : width / data.length + 1}
                   onMouseEnter={() => onSetActiveYear(year)}
                   onMouseLeave={() => onSetActiveYear()}
                   data-for="guerre-tooltip"
@@ -230,8 +227,8 @@ const LineSeries = ({
                     translate('GuerreEtCroissance', 'tooltip', lang, {
                       year,
                       unit,
-                      value: formatNumber(parseInt(value, lang)),
-                      loss: formatNumber(parseInt(data.find(d => d.year === year, lang).peace_reg_memory))
+                      value: formatNumber(parseInt(value), lang),
+                      loss: formatNumber(parseInt(data.find(d => d.year === year, lang).peace_reg_memory), lang)
                     })
                     // `En ${year}, valeur de ${formatNumber(parseInt(value, lang))} (perte de ${formatNumber(parseInt(data.find(d => d.year === year, lang).peace_reg_memory))})`
                   }
