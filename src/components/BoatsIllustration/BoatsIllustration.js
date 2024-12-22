@@ -170,11 +170,14 @@ const Boat = ({
     return m;
   }, [mattNumber])
 
+  const boatWidth = height;
+
+
   const step1 = {
-    transform: `skewX(-3)`
+    transform: `skewX(-3)`,
   }
   const step2 = {
-    transform: `skewX(3)`
+    transform: `skewX(3)`,
   }
   const {transform} = useSpring({
     loop: true,
@@ -183,6 +186,25 @@ const Boat = ({
     config: { duration: 3000 }
   });
 
+  const fireSequence = useMemo(() => {
+    const numberOfSteps = 20;
+    const steps = [];
+    for (let i = 0 ; i < numberOfSteps ; i++) {
+      const ratio = Math.random() * 5 + 5
+      steps.push({
+        r: boatWidth / ratio
+      })
+    }
+    return steps;
+  }, [])
+
+  const {r} = useSpring({
+    loop: true,
+    to: [{r: boatWidth / 5},...fireSequence, {r: boatWidth / 5}],
+    from: {r: boatWidth / 5},
+    config: {duration: 100}
+
+  })
 
   useEffect(() => {
     const nOfMatts = Math.round(Math.random() * 2) + 1;
@@ -193,13 +215,25 @@ const Boat = ({
   const randomFactor = useMemo(() => Math.random(), [])
 
 
-  const boatWidth = height;
 
   return (
     <animated.g
       className="boat"
       transform={transform}
     >
+      <animated.circle
+        cx={boatWidth / 3}
+        cy={height - height * hullHeightRatio * .5}
+        r={r}
+        fill="url(#night-fire)"
+        opacity={hourOfTime >= 20 || hourOfTime <= 6 ? 1 : 0}
+      />
+      <radialGradient id={`night-fire`}>
+        {/* <animated.stop offset={'0%'} stopColor={'rgb(238, 237, 192)'} /> */}
+        <animated.stop offset={'0%'} stopOpacity={.5} stopColor={/*'rgb(255, 255, 255)'*/ 'red'} />
+        <animated.stop offset={'20%'} stopOpacity={1} stopColor={/*colorPalettes.ui.colorBackground*/ 'red'} />
+        <animated.stop offset={'80%'} stopOpacity={0} stopColor={/*colorPalettes.ui.colorBackground*/ 'orange'} />
+      </radialGradient>
       {
         matts.map((matt, mattIndex) => {
           const displace = (boatWidth * .9);
