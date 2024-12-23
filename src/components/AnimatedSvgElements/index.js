@@ -1,96 +1,109 @@
 import { useSpring, animated } from '@react-spring/web';
 
-export function AnimatedGroup({
-    children,
-    style,
-    ...props
-}) {
-    const animatedProps = useSpring(props);
+const isPropAnimatable = propName =>
+  !['style', 'children', 'className'].includes(propName)
+  && propName.indexOf('on') !== 0;
 
-    return (
-        <animated.g {...animatedProps} style={style}>
-            {children}
-        </animated.g>
-    )
+
+const getAnimatableProps = props => {
+  const keys = Object.keys(props);
+  const animatableKeys = keys.filter(isPropAnimatable);
+  const nonAnimatableKeys = keys.filter(k => !isPropAnimatable(k));
+  const animatableProps = animatableKeys.reduce((cur, key) => ({ ...cur, [key]: props[key] }), {});
+  const nonAnimatableProps = nonAnimatableKeys.reduce((cur, key) => ({ ...cur, [key]: props[key] }), {});
+  return {
+    animatableProps,
+    nonAnimatableProps,
+  }
+}
+
+export function AnimatedGroup({
+  children,
+  ...props
+}) {
+  const { animatableProps, nonAnimatableProps } = getAnimatableProps(props);
+  const animatedProps = useSpring(animatableProps);
+
+  return (
+    <animated.g {...animatedProps} {...nonAnimatableProps}>
+      {children}
+    </animated.g>
+  )
 }
 export function AnimatedForeignObject({
   children,
-  style,
   ...props
 }) {
-  const animatedProps = useSpring(props);
+  const { animatableProps, nonAnimatableProps } = getAnimatableProps(props);
+  const animatedProps = useSpring(animatableProps);
 
   return (
-      <animated.foreignObject {...animatedProps} style={style}>
-          {children}
-      </animated.foreignObject>
+    <animated.foreignObject {...animatedProps} {...nonAnimatableProps}>
+      {children}
+    </animated.foreignObject>
   )
 }
 
 export function AnimatedText({
   children,
-  style,
-  onClick,
   ...props
 }) {
-  const animatedProps = useSpring(props);
+  const { animatableProps, nonAnimatableProps } = getAnimatableProps(props);
+  const animatedProps = useSpring(animatableProps);
 
   return (
-      <animated.text {...animatedProps} onClick={onClick} style={style}>
-          {children}
-      </animated.text>
+    <animated.text {...animatedProps} {...nonAnimatableProps}>
+      {children}
+    </animated.text>
   )
 }
 
 
 export function AnimatedCircle({
   children,
-  style,
   ...props
 }) {
-  const animatedProps = useSpring(props);
+  const { animatableProps, nonAnimatableProps } = getAnimatableProps(props);
+  const animatedProps = useSpring(animatableProps);
 
   return (
-      <animated.circle {...animatedProps} style={style}>
-          {children}
-      </animated.circle>
+    <animated.circle {...animatedProps} {...nonAnimatableProps}>
+      {children}
+    </animated.circle>
   )
 }
 
 
 export function AnimatedLine({
   children,
-  style,
   ...props
 }) {
-  const animatedProps = useSpring(props);
-
+  const { animatableProps, nonAnimatableProps } = getAnimatableProps(props);
+  const animatedProps = useSpring(animatableProps);
   return (
-      <animated.line {...animatedProps} style={style}>
-          {children}
-      </animated.line>
+    <animated.line {...animatedProps} {...nonAnimatableProps}>
+      {children}
+    </animated.line>
   )
 }
 
 export function AnimatedPath({
-  onClick,
   ...props
 }) {
-  const mouseProps = Object.keys(props).filter(key => key.includes('Mouse'))
-  .reduce((res, key) => ({...res, [key]: props[key]}), {});
-    const animatedProps = useSpring(props);
+  const { animatableProps, nonAnimatableProps } = getAnimatableProps(props);
+  const animatedProps = useSpring(animatableProps);
 
-    return (
-        <animated.path onClick={onClick} {...animatedProps} {...mouseProps} />
-    )
+  return (
+    <animated.path {...animatedProps} {...nonAnimatableProps} />
+  )
 }
 
 export function AnimatedRect({
   ...props
 }) {
-  const animatedProps = useSpring(props);
-
+  const { animatableProps, nonAnimatableProps } = getAnimatableProps(props);
+  const animatedProps = useSpring(animatableProps);
   return (
-      <animated.rect {...animatedProps} />
+    <animated.rect {...animatedProps} {...nonAnimatableProps} />
   )
 }

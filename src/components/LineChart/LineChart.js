@@ -357,7 +357,6 @@ const LineChart = ({
                   .filter(a => a.axis === 'x')
                   .map((annotation, annotationIndex) => {
                     const { start, end, label, labelPosition = 20 } = annotation;
-                    console.log({labelPosition})
                     const thatHeight = height - yScale(yAxisValues[yAxisValues.length - 1]) - margins.bottom;
                     const thatY1 = height - margins.bottom;
                     const thatY2 = yScale(yAxisValues[yAxisValues.length - 1]);

@@ -648,7 +648,7 @@ GuerreEtCroissance:
     fr: Période de guerre
     en: War period
   legend-observations:
-    fr: Valeurs observées (lt. pour le commerce&nbsp;; observations, miles marins ou tonnages pour la navigation suivant la source/métrique choisie)
+    fr: Valeurs observées (lt. pour le commerce&nbsp;; observations, milles marins ou tonnages pour la navigation suivant la source/métrique choisie)
     en: Observed values (lt. for trade; observations, nautical miles, or tonnage for navigation depending on the chosen source/metric)
   navigation-interface-title:
     fr: Données de navigation
