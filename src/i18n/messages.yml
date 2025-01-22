@@ -298,8 +298,8 @@ Intro:
     fr: ${nb_ships} voyages ont été effectués depuis les ports du partenaire ${partner} vers Marseille en 1789, pour un tonnage moyen de ${tonnage} tonneaux.
     en: ${nb_ships} ships departured from the ports of ${partner} to Marseille in 1789, for a mean tonnage of ${tonnage} tx.
   tooltip-navigo-france:
-    fr: ${nb_ships} voyages ont été effectués depuis le port ${partner} vers Marseille en 1787, pour un tonnage moyen de ${tonnage} tonneaux.
-    en: ${nb_ships} ships departured from the port of ${partner} to Marseille in 1787, for a mean tonnage of ${tonnage} tx.
+    fr: ${nb_ships} voyages ont été effectués depuis le port ${partner} en 1787, pour un tonnage moyen de ${tonnage} tonneaux.
+    en: ${nb_ships} ships departured from the port of ${partner} in 1787, for a mean tonnage of ${tonnage} tx.
   tooltip-trade-world:
     fr: La direction des fermes de Marseille a effectué un commerce total de ${count} lt. avec le partenaire ${partner} en 1789.
     en: The direction des fermes of Marseille carried out a total trade of ${count} lt. with partner ${partner}.
