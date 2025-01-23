@@ -204,12 +204,16 @@ const Legend = ({
                         const isVisible = visibleSeries.includes(series)
                         const handleClick = () => {
                           if (isVisible && visibleSeries.length > 1) {
+                            const newSeries = defaultSeries.filter(
+                              s => visibleSeries.includes(s) && s !== series
+                              // d => d !== series
+                            );
                             setVisibleSeries(
-                              defaultSeries.filter(
-                                s => visibleSeries.includes(s) && s !== series
-                                // d => d !== series
-                              )
-                            )
+                              newSeries
+                            );
+                            if (newSeries.length === 1 && newSeries[0] === 'navigation') {
+                              setVisibleDirections([]);
+                            }
                           } else if (!isVisible) {
                             setVisibleSeries(
                               defaultSeries.filter(s => visibleSeries.includes(s) || s === series)
