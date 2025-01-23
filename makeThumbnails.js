@@ -37,6 +37,7 @@ const basePath = path.join(__dirname, 'public');
     await server.start();
     const browser = await puppeteer.launch({
         // headless: false
+        args: ['--no-sandbox']
     });
 
     console.log('launch');
