@@ -176,6 +176,27 @@ export default function GuerreEtCroissance({
   else if (numberOfCells < 9) {
     circleRadius = width / 500;
   }
+
+  const maxTickValue = useMemo(() => {
+    const points = visibleSeries.reduce((p, seriesId) => 
+      seriesId === 'navigation' ? p 
+    :  
+    [
+      ...p, 
+      ...data[seriesId]
+          .filter(d => visibleDirections.includes(d.direction_ferme))
+          .map(d => +d.value)
+    ]
+    , []);
+    const max = Math.max(...points);
+    let tickValue = 350000000;
+    if (max < 50000000) {
+      tickValue = 50000000;
+    } else if (max < 150000000) {
+      tickValue = 150000000;
+    }
+    return tickValue;
+  }, [data, visibleSeries, visibleDirections]);
   return (
     <>
       <svg
@@ -329,7 +350,7 @@ export default function GuerreEtCroissance({
                             seriesLabels={seriesLabels}
                             wars={wars}
                             lang={lang}
-                            displayYTicks
+                            displayYTicks={true}
                             circleRadius={circleRadius}
                             unit={navigationSources.find(({ id }) => id === navigationMetric).unit}
                           />
@@ -350,7 +371,7 @@ export default function GuerreEtCroissance({
                                   id={seriesId}
                                   data={data[seriesId].filter(d => d.direction_ferme === direction)}
                                   xScale={xScale}
-                                  yDomain={[0, 350000000]}
+                                  yDomain={[0, maxTickValue]}
                                   tickFormat={d => formatNumber(d / 1000, lang) + ' k lt.'}
                                   activeYear={activeYear}
                                   onSetActiveYear={y => setActiveYear(y)}

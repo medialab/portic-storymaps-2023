@@ -58,6 +58,8 @@ const LineSeries = ({
     yTickSpan = 50000;
   } else if (yDomain[1] <= 5000000) {
     yTickSpan = 1000000;
+  } else if (yDomain[1] <= 150000000) {
+    yTickSpan = 10000000;
   }
   const avgMem = data[0].avg_loss_mem.split(' ').pop().replace('memoire', '');
   let slope = data[0].slope.split(' ').pop();
