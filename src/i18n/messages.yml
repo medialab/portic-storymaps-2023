@@ -202,10 +202,10 @@ StylesNavigation:
     en: During the years of peace available in our dataset (1749, 1769, 1787, 1789), ${count} ships came to Marseille making ${nb_steps} stopovers.
   tonnage-bar-tooltip:
     fr: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille.
-    en: During the years of peace available in our dataset (1749, 1769, 1787, 1789), ${count} ships with an estimated tonnage of ${tonnage} tx came to Marseille.
+    en: During the years of peace available in our dataset (1749, 1769, 1787, 1789), ${count} ships with an estimated tonnage of ${tonnage} tonneaux came to Marseille.
   intersection-tooltip:
     fr: Durant les années de paix disponibles dans les données (1749, 1769, 1787, 1789), ${count} navires d'un tonnage estimé à ${tonnage} tonneaux sont venus à Marseille en faisant ${nb_steps} étapes.
-    en: During the years of peace available in our dataset (1749, 1769, 1787, 1789), ${count} ships with an estimated tonnage of ${tonnage} tx tonneaux came to Marseille making ${nb_steps} stopovers.
+    en: During the years of peace available in our dataset (1749, 1769, 1787, 1789), ${count} ships with an estimated tonnage of ${tonnage} tonneaux tonneaux came to Marseille making ${nb_steps} stopovers.
 FonctionnementPortFranc:
   reseau-complet:
     fr: Réseau complet
