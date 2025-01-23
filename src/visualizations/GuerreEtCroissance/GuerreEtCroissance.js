@@ -190,7 +190,9 @@ export default function GuerreEtCroissance({
     , []);
     const max = Math.max(...points);
     let tickValue = 350000000;
-    if (max < 50000000) {
+    if (max < 20000000) {
+      tickValue = 20000000;
+    } else if (max < 50000000) {
       tickValue = 50000000;
     } else if (max < 150000000) {
       tickValue = 150000000;
