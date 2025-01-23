@@ -213,6 +213,9 @@ const LineSeries = ({
             const x = xScale(year);
             const y = yScale(value);
             const isActive = activeYear === year;
+            // console.log('raw loss', data.find(d => d.year === year, lang).peace_reg_memory)
+            const regMemory = parseInt(data.find(d => d.year === year, lang).peace_reg_memory);
+            const loss = value - regMemory;
             return (
               <g key={year}>
                 <circle
@@ -224,11 +227,11 @@ const LineSeries = ({
                   onMouseLeave={() => onSetActiveYear()}
                   data-for="guerre-tooltip"
                   data-tip={
-                    translate('GuerreEtCroissance', 'tooltip', lang, {
+                    translate('GuerreEtCroissance', regMemory === 0 ? 'tooltip-without-loss': loss > 0 ? 'tooltip-with-gain' : 'tooltip-with-loss', lang, {
                       year,
                       unit,
                       value: formatNumber(parseInt(value), lang),
-                      loss: formatNumber(parseInt(data.find(d => d.year === year, lang).peace_reg_memory), lang)
+                      loss: formatNumber(Math.abs(Math.round(loss)), lang)
                     })
                     // `En ${year}, valeur de ${formatNumber(parseInt(value, lang))} (perte de ${formatNumber(parseInt(data.find(d => d.year === year, lang).peace_reg_memory))})`
                   }

@@ -159,11 +159,14 @@ const Legend = ({
                       .map(direction => {
                         const isVisible = visibleDirections.includes(direction)
                         const handleClick = () => {
-                          if (isVisible && visibleDirections.length > 1) {
+                          if (isVisible && visibleDirections.length > 0) {
                             setVisibleDirections(
                               defaultDirections.filter(dir => visibleDirections.includes(dir) && dir !== direction)
                               // visibleDirections.filter(d => d !== direction)
                             )
+                            if (visibleDirections.length === 1) {
+                              setVisibleSeries(['navigation'])
+                            }
                           } else if (!isVisible) {
                             setVisibleDirections(
                               // [...visibleDirections, direction]

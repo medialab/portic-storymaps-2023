@@ -668,9 +668,15 @@ GuerreEtCroissance:
   year:
     fr: an
     en: year
-  tooltip:
-    fr: En ${year}, valeur de ${value} ${unit} (perte de ${loss} ${unit})
-    en: In ${year}, value of ${value} ${unit} (loss of ${loss} ${unit})
+  tooltip-with-loss:
+    fr: En ${year}, valeur de ${value} ${unit} (perte de ${loss} ${unit} par rapport à la projection de la valeur estimée à partir de la période de paix précédente)
+    en: In ${year}, value of ${value} ${unit} (loss of ${loss} ${unit} compared to the projected value estimated on the basis of the previous peace period)
+  tooltip-with-gain:
+    fr: En ${year}, valeur de ${value} ${unit} (gain de ${loss} ${unit} par rapport à la projection de la valeur estimée à partir de la période de paix précédente)
+    en: In ${year}, value of ${value} ${unit} (gain of ${loss} ${unit} compared to the projected value estimated on the basis of the previous peace period)
+  tooltip-without-loss:
+    fr: En ${year}, valeur de ${value} ${unit}
+    en: In ${year}, value of ${value} ${unit}
   filters-title:
     fr: Afficher ...
     en: Display ...

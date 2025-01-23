@@ -3,8 +3,8 @@ import CommentedImage from '../../components/CommentedImage';
 
 export default function PhotoDatasprint({lang, width, height}) {
   const commentedImageLegend = {
-    fr: `Photographies prises durant le datasprint PORTIC 2022`,
-    en: `Photographs taken during the PORTIC 2022 datasprint`,
+    fr: `Photographies prises durant le datasprint PORTIC 2023`,
+    en: `Photographs taken during the PORTIC 2023 datasprint`,
   }
   const images = [
     `${process.env.BASE_PATH}/assets/photo-datasprint-1.jpg`,
