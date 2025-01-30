@@ -69,7 +69,7 @@ const LineSeries = ({
   const yAxisTickValues = range(yDomain[0], yDomain[1] + yTickSpan, yTickSpan);
   const yScale = scaleLinear().domain([yDomain[0], yAxisTickValues[yAxisTickValues.length - 1]]).range([height - gutter, gutter * 2]).nice();
   const endX = xScale(MAX_YEAR + gutter);
-  let tickFontSize = width / 25;
+  let tickFontSize =  width / 25;
   if (tickFontSize < 3) {
     tickFontSize = 3;
   }
@@ -89,7 +89,7 @@ const LineSeries = ({
               <g key={value}
                 className="axis-tick-group">
                 <line
-                  stroke="grey"
+                  stroke="lightgrey"
                   strokeDasharray={'2,2'}
                   x1={0}
                   x2={endX}
@@ -104,13 +104,14 @@ const LineSeries = ({
                         x2={endX + gutter / 4}
                         y1={y}
                         y2={y}
-                        stroke="grey"
+                        stroke="lightgrey"
                       />
 
                       <text
-                        x={endX + gutter / 2}
+                        x={endX + gutter}
                         y={y + tickFontSize / 4}
                         fontSize={tickFontSize}
+                        fill="grey"
                       >
                         {tickFormat(value)}
                       </text>

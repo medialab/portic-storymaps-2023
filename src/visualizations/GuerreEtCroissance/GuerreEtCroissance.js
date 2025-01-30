@@ -89,7 +89,7 @@ export default function GuerreEtCroissance({
   const topLabelsHeight = gutter * 3;
   const bottomAxisHeight = gutter * 3;
   const rowHeight = (height - topLabelsHeight - bottomAxisHeight) / visibleSeries.length;
-  const cellWidth = (matrixWidth - gutter * 6) / (visibleDirections.length + 1);
+  const cellWidth = (matrixWidth - gutter * 6) / (visibleDirections.length ? visibleDirections.length + 1 : 2);
   // const cellWidth = (matrixWidth - sideWidth - gutter * 5) / (visibleDirections.length < 3 ? 3 : visibleDirections.length);
 
   const xScale = scaleLinear().domain([MIN_YEAR, MAX_YEAR]).range([0, cellWidth - gutter * 3]);
@@ -216,8 +216,9 @@ export default function GuerreEtCroissance({
         <g className="viz-space-wrapper" transform={`translate(${legendWidth}, 0)`}>
           <g className="x-axis-wrapper">
             {
-              visibleDirections.map((direction, index) => {
+              (visibleDirections.length ? visibleDirections : ['Marseille']).map((direction, index) => {
                 const x = sideWidth + index * cellWidth;
+                const tickFontSize = xScale(1760) - xScale(1757);
                 return (
                   <g className="x-axis-container"
                     transform={`translate(${x}, 0)`}
@@ -239,7 +240,7 @@ export default function GuerreEtCroissance({
                                 strokeDasharray={'2,2'}
                                 x1={0}
                                 x2={0}
-                                y1={topLabelsHeight + gutter * 2}
+                                y1={topLabelsHeight + tickFontSize * 2}
                                 y2={yEnd}
                               />
                               <line
@@ -247,14 +248,14 @@ export default function GuerreEtCroissance({
                                 x1={0}
                                 x2={0}
                                 y1={yEnd}
-                                y2={yEnd + gutter / 2}
+                                y2={yEnd + tickFontSize / 2}
                               />
                               <text
                                 fill="grey"
                                 x={0}
-                                y={yEnd + gutter * 1.5}
+                                y={yEnd + tickFontSize * 1.5}
                                 textAnchor="middle"
-                                fontSize={gutter * .6}
+                                fontSize={tickFontSize}
                               >
                                 {value}
                               </text>
