@@ -229,7 +229,7 @@ const LineSeries = ({
                   onMouseLeave={() => onSetActiveYear()}
                   data-for="guerre-tooltip"
                   data-tip={
-                    translate('GuerreEtCroissance', regMemory === 0 ? 'tooltip-without-loss': loss > 0 ? 'tooltip-with-gain' : 'tooltip-with-loss', lang, {
+                    translate('GuerreEtCroissance', regMemory === 0 ? 'tooltip-without-loss': loss > 0 ? `tooltip-with-gain${id === 'navigation' ? '-navigation' : ''}` : `tooltip-with-loss${id === 'navigation' ? '-navigation' : ''}`, lang, {
                       year,
                       unit,
                       value: formatNumber(parseInt(value), lang),
