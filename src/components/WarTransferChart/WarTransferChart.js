@@ -194,7 +194,7 @@ export default function WarTransferChart({
                           tooltip = translate('WarTransferChart', 'tooltip-war', lang, {
                             start: peaceData.year,
                             end: warData.year,
-                            group,
+                            group: translateLabel(group),
                             from: parseInt(values[0] * 100),
                             to: parseInt(values[1] * 100),
                           }) 
