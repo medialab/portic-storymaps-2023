@@ -228,7 +228,9 @@ export default function GuerreEtCroissance({
                       xAxisValues
                         .map(value => {
                           const x = xScale(value);
-                          const yEnd = direction === 'Marseille' ? height - bottomAxisHeight : height - bottomAxisHeight - rowHeight;
+                          const yEnd = direction === 'Marseille' ? height - bottomAxisHeight : 
+                            visibleSeries.includes('navigation') ? height - bottomAxisHeight - rowHeight
+                            : height - bottomAxisHeight;
                           return (
                             <g
                               className="x-axis-group"
@@ -240,20 +242,21 @@ export default function GuerreEtCroissance({
                                 strokeDasharray={'2,2'}
                                 x1={0}
                                 x2={0}
-                                y1={topLabelsHeight + tickFontSize * 2}
-                                y2={yEnd}
+                                y1={topLabelsHeight * 2 + tickFontSize * 2}
+                                y2={yEnd - tickFontSize * .5}
                               />
-                              <line
+                              {/* <line
                                 stroke="lightgrey"
                                 x1={0}
                                 x2={0}
                                 y1={yEnd}
-                                y2={yEnd + tickFontSize / 2}
-                              />
+                                y2={yEnd + tickFontSize * .25}
+                              /> */}
                               <text
                                 fill="grey"
                                 x={0}
-                                y={yEnd + tickFontSize * 1.5}
+                                // y={yEnd + tickFontSize * 1.5}
+                                y={yEnd + tickFontSize * .5}
                                 textAnchor="middle"
                                 fontSize={tickFontSize}
                               >
