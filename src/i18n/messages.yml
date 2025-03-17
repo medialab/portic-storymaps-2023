@@ -423,6 +423,9 @@ Intro:
   Nord:
     fr: Nord
     en: North
+  Asie:
+    fr: Asie
+    en: Asia
 LevantNavigation:
   title:
     fr: Le Levant du point de vue de la navigation
