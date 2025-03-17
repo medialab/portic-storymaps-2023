@@ -1,5 +1,8 @@
-# [ WIP ] Portic storymaps 2023 : "Prospérité et résilience du port de Marseille au XVIIIème siècle"
+# Portic storymaps 2023 : "Prospérité et résilience du port de Marseille au XVIIIème siècle"
 
+![Screenshot](https://github.com/medialab/portic-storymaps-2023/blob/gh-pages/thumbnails/marseille-rs.png?raw=true)
+
+[![DOI](https://zenodo.org/badge/563195112.svg)](https://doi.org/10.5281/zenodo.15040481)
 
 This repository hosts the source code of PORTIC research program's second case study (see [PORTIC homepage](https://anr.portic.fr/) for more information). Built by an interdisciplinary team of historians, engineers and designers, it proposes a detailed study of the economic history of the free port of Marseille circa 1789.
 
